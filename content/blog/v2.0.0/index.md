@@ -16,8 +16,20 @@ Hugo v2.0.0 is now available! This release includes new experimental features to
 
 Highlights include:
 
+sfrsiurfryzd
+rfzhdi
+rgzhroiud
+frzoiegf
+frueahfoiwa
+hfrowar
+
+>
+
+1.
+2.
 - New config options
 - Improved accessibility
+
 - Customizable image optimization in Markdown
 
 Thank you to everyone who contributed to this release!
