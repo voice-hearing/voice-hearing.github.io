@@ -1,0 +1,14 @@
+{
+  "media": {
+    "root": "assets/media",
+    "public": "assets/media"
+  },
+  "content": {
+    "root": "content"
+  },
+  "themeConfig": [
+    "theme.toml"
+  ],
+  "arrangement": [],
+  "showCommitModal": false
+}
