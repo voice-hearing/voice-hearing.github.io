@@ -1,0 +1,12 @@
+{
+  "media": {
+    "root": "assets/media",
+    "public": "assets"
+  },
+  "content": {
+    "root": "content"
+  },
+  "themeConfig": [],
+  "arrangement": [],
+  "showCommitModal": true
+}
