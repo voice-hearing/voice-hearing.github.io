@@ -1,55 +1,22 @@
-# Navigation Links
 #   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
 #   The `weight` parameter defines the order that the links will appear in.
 # Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
 
 main:
   - name: What We Do
-    url: /en/#about
-    weight: 10
-    hasChildren: true
-  - parent: What We Do
-    name: Mission
-    url: /en/about/
-    weight: 10
-  - parent: What We Do
-    name: Faults
-    url: /en/about/failures/
-    weight: 20
-  - name: How You Can Help
-    url: /#courses
-    weight: 20
-    hasChildren: true
-  - parent: How You Can Help
-    name: Course Connection
-    url: /en/courses/
-    weight: 10
-  - parent: How You Can Help
-    name: Practice
-    url: /en/events
-    weight: 20
-  - name: About Us
-    url: /en/events
-    weight: 30# Navigation Links
-#   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
-#   The `weight` parameter defines the order that the links will appear in.
-# Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
-
-main:
-  - name: What We Do
-    url: /en/what-we-do
+    url: /what-we-do
     weight: 10
     hasChildren: false
   - name: How You Can Help
-    url: /en/how-you-can-help
+    url: /how-you-can-help
     weight: 20
     hasChildren: false
   - name: About Us
-    url: /en/about
+    url: /about
     weight: 30
     hasChildren: false
   - name: Contact
-    url: /en/contact
+    url: /contact
     weight: 60
     hasChildren: false
 
@@ -59,63 +26,63 @@ footer:
     weight: 1
   - parent: about
     name: History
-    url: /en/about/
+    url: /about/
     weight: 1
   - identifier: courses
     name: What We Do
     weight: 2
   - parent: courses
     name: House
-    url: /en/what-we-do
+    url: /what-we-do
     weight: 1
   - parent: courses
     name: Kids Club
-    url: /en/what-we-do
+    url: /what-we-do
     weight: 2
   - parent: courses
     name: Community Garden
-    url: /en/what-we-do
+    url: /what-we-do
     weight: 3
   - parent: courses
     name: Women's Yoga
-    url: /en/what-we-do
+    url: /what-we-do
     weight: 4
   - identifier: practice
     name: How I Can Help
     weight: 3
   - parent: practice
     name: Praying
-    url: /en/how-you-can-help/
+    url: /how-you-can-help/
     weight: 1
   - parent: practice
     name: Volunteering
-    url: /en/how-you-can-help/
+    url: /how-you-can-help/
     weight: 2
   - parent: practice
     name: Providing Service
-    url: /en/how-you-can-help/
+    url: /how-you-can-help/
     weight: 3
   - parent: practice
     name: Donating
-    url: /en/how-you-can-help/
+    url: /how-you-can-help/
     weight: 4
   - identifier: site
     name: SITE
     weight: 4
   - parent: site
     name: RSS
-    url: /en/index.xml
+    url: /index.xml
     weight: 1
   - parent: site
     name: Contact
-    url: /en/contact
+    url: /contact
     weight: 2
   - parent: site
     name: Links
-    url: /en/links
+    url: /links
     weight: 3
   - parent: site
     name: Free Resource
-    url: /en/Free
+    url: /Free
     weight: 4
  
