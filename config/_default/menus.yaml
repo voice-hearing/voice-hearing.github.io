@@ -1,141 +1,121 @@
 # Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+#   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
+#   The `weight` parameter defines the order that the links will appear in.
+# Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
 
 main:
+  - name: What We Do
+    url: /en/#about
+    weight: 10
+    hasChildren: true
+  - parent: What We Do
+    name: Mission
+    url: /en/about/
+    weight: 10
+  - parent: What We Do
+    name: Faults
+    url: /en/about/failures/
+    weight: 20
+  - name: How You Can Help
+    url: /#courses
+    weight: 20
+    hasChildren: true
+  - parent: How You Can Help
+    name: Course Connection
+    url: /en/courses/
+    weight: 10
+  - parent: How You Can Help
+    name: Practice
+    url: /en/events
+    weight: 20
+  - name: About Us
+    url: /en/events
+    weight: 30# Navigation Links
+#   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
+#   The `weight` parameter defines the order that the links will appear in.
+# Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
+
+main:
+  - name: What We Do
+    url: /en/what-we-do
+    weight: 10
+    hasChildren: false
+  - name: How You Can Help
+    url: /en/how-you-can-help
+    weight: 20
+    hasChildren: false
+  - name: About Us
+    url: /en/about
+    weight: 30
+    hasChildren: false
+  - name: Contact
+    url: /en/contact
+    weight: 60
+    hasChildren: false
+
+footer:
   - identifier: about
     name: ABOUT
     weight: 1
   - parent: about
-    name: Bio
+    name: History
     url: /en/about/
     weight: 1
-  - parent: about
-    name: Failures
-    url: /en/about/failures
+  - identifier: courses
+    name: What We Do
     weight: 2
-  - name: Papers
-    url: /#papers
-    weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
-  - name: Experience
-    url: experience/
-    weight: 20
-  - name: Projects
-    url: projects/
-    weight: 30
-  - name: Teaching
-    url: teaching/
-    weight: 40
-
-footer:
-  - identifier: teaching
-    name: ABOUT
+  - parent: courses
+    name: House
+    url: /en/what-we-do
     weight: 1
-  - parent: teaching
-    name: Bio
-    url: teaching/
-    weight: 1
-  - parent: teaching
-    name: Failures
-    url: failures
+  - parent: courses
+    name: Kids Club
+    url: /en/what-we-do
     weight: 2
-  - parent: teaching
-    name: Posts
-    url: post
+  - parent: courses
+    name: Community Garden
+    url: /en/what-we-do
     weight: 3
-  - parent: teaching
-    name: Events
-    url: events
+  - parent: courses
+    name: Women's Yoga
+    url: /en/what-we-do
     weight: 4
-  - parent: teaching
-    name: Books
-    url: books
-    weight: 5
-  - identifier: yumi
-    name: yumi
-    weight: 2
-  - parent: yumi
-    name: ns
-    url: /erns
+  - identifier: practice
+    name: How I Can Help
+    weight: 3
+  - parent: practice
+    name: Praying
+    url: /en/how-you-can-help/
     weight: 1
-  - parent: yumi
-    name: jfsdn
-    url: /isten
+  - parent: practice
+    name: Volunteering
+    url: /en/how-you-can-help/
     weight: 2
-  - parent: yumi
-    name: sjity
-    url: /dkjfsy
+  - parent: practice
+    name: Providing Service
+    url: /en/how-you-can-help/
     weight: 3
-  - parent: yumi
-    name: dbshdsnt
-    url: /fdjhdiurd
+  - parent: practice
+    name: Donating
+    url: /en/how-you-can-help/
     weight: 4
-  - parent: yumi
-    name: fjdhdfuiffd
-    url: /fdkhdiuxhidg
-    weight: 5
-  - parent: yumi
-    name: fhvdiufhv
-    url: /fdjhfdiufhd
-    weight: 6
-  - identifier: uyem
-    name: uyemS
-    weight: 3
-  - parent: uyem
-    name: Ijfdsidfh
-    url: /fofjjskkjfjs
-    weight: 1
-  - parent: uyem
-    name: dhfsifhsi
-    url: /sjfoafoa\uef
-    weight: 2
-  - parent: uyem
-    name: djvsoage
-    url: /hfiushfiuszf
-    weight: 3
-  - parent: uyem
-    name: kgjodxdx
-    url: /fdgjdozgiiz
-    weight: 4
-  - parent: uyem
-    name: dzkjzjjzj.
-    url: /fnkjzjfzd
-    weight: 5
-  - parent: uyem
-    name: uyem Group
-    url: /en/#uyem
-    weight: 6
   - identifier: site
     name: SITE
     weight: 4
   - parent: site
     name: RSS
-    url: /index.xml
+    url: /en/index.xml
     weight: 1
   - parent: site
-    name: RSS
-    url: /jsdfdsuif
+    name: Contact
+    url: /en/contact
     weight: 2
   - parent: site
-    name: vsidsui
-    url: /difhisufusz
+    name: Links
+    url: /en/links
     weight: 3
   - parent: site
-    name: Rdsfshdfhcdsz
-    url: /jfvhiviszv
+    name: Free Resource
+    url: /en/Free
     weight: 4
-  - parent: site
-    name: Sitemap
-    url: /taxonomies/
-    weight: 5
-  - parent: site
-    name: Contact
-    url: /contact/
-    weight: 6
+ 

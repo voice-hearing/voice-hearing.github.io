@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction | Hugo Academic CV Theme</title>
-    <link>http://localhost:1313/docs/</link>
-      <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:35801/docs/</link>
+      <atom:link href="http://localhost:35801/docs/index.xml" rel="self" type="application/rss+xml" />
     <description>Introduction</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-gb</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/sharing.jpg</url>
+      <url>http://localhost:35801/media/sharing.jpg</url>
       <title>Introduction</title>
-      <link>http://localhost:1313/docs/</link>
+      <link>http://localhost:35801/docs/</link>
     </image>
     
     <item>
       <title>Getting Started</title>
-      <link>http://localhost:1313/docs/getting-started/</link>
+      <link>http://localhost:35801/docs/getting-started/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <guid>http://localhost:35801/docs/getting-started/</guid>
       <description>&lt;h2 id=&#34;quick-start-from-template&#34;&gt;Quick Start from Template&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;
 &lt;h3 id=&#34;initialize-a-new-site&#34;&gt;Initialize a new site&lt;/h3&gt;

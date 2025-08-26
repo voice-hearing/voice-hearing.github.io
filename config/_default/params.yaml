@@ -89,7 +89,4 @@ features:
   icons:
     enable: true
 
-page:
-  toc: true
-
 toc: true

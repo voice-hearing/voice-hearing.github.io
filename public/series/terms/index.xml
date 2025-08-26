@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terms | Hugo Academic CV Theme</title>
-    <link>http://localhost:1313/series/terms/</link>
-      <atom:link href="http://localhost:1313/series/terms/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:35801/series/terms/</link>
+      <atom:link href="http://localhost:35801/series/terms/index.xml" rel="self" type="application/rss+xml" />
     <description>Terms</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-gb</language><lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/sharing.jpg</url>
+      <url>http://localhost:35801/media/sharing.jpg</url>
       <title>Terms</title>
-      <link>http://localhost:1313/series/terms/</link>
+      <link>http://localhost:35801/series/terms/</link>
     </image>
     
     <item>
       <title>⚖️ Terms of Service</title>
-      <link>http://localhost:1313/terms/</link>
+      <link>http://localhost:35801/terms/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/terms/</guid>
+      <guid>http://localhost:35801/terms/</guid>
       <description>&lt;h2 id=&#34;welcome-to-connection&#34;&gt;Welcome to Connection!&lt;/h2&gt;
 &lt;p&gt;These terms and conditions outline the rules and regulations for the use of Connection&amp;rsquo;s Website, located at 
 .&lt;/p&gt;
@@ -105,9 +105,9 @@
     
     <item>
       <title>🕵️ Privacy Policy</title>
-      <link>http://localhost:1313/privacy/</link>
+      <link>http://localhost:35801/privacy/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>http://localhost:35801/privacy/</guid>
       <description>&lt;p&gt;This page is published with 
  for 
 . Being a 
@@ -129,9 +129,9 @@
     
     <item>
       <title>🧴 Disclaimer</title>
-      <link>http://localhost:1313/disclaimer/</link>
+      <link>http://localhost:35801/disclaimer/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/disclaimer/</guid>
+      <guid>http://localhost:35801/disclaimer/</guid>
       <description>&lt;p&gt;This website provides general information and discussions about health and related subjects. The information and other content provided on this site, or in any linked materials, are not intended and should not be construed as medical advice, nor is the information a substitute for professional medical expertise or treatment.&lt;/p&gt;
 &lt;p&gt;If you or any other person has a medical concern, you should consult with your health care provider or seek other professional medical treatment. Never disregard professional medical advice or delay in seeking it because of something that have read on this blog or in any linked materials. If you think you may have a medical emergency, call your doctor or emergency services immediately.&lt;/p&gt;
 &lt;p&gt;The opinions and views expressed on this site and website have no relation to those of any academic, hospital, health practice or other institution.&lt;/p&gt;
