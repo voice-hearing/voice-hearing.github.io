@@ -113,37 +113,67 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Community Projects
     items:
-      - name: Python
+      - name: 🌱 Hope Garden
         description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
+        percent: 76
+        icon: 
+      - name: 👩‍👩‍👧 Ladies' Day
         description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
+        percent: 52
+        icon: 
+      - name: 🧒 Children’s Club
         description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
+        percent: 68
+        icon: 
+  - name: Community Outreach
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: 🤝 Supporting Marginalized
         description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+        percent: 81
+        icon: 
+      - name: 👪 Families Help
         description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
+        percent: 72
+        icon: 
+      - name: ⚖️ Advocacy Care
+        description: ''
+        percent: 79
+        icon: 
+  - name: Collaborative Ministry
+    color: '#82ff23'
+    color_border: '#82ff23'
+    items:
+      - name: 👍 Like-Minded Groups
+        description: ''
+        percent: 73
+        icon: 
+      - name: 🤞 Christian Orgs
         description: ''
         percent: 80
-        icon: camera
-
+        icon: 
+      - name: 🤝 Working together
+        description: ''
+        percent: 78
+        icon: 
+  - name: Interfaith Building
+    items:
+      - name: ❤️ Christ’s love
+        description: ''
+        percent: 91
+        icon: 
+      - name: ♾️ All faiths
+        description: ''
+        percent: 86
+        icon: 
+      - name: 🇺🇳 Diverse people
+        description: ''
+        percent: 87
+        icon: 
+        
 languages:
   - name: English
     percent: 100

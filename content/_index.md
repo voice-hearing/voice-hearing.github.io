@@ -10,18 +10,18 @@ design:
 
 sections:
   
-  - block: hero
+  - block: hero1
     content:
       title: Rebirth in Our Community
       text: Bringing Freedom, Peace, and New Life to South-East Birmingham
       secondary: Extending Christ’s love to those marginalized by age, ethnicity, disability, or destitution
       primary_action:
         text: Donate Now - Transform Lives
-        url: /en/donate
+        url: /donate
         icon: rocket-launch
       secondary_action:
         text: Discover our Story
-        url: /en/about
+        url: /about
       announcement:
         text: "Imagine the lives you transform by donating today."
         link:
@@ -40,31 +40,87 @@ sections:
           filename: "hero.webp"
           filters:
             brightness: "50%"
-  - block: cta-img-bullets
-    id: features
+  - block: hero-features
+    id: hero-features-section
     content:
-      blue: 
-      title:
-      text: 
-      items:
-        - name: 
-          image: house.jpg
-          url: /en/what-we-do/
-          description: 
-        - subtitle: 
-          role: 
-          name: Building Bonds Across Faiths
-          icon: /custom/wholeness
-          description: As you enter this welcoming space, you may begin to sense how reaching out between faiths gently nurtures new bonds—allowing our whole community to grow closer in understanding.
-        - name: Cultivating Trust and Belonging
-          icon: /custom/wholeness
-          description: Sometimes, simply sharing a moment of kindness opens doors where trust and respect naturally blossom, helping each person experience deeper well-being and the warmth of true belonging.
-        - name: Inspiring Growth Through Unity
-          icon: /custom/wholeness
-          description: By joining these conversations, you might discover how every encounter quietly inspires personal and spiritual growth, inviting all to flourish in a spirit of unity and openness.
-          button:
-            text:
-            url: 
+      # Header Section
+      title: "We Care and Share"
+      blue: "OUR COMMUNITY"
+      text: "Allow Yourself to Submerge Into Warm Blanket of Being Loved"
+      # LEFT COLUMN: Hero Image with Overlay
+      hero:
+        title: "Interfaith Accommodation"
+        content: ""
+        background:
+          image:
+            filename: "musaf.jpg"  # Place in assets/media/
+            filters:
+              brightness: "100%"
+        align: "bottom"  # top, center, bottom
+        url: "/what-we-do"
+        external: false
+       # button:
+       # text: ""
+       # url: ""
+       # external: false
+      features:
+        - name: "Building Bonds Across Faiths"
+          description: "As you enter this welcoming space, you may begin to sense how reaching out between faiths gently nurtures new bonds—allowing our whole community to grow closer in understanding."
+          icon: "hero/bolt"
+          # button:
+          #  text: "Learn More"
+          #  url: "/performance"            
+        - name: "Cultivating charity and Belonging"
+          description: "Sometimes, simply sharing a moment of kindness opens doors where charity and respect naturally blossom, helping each person experience deeper well-being and the warmth of true belonging."
+          icon: "hero/shield-check"
+          # button:
+          #   text: "Security Details"
+          #   url: "/security"          
+        - name: "Inspiring Growth Through Unity"
+          description: "By joining these conversations, you might discover how every encounter quietly inspires personal and spiritual growth, inviting all to flourish in a spirit of unity and openness."
+          icon: "hero/chart-bar"
+          # button:
+          #  text: "Contact Support"
+          #  url: "/support"         
+    design:
+      spacing:
+        padding: ["2rem", "1rem", "2rem", "1rem"]
+  - block: img-overlay
+    content:
+      slides:
+      - title: Hope Garden
+        content: 
+        align: "bottom"
+        url: /what-we-do
+        background:
+          image:
+            filename: "hopegarden1.jpg"
+            # filters:
+            #    brightness: "1.5"
+            # position: center
+            # color: '#333'
+      - title: Children's Club
+        content: 
+        align: "bottom"
+        url: /what-we-do
+        background:
+          image:
+            filename: "childrensclub1.jpg"
+            # filters:
+            #    brightness: 0
+            # position: center
+            # color: '#333'
+      - title: Ladies' Day
+        content: 
+        align: "bottom"
+        url: /what-we-do
+        background:
+          image:
+            filename: "ladiesday1.jpg"
+            # filters:
+            #   brightness: 0
+            # position: center
+            # color: '#333'
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -77,7 +133,7 @@ sections:
 #          # Add your image background to `assets/media/`.
           filename: ""
           filters:
-            brightness: 0.5
+            brightness:
   - block: cta-image-left-double
     id: features
     content:
@@ -110,8 +166,8 @@ sections:
         image:
 #          # Add your image background to `assets/media/`.
           filename: ""
-          filters:
-            brightness: 0.5
+          # filters:
+          #  brightness: 1
   - block: markdown-quote
     content:
       title: ''
@@ -125,7 +181,7 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: "bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900"
+      css_class: "bg-primary-600 dark:bg-primary-900"
       background:
         color: ""
         image:
@@ -134,31 +190,28 @@ sections:
           filters:
             brightness: 
   - block: testimonies-img
+    id: testimonies-img
     content:
-      title: 
-      blue: 
-      text: 
+      title: "charityed by Our Community"
+      blue: "TESTIMONIALS"
+      text: "We Have Found Spark Through Service"
       items:
-        - name: John Bald
-          text: Azumi Trust gave me not only the tools but also the courage to rebuild my life. As I took each step forward, I could feel hope returning, knowing I was no longer walking this journey alone.
-          description: Cook
-          # Upload image to `assets/media/` and reference the filename here
-          image: luis.webp
-        - name: Annabel Reed
+        - name: "Loise Bald"
+          text: "Asumet charity gave me not only the tools but also the courage to rebuild my life. As I took each step forward, I could feel hope returning, knowing I was no longer walking this journey alone."
+          description: "Cook"
+          image: "luis.jpg"
+        - name: "Annabel Reed" 
           text: When I had no one else to turn to, their kindness wrapped around me like a warm embrace. With their help, I found strength I didn’t know I had and began standing tall again inside and out.
-          description: Teacher
-          # Upload image to `assets/media/` and reference the filename here
-          image: sonia.webp
-        - name: Mohammed Yusuf
-          text: Through their care, I discovered friends who listened, a community that believed in me, and the courage to start fresh. Giving me hope also gave me back my sense of who I truly am.
-          description: "Father and Mechanic"
-          # Upload image to `assets/media/` and reference the filename here
-          image: "joaquin.webp"
+          description: "Teacher"
+          image: "sofia.jpg"
+        - name: "Mohammed Yusuf"
+          text: "Through their care, I discovered friends who listened, a community that believed in me, and the courage to start fresh. Giving me hope also gave me back my sense of who I truly am."
+          description: "Developer"
+          image: "mohammed.jpg"
     design:
       spacing:
-        # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["1rem", 0, 0, 0]
-  - block: skills
+  - block: resume-skills1
     content:
       blue: 
       title: 
@@ -199,13 +252,13 @@ sections:
       items:
         - name: Since 1983
           icon: /hero/calendar
-          description: We Will Continue
-        - name: 100+ People
+          description: We Have Roots and We Will Continue to Serve and Grow
+        - name: 4000+
           icon: hero/trophy
-          description: Demands Grows Yearly
-        - name: To Everyone
+          description: People - Every Year Demands Grows Yearly
+        - name: Open
           icon: hero/book-open
-          description: We Are Open
+          description: We Welcome Everyone From All Walks of Life
     design:
       spacing:
         padding: [0 , 0, "3rem", 0]
@@ -242,11 +295,11 @@ sections:
           filters:
             brightness: 
   - block: testimonials-many
-    id: trust-indicators
+    id: charity-indicators
     content:
       # Header Content
-      title: "Trusted by People"
-      blue: "OUR TEAM"
+      title: "OUR TEAM"
+      blue: "charityed by Community"
       text: "We Are Here To Help"
       
       # Customizable Rating System
@@ -263,16 +316,16 @@ sections:
           external: true                  # Optional: opens in new tab
           
         - name: "Michael Chen"            # Used for alt text  
-          image: "luis.jpg"            # From assets/media/
+          image: "sofia.jpg"            # From assets/media/
           url: "https://linkedin.com/in/michael"
           external: true
           
         - name: "Emily Rodriguez"         # Used for alt text
-          image: "luis.jpg"              # From assets/media/
+          image: "mohammed.jpg"              # From assets/media/
           url: "/team/emily"              # Internal link (no external needed)
           
         - name: "David Kim"               # Used for alt text
-          image: "luis.jpg"              # From assets/media/
+          image: "sofia.jpg"              # From assets/media/
           url: "https://github.com/david"
           external: true
           
@@ -283,5 +336,46 @@ sections:
     design:
       spacing:
         padding: ["1rem", 0, 0, 0]
+  - block: contact
+    id: contact
+    content:
+      blue: 
+      title: 
+      text: 
+      text_cta: 
+      text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
+      # Contact details - edit or remove options as needed
+      email: test@example.org
+      phone: 888 888 88 88
+      appointment_url: 'https://calendly.com'
+      address:
+        street: 450 Serra Mall
+        city: Stanford
+        region: CA
+        postcode: '94305'
+        country: United States
+        country_code: US
+      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      office_hours:
+        - 'Monday 10:00 to 13:00'
+        - 'Wednesday 09:00 to 10:00'
+      contact_links:
+        - icon: twitter
+          icon_pack: fab
+          name: DM Me
+          link: 'https://twitter.com/Twitter'
+        - icon: skype
+          icon_pack: fab
+          name: Skype Me
+          link: 'skype:echo123?call'
+        - icon: video
+          icon_pack: fas
+          name: Zoom Me
+          link: 'https://zoom.com'
+      # Automatically link email and phone or display them just as text?
+      autolink: true
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '2' 
 ---    
     

@@ -11,26 +11,26 @@ authors:
 Tags: 
 - Privacy
 categories: 
-- Trust
+- charity
 series: 
-- Trust
+- charity
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
 
 
-Azumi Trust warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across South-East Birmingham.
+Asumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across South-East Birmingham.
 
 
 ## How You Can Help and Contribute
 
 *“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*
 
-Your support for Azumi Trust can take many heartfelt forms—each one a doorway to healing and belonging:
+Your support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:
 
 - **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.
 
-- **Sharing Information:** Simply sharing news about Azumi Trust, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.
+- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.
 
 - **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.
 
@@ -42,7 +42,7 @@ Your support for Azumi Trust can take many heartfelt forms—each one a doorway 
 
 - **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, connection, and growth take root.
 
-- **Donating Money:** Every pound you give plants a seed of freedom, shelter, and renewal. Your financial support fuels vital projects like Azumi House, community gardening, and outreach programs that touch hundreds of lives yearly.
+- **Donating Money:** Every pound you give plants a seed of freedom, shelter, and renewal. Your financial support fuels vital projects like Asumen House, community gardening, and outreach programs that touch hundreds of lives yearly.
 
 ---
 
@@ -50,9 +50,9 @@ Your support for Azumi Trust can take many heartfelt forms—each one a doorway 
 
 *“Sometimes, you may realize that your generosity today is the best choice you can make—not only transforming lives in our community but gently transforming your own heart as well.”*
 
-At Azumi Trust, your donation blossoms into practical and spiritual support:
+At Asumen charity, your donation blossoms into practical and spiritual support:
 
-- **Azumi House:** Providing safe, low-rent housing for disadvantaged Christian men, your gift offers stability and a welcoming home where healing begins.
+- **Asumen House:** Providing safe, low-rent housing for disadvantaged Christian men, your gift offers stability and a welcoming home where healing begins.
 
 - **Community Projects:** From the Hope Garden’s healing spaces, to Ladies’ Day fellowship, to the Children's Club’s joy and learning, your giving nurtures growth and community.
 
@@ -88,9 +88,9 @@ As you choose to contribute—whether through prayer, sharing, volunteering, don
 
 ---
 
-*To support Azumi Trust is to step into a story of love made real, where your gifts create freedom, peace, and new life for all.*
+*To support Asumen charity is to step into a story of love made real, where your gifts create freedom, peace, and new life for all.*
 
-**"You might begin to feel how, with a simple choice today, doors of hope quietly open for someone in need. As you explore ways to help, imagine your generosity softly blooming into freedom and new life for families throughout our community. When you decide to contribute, notice the subtle shift—not only in others' lives, but within your own heart—as kindness flows outward and gently grows. Picture the relief and warmth your gift brings, and as you consider giving, sense a growing connection and purpose taking root within you. By choosing to support Azumi Trust now, you become part of a caring circle, weaving strength and peace into every life touched—including your own."**
+**"You might begin to feel how, with a simple choice today, doors of hope quietly open for someone in need. As you explore ways to help, imagine your generosity softly blooming into freedom and new life for families throughout our community. When you decide to contribute, notice the subtle shift—not only in others' lives, but within your own heart—as kindness flows outward and gently grows. Picture the relief and warmth your gift brings, and as you consider giving, sense a growing connection and purpose taking root within you. By choosing to support Asumen charity now, you become part of a caring circle, weaving strength and peace into every life touched—including your own."**
 
 <div class="text-center flex items-center justify-center">
 <a href="/en/donate">

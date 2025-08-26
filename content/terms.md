@@ -18,7 +18,7 @@ series:
 
 ## Welcome to Connection!
 
-These terms and conditions outline the rules and regulations for the use of Connection's Website, located at [https://innerknowing.xyz/](https://innerknowing.xyz/en/).
+These terms and conditions outline the rules and regulations for the use of Connection's Website, located at [https://Asumen/](https://Asumen/en/).
 
 By accessing this website we assume you accept these terms and conditions. Do not continue to use Connection if you do not agree to take all of the terms and conditions stated on this page.
 

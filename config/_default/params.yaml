@@ -44,6 +44,7 @@ header:
     button:
       enable: true
       text: "Donate"
+      url: /donate
     fixed_to_top: false
     show_search: true
     show_theme_chooser: true

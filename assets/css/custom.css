@@ -42,6 +42,30 @@
 
 /* Hide ALL dates globally across Hugo Blox Academic CV */
 
+/* Light mode */
+body {
+  background-color: #ffffff;
+}
+
+/* Dark mode */
+.dark body {
+  background-color: #030519;
+}
+
+/* Using CSS variables */
+:root {
+  --bg-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1f2937;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+
 /* Generic date elements */
 time, .date, .pub-date, .post-date, .event-date, .document-date, .year {
   display: none !important;
