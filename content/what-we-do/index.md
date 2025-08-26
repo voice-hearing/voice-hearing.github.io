@@ -7,7 +7,7 @@ date: "2023-07-28"
 lastmod: '2023-07-28'
 url: 
 authors: 
-- Klimsa Vladimir
+- Admin
 Tags: 
 - Privacy
 categories: 

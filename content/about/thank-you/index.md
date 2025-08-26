@@ -6,7 +6,7 @@ date: "2024-02-29"
 # Date updated
 lastmod: "2024-02-29"
 authors: 
-- Klimsa Vladimir
+- Admin
 Tags: 
 - Contact
 Categories: 

@@ -163,7 +163,7 @@ sections:
       blue: 
       title: 
       text: 
-      username: vladimir-klimsa
+      username: Admin
   - block: calendar
     content:
       title: Fellowship Gatherings
