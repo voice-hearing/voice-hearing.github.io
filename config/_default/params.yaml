@@ -5,21 +5,19 @@
 
 # Appearance
 appearance:
-  mode: light
-  color: blue
+  mode: system
+  color: red
 
 # SEO
 marketing:
   seo:
-    site_type: Project
+    site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo documentation theme powered by Hugo Blox website builder.'
+    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -28,33 +26,49 @@ marketing:
     google: ''
     baidu: ''
 
+# Announcement shown above the header
+announcement:
+  enable: true
+  text: "🚀 New pre-print available – read it now!"
+  url:  "/publication/pre-print/"
+  
+# Tailwind: allow @apply inside <style> tags (needed once per site)
+tailwind:
+  compile_inline_css: true
+
 # Site header
 header:
   navbar:
     enable: true
     blox: "navbar"
-    align: "center"
-    fixed_to_top: true
-    logo:
-      text: ""
-      # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
     button:
       enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/details/docs/"
+      text: "Donate"
+    fixed_to_top: false
     show_search: true
     show_theme_chooser: true
+    logo:
+     # Logo filename in `assets/media/` folder
+      text: "Your Name"
 
 # Site footer
 footer:
+  content:
+    logo:
+      text: HeLLO 
+    subtitle: HAVE WE ARRIVED YET?
+    tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    subscribe: or not
+  design:
+    columns: 4
   copyright:
-    notice: '© {year} My Company. This work is licensed under {license}'
+    notice: '© {year} User. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
+  show_translations: true
 
 # Localization
 locale:
@@ -66,19 +80,16 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: false
-  repository:
-    url: 'https://github.com/HugoBlox/hugo-blox-builder/'
-    content_dir: 'starters/documentation/content'
-    branch: 'main'
-  feedback:
-    responses:
-      positive: 'Glad to hear it! [Any ideas for improvements?](https://github.com/<USERNAME>/<REPO>/issues/new).'
-      negative: 'Sorry to hear that. [Please tell us how we can improve](https://github.com/<USERNAME>/<REPO>/issues/new).'
-  comment:
-    provider: ''
-    giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+    enable: true
+extensions:
+  academicons:
+    enable: true
+
+features:
+  icons:
+    enable: true
+
+page:
+  toc: true
+
+toc: true

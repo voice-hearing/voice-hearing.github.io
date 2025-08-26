@@ -1,34 +1,141 @@
 # Navigation Links
-#   The weight parameter defines the order that the links will appear in.
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+  #     desired widget in your `content/home/` folder.
+  #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
-    url: /
-    weight: 10
-  - name: Documentation
-    url: docs/
-    weight: 20
-  - name: Blog
-    url: blog/
-    weight: 30
-  - name: Showcase
-    url: showcase/
-    weight: 40
-  - name: Community
-    url: community/
-    weight: 50
-
-sidebar:
-  - identifier: more
-    name: Still need help?
-    params:
-      type: separator
+  - identifier: about
+    name: ABOUT
     weight: 1
-  - identifier: community
-    name: "Community"
-    pageRef: "/community"
+  - parent: about
+    name: Bio
+    url: /en/about/
+    weight: 1
+  - parent: about
+    name: Failures
+    url: /en/about/failures
     weight: 2
-  - identifier: hugoDocs
-    name: "Hugo Docs ↗"
-    url: "https://docs.hugoblox.com"
+  - name: Papers
+    url: /#papers
+    weight: 11
+  - name: Talks
+    url: /#talks
+    weight: 12
+  - name: News
+    url: /#news
+    weight: 13
+  - name: Experience
+    url: experience/
+    weight: 20
+  - name: Projects
+    url: projects/
+    weight: 30
+  - name: Teaching
+    url: teaching/
+    weight: 40
+
+footer:
+  - identifier: teaching
+    name: ABOUT
+    weight: 1
+  - parent: teaching
+    name: Bio
+    url: teaching/
+    weight: 1
+  - parent: teaching
+    name: Failures
+    url: failures
+    weight: 2
+  - parent: teaching
+    name: Posts
+    url: post
     weight: 3
+  - parent: teaching
+    name: Events
+    url: events
+    weight: 4
+  - parent: teaching
+    name: Books
+    url: books
+    weight: 5
+  - identifier: yumi
+    name: yumi
+    weight: 2
+  - parent: yumi
+    name: ns
+    url: /erns
+    weight: 1
+  - parent: yumi
+    name: jfsdn
+    url: /isten
+    weight: 2
+  - parent: yumi
+    name: sjity
+    url: /dkjfsy
+    weight: 3
+  - parent: yumi
+    name: dbshdsnt
+    url: /fdjhdiurd
+    weight: 4
+  - parent: yumi
+    name: fjdhdfuiffd
+    url: /fdkhdiuxhidg
+    weight: 5
+  - parent: yumi
+    name: fhvdiufhv
+    url: /fdjhfdiufhd
+    weight: 6
+  - identifier: uyem
+    name: uyemS
+    weight: 3
+  - parent: uyem
+    name: Ijfdsidfh
+    url: /fofjjskkjfjs
+    weight: 1
+  - parent: uyem
+    name: dhfsifhsi
+    url: /sjfoafoa\uef
+    weight: 2
+  - parent: uyem
+    name: djvsoage
+    url: /hfiushfiuszf
+    weight: 3
+  - parent: uyem
+    name: kgjodxdx
+    url: /fdgjdozgiiz
+    weight: 4
+  - parent: uyem
+    name: dzkjzjjzj.
+    url: /fnkjzjfzd
+    weight: 5
+  - parent: uyem
+    name: uyem Group
+    url: /en/#uyem
+    weight: 6
+  - identifier: site
+    name: SITE
+    weight: 4
+  - parent: site
+    name: RSS
+    url: /index.xml
+    weight: 1
+  - parent: site
+    name: RSS
+    url: /jsdfdsuif
+    weight: 2
+  - parent: site
+    name: vsidsui
+    url: /difhisufusz
+    weight: 3
+  - parent: site
+    name: Rdsfshdfhcdsz
+    url: /jfvhiviszv
+    weight: 4
+  - parent: site
+    name: Sitemap
+    url: /taxonomies/
+    weight: 5
+  - parent: site
+    name: Contact
+    url: /contact/
+    weight: 6

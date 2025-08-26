@@ -1,0 +1,63 @@
+{{/* Hugo Blox: CTA Image Paragraph */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div>
+  {{ range $idx, $item := $block.content.items }}
+  {{ $title := .title | emojify | $page.RenderString }}
+  {{ $text := .text | emojify | $page.RenderString }}
+  {{ $image_path := path.Join "media" .image }}
+  {{ $image := resources.GetMatch $image_path }}
+  {{ with $image }}
+    {{ $image = $image.Process "Resize 800x webp" }}
+  {{ else }}
+    {{ errorf "%s uses the `cta-image-paragraph` blox which specifies a non-existent `image` at `assets/%s`. Please add the image to this folder and try again." $page.File.Path $image_path }}
+  {{ end }}
+  <div class="gap-8 items-center py-8 sm:py-16 px-8 mx-auto max-w-screen-xl md:grid md:grid-cols-2 px-8">
+    <img class="w-full rounded-md" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}" {{ if (modBool $idx 2)}}style="order: 1"{{end}}>
+    <div class="mt-2 md:mt-0">
+    {{ if $block.content.announcement.text }}
+    {{ $announcement := $block.content.announcement }}
+    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-800 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-gray-300 hover:ring-gray-900/20 dark:hover:ring-gray-400">
+        {{$announcement.text | markdownify}} {{if $announcement.link.text}}<a href="{{$announcement.link.url}}" class="font-semibold text-gray-800 dark:text-gray-300"><span class="absolute inset-0" aria-hidden="true"></span>{{$announcement.link.text}} <span aria-hidden="true">&rarr;</span></a>{{end}}
+      </div>
+    </div>
+    {{end}}
+      <h1 class="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{$title}}</h1>
+      <p class="mb-6 font-light md:text-lg text-gray-800 dark:text-gray-300">{{$text}}</p>
+      {{ $icon := .feature_icon | default "check" }}
+      {{ if .features }}
+      <ul>
+        {{ range .features }}
+        <li class="relative mb-4 pl-6 text-gray-800 dark:text-gray-300">
+          {{ partial "functions/get_icon" (dict "name" $icon "attributes" `class="inline-block pr-3" style="height: 1.2em;"`)  }}
+          {{ . | markdownify }}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      <div class="text-center">
+      {{ with .button }}
+      <a href="{{.url}}" class="mt-8 mb-16 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:text-primary-200 hover:dark:text-primary-200">
+        {{.text}}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 -mr-1 w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+        </svg>
+        
+      </a>
+      <a href="https://hello.com" class="mt-8 ml-2 mb-16 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:text-primary-200 hover:dark:text-primary-200"> 
+        Questions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-2 -mr-1 w-5 h-5 bi bi-question-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14"/>
+        </svg>   
+      </a>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>

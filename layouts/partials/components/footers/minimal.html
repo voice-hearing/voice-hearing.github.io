@@ -1,0 +1,78 @@
+<footer aria-labelledby="footer-heading" class="">
+  <span id="footer-heading" class="sr-only">Footer</span>
+
+  <div class="pb-6 mx-auto max-w-full px-6">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="text-white xl:col-span-1 text-center">
+        <a class="text-2xl font-bold tracking-tighter text-gray-800 dark:text-gray-300 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8" href="{{site.Home.RelPermalink}}">
+          {{site.Params.footer.content.logo.text | default "" }}
+        </a>
+        <p class="mt-2 text-xl text-gray-800 dark:text-gray-300 text-center">{{site.Params.footer.content.tagline | default "" }}</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-{{site.Params.footer.design.columns | default 4 }} gap-8 mt-12 xl:mt-0 xl:col-span-2">
+
+          {{ $menu := .Site.Menus.footer }}
+          {{ range $index, $menuItem := $menu }}
+          <div>
+            <h3 class="text-2xl font-bold tracking-wider text-gray-800 dark:text-gray-300 uppercase text-center">{{ $menuItem.Name }}</h3>
+            <ul role="list" class="mt-4 space-y-2 text-center">
+              {{ range $childIndex, $childMenuItem := $menuItem.Children }}
+              {{ $url := .URL | relLangURL }}
+              <li>
+                <a href="{{ $url }}"
+                class="text-xl font-normal text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-300"
+                   {{ if findRE `^http` .URL }}
+                   target="_blank" rel="noopener"
+                   {{ end }}
+                   >
+                  {{ $childMenuItem.Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-12 mx-auto bg-transparent dark:bg-transparent max-w-full px-8">
+    <div class="flex flex-wrap items-baseline">
+      {{ $show_translations := site.Params.footer.show_translations | default true }}
+{{ if .IsTranslated | and $show_translations }}
+<div class="flex gap-3 py-2 px-4">
+  <div class="font-bold">
+    {{- partial "functions/get_icon" (dict "name" "globe-alt" "attributes" `class="inline-block pr-1" style="height: 1em"`) -}}
+    {{ i18n "languages" }}:
+  </div>
+  <div class="font-bold">{{ index site.Data.languages .Lang }}</div>
+  {{ range .Translations }}
+  <div><a href="{{ .Permalink }}">{{ index site.Data.languages .Lang }}</a></div>
+  {{ end }}
+</div>
+{{ end }}
+{{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
+<p class="text-right">
+  {{ with site.GetPage "/privacy.md" }}
+  {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  {{ end }}
+  {{ with site.GetPage "/terms.md" }}
+  {{ if site.GetPage "/privacy.md" }} &middot; {{ end }}
+  {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  {{ end }}
+  {{ with site.GetPage "/disclaimer.md" }}
+  {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  {{ end }}
+</p>
+{{ end }}
+
+{{ with site.Params.footer.text }}
+<p class="text-right">
+  {{ . | markdownify | emojify }}
+</p>
+{{ end }}
+&nbsp; &middot; &nbsp;
+{{/* Display copyright license. */}}
+{{ partial "site_footer_license" . }}
+    </div>
+  </div>
+</footer>

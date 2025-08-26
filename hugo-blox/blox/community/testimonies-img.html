@@ -1,0 +1,71 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-screen-xl px-8 py-12">
+    
+    <!-- Trust Indicator Section -->
+    <div class="text-center">
+      {{ with $blue }}
+      <p class="mb-4 text-lg text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}
+      
+      {{ with $title }}
+      <h2 class="mb-6 text-3xl lg:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{{.}}</p>
+      {{ end }}
+    </div>
+
+    <!-- Testimonials Grid -->
+       <div class="mx-auto max-w-screen-7xl px-8 py-12">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+      {{ range $block.content.items }}
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-all duration-300">
+        
+        <!-- Testimonial Text -->
+        <blockquote class="mb-6">
+          <p class="text-lg font-medium text-gray-900 dark:text-white italic leading-relaxed">
+            "{{ .text | $page.RenderString }}"
+          </p>
+        </blockquote>
+        
+        <!-- Profile Section -->
+        <div class="flex items-center">
+          {{ $image := resources.GetMatch (path.Join "media" .image) }}
+          {{ with $image }}
+          {{ $processedImage := $image.Process "Fill 60x60 center webp" }}
+          <div class="flex-shrink-0 mr-4">
+            <div class="relative">
+              <img class="w-15 h-15 rounded-full shadow-md" 
+                   src="{{ $processedImage.RelPermalink }}" 
+                   alt="{{ $.name | plainify }}">
+            </div>
+          </div>
+          {{ end }}
+          
+          <div class="flex-grow">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+              {{ .name | $page.RenderString }}
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              {{ .description | $page.RenderString }}
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  </div>
+</section>

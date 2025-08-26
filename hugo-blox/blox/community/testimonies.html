@@ -1,0 +1,53 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-screen-xl py-8 sm:py-16 px-8">
+    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+    <div class="space-y-8 mx-auto md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-12 md:space-y-0 px-6">
+      {{ range $block.content.items }}
+        <div>
+          <svg class="h-16 mx-auto mb-3 text-gray-400 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32">
+            <path d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z"/>
+          </svg>
+          <blockquote>
+            <p class="text-2xl font-medium text-gray-900 dark:text-white mb-6 italic text-center">"{{.text | $page.RenderString}}"</p>
+          </blockquote>
+          {{ with .icon }}
+          <div class="w-full flex items-center justify-center shrink-0 grow-0 md:px-6 lg:w-7/12">
+            <div class="mb-12 flex">
+              <div class="shrink-0">
+                <div class="rounded-full shadow-lg mx-auto">
+          {{ partial "functions/get_icon" (dict "name" . "attributes" `class="rounded-full w-12 h-12"`)  }}
+        </div>
+        </div>
+          {{ end }}
+          <div class="ml-4 pl-4 grow items-center">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-300 pr-6">{{ .name | $page.RenderString }}</h3>
+          <p class="text-gray-800 dark:text-gray-300 text-base pr-6">{{ .description | $page.RenderString }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

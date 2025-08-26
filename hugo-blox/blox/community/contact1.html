@@ -1,0 +1,146 @@
+{{/* Hugo Blox: Contact - Tailwind Only, No Forms/Scripts */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $data := $block.content }}
+{{ $autolink := default true $block.content.autolink }}
+{{ $columns := $block.design.columns | default "2" }}
+
+<div class="w-full max-w-2xl mx-auto py-8 px-4">
+  {{ with $block.content.text }}
+  <div class="mb-8 text-lg text-gray-600 dark:text-white text-center">
+    {{ . | emojify | $page.RenderString }}
+  </div>
+  {{ end }}
+
+  <div class="space-y-6">
+    <!-- Email -->
+    {{ if $data.email }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-blue-100 dark:bg-blue-900 rounded-full">
+        <!-- Envelope SVG -->
+        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8
+                   M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5
+                   a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </span>
+      <span class="text-base text-gray-800 dark:text-white">
+        {{- if $autolink }}<a href="mailto:{{ $data.email }}" class="hover:text-blue-600 dark:hover:text-blue-400">{{ $data.email }}</a>{{ else }}{{ $data.email }}{{ end -}}
+      </span>
+    </div>
+    {{ end }}
+
+    <!-- Phone -->
+    {{ if $data.phone }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-green-100 dark:bg-green-900 rounded-full">
+        <!-- Phone SVG -->
+        <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684
+                   l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13
+                   a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 01
+                   1.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0
+                   01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+      </span>
+      <span class="text-base text-gray-800 dark:text-white">
+        {{- if $autolink }}<a href="tel:{{ $data.phone }}" class="hover:text-green-600 dark:hover:text-green-400">{{ $data.phone }}</a>{{ else }}{{ $data.phone }}{{ end -}}
+      </span>
+    </div>
+    {{ end }}
+
+    <!-- Address -->
+    {{ $addr_formatted := "" }}
+    {{ if $data.address.street | or $data.address.city | or $data.address.region | or $data.address.postcode | or $data.address.country }}
+    {{ $addr_formatted = partial "functions/get_address" (dict "root" . "address" $data.address) }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-red-100 dark:bg-red-900 rounded-full">
+        <!-- Pin SVG -->
+        <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998
+                   0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+      </span>
+      <span class="text-base text-gray-800 dark:text-white">{{ $addr_formatted }}</span>
+    </div>
+    {{ end }}
+
+    <!-- Directions -->
+    {{ if $data.directions }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-yellow-100 dark:bg-yellow-900 rounded-full">
+        <!-- Compass SVG -->
+        <svg class="w-5 h-5 text-yellow-600 dark:text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm4 8l-4
+                   2-2 4 4-2 2-4z"/>
+        </svg>
+      </span>
+      <span class="text-base text-gray-800 dark:text-white">{{ $data.directions | markdownify | emojify }}</span>
+    </div>
+    {{ end }}
+
+    <!-- Office Hours -->
+    {{ if $data.office_hours }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-purple-100 dark:bg-purple-900 rounded-full">
+        <!-- Clock SVG -->
+        <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3M12 12A9 9 0 103 12a9 9 0 009 9z"/>
+        </svg>
+      </span>
+      <span class="text-base text-gray-800 dark:text-white">
+        {{- if not (reflect.IsSlice $data.office_hours) -}}
+          {{ $data.office_hours | markdownify | emojify }}
+        {{- else -}}
+          {{- delimit $data.office_hours ", " | markdownify | emojify }}
+        {{- end -}}
+      </span>
+    </div>
+    {{ end }}
+
+    <!-- Appointment URL -->
+    {{ if $data.appointment_url }}
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-9 h-9 bg-indigo-100 dark:bg-indigo-900 rounded-full">
+        <!-- Calendar SVG -->
+        <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0
+                   002-2V7a2 2 0 00-2-2H5a2 2 0
+                   00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+      </span>
+      <span class="text-base">
+        <a href="{{ $data.appointment_url }}" target="_blank" rel="noopener"
+          class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">
+          {{ i18n "book_appointment" | default "Book an appointment" }}
+        </a>
+      </span>
+    </div>
+    {{ end }}
+
+    <!-- Contact Links -->
+    {{ if $data.contact_links }}
+    <div class="flex items-center gap-3 flex-wrap">
+      {{ range $data.contact_links }}
+      <a href="{{ .link }}" target="_blank" rel="noopener"
+         class="flex items-center gap-2 px-3 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-white hover:bg-blue-50 dark:hover:bg-blue-700 transition-colors text-sm font-medium">
+        <!-- Simple SVG: External Link -->
+        <svg class="w-4 h-4 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10 13l2-2m0 0l-2-2m2 2H3m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        {{ .name | markdownify | emojify | safeHTML }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>

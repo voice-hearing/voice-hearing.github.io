@@ -1,0 +1,39 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section class="mt-10">
+  <div class="mx-auto max-w-screen-xl px-8">
+    <div class="max-w-screen-md mb-8 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+    <div class="mt-10 grid grid-cols-2 px-6 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-center lg:text-center">
+      {{ range $block.content.items }}
+        <div>
+          {{ with .icon }}
+          <div class="flex justify-center items-center mb-4">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-24 h-24 lg:w-24 lg:h-24"`)  }}
+          </div>
+          {{ end }}
+          <h3 class="mb-2 text-5xl tracking-tight font-bold dark:text-white text-center">{{ .name | $page.RenderString }}</h3>
+          <p class="text-xl text-gray-800 dark:text-gray-300">{{ .description | $page.RenderString }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

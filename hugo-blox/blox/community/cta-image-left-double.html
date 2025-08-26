@@ -1,0 +1,55 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-screen-xl px-8">
+    <div class="max-w-screen-md mb-8 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+    <div class="space-y-8 md:grid md:grid-cols-3 lg:grid:cols-3 gap-4 md:space-y-0">
+      {{ range $block.content.items }}
+        <div class="basis-1/2">
+          <a href="{{.url}}">
+          {{ $image := resources.GetMatch (path.Join "media" .image) }}
+          {{ with $image }}
+          {{ $image = $image.Process "Fill 800x600 center webp" }}
+          <img class="rounded-md" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}">
+          {{ end }}
+          </a>
+          <div>
+            {{ with .icon }}
+            <div class="flex basis-1/4 justify-center items-center mb-4">
+              {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-24 h-24 lg:w-24 lg:h-24"`)  }}
+            </div>
+            {{ end }}
+            <h3 class="mb-2 text-3xl font-bold tracking-tight dark:text-white text-center px-6">{{ .name | $page.RenderString }}</h3>
+            <p class="text-xl text-gray-800 dark:text-gray-300 px-6">{{ .description | $page.RenderString }}</p>
+          </div>
+          <div class="text-center mt-6">
+            {{ with .button }}
+            <a href="{{.url}}" class="mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800">
+              {{.text}}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{{/* Hugo Blox: Markdown */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
+    {{ $title }}
+  </div>
+  <p class="text-gray-800 dark:text-gray-300 sm:text-xl text-center">
+    {{ $block.content.text | markdownify | emojify }}
+  </p>
+  <dl class="max-w-full mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+  {{ range $idx, $item := $block.content.items }}
+  <div>
+    <dt class="mb-6 text-4xl font-bold lg:text-5xl xl:text-6xl text-center">{{.name}}</dt>
+    <dd class="font-medium tracking-widest text-gray-500 text-2xl dark:text-gray-400 text-center">{{.description}}</dd>
+  </div>
+  {{ end }}
+</dl>
+</div>

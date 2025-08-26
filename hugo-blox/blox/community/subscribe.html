@@ -1,0 +1,44 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+{{ $text_cta := ($block.content.text_cta | default "") | markdownify }}
+{{ $description := ($block.content.description | default "") | markdownify }}
+{{ $button_text := $block.content.button.text | default "Subscribe" }}
+{{ $text_privacy := $block.content.text_privacy | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-screen-xl py-8 sm:py-16 px-8">
+    <div class="space-y-8 items-center md:grid md:grid-cols-2 lg:grid:cols-2 gap-8 md:space-y-0">
+      <div x-data="emailSignup()" x-init="trackFormVisit()" class="relative mx-auto items-center">
+        <div>
+          <p class="font-display text-2xl font-bold tracking-tighter">{{$title}}</p>
+          <p class="mt-4 text-xl">{{$text}}</p>
+        </div>
+      </div>
+          <div>
+           <form data-v-c76ccf54="" action="https://api.follow.it/subscription-form/bzZZakkrMXVwUWl0aWNIV2ZOM3EyYUpHcTI2Ri8rek5aVmJFOGJyRlNLVERzWmFHWGJtbyt6TytISVVncWdsMC9VMzBGOVFNa2w4b0Z6dEFRbnRCZDBuZzNuZVBwaVlzUFJPcGZaekk4dWZZdDhLbm5NSldHWk9BcFFRVEwzVTJ8ZWx1WTNMRGxnam4wQjZYcDNpQ3hEK3YwSzJBeTA4d1dTVzdpVi9GZGRXdz0=/8" method="post">
+          <div data-v-c76ccf54="" class="form-preview">
+            <div data-v-c76ccf54="" class="preview-heading text-xl text-gray-800 dark:text-gray-300 mb-8"><h3 data-v-c76ccf54="">{{$text_cta}}</h3></div>
+            <div data-v-c76ccf54="" class="preview-input-field">
+              <input data-v-c76ccf54="" type="email" name="email" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" required="" placeholder="{{ i18n "contact_email" | default "Email" }}" spellcheck="false"></div>
+              <div class="terms-container text-left mb-4 px-4">
+                <label class="text-xl text-secondary purchase__terms" for="terms-accept">
+                <input class="mr-1 mt-8 rounded-sm text-justify" type="checkbox" id="terms-accept" name="terms" value="1" required>
+                {{$description}}
+                </label>
+                </div>
+                <div class="text-center">
+              <div data-v-c76ccf54="" class="preview-submit-button relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800"><button data-v-c76ccf54="" type="submit">{{ $button_text }}</button></div>
+            </div>
+          </div>
+          </form>
+    </div>
+  </div>
+</section>

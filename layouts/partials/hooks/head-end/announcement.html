@@ -1,0 +1,21 @@
+{{/* -----------------------------------------------------------------
+     Announcement bar – Hugo Blox Academic
+     Sits *above* the navbar defined in site.Params.header.navbar
+------------------------------------------------------------------ */}}
+
+{{ $ann := site.Params.announcement }}
+{{ $nav := site.Params.header.navbar }}
+
+{{/* Render only if both announcement and navbar are enabled */}}
+{{ if and $ann.enable $nav.enable }}
+<div class="announcement">
+    <div class="container-fluid">
+      <div class="relative flex items-center justify-between sm:text-center bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white px-6">
+        <span class="mx-auto pt-2 pb-3">
+        <a href="{{ $ann.url | default "#" }}" class="hover:underline">
+           {{ $ann.text | safeHTML }}
+         </a>
+{{ end }}
+</span>
+    </div>
+  </div></div>     

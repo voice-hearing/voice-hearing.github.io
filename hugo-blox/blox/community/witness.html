@@ -1,0 +1,80 @@
+{{/* ─────────────────────────────────────────────
+   Hugo Blox · Testimonials – 4-column version
+   ───────────────────────────────────────────── */}}
+
+{{ $page  := .wcPage }}
+{{ $block := .wcBlock }}
+
+<section id="reviews" class="pt-8 text-gray-600 dark:text-gray-300 dark:bg-gray-900">
+
+  <!-- Section header -->
+  <div class="mx-auto mb-10 max-w-2xl px-6 text-center md:px-0">
+    {{ with $block.content.title }}<h2 class="mb-4 text-4xl font-bold text-gray-800 dark:text-white">{{ . | $page.RenderString }}</h2>{{ end }}
+    {{ with $block.content.text  }}<p class="text-xl">{{ . | $page.RenderString }}</p>{{ end }}
+  </div>
+
+  <!-- Grid: 1 → 2 → 4 columns -->
+  <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
+<div class="grid gap-8 grid-cols-1 sm:grid-col-2 md:grid-cols-4">
+
+      {{ range $block.content.items }}
+      {{ $rating := .rating | default 5 }}
+      <div class="flex flex-col rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl
+                  dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+
+        <!-- avatar + meta -->
+        <div class="flex gap-4">
+          {{ $img := resources.Get (printf "media/%s" .image) }}
+          {{ if $img }}
+            {{ $avatar := $img.Fill "96x96 Center webp" }}
+            <img class="h-12 w-12 rounded-full" src="{{ $avatar.RelPermalink }}"
+                 alt="{{ .name | plainify }}" width="96" height="96" loading="lazy">
+          {{ else }}
+            <div class="h-12 w-12 rounded-full bg-gray-200 dark:bg-gray-700"></div>
+          {{ end }}
+
+          <div>
+            <h6 class="text-lg font-medium text-gray-700 dark:text-white">{{ .name | $page.RenderString }}</h6>
+            {{ with .role }}<p class="text-sm text-gray-500 dark:text-gray-300">{{ . | $page.RenderString }}</p>{{ end }}
+          </div>
+        </div>
+
+        <!-- quote -->
+        <p class="mt-8 text-gray-800 dark:text-gray-300">
+          {{ .quote | markdownify | emojify | $page.RenderString }}
+        </p>
+
+        <!-- stars -->
+        <div class="mt-6 flex gap-1">
+          {{ range seq 1 5 }}
+            {{ if le . $rating }}
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.95 4.146.018c.959.004 1.355 1.226.584 1.818l-3.36 2.455 1.287 3.951c.3.922-.756 1.688-1.541 1.125L10 13.011l-3.353 2.333c-.785.563-1.841-.203-1.541-1.125l1.287-3.951-3.36-2.455c-.77-.592-.374-1.814.584-1.818l4.146-.018 1.286-3.95z"/>
+            </svg>
+            {{ else }}
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300 dark:text-gray-500" fill="none"
+                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11.48 3.499a.75.75 0 011.04 0l2.292 2.331 3.18.462a.75.75 0 01.416 1.279l-2.304 2.248.543 3.164a.75.75 0 01-1.088.791L12 12.347l-2.85 1.477a.75.75 0 01-1.088-.79l.543-3.165-2.304-2.248a.75.75 0 01.416-1.279l3.18-.462 2.291-2.331z"/>
+            </svg>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        <!-- optional button -->
+        {{ with .button }}
+        <div class="mt-6">
+          <a href="{{ .url }}" {{ if .target }}target="{{ .target }}"{{ end }}
+             class="inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-sm font-medium
+                    dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700">
+            {{ .text }}
+          </a>
+        </div>
+        {{ end }}
+
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>

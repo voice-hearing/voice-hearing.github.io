@@ -1,0 +1,35 @@
+<div id="calendar-{{ .Get "id" | default "main" }}" 
+     class="google-calendar-placeholder" 
+     data-src="https://calendar.google.com/calendar/embed?src={{ .Get "src" }}&ctz={{ .Get "timezone" | default "America/Los_Angeles" }}"
+     data-width="{{ .Get "width" | default "800" }}"
+     data-height="{{ .Get "height" | default "600" }}"
+     style="height: {{ .Get "height" | default "600" }}px; background: #f5f5f5; display: flex; align-items: center; justify-content: center;">
+  <p>Loading calendar...</p>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const calendarPlaceholder = document.getElementById('calendar-{{ .Get "id" | default "main" }}');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const iframe = document.createElement('iframe');
+        iframe.src = entry.target.dataset.src;
+        iframe.width = entry.target.dataset.width;
+        iframe.height = entry.target.dataset.height;
+        iframe.frameBorder = '0';
+        iframe.scrolling = 'no';
+        iframe.style.border = '0';
+        iframe.allowFullscreen = true;
+        
+        entry.target.innerHTML = '';
+        entry.target.appendChild(iframe);
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  observer.observe(calendarPlaceholder);
+});
+</script>

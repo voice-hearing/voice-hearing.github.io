@@ -1,0 +1,192 @@
+{{/* Advanced Cookie Consent Banner */}}
+{{ $cookies := site.Data.cookies }}
+
+<div id="cookie-consent-banner" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+  <div class="fixed bottom-0 inset-x-0 bg-white dark:bg-gray-900 shadow-xl">
+    <div class="max-w-4xl mx-auto p-6">
+      
+      <!-- Simple Banner View -->
+      <div id="cookie-simple-view">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              {{ $cookies.banner.title }}
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">
+              {{ $cookies.banner.message }}
+              <a href="{{ $cookies.banner.privacy_link }}" class="underline hover:text-primary-600 transition-colors">
+                {{ $cookies.banner.privacy_text }}
+              </a>
+            </p>
+          </div>
+          
+          <div class="flex gap-2">
+            <button id="cookie-reject-all" class="px-4 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              {{ $cookies.banner.reject_all }}
+            </button>
+            <button id="cookie-customize" class="px-4 py-2 text-sm border border-primary-600 text-primary-600 rounded hover:bg-primary-50 transition-colors">
+              {{ $cookies.banner.customize }}
+            </button>
+            <button id="cookie-accept-all" class="px-4 py-2 text-sm bg-primary-600 text-white rounded hover:bg-primary-700 transition-colors">
+              {{ $cookies.banner.accept_all }}
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Detailed Settings View -->
+      <div id="cookie-detailed-view" class="hidden">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Cookie Preferences</h3>
+        
+        {{ range $cookies.categories }}
+        <div class="border-b border-gray-200 dark:border-gray-700 py-4 last:border-b-0">
+          <div class="flex items-center justify-between">
+            <div class="flex-1">
+              <h4 class="font-medium text-gray-900 dark:text-white">{{ .title }}</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">{{ .description }}</p>
+            </div>
+            
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer cookie-toggle" 
+                     data-category="{{ .name }}" 
+                     {{ if .enabled }}checked{{ end }}
+                     {{ if .required }}disabled{{ end }}>
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600"></div>
+            </label>
+          </div>
+        </div>
+        {{ end }}
+        
+        <div class="flex justify-between mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <button id="cookie-back" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition-colors">
+            ← Back
+          </button>
+          <button id="cookie-save-preferences" class="px-6 py-2 text-sm bg-primary-600 text-white rounded hover:bg-primary-700 transition-colors">
+            {{ $cookies.banner.save_preferences }}
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const banner = document.getElementById('cookie-consent-banner');
+  const simpleView = document.getElementById('cookie-simple-view');
+  const detailedView = document.getElementById('cookie-detailed-view');
+  
+  // Check if user has already consented
+  if (!getCookie('cookie-preferences')) {
+    showBanner();
+  } else {
+    loadConsentedScripts();
+  }
+  
+  // Event listeners
+  document.getElementById('cookie-accept-all').addEventListener('click', () => {
+    acceptAll();
+    hideBanner();
+  });
+  
+  document.getElementById('cookie-reject-all').addEventListener('click', () => {
+    rejectAll();
+    hideBanner();
+  });
+  
+  document.getElementById('cookie-customize').addEventListener('click', () => {
+    showDetailedView();
+  });
+  
+  document.getElementById('cookie-back').addEventListener('click', () => {
+    showSimpleView();
+  });
+  
+  document.getElementById('cookie-save-preferences').addEventListener('click', () => {
+    saveCustomPreferences();
+    hideBanner();
+  });
+  
+  function showBanner() {
+    banner.classList.remove('hidden');
+  }
+  
+  function hideBanner() {
+    banner.classList.add('hidden');
+    loadConsentedScripts();
+  }
+  
+  function showDetailedView() {
+    simpleView.classList.add('hidden');
+    detailedView.classList.remove('hidden');
+  }
+  
+  function showSimpleView() {
+    detailedView.classList.add('hidden');
+    simpleView.classList.remove('hidden');
+  }
+  
+  function acceptAll() {
+    const preferences = { necessary: true, analytics: true, marketing: true };
+    setCookie('cookie-preferences', JSON.stringify(preferences), 365);
+  }
+  
+  function rejectAll() {
+    const preferences = { necessary: true, analytics: false, marketing: false };
+    setCookie('cookie-preferences', JSON.stringify(preferences), 365);
+  }
+  
+  function saveCustomPreferences() {
+    const preferences = { necessary: true };
+    document.querySelectorAll('.cookie-toggle').forEach(toggle => {
+      if (!toggle.disabled) {
+        preferences[toggle.dataset.category] = toggle.checked;
+      }
+    });
+    setCookie('cookie-preferences', JSON.stringify(preferences), 365);
+  }
+  
+  function loadConsentedScripts() {
+    const preferences = JSON.parse(getCookie('cookie-preferences') || '{}');
+    
+    if (preferences.analytics) {
+      // Load Google Analytics
+      loadScript('https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID');
+    }
+    
+    if (preferences.marketing) {
+      // Load marketing scripts
+      console.log('Marketing scripts loaded');
+    }
+  }
+  
+  function loadScript(src) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    document.head.appendChild(script);
+  }
+  
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/;SameSite=Lax`;
+  }
+  
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+});
+</script>

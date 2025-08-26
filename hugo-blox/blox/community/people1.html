@@ -1,0 +1,106 @@
+{{/* Hugo Blox: People */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $show_social := $block.design.show_social | default false }}
+{{ $show_interests := $block.design.show_interests | default true }}
+{{ $show_organizations := $block.design.show_organizations | default false }}
+{{ $show_role := $block.design.show_role | default true }}
+
+<div class="people-widget">
+  {{ with $block.content.title }}
+    <div class="w-full mb-8 text-center">
+      <h1 class="mb-0 text-4xl font-bold text-gray-900 dark:text-white">{{ . | markdownify | emojify }}</h1>
+      {{ with $block.content.subtitle }}<p class="mt-2 text-lg text-gray-600 dark:text-gray-400">{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+  {{ end }}
+
+  {{ with $block.content.text }}
+    <div class="w-full mb-8">
+      <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 text-center">
+        {{ . | emojify | $page.RenderString }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ range $block.content.user_groups }}
+    {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
+
+    {{/* Sort with get_sort_by_parameter function */}}
+    {{ $sort_by := $block.content.sort_by | default "last_name" }}
+    {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
+    {{ $sort_ascending := $block.content.sort_ascending | default true }}
+    {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+    {{ $query = sort $query $sort_by $sort_order }}
+
+    {{if $query | and (gt (len $block.content.user_groups) 1) }}
+      <div class="w-full mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white text-center">{{ . | markdownify }}</h2>
+      </div>
+    {{end}}
+
+    {{/* Flexible centered layout for single or multiple people */}}
+    <div class="flex flex-wrap justify-center gap-6 mb-12">
+      {{ range $query }}
+        {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+        {{/* Get link to user's profile page. */}}
+        {{ $link := "" }}
+        {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+          {{ $link = .RelPermalink }}
+        {{ end }}
+        
+        <div class="people-person flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 max-w-xs">
+          {{ $src := "" }}
+          {{ if site.Params.features.avatar.gravatar }}
+            {{ $src = printf "https://s.gravatar.com/avatar/%s?s=200" (md5 .Params.email) }}
+          {{ else if $avatar }}
+            {{ $avatar_image := $avatar.Fill "200x200 Center" }}
+            {{ $src = $avatar_image.RelPermalink }}
+          {{ end }}
+          
+          {{ if $src }}
+            {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+            {{with $link}}<a href="{{.}}" class="block mb-4">{{end}}
+            <img width="200" height="200" loading="lazy" 
+                 class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-full{{end}}" 
+                 src="{{ $src }}" alt="{{ .Title }} Avatar">
+            {{if $link}}</a>{{end}}
+          {{ end }}
+
+          <div class="portrait-title text-center">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              {{with $link}}<a href="{{.}}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">{{end}}
+              {{ .Title }}
+              {{if $link}}</a>{{end}}
+            </h3>
+            
+            {{ if and $show_organizations .Params.organizations }}
+              {{ range .Params.organizations }}
+                <p class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">{{ .name }}</p>
+              {{ end }}
+            {{ end }}
+            
+            {{ if and $show_role .Params.role }}
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ .Params.role | markdownify | emojify }}</p>
+            {{ end }}
+            
+            {{ if $show_social }}
+              <div class="flex justify-center space-x-2 mb-3">
+                {{ partial "social_links" . }}
+              </div>
+            {{ end }}
+            
+            {{ if and $show_interests .Params.interests }}
+              <p class="people-interests text-xs text-gray-500 dark:text-gray-500">
+                {{ delimit .Params.interests ", " | markdownify | emojify }}
+              </p>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

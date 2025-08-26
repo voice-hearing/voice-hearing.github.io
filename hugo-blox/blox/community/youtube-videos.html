@@ -1,0 +1,78 @@
+{{/* Hugo Blox: YouTube Video Block */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+<section class="mx-auto max-w-screen-xl py-8 px-8">
+    
+    <!-- Header Section -->
+    <div class="mb-12 flex flex-col justify-center mx-auto px-8">
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+
+    <!-- YouTube Video Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      {{ range $block.content.items }}
+        <div class="relative w-full max-w-sm cursor-pointer group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+          <a href="{{ .youtubeURL }}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="Play {{ .title }} on YouTube"
+             class="block relative">
+            
+            <!-- Thumbnail Image -->
+            {{ $img := resources.Get (printf "media/%s" .thumbnail) }}
+            {{ if $img }}
+              {{ $thumb := $img.Fit "480x270 Center" }}
+              <img src="{{ $thumb.RelPermalink }}" 
+                   alt="{{ .title }} thumbnail" 
+                   class="w-full h-auto aspect-video object-cover"
+                   loading="lazy">
+            {{ else }}
+              <div class="w-full aspect-video bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                <span class="text-white font-bold text-lg">{{ .title }}</span>
+              </div>
+            {{ end }}
+
+            <!-- Play Button Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300">
+              <!-- YouTube Play Icon SVG -->
+              <div class="bg-red-600 rounded-full p-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-8 h-8 text-white ml-1" 
+                     fill="currentColor" 
+                     viewBox="0 0 24 24" 
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Duration Badge (optional) -->
+            {{ with .duration }}
+            <div class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-2 py-1 rounded">
+              {{ . }}
+            </div>
+            {{ end }}
+
+            <!-- Video Title Overlay (optional) -->
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+              <h3 class="text-white font-semibold text-sm line-clamp-2">{{ .title }}</h3>
+              {{ with .description }}
+              <p class="text-gray-300 text-xs mt-1 line-clamp-1">{{ . }}</p>
+              {{ end }}
+            </div>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+
+</section>

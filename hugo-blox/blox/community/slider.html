@@ -1,0 +1,338 @@
+{{/* Hugo Blox: Slider - Tailwind Version */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $hash_id := .wcIdentifier }}
+{{ $slide_count := len $block.content.slides }}
+
+<div id="{{ $hash_id }}" class="relative w-full" data-carousel="slide">
+  
+  <!-- Carousel wrapper -->
+  <div class="relative overflow-hidden rounded-lg">
+    {{ range $index, $item := $block.content.slides }}
+      
+      {{ $style_bg := "" }}
+      {{ $style_filter := "" }}
+      {{ $tailwind_classes := "relative w-full flex items-center justify-center text-white" }}
+
+      {{/* Height styling */}}
+      {{with $block.design.slide_height}}
+        {{ $style_bg = printf "%s height: %s;" $style_bg . }}
+      {{else}}
+        {{ $tailwind_classes = printf "%s min-h-screen" $tailwind_classes }}
+      {{end}}
+
+      {{/* Fullscreen option */}}
+      {{with $block.design.is_fullscreen}}
+        {{ $tailwind_classes = printf "%s h-screen" $tailwind_classes }}
+      {{end}}
+
+      {{ $bg := $item.background }}
+      
+      {{/* Background color */}}
+      {{ with $bg.color }}
+        {{ $style_bg = printf "%s background-color: %s;" $style_bg (. | default "transparent") }}
+      {{ end }}
+
+      {{/* Gradient background */}}
+      {{ if and $bg.gradient_start $bg.gradient_end }}
+        {{ $angle := string $bg.gradient_angle | default "90" }}
+        {{ $style_bg = printf "%sbackground-image: linear-gradient(%sdeg, %s, %s);" $style_bg $angle $bg.gradient_start $bg.gradient_end }}
+      {{ end }}
+
+      {{/* Background image - exact same as original */}}
+      {{ if $bg.image.filename }}
+        {{ $bg_img := resources.Get (printf "media/%s" $bg.image.filename) }}
+        {{ if $bg_img }}
+          {{ $style_bg = printf "%sbackground-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s;" $style_bg $bg_img.Permalink ($bg.image.position | default "center") ($bg.image.size | default "cover") }}
+        {{ else }}
+          {{ errorf "Couldn't find `%s` in the `assets/media/` folder - please add it." $bg.image.filename }}
+        {{ end }}
+        {{ with $bg.image.filters.brightness }}
+          {{ $style_filter = printf "%s-webkit-backdrop-filter: brightness(%s); backdrop-filter: brightness(%s);" $style_filter (string .) (string .) }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Slide {{ $index }} -->
+      <div class="{{ $tailwind_classes }} {{ if ne $index 0 }}hidden{{ end }}" 
+           data-carousel-item{{ if eq $index 0 }}="active"{{ end }}
+           style="{{ $style_bg | safeCSS }}">
+        
+        {{/* Filter overlay - same as original */}}
+        <div class="absolute inset-0 w-full h-full flex items-center justify-center" 
+             style="{{ $style_filter | safeCSS }}">
+          
+          {{/* Content container with proper margins like original */}}
+          <div class="container mx-auto px-6 lg:px-24 xl:px-32 relative z-10 
+            {{ if eq $item.align "center" }}text-center
+            {{ else if eq $item.align "right" }}text-right
+            {{ else }}text-left{{ end }}"
+            style="margin-left: 6rem; margin-right: 6rem;">
+            
+            {{/* Title - matching original hero-title styling */}}
+            {{ with $item.title }}
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white
+                       {{ if eq $item.align "center" }}mx-auto max-w-4xl
+                       {{ else if eq $item.align "right" }}ml-auto max-w-4xl
+                       {{ else }}max-w-4xl{{ end }}">
+              {{ . | markdownify | emojify }}
+            </h1>
+            {{ end }}
+
+            {{/* Content - matching original hero-lead styling */}}
+            {{ with $item.content }}
+            <div class="text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed text-white opacity-95
+                        {{ if eq $item.align "center" }}mx-auto max-w-3xl
+                        {{ else if eq $item.align "right" }}ml-auto max-w-3xl
+                        {{ else }}max-w-3xl{{ end }}"
+                 style="{{if eq $item.align "center"}}margin: 0 auto 0 auto;{{else if eq $item.align "right"}}margin-left: auto; margin-right: 0{{end}}">
+              {{ . | emojify | $page.RenderString }}
+            </div>
+            {{ end }}
+
+            {{/* Call-to-action button - matching original btn styling */}}
+            {{ if $item.link.url }}
+              {{ $pack := $item.link.icon_pack | default "fas" }}
+              {{ $pack_prefix := $pack }}
+              {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                {{ $pack_prefix = "fa" }}
+              {{ end }}
+              <div class="mt-8">
+                <a href="{{ $item.link.url }}" 
+                   class="inline-flex items-center px-8 py-4 text-lg font-semibold
+                          bg-white text-gray-900 rounded-lg shadow-lg
+                          hover:bg-gray-100 hover:shadow-xl
+                          transition-all duration-300 transform hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50">
+                  {{- with $item.link.icon -}}
+                  <i class="{{ $pack }} {{ $pack_prefix }}-{{ . }} mr-3"></i>
+                  {{- end -}}
+                  {{ $item.link.text | emojify | markdownify | safeHTML }}
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+<!-- Enhanced Navigation Dots - Maximum visibility on light backgrounds -->
+{{ if gt $slide_count 1 }}
+<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+  {{ range $index, $item := $block.content.slides }}
+  <button type="button" 
+          class="w-5 h-5 rounded-full transition-all duration-300 
+                 border-2 backdrop-blur-md shadow-xl
+                 {{ if eq $index 0 }}
+                   bg-white border-gray-900 shadow-gray-900/70
+                   ring-2 ring-gray-900/40 ring-offset-2 ring-offset-white/20
+                 {{ else }}
+                   bg-gray-900/70 border-white/80 shadow-black/60
+                   hover:bg-gray-900/90 hover:border-white 
+                   hover:shadow-black/80 hover:scale-125
+                   hover:ring-2 hover:ring-white/50
+                 {{ end }}" 
+          aria-current="{{ if eq $index 0 }}true{{ else }}false{{ end }}" 
+          aria-label="Slide {{ add $index 1 }}" 
+          data-carousel-slide-to="{{ $index }}"></button>
+  {{ end }}
+</div>
+{{ end }}
+
+  <!-- Navigation controls - Enhanced visibility for all backgrounds -->
+  {{ if gt $slide_count 1 }}
+  
+  <!-- Previous button - Highly visible on all backgrounds -->
+  <button type="button" 
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" 
+          data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-12 h-12 rounded-full 
+                 bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
+                 hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
+                 group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
+                 transition-all duration-300 shadow-lg">
+      <!-- Enhanced SVG with stroke for better visibility -->
+      <svg class="w-6 h-6 text-white drop-shadow-lg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 1 1 5l4 4"/>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+
+  <!-- Next button - Highly visible on all backgrounds -->
+  <button type="button" 
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" 
+          data-carousel-next>
+    <span class="inline-flex items-center justify-center w-12 h-12 rounded-full 
+                 bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
+                 hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
+                 group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
+                 transition-all duration-300 shadow-lg">
+      <!-- Enhanced SVG with stroke for better visibility -->
+      <svg class="w-6 h-6 text-white drop-shadow-lg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m1 9 4-4-4-4"/>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
+  {{ end }}
+
+</div>
+
+{{/* Enhanced Carousel JavaScript */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.getElementById('{{ $hash_id }}');
+  if (!carousel) return;
+  
+  const items = carousel.querySelectorAll('[data-carousel-item]');
+  const indicators = carousel.querySelectorAll('[data-carousel-slide-to]');
+  const prevButton = carousel.querySelector('[data-carousel-prev]');
+  const nextButton = carousel.querySelector('[data-carousel-next]');
+  
+  let currentIndex = 0;
+  let autoplayInterval;
+  
+  function showSlide(index) {
+    // Ensure index is within bounds
+    if (index < 0) index = items.length - 1;
+    if (index >= items.length) index = 0;
+    
+    // Hide all items with fade effect
+    items.forEach((item, i) => {
+      if (i === index) {
+        item.classList.remove('hidden');
+        item.setAttribute('data-carousel-item', 'active');
+      } else {
+        item.classList.add('hidden');
+        item.setAttribute('data-carousel-item', '');
+      }
+    });
+    
+    // Update indicators
+    indicators.forEach((indicator, i) => {
+      if (i === index) {
+        indicator.classList.remove('bg-opacity-30');
+        indicator.classList.add('bg-white');
+        indicator.setAttribute('aria-current', 'true');
+      } else {
+        indicator.classList.add('bg-opacity-30');
+        indicator.classList.remove('bg-white');
+        indicator.setAttribute('aria-current', 'false');
+      }
+    });
+    
+    currentIndex = index;
+  }
+  
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+  
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+  
+  // Event listeners
+  if (nextButton) {
+    nextButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      nextSlide();
+      resetAutoplay();
+    });
+  }
+  
+  if (prevButton) {
+    prevButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      prevSlide();
+      resetAutoplay();
+    });
+  }
+  
+  // Indicator clicks
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSlide(index);
+      resetAutoplay();
+    });
+  });
+  
+  // Auto-play functionality (if enabled)
+  {{ if $block.design.autoplay }}
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, {{ $block.design.autoplay_interval | default 5000 }});
+  }
+  
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+    }
+  }
+  
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+  
+  // Start autoplay
+  startAutoplay();
+  
+  // Pause on hover
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+  {{ end }}
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.target.closest('#{{ $hash_id }}') || e.target === document.body) {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+        {{ if $block.design.autoplay }}resetAutoplay();{{ end }}
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        nextSlide();
+        {{ if $block.design.autoplay }}resetAutoplay();{{ end }}
+      }
+    }
+  });
+  
+  // Touch/swipe support
+  let startX = 0;
+  let startY = 0;
+  
+  carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    startY = e.touches.clientY;
+  });
+  
+  carousel.addEventListener('touchend', (e) => {
+    if (!startX || !startY) return;
+    
+    const endX = e.changedTouches.clientX;
+    const endY = e.changedTouches.clientY;
+    
+    const diffX = startX - endX;
+    const diffY = startY - endY;
+    
+    // Only handle horizontal swipes
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      {{ if $block.design.autoplay }}resetAutoplay();{{ end }}
+    }
+    
+    startX = 0;
+    startY = 0;
+  });
+});
+</script>

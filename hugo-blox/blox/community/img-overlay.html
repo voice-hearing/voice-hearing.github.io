@@ -1,0 +1,87 @@
+{{/* Hugo Blox: Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-screen-xl mt-0 px-8 mb-4">
+    <div class="max-w-screen-md mb-0 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    {{ range $index, $item := $block.content.slides }}
+    
+    <div class="relative rounded-lg overflow-hidden group shadow-xl">
+      
+      <!-- Background Image Processing -->
+      {{ $bg := $item.background }}
+      {{ $bg_img := "" }}
+      
+      {{ if $bg.image.filename }}
+        {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
+        {{ if $bg_img }}
+          {{ $bg_img = $bg_img.Fit "600x600 q70 webp" }}
+        {{ end }}
+      {{ end }}
+      
+      <!-- Image Container with 25% Dark Filter -->
+      {{ if $bg_img }}
+      <img src="{{ $bg_img.RelPermalink }}" 
+           alt="{{ $item.title | plainify }}" 
+           class="w-full h-96 object-cover transition-all filter brightness-75">
+      {{ else }}
+      <div class="w-full h-96 bg-gray-400 filter brightness-75"></div>
+      {{ end }}
+      
+      
+      <!-- Gradient Overlay -->
+       <a href="{{.url}}">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-opacity duration-300 group-hover:from-black/90"></div>
+      </a>
+      <!-- Dynamic Text Positioning with All Text Centered -->
+      <div class="absolute left-0 right-0 px-6 text-white text-center
+        {{ if eq $item.align "top" }}top-0 pt-6{{ $item.align | default "" }}
+        {{ else if eq $item.align "bottom" }}bottom-0 pb-6{{ $item.align | default "" }}
+        {{ else if eq $item.align "center" }}top-1/2 transform -translate-y-1/2
+        {{ else }}bottom-0 pb-6{{ end }}"
+        style="{{ if eq $item.align "top" }}top: 5%;{{ else if eq $item.align "bottom" }}bottom: 5%;{{ end }}">
+        
+        <div class="space-y-3">
+            <a href="{{.url}}">
+          {{ with $item.title }}
+          <h2 class="text-5xl font-bold leading-tight drop-shadow-lg">
+            {{ . | markdownify | emojify }}
+          </h2>
+          {{ end }}
+          </a>
+          
+          {{ with $item.content }}
+          <div class="text-sm md:text-base leading-relaxed opacity-95 drop-shadow-lg max-w-sm mx-auto">
+            {{ . | emojify | $page.RenderString }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      
+    </div>
+    
+    {{ end }}
+    
+  </div>
+</div>
