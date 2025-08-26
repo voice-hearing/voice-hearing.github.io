@@ -192,7 +192,7 @@ sections:
   - block: testimonies-img
     id: testimonies-img
     content:
-      title: "charityed by Our Community"
+      title: "Trusted by Our Community"
       blue: "TESTIMONIALS"
       text: "We Have Found Spark Through Service"
       items:
@@ -299,7 +299,7 @@ sections:
     content:
       # Header Content
       title: "OUR TEAM"
-      blue: "charityed by Community"
+      blue: "Trusted by Community"
       text: "We Are Here To Help"
       
       # Customizable Rating System
