@@ -17,13 +17,13 @@ series:
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
-# **About Us - Azadi Trust** 
+# **About Us - Azumi Trust** 
         
         *“Where the Spirit of the Lord is, there is freedom.”* — 2 Corinthians 3:17  
 
-        Azadi Trust is a small but deeply rooted Christian charity serving **South-East Birmingham** — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.  
+        Azumi Trust is a small but deeply rooted Christian charity serving **South-East Birmingham** — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.  
 
-        The name **Azadi** comes from the Persian word for *“freedom” or “liberty”*, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. *From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.*        
+        The name **Azumi** comes from the Persian word for *“freedom” or “liberty”*, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. *From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.*        
 
         ---
 
@@ -32,9 +32,9 @@ image:
         It began in **1991** with Dr. Robin Fisher, a GP in Sparkbrook, moved by compassion for the many drug users in his community.  
         From a small Christian outreach grew a vision — a vision we still carry today: *follow what God is doing* rather than impose our own plans.  
         
-        In the mid-1990s, when the initial medical and drug work ended, the charity’s heartbeat continued. By **1997**, with the support of Christ Church, the old GP surgery became **Azadi House** — our home, our base, and a place of transformation.
+        In the mid-1990s, when the initial medical and drug work ended, the charity’s heartbeat continued. By **1997**, with the support of Christ Church, the old GP surgery became **Azumi House** — our home, our base, and a place of transformation.
         
-        In those early days, you could hear the *laughter of youth clubs*, the *soft chatter of homework help sessions*, and the *warm welcome of community mothers and toddlers*. Later came football teams like *Azadi Tigers*, and projects like *Bright Sparks*.  
+        In those early days, you could hear the *laughter of youth clubs*, the *soft chatter of homework help sessions*, and the *warm welcome of community mothers and toddlers*. Later came football teams like *Azumi Tigers*, and projects like *Bright Sparks*.  
         
         ---
         
@@ -48,7 +48,7 @@ image:
         
         ## **Buildings That Shelter Dreams**
         
-        **Azadi House** is more than a building. It’s a home for projects like the **Hope Garden** — where people find healing through soil and friendship, or as a quiet meeting space for grassroots Christian initiatives.  
+        **Azumi House** is more than a building. It’s a home for projects like the **Hope Garden** — where people find healing through soil and friendship, or as a quiet meeting space for grassroots Christian initiatives.  
         
         We like to see ourselves as a **vehicle** — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and network… you just bring your God-given vision, and together, we travel further.
         
@@ -84,14 +84,14 @@ image:
         ---
         
         ### **Experience Our Mission Through Your Senses**
-        - *Feel* the warmth of welcome in Azadi House.  
+        - *Feel* the warmth of welcome in Azumi House.  
         - *See* friendship grow where once there were barriers.  
         - *Hear* the laughter of children in safe places.  
         - *Know* the peace in helping someone find their freedom.
         
         ---
         
-        Azadi Trust isn’t just about what *we* do — it’s about what **we can do together**.  
+        Azumi Trust isn’t just about what *we* do — it’s about what **we can do together**.  
         Freedom… peace… new life — not just for our neighbours in Birmingham, but also for everyone who chooses to be part of this journey.
         </br></br></br>
         <div class="text-center flex items-center justify-center">

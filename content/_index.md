@@ -140,7 +140,7 @@ sections:
       text: 
       items:
         - name: John Bald
-          text: Azadi Trust gave me not only the tools but also the courage to rebuild my life. As I took each step forward, I could feel hope returning, knowing I was no longer walking this journey alone.
+          text: Azumi Trust gave me not only the tools but also the courage to rebuild my life. As I took each step forward, I could feel hope returning, knowing I was no longer walking this journey alone.
           description: Cook
           # Upload image to `assets/media/` and reference the filename here
           image: luis.webp

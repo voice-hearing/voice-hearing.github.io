@@ -382,7 +382,7 @@
 
 
 
-&lt;div id=&#34;chart-487562913&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-193825746&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -400,7 +400,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-487562913&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-193825746&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -601,6 +601,298 @@ Crash --&gt; [*]
   
 
 
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+
+  &lt;span class=&#34;font-bold&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/&#34;&gt;吳健雄&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;http://localhost:1313/publication/preprint/&#34; class=&#34;underline&#34;&gt;An example preprint / working paper&lt;/a&gt;.
+  
+
+  
+  &lt;div class=&#34;flex flex-wrap space-x-3&#34;&gt;
+    
+
+
+
+
+
+
+
+
+ 
+
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://arxiv.org/abs/1512.04133v1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        Preprint
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://github.com/HugoBlox/hugo-blox-builder&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5&#34;/&gt;&lt;/svg&gt;
+        Code
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://www.slideshare.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6&#34;/&gt;&lt;/svg&gt;
+        Slides
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125&#34;/&gt;&lt;/svg&gt;
+        Dataset
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5m10.5-11.25h.008v.008h-.008zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        Poster
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        Source Document
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://youtube.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z&#34;/&gt;&lt;/svg&gt;
+        Video
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://example.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244&#34;/&gt;&lt;/svg&gt;
+        Custom Link
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://arxiv.org/abs/1512.04133v1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        Preprint
+      &lt;/a&gt;
+    
+  
+
+
+  &lt;/div&gt;
+  
+
+  
+  
+&lt;/div&gt;
+
+
+
 &lt;p&gt;You can also use the default view by omitting the view parameter:&lt;/p&gt;
 
 
@@ -612,6 +904,537 @@ Crash --&gt; [*]
 
 
   
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+
+  &lt;span class=&#34;font-bold&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/&#34;&gt;吳健雄&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;relative inline-block ml-1&#34; x-data=&#34;{ tooltip: false }&#34;&gt;
+          &lt;button
+            @mouseenter=&#34;tooltip = true&#34;
+            @mouseleave=&#34;tooltip = false&#34;
+            @click=&#34;tooltip = !tooltip&#34;
+            class=&#34;author-notes text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 transition-colors cursor-help&#34;
+            data-tooltip=&#34;Equal contribution&#34;
+            aria-label=&#34;Equal contribution&#34;
+            type=&#34;button&#34;
+          &gt;
+            &lt;svg class=&#34;inline-block w-4 h-4&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+              &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+          &lt;/button&gt;
+          &lt;div
+            x-show=&#34;tooltip&#34;
+            x-transition:enter=&#34;transition ease-out duration-200&#34;
+            x-transition:enter-start=&#34;opacity-0 transform scale-95&#34;
+            x-transition:enter-end=&#34;opacity-100 transform scale-100&#34;
+            x-transition:leave=&#34;transition ease-in duration-150&#34;
+            x-transition:leave-start=&#34;opacity-100 transform scale-100&#34;
+            x-transition:leave-end=&#34;opacity-0 transform scale-95&#34;
+            @click.away=&#34;tooltip = false&#34;
+            class=&#34;absolute z-50 bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 text-sm text-white bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg whitespace-nowrap&#34;
+            x-cloak
+          &gt;
+            Equal contribution
+            &lt;div class=&#34;absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-700&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;http://localhost:1313/author/robert-ford/&#34;&gt;Robert Ford&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;relative inline-block ml-1&#34; x-data=&#34;{ tooltip: false }&#34;&gt;
+          &lt;button
+            @mouseenter=&#34;tooltip = true&#34;
+            @mouseleave=&#34;tooltip = false&#34;
+            @click=&#34;tooltip = !tooltip&#34;
+            class=&#34;author-notes text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 transition-colors cursor-help&#34;
+            data-tooltip=&#34;Equal contribution&#34;
+            aria-label=&#34;Equal contribution&#34;
+            type=&#34;button&#34;
+          &gt;
+            &lt;svg class=&#34;inline-block w-4 h-4&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+              &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+          &lt;/button&gt;
+          &lt;div
+            x-show=&#34;tooltip&#34;
+            x-transition:enter=&#34;transition ease-out duration-200&#34;
+            x-transition:enter-start=&#34;opacity-0 transform scale-95&#34;
+            x-transition:enter-end=&#34;opacity-100 transform scale-100&#34;
+            x-transition:leave=&#34;transition ease-in duration-150&#34;
+            x-transition:leave-start=&#34;opacity-100 transform scale-100&#34;
+            x-transition:leave-end=&#34;opacity-0 transform scale-95&#34;
+            @click.away=&#34;tooltip = false&#34;
+            class=&#34;absolute z-50 bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 text-sm text-white bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg whitespace-nowrap&#34;
+            x-cloak
+          &gt;
+            Equal contribution
+            &lt;div class=&#34;absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-700&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/span&gt;
+  &lt;/span&gt;
+  (2013).
+  &lt;a href=&#34;http://localhost:1313/publication/conference-paper/&#34; class=&#34;underline&#34;&gt;An example conference paper&lt;/a&gt;.
+  In &lt;em&gt;ICW&lt;/em&gt;.
+  
+
+  
+  &lt;div class=&#34;flex flex-wrap space-x-3&#34;&gt;
+    
+
+
+
+
+
+
+
+
+ 
+
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; fill=&#34;currentColor&#34; viewBox=&#34;3 3 18 18&#34;&gt;&lt;path d=&#34;M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+        GitHub
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 384 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M343.759 106.662V79.43L363.524 64h-213.89L20.476 176.274h85.656a82.339 82.339 0 0 0-.219 6.225c0 20.845 7.22 38.087 21.672 51.861 14.453 13.797 32.252 20.648 53.327 20.648 4.923 0 9.75-.368 14.438-1.024-2.907 6.5-4.374 12.523-4.374 18.142 0 9.875 4.499 20.43 13.467 31.642-39.234 2.67-68.061 9.732-86.437 21.163-10.531 6.5-19 14.704-25.39 24.531-6.391 9.9-9.578 20.515-9.578 31.962 0 9.648 2.062 18.336 6.219 26.062 4.156 7.726 9.578 14.07 16.312 18.984 6.718 4.968 14.469 9.101 23.219 12.469 8.734 3.344 17.406 5.718 26.061 7.062A167.052 167.052 0 0 0 180.555 448c13.469 0 26.953-1.734 40.547-5.187 13.562-3.485 26.28-8.642 38.171-15.493 11.86-6.805 21.515-16.086 28.922-27.718 7.39-11.68 11.094-24.805 11.094-39.336 0-11.016-2.25-21.039-6.75-30.14-4.468-9.073-9.938-16.542-16.452-22.345-6.501-5.813-13-11.155-19.516-15.968-6.5-4.845-12-9.75-16.468-14.813-4.485-5.046-6.735-10.054-6.735-14.984 0-4.921 1.734-9.672 5.216-14.265 3.455-4.61 7.674-9.048 12.61-13.306 4.937-4.25 9.875-8.968 14.796-14.133 4.922-5.147 9.141-11.827 12.61-20.008 3.485-8.18 5.203-17.445 5.203-27.757 0-13.453-2.547-24.46-7.547-33.314-.594-1.022-1.218-1.803-1.875-3.022l56.907-46.672v17.119c-7.393.93-6.624 5.345-6.624 10.635V245.96c0 5.958 4.875 10.834 10.834 10.834h3.989c5.958 0 10.833-4.875 10.833-10.834V117.293c0-5.277.778-9.688-6.561-10.63zm-107.36 222.48c1.14.75 3.704 2.78 7.718 6.038 4.05 3.243 6.797 5.695 8.266 7.414a443.553 443.553 0 0 1 6.376 7.547c2.813 3.375 4.718 6.304 5.718 8.734 1 2.477 2.016 5.461 3.047 8.946a38.27 38.27 0 0 1 1.485 10.562c0 17.048-6.564 29.68-19.656 37.859-13.125 8.18-28.767 12.274-46.938 12.274-9.187 0-18.203-1.093-27.063-3.196-8.843-2.116-17.311-5.336-25.39-9.601-8.078-4.258-14.577-10.204-19.5-17.797-4.938-7.64-7.407-16.415-7.407-26.25 0-10.32 2.797-19.29 8.422-26.906 5.594-7.625 12.938-13.391 22.032-17.315 9.063-3.946 18.25-6.742 27.562-8.398a157.865 157.865 0 0 1 28.438-2.555c4.47 0 7.936.25 10.405.696.455.219 3.032 2.07 7.735 5.563 4.704 3.462 7.625 5.595 8.75 6.384zm-3.359-100.579c-7.406 8.86-17.734 13.288-30.953 13.288-11.86 0-22.298-4.764-31.266-14.312-9-9.523-15.422-20.328-19.344-32.43-3.937-12.109-5.906-23.984-5.906-35.648 0-13.694 3.596-25.352 10.781-34.976 7.187-9.65 17.5-14.485 30.938-14.485 11.875 0 22.374 5.038 31.437 15.157 9.094 10.085 15.61 21.413 19.517 33.968 3.922 12.54 5.873 24.53 5.873 35.984 0 13.446-3.702 24.61-11.076 33.454z&#34; style=&#34;stroke-width:.0647871&#34;/&gt;&lt;/svg&gt;
+        Google Scholar
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M115.592 222.507c-9.726 0-18.734 7.074-24.986 14.417c-5.06 5.954-7.59 15.133-7.59 22.775c0 7.64 2.87 16.139 7.931 22.093c6.152 7.343 12.778 12.375 22.603 12.375c8.833 0 19.338-3.708 25.39-9.76c6.151-6.054 11.269-16.218 11.269-25.05c0-8.73-2.396-19.186-8.548-25.24c-6.153-6.154-17.338-11.61-26.07-11.61zm174.644 2.4c-10.12 0-18.358 3.98-24.709 11.937c-5.158 6.386-7.74 13.663-7.74 21.828c0 8.271 2.582 15.6 7.74 21.986c6.35 7.956 14.589 11.937 24.71 11.937c9.03 0 16.67-3.251 22.92-9.742c6.254-6.597 9.379-14.653 9.379-24.18c0-9.423-3.177-17.377-9.527-23.868c-6.25-6.595-13.843-9.898-22.773-9.898zM256 8C119.034 8 8 119.034 8 256s111.034 248 248 248s248-111.034 248-248S392.966 8 256 8Zm-58.826 323.79H151.24v-18.699c-4.665 5.855-15.639 11.824-20.4 14.502c-8.335 4.663-19.654 7.7-30.273 7.7c-17.168 0-32.45-5.424-45.845-17.231c-15.977-14.09-23.483-35.633-23.483-58.854c0-23.618 8.186-42.473 24.56-56.563c12.999-11.214 28.896-20.19 45.766-20.19c9.822 0 21.94.883 30.572 5.05c4.962 2.38 13.844 7.985 19.104 13.443v-98.502h45.936v229.345zm157.216-21.14c-15.281 17.588-36.667 26.384-64.154 26.384c-27.586 0-49.02-8.796-64.304-26.383c-12.6-14.448-18.904-32.193-18.904-53.235c0-18.95 6.35-35.752 19.053-50.408c15.38-17.693 37.261-26.54 65.64-26.54c26.099 0 46.937 8.845 62.518 26.54c12.702 14.448 19.052 31.667 19.052 51.664c.003 20.206-6.299 37.531-18.901 51.98zm38.769-199.217c5.359-5.36 11.858-8.038 19.499-8.038c7.64 0 14.14 2.679 19.499 8.038c5.358 5.26 8.037 11.71 8.037 19.35c0 7.74-2.679 14.289-8.037 19.648c-5.26 5.259-11.76 7.888-19.5 7.888c-7.642 0-14.142-2.679-19.498-8.038c-5.26-5.358-7.889-11.858-7.889-19.499c-.003-7.64 2.63-14.09 7.889-19.35zm43.91 220.242h-48.823V185.841h48.823z&#34;/&gt;&lt;/svg&gt;
+        DOI
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M336.62 194.538c-7.13-3.328-13.866-5.56-20.253-6.614-6.365-1.095-16.574-1.612-30.71-1.612h-36.704v152.747h37.634c14.673 0 26.081-1.013 34.224-3.017 8.142-2.004 14.921-4.526 20.356-7.626a69.448 69.448 0 0 0 14.942-11.388c14.488-14.714 21.742-33.273 21.742-55.717 0-22.052-7.44-40.052-22.341-53.982-5.498-5.166-11.822-9.444-18.89-12.793zM256 8C119.022 8 8 119.042 8 256s111.022 248 248 248 248-111.042 248-248S392.978 8 256 8Zm-82.336 357.513h-29.389V160.148h29.389zM158.95 138.696c-11.14 0-20.213-9.01-20.213-20.212 0-11.118 9.052-20.191 20.213-20.191 11.18 0 20.232 9.052 20.232 20.191a20.194 20.194 0 0 1-20.232 20.212zm241.386 163.597c-5.29 12.545-12.834 23.581-22.65 33.088-9.982 9.837-21.597 17.194-34.844 22.196-7.75 3.017-14.839 5.063-21.307 6.117-6.49 1.013-18.828 1.509-37.076 1.509h-64.956V160.148h69.233c27.962 0 50.034 4.154 66.32 12.545 16.265 8.37 29.181 20.728 38.792 36.972 9.61 16.265 14.425 34.018 14.425 53.196.023 13.765-2.666 26.908-7.936 39.432z&#34; style=&#34;stroke-width:.07717&#34;/&gt;&lt;/svg&gt;
+        ORCID
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/#&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5&#34;/&gt;&lt;/svg&gt;
+        Academic Cap
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/paper.pdf&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        Paper PDF
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://doi.org/10.1000/xyz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M115.592 222.507c-9.726 0-18.734 7.074-24.986 14.417c-5.06 5.954-7.59 15.133-7.59 22.775c0 7.64 2.87 16.139 7.931 22.093c6.152 7.343 12.778 12.375 22.603 12.375c8.833 0 19.338-3.708 25.39-9.76c6.151-6.054 11.269-16.218 11.269-25.05c0-8.73-2.396-19.186-8.548-25.24c-6.153-6.154-17.338-11.61-26.07-11.61zm174.644 2.4c-10.12 0-18.358 3.98-24.709 11.937c-5.158 6.386-7.74 13.663-7.74 21.828c0 8.271 2.582 15.6 7.74 21.986c6.35 7.956 14.589 11.937 24.71 11.937c9.03 0 16.67-3.251 22.92-9.742c6.254-6.597 9.379-14.653 9.379-24.18c0-9.423-3.177-17.377-9.527-23.868c-6.25-6.595-13.843-9.898-22.773-9.898zM256 8C119.034 8 8 119.034 8 256s111.034 248 248 248s248-111.034 248-248S392.966 8 256 8Zm-58.826 323.79H151.24v-18.699c-4.665 5.855-15.639 11.824-20.4 14.502c-8.335 4.663-19.654 7.7-30.273 7.7c-17.168 0-32.45-5.424-45.845-17.231c-15.977-14.09-23.483-35.633-23.483-58.854c0-23.618 8.186-42.473 24.56-56.563c12.999-11.214 28.896-20.19 45.766-20.19c9.822 0 21.94.883 30.572 5.05c4.962 2.38 13.844 7.985 19.104 13.443v-98.502h45.936v229.345zm157.216-21.14c-15.281 17.588-36.667 26.384-64.154 26.384c-27.586 0-49.02-8.796-64.304-26.383c-12.6-14.448-18.904-32.193-18.904-53.235c0-18.95 6.35-35.752 19.053-50.408c15.38-17.693 37.261-26.54 65.64-26.54c26.099 0 46.937 8.845 62.518 26.54c12.702 14.448 19.052 31.667 19.052 51.664c.003 20.206-6.299 37.531-18.901 51.98zm38.769-199.217c5.359-5.36 11.858-8.038 19.499-8.038c7.64 0 14.14 2.679 19.499 8.038c5.358 5.26 8.037 11.71 8.037 19.35c0 7.74-2.679 14.289-8.037 19.648c-5.26 5.259-11.76 7.888-19.5 7.888c-7.642 0-14.142-2.679-19.498-8.038c-5.26-5.358-7.889-11.858-7.889-19.499c-.003-7.64 2.63-14.09 7.889-19.35zm43.91 220.242h-48.823V185.841h48.823z&#34;/&gt;&lt;/svg&gt;
+        DOI Link
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://github.com/user/repo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; fill=&#34;currentColor&#34; viewBox=&#34;3 3 18 18&#34;&gt;&lt;path d=&#34;M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+        GitHub Code
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://scholar.google.com/citations?user=XXX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 384 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M343.759 106.662V79.43L363.524 64h-213.89L20.476 176.274h85.656a82.339 82.339 0 0 0-.219 6.225c0 20.845 7.22 38.087 21.672 51.861 14.453 13.797 32.252 20.648 53.327 20.648 4.923 0 9.75-.368 14.438-1.024-2.907 6.5-4.374 12.523-4.374 18.142 0 9.875 4.499 20.43 13.467 31.642-39.234 2.67-68.061 9.732-86.437 21.163-10.531 6.5-19 14.704-25.39 24.531-6.391 9.9-9.578 20.515-9.578 31.962 0 9.648 2.062 18.336 6.219 26.062 4.156 7.726 9.578 14.07 16.312 18.984 6.718 4.968 14.469 9.101 23.219 12.469 8.734 3.344 17.406 5.718 26.061 7.062A167.052 167.052 0 0 0 180.555 448c13.469 0 26.953-1.734 40.547-5.187 13.562-3.485 26.28-8.642 38.171-15.493 11.86-6.805 21.515-16.086 28.922-27.718 7.39-11.68 11.094-24.805 11.094-39.336 0-11.016-2.25-21.039-6.75-30.14-4.468-9.073-9.938-16.542-16.452-22.345-6.501-5.813-13-11.155-19.516-15.968-6.5-4.845-12-9.75-16.468-14.813-4.485-5.046-6.735-10.054-6.735-14.984 0-4.921 1.734-9.672 5.216-14.265 3.455-4.61 7.674-9.048 12.61-13.306 4.937-4.25 9.875-8.968 14.796-14.133 4.922-5.147 9.141-11.827 12.61-20.008 3.485-8.18 5.203-17.445 5.203-27.757 0-13.453-2.547-24.46-7.547-33.314-.594-1.022-1.218-1.803-1.875-3.022l56.907-46.672v17.119c-7.393.93-6.624 5.345-6.624 10.635V245.96c0 5.958 4.875 10.834 10.834 10.834h3.989c5.958 0 10.833-4.875 10.833-10.834V117.293c0-5.277.778-9.688-6.561-10.63zm-107.36 222.48c1.14.75 3.704 2.78 7.718 6.038 4.05 3.243 6.797 5.695 8.266 7.414a443.553 443.553 0 0 1 6.376 7.547c2.813 3.375 4.718 6.304 5.718 8.734 1 2.477 2.016 5.461 3.047 8.946a38.27 38.27 0 0 1 1.485 10.562c0 17.048-6.564 29.68-19.656 37.859-13.125 8.18-28.767 12.274-46.938 12.274-9.187 0-18.203-1.093-27.063-3.196-8.843-2.116-17.311-5.336-25.39-9.601-8.078-4.258-14.577-10.204-19.5-17.797-4.938-7.64-7.407-16.415-7.407-26.25 0-10.32 2.797-19.29 8.422-26.906 5.594-7.625 12.938-13.391 22.032-17.315 9.063-3.946 18.25-6.742 27.562-8.398a157.865 157.865 0 0 1 28.438-2.555c4.47 0 7.936.25 10.405.696.455.219 3.032 2.07 7.735 5.563 4.704 3.462 7.625 5.595 8.75 6.384zm-3.359-100.579c-7.406 8.86-17.734 13.288-30.953 13.288-11.86 0-22.298-4.764-31.266-14.312-9-9.523-15.422-20.328-19.344-32.43-3.937-12.109-5.906-23.984-5.906-35.648 0-13.694 3.596-25.352 10.781-34.976 7.187-9.65 17.5-14.485 30.938-14.485 11.875 0 22.374 5.038 31.437 15.157 9.094 10.085 15.61 21.413 19.517 33.968 3.922 12.54 5.873 24.53 5.873 35.984 0 13.446-3.702 24.61-11.076 33.454z&#34; style=&#34;stroke-width:.0647871&#34;/&gt;&lt;/svg&gt;
+        Google Scholar
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/publication/paper.pdf&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        PDF
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://doi.org/10.1000/xyz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5&#34;/&gt;&lt;/svg&gt;
+        DOI
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://github.com/user/repo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5&#34;/&gt;&lt;/svg&gt;
+        Code
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://zenodo.org/record/123456&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5&#34;/&gt;&lt;/svg&gt;
+        Dataset
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/publication/slides.pdf&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6&#34;/&gt;&lt;/svg&gt;
+        Slides
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;http://localhost:1313/publication/conference-paper/conference-paper.pdf&#34;  &gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9&#34;/&gt;&lt;/svg&gt;
+        PDF
+      &lt;/a&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+        
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;button class=&#34;hb-attachment-link hb-attachment-link-small js-cite-clipboard cursor-pointer&#34; type=&#34;button&#34; data-filename=&#34;/publication/conference-paper/cite.bib&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75&#34;/&gt;&lt;/svg&gt;
+        &lt;span&gt;Cite&lt;/span&gt;
+      &lt;/button&gt;
+    
+  
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+      
+        
+      
+    
+    
+
+    
+      &lt;a class=&#34;hb-attachment-link hb-attachment-link-small&#34; href=&#34;https://doi.org/10.5555/123456&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+        &lt;svg style=&#34;height: 1em&#34; class=&#39;inline-block&#39; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244&#34;/&gt;&lt;/svg&gt;
+        DOI
+      &lt;/a&gt;
+    
+  
+
+
+  &lt;/div&gt;
+  
+
+  
+  
+&lt;/div&gt;
+
 
 
 &lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
@@ -787,6 +1610,454 @@ Parallel 4   :         des6, after des4, 1d
     </item>
     
     <item>
+      <title> 🌱 CONTACT US</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Azumi Trust warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;contact-us--azumi-trust&#34;&gt;Contact Us — Azumi Trust&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“Knock, and the door will be opened to you.”&lt;/em&gt; — Jesus Christ (Matthew 7:7)&lt;/p&gt;
+&lt;p&gt;As you reach out, you might begin to feel the warmth of a welcoming community ready to listen, support, and walk alongside you. Whether you want to learn more about our mission, volunteer, donate, or simply share a prayer, your voice and presence matter deeply to us.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;how-to-reach-us&#34;&gt;How to Reach Us&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Phone:&lt;/strong&gt; +44 (0)121 772 9756&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WhatsApp:&lt;/strong&gt; +44 (0)7815 123456 (Chat with us anytime for quick questions or to connect with our team)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to call or message — each connection is a chance to open doors of hope and partnership.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;visit-us&#34;&gt;Visit Us&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Azumi House&lt;/strong&gt;&lt;br&gt;
+66 Stratford Road, Sparkbrook,&lt;br&gt;
+Birmingham, B11 1SZ, UK&lt;/p&gt;
+&lt;h3 id=&#34;opening-hours&#34;&gt;Opening Hours:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Monday to Friday: 9:00 AM – 5:00 PM&lt;/li&gt;
+&lt;li&gt;Closed on weekends and public holidays&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Imagine stepping through our doors and feeling the peace and welcome that fills every corner.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;directions&#34;&gt;Directions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;By public transport:&lt;/strong&gt; Azumi House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;By car:&lt;/strong&gt; Limited parking is available nearby on Stratford Road.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re here to help you find your way—just ask when you call or message.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;your-invitation-to-connect&#34;&gt;Your Invitation to Connect&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;You might already sense that making contact is more than a formality—it’s the start of a shared journey toward freedom and new life.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Through phone, message, or in person, your reach brings you closer to stories of healing, fellowship, and community growth nurtured through Azumi Trust’s Christian ethos.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;inspirational-words-for-the-journey&#34;&gt;Inspirational Words for the Journey&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.”&lt;/em&gt;&lt;br&gt;
+— Jesus Christ (Matthew 7:7)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Faith is taking the first step even when you don’t see the whole staircase.”&lt;/em&gt;&lt;br&gt;
+— Martin Luther King Jr.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Prayer does not change God, but it changes him who prays.”&lt;/em&gt;&lt;br&gt;
+— Soren Kierkegaard&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;As you prepare to reach out or step through the door, know that you become part of a caring circle—a community woven with prayers, voices, and hands creating freedom and peace for all.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Feel&lt;/em&gt; the connection growing &lt;em&gt;hear&lt;/em&gt; the invitation whispering gently—and &lt;em&gt;see&lt;/em&gt; how together, we can build a brighter tomorrow.&lt;/p&gt;
+&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
+&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
+&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
+  Donate Now - Transform Lives
+&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title> 🌱 HOW CAN I HELP?</title>
+      <link>http://localhost:1313/how-you-can-help/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-you-can-help/</guid>
+      <description>&lt;p&gt;Azumi Trust warmly invites you into a journey of hope and transformation where &lt;em&gt;your help, your contribution, and your donation&lt;/em&gt; become the seeds of change that bloom in the lives of individuals and families in need across South-East Birmingham.&lt;/p&gt;
+&lt;h2 id=&#34;how-you-can-help-and-contribute&#34;&gt;How You Can Help and Contribute&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your support for Azumi Trust can take many heartfelt forms—each one a doorway to healing and belonging:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Praying:&lt;/strong&gt; Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sharing Information:&lt;/strong&gt; Simply sharing news about Azumi Trust, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Volunteering:&lt;/strong&gt; Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Donating Food:&lt;/strong&gt; Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Donating Preloved Household Items:&lt;/strong&gt; See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Donating Services:&lt;/strong&gt; Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Donating Space or Facilities:&lt;/strong&gt; Envision community projects flourishing in the rooms or grounds you offer—places where healing, connection, and growth take root.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Donating Money:&lt;/strong&gt; Every pound you give plants a seed of freedom, shelter, and renewal. Your financial support fuels vital projects like Azumi House, community gardening, and outreach programs that touch hundreds of lives yearly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-we-do-with-your-donation&#34;&gt;What We Do with Your Donation&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“Sometimes, you may realize that your generosity today is the best choice you can make—not only transforming lives in our community but gently transforming your own heart as well.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At Azumi Trust, your donation blossoms into practical and spiritual support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Azumi House:&lt;/strong&gt; Providing safe, low-rent housing for disadvantaged Christian men, your gift offers stability and a welcoming home where healing begins.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Community Projects:&lt;/strong&gt; From the Hope Garden’s healing spaces, to Ladies’ Day fellowship, to the Children&amp;rsquo;s Club’s joy and learning, your giving nurtures growth and community.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Interfaith Bridge Building:&lt;/strong&gt; Your support fosters understanding, respect, and peace among diverse faith groups, creating a stronger, more united neighborhood.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Collaborative Ministry &amp;amp; Outreach:&lt;/strong&gt; You empower grassroots ministries and pastoral care, bringing advocacy, resources, and care to those who need it most.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;engaging-and-connecting-with-giving&#34;&gt;Engaging and Connecting with Giving&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Feel&lt;/em&gt; the warmth spreading through the community because of your kindness. &lt;em&gt;Hear&lt;/em&gt; the soft voices of gratitude echoing through lives you help rebuild. &lt;em&gt;See&lt;/em&gt; the bright future unfolding with every hand extended and every heart encouraged. &lt;em&gt;Know&lt;/em&gt; the deep peace that arises when you become part of something larger—a mission of hope and love.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quotes-to-inspire-your-giving&#34;&gt;Quotes to Inspire Your Giving&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The best way to find yourself is to lose yourself in the service of others.”&lt;/em&gt; — Mahatma Gandhi&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“You can’t separate peace from freedom because no one can be at peace unless he has his freedom.”&lt;/em&gt; — Malcolm X&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Service is the rent we pay for the privilege of living on this earth.”&lt;/em&gt; — Shirley Chisholm&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Love cannot remain by itself — it has no meaning. Love has to be put into action and that action is service.”&lt;/em&gt; — Mother Teresa&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;your-invitation&#34;&gt;Your Invitation&lt;/h2&gt;
+&lt;p&gt;As you choose to contribute—whether through prayer, sharing, volunteering, donating goods, space, services, or funds—you quietly become part of a loving community changing lives and nurturing hope.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Imagine&lt;/em&gt; the joy that blooms in each heart you touch—and feel how, in giving, you too are transformed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;To support Azumi Trust is to step into a story of love made real, where your gifts create freedom, peace, and new life for all.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;You might begin to feel how, with a simple choice today, doors of hope quietly open for someone in need. As you explore ways to help, imagine your generosity softly blooming into freedom and new life for families throughout our community. When you decide to contribute, notice the subtle shift—not only in others&amp;rsquo; lives, but within your own heart—as kindness flows outward and gently grows. Picture the relief and warmth your gift brings, and as you consider giving, sense a growing connection and purpose taking root within you. By choosing to support Azumi Trust now, you become part of a caring circle, weaving strength and peace into every life touched—including your own.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
+&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
+&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
+  Donate Now - Transform Lives
+&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title> 🌱 WHAT WE DO</title>
+      <link>http://localhost:1313/what-we-do/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/what-we-do/</guid>
+      <description>&lt;h1 id=&#34;about-us--azumi-trust&#34;&gt;About Us — Azumi Trust&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
+&lt;p&gt;Picture yourself stepping into a space where &lt;strong&gt;freedom&lt;/strong&gt;, &lt;strong&gt;hope&lt;/strong&gt;, and &lt;strong&gt;community&lt;/strong&gt; bloom in the heart of South-East Birmingham. Here, at Azumi Trust, our name—&lt;em&gt;Azumi&lt;/em&gt;—rings rich with meaning. Rooted in the Persian word for “freedom” or “liberty,” it travels through diverse Middle Eastern and South Asian languages—Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri—carrying the promise of liberty to all corners of human experience.&lt;/p&gt;
+&lt;p&gt;As you sense that gift, imagine how that freedom isn’t just a word here; it is lived in every handshake, every conversation, every moment of care extended across cultures, ages, and faiths.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;our-story-and-mission-following-the-spirit&#34;&gt;Our Story and Mission: Following the Spirit&lt;/h2&gt;
+&lt;p&gt;Founded in &lt;strong&gt;1991&lt;/strong&gt; by Dr. Robin Fisher, a compassionate GP who witnessed deep hardship in Sparkbrook’s drug-affected community, Azumi Trust has grown from a humble outreach into a vibrant Christian charity. Though the original medical practice and drug treatment closed mid-1990s, our vision—&lt;em&gt;to follow where God is working&lt;/em&gt;—endures and expands.&lt;/p&gt;
+&lt;p&gt;You might hear echoes of the past as youth clubs once filled Azumi House’s rooms with laughter and learning; see children kicking balls with the Azumi Tigers football team; or feel the gentle warmth of mothers gathering in groups that blossom into friendship.&lt;/p&gt;
+&lt;p&gt;The Trust doesn’t seek to create projects on its own; instead, it accompanies passionate community members and seasoned Christian workers who simply want to &lt;em&gt;get on with&lt;/em&gt; serving, unburdened by red tape.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;azumi-house--a-home-a-haven&#34;&gt;Azumi House — A Home, A Haven&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;&lt;img src=&#34;Azumi-house.jpg&#34; alt=&#34;Azumi House&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Step closer to &lt;strong&gt;Azumi House&lt;/strong&gt;, the heart of our operations and a symbol of transformation. Once a family home, then a GP surgery, Azumi House has been a sanctuary since our purchase in &lt;strong&gt;1997&lt;/strong&gt; with support from Christ Church Sparkbrook.&lt;/p&gt;
+&lt;p&gt;Imagine the walls that have housed over two dozen men across more than a dozen nationalities—young, single Christians who find refuge here. Imagine the reflections in the large ground floor rooms that once echoed with youth club chatter, now transformed into welcoming residential spaces, while “The Workshop” remains alive as a place for prayer and intimate community meetings.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This building is more than bricks; it’s a living story, a &lt;em&gt;vehicle&lt;/em&gt; inviting others onboard to journey together in hope, sharing experiences and resources.&lt;/p&gt;
+&lt;p&gt;Azumi House stands as a cornerstone of Azumi Trust’s mission, embodying a rich history of transformation and community support in South-East Birmingham. Originally a family home turned GP surgery in the 1980s, it became central to the Trust’s work when Dr. Robin Fisher, the founder of Azumi Trust, took over the practice. In 1997, with the help of Christ Church Sparkbrook and a major donor, the Trust purchased the building, marking a new chapter of dedicated service.&lt;/p&gt;
+&lt;p&gt;Imagine Azumi House as more than just a building—it&amp;rsquo;s a sanctuary of hope and healing. Over the years, it has provided a safe, low-rent home primarily for disadvantaged Christian single men, often young, from more than a dozen nationalities. The first floor has long been home to these men, reflecting the Trust’s commitment to creating a community where residents are supported pastorally and encouraged to grow in faith and independence.&lt;/p&gt;
+&lt;p&gt;The ground floor has witnessed decades of vibrant community activity. It once housed a youth club and homework club aimed at local children and young people, mainly run by members of Christ Church but open to all in the neighborhood. It has been a base for various projects like the ‘Bright Sparks’ mother and toddler group and even the ‘Azumi Tigers’ football team. The Trust’s ethos has always been to “follow what God is doing,” supporting existing passionate community efforts rather than setting up new structures unnecessarily.&lt;/p&gt;
+&lt;p&gt;In 2008, the Trust renovated an annex known as ‘The Workshop,’ providing an additional meeting space with separate access and facilities. This room continues today as a prayer room and a place for small community gatherings. Although the two large ground floor rooms were eventually converted for residential use following the opening of the new Christ Church building nearby in 2012, the Workshop remains a beacon of outreach and spiritual support.&lt;/p&gt;
+&lt;p&gt;Azumi House also offers guest accommodations upstairs, welcoming visitors of residents and short-term guests, reinforcing the sense of community and hospitality at the heart of the Trust’s vision.&lt;/p&gt;
+&lt;p&gt;As you imagine the walls of Azumi House, envision a place alive with stories of restoration—a place where freedom, peace, and new life blossom in alignment with the Trust’s strapline from 2 Corinthians 3:17: &lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; The building acts as both a physical and spiritual ‘vehicle,’ enabling various groups and individuals to journey together, share resources, and deepen their impact in South-East Birmingham.&lt;/p&gt;
+&lt;p&gt;This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Azumi House remains a tangible expression of Azumi Trust’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.&lt;/p&gt;
+&lt;p&gt;If you picture yourself walking through its doors, you’d encounter not only a safe home but a community where hope flourishes, friendships are formed, and lives are quietly transformed by genuine care and compassion.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;hope-therapeutic-garden--growing-healing-together&#34;&gt;Hope Therapeutic Garden — Growing Healing Together&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;Hope Therapeutic Garden&#34; 
+               srcset=&#34;http://localhost:1313/what-we-do/heaven-garden_hu_7558a938d7387f46.webp 320w, http://localhost:1313/what-we-do/heaven-garden_hu_2f9aaf033c3f5baf.webp 480w, http://localhost:1313/what-we-do/heaven-garden_hu_c2ad12fe6031c0cb.webp 512w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/what-we-do/heaven-garden_hu_7558a938d7387f46.webp&#34;
+               width=&#34;512&#34;
+               height=&#34;512&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Now imagine the gentle hands tending rows of vegetables, the soft rustle of leaves in a garden born out of compassion. The &lt;strong&gt;Hope Therapeutic Garden&lt;/strong&gt;, started in &lt;strong&gt;2008&lt;/strong&gt;, offers more than green growth—it nurtures healing, friendship, and belonging for those marginalized by ethnicity, disability, or status.&lt;/p&gt;
+&lt;p&gt;Visualize people arriving with anticipation, perhaps singing joyous songs like &lt;em&gt;“I’m on Top Of The World”&lt;/em&gt;, stepping off their buses, ready to embrace the peace found in soil and fellowship. Feel the comforting aroma of earth mingling with warm cups of tea shared beneath open skies.&lt;/p&gt;
+&lt;p&gt;Over twelve years, retreats into the Cotswolds or camping trips challenged by British weather have woven stories of resilience and joy. Annual BBQs and celebrations mark community milestones, birthdays, and global traditions—each event strengthening bonds and echoing the love of Christ in action.&lt;/p&gt;
+&lt;p&gt;Participants learn new skills—composting, grafting, growing exotic crops—and form friendships that become lifelines.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Hope Therapeutic Garden, also lovingly known as Hope Garden, is a verdant sanctuary of healing, fellowship, and renewal deeply rooted in the heart of South-East Birmingham. Born in 2008 from a compassionate vision sparked by Mary Carroll, who after witnessing the struggles of destitute asylum seekers living nearby, sought to create a place where marginalized individuals—especially women suffering from social exclusion, poor mental health, and other challenges—could find rest, support, and community.&lt;/p&gt;
+&lt;p&gt;Imagine a wild, uncared-for garden transformed by gentle hands into an inviting space where people of many backgrounds gather over tea and conversation, healing through connection and the nurturing power of nature. Mary saw growing and harvesting not only as practical acts but as profound healing practices—moments where people relax, share stories, and experience Christ’s love in action.&lt;/p&gt;
+&lt;p&gt;The garden became a refuge from harsh realities—where participants could thrive emotionally, mentally, and socially. The early attendees were residents of nearby Hope House and visitors from health drop-in sessions at Azumi House. For many, the garden offered better nourishment than medicine—both physical from the fresh produce grown and mental from the community’s support. One participant even celebrated arriving at Hope Garden by singing “I’m on Top of the World,” a joyful expression of the freedom and happiness the garden inspired.&lt;/p&gt;
+&lt;p&gt;Hope Garden also nurtured growth beyond plants: retreats to serene locations like the Cotswolds, Belmont Abbey, and British parks enriched participants’ spirits. Annual gatherings, like summer BBQs and celebrations of cultural days such as World Africa Day, Easter egg hunts, and Christmas festivities, knit diverse individuals into a warm, extended family.&lt;/p&gt;
+&lt;p&gt;Volunteers play a vital role here—faithful people like Nathalie, Mauricio, and Pauline who go the extra mile, whether by driving participants to events, delivering food, offering advice, or simply being dependable friends. Despite challenges like funding shortages or unexpected hurdles (heating failures, last-minute meal preparations), the faith and dedication of this small but mighty team keep the garden flourishing.&lt;/p&gt;
+&lt;p&gt;Through Hope Garden, people learn valuable skills such as composting, grafting, and vegetable cultivation. The project also forged connections with organizations like Ryton Organic Gardens through initiatives like “Growing From Your Roots,” which celebrate heritage, gardening traditions, and cultural exchange.&lt;/p&gt;
+&lt;p&gt;As you envision Hope Therapeutic Garden, feel the gentle rustle of leaves and the quiet hum of friendship growing alongside vegetables. Hear laughter blending with bird song. See faces brightened by shared meals and nature’s beauty. Know that here, in this vibrant patch of earth, freedom, peace, and new life take root—offering hope not just as a word, but as a lived reality.&lt;/p&gt;
+&lt;p&gt;Hope Garden stands as a testament to Azumi Trust’s spirit: to &lt;em&gt;follow where God is working&lt;/em&gt;, to foster belonging among the marginalized, and to share love that transforms both the soil and the soul. It invites all who enter to be part of a growing story—one of nurture, healing, and joyful life renewed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;volunteers-and-trustees--the-heartbeat-of-our-work&#34;&gt;Volunteers and Trustees — The Heartbeat of Our Work&lt;/h2&gt;
+&lt;p&gt;Behind every garden bloom and every sunset over Azumi House stand &lt;strong&gt;volunteers&lt;/strong&gt; and &lt;strong&gt;trustees&lt;/strong&gt;. Picture Nathalie and Mauricio, Columban missionaries pressing beyond their comfort zones to serve, or Pauline driving the minibus, delivering life-saving support.&lt;/p&gt;
+&lt;p&gt;Feel the warmth radiating from their honest dedication—the countless acts of kindness like delivering meals, guiding those lost through paperwork, and holding hands during hard times.&lt;/p&gt;
+&lt;p&gt;Our trustees, Liz, Mike, and Eve, quietly navigate challenges—conflict resolution, sourcing resources, stewarding finances—ensuring the Trust’s foundation remains strong and welcoming.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;buildings-and-infrastructure--foundations-for-growth&#34;&gt;Buildings and Infrastructure — Foundations for Growth&lt;/h2&gt;
+&lt;p&gt;Visualize Azumi House standing firm on Stratford Road, its rooms buzzing with purpose—community meetings, prayer groups, welcoming visitors in guest rooms, educational activities, and spaces for healing.&lt;/p&gt;
+&lt;p&gt;Imagine small gardens growing next door, extending the Reach of Hope Therapeutic Garden, and the promise of new community centers on the horizon designed for fellowship and outreach.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;looking-ahead--growing-the-circle-of-impact&#34;&gt;Looking Ahead — Growing the Circle of Impact&lt;/h2&gt;
+&lt;p&gt;As you imagine the thriving future of Azumi Trust, sense the gentle momentum of new partnerships and projects—extending our embrace to even more who need freedom, peace, and renewal.&lt;/p&gt;
+&lt;p&gt;Future plans include expanding garden spaces, offering more supported accommodation, deepening interfaith dialogue, and partnering with grassroots projects who share our Christian ethos but seek a stable structure to amplify their mission.&lt;/p&gt;
+&lt;p&gt;Each initiative, every new smile formed in the light of faith and care, is a testimony that the Spirit’s work here is alive and growing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;join-us--become-part-of-this-living-story&#34;&gt;Join Us — Become Part of This Living Story&lt;/h2&gt;
+&lt;p&gt;Right now, you might feel a quiet stirring—a gentle nudge inviting you to step closer and belong.&lt;/p&gt;
+&lt;p&gt;You are warmly invited to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pray with us, weaving spiritual strength&lt;/li&gt;
+&lt;li&gt;Volunteer your time, skills, or care&lt;/li&gt;
+&lt;li&gt;Share our story, spreading hope&lt;/li&gt;
+&lt;li&gt;Donate resources, money, or space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;As you do, you may notice how your kindness flows outward, planting seeds not just in others&amp;rsquo; lives, but also flowering within your own heart.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;experience-azumi-trust-through-your-senses&#34;&gt;Experience Azumi Trust Through Your Senses&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Feel&lt;/em&gt; the gentle warmth of community weaving through local streets&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Hear&lt;/em&gt; laughter rising over freshly turned soil and shared meals&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;See&lt;/em&gt; lives renewed where hardship once overshadowed hope&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Know&lt;/em&gt; the deep peace found in freedom and belonging—freedom that Azumi so beautifully names and embodies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The best way to find yourself is to lose yourself in the service of others.”&lt;/em&gt; — Mahatma Gandhi&lt;br&gt;
+&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;br&gt;
+&lt;em&gt;“Love cannot remain by itself — it has no meaning. Love has to be put into action and that action is service.”&lt;/em&gt; — Mother Teresa&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Azumi Trust is not just a charity—it is a &lt;em&gt;movement&lt;/em&gt; of freedom, faith, and fellowship, quietly changing lives in South-East Birmingham and inviting you to join the journey.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Imagine&lt;/em&gt; your story intertwining here—and feel how giving, serving, and belonging bring freedom not only to others but within yourself.&lt;/p&gt;
+&lt;h2 id=&#34;the-purpose-of-azumi-trust&#34;&gt;The Purpose of Azumi Trust&lt;/h2&gt;
+&lt;p&gt;Azumi Trust stands as a beacon of hope and transformation in South-East Birmingham, deeply rooted in a Christian mission to bring freedom, peace, and new life to marginalized individuals and families. For over three decades, this charitable organization has tirelessly worked to nurture a community where love is not just felt but lived, reflecting the profound truth that *“Love cannot remain by itself — it has no meaning. Love has to be put into action and that action is service.&lt;/p&gt;
+&lt;p&gt;At its heart, Azumi Trust exists to serve those often overlooked—people affected by age, ethnicity, disability, poverty, or displacement—offering not only practical assistance but a compassionate, faith-filled community. Inspired by the life and teachings of Christ, the Trust’s purpose is far-reaching yet deeply personal: to foster belonging, well-being, and spiritual growth in neighborhoods where these gifts are most needed.&lt;/p&gt;
+&lt;p&gt;As Mahatma Gandhi wisely said, &lt;em&gt;“The best way to find yourself is to lose yourself in the service of others.”&lt;/em&gt; Azumi Trust exemplifies this by placing service at the center of its work, creating spaces where lives can be rebuilt, relationships restored, and hope renewed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;main-activities-of-azumi-trust&#34;&gt;Main Activities of Azumi Trust&lt;/h2&gt;
+&lt;h3 id=&#34;azumi-house-a-safe-haven&#34;&gt;Azumi House: A Safe Haven&lt;/h3&gt;
+&lt;p&gt;One of the Trust’s flagship initiatives is &lt;strong&gt;Azumi House&lt;/strong&gt;, providing secure, low-rent accommodation for disadvantaged Christian single men, particularly in the Sparkbrook area. This project offers more than shelter—it is a place of refuge, pastoral care, and community engagement, enabling residents to regain stability and actively participate in local church life and ministry.&lt;/p&gt;
+&lt;h3 id=&#34;active-community-projects&#34;&gt;Active Community Projects&lt;/h3&gt;
+&lt;p&gt;Azumi Trust supports three vibrant community projects that directly benefit local families and individuals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hope Garden Project:&lt;/strong&gt; A sanctuary for asylum seekers and refugees where healing flourishes through gardening skills, fellowship, and mutual support.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ladies’ Day:&lt;/strong&gt; Weekly gatherings that nurture fellowship and encouragement among local women, strengthening bonds of sisterhood.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Children’s Club:&lt;/strong&gt; Providing a safe, joyful space for children to learn, play, and grow in a supportive environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Together, these projects embody the belief that &lt;em&gt;“Small acts, when multiplied by millions of people, can transform the world.”&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;interfaith-bridge-building&#34;&gt;Interfaith Bridge Building&lt;/h3&gt;
+&lt;p&gt;Living their Christian faith with humility and openness, Azumi Trust fosters respectful dialogue and cooperation among people of different faiths. By sharing Christ’s love with sensitivity to diversity, the Trust creates opportunities for deeper community connection and mutual growth—inviting all to experience the &lt;em&gt;well-being&lt;/em&gt; that comes from peace and understanding.&lt;/p&gt;
+&lt;h3 id=&#34;collaborative-ministry-and-outreach&#34;&gt;Collaborative Ministry and Outreach&lt;/h3&gt;
+&lt;p&gt;Azumi Trust also acts as an umbrella organization, partnering with like-minded Christian groups to provide governance, financial support, and facilities, ensuring that grassroots projects can thrive without bureaucratic burdens. Their outreach and pastoral care programs impact hundreds of lives annually—offering advocacy, support, and new opportunities for those in need.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-spirit-of-freedom-peace-and-hope&#34;&gt;A Spirit of Freedom, Peace, and Hope&lt;/h2&gt;
+&lt;p&gt;The Trust’s name, &lt;em&gt;Azumi&lt;/em&gt;, means freedom—an ethos reflected in every facet of their work. As Malcolm X observed, &lt;em&gt;“You can’t separate peace from freedom because no one can be at peace unless he has his freedom.”&lt;/em&gt; Through compassionate service, Azumi Trust helps individuals reclaim this freedom, fostering peace not only in external circumstances but within hearts and communities.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;closing-reflection&#34;&gt;Closing Reflection&lt;/h2&gt;
+&lt;p&gt;Azumi Trust’s mission reminds us that &lt;em&gt;“The greatness of a community is most accurately measured by the compassionate actions of its members.”&lt;/em&gt; Their unwavering commitment to serving Birmingham’s diverse communities, one life at a time, eloquently illustrates how faith in action multiplies hope beyond measure—changing lives and transforming selves alike.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To support or learn more about Azumi Trust’s inspiring work is to step into a story of love, freedom, and flourishing community.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
+&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
+&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
+  Donate Now - Transform Lives
+&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>🌱 DONATE</title>
+      <link>http://localhost:1313/donate/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/donate/</guid>
+      <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Azumi Trust is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a &lt;strong&gt;big thank you&lt;/strong&gt; to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.&lt;/p&gt;
+&lt;p&gt;Our work is real, and so are the needs—bus fares for volunteers, gardening tools, and trusted spaces for those who feel alone. It&amp;rsquo;s &lt;strong&gt;your honest support&lt;/strong&gt; that helps us reach people like &lt;em&gt;Kevin&lt;/em&gt; and &lt;em&gt;Sarah&lt;/em&gt;, offering new beginnings where they are needed most.&lt;/p&gt;
+&lt;p&gt;You are warmly invited now to become a part of what we do, just as you are. &lt;em&gt;And as you decide to give, you may quietly notice a sense of connection and honest purpose growing within you—knowing that your gift truly matters.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ways-you-can-give&#34;&gt;Ways You Can Give&lt;/h2&gt;
+&lt;h3 id=&#34;1-donate-online&#34;&gt;1. Donate Online&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can give, securely and honestly, right here:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;d like to support our mortgage fund directly, visit:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gift Aid:&lt;/strong&gt; If you&amp;rsquo;re a UK taxpayer, please consider selecting Gift Aid when giving online—it allows us to reclaim tax already paid, at &lt;em&gt;no extra cost to you&lt;/em&gt;. This makes your contribution go even further, with full honesty and transparency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Please note:&lt;/em&gt; 3% of each online gift is given to Stewardship, a UK Christian charity, ensuring every penny is used honestly for the good of communities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-bank-transfer&#34;&gt;2. Bank Transfer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You may choose to set up a standing order or one-off payment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sort Code: &lt;strong&gt;30 96 28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Account Number: &lt;strong&gt;17913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IBAN: &lt;strong&gt;GB18LOYD30962817913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;BIC: &lt;strong&gt;LOYDGB21274&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you wish to help a specific project, let us know by note, email, or simply specify it on your donation—so your honest intention is fully reflected.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-cheque&#34;&gt;3. Cheque&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Make cheques payable to &lt;strong&gt;‘Azumi Trust’&lt;/strong&gt; and post to:&lt;/p&gt;
+&lt;p&gt;Azumi Trust&lt;br&gt;
+56 Grantham Road&lt;br&gt;
+Birmingham, B11 1LX, England, UK&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;your-gift-in-action&#34;&gt;Your Gift in Action&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Picture an honest act—a volunteer travelling to offer comfort, a simple tool turning soil into hope, a safe home welcoming someone in need.&lt;/em&gt; Each moment is made possible by your sincere generosity.&lt;/p&gt;
+&lt;p&gt;As you choose to give, notice the gentle assurance that comes from being part of a community built honestly on love, trust, and meaningful change.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Knock, and the door will be opened to you.”&lt;/em&gt; — Matthew 7:7&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Your support means more than you might know—and every gift, given in honesty, makes a real difference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ABOUT US</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-us---azumi-trust&#34;&gt;&lt;strong&gt;About Us - Azumi Trust&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
+&lt;p&gt;Azumi Trust is a small but deeply rooted Christian charity serving &lt;strong&gt;South-East Birmingham&lt;/strong&gt; — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.&lt;/p&gt;
+&lt;p&gt;The name &lt;strong&gt;Azumi&lt;/strong&gt; comes from the Persian word for &lt;em&gt;“freedom” or “liberty”&lt;/em&gt;, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. &lt;em&gt;From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;our-story-following-gods-lead&#34;&gt;&lt;strong&gt;Our Story: Following God’s Lead&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;It began in &lt;strong&gt;1991&lt;/strong&gt; with Dr. Robin Fisher, a GP in Sparkbrook, moved by compassion for the many drug users in his community.&lt;br&gt;
+From a small Christian outreach grew a vision — a vision we still carry today: &lt;em&gt;follow what God is doing&lt;/em&gt; rather than impose our own plans.&lt;/p&gt;
+&lt;p&gt;In the mid-1990s, when the initial medical and drug work ended, the charity’s heartbeat continued. By &lt;strong&gt;1997&lt;/strong&gt;, with the support of Christ Church, the old GP surgery became &lt;strong&gt;Azumi House&lt;/strong&gt; — our home, our base, and a place of transformation.&lt;/p&gt;
+&lt;p&gt;In those early days, you could hear the &lt;em&gt;laughter of youth clubs&lt;/em&gt;, the &lt;em&gt;soft chatter of homework help sessions&lt;/em&gt;, and the &lt;em&gt;warm welcome of community mothers and toddlers&lt;/em&gt;. Later came football teams like &lt;em&gt;Azumi Tigers&lt;/em&gt;, and projects like &lt;em&gt;Bright Sparks&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;volunteers-and-trustees-the-heart-and-the-hands&#34;&gt;&lt;strong&gt;Volunteers and Trustees: The Heart and the Hands&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Every day, our &lt;strong&gt;volunteers&lt;/strong&gt; bring this mission to life — some offering listening ears, some practical skills, others a strong back or creative spark. Our &lt;strong&gt;trustees&lt;/strong&gt; guide the journey, ensuring every choice honours the founding vision while embracing today’s opportunities.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As you picture their dedication, you might begin to notice how your own skills, prayers, or time could weave into this same fabric of care.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;buildings-that-shelter-dreams&#34;&gt;&lt;strong&gt;Buildings That Shelter Dreams&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Azumi House&lt;/strong&gt; is more than a building. It’s a home for projects like the &lt;strong&gt;Hope Garden&lt;/strong&gt; — where people find healing through soil and friendship, or as a quiet meeting space for grassroots Christian initiatives.&lt;/p&gt;
+&lt;p&gt;We like to see ourselves as a &lt;strong&gt;vehicle&lt;/strong&gt; — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and network… you just bring your God-given vision, and together, we travel further.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;future-projects-the-road-ahead&#34;&gt;&lt;strong&gt;Future Projects: The Road Ahead&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In &lt;strong&gt;2010&lt;/strong&gt;, we became a Charitable Company with a new constitution to welcome fresh partnerships — and we’re not stopping here.&lt;/p&gt;
+&lt;p&gt;We envision:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More safe meeting spaces.&lt;/li&gt;
+&lt;li&gt;Expanded community garden projects.&lt;/li&gt;
+&lt;li&gt;Greater interfaith bridge-building.&lt;/li&gt;
+&lt;li&gt;Support for more groups who already have the &lt;em&gt;passion&lt;/em&gt; to serve but need the &lt;em&gt;framework&lt;/em&gt; to flourish.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Perhaps right now, you can already imagine the lives waiting to be touched… the doors waiting to open.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;our-invitation-to-you&#34;&gt;&lt;strong&gt;Our Invitation to You&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;We believe freedom is not just something you receive — it’s something you can give.&lt;br&gt;
+You can join us through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Praying for our community.&lt;/li&gt;
+&lt;li&gt;Volunteering your time or skills.&lt;/li&gt;
+&lt;li&gt;Sharing our story with others.&lt;/li&gt;
+&lt;li&gt;Donating money, food, preloved goods, space, or professional services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Service is the rent we pay for the privilege of living on this earth.”&lt;/em&gt; – Shirley Chisholm&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;As you read this, you may already feel a quiet stirring, sensing that your presence here is no accident — that perhaps, this is your moment to come aboard.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;experience-our-mission-through-your-senses&#34;&gt;&lt;strong&gt;Experience Our Mission Through Your Senses&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Feel&lt;/em&gt; the warmth of welcome in Azumi House.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;See&lt;/em&gt; friendship grow where once there were barriers.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Hear&lt;/em&gt; the laughter of children in safe places.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Know&lt;/em&gt; the peace in helping someone find their freedom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Azumi Trust isn’t just about what &lt;em&gt;we&lt;/em&gt; do — it’s about what &lt;strong&gt;we can do together&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Freedom… peace… new life — not just for our neighbours in Birmingham, but also for everyone who chooses to be part of this journey.
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
+&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
+&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
+  Donate Now - Transform Lives
+&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h2 id=&#34;meet-our-team&#34;&gt;Meet Our Team&lt;/h2&gt;
+&lt;p&gt;
+
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>🕵️ Privacy Policy</title>
       <link>http://localhost:1313/privacy/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
@@ -818,6 +2089,68 @@ Parallel 4   :         des6, after des4, 1d
       <description>&lt;p&gt;This website provides general information and discussions about health and related subjects. The information and other content provided on this site, or in any linked materials, are not intended and should not be construed as medical advice, nor is the information a substitute for professional medical expertise or treatment.&lt;/p&gt;
 &lt;p&gt;If you or any other person has a medical concern, you should consult with your health care provider or seek other professional medical treatment. Never disregard professional medical advice or delay in seeking it because of something that have read on this blog or in any linked materials. If you think you may have a medical emergency, call your doctor or emergency services immediately.&lt;/p&gt;
 &lt;p&gt;The opinions and views expressed on this site and website have no relation to those of any academic, hospital, health practice or other institution.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>http://localhost:1313/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in my 
+ on LLMs.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>http://localhost:1313/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>http://localhost:1313/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
+.&lt;/p&gt;
 </description>
     </item>
     

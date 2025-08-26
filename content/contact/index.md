@@ -18,11 +18,11 @@ image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
 
-Azadi Trust warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.
+Azumi Trust warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.
 
 ---
 
-## Contact Us — Azadi Trust
+## Contact Us — Azumi Trust
 
 *“Knock, and the door will be opened to you.”* — Jesus Christ (Matthew 7:7)
 
@@ -34,7 +34,7 @@ As you reach out, you might begin to feel the warmth of a welcoming community re
 
 - **Phone:** +44 (0)121 772 9756  
 - **WhatsApp:** +44 (0)7815 123456 (Chat with us anytime for quick questions or to connect with our team)  
-- **Email:** info@azaditrust.org.uk  
+- **Email:** info@Azumitrust.org.uk  
 
 Feel free to call or message — each connection is a chance to open doors of hope and partnership.
 
@@ -42,7 +42,7 @@ Feel free to call or message — each connection is a chance to open doors of ho
 
 ## Visit Us
 
-**Azadi House**  
+**Azumi House**  
 66 Stratford Road, Sparkbrook,  
 Birmingham, B11 1SZ, UK
 
@@ -56,7 +56,7 @@ Birmingham, B11 1SZ, UK
 
 ### Directions
 
-- **By public transport:** Azadi House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.  
+- **By public transport:** Azumi House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.  
 - **By car:** Limited parking is available nearby on Stratford Road.  
 
 We’re here to help you find your way—just ask when you call or message.
@@ -67,7 +67,7 @@ We’re here to help you find your way—just ask when you call or message.
 
 *You might already sense that making contact is more than a formality—it’s the start of a shared journey toward freedom and new life.*
 
-Through phone, message, or in person, your reach brings you closer to stories of healing, fellowship, and community growth nurtured through Azadi Trust’s Christian ethos.
+Through phone, message, or in person, your reach brings you closer to stories of healing, fellowship, and community growth nurtured through Azumi Trust’s Christian ethos.
 
 ---
 

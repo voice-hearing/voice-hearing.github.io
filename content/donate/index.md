@@ -22,7 +22,7 @@ image:
 
 *“Honest hearts produce honest actions.”*
 
-*Azadi Trust is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663*
+*Azumi Trust is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663*
 
 As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a **big thank you** to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.
 
@@ -40,7 +40,7 @@ You are warmly invited now to become a part of what we do, just as you are. *And
   [**Give Now**](https://www.give.net/20148912)
 
 - If you'd like to support our mortgage fund directly, visit:  
-  [**Mortgage Fund**](https://my.give.net/buildingfundAzadi)
+  [**Mortgage Fund**](https://my.give.net/buildingfundAzumi)
 
 - **Gift Aid:** If you're a UK taxpayer, please consider selecting Gift Aid when giving online—it allows us to reclaim tax already paid, at *no extra cost to you*. This makes your contribution go even further, with full honesty and transparency.
 
@@ -63,9 +63,9 @@ If you wish to help a specific project, let us know by note, email, or simply sp
 
 ### 3. Cheque
 
-- Make cheques payable to **‘Azadi Trust’** and post to:
+- Make cheques payable to **‘Azumi Trust’** and post to:
 
-  Azadi Trust  
+  Azumi Trust  
   56 Grantham Road  
   Birmingham, B11 1LX, England, UK
 
