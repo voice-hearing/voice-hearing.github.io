@@ -94,33 +94,33 @@
         </div>
       </div>
       
-      <!-- RIGHT COLUMN: Features List with Enhanced Padding -->
-      <div class="space-y-6 px-2 lg:px-4">
+      <!-- RIGHT COLUMN: Features List with Mobile-Optimized Icons -->
+      <div class="space-y-4 px-2 lg:px-4">
         {{ range $block.content.features }}
-        <div class="flex items-start space-x-6 p-6 lg:p-8 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 border border-gray-100 dark:border-gray-700">
+        <div class="flex items-start space-x-3 lg:space-x-6 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 border border-gray-100 dark:border-gray-700">
           
-          <!-- Feature Icon with Padding -->
+          <!-- Feature Icon - Smaller on Mobile -->
           {{ with .icon }}
-          <div class="flex-shrink-0 mt-1 pr-2">
-            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-8 h-8 text-primary-600 dark:text-primary-400"`) }}
+          <div class="flex-shrink-0 mt-0.5">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-5 h-5 lg:w-8 lg:h-8 text-primary-600 dark:text-primary-400"`) }}
           </div>
           {{ end }}
           
-          <!-- Feature Content with Enhanced Spacing -->
-          <div class="flex-grow ml-1 pr-2">
-            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3 px-2">
+          <!-- Feature Content - Optimized Mobile Layout -->
+          <div class="flex-grow min-w-0">
+            <h4 class="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-1 lg:mb-2">
               {{ .name | $page.RenderString }}
             </h4>
-            <p class="text-gray-600 dark:text-gray-300 leading-relaxed px-2 mb-4">
+            <p class="text-sm lg:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
               {{ .description | $page.RenderString }}
             </p>
             
-            <!-- Optional Feature Button with Padding -->
+            <!-- Optional Feature Button -->
             {{ with .button }}
-            <div class="mt-4 px-2">
+            <div class="mt-2 lg:mt-3">
               <a href="{{ .url }}" 
                  {{ if .external }}target="_blank" rel="noopener"{{ end }}
-                 class="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 inline-flex items-center py-2 px-4 rounded-md hover:bg-primary-50 dark:hover:bg-primary-900/20">
+                 class="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 text-sm lg:text-base">
                 {{ .text }} →
               </a>
             </div>
