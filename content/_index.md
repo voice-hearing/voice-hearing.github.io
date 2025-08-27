@@ -46,7 +46,7 @@ sections:
       # Header Section
       title: "We Care and Share"
       blue: "OUR COMMUNITY"
-      text: "Allow Yourself to Submerge Into Warm Blanket of Being Loved"
+      text: "Sink into the warm blanket of being loved."
       # LEFT COLUMN: Hero Image with Overlay
       hero:
         title: "Interfaith Accommodation"
