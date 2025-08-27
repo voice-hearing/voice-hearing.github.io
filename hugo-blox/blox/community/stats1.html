@@ -23,20 +23,23 @@
       {{ end }}
     </div>
     
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 px-4">
-      {{ range $block.content.items }}
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-shadow duration-300">
-          <div class="flex items-center justify-center mb-6">
-            {{ with .icon }}
-            <div class="flex-shrink-0 mr-4">
-              {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-12 h-12 lg:w-14 lg:h-14 text-primary-600 dark:text-primary-400"`) }}
+    <!-- Features Grid - Expanded Side-to-Side on Mobile -->
+    <div class="mt-10 mx-auto max-w-screen-xl px-0 md:px-8 -mx-8 md:mx-0">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-4">
+        {{ range $block.content.items }}
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center justify-center mb-6">
+              {{ with .icon }}
+              <div class="flex-shrink-0 mr-4">
+                {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-12 h-12 lg:w-14 lg:h-14 text-primary-600 dark:text-primary-400"`) }}
+              </div>
+              {{ end }}
+              <h3 class="text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">{{ .name | $page.RenderString }}</h3>
             </div>
-            {{ end }}
-            <h3 class="text-3xl lg:text-5xl tracking-tight font-bold text-gray-900 dark:text-white">{{ .name | $page.RenderString }}</h3>
+            <p class="text-lg text-gray-600 dark:text-gray-300 text-center">{{ .description | $page.RenderString }}</p>
           </div>
-          <p class="text-lg text-gray-600 dark:text-gray-300 text-center">{{ .description | $page.RenderString }}</p>
-        </div>
-      {{ end }}
+        {{ end }}
+      </div>
     </div>
   </div>
 </section>
