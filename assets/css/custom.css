@@ -41,18 +41,17 @@
 }
 
 /* ========================================
-   DESKTOP MENU - CENTER ALIGNMENT
+   DESKTOP MENU - CENTERED (Keep as is)
    ======================================== */
 
-/* Move desktop menu to center (override previous right alignment) */
+/* Desktop menu stays centered */
 @media (min-width: 1024px) {
   header#site-header .navbar-nav {
     margin-left: auto !important;
-    margin-right: auto !important; /* Center the menu */
+    margin-right: auto !important; /* Keep centered */
     justify-content: center !important;
   }
   
-  /* Center the nav menu container */
   header#site-header #nav-menu {
     justify-content: center !important;
     margin-left: auto !important;
@@ -61,18 +60,89 @@
 }
 
 /* ========================================
-   DESKTOP BUTTON STYLING - ROUNDED WITH BACKGROUND
+   MOBILE MENU - RIGHT ALIGNED ONLY
    ======================================== */
 
-/* Style desktop button with red background colors */
+/* Move mobile menu items to the right */
+@media (max-width: 1023px) {
+  header#site-header .navbar-nav {
+    text-align: right !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+  }
+  
+  header#site-header .navbar-nav .nav-item {
+    display: block !important;
+    text-align: right !important;
+    margin-left: auto !important;
+    width: fit-content !important;
+  }
+  
+  /* Right align opened mobile menu */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+  
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu .nav-item {
+    margin-left: auto !important;
+    width: fit-content !important;
+  }
+}
+
+/* ========================================
+   REMOVE BUTTON FROM MOBILE TOP BAR
+   ======================================== */
+
+/* Hide button from mobile main menu bar (next to burger) */
+@media (max-width: 1023px) {
+  header#site-header .navbar .order-1 a[class*="inline-block"],
+  header#site-header .navbar .order-1 a[class*="rounded"],
+  header#site-header .navbar div[class*="ml-auto"] a,
+  header#site-header .navbar .md\\:ml-4,
+  header#site-header .navbar a.hidden.lg\\:inline-block {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   SHOW BUTTON ONLY IN OPENED MOBILE MENU
+   ======================================== */
+
+/* Initially hide mobile menu button */
+@media (max-width: 1023px) {
+  header#site-header #nav-menu li.mt-4 {
+    display: none !important;
+  }
+  
+  /* Show button only when menu is opened */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 {
+    display: inline-block !important;
+    margin-left: auto !important;
+    text-align: right !important;
+    width: fit-content !important;
+  }
+  
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
+    display: inline-block !important;
+    margin-left: auto !important;
+  }
+}
+
+/* ========================================
+   DESKTOP BUTTON STYLING - ROUNDED + RED
+   ======================================== */
+
+/* Desktop button styling */
 @media (min-width: 1024px) {
   header#site-header .navbar .order-1 a[class*="inline-block"],
   header#site-header .navbar .order-1 a[class*="rounded"],
   header#site-header .navbar a.hidden.lg\\:inline-block,
   header#site-header .navbar a[href*="button.url"] {
-    display: inline-block !important; /* Ensure it's visible on desktop */
+    display: inline-block !important;
     border-radius: 9999px !important; /* rounded-full */
-    background-color: #dc2626 !important; /* Light mode: red-600 */
+    background-color: #dc2626 !important; /* Light: red-600 */
     color: white !important;
     border: none !important;
     padding: 0.625rem 1.5rem !important;
@@ -81,11 +151,11 @@
     transition: all 0.3s ease !important;
   }
   
-  /* Desktop button hover state */
+  /* Desktop button hover */
   header#site-header .navbar .order-1 a[class*="inline-block"]:hover,
   header#site-header .navbar .order-1 a[class*="rounded"]:hover,
   header#site-header .navbar a.hidden.lg\\:inline-block:hover {
-    background-color: #b91c1c !important; /* Darker red on hover */
+    background-color: #b91c1c !important; /* Darker red hover */
     color: white !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3) !important;
@@ -93,54 +163,16 @@
 }
 
 /* ========================================
-   DESKTOP BUTTON - DARK MODE STYLING
+   MOBILE BUTTON STYLING - ROUNDED + RED
    ======================================== */
 
-/* Dark mode for desktop button */
-@media (min-width: 1024px) {
-  @media (prefers-color-scheme: dark) {
-    header#site-header .navbar .order-1 a[class*="inline-block"],
-    header#site-header .navbar .order-1 a[class*="rounded"],
-    header#site-header .navbar a.hidden.lg\\:inline-block {
-      background-color: #801b17 !important; /* Dark mode: darker red */
-      color: white !important;
-    }
-    
-    header#site-header .navbar .order-1 a[class*="inline-block"]:hover,
-    header#site-header .navbar .order-1 a[class*="rounded"]:hover,
-    header#site-header .navbar a.hidden.lg\\:inline-block:hover {
-      background-color: #991b1b !important; /* Darker hover in dark mode */
-      box-shadow: 0 4px 12px rgba(128, 27, 23, 0.3) !important;
-    }
-  }
-  
-  /* Dark mode class support */
-  .dark header#site-header .navbar .order-1 a[class*="inline-block"],
-  .dark header#site-header .navbar .order-1 a[class*="rounded"],
-  html[data-theme="dark"] header#site-header .navbar .order-1 a[class*="inline-block"],
-  html[data-theme="dark"] header#site-header .navbar a.hidden.lg\\:inline-block {
-    background-color: #801b17 !important; /* Dark mode: darker red */
-    color: white !important;
-  }
-  
-  .dark header#site-header .navbar .order-1 a[class*="inline-block"]:hover,
-  .dark header#site-header .navbar .order-1 a[class*="rounded"]:hover,
-  html[data-theme="dark"] header#site-header .navbar .order-1 a[class*="inline-block"]:hover {
-    background-color: #991b1b !important; /* Darker hover in dark mode */
-    box-shadow: 0 4px 12px rgba(128, 27, 23, 0.3) !important;
-  }
-}
-
-/* ========================================
-   UPDATE MOBILE BUTTON COLORS (Red Theme)
-   ======================================== */
-
-/* Update mobile button to use red colors instead of blue */
+/* Mobile button in opened menu */
 @media (max-width: 1023px) {
   header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-    background-color: #dc2626 !important; /* Light mode: red-600 */
+    border-radius: 9999px !important; /* rounded-full */
+    background-color: #dc2626 !important; /* Light: red-600 */
     color: white !important;
-    border-radius: 9999px !important;
+    border: none !important;
     padding: 0.625rem 1.5rem !important;
     font-weight: 600 !important;
     text-decoration: none !important;
@@ -150,7 +182,7 @@
     margin-left: auto !important;
   }
   
-  /* Mobile button hover state */
+  /* Mobile button hover */
   header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a:hover {
     background-color: #b91c1c !important; /* Darker red hover */
     color: white !important;
@@ -160,14 +192,52 @@
 }
 
 /* ========================================
-   MOBILE BUTTON - DARK MODE (Red Theme)
+   DARK MODE - DESKTOP BUTTON
+   ======================================== */
+
+@media (min-width: 1024px) {
+  /* Dark mode for desktop */
+  @media (prefers-color-scheme: dark) {
+    header#site-header .navbar .order-1 a[class*="inline-block"],
+    header#site-header .navbar .order-1 a[class*="rounded"],
+    header#site-header .navbar a.hidden.lg\\:inline-block {
+      background-color: #801b17 !important; /* Dark: darker red */
+      color: white !important;
+    }
+    
+    header#site-header .navbar .order-1 a[class*="inline-block"]:hover,
+    header#site-header .navbar .order-1 a[class*="rounded"]:hover,
+    header#site-header .navbar a.hidden.lg\\:inline-block:hover {
+      background-color: #991b1b !important; /* Dark hover */
+      box-shadow: 0 4px 12px rgba(128, 27, 23, 0.3) !important;
+    }
+  }
+  
+  /* Dark mode class support */
+  .dark header#site-header .navbar .order-1 a[class*="inline-block"],
+  .dark header#site-header .navbar .order-1 a[class*="rounded"],
+  html[data-theme="dark"] header#site-header .navbar .order-1 a[class*="inline-block"] {
+    background-color: #801b17 !important; /* Dark: darker red */
+    color: white !important;
+  }
+  
+  .dark header#site-header .navbar .order-1 a[class*="inline-block"]:hover,
+  .dark header#site-header .navbar .order-1 a[class*="rounded"]:hover,
+  html[data-theme="dark"] header#site-header .navbar .order-1 a[class*="inline-block"]:hover {
+    background-color: #991b1b !important; /* Dark hover */
+    box-shadow: 0 4px 12px rgba(128, 27, 23, 0.3) !important;
+  }
+}
+
+/* ========================================
+   DARK MODE - MOBILE BUTTON
    ======================================== */
 
 @media (max-width: 1023px) {
-  /* Dark mode colors for mobile */
+  /* Dark mode for mobile */
   @media (prefers-color-scheme: dark) {
     header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-      background-color: #801b17 !important; /* Dark mode: darker red */
+      background-color: #801b17 !important; /* Dark: darker red */
       color: white !important;
     }
     
@@ -180,7 +250,7 @@
   /* Dark mode class support for mobile */
   .dark header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
   html[data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-    background-color: #801b17 !important; /* Dark mode: darker red */
+    background-color: #801b17 !important; /* Dark: darker red */
     color: white !important;
   }
   
@@ -192,14 +262,39 @@
 }
 
 /* ========================================
-   FALLBACK STYLES FOR NETLIFY
+   BURGER MENU POSITIONING
    ======================================== */
 
-/* Ensure desktop button styling works on Netlify */
+/* Position burger menu properly (no button next to it on mobile) */
+@media (max-width: 1023px) {
+  header#site-header .navbar label[for="nav-toggle"] {
+    margin-right: 0 !important;
+    margin-left: auto !important; /* Push to far right */
+  }
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+/* Extra small devices */
+@media (max-width: 575px) {
+  header#site-header .navbar .order-1 a,
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+/* ========================================
+   NETLIFY DEPLOYMENT FALLBACKS
+   ======================================== */
+
+/* Desktop fallback */
 @media (min-width: 1024px) {
   body header#site-header .navbar .order-1 a {
     display: inline-block !important;
-    background: #dc2626 !important; /* Light mode red */
+    background: #dc2626 !important; /* Light red */
     border-radius: 50px !important;
     color: #ffffff !important;
     padding: 10px 24px !important;
@@ -208,22 +303,25 @@
   
   body.dark header#site-header .navbar .order-1 a,
   body[data-theme="dark"] header#site-header .navbar .order-1 a {
-    background: #801b17 !important; /* Dark mode red */
+    background: #801b17 !important; /* Dark red */
     color: #ffffff !important;
   }
 }
 
-/* Ensure mobile button styling works on Netlify */
+/* Mobile fallback */
 @media (max-width: 1023px) {
   body header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-    background: #dc2626 !important; /* Light mode red */
+    display: inline-block !important;
+    background: #dc2626 !important; /* Light red */
     border-radius: 50px !important;
     color: #ffffff !important;
+    padding: 10px 24px !important;
+    margin-left: auto !important;
   }
   
   body.dark header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
   body[data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-    background: #801b17 !important; /* Dark mode red */
+    background: #801b17 !important; /* Dark red */
     color: #ffffff !important;
   }
 }
