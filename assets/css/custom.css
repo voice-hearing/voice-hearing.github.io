@@ -40,6 +40,171 @@
   --color-danger-950: 69 10 10;
 }
 
+/* ========================================
+   HUGO BLOX MOBILE MENU FIXES
+   ======================================== */
+
+/* Add spacing between burger menu and button */
+@media (max-width: 1023px) {
+  /* Method 1: Add margin to burger toggle */
+  header#site-header .navbar label[for="nav-toggle"] {
+    margin-right: 1rem !important; /* 16px space = &nbsp; equivalent */
+  }
+  
+  /* Method 2: Add space using pseudo-element if margin doesn't work */
+  header#site-header .navbar label[for="nav-toggle"]::after {
+    content: "\00a0"; /* Non-breaking space */
+    width: 1rem;
+    display: inline-block;
+  }
+}
+
+/* ========================================
+   MOBILE MENU ALIGNMENT - RIGHT SIDE
+   ======================================== */
+
+/* Move all mobile menu items to the right */
+@media (max-width: 1023px) {
+  header#site-header .navbar-nav {
+    text-align: right !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+  }
+  
+  header#site-header .navbar-nav .nav-item {
+    display: block !important;
+    text-align: right !important;
+    margin-left: auto !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+  }
+  
+  /* Ensure collapsed menu aligns right */
+  header#site-header #nav-menu {
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+  }
+}
+
+/* Desktop: Move menu items to right */
+@media (min-width: 1024px) {
+  header#site-header .navbar-nav {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ========================================
+   CTA BUTTON STYLING - ROUNDED-FULL
+   ======================================== */
+
+/* Target CTA button specifically */
+header#site-header .navbar .btn,
+header#site-header a[class*="inline-block"][class*="rounded"],
+header#site-header a[href*="{{ site.Params.header.navbar.button.url }}"] {
+  border-radius: 9999px !important; /* rounded-full */
+  background-color: #2563eb !important; /* bg-primary-600 */
+  color: white !important;
+  border: none !important;
+  padding: 0.625rem 1.5rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Dark mode for CTA button */
+@media (prefers-color-scheme: dark) {
+  header#site-header .navbar .btn,
+  header#site-header a[class*="inline-block"][class*="rounded"],
+  header#site-header a[href*="{{ site.Params.header.navbar.button.url }}"] {
+    background-color: #1e3a8a !important; /* dark:bg-primary-900 */
+    color: white !important;
+  }
+}
+
+/* Dark mode class support */
+.dark header#site-header .navbar .btn,
+.dark header#site-header a[class*="inline-block"][class*="rounded"],
+html[data-theme="dark"] header#site-header .navbar .btn {
+  background-color: #1e3a8a !important; /* dark:bg-primary-900 */
+  color: white !important;
+}
+
+/* Button hover effects */
+header#site-header .navbar .btn:hover,
+header#site-header a[class*="inline-block"][class*="rounded"]:hover {
+  background-color: #1d4ed8 !important;
+  color: white !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+
+.dark header#site-header .navbar .btn:hover,
+html[data-theme="dark"] header#site-header .navbar .btn:hover {
+  background-color: #1e40af !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3) !important;
+}
+
+/* ========================================
+   MOBILE BUTTON VISIBILITY & POSITIONING
+   ======================================== */
+
+/* Keep button visible on mobile and position right */
+@media (max-width: 1023px) {
+  header#site-header .navbar-nav li.mt-4 {
+    display: inline-block !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+    width: fit-content !important;
+  }
+  
+  header#site-header .navbar-nav li.mt-4 a {
+    border-radius: 9999px !important;
+    background-color: #2563eb !important;
+    color: white !important;
+    padding: 0.625rem 1.5rem !important;
+    margin-left: auto !important;
+    display: inline-block !important;
+    text-align: center !important;
+  }
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+/* Extra small devices */
+@media (max-width: 575px) {
+  header#site-header .navbar label[for="nav-toggle"] {
+    margin-right: 0.75rem !important;
+  }
+  
+  header#site-header .navbar .btn {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+/* ========================================
+   FALLBACK STYLES FOR NETLIFY
+   ======================================== */
+
+/* Ensure styles work on Netlify deployment */
+body header#site-header .navbar .btn,
+body header#site-header a[class*="rounded"] {
+  background: #2563eb !important;
+  border-radius: 50px !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+body.dark header#site-header .navbar .btn,
+body[data-theme="dark"] header#site-header .navbar .btn {
+  background: #1e3a8a !important;
+  color: #ffffff !important;
+}
+
 /* Hide ALL dates globally across Hugo Blox Academic CV */
 
 /* Light mode */

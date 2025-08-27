@@ -94,6 +94,6 @@ As you choose to contribute—whether through prayer, sharing, volunteering, don
 
 <div class="text-center flex items-center justify-center">
 <a href="/en/donate">
-<button class="justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500">
+<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500">
   Donate Now - Transform Lives
 </button></a></div>
