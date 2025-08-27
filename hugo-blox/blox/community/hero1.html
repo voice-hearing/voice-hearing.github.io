@@ -31,7 +31,7 @@
           {{ else if in (slice "http" "https") $scheme }}
             {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
           {{ end }}
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="inline-flex justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-bold text-white shadow-sm hover:bg-primary-500">
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="inline-flex justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-bold text-white shadow-sm hover:bg-primary-500">
             {{ $block.content.primary_action.text | markdownify | emojify }}
             {{ with $block.content.primary_action.icon }}
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em\" class='inline-block pl-2'") }}
