@@ -40,6 +40,277 @@
   --color-danger-950: 69 10 10;
 }
 
+/* ========================================
+   MOBILE NAVIGATION FIXES
+   ======================================== */
+
+/* Add space between burger menu and button */
+@media (max-width: 1023px) {
+  .navbar-toggler {
+    margin-right: 0.75rem !important; /* 12px space */
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Alternative spacing if above doesn't work */
+  .navbar-nav {
+    margin-right: 0.75rem;
+  }
+  
+  /* Ensure button stays visible on mobile */
+  .navbar .btn,
+  .navbar-nav .btn {
+    display: inline-flex !important;
+    margin-left: 0.75rem;
+  }
+}
+
+/* ========================================
+   MOVE ALL MENU ITEMS TO RIGHT
+   ======================================== */
+
+/* Desktop: Move navigation items to right */
+@media (min-width: 1024px) {
+  .navbar-nav {
+    margin-left: auto !important;
+    margin-right: 0;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+  
+  /* Alternative approach using flexbox */
+  .navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  
+  .navbar-nav {
+    order: 2;
+  }
+  
+  .navbar-brand {
+    order: 1;
+  }
+}
+
+/* Mobile: Right-align collapsed menu */
+@media (max-width: 1023px) {
+  .navbar-collapse {
+    text-align: right !important;
+  }
+  
+  .navbar-nav {
+    align-items: flex-end !important;
+    margin-left: auto !important;
+  }
+  
+  .navbar-nav .nav-item {
+    text-align: right;
+  }
+}
+
+/* ========================================
+   ROUNDED-FULL BUTTONS WITH GRADIENTS
+   ======================================== */
+
+/* All buttons rounded-full */
+.btn,
+button,
+.navbar .btn,
+.navbar-nav .btn,
+.cta-btn,
+.hero-btn,
+input[type="submit"],
+.contact-form .btn {
+  border-radius: 9999px !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Primary gradient button */
+.btn-primary,
+.navbar .btn-primary,
+.btn[class*="primary"] {
+  background: linear-gradient(to right, #3b82f6, #2563eb) !important; /* from-primary-500 to-primary-600 */
+  color: white !important;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+/* Dark mode gradient for primary buttons */
+@media (prefers-color-scheme: dark) {
+  .btn-primary,
+  .navbar .btn-primary,
+  .btn[class*="primary"] {
+    background: linear-gradient(to right, #1e40af, #1e3a8a) !important; /* from-primary-800 to-primary-900 */
+  }
+}
+
+/* Dark mode class support */
+.dark .btn-primary,
+.dark .navbar .btn-primary,
+.dark .btn[class*="primary"] {
+  background: linear-gradient(to right, #1e40af, #1e3a8a) !important;
+}
+
+/* Button hover effects */
+.btn-primary:hover,
+.navbar .btn-primary:hover {
+  background: linear-gradient(to right, #2563eb, #1d4ed8) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  color: white !important;
+}
+
+.dark .btn-primary:hover,
+.dark .navbar .btn-primary:hover {
+  background: linear-gradient(to right, #1d4ed8, #1e3a8a) !important;
+  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3);
+}
+
+/* ========================================
+   NAVBAR SPECIFIC ADJUSTMENTS
+   ======================================== */
+
+/* Ensure proper navbar layout */
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background: transparent;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+/* ========================================
+   HUGO BLOX SPECIFIC OVERRIDES
+   ======================================== */
+
+/* Override Hugo Blox default button styles */
+.wg-hero .btn,
+.wg-cta .btn,
+.wg-contact .btn {
+  border-radius: 9999px !important;
+  background: linear-gradient(to right, #3b82f6, #2563eb) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+}
+
+/* Dark mode for Hugo Blox buttons */
+.dark .wg-hero .btn,
+.dark .wg-cta .btn,
+.dark .wg-contact .btn {
+  background: linear-gradient(to right, #1e40af, #1e3a8a) !important;
+}
+
+/* ========================================
+   NETLIFY DEPLOYMENT COMPATIBILITY
+   ======================================== */
+
+/* Ensure CSS variables work on Netlify */
+:root {
+  --btn-primary-bg: linear-gradient(to right, #3b82f6, #2563eb);
+  --btn-primary-bg-dark: linear-gradient(to right, #1e40af, #1e3a8a);
+}
+
+/* Fallback for older browsers */
+.btn-primary {
+  background-color: #3b82f6 !important; /* Fallback */
+  background-image: var(--btn-primary-bg) !important;
+}
+
+/* ========================================
+   RESPONSIVE FINE-TUNING
+   ======================================== */
+
+/* Extra small devices */
+@media (max-width: 575px) {
+  .navbar .btn {
+    padding: 0.5rem 1.5rem !important;
+    font-size: 0.875rem;
+  }
+  
+  .navbar-toggler {
+    margin-right: 0.5rem !important;
+  }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .btn {
+    padding: 0.625rem 1.75rem !important;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar .btn {
+    padding: 0.75rem 2rem !important;
+  }
+}
+
+/* Large devices */
+@media (min-width: 1024px) {
+  .navbar .btn {
+    padding: 0.75rem 2rem !important;
+    margin-left: 1rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY & UX IMPROVEMENTS
+   ======================================== */
+
+/* Focus states for accessibility */
+.btn:focus,
+.navbar .btn:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Loading state */
+.btn.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Disabled state */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  background: #9ca3af !important;
+}
 
 /* Light mode */
 body {
