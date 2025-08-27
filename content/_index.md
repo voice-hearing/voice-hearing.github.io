@@ -88,6 +88,9 @@ sections:
         padding: ["2rem", "1rem", "2rem", "1rem"]
   - block: image-overlay
     content:
+      blue: Activities
+      title: Community Sharing
+      text: Join Our Groups
       slides:
       - title: Hope Garden
         content: 
@@ -214,9 +217,9 @@ sections:
         padding: ["1rem", 0, 0, 0]
   - block: resume-skills1
     content:
-      blue: 
-      title: 
-      text: 
+      blue: Our Programs
+      title: Activities for All Ages
+      text: We Like to Welcome and Share
       username: Admin
   - block: calendar
     content:
@@ -249,9 +252,9 @@ sections:
   - block: stats1
     id: features
     content:
-      blue: 
-      title: Stats
-      text: 
+      blue: Stats
+      title: About Our Past, Present and Future
+      text: Here We Are All Together
       items:
         - name: Since 1983
           icon: /hero/calendar
