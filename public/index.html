@@ -2818,14 +2818,22 @@
 
 
 
-<div class="flex flex-col mt-6 items-center max-w-prose mx-auto gap-3 justify-center">
 
-  <div class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
-    Fellowship Gatherings
-  </div>
 
-  <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">
-  </p>
+
+
+  <div class="mx-auto max-w-prose py-8 px-1">
+    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto px-8">
+      
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">Activities</p>
+            
+      
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Fellowship Gatherings</h2>
+      
+      
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">Come and See</p>
+      
+    </div>
 <div class="responsive-iframe">
   <iframe
     src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&hl=en_GB&src=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ&color=%234285f4"
@@ -3121,32 +3129,78 @@
 
 
 
+
+
+
 <section>
-  <div class="mx-auto max-w-screen-xl py-8 sm:py-16 px-8">
-    <div class="space-y-8 items-center md:grid md:grid-cols-2 lg:grid:cols-2 gap-8 md:space-y-0">
+  
+  <div class="mx-auto max-w-screen-xl py-8 px-8">
+    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto px-8">
+      
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">Subsribe</p>
+            
+      
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Keep in Touch</h2>
+      
+      
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">Many people effortlessly subscribe, and you might find that you&rsquo;re already feeling the same desire.</p>
+      
+    </div>
+
+    
+    <div class="space-y-8 items-center md:grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:space-y-0">
+      
+      
       <div x-data="emailSignup()" x-init="trackFormVisit()" class="relative mx-auto items-center">
         <div>
-          <p class="font-display text-2xl font-bold tracking-tighter">Keep in Touch</p>
+          <p class="font-display text-2xl font-bold tracking-tighter">Stay in touch when the moment feels right.</p>
           <p class="mt-4 text-xl">As you choose to keep in touch—whether you subscribe by email or connect with us on WhatsApp—you may begin to notice how, quite naturally, you’re welcomed into a caring community that’s quietly changing lives, including your own. And as those moments of inspiration and belonging reach you, perhaps you’ll sense how easily hope arrives right where you need it most.</p>
         </div>
       </div>
-          <div>
-           <form data-v-c76ccf54="" action="https://api.follow.it/subscription-form/bzZZakkrMXVwUWl0aWNIV2ZOM3EyYUpHcTI2Ri8rek5aVmJFOGJyRlNLVERzWmFHWGJtbyt6TytISVVncWdsMC9VMzBGOVFNa2w4b0Z6dEFRbnRCZDBuZzNuZVBwaVlzUFJPcGZaekk4dWZZdDhLbm5NSldHWk9BcFFRVEwzVTJ8ZWx1WTNMRGxnam4wQjZYcDNpQ3hEK3YwSzJBeTA4d1dTVzdpVi9GZGRXdz0=/8" method="post">
-          <div data-v-c76ccf54="" class="form-preview">
-            <div data-v-c76ccf54="" class="preview-heading text-xl text-gray-800 dark:text-gray-300 mb-8"><h3 data-v-c76ccf54="">Sign up to our newsletter 🔥</h3></div>
-            <div data-v-c76ccf54="" class="preview-input-field">
-              <input data-v-c76ccf54="" type="email" name="email" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" required="" placeholder="Email" spellcheck="false"></div>
-              <div class="terms-container text-left mb-4 px-4">
-                <label class="text-xl text-secondary purchase__terms" for="terms-accept">
-                <input class="mr-1 mt-8 rounded-sm text-justify" type="checkbox" id="terms-accept" name="terms" value="1" required>
+      
+      
+      <div>
+        <form action="#" method="post">
+          <div class="form-preview">
+            <div class="preview-heading text-xl text-gray-800 dark:text-gray-300 mb-8">
+              <h3>Sign up to our newsletter 🔥</h3>
+            </div>
+            
+            
+            <div class="preview-input-field mb-4">
+              <input type="email" 
+                     name="email" 
+                     class="py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" 
+                     required 
+                     placeholder="Email" 
+                     spellcheck="false">
+            </div>
+            
+            
+            
+            <div class="terms-container text-left mb-4 px-4">
+              <label class="text-xl text-secondary purchase__terms" for="terms-accept">
+                <input class="mr-1 mt-8 rounded-sm text-justify" 
+                       type="checkbox" 
+                       id="terms-accept" 
+                       name="terms" 
+                       value="1" 
+                       required>
                 I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="https://follow.it/info/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
-                </label>
-                </div>
-                <div class="text-center">
-              <div data-v-c76ccf54="" class="preview-submit-button relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800"><button data-v-c76ccf54="" type="submit">Stay Connected</button></div>
+              </label>
+            </div>
+            
+            
+            
+            <div class="text-center">
+              <div class="preview-submit-button relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
+                <button type="submit">Stay Connected</button>
+              </div>
             </div>
           </div>
-          </form>
+        </form>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -3524,8 +3578,14 @@
 <section>
   <div class="mx-auto max-w-screen-xl py-8 px-8">
     <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto px-8">
+      
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">Contact Us</p>
             
       
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Communicate Your Needs</h2>
+      
+      
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">“Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.&quot;</p>
       
     </div>
     <div class="space-y-8 items-center md:grid md:grid-cols-2 lg:grid:cols-2 gap-8 md:space-y-0">
@@ -3559,7 +3619,7 @@
                   </div>
                   
                   <div class="grid flex items-center justify-center">
-                    <button id="contact" aria-label="Submit contact request" type="submit" class="mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800">Subscribe</button>
+                    <button id="contact" aria-label="Submit contact request" type="submit" class="mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800">Contact Us</button>
                   </div>
                 </form>
         </div>
@@ -3568,23 +3628,9 @@
     
     <div class="order-1 lg:order-1">
       <div class="bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-xl h-fit border border-gray-200 dark:border-gray-700">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-900 dark:text-gray-100 mb-8">Contact Information</h3>
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Contact Information</h3>
         
         <div class="space-y-6">
-          
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-6 h-6 mt-1 mr-4">
-              <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">Email</h4>
-              <div id="person-email">
-                  <a href="mailto:test@example.org" class="text-gray-700 dark:text-gray-300 prose underline break-all text-lg">test@example.org</a>
-                </div>
-            </div>
-          </div>
           
 
           
@@ -3636,25 +3682,6 @@
           </div>
           
 
-          
-          <div class="flex items-start">
-            <div class="flex-shrink-0 w-6 h-6 mt-1 mr-4">
-              <svg class="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">Appointment</h4>
-              <div>
-                <a href="https://calendly.com" target="_blank" rel="noopener" class="inline-flex items-center text-gray-700 dark:text-gray-300 text-lg underline">
-                  Book an appointment
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
           
         </div>
 

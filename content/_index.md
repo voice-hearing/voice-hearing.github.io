@@ -220,7 +220,9 @@ sections:
       username: Admin
   - block: calendar
     content:
+      blue: Activities
       title: Fellowship Gatherings
+      name: Come and See
       subtitle: 
       text: |-
         <div class="responsive-iframe">
@@ -275,9 +277,11 @@ sections:
 #            brightness: 1.0
   - block: subscribe
     content:
-      blue: 
+      blue: Subsribe
       title: Keep in Touch
-      text: As you choose to keep in touch—whether you subscribe by email or connect with us on WhatsApp—you may begin to notice how, quite naturally, you’re welcomed into a caring community that’s quietly changing lives, including your own. And as those moments of inspiration and belonging reach you, perhaps you’ll sense how easily hope arrives right where you need it most.
+      text: Many people effortlessly subscribe, and you might find that you're already feeling the same desire.
+      name: Stay in touch when the moment feels right.
+      role: As you choose to keep in touch—whether you subscribe by email or connect with us on WhatsApp—you may begin to notice how, quite naturally, you’re welcomed into a caring community that’s quietly changing lives, including your own. And as those moments of inspiration and belonging reach you, perhaps you’ll sense how easily hope arrives right where you need it most.
       text_cta: "Sign up to our newsletter 🔥"
       description: I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="https://follow.it/info/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
       button:
@@ -340,15 +344,14 @@ sections:
   - block: contact
     id: contact
     content:
-      blue: 
-      title: 
-      text: 
+      blue: Contact Us
+      title: Communicate Your Needs
+      text: “Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
       text_cta: 
       text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
-      # Contact details - edit or remove options as needed
-      email: test@example.org
+      
       phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      # appointment_url: 'https://calendly.com'
       address:
         street: 450 Serra Mall
         city: Stanford
@@ -360,6 +363,7 @@ sections:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
     #  directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+    #  email: test@example.org
     #  contact_links:
     #    - icon: twitter
     #      icon_pack: fab

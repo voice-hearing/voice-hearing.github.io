@@ -7,15 +7,23 @@
 {{ $block := .wcBlock }}
 {{ $title := $block.content.title | emojify | $page.RenderString }}
 {{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+{{ $name := $block.content.name | emojify | $page.RenderString }}
+{{ $role := $block.content.role | emojify | $page.RenderString }}
 
-<div class="flex flex-col mt-6 items-center max-w-prose mx-auto gap-3 justify-center">
-
-  <div class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
-    {{ $title }}
-  </div>
-
-  <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">
-  </p>
+<!-- Header Section -->
+  <div class="mx-auto max-w-prose py-8 px-1">
+    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $name }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
 <div class="responsive-iframe">
   <iframe
     src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&hl=en_GB&src=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ&color=%234285f4"

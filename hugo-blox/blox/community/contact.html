@@ -10,7 +10,7 @@
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 {{ $text_cta := $block.content.text_cta | emojify | $page.RenderString }}
 {{ $text_privacy := $block.content.text_privacy | emojify | $page.RenderString }}
-{{ $button_text := $block.content.button.text | default "Subscribe" }}
+{{ $button_text := $block.content.button.text | default "Contact Us" }}
 {{ $data := $block.content }}
 {{ $autolink := default true $block.content.autolink }}
 
@@ -67,7 +67,7 @@
     <!-- Contact Information Column (Left) -->
     <div class="order-1 lg:order-1">
       <div class="bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-xl h-fit border border-gray-200 dark:border-gray-700">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-900 dark:text-gray-100 mb-8">{{ i18n "contact_info" | default "Contact Information" }}</h3>
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">{{ i18n "contact_info" | default "Contact Information" }}</h3>
         
         <div class="space-y-6">
           {{ if $data.email }}
