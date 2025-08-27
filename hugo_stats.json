@@ -92,6 +92,7 @@
       "backdrop-blur-sm",
       "basis-1/2",
       "bg-[length:0px_10px]",
+      "bg-black",
       "bg-black-900/90",
       "bg-black/90",
       "bg-blue-900/90",

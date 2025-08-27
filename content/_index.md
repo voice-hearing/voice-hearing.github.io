@@ -57,7 +57,7 @@ sections:
             filters:
               brightness: "100%"
         align: "bottom"  # top, center, bottom
-        text_bg_color: "black-900/90"  # "blue-900/90" "red-900/85" "green-800/90" "purple-900/95"
+        text_bg_color: "blue-900/90"  # "blue-900/90" "red-900/85" "green-800/90" "purple-900/95"
         url: "/what-we-do"
         external: false
        # button:

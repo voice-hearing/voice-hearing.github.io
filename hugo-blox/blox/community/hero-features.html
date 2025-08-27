@@ -29,7 +29,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
       <!-- LEFT COLUMN: Hero Image with Advanced Text Positioning -->
-      <div class="relative rounded-none lg:rounded-lg overflow-hidden group shadow-xl px-0 lg:p-4 -mx-8 lg:mx-0">
+      <div class="relative rounded-lg overflow-hidden group shadow-xl px-0 lg:p-4 -mx-8 lg:mx-0">
         
         <!-- Background Image Processing -->
         {{ $hero := $block.content.hero }}
@@ -43,66 +43,65 @@
         {{ end }}
         
         <!-- Hero Image Container -->
-        <div class="relative rounded-none lg:rounded-lg overflow-hidden">
+        <div class="relative rounded-lg overflow-hidden">
           {{ if $hero_img }}
           <img src="{{ $hero_img.RelPermalink }}" 
                alt="{{ $hero.title | plainify }}" 
-               class="w-full h-96 lg:h-[500px] object-cover transition-all filter brightness-75">
+               class="w-full h-96 lg:h-[500px] object-cover transition-all filter brightness-100">
           {{ else }}
-          <div class="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary-500 to-primary-700 filter brightness-75"></div>
+          <div class="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary-500 to-primary-700 filter brightness-100"></div>
           {{ end }}
           
           <!-- Gradient Overlay -->
           {{ if $hero.url }}
           <a href="{{ $hero.url }}" {{ if $hero.external }}target="_blank" rel="noopener"{{ end }}>
           {{ end }}
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-opacity duration-300 group-hover:from-black/90"></div>
+            <div class="absolute inset-0"></div>
           {{ if $hero.url }}</a>{{ end }}
           
           <!-- Comprehensive Text Positioning System with Solid Background -->
           {{ $align := $hero.align | default "bottom" }}
-          {{ $bgColor := $hero.text_bg_color | default "black/90" }}
           
           {{ if eq $align "center" }}
           <!-- CENTER: Perfect center alignment -->
           <div class="absolute inset-0 flex items-center justify-center px-6">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-lg shadow-2xl text-center text-white backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-lg shadow-2xl text-center text-white backdrop-blur-sm">
           {{ else if eq $align "top" }}
           <!-- TOP CENTER: Top center alignment -->
           <div class="absolute left-0 right-0 top-0 pt-8 px-6 text-white text-center">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
           {{ else if eq $align "bottom" }}
           <!-- BOTTOM CENTER: Bottom center alignment -->
           <div class="absolute left-0 right-0 bottom-0 pb-8 px-6 text-white text-center">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
           {{ else if eq $align "top-left" }}
           <!-- TOP LEFT: Top left corner -->
           <div class="absolute top-0 left-0 pt-8 pl-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
           {{ else if eq $align "top-right" }}
           <!-- TOP RIGHT: Top right corner -->
           <div class="absolute top-0 right-0 pt-8 pr-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
           {{ else if eq $align "center-left" }}
           <!-- CENTER LEFT: Middle left side -->
           <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
           {{ else if eq $align "center-right" }}
           <!-- CENTER RIGHT: Middle right side -->
           <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
           {{ else if eq $align "bottom-left" }}
           <!-- BOTTOM LEFT: Bottom left corner -->
           <div class="absolute bottom-0 left-0 pb-8 pl-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
           {{ else if eq $align "bottom-right" }}
           <!-- BOTTOM RIGHT: Bottom right corner -->
           <div class="absolute bottom-0 right-0 pb-8 pr-8 text-white">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
           {{ else }}
           <!-- DEFAULT: Bottom center if unknown alignment -->
           <div class="absolute left-0 right-0 bottom-0 pb-8 px-6 text-white text-center">
-            <div class="bg-{{ $bgColor }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+            <div class="bg-black rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
           {{ end }}
           
               <div class="space-y-3">
@@ -138,7 +137,7 @@
       <!-- RIGHT COLUMN: Features - Extended to Sides with 4px Padding (UNTOUCHED) -->
       <div class="space-y-4 px-1 lg:px-4 -mx-7 lg:mx-0">
         {{ range $block.content.features }}
-        <div class="flex items-start space-x-3 lg:space-x-6 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 border border-gray-100 dark:border-gray-700">
+        <div class="flex items-start space-x-3 lg:space-x-6 p-4 lg:p-6 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 rounded-none md:rounded-lg">
           
           <!-- Feature Icon - Smaller on Mobile -->
           {{ with .icon }}
