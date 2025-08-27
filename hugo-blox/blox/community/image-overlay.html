@@ -45,9 +45,9 @@
         {{ if $bg_img }}
         <img src="{{ $bg_img.RelPermalink }}" 
              alt="{{ $item.title | plainify }}" 
-             class="w-full h-96 object-cover transition-all filter brightness-100 border-2 border-gray-200 dark:border-gray-600 md:border-0">
+             class="w-full h-96 object-cover transition-all filter brightness-100 rounded-none md:rounded-lg">
         {{ else }}
-        <div class="w-full h-96 bg-gray-400 filter brightness-100 border-2 border-gray-200 dark:border-gray-600 md:border-0"></div>
+        <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-none md:rounded-lg"></div>
         {{ end }}
         
         <!-- Gradient Overlay -->
