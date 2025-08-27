@@ -92,15 +92,21 @@
 }
 
 /* ========================================
-   REMOVE BUTTON FROM MOBILE TOP BAR
+   HIDE BUTTON FROM MOBILE TOP BAR
    ======================================== */
 
-/* Hide button from mobile main menu bar (next to burger) */
+/* Hide the CTA button that appears next to burger menu on mobile */
 @media (max-width: 1023px) {
+  /* Hide the button in the top navbar area (order-1 div) */
   header#site-header .navbar .order-1 a[class*="inline-block"],
   header#site-header .navbar .order-1 a[class*="rounded"],
-  header#site-header .navbar div[class*="ml-auto"] a,
+  header#site-header .navbar div[class*="ml-auto"] a[href*="button.url"],
   header#site-header .navbar .md\\:ml-4,
+  header#site-header .navbar a[class*="hidden lg:inline-block"] {
+    display: none !important;
+  }
+  
+  /* Alternative: Target by specific classes */
   header#site-header .navbar a.hidden.lg\\:inline-block {
     display: none !important;
   }
