@@ -1,0 +1,135 @@
+{{/* Hugo Blox: Hero Features */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="mx-auto max-w-7xl mt-0 px-8 mb-4">
+    
+    <!-- Header Section - Full Width with Side Padding -->
+    <div class="w-full mb-8 flex flex-col justify-center mx-auto px-6 lg:px-12">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center px-4 lg:px-8">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center mb-12 px-4 lg:px-8">{{.}}</p>
+      {{ end }}
+    </div>
+    
+    <!-- Two Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- LEFT COLUMN: Hero Image - Full Screen on Mobile -->
+      <div class="relative rounded-none lg:rounded-lg overflow-hidden group shadow-xl px-0 lg:p-4 -mx-8 lg:mx-0">
+        
+        <!-- Background Image Processing -->
+        {{ $hero := $block.content.hero }}
+        {{ $hero_img := "" }}
+        
+        {{ if $hero.background.image.filename }}
+          {{ $hero_img = resources.Get (printf "media/%s" $hero.background.image.filename) }}
+          {{ if $hero_img }}
+            {{ $hero_img = $hero_img.Fit "800x600 q80 webp" }}
+          {{ end }}
+        {{ end }}
+        
+        <!-- Hero Image Container - Full Screen on Mobile -->
+        <div class="relative rounded-none lg:rounded-lg overflow-hidden">
+          {{ if $hero_img }}
+          <img src="{{ $hero_img.RelPermalink }}" 
+               alt="{{ $hero.title | plainify }}" 
+               class="w-full h-96 lg:h-[500px] object-cover transition-all filter brightness-75">
+          {{ else }}
+          <div class="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary-500 to-primary-700"></div>
+          {{ end }}
+          
+          <!-- Gradient Overlay -->
+          {{ if $hero.url }}
+          <a href="{{ $hero.url }}" {{ if $hero.external }}target="_blank" rel="noopener"{{ end }}>
+          {{ end }}
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-opacity duration-300 group-hover:from-black/90"></div>
+          {{ if $hero.url }}</a>{{ end }}
+          
+          <!-- Hero Text Overlay -->
+          <div class="absolute left-0 right-0 px-6 lg:px-12 text-white text-center
+            {{ if eq $hero.align "top" }}top-0 pt-8
+            {{ else if eq $hero.align "center" }}top-1/2 transform -translate-y-1/2
+            {{ else }}bottom-0 pb-8{{ end }}">
+            
+            <div class="space-y-4">
+              {{ if $hero.url }}<a href="{{ $hero.url }}" {{ if $hero.external }}target="_blank"{{ end }}>{{ end }}
+              {{ with $hero.title }}
+              <h3 class="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-lg px-4">
+                {{ . | markdownify | emojify }}
+              </h3>
+              {{ end }}
+              {{ if $hero.url }}</a>{{ end }}
+              
+              {{ with $hero.content }}
+              <div class="text-lg md:text-xl leading-relaxed opacity-95 drop-shadow-lg max-w-md mx-auto px-4">
+                {{ . | emojify | $page.RenderString }}
+              </div>
+              {{ end }}
+              
+              {{ with $hero.button }}
+              <div class="mt-6 px-4">
+                <a href="{{ .url }}" 
+                   {{ if .external }}target="_blank" rel="noopener"{{ end }}
+                   class="inline-flex items-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-colors duration-200">
+                  {{ .text }}
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- RIGHT COLUMN: Features - Extended to Sides with 4px Padding -->
+      <div class="space-y-4 px-1 lg:px-4 -mx-7 lg:mx-0">
+        {{ range $block.content.features }}
+        <div class="flex items-start space-x-3 lg:space-x-6 p-4 lg:p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 border border-gray-100 dark:border-gray-700">
+          
+          <!-- Feature Icon - Smaller on Mobile -->
+          {{ with .icon }}
+          <div class="flex-shrink-0 mt-0.5">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-5 h-5 lg:w-8 lg:h-8 text-primary-600 dark:text-primary-400"`) }}
+          </div>
+          {{ end }}
+          
+          <!-- Feature Content - Optimized Mobile Layout -->
+          <div class="flex-grow min-w-0">
+            <h4 class="text-lg lg:text-xl font-bold text-gray-900 dark:text-white mb-1 lg:mb-2">
+              {{ .name | $page.RenderString }}
+            </h4>
+            <p class="text-sm lg:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+              {{ .description | $page.RenderString }}
+            </p>
+            
+            <!-- Optional Feature Button -->
+            {{ with .button }}
+            <div class="mt-2 lg:mt-3">
+              <a href="{{ .url }}" 
+                 {{ if .external }}target="_blank" rel="noopener"{{ end }}
+                 class="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 text-sm lg:text-base">
+                {{ .text }} →
+              </a>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      
+    </div>
+  </div>
+</section>

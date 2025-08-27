@@ -85,7 +85,7 @@ sections:
     design:
       spacing:
         padding: ["2rem", "1rem", "2rem", "1rem"]
-  - block: img-overlay
+  - block: image-overlay
     content:
       slides:
       - title: Hope Garden
