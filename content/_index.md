@@ -225,7 +225,7 @@ sections:
       text: |-
         <div class="responsive-iframe">
         <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&hl=en_GB&src=ZW4uY2hyaXN0aWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%234285f4"
+          src="https://calendar.google.com/calendar/u/0?cid=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ"
           frameborder="0"
           scrolling="no"
           allowfullscreen>
