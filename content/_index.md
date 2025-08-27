@@ -53,7 +53,7 @@ sections:
         content: ""
         background:
           image:
-            filename: "musaf.jpg"  # Place in assets/media/
+            filename: "musaf.png"  # Place in assets/media/
             filters:
               brightness: "100%"
         align: "bottom"  # top, center, bottom
@@ -98,7 +98,7 @@ sections:
         url: /what-we-do
         background:
           image:
-            filename: "hopegarden1.jpg"
+            filename: "hopegarden1.png"
             # filters:
             #    brightness: "1.5"
             # position: center
@@ -320,26 +320,26 @@ sections:
       items:
         - name: "Sarah Johnson"           # Used for alt text
           image: "luis.jpg"              # From assets/media/
-          url: "https://twitter.com/sarah" # Optional: profile/social URL
+          url: "/people" # Optional: profile/social URL
           external: true                  # Optional: opens in new tab
           
         - name: "Michael Chen"            # Used for alt text  
           image: "sofia.jpg"            # From assets/media/
-          url: "https://linkedin.com/in/michael"
+          url: "/people"
           external: true
           
         - name: "Emily Rodriguez"         # Used for alt text
           image: "mohammed.jpg"              # From assets/media/
-          url: "/team/emily"              # Internal link (no external needed)
+          url: "/people"              # Internal link (no external needed)
           
         - name: "David Kim"               # Used for alt text
           image: "sofia.jpg"              # From assets/media/
-          url: "https://github.com/david"
+          url: "/people"
           external: true
           
         - name: "Lisa Thompson"           # Used for alt text
           image: "luis.jpg"               # From assets/media/
-          # url: not required             # Image won't be clickable
+          url: /people             # Image won't be clickable
   
     design:
       spacing:
@@ -352,9 +352,7 @@ sections:
       text: “Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
       text_cta: 
       text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
-      
       phone: 888 888 88 88
-      # appointment_url: 'https://calendly.com'
       address:
         street: 450 Serra Mall
         city: Stanford
@@ -365,6 +363,7 @@ sections:
       office_hours:
         - 'Monday 10:00 to 13:00'
         - 'Wednesday 09:00 to 10:00'
+    #  appointment_url: 'https://calendly.com'
     #  directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
     #  email: test@example.org
     #  contact_links:
