@@ -41,172 +41,128 @@
 }
 
 /* ========================================
-   MOBILE NAVIGATION FIXES
+   HUGO BLOX MOBILE MENU FIXES
    ======================================== */
 
 /* Add space between burger menu and button */
 @media (max-width: 1023px) {
+  /* Method 1: Add margin to burger menu */
   .navbar-toggler {
-    margin-right: 0.75rem !important; /* 12px space */
-    position: relative;
-    z-index: 1000;
+    margin-right: 1rem !important; /* 16px space */
   }
   
-  /* Alternative spacing if above doesn't work */
-  .navbar-nav {
-    margin-right: 0.75rem;
-  }
-  
-  /* Ensure button stays visible on mobile */
-  .navbar .btn,
+  /* Method 2: Add margin to button */
+  .navbar-nav .nav-item:last-child .nav-link,
   .navbar-nav .btn {
-    display: inline-flex !important;
-    margin-left: 0.75rem;
-  }
-}
-
-/* ========================================
-   MOVE ALL MENU ITEMS TO RIGHT
-   ======================================== */
-
-/* Desktop: Move navigation items to right */
-@media (min-width: 1024px) {
-  .navbar-nav {
-    margin-left: auto !important;
-    margin-right: 0;
+    margin-left: 1rem !important;
   }
   
+  /* Method 3: Force space using padding on parent container */
   .navbar-collapse {
-    justify-content: flex-end !important;
-  }
-  
-  /* Alternative approach using flexbox */
-  .navbar {
-    display: flex !important;
-    justify-content: space-between !important;
-  }
-  
-  .navbar-nav {
-    order: 2;
-  }
-  
-  .navbar-brand {
-    order: 1;
+    padding-left: 1rem;
   }
 }
 
-/* Mobile: Right-align collapsed menu */
+/* Alternative: Use CSS content to add space */
 @media (max-width: 1023px) {
-  .navbar-collapse {
-    text-align: right !important;
-  }
-  
-  .navbar-nav {
-    align-items: flex-end !important;
-    margin-left: auto !important;
-  }
-  
-  .navbar-nav .nav-item {
-    text-align: right;
+  .navbar-toggler::before {
+    content: "\00a0\00a0"; /* Two non-breaking spaces */
+    margin-right: 0.5rem;
   }
 }
 
 /* ========================================
-   ROUNDED-FULL BUTTONS WITH GRADIENTS
+   BUTTON STYLING - MENU ONLY
    ======================================== */
 
-/* All buttons rounded-full */
-.btn,
-button,
+/* Target only buttons in navbar/menu */
 .navbar .btn,
 .navbar-nav .btn,
-.cta-btn,
-.hero-btn,
-input[type="submit"],
-.contact-form .btn {
-  border-radius: 9999px !important;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Primary gradient button */
-.btn-primary,
-.navbar .btn-primary,
-.btn[class*="primary"] {
-  background: linear-gradient(to right, #3b82f6, #2563eb) !important; /* from-primary-500 to-primary-600 */
+.header .btn,
+[class*="navbar"] .btn {
+  border-radius: 50px !important; /* rounded-full */
+  background-color: #2563eb !important; /* bg-primary-600 */
+  border: none !important;
   color: white !important;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
+  padding: 0.625rem 1.5rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
 }
 
-/* Dark mode gradient for primary buttons */
+/* Dark mode for menu buttons */
 @media (prefers-color-scheme: dark) {
-  .btn-primary,
-  .navbar .btn-primary,
-  .btn[class*="primary"] {
-    background: linear-gradient(to right, #1e40af, #1e3a8a) !important; /* from-primary-800 to-primary-900 */
+  .navbar .btn,
+  .navbar-nav .btn,
+  .header .btn,
+  [class*="navbar"] .btn {
+    background-color: #1e3a8a !important; /* dark:bg-primary-900 */
   }
 }
 
 /* Dark mode class support */
-.dark .btn-primary,
-.dark .navbar .btn-primary,
-.dark .btn[class*="primary"] {
-  background: linear-gradient(to right, #1e40af, #1e3a8a) !important;
+.dark .navbar .btn,
+.dark .navbar-nav .btn,
+.dark .header .btn,
+.dark [class*="navbar"] .btn,
+html[data-theme="dark"] .navbar .btn,
+html[data-theme="dark"] .navbar-nav .btn {
+  background-color: #1e3a8a !important; /* dark:bg-primary-900 */
 }
 
-/* Button hover effects */
-.btn-primary:hover,
-.navbar .btn-primary:hover {
-  background: linear-gradient(to right, #2563eb, #1d4ed8) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+/* Button hover states */
+.navbar .btn:hover,
+.navbar-nav .btn:hover,
+.header .btn:hover {
+  background-color: #1d4ed8 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4) !important;
   color: white !important;
 }
 
-.dark .btn-primary:hover,
-.dark .navbar .btn-primary:hover {
-  background: linear-gradient(to right, #1d4ed8, #1e3a8a) !important;
-  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3);
+.dark .navbar .btn:hover,
+.dark .navbar-nav .btn:hover,
+html[data-theme="dark"] .navbar .btn:hover {
+  background-color: #1e40af !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.4) !important;
 }
 
 /* ========================================
-   NAVBAR SPECIFIC ADJUSTMENTS
+   MOBILE MENU BUTTON POSITIONING
    ======================================== */
 
-/* Ensure proper navbar layout */
-.navbar {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.navbar-brand {
-  margin-right: auto;
-}
-
-/* Mobile navbar adjustments */
+/* Move button to right in mobile menu */
 @media (max-width: 1023px) {
-  .navbar {
-    padding: 0.5rem 1rem;
+  .navbar-nav {
+    text-align: right !important;
+    align-items: flex-end !important;
   }
   
-  .navbar-toggler {
-    padding: 0.25rem 0.5rem;
-    border: none;
-    background: transparent;
+  .navbar-nav .nav-item {
+    display: block !important;
+    text-align: right !important;
   }
   
-  .navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
+  .navbar-nav .btn {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: inline-block !important;
+    float: right !important;
+  }
+  
+  /* Alternative method using flexbox */
+  .navbar-collapse {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+  }
+  
+  .navbar-nav {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
   }
 }
 
@@ -214,102 +170,119 @@ input[type="submit"],
    HUGO BLOX SPECIFIC OVERRIDES
    ======================================== */
 
-/* Override Hugo Blox default button styles */
-.wg-hero .btn,
-.wg-cta .btn,
-.wg-contact .btn {
-  border-radius: 9999px !important;
-  background: linear-gradient(to right, #3b82f6, #2563eb) !important;
-  border: none !important;
+/* Override Hugo Blox default styles */
+.navbar .navbar-nav .nav-link.btn,
+.header-navbar .btn,
+.site-header .btn {
+  border-radius: 50px !important;
+  background-color: #2563eb !important;
+  padding: 0.625rem 1.5rem !important;
   color: white !important;
-  padding: 0.75rem 2rem !important;
+  border: none !important;
+  font-weight: 600 !important;
 }
 
-/* Dark mode for Hugo Blox buttons */
-.dark .wg-hero .btn,
-.dark .wg-cta .btn,
-.dark .wg-contact .btn {
-  background: linear-gradient(to right, #1e40af, #1e3a8a) !important;
+/* Dark mode for Hugo Blox specific classes */
+.dark .navbar .navbar-nav .nav-link.btn,
+.dark .header-navbar .btn,
+.dark .site-header .btn,
+html[data-theme="dark"] .navbar .navbar-nav .nav-link.btn {
+  background-color: #1e3a8a !important;
 }
 
 /* ========================================
    NETLIFY DEPLOYMENT COMPATIBILITY
    ======================================== */
 
-/* Ensure CSS variables work on Netlify */
-:root {
-  --btn-primary-bg: linear-gradient(to right, #3b82f6, #2563eb);
-  --btn-primary-bg-dark: linear-gradient(to right, #1e40af, #1e3a8a);
+/* Ensure styles work on Netlify */
+body .navbar .btn,
+body .navbar-nav .btn {
+  background: #2563eb !important;
+  border-radius: 50px !important;
+  color: #ffffff !important;
 }
 
-/* Fallback for older browsers */
-.btn-primary {
-  background-color: #3b82f6 !important; /* Fallback */
-  background-image: var(--btn-primary-bg) !important;
+body.dark .navbar .btn,
+body.dark .navbar-nav .btn,
+body[data-theme="dark"] .navbar .btn {
+  background: #1e3a8a !important;
 }
 
 /* ========================================
-   RESPONSIVE FINE-TUNING
+   FORCE SPACING WITH PSEUDO ELEMENTS
    ======================================== */
 
-/* Extra small devices */
-@media (max-width: 575px) {
-  .navbar .btn {
-    padding: 0.5rem 1.5rem !important;
-    font-size: 0.875rem;
+/* If margin doesn't work, use pseudo-elements */
+@media (max-width: 1023px) {
+  .navbar-toggler::after {
+    content: "";
+    width: 1rem;
+    height: 1px;
+    display: inline-block;
+    margin-left: 0.5rem;
   }
   
-  .navbar-toggler {
-    margin-right: 0.5rem !important;
-  }
-}
-
-/* Small devices */
-@media (min-width: 576px) and (max-width: 767px) {
-  .navbar .btn {
-    padding: 0.625rem 1.75rem !important;
-  }
-}
-
-/* Medium devices */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .navbar .btn {
-    padding: 0.75rem 2rem !important;
-  }
-}
-
-/* Large devices */
-@media (min-width: 1024px) {
-  .navbar .btn {
-    padding: 0.75rem 2rem !important;
-    margin-left: 1rem;
+  /* Or add space before button */
+  .navbar-nav .btn::before {
+    content: "\00a0\00a0\00a0"; /* Three non-breaking spaces */
   }
 }
 
 /* ========================================
-   ACCESSIBILITY & UX IMPROVEMENTS
+   RESPONSIVE BUTTON SIZES
    ======================================== */
 
-/* Focus states for accessibility */
-.btn:focus,
-.navbar .btn:focus {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+/* Extra small mobile */
+@media (max-width: 575px) {
+  .navbar .btn,
+  .navbar-nav .btn {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 25px !important;
+  }
 }
 
-/* Loading state */
-.btn.loading {
-  pointer-events: none;
-  opacity: 0.7;
+/* Small mobile */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .btn,
+  .navbar-nav .btn {
+    padding: 0.625rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
 }
 
-/* Disabled state */
-.btn:disabled,
-.btn.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-  background: #9ca3af !important;
+/* ========================================
+   DEBUGGING STYLES (Remove in production)
+   ======================================== */
+
+/* Uncomment to debug spacing issues */
+/*
+.navbar-toggler {
+  border: 2px solid red !important;
+}
+
+.navbar .btn {
+  border: 2px solid blue !important;
+}
+*/
+
+/* ========================================
+   FALLBACK STYLES
+   ======================================== */
+
+/* If other methods fail, use important declarations */
+.navbar .btn {
+  background-color: #2563eb !important;
+  background-image: none !important;
+  background: #2563eb !important;
+  border-radius: 50px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar .btn {
+    background-color: #1e3a8a !important;
+    background: #1e3a8a !important;
+  }
 }
 
 /* Light mode */
