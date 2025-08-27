@@ -28,7 +28,7 @@
       
       {{ range $index, $item := $block.content.slides }}
       
-      <div class="relative overflow-hidden group shadow-xl -mx-8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+      <div class="relative overflow-hidden group shadow-xl -mx-8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg border-2 border-gray-200 dark:border-gray-600 md:border-gray-300 md:dark:border-gray-500">
         
         <!-- Background Image Processing -->
         {{ $bg := $item.background }}
@@ -45,14 +45,14 @@
         {{ if $bg_img }}
         <img src="{{ $bg_img.RelPermalink }}" 
              alt="{{ $item.title | plainify }}" 
-             class="w-full h-96 object-cover transition-all filter brightness-75">
+             class="w-full h-96 object-cover transition-all filter brightness-100">
         {{ else }}
-        <div class="w-full h-96 bg-gray-400 filter brightness-75"></div>
+        <div class="w-full h-96 bg-gray-400 filter brightness-100"></div>
         {{ end }}
         
         <!-- Gradient Overlay -->
         <a href="{{.url}}">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-opacity duration-300 group-hover:from-black/90"></div>
+          <div class="absolute inset-0"></div>
         </a>
         
         <!-- Comprehensive Text Positioning System -->
