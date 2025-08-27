@@ -41,257 +41,71 @@
 }
 
 /* ========================================
-   HUGO BLOX MOBILE MENU FIXES
+   HIDE BUTTON FROM MOBILE TOP BAR
    ======================================== */
 
-/* Add spacing between burger menu and button */
+/* Hide the CTA button that appears next to burger menu on mobile */
 @media (max-width: 1023px) {
-  /* Method 1: Add margin to burger toggle */
-  header#site-header .navbar label[for="nav-toggle"] {
-    margin-right: 1rem !important; /* 16px space = &nbsp; equivalent */
+  /* Hide the button in the top navbar area (order-1 div) */
+  header#site-header .navbar .order-1 a[class*="inline-block"],
+  header#site-header .navbar .order-1 a[class*="rounded"],
+  header#site-header .navbar div[class*="ml-auto"] a[href*="button.url"],
+  header#site-header .navbar .md\\:ml-4,
+  header#site-header .navbar a[class*="hidden lg:inline-block"] {
+    display: none !important;
   }
   
-  /* Method 2: Add space using pseudo-element if margin doesn't work */
-  header#site-header .navbar label[for="nav-toggle"]::after {
-    content: "\00a0"; /* Non-breaking space */
-    width: 1rem;
-    display: inline-block;
-  }
-}
-
-/* ========================================
-   MOBILE MENU ALIGNMENT - RIGHT SIDE
-   ======================================== */
-
-/* Move all mobile menu items to the right */
-@media (max-width: 1023px) {
-  header#site-header .navbar-nav {
-    text-align: right !important;
-    align-items: flex-end !important;
-    width: 100% !important;
-  }
-  
-  header#site-header .navbar-nav .nav-item {
-    display: block !important;
-    text-align: right !important;
-    margin-left: auto !important;
-    width: fit-content !important;
-    margin-left: auto !important;
-  }
-  
-  /* Ensure collapsed menu aligns right */
-  header#site-header #nav-menu {
-    justify-content: flex-end !important;
-    align-items: flex-end !important;
-  }
-}
-
-/* Desktop: Move menu items to right */
-@media (min-width: 1024px) {
-  header#site-header .navbar-nav {
-    margin-left: auto !important;
-    margin-right: 0 !important;
-  }
-}
-
-/* ========================================
-   CTA BUTTON STYLING - ROUNDED-FULL
-   ======================================== */
-
-/* Target CTA button specifically */
-header#site-header .navbar .btn,
-header#site-header a[class*="inline-block"][class*="rounded"],
-header#site-header a[href*="{{ site.Params.header.navbar.button.url }}"] {
-  border-radius: 9999px !important; /* rounded-full */
-  background-color: #2563eb !important; /* bg-primary-600 */
-  color: white !important;
-  border: none !important;
-  padding: 0.625rem 1.5rem !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  transition: all 0.3s ease !important;
-}
-
-/* Dark mode for CTA button */
-@media (prefers-color-scheme: dark) {
-  header#site-header .navbar .btn,
-  header#site-header a[class*="inline-block"][class*="rounded"],
-  header#site-header a[href*="{{ site.Params.header.navbar.button.url }}"] {
-    background-color: #1e3a8a !important; /* dark:bg-primary-900 */
-    color: white !important;
-  }
-}
-
-/* Dark mode class support */
-.dark header#site-header .navbar .btn,
-.dark header#site-header a[class*="inline-block"][class*="rounded"],
-html[data-theme="dark"] header#site-header .navbar .btn {
-  background-color: #1e3a8a !important; /* dark:bg-primary-900 */
-  color: white !important;
-}
-
-/* Button hover effects */
-header#site-header .navbar .btn:hover,
-header#site-header a[class*="inline-block"][class*="rounded"]:hover {
-  background-color: #1d4ed8 !important;
-  color: white !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
-}
-
-.dark header#site-header .navbar .btn:hover,
-html[data-theme="dark"] header#site-header .navbar .btn:hover {
-  background-color: #1e40af !important;
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3) !important;
-}
-
-/* ========================================
-   MOBILE BUTTON VISIBILITY & POSITIONING
-   ======================================== */
-
-/* Keep button visible on mobile and position right */
-@media (max-width: 1023px) {
-  header#site-header .navbar-nav li.mt-4 {
-    display: inline-block !important;
-    margin-left: auto !important;
-    margin-right: 0 !important;
-    text-align: right !important;
-    width: fit-content !important;
-  }
-  
-  header#site-header .navbar-nav li.mt-4 a {
-    border-radius: 9999px !important;
-    background-color: #2563eb !important;
-    color: white !important;
-    padding: 0.625rem 1.5rem !important;
-    margin-left: auto !important;
-    display: inline-block !important;
-    text-align: center !important;
-  }
-}
-
-/* ========================================
-   RESPONSIVE ADJUSTMENTS
-   ======================================== */
-
-/* Extra small devices */
-@media (max-width: 575px) {
-  header#site-header .navbar label[for="nav-toggle"] {
-    margin-right: 0.75rem !important;
-  }
-  
-  header#site-header .navbar .btn {
-    padding: 0.5rem 1.25rem !important;
-    font-size: 0.875rem !important;
-  }
-}
-
-/* ========================================
-   FALLBACK STYLES FOR NETLIFY
-   ======================================== */
-
-/* Ensure styles work on Netlify deployment */
-body header#site-header .navbar .btn,
-body header#site-header a[class*="rounded"] {
-  background: #2563eb !important;
-  border-radius: 50px !important;
-  color: #ffffff !important;
-  border: none !important;
-}
-
-body.dark header#site-header .navbar .btn,
-body[data-theme="dark"] header#site-header .navbar .btn {
-  background: #1e3a8a !important;
-  color: #ffffff !important;
-}
-
-/* ========================================
-   HUGO BLOX MOBILE MENU FIXES
-   ======================================== */
-
-/* Add spacing between burger menu and button */
-@media (max-width: 1023px) {
-  /* Method 1: Add margin to burger toggle */
-  header#site-header .navbar label[for="nav-toggle"] {
-    margin-right: 1rem !important; /* 16px space = &nbsp; equivalent */
-  }
-  
-  /* Method 2: Add space using pseudo-element if margin doesn't work */
-  header#site-header .navbar label[for="nav-toggle"]::after {
-    content: "\00a0"; /* Non-breaking space */
-    width: 1rem;
-    display: inline-block;
-  }
-}
-
-/* ========================================
-   HIDE DESKTOP BUTTON - SHOW MOBILE ONLY
-   ======================================== */
-
-/* Hide CTA button on desktop */
-@media (min-width: 1024px) {
-  header#site-header .navbar a[class*="inline-block"][class*="rounded"],
-  header#site-header .order-1 a[href*="button.url"],
-  header#site-header .md\\:ml-4 {
+  /* Alternative: Target by specific classes */
+  header#site-header .navbar a.hidden.lg\\:inline-block {
     display: none !important;
   }
 }
 
-/* Show button only in mobile menu when collapsed menu is open */
+/* ========================================
+   KEEP BUTTON ONLY IN OPENED MOBILE MENU
+   ======================================== */
+
+/* Show button only inside the mobile menu when it's opened */
 @media (max-width: 1023px) {
-  /* Initially hide the button in collapsed state */
-  header#site-header .navbar-nav li.mt-4 {
+  /* Initially hide the mobile menu button */
+  header#site-header #nav-menu li.mt-4 {
     display: none !important;
   }
   
-  /* Show button only when nav-toggle checkbox is checked (menu is open) */
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4,
+  /* Show button only when nav-toggle is checked (menu is open) */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 {
+    display: inline-block !important;
+    margin-left: auto !important;
+    text-align: right !important;
+    width: fit-content !important;
+  }
+  
+  /* Ensure button appears in opened menu */
   header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
     display: inline-block !important;
+    margin-left: auto !important;
   }
 }
 
 /* ========================================
-   MOBILE MENU ALIGNMENT - RIGHT SIDE
+   BURGER MENU SPACING (No Button Next to It)
    ======================================== */
 
-/* Move all mobile menu items to the right */
+/* Since button is removed, adjust burger menu positioning */
 @media (max-width: 1023px) {
-  header#site-header .navbar-nav {
-    text-align: right !important;
-    align-items: flex-end !important;
-    width: 100% !important;
-  }
-  
-  header#site-header .navbar-nav .nav-item {
-    display: block !important;
-    text-align: right !important;
-    margin-left: auto !important;
-    width: fit-content !important;
-  }
-  
-  /* Ensure collapsed menu aligns right */
-  header#site-header #nav-menu {
-    justify-content: flex-end !important;
-    align-items: flex-end !important;
-  }
-}
-
-/* Desktop: Move menu items to right */
-@media (min-width: 1024px) {
-  header#site-header .navbar-nav {
-    margin-left: auto !important;
-    margin-right: 0 !important;
+  header#site-header .navbar label[for="nav-toggle"] {
+    margin-right: 0 !important; /* Remove margin since no button next to it */
+    margin-left: auto !important; /* Push burger to far right */
   }
 }
 
 /* ========================================
-   MOBILE BUTTON STYLING - PRIMARY COLORS
+   MOBILE MENU STYLING - PRIMARY COLORS
    ======================================== */
 
-/* Style mobile menu button with proper Tailwind primary colors */
+/* Style the button that appears only in opened mobile menu */
 @media (max-width: 1023px) {
-  header#site-header .navbar-nav li.mt-4 a {
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
     border-radius: 9999px !important; /* rounded-full */
     background-color: rgb(37 99 235) !important; /* bg-primary-600 */
     color: white !important;
@@ -299,15 +113,14 @@ body[data-theme="dark"] header#site-header .navbar .btn {
     padding: 0.625rem 1.5rem !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-    margin-left: auto !important;
-    display: inline-block !important;
-    text-align: center !important;
     transition: all 0.3s ease !important;
+    text-align: center !important;
     width: fit-content !important;
+    margin-left: auto !important;
   }
   
-  /* Mobile button hover state */
-  header#site-header .navbar-nav li.mt-4 a:hover {
+  /* Hover state for opened menu button */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a:hover {
     background-color: rgb(29 78 216) !important; /* hover:bg-primary-700 */
     color: white !important;
     transform: translateY(-1px) !important;
@@ -316,82 +129,104 @@ body[data-theme="dark"] header#site-header .navbar .btn {
 }
 
 /* ========================================
-   DARK MODE SUPPORT - PRIMARY COLORS
+   DARK MODE FOR OPENED MENU BUTTON
    ======================================== */
 
-/* Dark mode for mobile button */
 @media (max-width: 1023px) {
+  /* Dark mode colors */
   @media (prefers-color-scheme: dark) {
-    header#site-header .navbar-nav li.mt-4 a {
+    header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
       background-color: rgb(30 58 138) !important; /* dark:bg-primary-900 */
       color: white !important;
     }
     
-    header#site-header .navbar-nav li.mt-4 a:hover {
+    header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a:hover {
       background-color: rgb(30 64 175) !important; /* dark:hover:bg-primary-800 */
       box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3) !important;
     }
   }
   
   /* Dark mode class support */
-  .dark header#site-header .navbar-nav li.mt-4 a,
-  html[data-theme="dark"] header#site-header .navbar-nav li.mt-4 a {
+  .dark header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
+  html[data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
     background-color: rgb(30 58 138) !important; /* dark:bg-primary-900 */
     color: white !important;
   }
   
-  .dark header#site-header .navbar-nav li.mt-4 a:hover,
-  html[data-theme="dark"] header#site-header .navbar-nav li.mt-4 a:hover {
+  .dark header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a:hover,
+  html[data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a:hover {
     background-color: rgb(30 64 175) !important; /* dark:hover:bg-primary-800 */
     box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3) !important;
   }
 }
 
 /* ========================================
-   RESPONSIVE ADJUSTMENTS
+   MOBILE MENU ALIGNMENT
    ======================================== */
 
-/* Extra small devices */
-@media (max-width: 575px) {
-  header#site-header .navbar label[for="nav-toggle"] {
-    margin-right: 0.75rem !important;
+/* Align all mobile menu items to the right */
+@media (max-width: 1023px) {
+  header#site-header .navbar-nav {
+    text-align: right !important;
+    align-items: flex-end !important;
+    width: 100% !important;
   }
   
-  header#site-header .navbar-nav li.mt-4 a {
-    padding: 0.5rem 1.25rem !important;
-    font-size: 0.875rem !important;
+  header#site-header .navbar-nav .nav-item {
+    display: block !important;
+    text-align: right !important;
+    margin-left: auto !important;
+    width: fit-content !important;
+  }
+  
+  /* Ensure opened menu aligns right */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
   }
 }
 
 /* ========================================
-   TAILWIND PRIMARY COLOR DEFINITIONS
+   DESKTOP MENU ALIGNMENT
    ======================================== */
 
-/* Ensure primary colors work consistently */
-:root {
-  --tw-color-primary-600: 37 99 235;
-  --tw-color-primary-700: 29 78 216;
-  --tw-color-primary-800: 30 64 175;
-  --tw-color-primary-900: 30 58 138;
+/* Keep desktop menu items aligned to right */
+@media (min-width: 1024px) {
+  header#site-header .navbar-nav {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Keep desktop button visible */
+  header#site-header .navbar .order-1 a[class*="inline-block"] {
+    display: inline-block !important;
+  }
 }
 
 /* ========================================
    FALLBACK STYLES FOR NETLIFY
    ======================================== */
 
-/* Ensure styles work on Netlify deployment with proper primary colors */
+/* Ensure proper behavior on Netlify */
 @media (max-width: 1023px) {
-  body header#site-header .navbar-nav li.mt-4 a {
+  /* Force hide top bar button */
+  body header#site-header .navbar .order-1 a {
+    display: none !important;
+  }
+  
+  /* Force show opened menu button with proper styling */
+  body header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
+    display: inline-block !important;
     background: rgb(37, 99, 235) !important; /* bg-primary-600 */
     border-radius: 50px !important;
     color: #ffffff !important;
-    border: none !important;
+    padding: 10px 24px !important;
+    margin-left: auto !important;
   }
   
-  body.dark header#site-header .navbar-nav li.mt-4 a,
-  body[data-theme="dark"] header#site-header .navbar-nav li.mt-4 a {
+  body.dark header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
+  body[data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
     background: rgb(30, 58, 138) !important; /* dark:bg-primary-900 */
-    color: #ffffff !important;
   }
 }
 
