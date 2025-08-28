@@ -213,15 +213,15 @@ sections:
       title: Fellowship Gatherings
       name: Come and See
       subtitle: 
-      text: |-
-        <div class="responsive-iframe">
-        <iframe
-          src="https://calendar.google.com/calendar/u/0?cid=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen>
-        </iframe>
-        </div>
+      # text: |-
+        # <div class="responsive-iframe">
+        # <iframe
+        #   src="https://calendar.google.com/calendar/u/0?cid=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ"
+        #   frameborder="0"
+        #   scrolling="no"
+        #   allowfullscreen>
+        # </iframe>
+        # </div>
     design:
       spacing:
         padding: [0, 0, 0, 0]
