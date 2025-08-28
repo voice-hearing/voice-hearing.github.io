@@ -66,19 +66,19 @@ sections:
        # external: false
       features:
         - name: "Building Bonds Across Faiths"
-          description: "As you enter this welcoming space, you may begin to sense how reaching out between faiths gently nurtures new bonds—allowing our whole community to grow closer in understanding."
+          description: "Connecting across different faiths helps our community grow closer and build stronger bonds."
           icon: "hero/bolt"
           # button:
           #  text: "Learn More"
           #  url: "/performance"            
         - name: "Cultivating charity and Belonging"
-          description: "Sometimes, simply sharing a moment of kindness opens doors where charity and respect naturally blossom, helping each person experience deeper well-being and the warmth of true belonging."
+          description: "Small acts of kindness can foster charity and respect, helping people feel a sense of belonging and well-being."
           icon: "hero/shield-check"
           # button:
           #   text: "Security Details"
           #   url: "/security"          
         - name: "Inspiring Growth Through Unity"
-          description: "By joining these conversations, you might discover how every encounter quietly inspires personal and spiritual growth, inviting all to flourish in a spirit of unity and openness."
+          description: "Joining these conversations can foster personal and spiritual growth, inspiring unity and openness."
           icon: "hero/chart-bar"
           # button:
           #  text: "Contact Support"

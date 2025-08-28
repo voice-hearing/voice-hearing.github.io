@@ -39,18 +39,18 @@
                     <!-- Grid -->
                       <div>
                         <label for="hs-firstname-contacts-1 name" class="sr-only form-label">Name</label>
-                        <input type="text" name="name" id="name" class="py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_name" | default "Name" }}" type="text" required>
+                        <input type="text" name="name" id="name" class="py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_name" | default "Name" }}" type="text" required>
                       </div>
                     <div>
                       <label for="hs-email-contacts-1 email" class="sr-only form-label">Email</label>
-                      <input type="email" name="hs-email-contacts-1 email" id="hs-email-contacts-1 email" autocomplete="email" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_email" | default "Email" }}" type="email" required>
+                      <input type="email" name="hs-email-contacts-1 email" id="hs-email-contacts-1 email" autocomplete="email" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_email" | default "Email" }}" type="email" required>
                     </div>
                     <div>
                       <label for="hs-about-contacts-1 message" class="sr-only from-label">Message</label>
-                      <textarea id="hs-about-contacts-1 message" name="hs-about-contacts-1 message" rows="4" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_message" | default "Message" }}"></textarea>
+                      <textarea id="hs-about-contacts-1 message" name="hs-about-contacts-1 message" rows="4" class="y-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300" placeholder="{{ i18n "contact_message" | default "Message" }}"></textarea>
                     </div>
                    <div class="terms-container text-left mb-4 px-4">
-                    <label class="text-xl text-secondary purchase__terms" for="terms-accept">
+                    <label class="text-xl text-gray-500 dark:text-gray-400 purchase__terms" for="terms-accept">
                     <input class="mr-1 rounded-sm text-justify" type="checkbox" id="terms-accept" name="terms" value="1" required>
                     {{$text_privacy}}
                     </label>
@@ -78,12 +78,12 @@
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_email" | default "Email" }}</h4>
+              <h4 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_email" | default "Email" }}</h4>
               <div id="person-email">
                 {{- if $autolink }}
-                  <a href="mailto:{{ $data.email }}" class="text-gray-700 dark:text-gray-300 prose underline break-all text-lg">{{ $data.email }}</a>
+                  <a href="mailto:{{ $data.email }}" class="text-gray-700 dark:text-gray-300 prose underline break-all text-xl">{{ $data.email }}</a>
                 {{ else }}
-                  <span class="text-gray-700 dark:text-gray-300 break-all text-lg">{{ $data.email }}</span>
+                  <span class="text-gray-700 dark:text-gray-300 break-all text-xl">{{ $data.email }}</span>
                 {{ end -}}
               </div>
             </div>
@@ -98,12 +98,12 @@
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_phone" | default "Phone" }}</h4>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_phone" | default "Phone" }}</h4>
               <div id="person-telephone">
                 {{- if $autolink }}
-                  <a href="tel:{{ . }}" class="text-gray-700 dark:text-gray-300 hover:underline text-lg">{{ . }}</a>
+                  <a href="tel:{{ . }}" class="text-gray-700 dark:text-gray-300 hover:underline text-xl">{{ . }}</a>
                 {{ else }}
-                  <span class="text-gray-700 dark:text-gray-300 break-all text-lg">{{ . }}</span>
+                  <span class="text-gray-700 dark:text-gray-300 break-all text-xl">{{ . }}</span>
                 {{ end -}}
               </div>
             </div>
@@ -121,8 +121,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_address" | default "Address" }}</h4>
-                <div id="person-address" class="text-gray-700 dark:text-gray-300 break-all text-lg">{{$addr_formatted}}</div>
+                <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_address" | default "Address" }}</h4>
+                <div id="person-address" class="text-gray-700 dark:text-gray-300 break-all text-xl">{{$addr_formatted}}</div>
               </div>
             </div>
           {{ end }}
@@ -135,8 +135,8 @@
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_directions" | default "Directions" }}</h4>
-              <div class="text-gray-700 dark:text-gray-300 break-all text-lg prose prose-sm dark:prose-invert max-w-none">{{ . | markdownify | emojify }}</div>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_directions" | default "Directions" }}</h4>
+              <div class="text-gray-700 dark:text-gray-300 break-all text-xl prose prose-sm dark:prose-invert max-w-none">{{ . | markdownify | emojify }}</div>
             </div>
           </div>
           {{ end }}
@@ -149,8 +149,8 @@
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_hours" | default "Office Hours" }}</h4>
-              <div class="text-gray-700 dark:text-gray-300 text-lg prose prose-sm dark:prose-invert max-w-none">
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_hours" | default "Office Hours" }}</h4>
+              <div class="text-gray-700 dark:text-gray-300 text-xl prose prose-sm dark:prose-invert max-w-none">
                 {{- if not (reflect.IsSlice .)}}{{/* Support legacy string format. */}}
                   {{- . | markdownify | emojify -}}
                 {{else}}
@@ -169,9 +169,9 @@
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_appointment" | default "Appointment" }}</h4>
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2">{{ i18n "contact_appointment" | default "Appointment" }}</h4>
               <div>
-                <a href="{{ . }}" target="_blank" rel="noopener" class="inline-flex items-center text-gray-700 dark:text-gray-300 text-lg underline">
+                <a href="{{ . }}" target="_blank" rel="noopener" class="inline-flex items-center text-gray-700 dark:text-gray-300 text-xl underline">
                   {{ i18n "book_appointment" | default "Book an appointment" }}
                   <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -186,7 +186,7 @@
         {{/* Contact Action Buttons - Horizontal Layout with Text Optimized for Dark/Light */}}
         {{ if $data.contact_links }}
         <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-          <h4 class="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-4">{{ i18n "contact_connect" | default "Connect With Me" }}</h4>
+          <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-4">{{ i18n "contact_connect" | default "Connect With Me" }}</h4>
           <div class="flex flex-wrap gap-3">
             {{ range $data.contact_links }}
             {{ $link := .link }}
