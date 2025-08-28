@@ -32,6 +32,14 @@ footer:
     name: People
     url: /people
     weight: 2
+  - parent: about
+    name: Ministry
+    url: /about
+    weight: 3
+  - parent: about
+    name: Outreach
+    url: /about
+    weight: 4
   - identifier: courses
     name: What We Do
     weight: 2
@@ -44,7 +52,7 @@ footer:
     url: /what-we-do
     weight: 2
   - parent: courses
-    name: Community Garden
+    name: Hope Garden
     url: /what-we-do
     weight: 3
   - parent: courses
@@ -82,11 +90,15 @@ footer:
     url: /contact
     weight: 2
   - parent: site
+    name: Subscriber
+    url: /subscribe
+    weight: 3
+  - parent: site
     name: Links
     url: /links
-    weight: 3
+    weight: 4
   - parent: site
     name: Free Resource
     url: /Free
-    weight: 4
+    weight: 5
  

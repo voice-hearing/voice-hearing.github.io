@@ -14,7 +14,7 @@ sections:
       user_groups:
         - Administration
         - Researchers
-        - Speakers
+        - Trustees
       sort_by: Params.last_name
       sort_ascending: true
     design:

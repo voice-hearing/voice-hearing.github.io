@@ -11,7 +11,7 @@ design:
 sections:
   
   - block: people1
-    id: speakers
+    id: Trustees
     content:
       title: 
       # Choose which groups/teams of users to display.
@@ -19,7 +19,8 @@ sections:
       text: ""
       user_groups:
         - Admin
-        - Speakers
+        - Trustees
+        - Volunteers
       sort_by: Params.last_name
       sort_ascending: true
     design:

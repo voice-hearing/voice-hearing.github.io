@@ -24,6 +24,8 @@
   <url>
     <loc>http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/privacy/</loc><lastmod>2023-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/post/get-started/</loc><lastmod>2023-10-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/tags/academic/</loc><lastmod>2023-10-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -76,13 +78,13 @@
   <url>
     <loc>http://localhost:1313/tags/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/privacy/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>http://localhost:1313/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/</loc><lastmod>2022-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/people/</loc><lastmod>2022-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/subscribe/</loc><lastmod>2022-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/publication/preprint/</loc><lastmod>2019-04-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -112,10 +114,22 @@
   <url>
     <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/</loc><changefreq>weekly</changefreq></url></urlset>

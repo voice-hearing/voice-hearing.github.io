@@ -96,8 +96,8 @@ Asumen charity isn’t just about what *we* do — it’s about what **we can do
 Freedom… peace… new life — not just for our neighbours in Birmingham, but also for everyone who chooses to be part of this journey.
 </br></br></br>
 <div class="text-center flex items-center justify-center">
-<a href="/en/donate">
-<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500">
+<a href="/donate">
+<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500">
   Donate Now - Transform Lives
 </button></a></div>
 

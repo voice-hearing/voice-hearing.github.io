@@ -93,7 +93,7 @@ As you choose to contribute—whether through prayer, sharing, volunteering, don
 **"You might begin to feel how, with a simple choice today, doors of hope quietly open for someone in need. As you explore ways to help, imagine your generosity softly blooming into freedom and new life for families throughout our community. When you decide to contribute, notice the subtle shift—not only in others' lives, but within your own heart—as kindness flows outward and gently grows. Picture the relief and warmth your gift brings, and as you consider giving, sense a growing connection and purpose taking root within you. By choosing to support Asumen charity now, you become part of a caring circle, weaving strength and peace into every life touched—including your own."**
 
 <div class="text-center flex items-center justify-center">
-<a href="/en/donate">
-<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500">
+<a href="/donate">
+<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500">
   Donate Now - Transform Lives
 </button></a></div>
