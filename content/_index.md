@@ -348,7 +348,7 @@ sections:
     id: contact
     content:
       blue: Contact Us
-      title: "Communicate Your Needs"
+      title: "Let us know"
       text: “Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
       text_cta: 
       text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
