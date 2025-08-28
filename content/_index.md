@@ -44,7 +44,7 @@ sections:
     id: hero-features-section
     content:
       # Header Section
-      title: "Food • Shelter • Hope"
+      title: "We Care and Share"
       blue: "OUR COMMUNITY"
       text: "Sink into the warm blanket of being loved."
       # LEFT COLUMN: Hero Image with Overlay
