@@ -592,22 +592,58 @@ html.dark .year {
 .dark #site-header.header {
   background-color: rgb(2, 6, 33);
 }
+/* ========================================
+   RESPONSIVE GOOGLE CALENDAR EMBED
+   ======================================== */
 
-.responsive-iframe {
+.responsive-calendar {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Changed from 75% to 56.25% for 16:9 */
+  padding-bottom: 75%; /* 4:3 aspect ratio for desktop */
   height: 0;
   overflow: hidden;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.responsive-iframe iframe {
+.responsive-calendar iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+  border: 0;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .responsive-calendar {
+    padding-bottom: 120%; /* Taller on mobile */
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .responsive-calendar {
+    padding-bottom: 150%; /* Even taller for small screens */
+    margin: 10px 0;
+  }
+}
+
+/* Tablet optimization */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive-calendar {
+    padding-bottom: 85%; /* Slightly taller for tablets */
+  }
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* aspect ratio: height / width (e.g., 600/800 = 75%) */
+  height: 0;
+  overflow: hidden;
 }
 
 .responsive-presentation {
@@ -651,6 +687,15 @@ html.dark .year {
     margin: 1rem;
     max-width: calc(100% - 2rem);
   }
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #777; /* keep your border style */
 }
 
 .google-calendar-embed {
