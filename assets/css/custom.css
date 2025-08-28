@@ -592,12 +592,22 @@ html.dark .year {
 .dark #site-header.header {
   background-color: rgb(2, 6, 33);
 }
+
 .responsive-iframe {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; /* aspect ratio: height / width (e.g., 600/800 = 75%) */
+  padding-bottom: 56.25%; /* Changed from 75% to 56.25% for 16:9 */
   height: 0;
   overflow: hidden;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .responsive-presentation {
@@ -641,15 +651,6 @@ html.dark .year {
     margin: 1rem;
     max-width: calc(100% - 2rem);
   }
-}
-
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: solid 1px #777; /* keep your border style */
 }
 
 .google-calendar-embed {
