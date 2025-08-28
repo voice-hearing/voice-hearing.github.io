@@ -130,7 +130,7 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: ""
+      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
       background:
         color: ""
         image:
@@ -227,7 +227,7 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: 
+      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
       background:
         color: ""
         image:
@@ -346,5 +346,18 @@ sections:
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2' 
+    design:
+      spacing:
+        padding: [0 , 0, "3rem", 0]
+        margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
+#      background:
+#        color: ""
+#        image:
+#          # Add your image background to `assets/media/`.
+#          filename: ""
+#          filters:
+#            brightness: 1.0  
 ---    
     
