@@ -19,7 +19,7 @@
     
     <div class="max-w-screen-md text-center mx-auto pt-8 pb-8">
       {{ with $block.content.title }}<h1 class="font-display text-5xl font-bold tracking-tighter sm:text-7xl text-gray-100">{{ . | markdownify }}</h1>{{end}}
-      {{ with $block.content.text }}<p class="mt-6 text-2xl font-bold text-primary-600 dark:text-primary-300">{{ . | $page.RenderString | emojify }}</p>{{end}}
+      {{ with $block.content.text }}<p class="mt-6 text-2xl font-bold text-primary-300 dark:text-primary-300">{{ . | $page.RenderString | emojify }}</p>{{end}}
       {{ with $block.content.secondary }}<p class="mt-6 text-xl text-gray-100">{{ . | $page.RenderString | emojify }}</p>{{end}}
     </div>
 

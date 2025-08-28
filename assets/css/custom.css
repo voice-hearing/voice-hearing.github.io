@@ -383,32 +383,11 @@
     color: #ffffff !important;
   }
 }
-
 /* ========================================
-   HUGO BLOX BUILDER FOOTER - COMPLETE SOLUTION
+   HUGO BLOX FOOTER - GRAY-950 THEME
    ======================================== */
-footer[aria-labelledby="footer-heading"] span {
-  color: #f9fafb !important;
-}
 
-.dark footer[aria-labelledby="footer-heading"] span {
-  color: #e5e7eb !important;
-}
-
-/* For specific span classes */
-footer .license,
-footer .powered-by,
-footer .copyright {
-  color: #f9fafb !important;
-}
-
-.dark footer .license,
-.dark footer .powered-by,
-.dark footer .copyright {
-  color: #e5e7eb !important;
-}
-
-/* Remove mt-24 from footer-page/page-footer wrapper */
+/* Remove mt-24 and set background - Light Theme */
 .footer-page,
 .page-footer,
 [class*="footer-page"],
@@ -417,95 +396,10 @@ footer .copyright {
 [class*="mt-24"]:has(footer) {
   margin-top: 0 !important;
   padding-top: 0 !important;
+  background-color: #030712 !important; /* gray-800 */
 }
 
-/* Remove any margin from footer element itself */
-footer[aria-labelledby="footer-heading"],
-footer[aria-labelledby="footer-heading"].mt-24,
-footer[aria-labelledby="footer-heading"][class*="mt-"] {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-}
-
-/* Force remove margins from parent containers */
-*:has(footer[aria-labelledby="footer-heading"]),
-section:has(footer),
-div:has(footer) {
-  margin-top: 0 !important;
-}
-
-/* ========================================
-   LIGHT THEME STYLES
-   ======================================== */
-
-/* Footer background - Light Theme */
-footer[aria-labelledby="footer-heading"] {
-  background-color: #1f2937 !important; /* bg-gray-800 */
-}
-
-/* Parent containers - Light Theme */
-.footer-page,
-.page-footer,
-[class*="footer-page"],
-[class*="page-footer"],
-*:has(footer[aria-labelledby="footer-heading"]) {
-  background-color: #1f2937 !important;
-}
-
-/* Footer sections - Light Theme */
-footer[aria-labelledby="footer-heading"] > div {
-  background-color: #1f2937 !important;
-}
-
-/* Bottom section darker - Light Theme */
-footer[aria-labelledby="footer-heading"] .bg-black,
-footer[aria-labelledby="footer-heading"] [class*="bg-black"] {
-  background-color: #000000 !important;
-}
-
-/* Text colors - Light Theme */
-footer[aria-labelledby="footer-heading"] .text-gray-800,
-footer[aria-labelledby="footer-heading"] .dark\:text-gray-300,
-footer[aria-labelledby="footer-heading"] p,
-footer[aria-labelledby="footer-heading"] span,
-footer[aria-labelledby="footer-heading"] div {
-  color: #f9fafb !important;
-}
-
-/* Links - Light Theme */
-footer[aria-labelledby="footer-heading"] a {
-  color: #f9fafb !important;
-  transition: color 0.2s ease-in-out;
-}
-
-footer[aria-labelledby="footer-heading"] a:hover {
-  color: #ffffff !important;
-  text-decoration: underline;
-}
-
-/* Headings - Light Theme */
-footer[aria-labelledby="footer-heading"] h1,
-footer[aria-labelledby="footer-heading"] h2,
-footer[aria-labelledby="footer-heading"] h3,
-footer[aria-labelledby="footer-heading"] h4,
-footer[aria-labelledby="footer-heading"] h5,
-footer[aria-labelledby="footer-heading"] h6 {
-  color: #ffffff !important;
-}
-
-/* ========================================
-   DARK THEME STYLES
-   ======================================== */
-
-/* Footer background - Dark Theme */
-html.dark footer[aria-labelledby="footer-heading"],
-.dark footer[aria-labelledby="footer-heading"],
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] {
-  background-color: #000000 !important;
-}
-
-/* Parent containers - Dark Theme */
+/* Dark Theme - Use gray-950 nearest to black */
 html.dark .footer-page,
 html.dark .page-footer,
 html.dark [class*="footer-page"],
@@ -517,174 +411,56 @@ html.dark [class*="page-footer"],
 [data-theme="dark"] .footer-page,
 [data-theme="dark"] .page-footer,
 [data-theme="dark"] [class*="footer-page"],
-[data-theme="dark"] [class*="page-footer"],
-html.dark *:has(footer[aria-labelledby="footer-heading"]),
-.dark *:has(footer[aria-labelledby="footer-heading"]),
-[data-theme="dark"] *:has(footer[aria-labelledby="footer-heading"]) {
-  background-color: #000000 !important;
+[data-theme="dark"] [class*="page-footer"] {
+  background-color: #030712 !important; /* gray-950 - nearest to black */
+}
+
+/* Footer backgrounds */
+footer[aria-labelledby="footer-heading"] {
+  background-color: #1f2937 !important; /* gray-800 */
+}
+
+html.dark footer[aria-labelledby="footer-heading"],
+.dark footer[aria-labelledby="footer-heading"],
+[data-theme="dark"] footer[aria-labelledby="footer-heading"] {
+  background-color: #030712 !important; /* gray-950 - nearest to black */
 }
 
 /* Footer sections - Dark Theme */
 html.dark footer[aria-labelledby="footer-heading"] > div,
 .dark footer[aria-labelledby="footer-heading"] > div,
 [data-theme="dark"] footer[aria-labelledby="footer-heading"] > div {
-  background-color: #000000 !important;
+  background-color: #030712 !important; /* gray-950 - nearest to black */
 }
 
-/* Force dark background on all dark theme elements */
-html.dark footer[aria-labelledby="footer-heading"] .bg-gray-900,
-html.dark footer[aria-labelledby="footer-heading"] .bg-black,
-html.dark footer[aria-labelledby="footer-heading"] .dark\:bg-black,
-.dark footer[aria-labelledby="footer-heading"] .bg-gray-900,
-.dark footer[aria-labelledby="footer-heading"] .bg-black,
-.dark footer[aria-labelledby="footer-heading"] .dark\:bg-black,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .bg-gray-900,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .bg-black,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .dark\:bg-black {
-  background-color: #000000 !important;
+/* Remove footer margins */
+footer[aria-labelledby="footer-heading"],
+footer[aria-labelledby="footer-heading"].mt-24,
+footer[aria-labelledby="footer-heading"][class*="mt-"] {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
 }
 
-/* Text colors - Dark Theme */
-html.dark footer[aria-labelledby="footer-heading"] .text-gray-800,
-html.dark footer[aria-labelledby="footer-heading"] .dark\:text-gray-300,
-html.dark footer[aria-labelledby="footer-heading"] .text-gray-100,
-html.dark footer[aria-labelledby="footer-heading"] p,
-html.dark footer[aria-labelledby="footer-heading"] span,
-html.dark footer[aria-labelledby="footer-heading"] div,
-.dark footer[aria-labelledby="footer-heading"] .text-gray-800,
-.dark footer[aria-labelledby="footer-heading"] .dark\:text-gray-300,
-.dark footer[aria-labelledby="footer-heading"] .text-gray-100,
-.dark footer[aria-labelledby="footer-heading"] p,
-.dark footer[aria-labelledby="footer-heading"] span,
-.dark footer[aria-labelledby="footer-heading"] div,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .text-gray-800,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .dark\:text-gray-300,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] .text-gray-100,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] p,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] span,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] div {
-  color: #e5e7eb !important;
-}
-
-/* Links - Dark Theme */
-html.dark footer[aria-labelledby="footer-heading"] a,
-.dark footer[aria-labelledby="footer-heading"] a,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] a {
-  color: #e5e7eb !important;
-  transition: color 0.2s ease-in-out;
-}
-
-html.dark footer[aria-labelledby="footer-heading"] a:hover,
-.dark footer[aria-labelledby="footer-heading"] a:hover,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] a:hover {
-  color: #ffffff !important;
-  text-decoration: underline;
-}
-
-/* Headings - Dark Theme */
-html.dark footer[aria-labelledby="footer-heading"] h1,
-html.dark footer[aria-labelledby="footer-heading"] h2,
-html.dark footer[aria-labelledby="footer-heading"] h3,
-html.dark footer[aria-labelledby="footer-heading"] h4,
-html.dark footer[aria-labelledby="footer-heading"] h5,
-html.dark footer[aria-labelledby="footer-heading"] h6,
-.dark footer[aria-labelledby="footer-heading"] h1,
-.dark footer[aria-labelledby="footer-heading"] h2,
-.dark footer[aria-labelledby="footer-heading"] h3,
-.dark footer[aria-labelledby="footer-heading"] h4,
-.dark footer[aria-labelledby="footer-heading"] h5,
-.dark footer[aria-labelledby="footer-heading"] h6,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h1,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h2,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h3,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h4,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h5,
-[data-theme="dark"] footer[aria-labelledby="footer-heading"] h6 {
-  color: #ffffff !important;
-}
-
-/* ========================================
-   FULL WIDTH POSITIONING
-   ======================================== */
-
-/* Full viewport width for footer */
-footer[aria-labelledby="footer-heading"] {
-  width: 100vw !important;
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  box-sizing: border-box !important;
-}
-
-/* Ensure content is centered */
-footer[aria-labelledby="footer-heading"] > div {
-  width: 100% !important;
-  margin: 0 auto !important;
-}
-
- Make footer text white - targeting your specific HTML */
-footer[aria-labelledby="footer-heading"] p.text-right {
-  color: white !important;
-}
-
-/* Force white color on markdown content */
-footer[aria-labelledby="footer-heading"] p.text-right * {
-  color: white !important;
-}
-
-/* Make spans white */
-footer[aria-labelledby="footer-heading"] span.text-white {
-  color: white !important;
-}
-
-/* Force white on license partial output */
-footer[aria-labelledby="footer-heading"] span.text-white * {
-  color: white !important;
-}
-
-
-/* ========================================
-   UTILITY OVERRIDES
-   ======================================== */
-
-/* Remove body overflow issues */
-body {
-  overflow-x: hidden !important;
-}
-
-/* Container constraints */
-.container footer[aria-labelledby="footer-heading"],
-.max-w-full footer[aria-labelledby="footer-heading"] {
-  max-width: none !important;
-}
-
-/* Force specific Tailwind classes */
-.bg-gray-900 {
-  background-color: #1f2937 !important;
-}
-
-.bg-black {
-  background-color: #000000 !important;
-}
-
-.dark .bg-black,
-.dark .dark\:bg-black {
-  background-color: #000000 !important;
-}
-
-/* Text color utilities */
-.text-white {
-  color: #ffffff !important;
-}
-
-.text-gray-100 {
+/* Text colors for readability */
+footer[aria-labelledby="footer-heading"] span {
   color: #f9fafb !important;
 }
 
-.dark .text-gray-100,
-.dark .dark\:text-gray-300 {
+.dark footer[aria-labelledby="footer-heading"] span {
+  color: #e5e7eb !important;
+}
+
+/* License and copyright text */
+footer .license,
+footer .powered-by,
+footer .copyright {
+  color: #f9fafb !important;
+}
+
+.dark footer .license,
+.dark footer .powered-by,
+.dark footer .copyright {
   color: #e5e7eb !important;
 }
 
