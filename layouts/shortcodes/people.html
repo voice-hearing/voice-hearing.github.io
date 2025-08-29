@@ -1,0 +1,130 @@
+{{/* Hugo Blox People Shortcode - Centered for 1-2 People */}}
+{{/* Usage: {{< people title="Our Team" user_groups="Faculty,Researchers" >}} */}}
+
+{{ $show_social := .Get "show_social" | default "false" }}
+{{ $show_interests := .Get "show_interests" | default "true" }}
+{{ $show_organizations := .Get "show_organizations" | default "false" }}
+{{ $show_role := .Get "show_role" | default "true" }}
+{{ $show_social := eq $show_social "true" }}
+{{ $show_interests := eq $show_interests "true" }}
+{{ $show_organizations := eq $show_organizations "true" }}
+{{ $show_role := eq $show_role "true" }}
+
+<section class="people-section py-12">
+  <div class="mx-auto max-w-7xl pt-8 px-8 pb-8">
+    
+    <!-- Header Section with Red Line -->
+    <div class="flex flex-col mb-12">
+      {{ with (.Get "blue") }}
+      <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{ . }}</p>
+      {{ end }}
+            
+      {{ with (.Get "title") }}
+      <h1 class="mb-4 text-xl md:text-4xl lg:text-3xl text-gray-900 dark:text-white text-center">{{ . | markdownify }}</h1>
+      {{ end }}
+      
+      {{ with (.Get "subtitle") }}
+      <p class="mt-2 text-lg text-gray-600 dark:text-gray-400 text-center">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+
+    {{ with (.Get "text") }}
+    <div class="w-full mb-8">
+      <div class="prose prose-lg max-w-none text-gray-700 dark:text-gray-300 text-center mx-auto">
+        {{ . | markdownify }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ $user_groups := .Get "user_groups" | default "" }}
+    {{ $groups := split $user_groups "," }}
+    
+    {{ range $groups }}
+      {{ $group := . | strings.TrimSpace }}
+      {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice $group) }}
+      
+      {{/* Sort with parameters from shortcode */}}
+      {{ $sort_by := $.Get "sort_by" | default "Params.last_name" }}
+      {{ $sort_ascending := $.Get "sort_ascending" | default "true" }}
+      {{ $sort_order := cond (eq $sort_ascending "true") "asc" "desc" }}
+      {{ $query = sort $query $sort_by $sort_order }}
+
+      {{/* Show group title if multiple groups */}}
+      {{ if and $query (gt (len $groups) 1) }}
+      <div class="w-full mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white text-center">{{ $group | markdownify }}</h2>
+      </div>
+      {{ end }}
+
+      {{/* Dynamic layout based on number of people */}}
+      {{ $count := len $query }}
+      {{ if le $count 2 }}
+        {{/* Center layout for 1-2 people */}}
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+      {{ else }}
+        {{/* Grid layout for 3+ people */}}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+      {{ end }}
+        
+        {{ range $query }}
+          {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+          {{/* Get link to user's profile page */}}
+          {{ $link := "" }}
+          {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+            {{ $link = .RelPermalink }}
+          {{ end }}
+          
+          {{/* Person card - centered or grid item */}}
+          <div class="people-person flex flex-col items-center text-center {{ if le $count 2 }}max-w-xs{{ end }}">
+            {{ $src := "" }}
+            {{ if site.Params.features.avatar.gravatar }}
+              {{ $src = printf "https://s.gravatar.com/avatar/%s?s=200" (md5 .Params.email) }}
+            {{ else if $avatar }}
+              {{ $avatar_image := $avatar.Fill "200x200 Center" }}
+              {{ $src = $avatar_image.RelPermalink }}
+            {{ end }}
+            
+            {{ if $src }}
+              {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+              {{with $link}}<a href="{{.}}" class="block mb-1">{{end}}
+              <img width="200" height="200" loading="lazy" 
+                   class="avatar {{ if le $count 2 }}w-32 h-32{{ else }}w-24 h-24{{ end }} object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-full{{end}}" 
+                   src="{{ $src }}" alt="{{ .Title }} Avatar">
+              {{if $link}}</a>{{end}}
+            {{ end }}
+
+            <div class="portrait-title">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">
+                {{with $link}}<a href="{{.}}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">{{end}}
+                {{ .Title }}
+                {{if $link}}</a>{{end}}
+              </h3>
+              
+              {{ if and $show_organizations .Params.organizations }}
+                {{ range .Params.organizations }}
+                  <p class="text-xl font-medium text-gray-600 dark:text-gray-400 mb-1">{{ .name }}</p>
+                {{ end }}
+              {{ end }}
+              
+              {{ if and $show_role .Params.role }}
+                <p class="text-xl text-gray-600 dark:text-gray-400 mb-2">{{ .Params.role | markdownify }}</p>
+              {{ end }}
+              
+              {{ if $show_social }}
+                <div class="text-xl flex justify-center space-x-1 mb-2">
+                  {{ partial "social_links" . }}
+                </div>
+              {{ end }}
+              
+              {{ if and $show_interests .Params.interests }}
+                <p class="people-interests text-xl text-gray-500 dark:text-gray-500 italic">
+                  {{ delimit .Params.interests ", " | markdownify }}
+                </p>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>
