@@ -79,7 +79,7 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
+      css_class: 
       background:
         color: ""
         image:

@@ -24,6 +24,8 @@
   <url>
     <loc>http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/privacy/</loc><lastmod>2023-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/post/get-started/</loc><lastmod>2023-10-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/tags/academic/</loc><lastmod>2023-10-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -71,8 +73,6 @@
     <loc>http://localhost:1313/series/charity/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/tags/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>http://localhost:1313/privacy/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
