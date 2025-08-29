@@ -108,10 +108,11 @@
       <link>http://localhost:1313/subscribe/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/subscribe/</guid>
-      <description>
+      <description>&lt;h2 id=&#34;subscribe-or-not&#34;&gt;Subscribe or not&lt;/h2&gt;
+
 
 &lt;section&gt;
-  &lt;div class=&#34;mx-auto max-w-7xl py-8 px-8&#34;&gt;
+  &lt;div class=&#34;mx-auto max-w-7xl py-8 px-2&#34;&gt;
     
     
     &lt;div class=&#34;flex flex-col&#34;&gt;
