@@ -211,12 +211,13 @@ sections:
           filename: ""
           # filters:
           #  brightness: 1
-  - block: calendar
+  - block: calendar-agenda
     content:
       blue: 
       title: FELLOWSHIP GATHERINGS
       name: 
       subtitle: 
+      background_image: li-yang-5h_dMuX_7RE-unsplash.webp  # Image in assets/media/
       # text: |-
         # <div class="responsive-iframe">
         # <iframe

@@ -17,6 +17,9 @@ series:
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
+
+## Write us something beautiful
+
 {{< contact-form 
     blue=""
     title=""

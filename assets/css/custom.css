@@ -592,51 +592,6 @@ html.dark .year {
 .dark #site-header.header {
   background-color: rgb(2, 6, 33);
 }
-/* ========================================
-   RESPONSIVE GOOGLE CALENDAR EMBED
-   ======================================== */
-
-.responsive-calendar {
-  position: relative;
-  width: 100%;
-  padding-bottom: 75%; /* 4:3 aspect ratio for desktop */
-  height: 0;
-  overflow: hidden;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.responsive-calendar iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Mobile optimization */
-@media (max-width: 768px) {
-  .responsive-calendar {
-    padding-bottom: 120%; /* Taller on mobile */
-  }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-  .responsive-calendar {
-    padding-bottom: 150%; /* Even taller for small screens */
-    margin: 10px 0;
-  }
-}
-
-/* Tablet optimization */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .responsive-calendar {
-    padding-bottom: 85%; /* Slightly taller for tablets */
-  }
-}
 
 .responsive-iframe {
   position: relative;
@@ -697,25 +652,6 @@ html.dark .year {
   height: 100%;
   border: solid 1px #777; /* keep your border style */
 }
-
-.google-calendar-embed {
-  margin: 2rem 0;
-  text-align: center;
-  
-  iframe {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media (max-width: 768px) {
-  .google-calendar-embed iframe {
-    width: 100% !important;
-    height: 400px !important;
-  }
-}
-
 .people-widget {
   font-size: 0.8rem;
   text-align: center;
