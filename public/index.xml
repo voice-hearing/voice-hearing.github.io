@@ -390,7 +390,7 @@
 
 
 
-&lt;div id=&#34;chart-147926583&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-386591724&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -408,7 +408,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-147926583&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-386591724&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1647,15 +1647,9 @@ Parallel 4   :         des6, after des4, 1d
     
     &lt;div class=&#34;flex flex-col mb-12&#34;&gt;
       
-      &lt;p class=&#34;mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300&#34;&gt;CONTACT US&lt;/p&gt;
       
       
       
-      &lt;h2 class=&#34;mb-4 text-xl md:text-4xl lg:text-3xl text-gray-900 dark:text-white&#34;&gt;Let&amp;#39;s Start a Conversation&lt;/h2&gt;
-      
-      
-      
-      &lt;p class=&#34;text-xl md:text-2xl text-gray-500 dark:text-gray-400&#34;&gt;We&amp;#39;d love to hear from you. Send us a message and we&amp;#39;ll respond as soon as possible.&lt;/p&gt;
       
     &lt;/div&gt;
 
@@ -1666,8 +1660,6 @@ Parallel 4   :         des6, after des4, 1d
       &lt;div class=&#34;w-full&#34;&gt;
         &lt;form action=&#34;https://api.web3forms.com/submit&#34; method=&#34;POST&#34;&gt;
           
-          
-          &lt;h3 class=&#34;text-xl text-gray-800 dark:text-gray-300 mb-8&#34;&gt;Send us a message&lt;/h3&gt;
           
           
           
@@ -1706,9 +1698,9 @@ Parallel 4   :         des6, after des4, 1d
             
             
             &lt;div class=&#34;terms-container text-left mb-4 px-4&#34;&gt;
-              &lt;label class=&#34;text-xl text-gray-500 dark:text-gray-400 purchase__terms&#34; for=&#34;terms-accept&#34;&gt;
-                &lt;input class=&#34;mr-1 rounded-sm text-justify&#34; type=&#34;checkbox&#34; id=&#34;terms-accept&#34; name=&#34;terms&#34; value=&#34;1&#34; required&gt;
-                I agree to the privacy policy and terms of service
+              &lt;label class=&#34;flex items-center text-xl text-gray-500 dark:text-gray-400&#34; for=&#34;terms-accept&#34;&gt;
+                &lt;input class=&#34;mr-2 rounded-sm&#34; type=&#34;checkbox&#34; id=&#34;terms-accept&#34; name=&#34;terms&#34; value=&#34;1&#34; required&gt;
+                &lt;span&gt;I agree to the privacy policy and terms of service&lt;/span&gt;
               &lt;/label&gt;
             &lt;/div&gt;
             
@@ -1726,7 +1718,7 @@ Parallel 4   :         des6, after des4, 1d
 
       
       &lt;div class=&#34;w-full&#34;&gt;
-        &lt;div class=&#34;bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700&#34;&gt;
+        &lt;div class=&#34;bg-gray-50 dark:bg-gray-900 px-2 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700&#34;&gt;
           
           
           &lt;h3 class=&#34;text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8&#34;&gt;Contact Information&lt;/h3&gt;
@@ -1736,61 +1728,61 @@ Parallel 4   :         des6, after des4, 1d
             
             
             
-            &lt;div class=&#34;flex items-start&#34;&gt;
-              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mt-1 mr-4&#34;&gt;
+            &lt;div class=&#34;flex items-center&#34;&gt;
+              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mr-4&#34;&gt;
                 &lt;svg class=&#34;w-6 h-6 text-gray-600 dark:text-gray-400&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z&#34;&gt;&lt;/path&gt;
                 &lt;/svg&gt;
               &lt;/div&gt;
-              &lt;div&gt;
-                &lt;h4 class=&#34;text-2xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2&#34;&gt;Email&lt;/h4&gt;
-                &lt;a href=&#34;mailto:contact@yoursite.com&#34; class=&#34;text-gray-700 dark:text-gray-300 prose underline break-all text-xl&#34;&gt;contact@yoursite.com&lt;/a&gt;
+              &lt;div class=&#34;flex flex-col&#34;&gt;
+                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide&#34;&gt;Email&lt;/h4&gt;
+                &lt;a href=&#34;mailto:contact@yoursite.com&#34; class=&#34;text-gray-700 dark:text-gray-300 hover:underline text-lg&#34;&gt;contact@yoursite.com&lt;/a&gt;
               &lt;/div&gt;
             &lt;/div&gt;
             
 
             
             
-            &lt;div class=&#34;flex items-start&#34;&gt;
-              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mt-1 mr-4&#34;&gt;
+            &lt;div class=&#34;flex items-center&#34;&gt;
+              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mr-4&#34;&gt;
                 &lt;svg class=&#34;w-6 h-6 text-gray-600 dark:text-gray-400&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z&#34;&gt;&lt;/path&gt;
                 &lt;/svg&gt;
               &lt;/div&gt;
-              &lt;div&gt;
-                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2&#34;&gt;Phone&lt;/h4&gt;
-                &lt;a href=&#34;tel:&amp;#43;1-555-123-4567&#34; class=&#34;text-gray-700 dark:text-gray-300 hover:underline text-xl&#34;&gt;&amp;#43;1-555-123-4567&lt;/a&gt;
+              &lt;div class=&#34;flex flex-col&#34;&gt;
+                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide&#34;&gt;Phone&lt;/h4&gt;
+                &lt;a href=&#34;tel:&amp;#43;1-555-123-4567&#34; class=&#34;text-gray-700 dark:text-gray-300 hover:underline text-lg&#34;&gt;&amp;#43;1-555-123-4567&lt;/a&gt;
               &lt;/div&gt;
             &lt;/div&gt;
             
 
             
             
-            &lt;div class=&#34;flex items-start&#34;&gt;
-              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mt-1 mr-4&#34;&gt;
+            &lt;div class=&#34;flex items-center&#34;&gt;
+              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mr-4&#34;&gt;
                 &lt;svg class=&#34;w-6 h-6 text-gray-600 dark:text-gray-400&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z&#34;&gt;&lt;/path&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M15 11a3 3 0 11-6 0 3 3 0 016 0z&#34;&gt;&lt;/path&gt;
                 &lt;/svg&gt;
               &lt;/div&gt;
-              &lt;div&gt;
-                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2&#34;&gt;Address&lt;/h4&gt;
-                &lt;div class=&#34;text-gray-700 dark:text-gray-300 break-all text-xl&#34;&gt;123 Main Street&lt;br&gt;City, State 12345&lt;br&gt;Country&lt;/div&gt;
+              &lt;div class=&#34;flex flex-col&#34;&gt;
+                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide&#34;&gt;Address&lt;/h4&gt;
+                &lt;div class=&#34;text-gray-700 dark:text-gray-300 text-lg&#34;&gt;123 Main Street&lt;br&gt;City, State 12345&lt;br&gt;Country&lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
             
 
             
             
-            &lt;div class=&#34;flex items-start&#34;&gt;
-              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mt-1 mr-4&#34;&gt;
+            &lt;div class=&#34;flex items-center&#34;&gt;
+              &lt;div class=&#34;flex-shrink-0 w-6 h-6 mr-4&#34;&gt;
                 &lt;svg class=&#34;w-6 h-6 text-gray-600 dark:text-gray-400&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z&#34;&gt;&lt;/path&gt;
                 &lt;/svg&gt;
               &lt;/div&gt;
-              &lt;div&gt;
-                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-2&#34;&gt;Office Hours&lt;/h4&gt;
-                &lt;div class=&#34;text-gray-700 dark:text-gray-300 text-xl&#34;&gt;Monday - Friday: 9:00 AM - 5:00 PM&lt;br&gt;Saturday: 10:00 AM - 2:00 PM&lt;/div&gt;
+              &lt;div class=&#34;flex flex-col&#34;&gt;
+                &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide&#34;&gt;Office Hours&lt;/h4&gt;
+                &lt;div class=&#34;text-gray-700 dark:text-gray-300 text-lg&#34;&gt;Monday - Friday: 9:00 AM - 5:00 PM&lt;br&gt;Saturday: 10:00 AM - 2:00 PM&lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
             

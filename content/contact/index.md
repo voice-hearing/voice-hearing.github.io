@@ -18,10 +18,10 @@ image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
 {{< contact-form 
-    blue="CONTACT US"
-    title="Let's Start a Conversation"
-    text="We'd love to hear from you. Send us a message and we'll respond as soon as possible."
-    form_title="Send us a message"
+    blue=""
+    title=""
+    text=""
+    form_title=""
     access_key="your-web3forms-access-key"
     redirect="https://yoursite.com/thank-you"
     terms_text="I agree to the privacy policy and terms of service"
