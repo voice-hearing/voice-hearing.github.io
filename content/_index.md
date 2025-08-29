@@ -12,11 +12,11 @@ sections:
   
   - block: hero1
     content:
-      title: Transform Lives in Our Community
-      text: Together We Lift South Birmingham — Lasting Change Starts Here.
+      title: HELP US</br>AND TRANSFORM</br>AS WELL
+      text: 
       secondary: 
       primary_action:
-        text: Donate Now
+        text: DONATE NOW
         url: /donate
         icon: 
       secondary_action:
@@ -39,92 +39,41 @@ sections:
           # Add your image background to `assets/media/`.
           filename: "hero.webp"
           filters:
-            brightness: "40%"
-  - block: hero-features
-    id: hero-features-section
-    content:
-      # Header Section
-      title: "We Care and Share"
-      blue: "OUR COMMUNITY"
-      text: "Sink into the warm blanket of being loved."
-      # LEFT COLUMN: Hero Image with Overlay
-      hero:
-        title: "Interfaith Accommodation"
-        content: ""
-        background:
-          image:
-            filename: "musaf.png"  # Place in assets/media/
-            filters:
-              brightness: "100%"
-        align: "bottom"  # top, center, bottom
-        text_bg_color: "blue-900/90"  # "blue-900/90" "red-900/85" "green-800/90" "purple-900/95"
-        url: "/what-we-do"
-        external: false
-       # button:
-       # text: ""
-       # url: ""
-       # external: false
-      features:
-        - name: "Building Bonds Across Faiths"
-          description: "Connecting across different faiths helps our community grow closer and build stronger bonds."
-          icon: "hero/bolt"
-          # button:
-          #  text: "Learn More"
-          #  url: "/performance"            
-        - name: "Cultivating charity and Belonging"
-          description: "Small acts of kindness can foster charity and respect, helping people feel a sense of belonging and well-being."
-          icon: "hero/shield-check"
-          # button:
-          #   text: "Security Details"
-          #   url: "/security"          
-        - name: "Inspiring Growth Through Unity"
-          description: "Joining these conversations can foster personal and spiritual growth, inspiring unity and openness."
-          icon: "hero/chart-bar"
-          # button:
-          #  text: "Contact Support"
-          #  url: "/support"         
-    design:
-      spacing:
-        padding: ["2rem", "1rem", "2rem", "1rem"]
+            brightness: "60%"
   - block: image-overlay
     content:
-      blue: Happenings
-      title: Community Activities
-      text: Join Our Groups
+      title: HELP US, JOIN US
+      blue: 
+      text: 
       slides:
-      - title: Hope Garden
-        content: 
-        align: "bottom"
-        url: /what-we-do
-        background:
-          image:
-            filename: "hopegarden1.png"
-            # filters:
-            #    brightness: "1.5"
-            # position: center
-            # color: '#333'
-      - title: Children's Club
-        content: 
-        align: "bottom"
-        url: /what-we-do
-        background:
-          image:
-            filename: "childrensclub1.jpg"
-            # filters:
-            #    brightness: 0
-            # position: center
-            # color: '#333'
-      - title: Ladies' Day
-        content: 
-        align: "bottom"
-        url: /what-we-do
-        background:
-          image:
-            filename: "ladiesday1.jpg"
-            # filters:
-            #   brightness: 0
-            # position: center
-            # color: '#333'
+        - title: "INTERFAITH ACCOMMODATION"
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-kindelmedia-8550108.jpg"
+        - title: "HOPE GARDEN"
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "hopegarden1.png"
+        - title: CHILDREN'S CLUB
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "childrensclub1.jpg"
+        - title: LADIES' DAY
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "ladiesday1.jpg"
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -133,6 +82,96 @@ sections:
       css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
       background:
         color: ""
+        image:
+#          # Add your image background to `assets/media/`.
+          filename: ""
+          filters:
+            brightness:
+  - block: stats1
+    id: features
+    content:
+      blue: 
+      title: 
+      text: 
+      items:
+        - name: WE HAVE HELPED
+          icon: 
+          description: More Than 4000 People and Demands Are Growing Every year.
+        - name: WE ARE
+          icon:
+          description: Christian's Based And Volunteer From All Walks of Life.
+        - name: WE BELIEVE
+          icon: 
+          description: Like Us, Our Neighbors Just Seek a Place to Be Free.
+    design:
+      spacing:
+        padding: [0 , 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: ""
+#      background:
+#        color: "bg-gray-50 dark:bg-gray-900 min-h-screen"
+#        image:
+#          # Add your image background to `assets/media/`.
+#          filename: ""
+#          filters:
+#            brightness: 1.0
+  - block: image-overlay-3
+    content:
+      title: HOW YOU CAN HELP
+      blue: 
+      text: 
+      slides:
+        - title: "PRAYING"
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-jibarofoto-14373404.jpg"
+        - title: SHARING INFO
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-cottonbro-4255394.jpg"
+        - title: VOLUNTEERING
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-julia-m-cameron-6994939.jpg"
+        - title: "SERVICING"
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-kindelmedia-8486923.jpg"
+        - title: OFFERING SPACE
+          content: 
+          align: "bottom-left"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-life-of-pix-67468.jpg"
+        - title: DONATING
+          content: 
+          align: "bottom"
+          url: /what-we-do
+          background:
+            image:
+              filename: "pexels-shvetsa-4482896.jpg"
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: 
+      background:
+        color: "bg-gray-50 dark:bg-gray-900 min-h-screen"
         image:
 #          # Add your image background to `assets/media/`.
           filename: ""
@@ -172,46 +211,11 @@ sections:
           filename: ""
           # filters:
           #  brightness: 1
-  - block: markdown-quote
-    content:
-      title: ''
-      subtitle: ''
-      text: |-
-        <p class= "text-gray-800 text-white px-2 text-2xl text-center">
-        “Sometimes, you might begin to realize that your generosity today is not only the best choice you can make to transform lives in our community… and as you give, you may notice how, in a very real way, you are gently transforming yourself too.”        
-        </p>
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "bg-primary-600 dark:bg-primary-900"
-      background:
-        color: ""
-        image:
-          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness: 
-  - block: testimonies-img
-    id: testimonies-img
-    content:
-      title: "Trusted by Our Community"
-      blue: "TESTIMONIALS"
-      text: "We Have Found Spark Through Service"
-      items:
-        - name: "Annabel Reed" 
-          text: When I had no one else to turn to, their kindness wrapped around me like a warm embrace. With their help, I found strength I didn’t know I had and began standing tall again inside and out.
-          description: "Teacher"
-          image: "sofia.jpg"
-    design:
-      spacing:
-        padding: ["1rem", 0, 0, 0]
   - block: calendar
     content:
-      blue: Activities
-      title: Fellowship Gatherings
-      name: Come and See
+      blue: 
+      title: FELLOWSHIP GATHERINGS
+      name: 
       subtitle: 
       # text: |-
         # <div class="responsive-iframe">
@@ -227,38 +231,35 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
+      css_class: 
       background:
-        color: ""
+        color: 
         image:
           # Add your image background to `assets/media/`.
           filename: ""
           filters:
             brightness:
-  - block: stats1
+  - block: text-3-c
     id: features
     content:
-      blue: Stats
-      title: About Our Past, Present and Future
-      text: Here We Are All Together
+      blue: 
+      title: 
+      text: 
       items:
-        - name: Since 1983
-          icon: /hero/calendar
-          description: We Have Roots and We Will Continue to Serve and Grow
-        - name: 4000+
-          icon: hero/trophy
-          description: People’s Demands Grow Every Year
-        - name: Open
-          icon: hero/book-open
-          description: We Welcome Everyone From All Walks of Life
+        - name: WE ARE VEHICLE
+          icon: 
+          description: We like to see ourselves as a vehicle — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and network… you just bring your God-given vision, and together, we travel further.
+        - name: WE MAKE DIFFERENCE
+          icon:
+          description: This living space continues to evolve, with a renewed focus on building a mutually supportive <a href="/about" style="text-decoration:underline">Christian community</a> while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
     design:
       spacing:
-        padding: [0 , 0, "3rem", 0]
+        padding: [0 , 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
       css_class: ""
 #      background:
-#        color: ""
+#        color: "bg-gray-50 dark:bg-gray-900 min-h-screen"
 #        image:
 #          # Add your image background to `assets/media/`.
 #          filename: ""
@@ -268,8 +269,8 @@ sections:
     id: charity-indicators
     content:
       # Header Content
-      title: "OUR TEAM"
-      blue: "Trusted by Community"
+      title: 
+      blue: 
       text: "We Are Here To Help"
       
       # Customizable Rating System
@@ -305,59 +306,6 @@ sections:
   
     design:
       spacing:
-        padding: ["1rem", 0, 0, 0]
-  - block: contact
-    id: contact
-    content:
-      blue: Contact Us
-      title: "Let us know"
-      text: “Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
-      text_cta: 
-      text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
-      phone: 888 888 88 88
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-    #  appointment_url: 'https://calendly.com'
-    #  directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-    #  email: test@example.org
-    #  contact_links:
-    #    - icon: twitter
-    #      icon_pack: fab
-    #      name: DM Me
-    #      link: 'https://twitter.com/Twitter'
-    #    - icon: skype
-    #      icon_pack: fab
-    #      name: Skype Me
-    #      link: 'skype:echo123?call'
-    #    - icon: video
-    #      icon_pack: fas
-    #      name: Zoom Me
-    #      link: 'https://zoom.com'
-      # Automatically link email and phone or display them just as text?
-      autolink: true
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '2' 
-    design:
-      spacing:
-        padding: [0 , 0, "3rem", 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "bg-gray-50 dark:bg-gray-900 min-h-screen"
-#      background:
-#        color: ""
-#        image:
-#          # Add your image background to `assets/media/`.
-#          filename: ""
-#          filters:
-#            brightness: 1.0  
+        padding: [0, 0, 0, 0]  
 ---    
     

@@ -1,6 +1,6 @@
 {{/* Hugo Blox: Features */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
-{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
+{{/* License: [https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md](https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md) */}}
 
 {{/* Initialise */}}
 {{ $page := .wcPage }}
@@ -9,26 +9,32 @@
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
-<section class="mx-auto max-w-7xl pt-8 pb-0 px-8">
+<section class="mx-auto max-w-7xl pt-8 pb-8 px-8">
     
     <!-- Header Section -->
-    <div class="mb-12 flex flex-col justify-center mx-auto px-8 px-4 md:px-8">
-      {{ with $blue }}
-      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
-      {{ end }}      
-      {{ with $title }}
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
-      {{ end }}
-      {{ with $text }}
-      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
-      {{ end }}
-    </div>
+ <div class="mx-auto max-w-7xl mt-0 px-8 mb-4">
+    
+ <div class="flex flex-col">
+  {{ with $blue }}
+  <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+  {{ end }}
   
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-0">
+  <!-- Red horizontal line above title -->
+  <div class="w-16 border-2 border-primary-500 mb-4"></div>
+      
+  {{ with $title }}
+  <h2 class="mb-4 text-xl md:text-4xl lg:text-2xl text-gray-900 dark:text-white">{{.}}</h2>
+  {{ end }}
+  {{ with $text }}
+  <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</p>
+  {{ end }}
+</div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-6 px-4 md:px-0">
       
       {{ range $index, $item := $block.content.slides }}
       
-      <div class="relative overflow-hidden group shadow-xl -mx-8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+      <div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
         
         <!-- Background Image Processing -->
         {{ $bg := $item.background }}
@@ -61,44 +67,44 @@
         
         {{ if eq $align "center" }}
         <!-- CENTER: Perfect center alignment -->
-        <div class="absolute inset-0 flex items-center justify-center px-6">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-lg shadow-2xl text-center text-white backdrop-blur-sm">
+        <div class="absolute inset-0 flex items-center justify-center p-6">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-lg shadow-2xl text-center text-white backdrop-blur-sm">
         {{ else if eq $align "top" }}
         <!-- TOP CENTER: Top center alignment -->
-        <div class="absolute left-0 right-0 top-0 pt-8 px-6 text-white text-center">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute left-0 right-0 top-0 pt-6 px-6 text-white text-center">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "bottom" }}
         <!-- BOTTOM CENTER: Bottom center alignment -->
-        <div class="absolute left-0 right-0 bottom-0 pb-8 px-6 text-white text-center">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute left-0 right-0 bottom-0 pb-6 px-6 text-white text-center">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "top-left" }}
         <!-- TOP LEFT: Top left corner -->
-        <div class="absolute top-0 left-0 pt-8 pl-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute top-0 left-0 pt-6 pl-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "top-right" }}
         <!-- TOP RIGHT: Top right corner -->
-        <div class="absolute top-0 right-0 pt-8 pr-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+        <div class="absolute top-0 right-0 pt-6 pr-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
         {{ else if eq $align "center-left" }}
         <!-- CENTER LEFT: Middle left side -->
-        <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "center-right" }}
         <!-- CENTER RIGHT: Middle right side -->
-        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
         {{ else if eq $align "bottom-left" }}
         <!-- BOTTOM LEFT: Bottom left corner -->
-        <div class="absolute bottom-0 left-0 pb-8 pl-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute bottom-0 left-0 pb-6 pl-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "bottom-right" }}
         <!-- BOTTOM RIGHT: Bottom right corner -->
-        <div class="absolute bottom-0 right-0 pb-8 pr-8 text-white">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+        <div class="absolute bottom-0 right-0 pb-6 pr-6 text-white">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
         {{ else }}
         <!-- DEFAULT: Bottom center if unknown alignment -->
-        <div class="absolute left-0 right-0 bottom-0 pb-8 px-6 text-white text-center">
-          <div class="bg-{{ $text_bg_color }} rounded-lg px-6 py-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+        <div class="absolute left-0 right-0 bottom-0 pb-6 px-6 text-white text-center">
+          <div class="bg-{{ $text_bg_color }} rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
         {{ end }}
         
             <div class="space-y-3">

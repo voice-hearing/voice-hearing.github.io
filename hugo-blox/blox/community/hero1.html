@@ -1,63 +1,115 @@
 {{/* Hugo Blox: Hero */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
-{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
+{{/* License: [https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md](https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md) */}}
 
 {{/* Initialise */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 
-<div class="relative isolate px-8 lg:px-12">
-  <div class="mx-auto max-w-7xl py-16 lg:py-20">
+<div class="relative isolate w-full" style="min-height: 80vh;">
+  
+  <!-- Background Image Support - 80% Height -->
+  {{ $bg := $block.content.background }}
+  {{ $bg_img := "" }}
+  {{ if $bg.image.filename }}
+    {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
+    {{ if $bg_img }}
+      {{ $bg_img = $bg_img.Fit "1920x1080 q80 webp" }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if $bg_img }}
+  <div class="absolute inset-0 w-full h-full overflow-hidden" style="height: 80vh;">
+    <img src="{{ $bg_img.RelPermalink }}" 
+         alt="Hero background" 
+         width="{{ $bg_img.Width }}"
+         height="{{ $bg_img.Height }}"
+         class="w-full h-full object-cover object-center">
+    <div class="absolute inset-0 bg-black/40"></div>
+  </div>
+  {{ end }}
+  
+  <div class="relative z-10 w-full px-8 lg:px-12 py-12 lg:py-16">
+    
     {{ if $block.content.announcement.text }}
     {{ $announcement := $block.content.announcement }}
-    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-      <div class="relative rounded-full px-3 py-1 text-lg leading-6 text-gray-900 dark:text-gray-100 border border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800">
+    <div class="hidden sm:mb-8 sm:flex">
+      <div class="relative rounded-full px-3 py-1 text-lg leading-6 text-gray-900 dark:text-gray-100 border border-gray-300 bg-white/90 dark:border-gray-500 dark:bg-gray-800/90 backdrop-blur-sm">
         {{$announcement.text | markdownify}} {{if $announcement.link.text}}<a href="{{$announcement.link.url}}" class="font-semibold text-primary-600 dark:text-primary-300"><span class="absolute inset-0" aria-hidden="true"></span>{{$announcement.link.text}} <span aria-hidden="true">&rarr;</span></a>{{end}}
       </div>
     </div>
     {{end}}
     
-    <div class="max-w-screen-md text-center mx-auto pt-8 pb-8">
-      {{ with $block.content.title }}<h1 class="font-display text-5xl font-bold tracking-tighter sm:text-7xl text-gray-100">{{ . | markdownify }}</h1>{{end}}
-      {{ with $block.content.text }}<p class="mt-6 text-2xl font-bold text-primary-300 dark:text-primary-300">{{ . | $page.RenderString | emojify }}</p>{{end}}
-      {{ with $block.content.secondary }}<p class="mt-6 text-xl text-gray-100">{{ . | $page.RenderString | emojify }}</p>{{end}}
+    <!-- Compact black background that fits content -->
+    {{ with $block.content.title }}
+    <div class="mb-12">
+      <div class="bg-black px-2 py-1 md:px-6 md:py-4 lg:px-8 lg:py-5 rounded-2xl shadow-2xl inline-block max-w-5xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white">
+          {{ . | markdownify }}
+        </h1>
+      </div>
+    </div>
+    {{end}}
+
+    <!-- Action buttons with enhanced spacing -->
+    <div class="flex flex-col sm:flex-row gap-6 mb-16">
+      {{ if $block.content.primary_action.url }}
+      <div>
+        {{ $link := $block.content.primary_action.url }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = $link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} 
+           class="inline-flex justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-bold text-white shadow-lg hover:bg-primary-500 hover:shadow-xl transition-all duration-300">
+          {{ $block.content.primary_action.text | markdownify | emojify }}
+          {{ with $block.content.primary_action.icon }}
+            {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em\" class='inline-block ml-3'") }}
+          {{ end }}
+        </a>
+      </div>
+      {{end}}
+      
+      {{ if $block.content.secondary_action.url }}
+      <div>
+        {{ $link_alt := $block.content.secondary_action.url }}
+        {{ $scheme_alt := (urls.Parse $link_alt).Scheme }}
+        {{ $target_alt := "" }}
+        {{ if not $scheme_alt }}
+          {{ $link_alt = $link_alt | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme_alt }}
+          {{ $target_alt = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <a href="{{ $link_alt | safeURL }}" {{ $target_alt | safeHTMLAttr }} 
+           class="inline-flex justify-center items-center rounded-full border-2 border-white/80 bg-white/90 px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-bold text-gray-900 hover:text-primary-600 hover:border-primary-600 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm">
+          {{ $block.content.secondary_action.text | markdownify | emojify }} 
+          <span class="ml-2 text-xl" aria-hidden="true">→</span>
+        </a>
+      </div>
+      {{end}}
+    </div>
+    
+    <!-- Supporting text with improved hierarchy -->
+    <div class="max-w-2xl space-y-6">
+      {{ with $block.content.text }}
+      <div class="bg-primary-600/90 px-6 py-4 rounded-xl backdrop-blur-sm">
+        <p class="text-xl md:text-2xl font-bold text-white leading-tight">
+          {{ . | $page.RenderString | emojify }}
+        </p>
+      </div>
+      {{end}}
+      
+      {{ with $block.content.secondary }}
+      <div class="bg-white/10 px-6 py-4 rounded-lg backdrop-blur-sm">
+        <p class="text-lg md:text-xl text-white leading-relaxed">
+          {{ . | $page.RenderString | emojify }}
+        </p>
+      </div>
+      {{end}}
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6 lg:mt-8 mx-auto lg:grid-flow-col lg:grid-cols-none text-center flex items-center justify-center">
-      <div>
-        {{ if $block.content.primary_action.url }}
-          {{ $link := $block.content.primary_action.url }}
-          {{ $scheme := (urls.Parse $link).Scheme }}
-          {{ $target := "" }}
-          {{ if not $scheme }}
-            {{ $link = $link | relLangURL }}
-          {{ else if in (slice "http" "https") $scheme }}
-            {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-          {{ end }}
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="inline-flex justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500">
-            {{ $block.content.primary_action.text | markdownify | emojify }}
-            {{ with $block.content.primary_action.icon }}
-              {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em\" class='inline-block pl-2'") }}
-            {{ end }}
-          </a>
-        {{end}}
-      </div>
-      
-      <div class="inline-block">
-        {{ if $block.content.secondary_action.url }}
-          {{ $link_alt := $block.content.secondary_action.url }}
-          {{ $scheme_alt := (urls.Parse $link_alt).Scheme }}
-          {{ $target_alt := "" }}
-          {{ if not $scheme_alt }}
-            {{ $link_alt = $link_alt | relLangURL }}
-          {{ else if in (slice "http" "https") $scheme_alt }}
-            {{ $target_alt = "target=\"_blank\" rel=\"noopener\"" }}
-          {{ end }}
-          <a href="{{ $link_alt | safeURL }}" {{ $target_alt | safeHTMLAttr }} class="inline-flex justify-center items-center rounded-full border border-gray-300 bg-white px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold dark:border-gray-500 dark:bg-gray-800 hover:text-primary-200 hover:dark:text-primary-200">
-            {{ $block.content.secondary_action.text | markdownify | emojify }} &nbsp;<span aria-hidden="true">→</span>
-          </a>          
-        {{end}}
-      </div>
-    </div>
   </div>
 </div>

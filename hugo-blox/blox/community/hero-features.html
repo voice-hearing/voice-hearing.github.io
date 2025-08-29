@@ -12,19 +12,22 @@
 <section>
   <div class="mx-auto max-w-7xl mt-0 px-8 mb-4">
     
-    <!-- Header Section - Full Width with Side Padding -->
-    <div class="w-full mb-8 flex flex-col justify-center mx-auto px-6 lg:px-12">
-      {{ with $blue }}
-      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
-      {{ end }}      
-      {{ with $title }}
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center px-4 lg:px-8">{{.}}</h2>
-      {{ end }}
-      {{ with $text }}
-      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center mb-12 px-4 lg:px-8">{{.}}</p>
-      {{ end }}
-    </div>
-    
+ <div class="flex flex-col">
+  {{ with $blue }}
+  <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+  {{ end }}
+  
+  <!-- Red horizontal line above title -->
+  <div class="w-16 border-2 border-primary-500 mb-4"></div>
+      
+  {{ with $title }}
+  <h2 class="mb-4 text-xl md:text-4xl lg:text-2xl text-gray-900 dark:text-white">{{.}}</h2>
+  {{ end }}
+  {{ with $text }}
+  <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</p>
+  {{ end }}
+</div>
+
     <!-- Two Column Layout -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
@@ -107,14 +110,14 @@
               <div class="space-y-3">
                 {{ if $hero.url }}<a href="{{ $hero.url }}" {{ if $hero.external }}target="_blank"{{ end }} class="block">{{ end }}
                 {{ with $hero.title }}
-                <h3 class="text-2xl lg:text-3xl font-bold leading-tight drop-shadow-2xl text-white hover:text-gray-200 transition-colors duration-300">
+                <h3 class="text-2xl lg:text-3xl text-white hover:text-gray-200 transition-colors duration-300">
                   {{ . | markdownify | emojify }}
                 </h3>
                 {{ end }}
                 {{ if $hero.url }}</a>{{ end }}
                 
                 {{ with $hero.content }}
-                <div class="text-sm lg:text-base leading-relaxed text-gray-100 drop-shadow-lg">
+                <div class="text-base lg:text-base leading-relaxed text-gray-100 drop-shadow-lg">
                   {{ . | emojify | $page.RenderString }}
                 </div>
                 {{ end }}

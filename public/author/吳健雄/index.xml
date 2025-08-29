@@ -382,7 +382,7 @@
 
 
 
-&lt;div id=&#34;chart-836729415&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-597431628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -400,7 +400,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-836729415&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-597431628&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1610,68 +1610,6 @@ Parallel 4   :         des6, after des4, 1d
     </item>
     
     <item>
-      <title> 🌱 CONTACT US</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;contact-us--asumen-charity&#34;&gt;Contact Us — Asumen charity&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;“Knock, and the door will be opened to you.”&lt;/em&gt; — Jesus Christ (Matthew 7:7)&lt;/p&gt;
-&lt;p&gt;As you reach out, you might begin to feel the warmth of a welcoming community ready to listen, support, and walk alongside you. Whether you want to learn more about our mission, volunteer, donate, or simply share a prayer, your voice and presence matter deeply to us.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;how-to-reach-us&#34;&gt;How to Reach Us&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Phone:&lt;/strong&gt; +44 (0)121 772 9756&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;WhatsApp:&lt;/strong&gt; +44 (0)7815 123456 (Chat with us anytime for quick questions or to connect with our team)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; 
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Feel free to call or message — each connection is a chance to open doors of hope and partnership.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;visit-us&#34;&gt;Visit Us&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Asumen House&lt;/strong&gt;&lt;br&gt;
-66 Stratford Road, Sparkbrook,&lt;br&gt;
-Birmingham, B11 1SZ, UK&lt;/p&gt;
-&lt;h3 id=&#34;opening-hours&#34;&gt;Opening Hours:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Monday to Friday: 9:00 AM – 5:00 PM&lt;/li&gt;
-&lt;li&gt;Closed on weekends and public holidays&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Imagine stepping through our doors and feeling the peace and welcome that fills every corner.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;directions&#34;&gt;Directions&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;By public transport:&lt;/strong&gt; Asumen House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;By car:&lt;/strong&gt; Limited parking is available nearby on Stratford Road.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We’re here to help you find your way—just ask when you call or message.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;your-invitation-to-connect&#34;&gt;Your Invitation to Connect&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;You might already sense that making contact is more than a formality—it’s the start of a shared journey toward freedom and new life.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Through phone, message, or in person, your reach brings you closer to stories of healing, fellowship, and community growth nurtured through Asumen charity’s Christian ethos.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;inspirational-words-for-the-journey&#34;&gt;Inspirational Words for the Journey&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;“Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.”&lt;/em&gt;&lt;br&gt;
-— Jesus Christ (Matthew 7:7)&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;“Faith is taking the first step even when you don’t see the whole staircase.”&lt;/em&gt;&lt;br&gt;
-— Martin Luther King Jr.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;“Prayer does not change God, but it changes him who prays.”&lt;/em&gt;&lt;br&gt;
-— Soren Kierkegaard&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;As you prepare to reach out or step through the door, know that you become part of a caring circle—a community woven with prayers, voices, and hands creating freedom and peace for all.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Feel&lt;/em&gt; the connection growing &lt;em&gt;hear&lt;/em&gt; the invitation whispering gently—and &lt;em&gt;see&lt;/em&gt; how together, we can build a brighter tomorrow.&lt;/p&gt;
-&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
-&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
-&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
-  Donate Now - Transform Lives
-&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
       <title> 🌱 HOW CAN I HELP?</title>
       <link>http://localhost:1313/how-you-can-help/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
@@ -2054,6 +1992,30 @@ You can join us through:&lt;/p&gt;
 
 
 &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>🕵️ Privacy Policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;p&gt;This page is published with 
+ for 
+. Being a 
+, it does not collect or share any personal data with third parties. However, it uses external services to add various functionalities, which are detailed in the following list.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+ for hosting it&amp;rsquo;s source code.&lt;/li&gt;
+&lt;li&gt;
+ for contact form. I will answer your message through your provided email. Please note that GDPR.eu is run by Proton Mail, the world’s largest encrypted email service and recommends end to end encryption for secure communication.&lt;/li&gt;
+&lt;li&gt;
+ for serving the page and analytics.&lt;/li&gt;
+&lt;li&gt;
+ for the license.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This website and its contents were created in my personal capacity. The views expressed are my own and do not necessarily represent the views of people I have interviewed or taken ideas from their books, videos or/and articles.&lt;/p&gt;
+&lt;p&gt;This website contains links to the websites of third parties („external links“). As the content of these websites is not under my control, I cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognizable to me. As soon as an infringement of the law becomes known to me, I will immediately remove the link in question.&lt;/p&gt;
 </description>
     </item>
     
