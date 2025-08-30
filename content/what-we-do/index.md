@@ -1,7 +1,7 @@
 ---
 title: " 🌱 WHAT WE DO"
-description: "Asumen charity STANDS AS A BEACON OF HOPE AND TRANSFORMATION IN SOUTH-EAST BIRMINGHAM."
-summary: "Asumen charity stands as a beacon of hope and transformation in South-East Birmingham."
+description: "Asumen charity STANDS AS A BEACON OF HOPE AND TRANSFORMATION IN west london."
+summary: "Asumen charity stands as a beacon of hope and transformation in west london."
 date: "2023-07-28"
 # Date updated
 lastmod: '2023-07-28'
@@ -27,7 +27,7 @@ image:
 
 *“Where the Spirit of the Lord is, there is freedom.”* — 2 Corinthians 3:17
 
-Picture yourself stepping into a space where **freedom**, **hope**, and **community** bloom in the heart of South-East Birmingham. Here, at Asumen charity, our name—*Asumen*—rings rich with meaning. Rooted in the Persian word for “freedom” or “liberty,” it travels through diverse Middle Eastern and South Asian languages—Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri—carrying the promise of liberty to all corners of human experience.
+Picture yourself stepping into a space where **freedom**, **hope**, and **community** bloom in the heart of west london. Here, at Asumen charity, our name—*Asumen*—rings rich with meaning. Rooted in the Persian word for “freedom” or “liberty,” it travels through diverse Middle Eastern and South Asian languages—Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri—carrying the promise of liberty to all corners of human experience.
 
 As you sense that gift, imagine how that freedom isn’t just a word here; it is lived in every handshake, every conversation, every moment of care extended across cultures, ages, and faiths.
 
@@ -35,7 +35,7 @@ As you sense that gift, imagine how that freedom isn’t just a word here; it is
 
 ## Our Story and Mission: Following the Spirit
 
-Founded in **1991** by Dr. Robin Fisher, a compassionate GP who witnessed deep hardship in Sparkbrook’s drug-affected community, Asumen charity has grown from a humble outreach into a vibrant Christian charity. Though the original medical practice and drug treatment closed mid-1990s, our vision—*to follow where God is working*—endures and expands.
+Founded in 1983** by Dr. Robin jeremiah, a compassionate GP who witnessed deep hardship in london’s drug-affected community, Asumen charity has grown from a humble outreach into a vibrant Christian charity. Though the original medical practice and drug treatment closed mid-1990s, our vision—*to follow where God is working*—endures and expands.
 
 You might hear echoes of the past as youth clubs once filled Asumen House’s rooms with laughter and learning; see children kicking balls with the Asumen Tigers football team; or feel the gentle warmth of mothers gathering in groups that blossom into friendship.
 
@@ -47,7 +47,7 @@ The charity doesn’t seek to create projects on its own; instead, it accompanie
 
 ![Asumen House](Asumen-house.jpg)
 
-Step closer to **Asumen House**, the heart of our operations and a symbol of transformation. Once a family home, then a GP surgery, Asumen House has been a sanctuary since our purchase in **1997** with support from Christ Church Sparkbrook.
+Step closer to **Asumen House**, the heart of our operations and a symbol of transformation. Once a family home, then a GP surgery, Asumen House has been a sanctuary since our purchase in **1997** with support from Christ Church london.
 
 Imagine the walls that have housed over two dozen men across more than a dozen nationalities—young, single Christians who find refuge here. Imagine the reflections in the large ground floor rooms that once echoed with youth club chatter, now transformed into welcoming residential spaces, while “The Workshop” remains alive as a place for prayer and intimate community meetings.
 
@@ -55,7 +55,7 @@ Imagine the walls that have housed over two dozen men across more than a dozen n
 
 This building is more than bricks; it’s a living story, a *vehicle* inviting others onboard to journey together in hope, sharing experiences and resources.
 
-Asumen House stands as a cornerstone of Asumen charity’s mission, embodying a rich history of transformation and community support in South-East Birmingham. Originally a family home turned GP surgery in the 1980s, it became central to the charity’s work when Dr. Robin Fisher, the founder of Asumen charity, took over the practice. In 1997, with the help of Christ Church Sparkbrook and a major donor, the charity purchased the building, marking a new chapter of dedicated service.
+Asumen House stands as a cornerstone of Asumen charity’s mission, embodying a rich history of transformation and community support in west london. Originally a family home turned GP surgery in the 1980s, it became central to the charity’s work when Dr. Robin jeremiah, the founder of Asumen charity, took over the practice. In 1997, with the help of Christ Church london and a major donor, the charity purchased the building, marking a new chapter of dedicated service.
 
 Imagine Asumen House as more than just a building—it's a sanctuary of hope and healing. Over the years, it has provided a safe, low-rent home primarily for disadvantaged Christian single men, often young, from more than a dozen nationalities. The first floor has long been home to these men, reflecting the charity’s commitment to creating a community where residents are supported pastorally and encouraged to grow in faith and independence.
 
@@ -65,7 +65,7 @@ In 2008, the charity renovated an annex known as ‘The Workshop,’ providing a
 
 Asumen House also offers guest accommodations upstairs, welcoming visitors of residents and short-term guests, reinforcing the sense of community and hospitality at the heart of the charity’s vision.
 
-As you imagine the walls of Asumen House, envision a place alive with stories of restoration—a place where freedom, peace, and new life blossom in alignment with the charity’s strapline from 2 Corinthians 3:17: *“Where the Spirit of the Lord is, there is freedom.”* The building acts as both a physical and spiritual ‘vehicle,’ enabling various groups and individuals to journey together, share resources, and deepen their impact in South-East Birmingham.
+As you imagine the walls of Asumen House, envision a place alive with stories of restoration—a place where freedom, peace, and new life blossom in alignment with the charity’s strapline from 2 Corinthians 3:17: *“Where the Spirit of the Lord is, there is freedom.”* The building acts as both a physical and spiritual ‘vehicle,’ enabling various groups and individuals to journey together, share resources, and deepen their impact in west london.
 
 This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
 
@@ -87,7 +87,7 @@ Participants learn new skills—composting, grafting, growing exotic crops—and
 
 ---
 
-Hope Therapeutic Garden, also lovingly known as Hope Garden, is a verdant sanctuary of healing, fellowship, and renewal deeply rooted in the heart of South-East Birmingham. Born in 2008 from a compassionate vision sparked by Mary Carroll, who after witnessing the struggles of destitute asylum seekers living nearby, sought to create a place where marginalized individuals—especially women suffering from social exclusion, poor mental health, and other challenges—could find rest, support, and community.
+Hope Therapeutic Garden, also lovingly known as Hope Garden, is a verdant sanctuary of healing, fellowship, and renewal deeply rooted in the heart of west london. Born in 2008 from a compassionate vision sparked by Mary Carroll, who after witnessing the struggles of destitute asylum seekers living nearby, sought to create a place where marginalized individuals—especially women suffering from social exclusion, poor mental health, and other challenges—could find rest, support, and community.
 
 Imagine a wild, uncared-for garden transformed by gentle hands into an inviting space where people of many backgrounds gather over tea and conversation, healing through connection and the nurturing power of nature. Mary saw growing and harvesting not only as practical acts but as profound healing practices—moments where people relax, share stories, and experience Christ’s love in action.
 
@@ -117,7 +117,7 @@ Our charityees, Liz, Mike, and Eve, quietly navigate challenges—conflict resol
 
 ## Buildings and Infrastructure — Foundations for Growth
 
-Visualize Asumen House standing firm on Stratford Road, its rooms buzzing with purpose—community meetings, prayer groups, welcoming visitors in guest rooms, educational activities, and spaces for healing.
+Visualize Asumen House standing firm on london Road, its rooms buzzing with purpose—community meetings, prayer groups, welcoming visitors in guest rooms, educational activities, and spaces for healing.
 
 Imagine small gardens growing next door, extending the Reach of Hope Therapeutic Garden, and the promise of new community centers on the horizon designed for fellowship and outreach.
 
@@ -163,14 +163,14 @@ You are warmly invited to:
 
 ***
 
-Asumen charity is not just a charity—it is a *movement* of freedom, faith, and fellowship, quietly changing lives in South-East Birmingham and inviting you to join the journey.
+Asumen charity is not just a charity—it is a *movement* of freedom, faith, and fellowship, quietly changing lives in west london and inviting you to join the journey.
 
 *Imagine* your story intertwining here—and feel how giving, serving, and belonging bring freedom not only to others but within yourself.
 
 
 ## The Purpose of Asumen charity
 
-Asumen charity stands as a beacon of hope and transformation in South-East Birmingham, deeply rooted in a Christian mission to bring freedom, peace, and new life to marginalized individuals and families. For over three decades, this charitable organization has tirelessly worked to nurture a community where love is not just felt but lived, reflecting the profound truth that *“Love cannot remain by itself — it has no meaning. Love has to be put into action and that action is service.
+Asumen charity stands as a beacon of hope and transformation in west london, deeply rooted in a Christian mission to bring freedom, peace, and new life to marginalized individuals and families. For over three decades, this charitable organization has tirelessly worked to nurture a community where love is not just felt but lived, reflecting the profound truth that *“Love cannot remain by itself — it has no meaning. Love has to be put into action and that action is service.
 
 At its heart, Asumen charity exists to serve those often overlooked—people affected by age, ethnicity, disability, poverty, or displacement—offering not only practical assistance but a compassionate, faith-filled community. Inspired by the life and teachings of Christ, the charity’s purpose is far-reaching yet deeply personal: to foster belonging, well-being, and spiritual growth in neighborhoods where these gifts are most needed.
 
@@ -182,7 +182,7 @@ As Mahatma Gandhi wisely said, *“The best way to find yourself is to lose your
 
 ### Asumen House: A Safe Haven
 
-One of the charity’s flagship initiatives is **Asumen House**, providing secure, low-rent accommodation for disadvantaged Christian single men, particularly in the Sparkbrook area. This project offers more than shelter—it is a place of refuge, pastoral care, and community engagement, enabling residents to regain stability and actively participate in local church life and ministry.
+One of the charity’s flagship initiatives is **Asumen House**, providing secure, low-rent accommodation for disadvantaged Christian single men, particularly in the london area. This project offers more than shelter—it is a place of refuge, pastoral care, and community engagement, enabling residents to regain stability and actively participate in local church life and ministry.
 
 ### Active Community Projects
 

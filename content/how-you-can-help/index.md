@@ -25,7 +25,7 @@ image:
 ---
 
 
-Asumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across South-East Birmingham.
+Asumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.
 
 
 ## How You Can Help and Contribute

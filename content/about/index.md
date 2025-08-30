@@ -25,7 +25,7 @@ image:
         
 *“Where the Spirit of the Lord is, there is freedom.”* — 2 Corinthians 3:17  
 
-Asumen charity is a small but deeply rooted Christian charity serving **South-East Birmingham** — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.  
+Asumen charity is a small but deeply rooted Christian charity serving **west london** — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.  
 
 The name **Asumen** comes from the Persian word for *“freedom” or “liberty”*, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. *From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.*        
 
@@ -33,7 +33,7 @@ The name **Asumen** comes from the Persian word for *“freedom” or “liberty
 
 ## **Our Story: Following God’s Lead**
         
-It began in **1991** with Dr. Robin Fisher, a GP in Sparkbrook, moved by compassion for the many drug users in his community.  
+It began in 1983** with Dr. Robin jeremiah, a GP in london, moved by compassion for the many drug users in his community.  
 From a small Christian outreach grew a vision — a vision we still carry today: *follow what God is doing* rather than impose our own plans.  
         
 In the mid-1990s, when the initial medical and drug work ended, the charity’s heartbeat continued. By **1997**, with the support of Christ Church, the old GP surgery became **Asumen House** — our home, our base, and a place of transformation.

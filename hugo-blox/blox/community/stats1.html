@@ -9,7 +9,7 @@
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
-<div class="mx-auto max-w-7xl mt-0 px-4 md:px-0 mb-4">
+<div class="mx-auto max-w-7xl mt-0 px-2 mb-8 text-3-c">
     
  <div class="flex flex-col">
   {{ with $blue }}
@@ -17,16 +17,16 @@
   {{ end }}
         
   {{ with $title }}
-  <h2 class="mb-4 text-3xl text-gray-900 dark:text-white">{{.}}</h2>
+  <h2 class="mb-4 text-xl font-semibold md:text-4xl lg:text-3xl text-gray-900 dark:text-white">{{.}}</h2>
   {{ end }}
   {{ with $text }}
-  <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</p>
+  <div class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</div>
   {{ end }}
 </div>
     
     <!-- Features Grid - Expanded Side-to-Side on Mobile -->
-    <div class="mt-10 mx-auto max-w-7xl px-0 md:px-0 -mx-8 md:mx-0">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-4 px-1">
+    <div class="mt-10 mx-auto max-w-7xl px-1 md:px-8 -mx-8 md:mx-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-4">
         {{ range $block.content.items }}
           <div class="">
              <div class="w-16 border-2 border-primary-700 mb-4"></div>
@@ -40,10 +40,9 @@
               
               <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">{{ .name | $page.RenderString }}</h3>
             </div>
-            <p class="text-xl text-gray-600 dark:text-gray-300">{{ .description | $page.RenderString }}</p>
+            <div class="text-xl text-gray-600 dark:text-gray-300">{{ .description | $page.RenderString }}</div>
           </div>
         {{ end }}
       </div>
     </div>
   </div>
-</section>

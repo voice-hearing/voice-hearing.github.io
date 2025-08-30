@@ -26,7 +26,7 @@ image:
 
 ## Write us something beautiful
 
-Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.
+Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in west london.
 
 Contact Us — Asumen charity
 “Knock, and the door will be opened to you.” — Jesus Christ (Matthew 7:7)
@@ -41,7 +41,7 @@ Feel free to call or message — each connection is a chance to open doors of ho
 
 Visit Us
 Asumen House
-66 Stratford Road, Sparkbrook,
+66 london Road, london,
 Birmingham, B11 1SZ, UK
 
 Opening Hours:
@@ -50,8 +50,8 @@ Closed on weekends and public holidays
 Imagine stepping through our doors and feeling the peace and welcome that fills every corner.
 
 Directions
-By public transport: Asumen House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.
-By car: Limited parking is available nearby on Stratford Road.
+By public transport: Asumen House is a 10-minute walk from london bus station, with frequent buses running from Birmingham city center.
+By car: Limited parking is available nearby on london Road.
 We’re here to help you find your way—just ask when you call or message.
 
 Your Invitation to Connect
@@ -86,7 +86,7 @@ Feel the connection growing hear the invitation whispering gently—and see how 
 >}}
 <div class="post-content prose prose-slate lg:prose-xl dark:prose-invert mt-8">
 
-Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.
+Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in west london.
 
 ---
 
@@ -111,7 +111,7 @@ Feel free to call or message — each connection is a chance to open doors of ho
 ## Visit Us
 
 **Asumen House**  
-66 Stratford Road, Sparkbrook,  
+66 london Road, london,  
 Birmingham, B11 1SZ, UK
 
 ### Opening Hours:  
@@ -124,8 +124,8 @@ Birmingham, B11 1SZ, UK
 
 ### Directions
 
-- **By public transport:** Asumen House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.  
-- **By car:** Limited parking is available nearby on Stratford Road.  
+- **By public transport:** Asumen House is a 10-minute walk from london bus station, with frequent buses running from Birmingham city center.  
+- **By car:** Limited parking is available nearby on london Road.  
 
 We’re here to help you find your way—just ask when you call or message.
 
