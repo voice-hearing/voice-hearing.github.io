@@ -12,7 +12,7 @@
 <section class="mx-auto max-w-7xl pt-8 pb-8">
     
     <!-- Header Section -->
- <div class="mx-auto max-w-7xl mt-0 px-8 mb-4">
+ <div class="mx-auto max-w-7xl mt-0 px-1 mb-4">
     
  <div class="flex flex-col">
   {{ with $blue }}
@@ -20,7 +20,7 @@
   {{ end }}
   
   <!-- Red horizontal line above title -->
-  <div class="w-16 border-2 border-primary-500 mb-4"></div>
+  <div class="w-16 border-2 border-primary-700 mb-4"></div>
       
   {{ with $title }}
   <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">{{.}}</h2>
@@ -30,7 +30,7 @@
   {{ end }}
 </div>
   
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-6 px-4 md:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-6 px-1 md:px-0">
       
       {{ range $index, $item := $block.content.slides }}
       

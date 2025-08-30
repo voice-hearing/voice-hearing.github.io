@@ -12,7 +12,7 @@ sections:
   
   - block: hero1
     content:
-      title: TRANSFORM LIVES <span class="text-primary-500">›</span></br></br> TRANSFORM YOURSELF
+      title: TRANSFORM LIVES <span class="text-primary-700">›</span></br></br> TRANSFORM YOURSELF
       text: 
       secondary: 
       primary_action:
@@ -40,34 +40,34 @@ sections:
           filename: "hero.webp"
           filters:
             brightness: "100%"
-  - block: image-overlay
+  - block: image-overlay-3
     content:
       title: HELP US, PARTICIPATE
       blue: 
       text: 
       slides:
-        - title: INTERFAITH ACCOMMODATION <span class="text-primary-500">›</span>
+        - title: INTERFAITH ACCOMMODATION <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8550108.jpg"
-        - title: HOPE GARDEN <span class="text-primary-500">›</span>
+        - title: HOPE GARDEN <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "hopegarden1.png"
-        - title: CHILDREN'S CLUB <span class="text-primary-500">›</span>
+        - title: CHILDREN'S CLUB <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "childrensclub1.jpg"
-        - title: LADIES' DAY <span class="text-primary-500">›</span>
+        - title: LADIES' DAY <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
@@ -122,42 +122,42 @@ sections:
       blue: 
       text: 
       slides:
-        - title: PRAYING <span class="text-primary-500">›</span>
+        - title: PRAYING <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-jibarofoto-14373404.jpg"
-        - title: SHARING INFO <span class="text-primary-500">›</span>
+        - title: SHARING INFO <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-cottonbro-4255394.jpg"
-        - title: VOLUNTEERING <span class="text-primary-500">›</span>
+        - title: VOLUNTEERING <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-julia-m-cameron-6994939.jpg"
-        - title: SERVICING <span class="text-primary-500">›</span>
+        - title: SERVICING <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8486923.jpg"
-        - title: OFFERING SPACE <span class="text-primary-500">›</span>
+        - title: OFFERING SPACE <span class="text-primary-700">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-life-of-pix-67468.jpg"
-        - title: DONATING <span class="text-primary-500">›</span>
+        - title: DONATING <span class="text-primary-700">›</span>
           content: 
           align: "bottom"
           url: /what-we-do
@@ -177,40 +177,6 @@ sections:
           filename: ""
           filters:
             brightness:
-  - block: cta-image-left-double
-    id: features
-    content:
-      blue: 
-      title: 
-      text: 
-      items:
-        - name: 
-          image: hopegarden.jpg
-          url: https://google.com
-          icon:
-          description: 
-        - name: 
-          image: ladiesday.jpg
-          url: https://google.com
-          icon: 
-          description: 
-        - name: 
-          image: childrensclub.jpg
-          url: https://google.com
-          description: 
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: ""
-      background:
-        color: ""
-        image:
-#          # Add your image background to `assets/media/`.
-          filename: ""
-          # filters:
-          #  brightness: 1
   - block: calendar-image
     content:
       title: "COMMUNITY EVENTS"
