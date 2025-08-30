@@ -159,8 +159,8 @@ sections:
               filename: "pexels-life-of-pix-67468.jpg"
         - title: DONATING 
           content: 
-          align: "bottom"
-          url: /what-we-do
+          align: "bottom-left"
+          url: /donate
           background:
             image:
               filename: "pexels-shvetsa-4482896.jpg"
