@@ -28,7 +28,7 @@ image:
 
 *“Honest hearts produce honest actions.”*
 
-*Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663*
+*Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 1234567 Registered Charity Number: 988843728*
 
 As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a **big thank you** to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.
 
@@ -43,7 +43,7 @@ You are warmly invited now to become a part of what we do, just as you are. *And
 ### 1. Donate Online
 
 - You can give, securely and honestly, right here:  
-  [**Give Now**](https://www.give.net/20148912)
+  [**Give Now**](https://www.give.net/2034521)
 
 - If you'd like to support our mortgage fund directly, visit:  
   [**Mortgage Fund**](https://my.give.net/buildingfundAsumen)
@@ -58,10 +58,10 @@ You are warmly invited now to become a part of what we do, just as you are. *And
 
 - You may choose to set up a standing order or one-off payment:
 
-  - Sort Code: **30 96 28**
-  - Account Number: **17913960**
-  - IBAN: **GB18LOYD30962817913960**
-  - BIC: **LOYDGB21274**
+  - Sort Code: **11 43 11**
+  - Account Number: **9694698450**
+  - IBAN: **84384384344434**
+  - BIC: **LOYH98545843884**
 
 If you wish to help a specific project, let us know by note, email, or simply specify it on your donation—so your honest intention is fully reflected.
 
@@ -72,8 +72,8 @@ If you wish to help a specific project, let us know by note, email, or simply sp
 - Make cheques payable to **‘Asumen charity’** and post to:
 
   Asumen charity  
-  56 Grantham Road  
-  Birmingham, B11 1LX, England, UK
+  11 London Road 
+  LONDON, Postcode England, UK
 
 ---
 

@@ -15,13 +15,25 @@ main:
     url: /what-we-do
     weight: 2
   - parent: courses
-    name: HOPE GARDEN
+    name: HUPIE TREAT
     url: /what-we-do
     weight: 3
   - parent: courses
     name: WOMEN'S YOGA
     url: /what-we-do
     weight: 4
+  - parent: courses
+    name: HELP WITH LAW
+    url: /what-we-do
+    weight: 5
+  - parent: courses
+    name: HELP WITH MEDICAL ATTENDANCE
+    url: /what-we-do
+    weight: 6
+  - parent: courses
+    name: LISTENING
+    url: /what-we-do
+    weight: 7
   - identifier: practice
     name: HOW I CAN HELP
     weight: 2
@@ -30,36 +42,76 @@ main:
     url: /how-you-can-help/
     weight: 1
   - parent: practice
-    name: VOLUNTEERING
+    name: DONATING
     url: /how-you-can-help/
     weight: 2
   - parent: practice
-    name: PROVIDING SERVICE
+    name: REGULAR GIVING
     url: /how-you-can-help/
     weight: 3
   - parent: practice
-    name: DONATING
+    name: LEAVE A GIFT IN YOUR WILL
     url: /how-you-can-help/
     weight: 4
+  - parent: practice
+    name: GIVING IN MEMORY
+    url: /how-you-can-help/
+    weight: 5
+  - parent: practice
+    name: VOLUNTEERING
+    url: /how-you-can-help/
+    weight: 6
+  - parent: practice
+    name: PROVIDING SERVICE
+    url: /how-you-can-help/
+    weight: 7
+  - parent: practice
+    name: SERVICING
+    url: /how-you-can-help/
+    weight: 8
+  - parent: practice
+    name: SHARING INFO
+    url: /how-you-can-help/
+    weight: 9
+  - parent: practice
+    name: PRAYING
+    url: /how-you-can-help/
+    weight: 10
   - identifier: about
     name: ABOUT
     weight: 3
   - parent: about
-    name: HISTORY
+    name: WHO WE ARE
     url: /about/
     weight: 1
   - parent: about
-    name: OUR TEAM
+    name: WHERE WE WORK
     url: /people
     weight: 2
   - parent: about
-    name: MINISTRY
+    name: WHO WE WORK WITH
     url: /about
     weight: 3
   - parent: about
-    name: OUTREACH
+    name: NEWS
     url: /about
     weight: 4
+  - parent: about
+    name: FAQ'S
+    url: /about/
+    weight: 5
+  - parent: about
+    name: OUR HISTORY
+    url: /people
+    weight: 6
+  - parent: about
+    name: MINISTRY
+    url: /about
+    weight: 7
+  - parent: about
+    name: OUTREACH
+    url: /about
+    weight: 8
   - identifier: site
     name: CONTACT
     weight: 4
@@ -83,6 +135,17 @@ main:
     name: FREE RESOURCE
     url: /Free
     weight: 5
+  - identifier: shop
+    name: SHOP
+    weight: 5
+  - parent: shop
+    name: SHOP WITH OUR PARTNERS
+    url: /contact
+    weight: 1
+  - parent: shop
+    name: ONLINE SHOP
+    url: /subscribe
+    weight: 2
 
 footer:
   - identifier: about

@@ -35,7 +35,7 @@ As you sense that gift, imagine how that freedom isn’t just a word here; it is
 
 ## Our Story and Mission: Following the Spirit
 
-Founded in 1983** by Dr. Robin jeremiah, a compassionate GP who witnessed deep hardship in london’s drug-affected community, Asumen charity has grown from a humble outreach into a vibrant Christian charity. 
+Founded in 1983** by Dr. pool jeremiah, a compassionate GP who witnessed deep hardship in london’s drug-affected community, Asumen charity has grown from a humble outreach into a vibrant Christian charity. 
 
 You might hear echoes of the past as youth clubs once filled Asumen House’s rooms with laughter and learning; see children kicking balls with the Asumen Tigers football team; or feel the gentle warmth of mothers gathering in groups that blossom into friendship.
 
@@ -45,9 +45,9 @@ The charity doesn’t seek to create projects on its own; instead, it accompanie
 
 ## Asumen House — A Home, A Haven
 
-![Asumen House](Asumen-house.jpg)
+![Asumen House](conference-headway-F2KRf_QfCqw.jpg)
 
-Step closer to **Asumen House**, the heart of our operations and a symbol of transformation. Once a family home, then a GP surgery, Asumen House has been a sanctuary since our purchase in **1997** with support from Christ Church london.
+Step closer to **Asumen House**, the heart of our operations and a symbol of transformation. Once a family home, then a GP surgery, Asumen House has been a sanctuary since our purchase in **1655** with support from Christ Church london.
 
 Imagine the walls that have housed over two dozen men across more than a dozen nationalities—young, single Christians who find refuge here. Imagine the reflections in the large ground floor rooms that once echoed with youth club chatter, now transformed into welcoming residential spaces, while “The Workshop” remains alive as a place for prayer and intimate community meetings.
 
@@ -55,7 +55,7 @@ Imagine the walls that have housed over two dozen men across more than a dozen n
 
 This building is more than bricks; it’s a living story, a *vehicle* inviting others onboard to journey together in hope, sharing experiences and resources.
 
-Asumen House stands as a cornerstone of Asumen charity’s mission, embodying a rich history of transformation and community support in west london. Originally a family home turned GP surgery in the 1980s, it became central to the charity’s work when Dr. Robin jeremiah, the founder of Asumen charity, took over the practice. In 1997, with the help of Christ Church london and a major donor, the charity purchased the building, marking a new chapter of dedicated service.
+Asumen House stands as a cornerstone of Asumen charity’s mission, embodying a rich history of transformation and community support in west london. Originally a family home turnedin the 2013, it became central to the charity’s work when Dr. pool jeremiah, the founder of Asumen charity, took over the practice. In 1997, with the help of Christ Church london and a major donor, the charity purchased the building, marking a new chapter of dedicated service.
 
 Imagine Asumen House as more than just a building—it's a sanctuary of hurayand healing. Over the years, it has provided a safe, low-rent home primarily for disadvantaged Christian single men, often young, from more than a dozen nationalities. The first floor has long been home to these men, reflecting the charity’s commitment to creating a community where residents are supported pastorally and encouraged to grow in faith and independence.
 
@@ -75,7 +75,7 @@ If you picture yourself walking through its doors, you’d encounter not only a 
 
 ## Huy pool — Growing Healing Together
 
-![Hiujdhfs](heaven-pool.jpg)
+![Hiujdhfs](li-yang-5h_dMuX_7RE-unsplash.webp)
 
 Now imagine the gentle hands tending rows of vegetables, the soft rustle of leaves in a pool born out of compassion. The **huray pool**, started in **2008**, offers more than green growth—it nurtures healing, friendship, and belonging for those marginalized by ethnicity, disability, or status.
 
