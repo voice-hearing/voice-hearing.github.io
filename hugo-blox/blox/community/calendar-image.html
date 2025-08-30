@@ -1,0 +1,203 @@
+{{/* Hugo Blox: Calendar Lazy Load - Fixed Static Images */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<div class="mx-auto max-w-7xl mt-0 px-2">
+  
+  <!-- Header Section -->
+  <div class="flex flex-col text-left">
+    {{ with $blue }}
+    <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+    {{ end }}
+          <div class="w-16 border-2 border-primary-500 mb-4"></div>
+    {{ with $title }}
+    <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">{{.}}</h2>
+    {{ end }}
+    
+    {{ with $text }}
+    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">{{.}}</p>
+    {{ end }}
+  </div>
+  
+  <!-- Calendar Container -->
+  <div class="calendar-container shadow-2xl">
+    
+    <!-- Background Image - Direct Static Reference -->
+    {{ with $block.content.background_image }}
+    <img 
+      src="/images/{{ . }}" 
+      alt="Calendar background"
+      class="calendar-bg"
+      loading="lazy"
+      onerror="console.error('Failed to load image: /images/{{ . }}')"
+      onload="console.log('Image loaded successfully: /images/{{ . }}')"
+    />
+    {{ end }}
+    
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Click Interface -->
+    <div id="calendar-loader" class="calendar-trigger">
+      <div class="calendar-icon">
+        <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0z"></path>
+        </svg>
+      </div>
+      <h3 class="text-3xl font-bold text-white mb-4 drop-shadow-lg">
+        {{ $block.content.cta_text | default "Load Calendar" }}
+      </h3>
+      <p class="text-xl text-gray-100 drop-shadow-md">
+        {{ $block.content.cta_subtitle | default "Click to view events" }}
+      </p>
+    </div>
+    
+    <!-- Loading State -->
+    <div id="calendar-loading" class="loader" style="display: none;">
+      <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p class="text-xl font-semibold text-white">Loading calendar...</p>
+    </div>
+    
+    <!-- Calendar iframe -->
+    <iframe 
+      id="calendar-iframe"
+      src=""
+      class="calendar-frame"
+      style="display: none;"
+      loading="lazy"
+      title="Community Events Calendar"
+    ></iframe>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var trigger = document.getElementById('calendar-loader');
+  var iframe = document.getElementById('calendar-iframe');
+  var loading = document.getElementById('calendar-loading');
+  
+  if (!trigger || !iframe || !loading) {
+    console.error('Calendar elements not found');
+    return;
+  }
+  
+  trigger.addEventListener('click', function() {
+    trigger.style.display = 'none';
+    loading.style.display = 'flex';
+    
+    var calendarUrl = "{{ $block.content.calendar_url | default "https://calendar.google.com/calendar/embed?src=your_calendar_id_here&ctz=Europe%2FLondon" }}";
+    iframe.src = calendarUrl;
+    
+    iframe.onload = function() {
+      loading.style.display = 'none';
+      iframe.style.display = 'block';
+    };
+    
+    // Fallback timeout
+    setTimeout(function() {
+      if (loading.style.display !== 'none') {
+        loading.style.display = 'none';
+        iframe.style.display = 'block';
+      }
+    }, 8000);
+  });
+});
+</script>
+
+<style>
+.calendar-container {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 50vh; /* Fixed to 50% of viewport height */
+}
+
+@media (min-width: 640px) {
+  .calendar-container {
+    height: 50vh; /* Consistent 50% viewport height across all screen sizes */
+  }
+}
+
+@media (min-width: 1024px) {
+  .calendar-container {
+    height: 50vh; /* Maintains 50% viewport height on large screens */
+  }
+}
+
+.calendar-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.calendar-trigger {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-white;
+  transition: all 0.3s ease;
+  padding: 2rem;
+}
+
+.calendar-trigger:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.calendar-icon {
+  width: 5rem;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.calendar-trigger:hover .calendar-icon {
+  transform: scale(1.05);
+}
+
+.calendar-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: white;
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 20;
+}
+</style>

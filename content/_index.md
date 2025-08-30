@@ -12,7 +12,7 @@ sections:
   
   - block: hero1
     content:
-      title: HELP US</br>AND TRANSFORM</br>AS WELL
+      title: TRANSFORM LIVES</br></br> TRANSFORM YOURSELF
       text: 
       secondary: 
       primary_action:
@@ -39,35 +39,35 @@ sections:
           # Add your image background to `assets/media/`.
           filename: "hero.webp"
           filters:
-            brightness: "60%"
+            brightness: "100%"
   - block: image-overlay
     content:
-      title: HELP US, JOIN US
+      title: HELP US, PARTICIPATE
       blue: 
       text: 
       slides:
-        - title: "INTERFAITH ACCOMMODATION"
+        - title: INTERFAITH ACCOMMODATION <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8550108.jpg"
-        - title: "HOPE GARDEN"
+        - title: HOPE GARDEN <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "hopegarden1.png"
-        - title: CHILDREN'S CLUB
+        - title: CHILDREN'S CLUB <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "childrensclub1.jpg"
-        - title: LADIES' DAY
+        - title: LADIES' DAY <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
@@ -122,42 +122,42 @@ sections:
       blue: 
       text: 
       slides:
-        - title: "PRAYING"
+        - title: PRAYING <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-jibarofoto-14373404.jpg"
-        - title: SHARING INFO
+        - title: SHARING INFO <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-cottonbro-4255394.jpg"
-        - title: VOLUNTEERING
+        - title: VOLUNTEERING <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-julia-m-cameron-6994939.jpg"
-        - title: "SERVICING"
+        - title: SERVICING <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8486923.jpg"
-        - title: OFFERING SPACE
+        - title: OFFERING SPACE <span class="text-primary-500">›</span>
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-life-of-pix-67468.jpg"
-        - title: DONATING
+        - title: DONATING <span class="text-primary-500">›</span>
           content: 
           align: "bottom"
           url: /what-we-do
@@ -211,35 +211,15 @@ sections:
           filename: ""
           # filters:
           #  brightness: 1
-  - block: calendar-agenda
+  - block: calendar-image
     content:
-      blue: 
-      title: FELLOWSHIP GATHERINGS
-      name: 
-      subtitle: 
-      background_image: li-yang-5h_dMuX_7RE-unsplash.webp  # Image in assets/media/
-      # text: |-
-        # <div class="responsive-iframe">
-        # <iframe
-        #   src="https://calendar.google.com/calendar/u/0?cid=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ"
-        #   frameborder="0"
-        #   scrolling="no"
-        #   allowfullscreen>
-        # </iframe>
-        # </div>
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: 
-      background:
-        color: 
-        image:
-          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness:
+      title: "COMMUNITY EVENTS"
+      text: 
+      blue:
+      background_image: "calendar-bg.jpg"  # Place in assets/media/
+      calendar_url: "https://calendar.google.com/calendar/embed?src=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ&ctz=Europe%2FLondon&hl=en_GB&wkst=2&mode=AGENDA"
+      cta_text: "View Events"
+      cta_subtitle: "Click to load our community calendar"
   - block: text-3-c
     id: features
     content:
@@ -249,7 +229,7 @@ sections:
       items:
         - name: WE ARE VEHICLE
           icon: 
-          description: We like to see ourselves as a vehicle — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and network… you just bring your God-given vision, and together, we travel further.
+          description: We like to see ourselves as a vehicle — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and [network](https://christian.com)… you just bring your God-given vision, and together, we travel further.
         - name: WE MAKE DIFFERENCE
           icon:
           description: This living space continues to evolve, with a renewed focus on building a mutually supportive <a href="/about" style="text-decoration:underline">Christian community</a> while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
@@ -270,9 +250,9 @@ sections:
     id: charity-indicators
     content:
       # Header Content
-      title: 
+      title: PARTICIPATE
       blue: 
-      text: "We Are Here To Help"
+      text: "Pray, Volunteer, Share, Donate"
       
       # Customizable Rating System
       stars: 4.5                    # Number of stars (1-5)

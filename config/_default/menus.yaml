@@ -3,22 +3,86 @@
 # Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
 
 main:
-  - name: What We Do
+  - identifier: courses
+    name: WHAT WE DO
+    weight: 1
+  - parent: courses
+    name: HOUSE
     url: /what-we-do
-    weight: 10
-    hasChildren: false
-  - name: How You Can Help
-    url: /how-you-can-help
-    weight: 20
-    hasChildren: false
-  - name: About Us
+    weight: 1
+  - parent: courses
+    name: KIDS CLUB
+    url: /what-we-do
+    weight: 2
+  - parent: courses
+    name: HOPE GARDEN
+    url: /what-we-do
+    weight: 3
+  - parent: courses
+    name: WOMEN'S YOGA
+    url: /what-we-do
+    weight: 4
+  - identifier: practice
+    name: HOW I CAN HELP
+    weight: 2
+  - parent: practice
+    name: PRAYING
+    url: /how-you-can-help/
+    weight: 1
+  - parent: practice
+    name: VOLUNTEERING
+    url: /how-you-can-help/
+    weight: 2
+  - parent: practice
+    name: PROVIDING SERVICE
+    url: /how-you-can-help/
+    weight: 3
+  - parent: practice
+    name: DONATING
+    url: /how-you-can-help/
+    weight: 4
+  - identifier: about
+    name: ABOUT
+    weight: 3
+  - parent: about
+    name: HISTORY
+    url: /about/
+    weight: 1
+  - parent: about
+    name: OUR TEAM
+    url: /people
+    weight: 2
+  - parent: about
+    name: MINISTRY
     url: /about
-    weight: 30
-    hasChildren: false
-  - name: Contact
+    weight: 3
+  - parent: about
+    name: OUTREACH
+    url: /about
+    weight: 4
+  - identifier: site
+    name: CONTACT
+    weight: 4
+  - parent: site
+    name: CONTACT US
     url: /contact
-    weight: 60
-    hasChildren: false
+    weight: 1
+  - parent: site
+    name: SUBSCRIBE
+    url: /subscribe
+    weight: 2
+  - parent: site
+    name: RSS
+    url: /index.xml
+    weight: 3
+  - parent: site
+    name: LINKS
+    url: /links
+    weight: 4
+  - parent: site
+    name: FREE RESOURCE
+    url: /Free
+    weight: 5
 
 footer:
   - identifier: about

@@ -10,10 +10,10 @@
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
 {{/* Clean Click-to-Load Calendar */}}
-<div class="mx-auto max-w-7xl mt-0 px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 pb-8 sm:pb-12 lg:pb-16">
+<div class="mx-auto max-w-7xl mt-0 px-2 pb-4">
     
   <!-- Header Section with Clean Typography -->
-  <div class="flex flex-col mb-12 sm:mb-16 text-center">
+  <div class="flex flex-col text-center">
     {{ with $blue }}
   <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
     </div>

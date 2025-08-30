@@ -1,6 +1,6 @@
 {{/* Hugo Blox: Hero */}}
-{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
-{{/* License: [https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md](https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md) */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
 
 {{/* Initialise */}}
 {{ $page := .wcPage }}
@@ -44,7 +44,7 @@
     {{ with $block.content.title }}
     <div class="mb-12">
       <div class="bg-black px-2 py-1 md:px-6 md:py-4 lg:px-8 lg:py-5 rounded-2xl shadow-2xl inline-block max-w-5xl">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white">
+        <h1 class="text-5xl text-white">
           {{ . | markdownify }}
         </h1>
       </div>
@@ -64,7 +64,8 @@
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
         <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} 
-           class="inline-flex justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-bold text-white shadow-lg hover:bg-primary-500 hover:shadow-xl transition-all duration-300">
+           class="inline-flex justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-8 py-4 md:px-10 md:py-5 text-xl font-bold shadow-lg hover:bg-primary-500 hover:shadow-xl transition-all duration-300"
+           style="color: white !important; text-decoration: none !important;">
           {{ $block.content.primary_action.text | markdownify | emojify }}
           {{ with $block.content.primary_action.icon }}
             {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em\" class='inline-block ml-3'") }}
