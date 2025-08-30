@@ -18,21 +18,45 @@
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
       <description>&lt;h2 id=&#34;write-us-something-beautiful&#34;&gt;Write us something beautiful&lt;/h2&gt;
+&lt;p&gt;Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.&lt;/p&gt;
+&lt;p&gt;Contact Us — Asumen charity
+“Knock, and the door will be opened to you.” — Jesus Christ (Matthew 7:7)&lt;/p&gt;
+&lt;p&gt;As you reach out, you might begin to feel the warmth of a welcoming community ready to listen, support, and walk alongside you. Whether you want to learn more about our mission, volunteer, donate, or simply share a prayer, your voice and presence matter deeply to us.&lt;/p&gt;
+&lt;p&gt;How to Reach Us
+Phone: +44 (0)121 772 9756
+WhatsApp: +44 (0)7815 123456 (Chat with us anytime for quick questions or to connect with our team)
+Email: 
+
+Feel free to call or message — each connection is a chance to open doors of hope and partnership.&lt;/p&gt;
+&lt;p&gt;Visit Us
+Asumen House
+66 Stratford Road, Sparkbrook,
+Birmingham, B11 1SZ, UK&lt;/p&gt;
+&lt;p&gt;Opening Hours:
+Monday to Friday: 9:00 AM – 5:00 PM
+Closed on weekends and public holidays
+Imagine stepping through our doors and feeling the peace and welcome that fills every corner.&lt;/p&gt;
+&lt;p&gt;Directions
+By public transport: Asumen House is a 10-minute walk from Sparkbrook bus station, with frequent buses running from Birmingham city center.
+By car: Limited parking is available nearby on Stratford Road.
+We’re here to help you find your way—just ask when you call or message.&lt;/p&gt;
+&lt;p&gt;Your Invitation to Connect
+You might already sense that making contact is more than a formality—it’s the start of a shared journey toward freedom and new life.&lt;/p&gt;
+&lt;p&gt;Through phone, message, or in person, your reach brings you closer to stories of healing, fellowship, and community growth nurtured through Asumen charity’s Christian ethos.&lt;/p&gt;
+&lt;p&gt;Inspirational Words for the Journey
+“Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.”
+— Jesus Christ (Matthew 7:7)&lt;/p&gt;
+&lt;p&gt;“Faith is taking the first step even when you don’t see the whole staircase.”
+— Martin Luther King Jr.&lt;/p&gt;
+&lt;p&gt;“Prayer does not change God, but it changes him who prays.”
+— Soren Kierkegaard&lt;/p&gt;
+&lt;p&gt;As you prepare to reach out or step through the door, know that you become part of a caring circle—a community woven with prayers, voices, and hands creating freedom and peace for all.&lt;/p&gt;
+&lt;p&gt;Feel the connection growing hear the invitation whispering gently—and see how together, we can build a brighter tomorrow&lt;/p&gt;
 
 
 
 &lt;section class=&#34;py-8&#34;&gt;
-  &lt;div class=&#34;mx-auto max-w-7xl pt-8 px-2 pb-8&#34;&gt;
-    
-    
-    &lt;div class=&#34;flex flex-col mb-12&#34;&gt;
-      
-      
-      
-      
-      
-    &lt;/div&gt;
-
+  &lt;div class=&#34;mx-auto max-w-7xl px-1 pb-8 prose prose-slate lg:prose-xl dark:prose-invert&#34;&gt;
     
     &lt;div class=&#34;space-y-8&#34;&gt;
       
@@ -41,19 +65,17 @@
         &lt;form action=&#34;https://api.web3forms.com/submit&#34; method=&#34;POST&#34;&gt;
           
           
-          
-          
-          &lt;input type=&#34;hidden&#34; name=&#34;access_key&#34; value=&#34;your-web3forms-access-key&#34;&gt;
+          &lt;input type=&#34;hidden&#34; name=&#34;access_key&#34; value=&#34;33cdef84-3ac2-4fe8-b394-3853e990cdac&#34;&gt;
           &lt;input type=&#34;checkbox&#34; name=&#34;botcheck&#34; class=&#34;hidden&#34; style=&#34;display: none;&#34;&gt;
           &lt;div class=&#34;h-captcha&#34; data-captcha=&#34;true&#34;&gt;&lt;/div&gt;
-          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;https://yoursite.com/thank-you&#34;&gt;
+          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;/about/thank-you&#34;&gt;
           
           &lt;div class=&#34;grid gap-4&#34;&gt;
             
             &lt;div&gt;
               &lt;label for=&#34;contact-name&#34; class=&#34;sr-only form-label&#34;&gt;Name&lt;/label&gt;
               &lt;input type=&#34;text&#34; name=&#34;name&#34; id=&#34;contact-name&#34; 
-                     class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300&#34; 
+                     class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white placeholder-gray-400 placeholder:dark:bg-gray-700 placeholder:dark:text-gray-400 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 px-3 py-2 pl-4 text-base font-normal&#34; 
                      placeholder=&#34;Name&#34; 
                      required&gt;
             &lt;/div&gt;
@@ -62,7 +84,7 @@
             &lt;div&gt;
               &lt;label for=&#34;contact-email&#34; class=&#34;sr-only form-label&#34;&gt;Email&lt;/label&gt;
               &lt;input type=&#34;email&#34; name=&#34;email&#34; id=&#34;contact-email&#34; autocomplete=&#34;email&#34;
-                     class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300&#34; 
+                     class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white placeholder-gray-400 placeholder:dark:bg-gray-700 placeholder:dark:text-gray-400 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 px-3 py-2 pl-4 text-base font-normal&#34; 
                      placeholder=&#34;Email&#34; 
                      required&gt;
             &lt;/div&gt;
@@ -71,14 +93,14 @@
             &lt;div&gt;
               &lt;label for=&#34;contact-message&#34; class=&#34;sr-only form-label&#34;&gt;Message&lt;/label&gt;
               &lt;textarea id=&#34;contact-message&#34; name=&#34;message&#34; rows=&#34;4&#34;
-                        class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-xl font-medium text-gray-500 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300&#34; 
+                        class=&#34;py-3 px-4 block w-full form-input relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white placeholder-gray-400 placeholder:dark:bg-gray-700 placeholder:dark:text-gray-400 hover:bg-gray-50 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 px-3 py-2 pl-4 text-base font-normal&#34; 
                         placeholder=&#34;Message&#34;&gt;&lt;/textarea&gt;
             &lt;/div&gt;
             
             
             
             &lt;div class=&#34;terms-container text-left mb-4 px-4&#34;&gt;
-              &lt;label class=&#34;flex items-center text-xl text-gray-500 dark:text-gray-400&#34; for=&#34;terms-accept&#34;&gt;
+              &lt;label class=&#34;flex items-center text-base text-gray-500 dark:text-gray-400&#34; for=&#34;terms-accept&#34;&gt;
                 &lt;input class=&#34;mr-2 rounded-sm&#34; type=&#34;checkbox&#34; id=&#34;terms-accept&#34; name=&#34;terms&#34; value=&#34;1&#34; required&gt;
                 &lt;span&gt;I agree to the privacy policy and terms of service&lt;/span&gt;
               &lt;/label&gt;
@@ -89,7 +111,7 @@
           
           &lt;div class=&#34;grid flex items-center justify-center&#34;&gt;
             &lt;button id=&#34;contact&#34; aria-label=&#34;Submit contact request&#34; type=&#34;submit&#34; 
-                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800&#34;&gt;
+                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-base font-semibold focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 transition-colors duration-200&#34;&gt;
               Send Message
             &lt;/button&gt;
           &lt;/div&gt;
@@ -97,8 +119,7 @@
       &lt;/div&gt;
 
       
-      &lt;div class=&#34;w-full&#34;&gt;
-        &lt;div class=&#34;bg-gray-50 dark:bg-gray-900 px-2 pb-8 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700&#34;&gt;
+      &lt;div class=&#34;w-full px-2 pb-8 md:p-8&#34;&gt;
           
           
           &lt;h3 class=&#34;text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8&#34;&gt;Contact Information&lt;/h3&gt;
@@ -158,7 +179,6 @@
               &lt;div class=&#34;flex-shrink-0 w-6 h-6 mr-4&#34;&gt;
                 &lt;svg class=&#34;w-6 h-6 text-gray-600 dark:text-gray-400&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
                   &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z&#34;&gt;&lt;/path&gt;
-                &lt;/svg&gt;
               &lt;/div&gt;
               &lt;div class=&#34;flex flex-col&#34;&gt;
                 &lt;h4 class=&#34;text-xl font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wide&#34;&gt;Office Hours&lt;/h4&gt;
@@ -175,6 +195,7 @@
   &lt;/div&gt;
 &lt;/section&gt;
 
+&lt;div class=&#34;post-content prose prose-slate lg:prose-xl dark:prose-invert mt-8&#34;&gt;
 &lt;p&gt;Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in South-East Birmingham.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;contact-us--asumen-charity&#34;&gt;Contact Us — Asumen charity&lt;/h2&gt;
@@ -225,11 +246,28 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;As you prepare to reach out or step through the door, know that you become part of a caring circle—a community woven with prayers, voices, and hands creating freedom and peace for all.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Feel&lt;/em&gt; the connection growing &lt;em&gt;hear&lt;/em&gt; the invitation whispering gently—and &lt;em&gt;see&lt;/em&gt; how together, we can build a brighter tomorrow.&lt;/p&gt;
-&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
-&lt;a href=&#34;http://localhost:1313/en/donate&#34;&gt;
-&lt;button class=&#34;justify-center items-center rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-8 pt-4 pb-4 sm:px-2 sm:pb-2 text-lg sm:text-base font-semibold text-white shadow-sm hover:bg-primary-500&#34;&gt;
-  Donate Now - Transform Lives
-&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+&lt;/div&gt;
+&lt;style&gt;
+@keyframes pulse-heart {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+.animate-pulse-heart {
+  animation: pulse-heart 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+&lt;/style&gt;
+&lt;div class=&#34;text-left pt-8&#34;&gt;
+  &lt;a href=&#34;http://localhost:1313/donate&#34; class=&#34;inline-block&#34;&gt;&lt;button class=&#34;flex justify-center items-center cursor-pointer rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500 transition-colors duration-300&#34; type=&#34;button&#34; aria-label=&#34;Donate Now&#34;&gt;&lt;svg class=&#34;w-6 h-6 mr-3 text-red-500 animate-pulse-heart&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; aria-hidden=&#34;true&#34;&gt;&lt;path d=&#34;M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z&#34;/&gt;&lt;/svg&gt;
+      Donate Now&lt;/button&gt;&lt;/a&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -305,11 +343,7 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;To support Asumen charity is to step into a story of love made real, where your gifts create freedom, peace, and new life for all.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;You might begin to feel how, with a simple choice today, doors of hope quietly open for someone in need. As you explore ways to help, imagine your generosity softly blooming into freedom and new life for families throughout our community. When you decide to contribute, notice the subtle shift—not only in others&amp;rsquo; lives, but within your own heart—as kindness flows outward and gently grows. Picture the relief and warmth your gift brings, and as you consider giving, sense a growing connection and purpose taking root within you. By choosing to support Asumen charity now, you become part of a caring circle, weaving strength and peace into every life touched—including your own.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
-&lt;a href=&#34;http://localhost:1313/donate&#34;&gt;
-&lt;button class=&#34;justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500&#34;&gt;
-  Donate Now - Transform Lives
-&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+</description>
     </item>
     
     <item>
@@ -472,11 +506,7 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
 &lt;h2 id=&#34;closing-reflection&#34;&gt;Closing Reflection&lt;/h2&gt;
 &lt;p&gt;Asumen charity’s mission reminds us that &lt;em&gt;“The greatness of a community is most accurately measured by the compassionate actions of its members.”&lt;/em&gt; Their unwavering commitment to serving Birmingham’s diverse communities, one life at a time, eloquently illustrates how faith in action multiplies hope beyond measure—changing lives and transforming selves alike.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;To support or learn more about Asumen charity’s inspiring work is to step into a story of love, freedom, and flourishing community.&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;text-center flex items-center justify-center&#34;&gt;
-&lt;a href=&#34;http://localhost:1313/donate&#34;&gt;
-&lt;button class=&#34;justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500&#34;&gt;
-  Donate Now - Transform Lives
-&lt;/button&gt;&lt;/a&gt;&lt;/div&gt;</description>
+</description>
     </item>
     
     <item>

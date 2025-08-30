@@ -5,9 +5,14 @@ summary: "Asumen charity stands as a beacon of hope and transformation in South-
 date: "2023-07-28"
 # Date updated
 lastmod: '2023-07-28'
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
 url: 
-authors: 
-- Admin
+authors:
+  - admin
+  - Ted
 Tags: 
 - Privacy
 categories: 
@@ -210,10 +215,3 @@ The charity’s name, *Asumen*, means freedom—an ethos reflected in every face
 Asumen charity’s mission reminds us that *“The greatness of a community is most accurately measured by the compassionate actions of its members.”* Their unwavering commitment to serving Birmingham’s diverse communities, one life at a time, eloquently illustrates how faith in action multiplies hope beyond measure—changing lives and transforming selves alike.
 
 *To support or learn more about Asumen charity’s inspiring work is to step into a story of love, freedom, and flourishing community.*
-
-
-<div class="text-center flex items-center justify-center">
-<a href="/donate">
-<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500">
-  Donate Now - Transform Lives
-</button></a></div>

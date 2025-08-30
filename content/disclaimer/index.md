@@ -14,6 +14,12 @@ categories:
 - Site
 series: 
 - Terms
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 image:
   caption: Image credit - [Pixabay - quimono](https://pixabay.com/photos/scale-question-importance-balance-2635397/)
 ---
@@ -23,3 +29,4 @@ This website provides general information and discussions about health and relat
 If you or any other person has a medical concern, you should consult with your health care provider or seek other professional medical treatment. Never disregard professional medical advice or delay in seeking it because of something that have read on this blog or in any linked materials. If you think you may have a medical emergency, call your doctor or emergency services immediately.
 
 The opinions and views expressed on this site and website have no relation to those of any academic, hospital, health practice or other institution.
+

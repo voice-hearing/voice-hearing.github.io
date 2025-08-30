@@ -14,6 +14,10 @@ categories:
 - Site
 series: 
 - Terms
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
@@ -94,12 +98,6 @@ As you read this, you may already feel a quiet stirring, sensing that your prese
 Asumen charity isn’t just about what *we* do — it’s about what **we can do together**.  
 
 Freedom… peace… new life — not just for our neighbours in Birmingham, but also for everyone who chooses to be part of this journey.
-</br></br></br>
-<div class="text-center flex items-center justify-center">
-<a href="/donate">
-<button class="justify-center items-center rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500">
-  Donate Now - Transform Lives
-</button></a></div>
 
 ## Meet Our Team
 

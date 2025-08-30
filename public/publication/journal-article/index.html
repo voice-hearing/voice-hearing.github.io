@@ -1794,6 +1794,27 @@
 <p>Add the publication&rsquo;s <strong>full text</strong> or <strong>supplementary notes</strong> here. You can use rich formatting such as including <a href="https://docs.hugoblox.com/content/writing-markdown-latex/" target="_blank" rel="noopener">code, math, and images</a>.</p>
 
       </div>
+      <style>
+@keyframes pulse-heart {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+.animate-pulse-heart {
+  animation: pulse-heart 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+</style>
+
+<div class="text-left pt-8 pb-4">
+  <a href="/donate" class="inline-block"><button class="flex justify-center items-center cursor-pointer rounded-full bg-primary-600 dark:bg-primary-900 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold sm:font-bold text-white shadow-sm hover:bg-primary-500 transition-colors duration-300" type="button" aria-label="Donate Now"><svg class="w-6 h-6 mr-3 text-red-500 animate-pulse-heart" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      Donate Now</button></a>
+</div>
 
       
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">

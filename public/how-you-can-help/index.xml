@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/how-you-can-help/</link>
+      <atom:link href="http://localhost:1313/how-you-can-help/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-gb</language><lastBuildDate>Fri, 28 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/how-you-can-help/featured.jpg</url>
+      <title>Blog</title>
+      <link>http://localhost:1313/how-you-can-help/</link>
+    </image>
+    
+    <item>
+      <title>🕵️ Política de privacidad</title>
+      <link>http://localhost:1313/how-you-can-help/index.es/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-you-can-help/index.es/</guid>
+      <description>&lt;p&gt;Está página está publicada con 
+ para 
+. Al ser un 
+, no recoge ni comparte con terceros ningún dato personal. Sin embargo, utiliza servicios externos para añadir diversas funcionalidades, las cuales se detallan en la siguiente lista.&lt;/p&gt;
+&lt;p&gt;Se enlazan también sus respectivas políticas de privacidad.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+ para el alojamiento de su código fuente.&lt;/li&gt;
+&lt;li&gt;
+ para el formulario de contacto. Responderé a su mensaje a través del correo electrónico facilitado. Tenga en cuenta que GDPR.eu está gestionado por Proton Mail, el mayor servicio de correo electrónico cifrado del mundo, y recomienda el cifrado de extremo a extremo para una comunicación segura.&lt;/li&gt;
+&lt;li&gt;
+ para su servicio y para las analíticas web.&lt;/li&gt;
+&lt;li&gt;
+ para la licencia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Este sitio web y sus contenidos han sido creados a título personal. Las opiniones expresadas son mías y no representan necesariamente las de personas a las que he entrevistado o de las que he tomado ideas de sus libros, vídeos y/o artículos.&lt;/p&gt;
+&lt;p&gt;Este sitio web contiene enlaces a sitios web de terceros (&amp;ldquo;enlaces externos&amp;rdquo;). Dado que el contenido de estos sitios web no está bajo mi control, no puedo asumir ninguna responsabilidad por dicho contenido externo. En todos los casos, el proveedor de la información de los sitios web enlazados es responsable del contenido y la exactitud de la información facilitada. En el momento de colocar los enlaces, no tenía conocimiento de ninguna infracción de la ley. En cuanto tenga conocimiento de una infracción de la ley, eliminaré inmediatamente el enlace en cuestión.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>🕵️ Zásady ochrany osobních údajů</title>
+      <link>http://localhost:1313/how-you-can-help/index.cs/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-you-can-help/index.cs/</guid>
+      <description>&lt;p&gt;Tato stránka je publikována pomocí 
+ pro 
+. Jelikož se jedná o 
+, neshromažďuje ani nesdílí žádné osobní údaje s třetími stranami. Využívá však externí služby k přidání různých funkcí, které jsou podrobně uvedeny v následujícím seznamu.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+ pro hostování svého zdrojového kódu.&lt;/li&gt;
+&lt;li&gt;
+ pro kontaktní formulář. Na vaši zprávu odpovím prostřednictvím vámi zadaného e-mailu. Vezměte prosím na vědomí, že GDPR.eu provozuje Proton Mail, největší světová šifrovaná e-mailová služba, která pro bezpečnou komunikaci doporučuje end-to-end šifrování.&lt;/li&gt;
+&lt;li&gt;
+ pro jeho obsluhu a pro webovou analytiku.&lt;/li&gt;
+&lt;li&gt;
+ za licenci.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tyto webové stránky a jejich obsah jsem vytvořil jako soukromá osoba. Vyjádřené názory jsou mé vlastní a nemusí nutně vyjadřovat názory lidí, se kterými jsem dělal rozhovory nebo převzal myšlenky z jejich knih, videí a/nebo článků.&lt;/p&gt;
+&lt;p&gt;Tyto webové stránky obsahují odkazy na webové stránky třetích stran (&amp;ldquo;externí odkazy&amp;rdquo;). Vzhledem k tomu, že obsah těchto webových stránek není pod mou kontrolou, nemohu za takový externí obsah nést žádnou odpovědnost. Ve všech případech odpovídá za obsah a správnost poskytovaných informací poskytovatel informací odkazovaných webových stránek. V době, kdy byly odkazy umístěny, jsem nepoznal žádné porušení zákona. Jakmile mi bude porušení zákona známo, neprodleně daný odkaz odstraním.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

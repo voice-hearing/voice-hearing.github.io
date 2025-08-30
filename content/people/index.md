@@ -14,6 +14,12 @@ categories:
 - Site
 series: 
 - Terms
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---

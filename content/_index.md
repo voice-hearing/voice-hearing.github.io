@@ -12,11 +12,11 @@ sections:
   
   - block: hero1
     content:
-      title: TRANSFORM LIVES <span class="text-primary-700">›</span></br></br> TRANSFORM YOURSELF
+      title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
       text: 
       secondary: 
       primary_action:
-        text: DONATE NOW
+        text: DONATE NOW &nbsp; <span class="text-white">›</span>
         url: /donate
         icon: 
       secondary_action:
@@ -40,7 +40,7 @@ sections:
           filename: "hero.webp"
           filters:
             brightness: "100%"
-  - block: image-overlay-3
+  - block: image-overlay
     content:
       title: HELP US, PARTICIPATE
       blue: 

@@ -14,6 +14,12 @@ categories:
 - charity
 series: 
 - charity
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
@@ -82,3 +88,4 @@ As you choose to give, notice the gentle assurance that comes from being part of
 ---
 
 Your support means more than you might know—and every gift, given in honesty, makes a real difference.  
+

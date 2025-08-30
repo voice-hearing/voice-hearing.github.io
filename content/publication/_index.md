@@ -21,6 +21,7 @@ cascade:
     hide_date: true
     show_related: true
     show_breadcrumb: true
+    profile: true
     share: true
     header:
       navbar:

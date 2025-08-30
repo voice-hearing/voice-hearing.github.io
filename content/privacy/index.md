@@ -14,6 +14,12 @@ categories:
 - Site
 series: 
 - Terms
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
@@ -28,4 +34,3 @@ This page is published with [Hugo theme](https://themes.gohugo.io/) for [CSM Hug
 This website and its contents were created in my personal capacity. The views expressed are my own and do not necessarily represent the views of people I have interviewed or taken ideas from their books, videos or/and articles.
 
 This website contains links to the websites of third parties („external links“). As the content of these websites is not under my control, I cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognizable to me. As soon as an infringement of the law becomes known to me, I will immediately remove the link in question.
-

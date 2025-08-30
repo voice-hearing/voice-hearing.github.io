@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Hero */}}
+{{/* Hugo Blox: Hero with Left-Aligned Title and Tight Black Background */}}
 {{/* Documentation: https://hugoblox.com/blocks/ */}}
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
 
@@ -6,9 +6,9 @@
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 
-<div class="relative isolate w-full" style="min-height: 80vh;">
-  
-  <!-- Background Image Support - 80% Height -->
+<div class="relative isolate max-w-screen-xl mx-auto" style="min-height: 80vh;">
+
+  <!-- Background Image Constrained to Container -->
   {{ $bg := $block.content.background }}
   {{ $bg_img := "" }}
   {{ if $bg.image.filename }}
@@ -17,41 +17,47 @@
       {{ $bg_img = $bg_img.Fit "1920x1080 q80 webp" }}
     {{ end }}
   {{ end }}
-  
+
   {{ if $bg_img }}
-  <div class="absolute inset-0 w-full h-full overflow-hidden" style="height: 80vh;">
+  <div class="absolute inset-0 overflow-hidden rounded-xl">
     <img src="{{ $bg_img.RelPermalink }}" 
          alt="Hero background" 
          width="{{ $bg_img.Width }}"
          height="{{ $bg_img.Height }}"
-         class="w-full h-full object-cover object-center">
-    <div class="absolute inset-0 bg-black/40"></div>
+         class="w-full h-full object-cover object-center rounded-xl" />
+    <div class="absolute inset-0 bg-black/40 rounded-xl"></div>
   </div>
   {{ end }}
-  
-  <div class="relative z-10 w-full px-2 lg:px-12 py-12 lg:py-16">
-    
+
+  <!-- Content in same constrained container -->
+  <div class="relative z-10 py-12 lg:py-16 px-4 md:px-7">
+
     {{ if $block.content.announcement.text }}
     {{ $announcement := $block.content.announcement }}
     <div class="hidden sm:mb-8 sm:flex">
       <div class="relative rounded-full px-3 py-1 text-lg leading-6 text-gray-900 dark:text-gray-100 border border-gray-300 bg-white/90 dark:border-gray-500 dark:bg-gray-800/90 backdrop-blur-sm">
-        {{$announcement.text | markdownify}} {{if $announcement.link.text}}<a href="{{$announcement.link.url}}" class="font-semibold text-primary-600 dark:text-primary-300"><span class="absolute inset-0" aria-hidden="true"></span>{{$announcement.link.text}} <span aria-hidden="true">&rarr;</span></a>{{end}}
-      </div>
-    </div>
-    {{end}}
-    
-    <!-- Compact black background that fits content -->
-    {{ with $block.content.title }}
-    <div class="mb-12">
-      <div class="bg-black px-2 py-1 rounded-2xl shadow-2xl inline-block max-w-5xl">
-        <h1 class="text-5xl text-white">
-          {{ . | markdownify }}
-        </h1>
+        {{$announcement.text | markdownify}} 
+        {{ if $announcement.link.text }}
+          <a href="{{$announcement.link.url}}" class="font-semibold text-primary-600 dark:text-primary-300">
+            <span class="absolute inset-0" aria-hidden="true"></span>{{$announcement.link.text}} <span aria-hidden="true">&rarr;</span>
+          </a>
+        {{ end }}
       </div>
     </div>
     {{end}}
 
-    <!-- Action buttons with enhanced spacing -->
+    <!-- Hero Title - Left Aligned with Tight Black Background -->
+    {{ with $block.content.title }}
+    <div class="mb-12 max-w-xl xl:max-w-7xl flex justify-start">
+      <div class="bg-black rounded-2xl shadow-2xl inline-block px-6 py-3">
+        <h1 class="text-4xl md:text-5xl lg:text-5xl text-white">
+          {{ . | markdownify }}
+        </h1>
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Optional Action Buttons -->
     <div class="flex flex-col sm:flex-row gap-6 mb-16">
       {{ if $block.content.primary_action.url }}
       <div>
@@ -92,7 +98,7 @@
       </div>
       {{end}}
     </div>
-    
+
     <!-- Supporting text with improved hierarchy -->
     <div class="max-w-2xl space-y-6">
       {{ with $block.content.text }}

@@ -8,6 +8,8 @@
   <url>
     <loc>http://localhost:1313/projects/</loc><lastmod>2024-05-19T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/authors/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/terms/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/categories/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>

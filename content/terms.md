@@ -14,6 +14,12 @@ categories:
 - Site
 series: 
 - Terms
+show_date: false
+hide_date: true
+show_related: true
+show_breadcrumb: true
+share: true
+profile: true
 ---
 
 ## Welcome to Connection!

@@ -14,6 +14,7 @@ cascade:
     show_related: true
     show_breadcrumb: true
     share: true
+    profile: true
     toc: true
     header:
       navbar:
