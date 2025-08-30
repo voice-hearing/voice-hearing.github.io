@@ -46,28 +46,28 @@ sections:
       blue: 
       text: 
       slides:
-        - title: INTERFAITH ACCOMMODATION <span class="text-primary-700">›</span>
+        - title: INTERFAITH HOUSE 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8550108.jpg"
-        - title: HOPE GARDEN <span class="text-primary-700">›</span>
+        - title: HOPE GARDEN 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "hopegarden1.png"
-        - title: CHILDREN'S CLUB <span class="text-primary-700">›</span>
+        - title: CHILDREN'S CLUB 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "childrensclub1.jpg"
-        - title: LADIES' DAY <span class="text-primary-700">›</span>
+        - title: LADIES' DAY 
           content: 
           align: "bottom-left"
           url: /what-we-do
@@ -122,42 +122,42 @@ sections:
       blue: 
       text: 
       slides:
-        - title: PRAYING <span class="text-primary-700">›</span>
+        - title: PRAYING 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-jibarofoto-14373404.jpg"
-        - title: SHARING INFO <span class="text-primary-700">›</span>
+        - title: SHARING INFO 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-cottonbro-4255394.jpg"
-        - title: VOLUNTEERING <span class="text-primary-700">›</span>
+        - title: VOLUNTEERING 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-julia-m-cameron-6994939.jpg"
-        - title: SERVICING <span class="text-primary-700">›</span>
+        - title: SERVICING 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8486923.jpg"
-        - title: OFFERING SPACE <span class="text-primary-700">›</span>
+        - title: OFFERING SPACE 
           content: 
           align: "bottom-left"
           url: /what-we-do
           background:
             image:
               filename: "pexels-life-of-pix-67468.jpg"
-        - title: DONATING <span class="text-primary-700">›</span>
+        - title: DONATING 
           content: 
           align: "bottom"
           url: /what-we-do
