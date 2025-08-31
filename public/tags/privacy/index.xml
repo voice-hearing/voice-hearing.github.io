@@ -958,7 +958,10 @@ You can join us through:&lt;/p&gt;
       <link>http://localhost:1313/people/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/people/</guid>
-      <description>
+      <description>&lt;h2 id=&#34;our-amazing-people&#34;&gt;Our Amazing People&lt;/h2&gt;
+&lt;h3 id=&#34;the-brilliant-minds-behind-our-success&#34;&gt;The brilliant minds behind our success&lt;/h3&gt;
+&lt;p&gt;We are a diverse team of experts dedicated to making a difference.&lt;/p&gt;
+
 
 
 
@@ -976,24 +979,12 @@ You can join us through:&lt;/p&gt;
     
     &lt;div class=&#34;flex flex-col mb-12&#34;&gt;
       
-      &lt;p class=&#34;mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300&#34;&gt;MEET THE TEAM&lt;/p&gt;
-      
             
       
-      &lt;h1 class=&#34;mb-4 text-xl md:text-4xl lg:text-3xl text-gray-900 dark:text-white text-center&#34;&gt;Our Amazing People&lt;/h1&gt;
       
-      
-      
-      &lt;p class=&#34;mt-2 text-lg text-gray-600 dark:text-gray-400 text-center&#34;&gt;The brilliant minds behind our success&lt;/p&gt;
       
     &lt;/div&gt;
 
-    
-    &lt;div class=&#34;w-full mb-8&#34;&gt;
-      &lt;div class=&#34;prose prose-lg max-w-none text-gray-700 dark:text-gray-300 text-center mx-auto&#34;&gt;
-        We are a diverse team of experts dedicated to making a difference.
-      &lt;/div&gt;
-    &lt;/div&gt;
     
 
     

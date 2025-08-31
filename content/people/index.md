@@ -23,13 +23,13 @@ profile: true
 image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
+## Our Amazing People
 
+### The brilliant minds behind our success
+
+We are a diverse team of experts dedicated to making a difference.
 
 {{< people 
-    blue="MEET THE TEAM"
-    title="Our Amazing People"
-    subtitle="The brilliant minds behind our success"
-    text="We are a diverse team of experts dedicated to making a difference."
     user_groups="Admin,Trustees,Volunteers"
     show_social="true"
     show_interests="true"

@@ -24,7 +24,7 @@
   <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
       
   {{ with $title }}
-  <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">{{.}}</h2>
+  <h2 class="mb-4 text-3xl font-bold dark:font-semibold text-gray-900 dark:text-white">{{.}}</h2>
   {{ end }}</div>
   {{ with $text }}
   <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</p>
@@ -95,7 +95,7 @@
           <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
         {{ else if eq $align "bottom-left" }}
         <!-- BOTTOM LEFT: Bottom left corner -->
-        <div class="absolute bottom-0 left-0 pb-6 pl-6 text-gray-900 dark:text-white">
+        <div class="absolute bottom-0 left-0 pb-6 pl-6 dark:font-regular font-semibold text-gray-900 dark:text-white">
           <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
         {{ else if eq $align "bottom-right" }}
         <!-- BOTTOM RIGHT: Bottom right corner -->
