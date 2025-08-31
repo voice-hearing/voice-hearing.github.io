@@ -9,23 +9,61 @@
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
-<div class="mx-auto max-w-7xl mt-0 px-2 mb-8">
+<style>
+  .features-block a {
+    color: rgb(239 68 68); /* red-500 - primary-500 */
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: color 0.15s ease-in-out, text-decoration-color 0.15s ease-in-out;
+  }
+  
+  .features-block a:hover {
+    color: rgb(220 38 38); /* red-600 - primary-600 */
+    text-decoration-color: currentColor;
+  }
+  
+  .features-block a:focus {
+    color: rgb(220 38 38); /* red-600 - primary-600 */
+    outline: 2px solid rgb(239 68 68); /* red-500 - primary-500 */
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Dark mode using data-theme or .dark class */
+  [data-theme="dark"] .features-block a,
+  .dark .features-block a {
+    color: rgb(252 165 165); /* red-300 - primary-300 */
+  }
+  
+  [data-theme="dark"] .features-block a:hover,
+  [data-theme="dark"] .features-block a:focus,
+  .dark .features-block a:hover,
+  .dark .features-block a:focus {
+    color: rgb(254 202 202); /* red-200 - primary-200 */
+  }
+</style>
+
+<div class="features-block mx-auto max-w-7xl mt-0 px-0 mb-8">
     
  <div class="flex flex-col">
   {{ with $blue }}
   <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
   {{ end }}
         
+  <div class="px-1 md:px-6 lg:px-0">
+  <!-- Red horizontal line above title -->
+  <!-- <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div> -->
+      
   {{ with $title }}
-  <h2 class="mb-4 text-xl font-semibold md:text-4xl lg:text-3xl text-gray-900 dark:text-white">{{.}}</h2>
-  {{ end }}
+  <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">{{.}}</h2>
+  {{ end }}</div>
   {{ with $text }}
   <div class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</div>
   {{ end }}
 </div>
     
     <!-- Features Grid - Expanded Side-to-Side on Mobile -->
-    <div class="mt-10 mx-auto max-w-7xl px-1 md:px-8 -mx-8 md:mx-0">
+    <div class="mt-10 mx-auto max-w-7xl px-1 md:px-6 lg:px-0 -mx-8 md:mx-0">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-4">
         {{ range $block.content.items }}
           <div class="">
