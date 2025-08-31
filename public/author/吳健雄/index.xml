@@ -382,7 +382,7 @@
 
 
 
-&lt;div id=&#34;chart-734861925&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-945862713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -400,7 +400,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-734861925&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-945862713&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2367,6 +2367,8 @@ hello
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;about-us---asumen-charity&#34;&gt;&lt;strong&gt;About Us - Asumen charity&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
 [![YouTube - The Metaphorical Body:
 Why Metaphor May be Everywhere](https://img.youtube.com/vi/Gcs-vG4e5ps/0.jpg)](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
 [▶️ YouTube - The Metaphorical Body:

@@ -40,39 +40,62 @@
   --color-danger-950: 69 10 10;
 }
 
-/* Ultra-specific targeting for HugoBlox prose content only */
-.container .prose p a,
-.container .prose li a,
-.container .prose blockquote a,
-.container .prose-slate p a,
-.container .prose-slate li a,
-.container .prose-xl p a,
-.container .prose-xl li a {
-  color: #374151 !important; /* primary-700 */
-  text-decoration: underline;
+/* 
+ * HugoBlox Charity Colors - Minimal & Clean Implementation
+ * ONLY changes prose links, preserves ALL HugoBlox UI styling
+ */
+
+/* CSS Custom Properties */
+:root {
+  --donate-link-color: #ea580c;        /* Charity Orange 600 */
+  --donate-link-hover: #c2410c;        /* Charity Orange 700 */
 }
 
-.container .prose p a:hover,
-.container .prose li a:hover,
-.container .prose blockquote a:hover,
-.container .prose-slate p a:hover,
-.container .prose-slate li a:hover,
-.container .prose-xl p a:hover,
-.container .prose-xl li a:hover {
-  color: #111827 !important; /* primary-800 */
+.dark {
+  --donate-link-color: #fb923c;        /* Warm Orange 400 */
+  --donate-link-hover: #fdba74;        /* Warm Orange 300 */
 }
 
-/* Header and footer elements */
-.site-header a,
-.site-footer a,
+/* Donation links within prose content */
+.prose a[href*="donate"],
+.prose a[class*="donate"],
+.prose a[href*="support"],
+.prose a[class*="contribute"] {
+  color: var(--donate-link-color);
+  font-weight: 600;
+}
+
+.prose a[href*="donate"]:hover,
+.prose a[class*="donate"]:hover,
+.prose a[href*="support"]:hover,
+.prose a[class*="contribute"]:hover {
+  color: var(--donate-link-hover);
+}
+
+/* Navigation - Complete Reset */
 .navbar a,
-.footer a,
-header a,
-footer a,
-nav a {
+.nav a,
+.site-header a,
+.header a,
+.main-menu a,
+.menu a,
+.navigation a,
+.post-nav a,
+.page-nav a,
+.prev-next a,
+.page-links a,
+.pagination a,
+a[class*="nav"],
+a[class*="page-item"],
+[data-paginate] a,
+.breadcrumb a,
+.breadcrumbs a {
   color: inherit !important;
   text-decoration: inherit !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
 }
+
 
 /* ========================================
    DESKTOP MENU - CENTERED
