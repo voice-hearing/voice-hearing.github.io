@@ -40,6 +40,40 @@
   --color-danger-950: 69 10 10;
 }
 
+/* Ultra-specific targeting for HugoBlox prose content only */
+.container .prose p a,
+.container .prose li a,
+.container .prose blockquote a,
+.container .prose-slate p a,
+.container .prose-slate li a,
+.container .prose-xl p a,
+.container .prose-xl li a {
+  color: #374151 !important; /* primary-700 */
+  text-decoration: underline;
+}
+
+.container .prose p a:hover,
+.container .prose li a:hover,
+.container .prose blockquote a:hover,
+.container .prose-slate p a:hover,
+.container .prose-slate li a:hover,
+.container .prose-xl p a:hover,
+.container .prose-xl li a:hover {
+  color: #111827 !important; /* primary-800 */
+}
+
+/* Header and footer elements */
+.site-header a,
+.site-footer a,
+.navbar a,
+.footer a,
+header a,
+footer a,
+nav a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
 /* ========================================
    DESKTOP MENU - CENTERED
    ======================================== */

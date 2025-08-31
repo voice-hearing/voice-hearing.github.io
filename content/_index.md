@@ -53,7 +53,7 @@ sections:
           background:
             image:
               filename: "pexels-kindelmedia-8550108.jpg"
-        - title: HOPE GARDEN 
+        - title: YUMMI GARDEN 
           content: 
           align: "bottom-left"
           url: /what-we-do

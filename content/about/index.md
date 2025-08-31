@@ -23,7 +23,12 @@ image:
 ---
 # **About Us - Asumen charity** 
         
-*“Where the Spirit of the Lord is, there is freedom.”* — 2 Corinthians 3:17  
+*“Where the Spirit of the Lord is, there is freedom.”* — 2 Corinthians 3:17 
+
+{{< youtube-link "https://www.youtube.com/watch?v=Gcs-vG4e5ps" >}}
+
+[![YouTube - The Metaphorical Body: Why Metaphor May be Everywhere](https://img.youtube.com/vi/Gcs-vG4e5ps/0.jpg)](https://www.youtube.com/watch?v=Gcs-vG4e5ps) [▶️ YouTube - The Metaphorical Body: Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
+
 
 Asumen charity is a small but deeply rooted Christian charity serving **west london** — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.  
 

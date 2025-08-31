@@ -382,7 +382,7 @@
 
 
 
-&lt;div id=&#34;chart-167935248&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-734861925&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -400,7 +400,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-167935248&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-734861925&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1852,7 +1852,138 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
       <link>http://localhost:1313/how-you-can-help/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/how-you-can-help/</guid>
-      <description>&lt;p&gt;Asumen charity warmly invites you into a journey of hope and transformation where &lt;em&gt;your help, your contribution, and your donation&lt;/em&gt; become the seeds of change that bloom in the lives of individuals and families in need across west london.&lt;/p&gt;
+      <description>
+&lt;div class=&#34;container mx-auto prose prose-slate lg:prose-xl dark:prose-invert&#34;&gt;
+  &lt;details class=&#34;mt-3 overflow-hidden rounded text-base&#34;&gt;
+    &lt;summary class=&#34;py-1 cursor-pointer bg-primary text-lg font-semibold text-white px-3&#34;&gt;
+      AI Chat Perplexity
+    &lt;/summary&gt;
+    &lt;div class=&#34;post-series&#34;&gt;
+      &lt;ol class=&#34;mt-3 text-base&#34;&gt;
+        &lt;li&gt;
+          &lt;a href=&#34;#&#34; onclick=&#34;launchSeriesAnalysis(&#39;comprehensive&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 ); return false;&#34; 
+             class=&#34;text-blue-600 hover:text-blue-800 hover:underline dark:text-blue-400 dark:hover:text-blue-300&#34;&gt;
+            📊 Comprehensive Analysis
+          &lt;/a&gt;
+          &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-400 ml-2&#34;&gt;- Complete breakdown and detailed insights&lt;/span&gt;
+        &lt;/li&gt;
+        
+        &lt;li&gt;
+          &lt;a href=&#34;#&#34; onclick=&#34;launchSeriesAnalysis(&#39;charity&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 ); return false;&#34; 
+             class=&#34;text-green-600 hover:text-green-800 hover:underline dark:text-green-400 dark:hover:text-green-300&#34;&gt;
+            💝 Charity &amp; Impact Analysis
+          &lt;/a&gt;
+          &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-400 ml-2&#34;&gt;- Focus on charitable themes and community impact&lt;/span&gt;
+        &lt;/li&gt;
+        
+        &lt;li&gt;
+          &lt;a href=&#34;#&#34; onclick=&#34;launchSeriesAnalysis(&#39;practical&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 ); return false;&#34; 
+             class=&#34;text-purple-600 hover:text-purple-800 hover:underline dark:text-purple-400 dark:hover:text-purple-300&#34;&gt;
+            ⚡ Practical Applications
+          &lt;/a&gt;
+          &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-400 ml-2&#34;&gt;- How to help and contribute effectively&lt;/span&gt;
+        &lt;/li&gt;
+        
+        &lt;li&gt;
+          &lt;a href=&#34;#&#34; onclick=&#34;launchSeriesAnalysis(&#39;questions&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 ); return false;&#34; 
+             class=&#34;text-orange-600 hover:text-orange-800 hover:underline dark:text-orange-400 dark:hover:text-orange-300&#34;&gt;
+            ❓ Discussion Questions
+          &lt;/a&gt;
+          &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-400 ml-2&#34;&gt;- Topics to explore and discuss further&lt;/span&gt;
+        &lt;/li&gt;
+      &lt;/ol&gt;
+      
+      
+      &lt;div class=&#34;mt-4 pt-4 border-t border-gray-200 dark:border-gray-700&#34;&gt;
+        &lt;p class=&#34;font-medium text-gray-700 dark:text-gray-300 mb-2&#34;&gt;💬 Ask Your Own Question:&lt;/p&gt;
+        &lt;div class=&#34;flex gap-2 mb-3&#34;&gt;
+          &lt;input type=&#34;text&#34; 
+                 id=&#34;series-custom-input-0&#34; 
+                 placeholder=&#34;What would you like to explore about this content?&#34;
+                 class=&#34;flex-1 rounded-full border border-gray-300 px-3 py-1 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white&#34;&gt;
+          &lt;button onclick=&#34;launchSeriesAnalysis(&#39;custom&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 )&#34; 
+                  class=&#34;rounded-full bg-primary-700 px-3 py-1 text-sm font-medium text-white transition-colors hover:bg-primary-900&#34; style=&#34;cursor: pointer;&#34;&gt;
+            Ask AI
+          &lt;/button&gt;
+        &lt;/div&gt;
+        
+        
+        &lt;div class=&#34;text-xs text-gray-500 dark:text-gray-400&#34;&gt;
+          ✅ Content ready: 2022 characters • Analysis powered by Perplexity AI
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+  window.launchSeriesAnalysis = function(type, content, ordinal) {
+    let prompt = &#39;&#39;;
+    
+    switch(type) {
+      case &#39;comprehensive&#39;:
+        prompt = `Please provide a comprehensive analysis of the following content about charitable giving and community support. Include key themes, main ideas, and detailed insights:
+
+Content to analyze:
+${content}`;
+        break;
+        
+      case &#39;charity&#39;:
+        prompt = `Analyze this content focusing specifically on charitable themes, community impact, and giving. What are the key messages about helping others and making a difference?
+
+Content about charity and giving:
+${content}`;
+        break;
+        
+      case &#39;practical&#39;:
+        prompt = `Based on this content about charitable giving and community support, what are the practical ways people can help and contribute? Provide actionable insights and specific steps:
+
+Content for practical analysis:
+${content}`;
+        break;
+        
+      case &#39;questions&#39;:
+        prompt = `Generate thoughtful discussion questions based on this content about charity, giving, and community support. What topics deserve further exploration?
+
+Content for question generation:
+${content}`;
+        break;
+        
+      case &#39;custom&#39;:
+        const input = document.getElementById(`series-custom-input-${ordinal}`);
+        if (!input || !input.value.trim()) {
+          alert(&#39;Please enter your question first!&#39;);
+          if (input) input.focus();
+          return;
+        }
+        prompt = `Question: ${input.value.trim()}
+
+Please answer based on this content about charitable giving and community support:
+${content}`;
+        input.value = &#39;&#39;;
+        break;
+    }
+    
+    
+    const perplexityUrl = `https://www.perplexity.ai/?q=${encodeURIComponent(prompt)}`;
+    window.open(perplexityUrl, &#39;_blank&#39;);
+  };
+
+  
+  const input = document.getElementById(`series-custom-input-0`);
+  if (input) {
+    input.addEventListener(&#39;keypress&#39;, function(e) {
+      if (e.key === &#39;Enter&#39;) {
+        e.preventDefault();
+        launchSeriesAnalysis(&#39;custom&#39;, &#34;\&#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&#34;&#34;,  0 );
+      }
+    });
+  }
+})();
+&lt;/script&gt;
+
+&lt;p&gt;Asumen charity warmly invites you into a journey of hope and transformation where &lt;em&gt;your help, your contribution, and your donation&lt;/em&gt; become the seeds of change that bloom in the lives of individuals and families in need across west london.&lt;/p&gt;
 &lt;h2 id=&#34;how-you-can-help-and-contribute&#34;&gt;How You Can Help and Contribute&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Your support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:&lt;/p&gt;
@@ -2236,6 +2367,13 @@ hello
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;about-us---asumen-charity&#34;&gt;&lt;strong&gt;About Us - Asumen charity&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
+[![YouTube - The Metaphorical Body:
+Why Metaphor May be Everywhere](https://img.youtube.com/vi/Gcs-vG4e5ps/0.jpg)](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
+[▶️ YouTube - The Metaphorical Body:
+Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
+&lt;p&gt;
+ 
+&lt;/p&gt;
 &lt;p&gt;Asumen charity is a small but deeply rooted Christian charity serving &lt;strong&gt;west london&lt;/strong&gt; — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.&lt;/p&gt;
 &lt;p&gt;The name &lt;strong&gt;Asumen&lt;/strong&gt; comes from the Persian word for &lt;em&gt;“freedom” or “liberty”&lt;/em&gt;, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. &lt;em&gt;From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;

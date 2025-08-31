@@ -1,0 +1,27 @@
+<div style="background:#f0f0f0; padding:1rem; border:1px solid #ccc; margin:1rem 0;">
+  <h3>🔍 Content Debug Report</h3>
+  
+  <p><strong>Page Title:</strong> {{ .Page.Title }}</p>
+  <p><strong>Page Type:</strong> {{ .Page.Type }}</p>
+  <p><strong>Page Kind:</strong> {{ .Page.Kind }}</p>
+  
+  <hr>
+  <h4>Content Sources:</h4>
+  
+  <p><strong>RawContent Length:</strong> {{ len .Page.RawContent }}</p>
+  <p><strong>Content Length:</strong> {{ len .Page.Content }}</p>
+  <p><strong>Summary Length:</strong> {{ len .Page.Summary }}</p>
+  <p><strong>Description Length:</strong> {{ len (.Page.Description | default "") }}</p>
+  
+  <hr>
+  <h4>Content Previews:</h4>
+  
+  <p><strong>RawContent (first 200 chars):</strong></p>
+  <pre style="background:#fff; padding:0.5rem; max-height:100px; overflow:auto;">{{ .Page.RawContent | truncate 200 }}</pre>
+  
+  <p><strong>Content (first 200 chars):</strong></p>
+  <pre style="background:#fff; padding:0.5rem; max-height:100px; overflow:auto;">{{ .Page.Content | truncate 200 }}</pre>
+  
+  <p><strong>Plainified Content (first 200 chars):</strong></p>
+  <pre style="background:#fff; padding:0.5rem; max-height:100px; overflow:auto;">{{ .Page.Content | plainify | truncate 200 }}</pre>
+</div>

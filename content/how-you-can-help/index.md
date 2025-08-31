@@ -24,6 +24,7 @@ image:
   caption: Image credit - [Pixabay - Markus Winkler](https://pixabay.com/photos/privacy-policy-dsgvo-5243225/)
 ---
 
+{{< ai-chat >}}
 
 Asumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.
 

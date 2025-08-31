@@ -10,7 +10,7 @@
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
 {{/* Clean Click-to-Load Calendar */}}
-<div class="mx-auto max-w-7xl mt-0 px-2 pb-4">
+<div class="mx-auto max-w-7xl mt-0 pb-4">
     
   <!-- Header Section with Clean Typography -->
   <div class="flex flex-col text-center">
@@ -19,9 +19,9 @@
     </div>
     {{ end }}
     
-  <div class="px-1 md:px-6 lg:px-0">
+  <div class="md:px-6 lg:px-0">
   <!-- Red horizontal line above title -->
-  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+  <div class="w-16 border-2 border-primary-700 mb-4"></div>
       
   {{ with $title }}
   <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">{{.}}</h2>
@@ -71,7 +71,7 @@
             
             <!-- Clean Call-to-Action -->
             <div class="pt-2 sm:pt-4">
-              <div class="inline-flex items-center space-x-2 px-4 py-2 bg-primary-100 dark:bg-primary-900/30 rounded-full border border-primary-200 dark:border-primary-700/50 transition-all duration-300">
+              <div class="inline-flex items-center space-x-2 px-2 py-2 bg-primary-100 dark:bg-primary-900/30 rounded-full border border-primary-200 dark:border-primary-700/50 transition-all duration-300">
                 <svg class="w-4 h-4 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
                 </svg>

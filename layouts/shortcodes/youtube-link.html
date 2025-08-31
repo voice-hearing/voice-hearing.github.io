@@ -1,0 +1,31 @@
+{{- $url := .Get "url" | default (.Get 0) -}}
+{{- $fallbackTitle := .Get "title" | default "YouTube Video" -}}
+
+{{- /* Extract video ID */ -}}
+{{- $videoId := "" -}}
+{{- if findRE `[?&]v=([^&]{11})` $url -}}
+  {{- $videoId = replaceRE `.*[?&]v=([^&]{11}).*` "$1" $url -}}
+{{- else if findRE `youtu\.be\/([^?&]{11})` $url -}}
+  {{- $videoId = replaceRE `.*youtu\.be\/([^?&]{11}).*` "$1" $url -}}
+{{- else if findRE `youtube\.com\/embed\/([^?&]{11})` $url -}}
+  {{- $videoId = replaceRE `.*youtube\.com\/embed\/([^?&]{11}).*` "$1" $url -}}
+{{- end -}}
+
+{{- $title := $fallbackTitle -}}
+
+{{- if $videoId -}}
+  {{- /* Fetch video title from YouTube oEmbed API */ -}}
+  {{- $oembedUrl := printf "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=%s&format=json" $videoId -}}
+  {{- with resources.GetRemote $oembedUrl -}}
+    {{- with .Content | transform.Unmarshal -}}
+      {{- if .title -}}
+        {{- $title = .title -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+[![YouTube - {{ $title }}](https://img.youtube.com/vi/{{ $videoId }}/0.jpg)]({{ $url }})
+[▶️ YouTube - {{ $title }}]({{ $url }})
+{{- else -}}
+[🔗 Invalid YouTube URL - {{ $fallbackTitle }}]({{ $url }})
+{{- end -}}
