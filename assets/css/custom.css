@@ -42,6 +42,70 @@ html.dark header#site-header [class*="bg-primary"],
 [data-theme="dark"] header#site-header [class*="bg-primary"] {
   background-color: #000000 !important; /* Override all primary backgrounds in nav */
 }
+/* Mobile Navigation Dropdown - Dark theme */
+@media (max-width: 1023px) {
+  /* Navigation dropdown list in mobile dark theme */
+  html.dark header#site-header .nav-dropdown-list,
+  .dark header#site-header .nav-dropdown-list,
+  [data-theme="dark"] header#site-header .nav-dropdown-list {
+    background-color: #000000 !important; /* Black background for mobile dropdown */
+    border-color: #333333 !important; /* Dark border */
+  }
+
+  /* Navigation dropdown items in mobile dark theme */
+  html.dark header#site-header .nav-dropdown-item,
+  .dark header#site-header .nav-dropdown-item,
+  [data-theme="dark"] header#site-header .nav-dropdown-item {
+    background-color: #000000 !important; /* Black background */
+  }
+
+  /* Navigation dropdown links in mobile dark theme */
+  html.dark header#site-header .nav-dropdown-link,
+  .dark header#site-header .nav-dropdown-link,
+  [data-theme="dark"] header#site-header .nav-dropdown-link {
+    background-color: #000000 !important; /* Black background */
+    color: #ffffff !important; /* White text */
+  }
+
+  /* Navigation dropdown links hover/active states */
+  html.dark header#site-header .nav-dropdown-link:hover,
+  html.dark header#site-header .nav-dropdown-link.active,
+  .dark header#site-header .nav-dropdown-link:hover,
+  .dark header#site-header .nav-dropdown-link.active,
+  [data-theme="dark"] header#site-header .nav-dropdown-link:hover,
+  [data-theme="dark"] header#site-header .nav-dropdown-link.active {
+    background-color: #333333 !important; /* Darker hover state */
+    color: #ffffff !important; /* Keep white text */
+  }
+
+  /* Main navigation links in mobile dark theme */
+  html.dark header#site-header .nav-link,
+  .dark header#site-header .nav-link,
+  [data-theme="dark"] header#site-header .nav-link {
+    color: #ffffff !important; /* White text for main nav links */
+  }
+
+  /* Main navigation links hover/active states */
+  html.dark header#site-header .nav-link:hover,
+  html.dark header#site-header .nav-link.active,
+  .dark header#site-header .nav-link:hover,
+  .dark header#site-header .nav-link.active,
+  [data-theme="dark"] header#site-header .nav-link:hover,
+  [data-theme="dark"] header#site-header .nav-link.active {
+    color: #cccccc !important; /* Slightly dimmed white for hover */
+  }
+}
+
+/* Additional fix for any remaining primary colored elements in mobile nav */
+@media (max-width: 1023px) {
+  html.dark header#site-header .navbar-nav [class*="primary"],
+  .dark header#site-header .navbar-nav [class*="primary"],
+  [data-theme="dark"] header#site-header .navbar-nav [class*="primary"] {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+}
+
 
 /* ========================================
    DESKTOP MENU - CENTERED
