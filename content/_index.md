@@ -87,7 +87,7 @@ sections:
           filename: ""
           filters:
             brightness:
-  - block: stats1
+  - block: statement
     id: features
     content:
       blue: 

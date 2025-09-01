@@ -423,6 +423,10 @@ body {
   background-color: var(--bg-color);
 }
 
+h2 {
+  font-weight: bold !important;
+}
+
 
 /* Generic date elements */
 time, .date, .pub-date, .post-date, .event-date, .document-date, .year {
