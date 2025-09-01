@@ -29,12 +29,17 @@ marketing:
 # Announcement shown above the header
 announcement:
   enable: true
-  text: "☕ A Cuppa And a Chat"
-  url: "https://publication.com"
+  text: "🚀 New pre-print available – read it now!"
+  url: "/publication/pre-print/"
   phone: "+1234567890"
   email: "contact@example.com"
-  hours: "Mon-Fri 9AM-6PM"
+  hours: "mon-fri 9am-6pm"
   address: "123 Main Street, Your City, State 12345"
+  latitude: "40.7128"
+  longitude: "-74.0060"
+  meeting_title: "Business Meeting"
+  preferred_meeting_hour: 11  # Optional: Choose specific hour (9-17), defaults to opening hour
+
   
 # Tailwind: allow @apply inside <style> tags (needed once per site)
 tailwind:

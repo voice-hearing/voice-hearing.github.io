@@ -1521,6 +1521,9 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-\[18px\] {
     height: 18px;
   }
@@ -2183,6 +2186,10 @@
   }
   .to-primary-100 {
     --tw-gradient-to: var(--color-primary-100);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-primary-600 {
+    --tw-gradient-to: var(--color-primary-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-primary-700 {
@@ -4054,6 +4061,15 @@
       gap: calc(var(--spacing) * 8);
     }
   }
+  .xl\:space-x-2 {
+    @media (width >= 80rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
   .xl\:space-x-8 {
     @media (width >= 80rem) {
       :where(& > :not(:last-child)) {
@@ -4614,6 +4630,11 @@
       &.active {
         color: var(--color-white);
       }
+    }
+  }
+  .\[\&\:not\(dark\)\]\:hidden {
+    &:not(dark) {
+      display: none;
     }
   }
 }
