@@ -105,13 +105,17 @@ main:
     url: /people
     weight: 6
   - parent: about
-    name: MINISTRY
+    name: OUR TEAM
     url: /about
     weight: 7
   - parent: about
-    name: OUTREACH
+    name: MINISTRY
     url: /about
     weight: 8
+  - parent: about
+    name: OUTREACH
+    url: /about
+    weight: 9
   - identifier: site
     name: CONTACT
     weight: 4

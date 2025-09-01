@@ -29,8 +29,12 @@ marketing:
 # Announcement shown above the header
 announcement:
   enable: true
-  text: "🚀 New pre-print available – read it now!"
-  url:  "/publication/pre-print/"
+  text: "☕ A Cuppa And a Chat"
+  url: "https://publication.com"
+  phone: "+1234567890"
+  email: "contact@example.com"
+  hours: "Mon-Fri 9AM-6PM"
+  address: "123 Main Street, Your City, State 12345"
   
 # Tailwind: allow @apply inside <style> tags (needed once per site)
 tailwind:
@@ -40,7 +44,7 @@ tailwind:
 header:
   navbar:
     enable: true
-    blox: "navbar"
+    blox: "navbar1"
     button:
       enable: true
       text: "Donate"

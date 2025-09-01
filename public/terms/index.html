@@ -614,7 +614,61 @@
         
         
         
-          <header id="site-header" class="header">
+          
+
+
+<div class="announcement-bar bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-600">
+  <div class="container-fluid px-2 sm:px-6">
+    <div class="flex items-center justify-between py-2 text-sm">
+      
+      
+      <div class="flex items-center space-x-4 pr-8">
+        <a href="tel:&#43;1234567890" class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+          <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+          </svg>
+          <span class="hidden sm:inline">&#43;1234567890</span>
+        </a>
+        
+        <a href="mailto:contact@example.com" class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+          <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+          </svg>
+          <span class="hidden sm:inline">contact@example.com</span>
+        </a>
+      </div>
+
+      
+      <div class="hidden md:block text-center">
+        <a href="https://publication.com" class="hover:underline">
+          ☕ A Cuppa And a Chat
+        </a>
+      </div>
+
+      
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-1">
+          <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+          </svg>
+          <span class="hidden sm:inline">Mon-Fri 9AM-6PM</span>
+        </div>
+        
+        <a href="geo:0,0?q=123&#43;Main&#43;Street%2C&#43;Your&#43;City%2C&#43;State&#43;12345" 
+           class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+          <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+          </svg>
+          <span class="hidden lg:inline">123 Main Street, Your City, State 12345</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<header id="site-header" class="header">
   <nav class="navbar px-3 flex justify-start">
     <div class="order-0 h-full">
       
@@ -978,6 +1032,10 @@
                 
                 
                 
+              
+                
+                
+                
                inline-flex items-center">
               ABOUT
               <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
@@ -1051,6 +1109,17 @@
               
               href="/people">
               OUR HISTORY
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-dropdown-item">
+            <a
+              class="nav-dropdown-link "
+              
+              href="/about">
+              OUR TEAM
             </a>
           </li>
           
@@ -1322,7 +1391,6 @@
     
   </div>
 </div>
-
 
         
       

@@ -1363,6 +1363,15 @@
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
+  }
+  .mr-6 {
+    margin-right: calc(var(--spacing) * 6);
+  }
+  .mr-auto {
+    margin-right: auto;
+  }
   .\!mb-4 {
     margin-bottom: calc(var(--spacing) * 4) !important;
   }
@@ -1410,6 +1419,9 @@
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
   }
   .ml-auto {
     margin-left: auto;
@@ -1888,6 +1900,13 @@
       margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .gap-y-2 {
     row-gap: calc(var(--spacing) * 2);
   }
@@ -2342,6 +2361,9 @@
   .task-list {
     list-style: none;
     padding-left: 1.5rem;
+  }
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -3208,6 +3230,11 @@
       display: flex;
     }
   }
+  .sm\:inline {
+    @media (width >= 40rem) {
+      display: inline;
+    }
+  }
   .sm\:h-10 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 10);
@@ -3257,6 +3284,11 @@
       padding: calc(var(--spacing) * 2);
     }
   }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:px-8 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 8);
@@ -3270,11 +3302,6 @@
   .sm\:pt-4 {
     @media (width >= 40rem) {
       padding-top: calc(var(--spacing) * 4);
-    }
-  }
-  .sm\:text-center {
-    @media (width >= 40rem) {
-      text-align: center;
     }
   }
   .sm\:text-lg {
@@ -3313,6 +3340,11 @@
   .md\:ml-4 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:flex {
@@ -3708,6 +3740,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:inline {
+    @media (width >= 64rem) {
+      display: inline;
     }
   }
   .lg\:inline-block {
