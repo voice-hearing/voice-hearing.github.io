@@ -1366,6 +1366,9 @@
   .\!mb-4 {
     margin-bottom: calc(var(--spacing) * 4) !important;
   }
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -4241,6 +4244,18 @@
     &:where(.dark, .dark *) {
       --tw-gradient-to: var(--color-primary-900);
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .dark\:font-medium {
+    &:where(.dark, .dark *) {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .dark\:font-semibold {
+    &:where(.dark, .dark *) {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
     }
   }
   .dark\:text-blue-400 {

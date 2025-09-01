@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 31, 2025 --><html lang="en-gb" dir="ltr"
+<!-- Last Published: September 1, 2025 --><html lang="en-gb" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -2571,7 +2571,7 @@
 
 
 
-<section id="section-calendar-agenda" class="relative hbb-section blox-calendar-agenda  " style="padding: 3rem 0 3rem 0;" >
+<section id="section-calendar-image" class="relative hbb-section blox-calendar-image  " style="padding: 3rem 0 3rem 0;" >
  <div class="home-section-bg " >
    
  </div>
@@ -2590,300 +2590,195 @@
 
 
 
-
-<div class="mx-auto max-w-7xl mt-0 pb-4">
-    
+<div class="mx-auto max-w-7xl mt-0 px-2">
   
-  <div class="flex flex-col text-center">
-    
-    
-  <div class="md:px-6 lg:px-0">
   
-  <div class="w-16 border-2 border-primary-700 mb-4"></div>
+  <div class="flex flex-col text-left">
+    
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
       
   
-  <h2 class="mb-4 text-3xl font-bold dark:font-semibold text-gray-900 dark:text-white">COMMUNITY EVENTS</h2>
+  <h2 class="mb-4 text-3xl font-semibold text-gray-900 dark:text-white">COMMUNITY EVENTS</h2>
   </div>
     
     
   </div>
-    
   
-  <div class="relative">
+  
+  <div class="calendar-container shadow-2xl">
     
-    <div class="relative bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden">
-      
-      
-      <div id="calendar-trigger" 
-           class="calendar-container group relative cursor-pointer transition-all duration-300 ease-out hover:bg-gray-50 dark:hover:bg-gray-800 active:scale-[0.99] flex items-center justify-center">
-        
-        
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-850 opacity-50"></div>
-        
-        
-        <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 sm:px-8 lg:px-12 py-8">
-          
-          
-          <div class="relative mb-6 sm:mb-8">
-            
-            <div class="relative icon-container bg-white dark:bg-gray-700 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-0.5">
-              
-              
-              <svg class="icon-svg text-primary-600 dark:text-primary-400 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-          </div>
-          
-          
-          <div class="space-y-3 sm:space-y-4">
-            <h3 class="calendar-title font-bold text-gray-900 dark:text-white">
-              Load Calendar
-            </h3>
-            
-            <p class="calendar-subtitle text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-sm mx-auto">
-              Discover upcoming events and gatherings
-            </p>
-            
-            
-            <div class="pt-2 sm:pt-4">
-              <div class="inline-flex items-center space-x-2 px-2 py-2 bg-primary-100 dark:bg-primary-900/30 rounded-full border border-primary-200 dark:border-primary-700/50 transition-all duration-300">
-                <svg class="w-4 h-4 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
-                </svg>
-                <span class="text-sm font-semibold text-primary-700 dark:text-primary-900">Click to explore</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+    
+    <img 
+      src="/images/calendar-bg.jpg" 
+      alt="Calendar background"
+      class="calendar-bg"
+      loading="lazy"
+      onerror="console.error('Failed to load image: /images/calendar-bg.jpg')"
+      onload="console.log('Image loaded successfully: /images/calendar-bg.jpg')"
+    />
+    
+    
+    
+    <div class="overlay"></div>
+    
+    
+    <div id="calendar-loader" class="calendar-trigger">
+      <div class="calendar-icon">
+        <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0z"></path>
+        </svg>
       </div>
+      <h3 class="text-3xl font-bold text-white mb-4 drop-shadow-lg">
+        View Events
+      </h3>
+      <p class="text-xl text-gray-100 drop-shadow-md">
+        Click to load our community calendar
+      </p>
+    </div>
+    
+    
+    <div id="calendar-loading" class="loader" style="display: none;">
+      <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p class="text-xl font-semibold text-white">Loading calendar...</p>
     </div>
     
     
     <iframe 
       id="calendar-iframe"
-      class="calendar-iframe relative bg-white dark:bg-gray-900 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700"
-      style="display: none; width: 100%; border: none;"
-      frameborder="0" 
-      scrolling="yes"
-      title="Fellowship Gatherings">
-    </iframe>
+      src=""
+      class="calendar-frame"
+      style="display: none;"
+      loading="lazy"
+      title="Community Events Calendar"
+    ></iframe>
   </div>
 </div>
 
 <script>
-(function() {
-  'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+  var trigger = document.getElementById('calendar-loader');
+  var iframe = document.getElementById('calendar-iframe');
+  var loading = document.getElementById('calendar-loading');
   
-  function ready(fn) {
-    if (document.readyState !== 'loading') {
-      fn();
-    } else {
-      document.addEventListener('DOMContentLoaded', fn);
-    }
+  if (!trigger || !iframe || !loading) {
+    console.error('Calendar elements not found');
+    return;
   }
   
-  ready(function() {
-    var trigger = document.getElementById('calendar-trigger');
-    var iframe = document.getElementById('calendar-iframe');
+  trigger.addEventListener('click', function() {
+    trigger.style.display = 'none';
+    loading.style.display = 'flex';
     
-    if (!trigger || !iframe) return;
+    var calendarUrl = "https:\/\/calendar.google.com\/calendar\/embed?src=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ\u0026ctz=Europe%2FLondon\u0026hl=en_GB\u0026wkst=2\u0026mode=AGENDA";
+    iframe.src = calendarUrl;
     
-    function loadCalendar() {
-      
-      trigger.innerHTML = 
-        '<div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-850 opacity-50"></div>' +
-        '<div class="relative z-10 flex flex-col items-center justify-center text-center px-6 sm:px-8 py-8">' +
-          '<div class="relative mb-6">' +
-            '<div class="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg border border-gray-200 dark:border-gray-600 flex items-center justify-center">' +
-              '<div class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 border-2 border-gray-300 dark:border-gray-500 border-t-primary-600 dark:border-t-primary-400 rounded-full animate-spin"></div>' +
-            '</div>' +
-          '</div>' +
-          '<p class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">Loading your calendar...</p>' +
-        '</div>';
-      
-      iframe.src = "https://calendar.google.com/calendar/embed?src=YW5nZWxsZWNpdGVsQGdtYWlsLmNvbQ&ctz=Europe%2FLondon&hl=en_GB&wkst=2&mode=AGENDA";
-      
-      iframe.onload = function() {
-        trigger.style.display = 'none';
+    iframe.onload = function() {
+      loading.style.display = 'none';
+      iframe.style.display = 'block';
+    };
+    
+    
+    setTimeout(function() {
+      if (loading.style.display !== 'none') {
+        loading.style.display = 'none';
         iframe.style.display = 'block';
-      };
-    }
-    
-    if (trigger.addEventListener) {
-      trigger.addEventListener('click', loadCalendar, false);
-    } else if (trigger.attachEvent) {
-      trigger.attachEvent('onclick', loadCalendar);
-    }
+      }
+    }, 8000);
   });
-})();
+});
 </script>
 
 <style>
- 
 .calendar-container {
-  min-height: 350px;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 50vh;  
 }
 
 @media (min-width: 640px) {
   .calendar-container {
-    min-height: 400px;
+    height: 50vh;  
   }
 }
 
 @media (min-width: 1024px) {
   .calendar-container {
-    min-height: 450px;
+    height: 50vh;  
   }
 }
 
- 
-.icon-container {
-  width: 4rem;   
-  height: 4rem;  
+.calendar-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.icon-svg {
-  width: 2rem;   
-  height: 2rem;  
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 640px) {
-  .icon-container {
-    width: 5rem;     
-    height: 5rem;    
-  }
-  
-  .icon-svg {
-    width: 2.5rem;     
-    height: 2.5rem;    
-  }
+.calendar-trigger {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-white;
+  transition: all 0.3s ease;
+  padding: 2rem;
 }
 
-@media (min-width: 1024px) {
-  .icon-container {
-    width: 6rem;     
-    height: 6rem;    
-  }
-  
-  .icon-svg {
-    width: 3rem;     
-    height: 3rem;    
-  }
+.calendar-trigger:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 1280px) {
-  .icon-container {
-    width: 7rem;     
-    height: 7rem;    
-  }
-  
-  .icon-svg {
-    width: 3.5rem;   
-    height: 3.5rem;  
-  }
+.calendar-icon {
+  width: 5rem;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
- 
-.calendar-title {
-  font-size: 1.125rem;   
-  line-height: 1.2;
+.calendar-trigger:hover .calendar-icon {
+  transform: scale(1.05);
 }
 
-.calendar-subtitle {
-  font-size: 0.875rem;  
-  line-height: 1.4;
+.calendar-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: white;
 }
 
-@media (min-width: 640px) {
-  .calendar-title {
-    font-size: 1.25rem;    
-    line-height: 1.2;
-  }
-  
-  .calendar-subtitle {
-    font-size: 0.875rem;      
-    line-height: 1.4;
-  }
-}
-
-@media (min-width: 1024px) {
-  .calendar-title {
-    font-size: 1.5rem;      
-    line-height: 1.2;
-  }
-  
-  .calendar-subtitle {
-    font-size: 1rem;  
-    line-height: 1.4;
-  }
-}
-
-@media (min-width: 1280px) {
-  .calendar-title {
-    font-size: 1.75rem;   
-    line-height: 1.1;
-  }
-  
-  .calendar-subtitle {
-    font-size: 1.125rem;   
-    line-height: 1.4;
-  }
-}
-
- 
-.calendar-iframe {
-  height: 500px;
-}
-
-@media (min-width: 640px) {
-  .calendar-iframe {
-    height: 600px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .calendar-iframe {
-    height: 700px;
-  }
-}
-
- 
-@media (hover: hover) {
-  .calendar-container:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-  }
-}
-
- 
-@media (hover: none) and (pointer: coarse) {
-  .calendar-container:hover {
-    transform: none;
-    background-color: transparent;
-  }
-  
-  .calendar-container:active {
-    transform: scale(0.99);
-    transition: transform 0.1s ease-out;
-  }
-}
-
- 
-.calendar-container:focus {
-  outline: 2px solid rgb(59 130 246);
-  outline-offset: 2px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-spin {
-    animation: none;
-  }
-  
-  .calendar-container,
-  .calendar-container * {
-    transition: none !important;
-  }
+.loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 20;
 }
 </style>
 

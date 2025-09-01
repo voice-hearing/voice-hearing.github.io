@@ -177,7 +177,7 @@ sections:
           filename: ""
           filters:
             brightness:
-  - block: calendar-agenda
+  - block: calendar-image
     content:
       title: "COMMUNITY EVENTS"
       text: 
