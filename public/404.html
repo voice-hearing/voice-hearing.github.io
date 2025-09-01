@@ -614,7 +614,7 @@
     <div class="flex items-center justify-between py-2 text-sm">
       
       
-      <div class="flex items-center space-x-4 pr-8">
+      <div class="flex items-center space-x-4">
         <a href="tel:&#43;1234567890" class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
           <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
@@ -640,12 +640,14 @@
 
       
       <div class="flex items-center space-x-4">
-        <div class="flex items-center space-x-1">
+        <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Hugo%20Academic%20CV%20Theme//EN%0ABEGIN:VEVENT%0ADTSTART:20250902T090000%0ADTEND:20250902T180000%0ASUMMARY:Business%20Hours%0ADESCRIPTION:Mon-Fri%209AM-6PM%0ALOCATION:123%20Main%20Street,%20Your%20City,%20State%2012345%0AEND:VEVENT%0AEND:VCALENDAR" 
+           class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+           title="Add to calendar">
           <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
           </svg>
           <span class="hidden sm:inline">Mon-Fri 9AM-6PM</span>
-        </div>
+        </a>
         
         <a href="geo:0,0?q=123&#43;Main&#43;Street%2C&#43;Your&#43;City%2C&#43;State&#43;12345" 
            class="flex items-center space-x-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
@@ -658,6 +660,7 @@
     </div>
   </div>
 </div>
+
 
 
 <header id="site-header" class="header">
