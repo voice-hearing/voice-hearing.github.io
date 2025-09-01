@@ -233,7 +233,7 @@
       {{ if site.Params.header.navbar.button.enable }}
       <li class="mt-4 inline-block lg:hidden">
       <a
-        class="rounded-full text-xl p-4 bg-primary-700 dark:bg-primary-800 text-white"
+        class="rounded-full text-xl p-4 bg-primary-700 text-white"
         href="{{ site.Params.header.navbar.button.url | relLangURL }}">
         {{ site.Params.header.navbar.button.text }}
       </a>
@@ -294,8 +294,7 @@
       {{ if site.Params.header.navbar.button.enable }}
       <a
         href="{{ site.Params.header.navbar.button.url | relLangURL }}"
-        class="inline-block rounded-full bg-primary-700 px-4 py-1.5 text-xl text-white font-semibold transition md:ml-4 hover:text-grey-300 
-        dark:text-white dark:hover:bg-primary-500 dark:bg-primary-700 dark:hover:text-gray-700 hidden lg:inline-block">
+        class="inline-block rounded-full bg-primary-700 px-4 py-1.5 text-xl text-white font-semibold transition md:ml-4 hover:text-grey-300 hidden lg:inline-block">
         {{ site.Params.header.navbar.button.text }}
       </a>
       {{ end }}

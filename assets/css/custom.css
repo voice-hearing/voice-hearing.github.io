@@ -1,141 +1,203 @@
-/* Navigation child elements - Dark theme primary background override */
-html.dark header#site-header .navbar-nav .nav-item,
-.dark header#site-header .navbar-nav .nav-item,
-[data-theme="dark"] header#site-header .navbar-nav .nav-item {
-  background-color: #000000 !important; /* Black background instead of primary */
-}
-
-/* Navigation dropdown/child items with primary background - Dark theme */
-html.dark header#site-header .navbar-nav .nav-item > a,
-.dark header#site-header .navbar-nav .nav-item > a,
-[data-theme="dark"] header#site-header .navbar-nav .nav-item > a {
-  background-color: #000000 !important; /* Black background */
-}
-
-/* Navigation child items when they have primary background class */
-html.dark header#site-header .navbar-nav .bg-primary,
-.dark header#site-header .navbar-nav .bg-primary,
-[data-theme="dark"] header#site-header .navbar-nav .bg-primary {
-  background-color: #000000 !important; /* Override primary with black */
-}
-
-/* Navigation dropdown menus in dark theme */
-html.dark header#site-header .dropdown-menu,
-.dark header#site-header .dropdown-menu,
-[data-theme="dark"] header#site-header .dropdown-menu {
-  background-color: #000000 !important; /* Black dropdown background */
-}
-
-/* Navigation active/hover states with primary background in dark theme */
-html.dark header#site-header .navbar-nav .nav-item.active,
-html.dark header#site-header .navbar-nav .nav-item:hover,
-.dark header#site-header .navbar-nav .nav-item.active,
-.dark header#site-header .navbar-nav .nav-item:hover,
-[data-theme="dark"] header#site-header .navbar-nav .nav-item.active,
-[data-theme="dark"] header#site-header .navbar-nav .nav-item:hover {
-  background-color: #000000 !important; /* Black for active/hover states */
-}
-
-/* Any child element with primary background within navigation */
-html.dark header#site-header [class*="bg-primary"],
-.dark header#site-header [class*="bg-primary"],
-[data-theme="dark"] header#site-header [class*="bg-primary"] {
-  background-color: #000000 !important; /* Override all primary backgrounds in nav */
-}
-/* Mobile Navigation Dropdown - Dark theme */
-@media (max-width: 1023px) {
-  /* Navigation dropdown list in mobile dark theme */
-  html.dark header#site-header .nav-dropdown-list,
-  .dark header#site-header .nav-dropdown-list,
-  [data-theme="dark"] header#site-header .nav-dropdown-list {
-    background-color: #000000 !important; /* Black background for mobile dropdown */
-    border-color: #333333 !important; /* Dark border */
-  }
-
-  /* Navigation dropdown items in mobile dark theme */
-  html.dark header#site-header .nav-dropdown-item,
-  .dark header#site-header .nav-dropdown-item,
-  [data-theme="dark"] header#site-header .nav-dropdown-item {
-    background-color: #000000 !important; /* Black background */
-  }
-
-  /* Navigation dropdown links in mobile dark theme */
-  html.dark header#site-header .nav-dropdown-link,
-  .dark header#site-header .nav-dropdown-link,
-  [data-theme="dark"] header#site-header .nav-dropdown-link {
-    background-color: #000000 !important; /* Black background */
-    color: #ffffff !important; /* White text */
-  }
-
-  /* Navigation dropdown links hover/active states */
-  html.dark header#site-header .nav-dropdown-link:hover,
-  html.dark header#site-header .nav-dropdown-link.active,
-  .dark header#site-header .nav-dropdown-link:hover,
-  .dark header#site-header .nav-dropdown-link.active,
-  [data-theme="dark"] header#site-header .nav-dropdown-link:hover,
-  [data-theme="dark"] header#site-header .nav-dropdown-link.active {
-    background-color: #333333 !important; /* Darker hover state */
-    color: #ffffff !important; /* Keep white text */
-  }
-
-  /* Main navigation links in mobile dark theme */
-  html.dark header#site-header .nav-link,
-  .dark header#site-header .nav-link,
-  [data-theme="dark"] header#site-header .nav-link {
-    color: #ffffff !important; /* White text for main nav links */
-  }
-
-  /* Main navigation links hover/active states */
-  html.dark header#site-header .nav-link:hover,
-  html.dark header#site-header .nav-link.active,
-  .dark header#site-header .nav-link:hover,
-  .dark header#site-header .nav-link.active,
-  [data-theme="dark"] header#site-header .nav-link:hover,
-  [data-theme="dark"] header#site-header .nav-link.active {
-    color: #cccccc !important; /* Slightly dimmed white for hover */
-  }
-}
-
-/* Additional fix for any remaining primary colored elements in mobile nav */
-@media (max-width: 1023px) {
-  html.dark header#site-header .navbar-nav [class*="primary"],
-  .dark header#site-header .navbar-nav [class*="primary"],
-  [data-theme="dark"] header#site-header .navbar-nav [class*="primary"] {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-  }
-}
-
-
 /* ========================================
-   DESKTOP MENU - CENTERED
+   LIGHT THEME OVERRIDE - WHITE NAVBAR WITH DARK TEXT
    ======================================== */
 
-/* Desktop menu stays centered */
+/* LIGHT THEME - Main navbar background and border */
+html[data-theme="light"] #site-header.header,
+html[data-theme="light"] .navbar,
+body[data-theme="light"] #site-header.header,
+body[data-theme="light"] .navbar,
+.light #site-header.header,
+.light .navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* LIGHT THEME - Brand/Logo text color */
+html[data-theme="light"] .navbar-brand,
+body[data-theme="light"] .navbar-brand,
+.light .navbar-brand {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] .navbar-brand:hover,
+body[data-theme="light"] .navbar-brand:hover,
+.light .navbar-brand:hover {
+  color: #374151 !important; /* darker gray on hover */
+}
+
+/* LIGHT THEME - Navigation links */
+html[data-theme="light"] .nav-link,
+html[data-theme="light"] .navbar-nav .nav-link,
+body[data-theme="light"] .nav-link,
+body[data-theme="light"] .navbar-nav .nav-link,
+.light .nav-link,
+.light .navbar-nav .nav-link {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] .nav-link:hover,
+html[data-theme="light"] .navbar-nav .nav-link:hover,
+body[data-theme="light"] .nav-link:hover,
+body[data-theme="light"] .navbar-nav .nav-link:hover,
+.light .nav-link:hover,
+.light .navbar-nav .nav-link:hover {
+  color: #000000 !important; /* black on hover */
+  background-color: #f3f4f6 !important; /* light gray background */
+}
+
+html[data-theme="light"] .nav-link.active,
+html[data-theme="light"] .navbar-nav .nav-link.active,
+body[data-theme="light"] .nav-link.active,
+body[data-theme="light"] .navbar-nav .nav-link.active,
+.light .nav-link.active,
+.light .navbar-nav .nav-link.active {
+  color: #000000 !important; /* black when active */
+  background-color: #e5e7eb !important; /* darker gray background */
+}
+
+/* LIGHT THEME - Dropdown/submenu backgrounds */
+html[data-theme="light"] .nav-dropdown-list,
+html[data-theme="light"] .navbar-nav .nav-dropdown-list,
+body[data-theme="light"] .nav-dropdown-list,
+body[data-theme="light"] .navbar-nav .nav-dropdown-list,
+.light .nav-dropdown-list,
+.light .navbar-nav .nav-dropdown-list {
+  background-color: #ffffff !important; /* white background */
+  border: 1px solid #e5e7eb !important; /* light gray border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* LIGHT THEME - Dropdown/submenu links */
+html[data-theme="light"] .nav-dropdown-link,
+html[data-theme="light"] .navbar-nav .nav-dropdown-link,
+body[data-theme="light"] .nav-dropdown-link,
+body[data-theme="light"] .navbar-nav .nav-dropdown-link,
+.light .nav-dropdown-link,
+.light .navbar-nav .nav-dropdown-link {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] .nav-dropdown-link:hover,
+html[data-theme="light"] .navbar-nav .nav-dropdown-link:hover,
+body[data-theme="light"] .nav-dropdown-link:hover,
+body[data-theme="light"] .navbar-nav .nav-dropdown-link:hover,
+.light .nav-dropdown-link:hover,
+.light .navbar-nav .nav-dropdown-link:hover {
+  color: #000000 !important; /* black on hover */
+  background-color: #f3f4f6 !important; /* light gray background */
+}
+
+html[data-theme="light"] .nav-dropdown-link.active,
+html[data-theme="light"] .navbar-nav .nav-dropdown-link.active,
+body[data-theme="light"] .nav-dropdown-link.active,
+body[data-theme="light"] .navbar-nav .nav-dropdown-link.active,
+.light .nav-dropdown-link.active,
+.light .navbar-nav .nav-dropdown-link.active {
+  color: #000000 !important; /* black when active */
+  background-color: #e5e7eb !important; /* darker gray background */
+}
+
+/* LIGHT THEME - Mobile menu toggle */
+html[data-theme="light"] label[for="nav-toggle"],
+body[data-theme="light"] label[for="nav-toggle"],
+.light label[for="nav-toggle"] {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] label[for="nav-toggle"] svg,
+body[data-theme="light"] label[for="nav-toggle"] svg,
+.light label[for="nav-toggle"] svg {
+  fill: #1f2937 !important; /* dark gray */
+}
+
+/* LIGHT THEME - Mobile menu when expanded */
+html[data-theme="light"] #nav-toggle:checked ~ #nav-menu,
+body[data-theme="light"] #nav-toggle:checked ~ #nav-menu,
+.light #nav-toggle:checked ~ #nav-menu {
+  background-color: #ffffff !important; /* white background */
+  border-top: 1px solid #e5e7eb !important; /* light gray border */
+}
+
+/* LIGHT THEME - Search and theme toggle buttons */
+html[data-theme="light"] button[data-search-toggle],
+body[data-theme="light"] button[data-search-toggle],
+.light button[data-search-toggle] {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] .theme-toggle,
+body[data-theme="light"] .theme-toggle,
+.light .theme-toggle {
+  color: #1f2937 !important; /* dark gray */
+}
+
+html[data-theme="light"] .theme-toggle svg,
+body[data-theme="light"] .theme-toggle svg,
+.light .theme-toggle svg {
+  stroke: #1f2937 !important; /* dark gray */
+}
+
+/* LIGHT THEME - Language chooser */
+html[data-theme="light"] .text-gray-600,
+body[data-theme="light"] .text-gray-600,
+.light .text-gray-600 {
+  color: #1f2937 !important; /* dark gray */
+}
+
+/* LIGHT THEME - Mobile menu items */
+@media (max-width: 1023px) {
+  html[data-theme="light"] #nav-menu,
+  body[data-theme="light"] #nav-menu,
+  .light #nav-menu {
+    background-color: #ffffff !important;
+  }
+  
+  html[data-theme="light"] #nav-menu .nav-link,
+  body[data-theme="light"] #nav-menu .nav-link,
+  .light #nav-menu .nav-link {
+    color: #1f2937 !important; /* dark gray */
+    border-bottom: 1px solid rgba(31, 41, 55, 0.1) !important;
+  }
+  
+  html[data-theme="light"] #nav-menu .nav-link:hover,
+  body[data-theme="light"] #nav-menu .nav-link:hover,
+  .light #nav-menu .nav-link:hover {
+    background-color: #f3f4f6 !important; /* light gray background */
+  }
+}
+
+/* ========================================
+   NAVBAR ALIGNMENT AND MENU FIXES
+   ======================================== */
+
+/* Desktop: Center menu */
 @media (min-width: 1024px) {
-  header#site-header .navbar-nav {
-    margin-left: auto !important;
-    margin-right: auto !important; /* Keep centered */
+  header#site-header .navbar {
+    display: flex !important;
     justify-content: center !important;
   }
   
-  header#site-header #nav-menu {
+  header#site-header .navbar-nav {
+    display: flex !important;
     justify-content: center !important;
+    width: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 }
 
-/* ========================================
-   MOBILE MENU - RIGHT ALIGNED
-   ======================================== */
-
-/* Move mobile menu items to the right */
+/* Mobile: Menu items on right side */
 @media (max-width: 1023px) {
+  header#site-header .navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  
   header#site-header .navbar-nav {
-    text-align: right !important;
-    align-items: flex-end !important;
     width: 100% !important;
+    display: block !important;
+    text-align: right !important;
   }
   
   header#site-header .navbar-nav .nav-item {
@@ -144,77 +206,22 @@ html.dark header#site-header [class*="bg-primary"],
     margin-left: auto !important;
     width: fit-content !important;
   }
-  
-  /* Right align opened mobile menu */
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
-    justify-content: flex-end !important;
-    align-items: flex-end !important;
-    text-align: right !important;
-  }
-  
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu .nav-item {
-    margin-left: auto !important;
-    width: fit-content !important;
-  }
 }
 
 /* ========================================
-   REMOVE ALL BUTTONS FROM MOBILE TOP BAR
+   BUTTON POSITIONING - MOBILE ONLY
    ======================================== */
 
-/* Hide button from mobile main menu bar (next to burger) */
+/* Hide button from main navbar on mobile */
 @media (max-width: 1023px) {
-  /* Hide the absolute positioned theme toggle button on mobile if needed */
-  .absolute.right-0.top-0 {
-    display: none !important;
-  }
-  
-  /* Hide CTA button in main navbar */
-  header#site-header .navbar .order-1 a[class*="inline-block"],
-  header#site-header .navbar .order-1 a[class*="rounded"],
-  header#site-header .navbar div[class*="ml-auto"] a,
-  header#site-header .navbar .md\\:ml-4,
-  header#site-header .navbar a.hidden.lg\\:inline-block {
-    display: none !important;
-  }
-  
-  /* Ensure CTA button in order-1 div is completely hidden on mobile */
-  header#site-header .navbar .order-1 a {
-    display: none !important;
-  }
-  
-  /* Hide any button in the mobile top nav area */
-  header#site-header .navbar div[class*="order-1"] a,
+  /* Hide CTA button from top navbar */
+  header#site-header .navbar .order-1 a,
   header#site-header .navbar div[class*="ml-auto"] a,
   header#site-header .navbar .flex.items-center a {
     display: none !important;
   }
-}
-
-/* ========================================
-   SHOW BUTTON ONLY IN OPENED MOBILE MENU
-   ======================================== */
-
-/* Initially hide all mobile menu buttons */
-@media (max-width: 1023px) {
-  header#site-header #nav-menu li.mt-4 {
-    display: none !important;
-  }
   
-  header#site-header .navbar-nav li[class*="mt-4"] {
-    display: none !important;
-  }
-  
-  header#site-header .navbar-nav li[class*="inline-block"][class*="lg:hidden"] {
-    display: none !important;
-  }
-  
-  /* Specifically target the inline-block lg:hidden button to only show in opened menu */
-  header#site-header .navbar-nav li.mt-4.inline-block.lg\\:hidden {
-    display: none !important;
-  }
-  
-  /* Show button only when menu is opened */
+  /* Show button only inside opened mobile menu */
   header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 {
     display: inline-block !important;
     margin-left: auto !important;
@@ -226,42 +233,86 @@ html.dark header#site-header [class*="bg-primary"],
     display: inline-block !important;
     margin-left: auto !important;
   }
-  
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li[class*="mt-4"] {
-    display: inline-block !important;
-    margin-left: auto !important;
-    text-align: right !important;
-  }
-  
-  /* Only show the mobile menu button when nav is toggled open */
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4.inline-block.lg\\:hidden {
-    display: inline-block !important;
-  }
 }
 
 /* ========================================
-   BURGER MENU POSITIONING
+   DARK THEME DROPDOWN HOVER FIX
    ======================================== */
 
-/* Position burger menu properly (no button next to it on mobile) */
+/* Fix primary color conflict in dark theme dropdown hover */
+.nav-dropdown-list .nav-dropdown-link:hover,
+.nav-dropdown-link:hover,
+[data-theme="dark"] .nav-dropdown-link:hover,
+.dark .nav-dropdown-link:hover {
+  background-color: #1f2937 !important; /* gray-600 background */
+  color: #ffffff !important; /* white text */
+}
+
+/* Alternative fix - ensure proper contrast */
+.dark .nav-dropdown-list .nav-dropdown-link:hover {
+  background-color: #ef3b32 !important; /* gray-700 background */
+  color: #ffffff !important; /* white text */
+}
+
+.nav-dropdown-list .nav-dropdown-link:hover,
+.nav-dropdown-link:hover,
+[data-theme="dark"] .nav-dropdown-link:hover,
+.nav-dropdown-link:hover {
+  background-color: #ffffff !important; /* gray-600 background */
+  color: #b91815 !important; /* white text */
+}
+
+/* Alternative fix - ensure proper contrast */
+.nav-dropdown-list .nav-dropdown-link:hover {
+  background-color: #ffffff !important; /* gray-700 background */
+  color: #b91815 !important; /* white text */
+}
+
+/* ========================================
+   MOBILE MENU TOGGLE FIX
+   ======================================== */
+
+/* Ensure checkbox toggle works properly */
 @media (max-width: 1023px) {
-  header#site-header .navbar label[for="nav-toggle"] {
-    margin-right: 0 !important;
-    margin-left: auto !important; /* Push to far right */
+  /* Initially hide mobile menu */
+  header#site-header #nav-menu {
+    display: none !important;
   }
-}
-
-/* ========================================
-   RESPONSIVE ADJUSTMENTS
-   ======================================== */
-
-/* Extra small devices */
-@media (max-width: 575px) {
-  header#site-header .navbar .order-1 a,
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li[class*="mt-4"] a {
-    padding: 0.5rem 1.25rem !important;
-    font-size: 0.875rem !important;
+  
+  /* Show menu when checkbox is checked */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
+    display: block !important;
+  }
+  
+  /* Ensure checkbox is properly hidden but functional */
+  header#site-header input#nav-toggle {
+    position: absolute !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  
+  /* Make sure toggle button is clickable */
+  header#site-header label[for="nav-toggle"] {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 999 !important;
+  }
+  
+  /* Toggle button visual feedback */
+  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #hide-button {
+    display: block !important;
+  }
+  
+  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #show-button {
+    display: none !important;
+  }
+  
+  header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #hide-button {
+    display: none !important;
+  }
+  
+  header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #show-button {
+    display: block !important;
   }
 }
 

@@ -4262,11 +4262,6 @@
       background-color: var(--color-primary-600);
     }
   }
-  .dark\:bg-primary-700 {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-primary-700);
-    }
-  }
   .dark\:bg-primary-900 {
     &:where(.dark, .dark *) {
       background-color: var(--color-primary-900);
@@ -4502,13 +4497,6 @@
       }
     }
   }
-  .dark\:hover\:bg-primary-500 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        background-color: var(--color-primary-500);
-      }
-    }
-  }
   .dark\:hover\:bg-primary-700 {
     &:where(.dark, .dark *) {
       &:hover {
@@ -4569,13 +4557,6 @@
     &:where(.dark, .dark *) {
       &:hover {
         color: var(--color-gray-300);
-      }
-    }
-  }
-  .dark\:hover\:text-gray-700 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        color: var(--color-gray-700);
       }
     }
   }
