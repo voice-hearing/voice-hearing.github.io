@@ -1,3 +1,48 @@
+/* Navigation child elements - Dark theme primary background override */
+html.dark header#site-header .navbar-nav .nav-item,
+.dark header#site-header .navbar-nav .nav-item,
+[data-theme="dark"] header#site-header .navbar-nav .nav-item {
+  background-color: #000000 !important; /* Black background instead of primary */
+}
+
+/* Navigation dropdown/child items with primary background - Dark theme */
+html.dark header#site-header .navbar-nav .nav-item > a,
+.dark header#site-header .navbar-nav .nav-item > a,
+[data-theme="dark"] header#site-header .navbar-nav .nav-item > a {
+  background-color: #000000 !important; /* Black background */
+}
+
+/* Navigation child items when they have primary background class */
+html.dark header#site-header .navbar-nav .bg-primary,
+.dark header#site-header .navbar-nav .bg-primary,
+[data-theme="dark"] header#site-header .navbar-nav .bg-primary {
+  background-color: #000000 !important; /* Override primary with black */
+}
+
+/* Navigation dropdown menus in dark theme */
+html.dark header#site-header .dropdown-menu,
+.dark header#site-header .dropdown-menu,
+[data-theme="dark"] header#site-header .dropdown-menu {
+  background-color: #000000 !important; /* Black dropdown background */
+}
+
+/* Navigation active/hover states with primary background in dark theme */
+html.dark header#site-header .navbar-nav .nav-item.active,
+html.dark header#site-header .navbar-nav .nav-item:hover,
+.dark header#site-header .navbar-nav .nav-item.active,
+.dark header#site-header .navbar-nav .nav-item:hover,
+[data-theme="dark"] header#site-header .navbar-nav .nav-item.active,
+[data-theme="dark"] header#site-header .navbar-nav .nav-item:hover {
+  background-color: #000000 !important; /* Black for active/hover states */
+}
+
+/* Any child element with primary background within navigation */
+html.dark header#site-header [class*="bg-primary"],
+.dark header#site-header [class*="bg-primary"],
+[data-theme="dark"] header#site-header [class*="bg-primary"] {
+  background-color: #000000 !important; /* Override all primary backgrounds in nav */
+}
+
 /* ========================================
    DESKTOP MENU - CENTERED
    ======================================== */
