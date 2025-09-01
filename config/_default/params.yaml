@@ -29,11 +29,15 @@ marketing:
 # Announcement shown above the header
 announcement:
   enable: true
-  text: "🚀 New pre-print available – read it now!"
+  text: "☕ A Cuppa And a Chat"
   url: "/publication/pre-print/"
   phone: "+1234567890"
   email: "contact@example.com"
-  hours: "mon-fri 9am-6pm"
+  hours: "mon 9am-6pm"
+  hours: "tue 9am-6pm"    # 9-hour meeting
+  hours: "wed 8am-5pm"  # 9-hour meeting  
+  hours: "thur 9am-12pm" # 3-hour meeting
+  hours: "fri 10am-2pm" # 4-hour meeting
   address: "123 Main Street, Your City, State 12345"
   latitude: "40.7128"
   longitude: "-74.0060"
