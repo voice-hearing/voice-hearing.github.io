@@ -399,7 +399,7 @@
       });
       </script>
       
-      
+      {{ partial "blox/ai-chat.html" . }}
           <!-- {{/* Generate BibTeX citation */}}
           {{ $year := dateFormat "2006" .Date }}
           {{ $names := slice }}
@@ -419,7 +419,6 @@
         </pre> -->
         
         {{ .Scratch.Set "invert_pager" true }}
-        {{ partial "blox/ai-chat.html" . }}
         {{ partial "page_footer" . }}
       </div>
     </main>
