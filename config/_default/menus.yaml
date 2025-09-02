@@ -156,7 +156,7 @@ footer:
     name: ABOUT
     weight: 1
   - parent: about
-    name: History
+    name: Opportunities
     url: /about/
     weight: 1
   - parent: about
@@ -164,7 +164,7 @@ footer:
     url: /people
     weight: 2
   - parent: about
-    name: Ministry
+    name: News
     url: /about
     weight: 3
   - parent: about
@@ -172,64 +172,41 @@ footer:
     url: /about
     weight: 4
   - identifier: courses
-    name: What We Do
+    name: Contact
     weight: 2
   - parent: courses
-    name: House
-    url: /what-we-do
+    name: Contact
+    url: /contact
     weight: 1
   - parent: courses
-    name: Kids Club
-    url: /what-we-do
+    name: 20 XXXXxxxll Rd S, Sheffield, SX0 9XX
+    url: /contact
     weight: 2
   - parent: courses
-    name: Hope Garden
+    name: Mon-Fri 10 to 5
     url: /what-we-do
     weight: 3
   - parent: courses
-    name: Women's Yoga
+    name: 📞 54391372612
     url: /what-we-do
     weight: 4
   - identifier: practice
-    name: How I Can Help
+    name: Experience
     weight: 3
   - parent: practice
-    name: Praying
+    name: Hands-on Impact
     url: /how-you-can-help/
     weight: 1
   - parent: practice
-    name: Volunteering
+    name: Developing Skills
     url: /how-you-can-help/
     weight: 2
   - parent: practice
-    name: Providing Service
+    name: Connecting with Others
     url: /how-you-can-help/
     weight: 3
   - parent: practice
-    name: Donating
+    name: Finding Purpose
     url: /how-you-can-help/
     weight: 4
-  - identifier: site
-    name: SITE
-    weight: 4
-  - parent: site
-    name: RSS
-    url: /index.xml
-    weight: 1
-  - parent: site
-    name: Contact
-    url: /contact
-    weight: 2
-  - parent: site
-    name: Subscriber
-    url: /subscribe
-    weight: 3
-  - parent: site
-    name: Links
-    url: /links
-    weight: 4
-  - parent: site
-    name: Free Resource
-    url: /Free
-    weight: 5
- 
+  

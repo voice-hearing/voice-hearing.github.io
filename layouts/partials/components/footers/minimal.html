@@ -29,6 +29,35 @@
             </ul>
           </div>
           {{ end }}
+          
+          <!-- Social Icons + Additional Text Column -->
+          {{ if or site.Params.social site.Params.footer.social_text }}
+          <div>
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase text-center">Follow Us</h3>
+            
+            <!-- Social Icons -->
+            {{ if site.Params.social }}
+            <div class="mt-4 flex flex-wrap justify-center space-x-4">
+              {{ range site.Params.social }}
+              <a href="{{ .link }}" target="_blank" rel="noopener" 
+                 class="text-white hover:text-gray-300 transition-colors duration-200"
+                 aria-label="{{ .name }}">
+                {{ partial "functions/get_icon" (dict "name" .icon "attributes" `class="w-8 h-8"`) }}
+              </a>
+              {{ end }}
+            </div>
+            {{ end }}
+            
+            <!-- Additional Text Below Icons -->
+            {{ with site.Params.footer.social_text }}
+            <p class="mt-4 text-center text-white text-lg">
+              {{ . | markdownify | emojify }}
+            </p>
+            {{ end }}
+            
+          </div>
+          {{ end }}
+          
         </div>
       </div>
     </div>

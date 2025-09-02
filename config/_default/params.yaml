@@ -83,6 +83,26 @@ footer:
       share_alike: true
       allow_commercial: false
   show_translations: true
+  social_text: "Connect with us on social media! Follow us for updates, news, and exclusive content."
+
+# Social media links
+social:
+  - icon: 'brands/twitter'
+    icon_pack: 'fab'
+    name: 'Twitter'
+    link: 'https://twitter.com/yourusername'
+  - icon: 'brands/facebook'
+    icon_pack: 'fab' 
+    name: 'Facebook'
+    link: 'https://facebook.com/yourpage'
+  - icon: 'brands/linkedin'
+    icon_pack: 'fab'
+    name: 'LinkedIn'
+    link: 'https://linkedin.com/in/yourprofile'
+  - icon: 'brands/instagram'
+    icon_pack: 'fab'
+    name: 'Instagram'
+    link: 'https://instagram.com/yourusername'
 
 # Localization
 locale:
