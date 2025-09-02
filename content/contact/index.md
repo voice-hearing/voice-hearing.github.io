@@ -76,7 +76,8 @@ Feel the connection growing hear the invitation whispering gently—and see how 
 {{< contact-form 
     access_key="33cdef84-3ac2-4fe8-b394-3853e990cdac"
     redirect="/about/thank-you"
-    terms_text="I agree to the privacy policy and terms of service"
+    privacy_policy="/privacy"
+    terms="/terms"
     button_text="Send Message"
     contact_info_title="Contact Information"
     email="contact@yoursite.com"
@@ -84,6 +85,7 @@ Feel the connection growing hear the invitation whispering gently—and see how 
     address="123 Main Street<br>City, State 12345<br>Country"
     office_hours="Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM"
 >}}
+
 <div class="post-content prose prose-slate lg:prose-xl dark:prose-invert mt-8">
 
 Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in west london.

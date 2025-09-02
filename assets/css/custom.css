@@ -427,6 +427,10 @@ h2 {
   font-weight: bold !important;
 }
 
+h3 {
+  font-weight: bold !important;
+}
+
 
 /* Generic date elements */
 time, .date, .pub-date, .post-date, .event-date, .document-date, .year {

@@ -37,12 +37,12 @@ sections:
         color: ""
         image:
           # Add your image background to `assets/media/`.
-          filename: "hero.webp"
+          filename: "hero.jpg"
           filters:
             brightness: "100%"
   - block: image-overlay
     content:
-      title: HELP US, PARTICIPATE
+      title: HELP US & EXPERIENCE
       blue: 
       text: 
       slides:

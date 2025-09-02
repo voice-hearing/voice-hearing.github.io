@@ -32,6 +32,8 @@ Feel the connection growing hear the invitation whispering gently—and see how 
 {{< subscribe 
     access_key="33cdef84-3ac2-4fe8-b394-3853e990cdac"
     redirect="/about/thank-you"
+    privacy_policy="/privacy"
+    terms="/terms"
     terms_text="I agree to the privacy policy and terms of service"
     button_text="Send Message"
 >}}
