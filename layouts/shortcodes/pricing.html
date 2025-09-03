@@ -1,0 +1,102 @@
+{{/* Tailwind Pricing Shortcode - Features Left, Smaller Name Font */}}
+{{/* Usage: {{< pricing data="pricing" title="Choose Your Plan" text="Select the perfect plan for your needs" blue="Pricing" button_text="Contact Sales" button_url="/contact/" >}} */}}
+
+{{- $data_file := .Get "data" -}}
+{{- $title := .Get "title" -}}
+{{- $text := .Get "text" -}}
+{{- $blue := .Get "blue" -}}
+{{- $button_text := .Get "button_text" -}}
+{{- $button_url := .Get "button_url" -}}
+{{- $button_target := .Get "button_target" -}}
+
+{{/* Get pricing data */}}
+{{- $plans := slice -}}
+{{- if $data_file -}}
+  {{- $plans = index site.Data $data_file -}}
+{{- end -}}
+
+{{- if $plans -}}
+<section>
+  <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+
+    <!-- Pricing Cards Grid -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 md:gap-8">
+    {{- range $plans -}}
+      <div class="flex flex-col rounded-2xl shadow-lg border
+                  {{ if .featured }}border-2 border-primary-600 dark:border-primary-400 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900{{ end }}">
+        <!-- Plan Header - Centered Content -->
+        <div class="p-4 sm:px-6 flex flex-col items-center text-center">
+
+          <h2 class="text-base font-semibold text-gray-900 dark:text-white">{{ .name | markdownify | emojify }}</h2>
+            <!-- Description - Left Aligned -->
+        {{- with .description -}}
+        <div class="px-4 sm:px-6">
+          <p class="text-base text-gray-700 dark:text-gray-300 text-center">{{ . | markdownify | emojify }}</p>
+        </div>
+        {{- end -}}
+          <p class="flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white">
+            <span>{{ .price }}</span>{{- with .period -}}<span class="text-xl font-normal text-gray-900 dark:text-white">{{ . }}</span>{{- end -}}
+          </p>
+        </div>
+
+        <!-- Features Section - Left Aligned -->
+        {{- with .features -}}
+        <div class="px-4 sm:px-6 pb-3 flex-1">
+          <p class="text-base font-medium text-gray-900 dark:text-white mb-2 text-left">What's included:</p>
+
+          <ul class="space-y-1 text-sm">
+            {{- range . -}}
+            <li class="flex items-center gap-2">
+              {{- if .included -}}
+              <!-- Green Check SVG -->
+              <svg class="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              {{- else -}}
+              <!-- Red X SVG -->
+              <svg class="w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              {{- end -}}
+
+              <span class="text-gray-700 dark:text-gray-300">{{ .text | markdownify | emojify }}</span>
+            </li>
+            {{- end -}}
+          </ul>
+        </div>
+        {{- end -}}
+
+        <!-- Button at Bottom -->
+        {{- with .button -}}
+        <div class="p-4 sm:px-6 mt-auto">
+          <a
+            class="block w-full rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300"
+            href="{{ .url }}"
+            {{ if .target }}target="{{ .target }}"{{ end }}
+          >
+            {{ .text }}
+          </a>
+        </div>
+        {{- end -}}
+      </div>
+      {{- end -}}
+    </div>
+
+    <!-- Global CTA Button -->
+    {{- if and $button_text $button_url -}}
+    <div class="text-center mt-16">
+      <a href="{{ $button_url }}" 
+         {{ if $button_target }}target="{{ $button_target }}"{{ end }}
+         class="inline-flex items-center gap-2 rounded-full border-2 border-primary-600 bg-white dark:bg-gray-900 text-primary-600 dark:text-primary-400 px-8 py-3 text-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300">
+       {{ $button_text }}
+      </a>
+    </div>
+    {{- end -}}
+  </div>
+</section>
+{{- else -}}
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
+    <p class="text-sm font-medium text-yellow-700">Pricing notice</p>
+    <p class="text-sm text-yellow-600">No pricing plans found. Please create a data file: <strong>data/{{ $data_file }}.yaml</strong></p>
+  </div>
+{{- end -}}

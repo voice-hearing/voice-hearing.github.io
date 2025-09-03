@@ -1,0 +1,88 @@
+{{/* Hugo Skills Shortcode */}}
+{{/* Usage: {{< skills author="admin" title="Skills" text="Optional description" show_percentage=true >}} */}}
+
+{{/* Parameters */}}
+{{ $author := .Get "author" | default "admin" }}
+{{ $title := .Get "title" | default "Skills" }}
+{{ $text := .Get "text" | default "" }}
+{{ $show_percentage := .Get "show_percentage" | default true }}
+
+{{/* Get author page and skills */}}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ $skills := "" }}
+
+{{ if $person_page }}
+  {{ $skills = $person_page.Params.skills }}
+{{ else }}
+  {{ warnf "Could not find author page at `%s`. Please check the author parameter." $person_page_path }}
+{{ end }}
+
+{{ if $skills }}
+<div class="max-w-prose mx-auto mb-8">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $title | markdownify | emojify }}
+  </div>
+  {{ with $text }}<p class="text-gray-600 dark:text-gray-400 mb-6">{{ . | markdownify | emojify }}</p>{{ end }}
+</div>
+
+<div class="max-w-prose mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+  {{ range $skills }}
+  {{ $color := .color | default "#3b82f6" }}
+  {{ $color_border := .color_border | default "#e5e7eb" }}
+  
+  <div class="w-full">
+    <div class="mb-5">
+      <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+        {{ .name | markdownify | emojify }}
+      </h3>
+      {{ with .description }}
+        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">{{ . | markdownify | emojify }}</p>
+      {{ end }}
+    </div>
+    
+    <div class="space-y-4">
+      {{ range .items }}
+      <div class="skills-item">
+        <div class="flex items-center mb-2">
+          {{ with .icon }}
+          <span class="skills-icon inline-block mr-3 text-gray-600 dark:text-gray-400 flex-shrink-0">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.2em; width: 1.2em;\"") }}
+          </span>
+          {{ end }}
+          
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="skills-name font-medium text-gray-800 dark:text-gray-200 truncate">
+                {{ .name | markdownify | emojify }}
+              </span>
+              {{ if and .percent $show_percentage }}
+                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0">{{ .percent }}%</span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        
+        {{ with .description }}
+          <p class="skills-description text-sm text-gray-600 dark:text-gray-400 {{ if .icon }}ml-8{{ end }} mb-2">{{ . | markdownify | emojify }}</p>
+        {{ end }}
+        
+        {{ if and .percent $show_percentage }}
+        <div class="skills-wrapper {{ if .icon }}ml-8{{ end }}">
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2" style="border-color: {{ $color_border }}">
+            <div class="skills-percent h-2 rounded-full transition-all duration-300" 
+                 style="width: {{ .percent | default 0 }}%; background-color: {{ $color }}"></div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ else }}
+  <div class="max-w-prose mx-auto text-center text-gray-500 dark:text-gray-400 mb-8">
+    <p>No skills found. Please check your author configuration.</p>
+  </div>
+{{ end }}

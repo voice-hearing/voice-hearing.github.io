@@ -13,6 +13,2283 @@
     </image>
     
     <item>
+      <title>🎉 Components</title>
+      <link>http://localhost:1313/post/components/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/components/</guid>
+      <description>&lt;button type=&#34;submit&#34;&gt;
+  &lt;i class=&#34;fa-solid fa-envelope&#34;&gt;&lt;/i&gt; Email Us!
+&lt;/button&gt;
+&lt;p&gt;Welcome 👋&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;details class=&#34;print:hidden xl:hidden&#34; open&gt;
+  &lt;summary&gt;Table of Contents&lt;/summary&gt;
+  &lt;div class=&#34;text-sm&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#from-author-technical-skills&#34;&gt;From author technical skills&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#items-are-located-in-datafeaturesyaml&#34;&gt;items are located in data/features.yaml&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#from-author-technical-skills-1&#34;&gt;From author technical skills&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#schedulecsv-in-the-folder&#34;&gt;schedule.csv in the folder&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#place-faqyaml-into-data-folder&#34;&gt;Place faq.yaml into data folder&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#tag-cloud-series-categories-tags&#34;&gt;Tag cloud Series, Categories, Tags&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#pricing&#34;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#tag-image-folder-datatag-image&#34;&gt;Tag image folder data/tag-image&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#text-overlay&#34;&gt;Text Overlay&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#books&#34;&gt;Books&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+
+
+  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
+    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; fill=&#34;currentColor&#34; viewBox=&#34;3 3 18 18&#34;&gt;&lt;path d=&#34;M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+  &lt;/span&gt; GitHub
+
+  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
+    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M115.592 222.507c-9.726 0-18.734 7.074-24.986 14.417c-5.06 5.954-7.59 15.133-7.59 22.775c0 7.64 2.87 16.139 7.931 22.093c6.152 7.343 12.778 12.375 22.603 12.375c8.833 0 19.338-3.708 25.39-9.76c6.151-6.054 11.269-16.218 11.269-25.05c0-8.73-2.396-19.186-8.548-25.24c-6.153-6.154-17.338-11.61-26.07-11.61zm174.644 2.4c-10.12 0-18.358 3.98-24.709 11.937c-5.158 6.386-7.74 13.663-7.74 21.828c0 8.271 2.582 15.6 7.74 21.986c6.35 7.956 14.589 11.937 24.71 11.937c9.03 0 16.67-3.251 22.92-9.742c6.254-6.597 9.379-14.653 9.379-24.18c0-9.423-3.177-17.377-9.527-23.868c-6.25-6.595-13.843-9.898-22.773-9.898zM256 8C119.034 8 8 119.034 8 256s111.034 248 248 248s248-111.034 248-248S392.966 8 256 8Zm-58.826 323.79H151.24v-18.699c-4.665 5.855-15.639 11.824-20.4 14.502c-8.335 4.663-19.654 7.7-30.273 7.7c-17.168 0-32.45-5.424-45.845-17.231c-15.977-14.09-23.483-35.633-23.483-58.854c0-23.618 8.186-42.473 24.56-56.563c12.999-11.214 28.896-20.19 45.766-20.19c9.822 0 21.94.883 30.572 5.05c4.962 2.38 13.844 7.985 19.104 13.443v-98.502h45.936v229.345zm157.216-21.14c-15.281 17.588-36.667 26.384-64.154 26.384c-27.586 0-49.02-8.796-64.304-26.383c-12.6-14.448-18.904-32.193-18.904-53.235c0-18.95 6.35-35.752 19.053-50.408c15.38-17.693 37.261-26.54 65.64-26.54c26.099 0 46.937 8.845 62.518 26.54c12.702 14.448 19.052 31.667 19.052 51.664c.003 20.206-6.299 37.531-18.901 51.98zm38.769-199.217c5.359-5.36 11.858-8.038 19.499-8.038c7.64 0 14.14 2.679 19.499 8.038c5.358 5.26 8.037 11.71 8.037 19.35c0 7.74-2.679 14.289-8.037 19.648c-5.26 5.259-11.76 7.888-19.5 7.888c-7.642 0-14.142-2.679-19.498-8.038c-5.26-5.358-7.889-11.858-7.889-19.499c-.003-7.64 2.63-14.09 7.889-19.35zm43.91 220.242h-48.823V185.841h48.823z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt; DOI&lt;br&gt;
+
+  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
+    &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --&gt;
+&lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; version=&#34;1.1&#34; id=&#34;Logo&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; x=&#34;0px&#34; y=&#34;0px&#34;
+	 viewBox=&#34;0 0 248 204&#34; style=&#34;enable-background:new 0 0 248 204;&#34; xml:space=&#34;preserve&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+	.st0{fill:#1D9BF0;}
+&lt;/style&gt;
+&lt;g id=&#34;Logo_1_&#34;&gt;
+	&lt;path id=&#34;white_background&#34; class=&#34;st0&#34; d=&#34;M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z&#34;/&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+
+  &lt;/span&gt; Demo
+
+  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
+    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; fill=&#34;currentColor&#34; viewBox=&#34;3 3 18 18&#34;&gt;&lt;path d=&#34;M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+  &lt;/span&gt; GitHub
+
+  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
+    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M115.592 222.507c-9.726 0-18.734 7.074-24.986 14.417c-5.06 5.954-7.59 15.133-7.59 22.775c0 7.64 2.87 16.139 7.931 22.093c6.152 7.343 12.778 12.375 22.603 12.375c8.833 0 19.338-3.708 25.39-9.76c6.151-6.054 11.269-16.218 11.269-25.05c0-8.73-2.396-19.186-8.548-25.24c-6.153-6.154-17.338-11.61-26.07-11.61zm174.644 2.4c-10.12 0-18.358 3.98-24.709 11.937c-5.158 6.386-7.74 13.663-7.74 21.828c0 8.271 2.582 15.6 7.74 21.986c6.35 7.956 14.589 11.937 24.71 11.937c9.03 0 16.67-3.251 22.92-9.742c6.254-6.597 9.379-14.653 9.379-24.18c0-9.423-3.177-17.377-9.527-23.868c-6.25-6.595-13.843-9.898-22.773-9.898zM256 8C119.034 8 8 119.034 8 256s111.034 248 248 248s248-111.034 248-248S392.966 8 256 8Zm-58.826 323.79H151.24v-18.699c-4.665 5.855-15.639 11.824-20.4 14.502c-8.335 4.663-19.654 7.7-30.273 7.7c-17.168 0-32.45-5.424-45.845-17.231c-15.977-14.09-23.483-35.633-23.483-58.854c0-23.618 8.186-42.473 24.56-56.563c12.999-11.214 28.896-20.19 45.766-20.19c9.822 0 21.94.883 30.572 5.05c4.962 2.38 13.844 7.985 19.104 13.443v-98.502h45.936v229.345zm157.216-21.14c-15.281 17.588-36.667 26.384-64.154 26.384c-27.586 0-49.02-8.796-64.304-26.383c-12.6-14.448-18.904-32.193-18.904-53.235c0-18.95 6.35-35.752 19.053-50.408c15.38-17.693 37.261-26.54 65.64-26.54c26.099 0 46.937 8.845 62.518 26.54c12.702 14.448 19.052 31.667 19.052 51.664c.003 20.206-6.299 37.531-18.901 51.98zm38.769-199.217c5.359-5.36 11.858-8.038 19.499-8.038c7.64 0 14.14 2.679 19.499 8.038c5.358 5.26 8.037 11.71 8.037 19.35c0 7.74-2.679 14.289-8.037 19.648c-5.26 5.259-11.76 7.888-19.5 7.888c-7.642 0-14.142-2.679-19.498-8.038c-5.26-5.358-7.889-11.858-7.889-19.499c-.003-7.64 2.63-14.09 7.889-19.35zm43.91 220.242h-48.823V185.841h48.823z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt; DOI&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fa-solid fa-circle-user&#34;&gt;hello&lt;/i&gt;&lt;/p&gt;
+&lt;h2 id=&#34;from-author-technical-skills&#34;&gt;From author technical skills&lt;/h2&gt;
+
+
+
+&lt;div class=&#34;flex flex-col items-center max-w-prose mx-auto gap-3 justify-center&#34;&gt;
+  
+  &lt;div class=&#34;mb-6 text-3xl font-bold text-gray-900 dark:text-white&#34;&gt;
+    Technical Skills
+  &lt;/div&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;flex items-center flex-col lg:flex-row gap-x-8 gap-y-6&#34;&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 52.77871200000004;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;85%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;Frontend&lt;/span&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 87.96452;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;75%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;Backend&lt;/span&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 70.37161600000002;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;80%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;Database&lt;/span&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 123.150328;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;65%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;DevOps&lt;/span&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;flex flex-col items-center max-w-prose mx-auto gap-3 justify-center&#34;&gt;
+  
+  &lt;div class=&#34;mb-6 text-3xl font-bold text-gray-900 dark:text-white&#34;&gt;
+    Design Skills
+  &lt;/div&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;flex items-center flex-col lg:flex-row gap-x-8 gap-y-6&#34;&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 35.18580800000001;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;90%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;UI Design&lt;/span&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 87.96452;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;75%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;UX Research&lt;/span&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+      &lt;div class=&#34;flex items-center justify-center w-32 h-32 relative&#34;&gt;
+        &lt;svg class=&#34;transform -rotate-90 w-32 h-32&#34; viewBox=&#34;0 0 144 144&#34;&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-gray-300 dark:text-gray-600&#34; /&gt;
+          
+          &lt;circle cx=&#34;72&#34; cy=&#34;72&#34; r=&#34;56&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;12&#34; 
+                  fill=&#34;transparent&#34; class=&#34;text-primary-500 dark:text-primary-400&#34;
+                  style=&#34;stroke-dasharray: 351.85808; stroke-dashoffset: 52.77871200000004;&#34; /&gt;
+        &lt;/svg&gt;
+        
+        &lt;span class=&#34;absolute text-2xl font-bold text-gray-900 dark:text-white&#34;&gt;85%&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&#34;text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center&#34;&gt;Prototyping&lt;/span&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;items-are-located-in-datafeaturesyaml&#34;&gt;items are located in data/features.yaml&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;section&gt;
+  &lt;div class=&#34;mx-auto max-w-screen-xl px-8&#34;&gt;
+    
+    
+    &lt;div class=&#34;space-y-8 md:grid md:grid-cols-3 lg:grid-cols-3 gap-4 md:space-y-0&#34;&gt;
+      
+        &lt;div class=&#34;basis-1/2&#34;&gt;
+          
+          
+          
+          
+          
+          
+          
+          &lt;img class=&#34;rounded-md mb-4&#34; src=&#34;http://localhost:1313/media/conference-headway-F2KRf_QfCqw_hu_6815944b4908f2e2.webp&#34; alt=&#34;Find Friends&#34;&gt;
+          
+          
+          
+          
+          
+          &lt;div&gt;
+            
+            &lt;div class=&#34;flex basis-1/4 justify-center items-center mb-4&#34;&gt;
+              &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;&lt;!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --&gt;
+&lt;svg class=&#34;w-24 h-24 lg:w-24 lg:h-24 text-primary-600 dark:text-primary-400&#34; width=&#34;800px&#34; height=&#34;800px&#34; viewBox=&#34;0 0 128 128&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; class=&#34;iconify iconify--noto&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M14.77 37.29s-1.13 1.31-1.88 3.75s-.42 4.93-.42 4.93s3.77 1.97 10.07 2.25c5.19.23 7.95-.7 11.9-3.59s10.66 1.76 13.69 3.17c3.03 1.41 30 11.83 30 11.83l19.62 1.22s.75-2.16 0-7.32s-5.44-9.29-9.1-10.79c-3.66-1.5-6.01-1.69-6.01-1.69L58.69 26.97s-6.6-.46-13.33 1.03C40.3 29.13 29.6 38.89 23.4 38.7s-8.63-1.41-8.63-1.41z&#34; fill=&#34;#d43330&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M58.64 20.82l-2.6-13.91S57.28 5 59.77 4.58s4.36.8 4.36.8l2.35 16.1h1.88l1.78-14.55s1.03-1.22 4.18-.73c2.91.46 3.39 1.77 3.39 1.77l-1.6 14.96l-16.8 7.09l-7.41-.89l-9.34-13.66s.28-2.3 2.58-3.61s3.94-1.08 3.94-1.08l8.92 13l.8-.8l-.16-2.16z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M74.83 42.31s2.04-1.08 4.46-1.31s3.33.05 3.33.05s3.5-4.58 0-12.74s-14.83-10.28-21.02-8.24s-13.87 6.9-14.71 16.75c-.84 9.85-1.13 14.92-1.13 14.92l5.98 3.1l23.49-3.68l-.4-8.85z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M68.17 27.18s1.83.84 4.97-.28c3.75-1.34 10.7-3.31 13.37-4.58s4.93-3.66 6.48-4.08c1.55-.42 5.39-.21 7.22 3.59s-1.45 7.11-1.45 7.11l-17.18 4.22l-6.34 6.9l-1.55 6.9v5.91l28.56 21.83s.44 7.31-3.5 18.57s-7.45 18.73-8.99 21.55s-1.47 6.34-5.52 8.02c-4.05 1.69-12.22-2.67-21.65-6.76c-9.43-4.08-21.4-11.68-26.04-17.74s-8.59-12.39-9.71-21.82s3.1-19.15 7.74-21.68c4.65-2.53 15.63-1.97 15.63-1.97s.64-1.27 5.03-2.67s7.35-1.83 7.35-1.83l-1.13-7.46l.79-8.51l5.92-5.22z&#34; fill=&#34;#d43330&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M80.61 56.95s3.66-3.52 9.01-2.96s10.5 6.19 11.76 10.98c1.27 4.79 1.24 11.17 0 15.77c-1.08 4.03-6.09 14.08-12.75 14.08c-3.1 0-4.03-2.48-4.24-3.63c-.21-1.16 1.61 7.85-2.94 9.68c-4.33 1.74-3.75-1.13-3.75-1.13l1.92-4.5s-8.21-14.9-12.01-19.55c-3.8-4.65-15.58-13.96-15.16-18.32c.42-4.36 1.55-6.19 5.77-7.04c4.22-.84 9.29 0 9.29 0l8.06 4.09l5.04 2.53z&#34; fill=&#34;#fe5f5f&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M50.9 65.35s-2.44 4.32-5.73 0c-3.28-4.32-6.01-8.35-5.73-17.64c.28-9.29.75-13.98-.47-18.86c-1.22-4.88-1.61-7.68-1.61-7.68l-3.27 3.09l-3.11.74l-2.06-1.12s-1.78.28-1.12 1.03s3.09 3.95 4.12 6c1.36 2.72 2.72 11.92-.12 17.55c-3.42 6.79-4.58 12.39-3.75 18.12c.62 4.27 5.22 9.76 5.22 9.76l3.42 2.44l7.7-.66l6.01-6.29l.5-6.48z&#34; fill=&#34;#ff6a65&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M36.45 16.03c-3.05-.45-7.36 1.74-8.62 4.65c-1.18 2.7-.57 5.58 2.88 5.02c3.45-.56 5.2-2.4 5.84-2.96s2.41 6.06 2.82 10c.42 3.94.06 13.04 0 16.26c-.08 4.41 1.18 16.02 5.2 18.36c2.8 1.63 4.97-.55 6.8-.79l-.75-6.17l-2.96-9.22s-.31-.4-1.08-2.35c-.77-1.95-.82-14.92-2.23-21.52c-.9-4.21-3.88-10.68-7.9-11.28z&#34; fill=&#34;#ff8f8c&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M95.81 20.84c-.57.89-.49 4.22-.49 4.22s-8.8 2.65-12.95 4.95c-4.15 2.3-8.76 5.79-10.1 11.35s.49 9.39.49 9.39s-2.73-1.26-4.97-2.04c-1.92-.67-3.78-1.06-3.78-1.06s-.16-4.36-.51-5.7c-.35-1.34-1.2-2.89-1.2-4.58s1.01-4.72 2.35-6.57c1.2-1.66 3.92-3.49 3.92-3.49s-.14-.2-1.22-.24c-2.23-.1-5.26 2.35-6.66 6.01c-1.41 3.66-.77 9.19-.7 11.61c.05 1.62.14 3.23.14 3.23s-2.82.36-4.89.93c-2.08.56-5.6 3.1-5.6 3.1s-1.13-.8-1.9-1.99c-.75-1.16-1.61-4.19-1.61-4.19s.48 6.05 1.61 9.07c1.13 3.03 2.96 10.31 2.04 14.08c-1.27 5.21-4.97 8.05-9.34 8.12s-7.59-2.79-9.48-6.19c-1.41-2.55-3.12-8.72-3.12-8.72s-.67 2.46-.57 4.61c.1 2.15 1.13 7.28 5.4 10.7c3.78 3.03 6.69 2.95 8.94 2.81c4.15-.26 9.27-4.39 10.46-9.6s-.05-9.97-.4-11.52c-.35-1.55-1.13-4.29-1.13-4.29s3.52-3.73 7.67-4.5s11.26 1.55 14.36 3.52c3.1 1.97 10.61 8.33 10.18 13.05s-3.43 7.95-4.62 9.48c-1.57 2.02-3.64 3.43-3.17 4.43c.67 1.43 2.75-.14 4.29-1.34c1.55-1.2 3.59-3.8 4.58-5.42c.99-1.62 1.83-4.34 1.83-4.34s2.53 2.2 3.38 5.98c.84 3.78-.42 8.78 1.2 8.5c1.62-.28 2.17-4.86 1.83-9.08c-.34-4.14-2.89-6.91-4.29-8.35c-1.4-1.44-2.11-2.77-2.11-2.77s-2.57-6.54-5.73-9.16c-4.08-3.38-5.02-10.97-3.07-14.43c2.54-4.51 6.11-7 10.21-7.88c5.77-1.24 8.61-1.06 11.25-1.31c2.31-.22 3.4-2.84 3.05-5.73s-1.69-5.01-3.2-5.67c-1.22-.54-2.02.48-2.37 1.02z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M39.32 79.34s2.15 6.69 2.15 9.57s-.25 5.95-2.15 7.53c-1.89 1.57 2.43 1.76 3.74-.51c1.73-3.01 1.23-5.12 1.23-5.12l2.02 2.27s2.1 5.9 5.07 9.41c3.24 3.82 5.73 4.53 9.43 4.53c3.88 0 4.29-1.71 2.72-1.83c-1.67-.12-4.99-.18-7.32-1.66c-2.32-1.48-3.45-3.15-4.98-5.66c-.69-1.13-1.97-4.27-1.97-4.27s3.18 1.41 4.36 0c1.01-1.2-3.33-1.91-4.55-2.58c-2.06-1.13-3.19-2.96-4.15-4.78c-.88-1.68-2.6-6.91-2.6-6.91h-3z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M81.68 74.83s.23 6.19-.14 10.28c-.38 4.08-1.17 8.07-2.82 10.7c-1.11 1.78-3.09 3.38-3.61 4.46c-.56 1.14.61 1.87 1.83 1.17s3.33-2.77 4.32-4.83c.52-1.08 1.74-4.08 1.74-4.08s1.27 4.93 2.06 6.34c.8 1.41 2.02 4.32 3.28 3.75s-.11-2.83-.47-3.8c-.45-1.2-1.5-4.04-2.06-6.43s-.9-10.55-.9-12.71s-.28-7.05-.7-8.83s-2.53 3.98-2.53 3.98z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M29.51 22.93c.56 1.19 2.47.85 4.8-.85c2.45-1.79 2.88-3.54 1.72-4.35c-1.09-.77-3.17-.08-4.59 1.01c-1.59 1.22-2.59 2.76-1.93 4.19z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+            
+            
+            &lt;h3 class=&#34;mb-2 text-3xl font-bold tracking-tight dark:text-white text-center px-6&#34;&gt;Find Friends&lt;/h3&gt;
+            &lt;p class=&#34;text-xl text-gray-800 dark:text-gray-300 px-6 text-center&#34;&gt;Meet new people who share your passion for helping others and building community connections.&lt;/p&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center mt-6&#34;&gt;
+            
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/friends/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+              Connect Now
+            &lt;/a&gt;
+            
+          &lt;/div&gt;
+          
+        &lt;/div&gt;
+      
+        &lt;div class=&#34;basis-1/2&#34;&gt;
+          
+          
+          
+          
+          
+          
+          
+          &lt;img class=&#34;rounded-md mb-4&#34; src=&#34;http://localhost:1313/media/childrensclub1_hu_3d96988503b62d6b.webp&#34; alt=&#34;Team Work&#34;&gt;
+          
+          
+          
+          
+          
+          &lt;div&gt;
+            
+            &lt;div class=&#34;flex basis-1/4 justify-center items-center mb-4&#34;&gt;
+              &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;
+&lt;!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --&gt;
+&lt;svg class=&#34;w-24 h-24 lg:w-24 lg:h-24 text-primary-600 dark:text-primary-400&#34; height=&#34;800px&#34; width=&#34;800px&#34; version=&#34;1.1&#34; id=&#34;Capa_1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; viewBox=&#34;0 0 512 512&#34; xml:space=&#34;preserve&#34; fill=&#34;#000000&#34;&gt;
+&lt;g id=&#34;SVGRepo_bgCarrier&#34; stroke-width=&#34;0&#34;/&gt;
+&lt;g id=&#34;SVGRepo_tracerCarrier&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;g id=&#34;SVGRepo_iconCarrier&#34;&gt; &lt;g&gt; &lt;path style=&#34;fill:#74D6D0;&#34; d=&#34;M256,452.121c-65.547,0-127.48-10.637-174.393-29.951C28.982,400.503,0,369.467,0,334.78 s28.982-65.723,81.607-87.389C128.52,228.076,190.454,217.438,256,217.438s127.482,10.637,174.393,29.952 C483.018,269.056,512,300.093,512,334.78s-28.982,65.723-81.607,87.391C383.482,441.483,321.546,452.121,256,452.121z M256,258.037 c-60.367,0-116.812,9.551-158.936,26.895c-35.357,14.556-56.466,33.191-56.466,49.848s21.108,35.292,56.466,49.848 c42.124,17.344,98.569,26.895,158.936,26.895c60.368,0,116.814-9.551,158.937-26.895c35.356-14.556,56.464-33.192,56.464-49.848 c0-16.658-21.108-35.292-56.464-49.848C372.812,267.588,316.368,258.037,256,258.037z&#34;/&gt; &lt;path style=&#34;fill:#74D6D0;&#34; d=&#34;M256,386.257c-40.141,0-78.115-3.971-106.924-11.179c-14.251-3.566-57.621-14.418-57.621-45.216 c0-30.795,43.37-41.649,57.621-45.214c28.81-7.209,66.783-11.179,106.924-11.179c40.142,0,78.117,3.971,106.925,11.179 c14.251,3.566,57.62,14.418,57.62,45.214s-43.369,41.649-57.62,45.216C334.115,382.287,296.142,386.257,256,386.257z M140.284,329.863c17.978,7.216,57.964,15.795,115.716,15.795s97.739-8.58,115.718-15.795 c-17.978-7.216-57.965-15.796-115.718-15.796S158.262,322.648,140.284,329.863z&#34;/&gt; &lt;/g&gt; &lt;g&gt; &lt;path style=&#34;fill:#CCF7F5;&#34; d=&#34;M430.393,247.39C383.482,228.076,321.546,217.438,256,217.438v40.598 c60.368,0,116.812,9.551,158.937,26.895c35.356,14.557,56.464,33.192,56.464,49.848c0,16.658-21.108,35.292-56.464,49.848 c-42.124,17.344-98.569,26.895-158.937,26.895v40.598c65.546,0,127.482-10.637,174.393-29.951 C483.018,400.503,512,369.469,512,334.78S483.018,269.056,430.393,247.39z&#34;/&gt; &lt;path style=&#34;fill:#CCF7F5;&#34; d=&#34;M362.925,284.649C334.117,277.44,296.142,273.47,256,273.47v40.598 c57.753,0,97.739,8.58,115.718,15.795c-17.978,7.216-57.965,15.796-115.718,15.796v40.598c40.142,0,78.117-3.97,106.925-11.179 c14.251-3.566,57.62-14.418,57.62-45.216C420.545,299.067,377.177,288.215,362.925,284.649z&#34;/&gt; &lt;/g&gt; &lt;path style=&#34;fill:#74D6D0;&#34; d=&#34;M256,332.896c-53.938,0-97.819-43.883-97.819-97.82c0-15.877,3.889-31.569,11.267-45.569 c0.361-0.907,0.789-1.793,1.286-2.654L238.18,70.03c3.627-6.282,10.327-10.151,17.579-10.151c7.252,0,13.954,3.869,17.579,10.15 l63.486,109.966c11.121,16.284,16.995,35.308,16.995,55.081C353.819,289.013,309.938,332.896,256,332.896z&#34;/&gt; &lt;path style=&#34;fill:#CCF7F5;&#34; d=&#34;M256,332.896c-53.938,0-97.819-43.883-97.819-97.82c0-15.877,3.889-31.569,11.267-45.569 c0.361-0.907,0.789-1.793,1.286-2.654L238.18,70.03c3.627-6.282,10.327-10.151,17.579-10.151L256,332.896z&#34;/&gt; &lt;/g&gt;
+&lt;/svg&gt;
+            &lt;/div&gt;
+            
+            
+            &lt;h3 class=&#34;mb-2 text-3xl font-bold tracking-tight dark:text-white text-center px-6&#34;&gt;Team Work&lt;/h3&gt;
+            &lt;p class=&#34;text-xl text-gray-800 dark:text-gray-300 px-6 text-center&#34;&gt;Collaborate with others on meaningful projects and experience the power of working together.&lt;/p&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center mt-6&#34;&gt;
+            
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/teamwork/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+              Join Team
+            &lt;/a&gt;
+            
+          &lt;/div&gt;
+          
+        &lt;/div&gt;
+      
+        &lt;div class=&#34;basis-1/2&#34;&gt;
+          
+          
+          
+          
+          
+          
+          
+          &lt;img class=&#34;rounded-md mb-4&#34; src=&#34;http://localhost:1313/media/childrensclub1_hu_3d96988503b62d6b.webp&#34; alt=&#34;Personal Growth&#34;&gt;
+          
+          
+          
+          
+          
+          &lt;div&gt;
+            
+            &lt;div class=&#34;flex basis-1/4 justify-center items-center mb-4&#34;&gt;
+              &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;&lt;!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --&gt;
+&lt;svg class=&#34;w-24 h-24 lg:w-24 lg:h-24 text-primary-600 dark:text-primary-400&#34; width=&#34;800px&#34; height=&#34;800px&#34; viewBox=&#34;0 0 128 128&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; class=&#34;iconify iconify--noto&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M14.77 37.29s-1.13 1.31-1.88 3.75s-.42 4.93-.42 4.93s3.77 1.97 10.07 2.25c5.19.23 7.95-.7 11.9-3.59s10.66 1.76 13.69 3.17c3.03 1.41 30 11.83 30 11.83l19.62 1.22s.75-2.16 0-7.32s-5.44-9.29-9.1-10.79c-3.66-1.5-6.01-1.69-6.01-1.69L58.69 26.97s-6.6-.46-13.33 1.03C40.3 29.13 29.6 38.89 23.4 38.7s-8.63-1.41-8.63-1.41z&#34; fill=&#34;#d43330&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M58.64 20.82l-2.6-13.91S57.28 5 59.77 4.58s4.36.8 4.36.8l2.35 16.1h1.88l1.78-14.55s1.03-1.22 4.18-.73c2.91.46 3.39 1.77 3.39 1.77l-1.6 14.96l-16.8 7.09l-7.41-.89l-9.34-13.66s.28-2.3 2.58-3.61s3.94-1.08 3.94-1.08l8.92 13l.8-.8l-.16-2.16z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M74.83 42.31s2.04-1.08 4.46-1.31s3.33.05 3.33.05s3.5-4.58 0-12.74s-14.83-10.28-21.02-8.24s-13.87 6.9-14.71 16.75c-.84 9.85-1.13 14.92-1.13 14.92l5.98 3.1l23.49-3.68l-.4-8.85z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M68.17 27.18s1.83.84 4.97-.28c3.75-1.34 10.7-3.31 13.37-4.58s4.93-3.66 6.48-4.08c1.55-.42 5.39-.21 7.22 3.59s-1.45 7.11-1.45 7.11l-17.18 4.22l-6.34 6.9l-1.55 6.9v5.91l28.56 21.83s.44 7.31-3.5 18.57s-7.45 18.73-8.99 21.55s-1.47 6.34-5.52 8.02c-4.05 1.69-12.22-2.67-21.65-6.76c-9.43-4.08-21.4-11.68-26.04-17.74s-8.59-12.39-9.71-21.82s3.1-19.15 7.74-21.68c4.65-2.53 15.63-1.97 15.63-1.97s.64-1.27 5.03-2.67s7.35-1.83 7.35-1.83l-1.13-7.46l.79-8.51l5.92-5.22z&#34; fill=&#34;#d43330&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M80.61 56.95s3.66-3.52 9.01-2.96s10.5 6.19 11.76 10.98c1.27 4.79 1.24 11.17 0 15.77c-1.08 4.03-6.09 14.08-12.75 14.08c-3.1 0-4.03-2.48-4.24-3.63c-.21-1.16 1.61 7.85-2.94 9.68c-4.33 1.74-3.75-1.13-3.75-1.13l1.92-4.5s-8.21-14.9-12.01-19.55c-3.8-4.65-15.58-13.96-15.16-18.32c.42-4.36 1.55-6.19 5.77-7.04c4.22-.84 9.29 0 9.29 0l8.06 4.09l5.04 2.53z&#34; fill=&#34;#fe5f5f&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M50.9 65.35s-2.44 4.32-5.73 0c-3.28-4.32-6.01-8.35-5.73-17.64c.28-9.29.75-13.98-.47-18.86c-1.22-4.88-1.61-7.68-1.61-7.68l-3.27 3.09l-3.11.74l-2.06-1.12s-1.78.28-1.12 1.03s3.09 3.95 4.12 6c1.36 2.72 2.72 11.92-.12 17.55c-3.42 6.79-4.58 12.39-3.75 18.12c.62 4.27 5.22 9.76 5.22 9.76l3.42 2.44l7.7-.66l6.01-6.29l.5-6.48z&#34; fill=&#34;#ff6a65&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M36.45 16.03c-3.05-.45-7.36 1.74-8.62 4.65c-1.18 2.7-.57 5.58 2.88 5.02c3.45-.56 5.2-2.4 5.84-2.96s2.41 6.06 2.82 10c.42 3.94.06 13.04 0 16.26c-.08 4.41 1.18 16.02 5.2 18.36c2.8 1.63 4.97-.55 6.8-.79l-.75-6.17l-2.96-9.22s-.31-.4-1.08-2.35c-.77-1.95-.82-14.92-2.23-21.52c-.9-4.21-3.88-10.68-7.9-11.28z&#34; fill=&#34;#ff8f8c&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M95.81 20.84c-.57.89-.49 4.22-.49 4.22s-8.8 2.65-12.95 4.95c-4.15 2.3-8.76 5.79-10.1 11.35s.49 9.39.49 9.39s-2.73-1.26-4.97-2.04c-1.92-.67-3.78-1.06-3.78-1.06s-.16-4.36-.51-5.7c-.35-1.34-1.2-2.89-1.2-4.58s1.01-4.72 2.35-6.57c1.2-1.66 3.92-3.49 3.92-3.49s-.14-.2-1.22-.24c-2.23-.1-5.26 2.35-6.66 6.01c-1.41 3.66-.77 9.19-.7 11.61c.05 1.62.14 3.23.14 3.23s-2.82.36-4.89.93c-2.08.56-5.6 3.1-5.6 3.1s-1.13-.8-1.9-1.99c-.75-1.16-1.61-4.19-1.61-4.19s.48 6.05 1.61 9.07c1.13 3.03 2.96 10.31 2.04 14.08c-1.27 5.21-4.97 8.05-9.34 8.12s-7.59-2.79-9.48-6.19c-1.41-2.55-3.12-8.72-3.12-8.72s-.67 2.46-.57 4.61c.1 2.15 1.13 7.28 5.4 10.7c3.78 3.03 6.69 2.95 8.94 2.81c4.15-.26 9.27-4.39 10.46-9.6s-.05-9.97-.4-11.52c-.35-1.55-1.13-4.29-1.13-4.29s3.52-3.73 7.67-4.5s11.26 1.55 14.36 3.52c3.1 1.97 10.61 8.33 10.18 13.05s-3.43 7.95-4.62 9.48c-1.57 2.02-3.64 3.43-3.17 4.43c.67 1.43 2.75-.14 4.29-1.34c1.55-1.2 3.59-3.8 4.58-5.42c.99-1.62 1.83-4.34 1.83-4.34s2.53 2.2 3.38 5.98c.84 3.78-.42 8.78 1.2 8.5c1.62-.28 2.17-4.86 1.83-9.08c-.34-4.14-2.89-6.91-4.29-8.35c-1.4-1.44-2.11-2.77-2.11-2.77s-2.57-6.54-5.73-9.16c-4.08-3.38-5.02-10.97-3.07-14.43c2.54-4.51 6.11-7 10.21-7.88c5.77-1.24 8.61-1.06 11.25-1.31c2.31-.22 3.4-2.84 3.05-5.73s-1.69-5.01-3.2-5.67c-1.22-.54-2.02.48-2.37 1.02z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M39.32 79.34s2.15 6.69 2.15 9.57s-.25 5.95-2.15 7.53c-1.89 1.57 2.43 1.76 3.74-.51c1.73-3.01 1.23-5.12 1.23-5.12l2.02 2.27s2.1 5.9 5.07 9.41c3.24 3.82 5.73 4.53 9.43 4.53c3.88 0 4.29-1.71 2.72-1.83c-1.67-.12-4.99-.18-7.32-1.66c-2.32-1.48-3.45-3.15-4.98-5.66c-.69-1.13-1.97-4.27-1.97-4.27s3.18 1.41 4.36 0c1.01-1.2-3.33-1.91-4.55-2.58c-2.06-1.13-3.19-2.96-4.15-4.78c-.88-1.68-2.6-6.91-2.6-6.91h-3z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M81.68 74.83s.23 6.19-.14 10.28c-.38 4.08-1.17 8.07-2.82 10.7c-1.11 1.78-3.09 3.38-3.61 4.46c-.56 1.14.61 1.87 1.83 1.17s3.33-2.77 4.32-4.83c.52-1.08 1.74-4.08 1.74-4.08s1.27 4.93 2.06 6.34c.8 1.41 2.02 4.32 3.28 3.75s-.11-2.83-.47-3.8c-.45-1.2-1.5-4.04-2.06-6.43s-.9-10.55-.9-12.71s-.28-7.05-.7-8.83s-2.53 3.98-2.53 3.98z&#34; fill=&#34;#a62714&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M29.51 22.93c.56 1.19 2.47.85 4.8-.85c2.45-1.79 2.88-3.54 1.72-4.35c-1.09-.77-3.17-.08-4.59 1.01c-1.59 1.22-2.59 2.76-1.93 4.19z&#34; fill=&#34;#f44236&#34;&gt;&lt;/path&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+            
+            
+            &lt;h3 class=&#34;mb-2 text-3xl font-bold tracking-tight dark:text-white text-center px-6&#34;&gt;Personal Growth&lt;/h3&gt;
+            &lt;p class=&#34;text-xl text-gray-800 dark:text-gray-300 px-6 text-center&#34;&gt;Develop personally and professionally while making a positive impact in your community.&lt;/p&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center mt-6&#34;&gt;
+            
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/growth/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+              Start Growing
+            &lt;/a&gt;
+            
+          &lt;/div&gt;
+          
+        &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;h2 id=&#34;from-author-technical-skills-1&#34;&gt;From author technical skills&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;div class=&#34;max-w-prose mx-auto mb-8&#34;&gt;
+  &lt;div class=&#34;mb-6 text-3xl font-bold text-gray-900 dark:text-white&#34;&gt;
+    Skills
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;div class=&#34;max-w-prose mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-8&#34;&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;w-full&#34;&gt;
+    &lt;div class=&#34;mb-5&#34;&gt;
+      &lt;h3 class=&#34;text-xl font-bold text-gray-900 dark:text-white mb-2&#34;&gt;
+        Community Projects
+      &lt;/h3&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;space-y-4&#34;&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🌱 Hope Garden
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;76%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 76%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                👩‍👩‍👧 Ladies&amp;rsquo; Day
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;52%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 52%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🧒 Children’s Club
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;68%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 68%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;w-full&#34;&gt;
+    &lt;div class=&#34;mb-5&#34;&gt;
+      &lt;h3 class=&#34;text-xl font-bold text-gray-900 dark:text-white mb-2&#34;&gt;
+        Community Outreach
+      &lt;/h3&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;space-y-4&#34;&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🤝 Supporting Marginalized
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;81%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 81%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                👪 Families Help
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;72%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 72%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                ⚖️ Advocacy Care
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;79%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 79%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;w-full&#34;&gt;
+    &lt;div class=&#34;mb-5&#34;&gt;
+      &lt;h3 class=&#34;text-xl font-bold text-gray-900 dark:text-white mb-2&#34;&gt;
+        Collaborative Ministry
+      &lt;/h3&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;space-y-4&#34;&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                👍 Like-Minded Groups
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;73%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 73%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🤞 Christian Orgs
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;80%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 80%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🤝 Working together
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;78%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 78%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  
+  
+  
+  &lt;div class=&#34;w-full&#34;&gt;
+    &lt;div class=&#34;mb-5&#34;&gt;
+      &lt;h3 class=&#34;text-xl font-bold text-gray-900 dark:text-white mb-2&#34;&gt;
+        Interfaith Building
+      &lt;/h3&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;space-y-4&#34;&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                ❤️ Christ’s love
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;91%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 91%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                ♾️ All faiths
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;86%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 86%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      &lt;div class=&#34;skills-item&#34;&gt;
+        &lt;div class=&#34;flex items-center mb-2&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-1 min-w-0&#34;&gt;
+            &lt;div class=&#34;flex items-center justify-between&#34;&gt;
+              &lt;span class=&#34;skills-name font-medium text-gray-800 dark:text-gray-200 truncate&#34;&gt;
+                🇺🇳 Diverse people
+              &lt;/span&gt;
+              
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400 ml-2 flex-shrink-0&#34;&gt;87%&lt;/span&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        &lt;div class=&#34;skills-wrapper &#34;&gt;
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+                 style=&#34;width: 87%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;schedulecsv-in-the-folder&#34;&gt;schedule.csv in the folder&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table class=&#34;table-auto w-full&#34;&gt;
+  
+    
+    
+    &lt;thead&gt;
+      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;Day&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;Time&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;Activity&lt;/th&gt;  &lt;/tr&gt;
+    &lt;/thead&gt;
+  
+  &lt;tbody&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;Mon&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;09:00&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;Opening&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;Mon&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;10:00&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;Keynote&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+  &lt;/tbody&gt;
+  
+&lt;/table&gt;
+
+&lt;h2 id=&#34;place-faqyaml-into-data-folder&#34;&gt;Place faq.yaml into data folder&lt;/h2&gt;
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;max-w-prose mx-auto&#34;&gt;
+  
+    &lt;h2 class=&#34;text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6&#34;&gt;Frequently Asked Questions&lt;/h2&gt;
+  
+  
+  
+    &lt;div class=&#34;text-lg text-gray-600 dark:text-gray-400 mb-8&#34;&gt;Find answers to common questions below.&lt;/div&gt;
+  
+
+  
+  &lt;div class=&#34;space-y-4&#34;&gt;
+    
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+      &lt;button
+        type=&#34;button&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
+        onclick=&#34;togglePanel(this)&#34;
+      &gt;
+        &lt;div class=&#34;flex justify-between items-center&#34;&gt;
+          &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;How do I get started with Hugo?&lt;/span&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      
+      &lt;div class=&#34;accordion-content hidden&#34;&gt;
+        &lt;div class=&#34;px-6 py-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700&#34;&gt;
+          &lt;div class=&#34;prose prose-slate lg:prose-lg dark:prose-invert max-w-none&#34;&gt;&lt;p&gt;Getting started with Hugo is simple:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Install Hugo&lt;/strong&gt; from the official website&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create a new site&lt;/strong&gt; with &lt;code&gt;hugo new site mysite&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose a theme&lt;/strong&gt; and configure it&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add content&lt;/strong&gt; and deploy&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+      &lt;button
+        type=&#34;button&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
+        onclick=&#34;togglePanel(this)&#34;
+      &gt;
+        &lt;div class=&#34;flex justify-between items-center&#34;&gt;
+          &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;What is a shortcode?&lt;/span&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      
+      &lt;div class=&#34;accordion-content hidden&#34;&gt;
+        &lt;div class=&#34;px-6 py-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700&#34;&gt;
+          &lt;div class=&#34;prose prose-slate lg:prose-lg dark:prose-invert max-w-none&#34;&gt;&lt;p&gt;Shortcodes are simple snippets inside your content files that Hugo renders using predefined templates.&lt;/p&gt;
+&lt;p&gt;They allow you to embed complex HTML without writing it directly in your Markdown.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+      &lt;button
+        type=&#34;button&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
+        onclick=&#34;togglePanel(this)&#34;
+      &gt;
+        &lt;div class=&#34;flex justify-between items-center&#34;&gt;
+          &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;How do I customize this accordion?&lt;/span&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      
+      &lt;div class=&#34;accordion-content hidden&#34;&gt;
+        &lt;div class=&#34;px-6 py-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700&#34;&gt;
+          &lt;div class=&#34;prose prose-slate lg:prose-lg dark:prose-invert max-w-none&#34;&gt;&lt;p&gt;You can customize the accordion by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Modifying the CSS&lt;/strong&gt; in the shortcode template&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adjusting the max-height&lt;/strong&gt; for different content sizes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changing colors&lt;/strong&gt; to match your theme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Adding animations&lt;/strong&gt; or transitions&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;script&gt;
+function togglePanel(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector(&#39;svg&#39;);
+  
+  if (content.classList.contains(&#39;hidden&#39;)) {
+    content.classList.remove(&#39;hidden&#39;);
+    icon.classList.add(&#39;rotate-180&#39;);
+  } else {
+    content.classList.add(&#39;hidden&#39;);
+    icon.classList.remove(&#39;rotate-180&#39;);
+  }
+}
+&lt;/script&gt;
+
+&lt;h2 id=&#34;tag-cloud-series-categories-tags&#34;&gt;Tag cloud Series, Categories, Tags&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;div class=&#34;w-full text-center&#34;&gt;
+  
+
+  
+    
+    
+    
+    
+    
+
+    &lt;div class=&#34;flex flex-wrap gap-2 justify-center items-center leading-relaxed&#34;&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/series/charity/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;4 posts&#34;&gt;
+          Charity
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/series/hongo/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;4 posts&#34;&gt;
+          Hongo
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/series/terms/&#34;
+           class=&#34;text-2xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;6 posts&#34;&gt;
+          Terms
+        &lt;/a&gt;
+      
+    &lt;/div&gt;
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;div class=&#34;w-full text-center&#34;&gt;
+  
+
+  
+    
+    
+    
+    
+    
+
+    &lt;div class=&#34;flex flex-wrap gap-2 justify-center items-center leading-relaxed&#34;&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/categories/charity/&#34;
+           class=&#34;text-lg text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;4 posts&#34;&gt;
+          Charity
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/categories/hello/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;3 posts&#34;&gt;
+          Hello
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/categories/site/&#34;
+           class=&#34;text-2xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;6 posts&#34;&gt;
+          Site
+        &lt;/a&gt;
+      
+    &lt;/div&gt;
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+&lt;div class=&#34;w-full text-center&#34;&gt;
+  
+
+  
+    
+    
+    
+    
+    
+
+    &lt;div class=&#34;flex flex-wrap gap-2 justify-center items-center leading-relaxed&#34;&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/academic/&#34;
+           class=&#34;text-lg text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;2 posts&#34;&gt;
+          Academic
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/disclaimer/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;1 post&#34;&gt;
+          Disclaimer
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/hugo/&#34;
+           class=&#34;text-lg text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;2 posts&#34;&gt;
+          Hugo
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/hugo-blox/&#34;
+           class=&#34;text-xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;4 posts&#34;&gt;
+          Hugo Blox
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/hugo-blox-builder/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;1 post&#34;&gt;
+          Hugo Blox Builder
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/large-language-models/&#34;
+           class=&#34;text-lg text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;2 posts&#34;&gt;
+          Large Language Models
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/markdown/&#34;
+           class=&#34;text-2xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;6 posts&#34;&gt;
+          Markdown
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/privacy/&#34;
+           class=&#34;text-3xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;9 posts&#34;&gt;
+          Privacy
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/second-brain/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;1 post&#34;&gt;
+          Second Brain
+        &lt;/a&gt;
+      
+        
+        
+        
+
+        
+        
+          
+        
+
+        &lt;a href=&#34;http://localhost:1313/tags/source-themes/&#34;
+           class=&#34;text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;1 post&#34;&gt;
+          Source Themes
+        &lt;/a&gt;
+      
+    &lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css&#34;&gt;
+    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js&#34;&gt;&lt;/script&gt;&lt;style&gt;
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1px;
+    padding: 0;
+  }
+  .gallery-item {
+    flex: 0 0 auto;
+    margin: 1px;
+    padding: 0;
+    line-height: 0;
+  }
+  &lt;/style&gt;
+
+  &lt;div class=&#34;gallery-row mb-6&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1756895513&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
+      GLightbox({
+        selector: &#39;[data-gallery=&#34;gallery-1756895513&#34;]&#39;,
+        touchNavigation: true,
+        loop: true,
+        zoomable: true,
+        draggable: true,
+        openEffect: &#39;fade&#39;,
+        closeEffect: &#39;fade&#39;
+      })
+    );
+    &lt;/script&gt;
+&lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
+
+&lt;div id=&#34;slider-1756895513&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+  
+  
+  &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
+      &lt;div class=&#34;relative w-full flex items-center justify-center text-white &#34; 
+           data-carousel-item=&#34;active&#34;
+           style=&#34; height: 400px; background-color: #1f2937;background-image: linear-gradient(45deg, #1f2937, #374151);background-image: url(&amp;#39;http://localhost:1313/media/pexels-cottonbro-4255394.jpg&amp;#39;); background-repeat: no-repeat; background-position: center; background-size: cover;&#34;&gt;
+        
+        
+        &lt;div class=&#34;absolute inset-0 w-full h-full flex items-center justify-center&#34; 
+             style=&#34;-webkit-backdrop-filter: brightness(0.7); backdrop-filter: brightness(0.7);&#34;&gt;
+          
+          
+          &lt;div class=&#34;container mx-auto px-6 lg:px-24 xl:px-32 relative z-10 
+            text-center
+            &#34;
+            style=&#34;margin-left: 6rem; margin-right: 6rem;&#34;&gt;
+            
+            &lt;h1 class=&#34;text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white
+                       mx-auto max-w-4xl
+                       &#34;&gt;
+              Welcome to Our Site
+            &lt;/h1&gt;&lt;div class=&#34;text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed text-white opacity-95
+                        mx-auto max-w-3xl
+                        &#34;
+                 style=&#34;margin: 0 auto 0 auto;&#34;&gt;
+              Discover amazing content and features that will transform your experience.
+            &lt;/div&gt;&lt;div class=&#34;mt-8&#34;&gt;
+                &lt;a href=&#34;http://localhost:1313/get-started/&#34; 
+                   class=&#34;inline-flex items-center px-8 py-4 text-lg font-semibold
+                          bg-white text-gray-900 rounded-lg shadow-lg
+                          hover:bg-gray-100 hover:shadow-xl
+                          transition-all duration-300 transform hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50&#34;&gt;&lt;i class=&#34;fas fa-rocket mr-3&#34;&gt;&lt;/i&gt;Get Started
+                &lt;/a&gt;
+              &lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;relative w-full flex items-center justify-center text-white hidden&#34; 
+           data-carousel-item
+           style=&#34; height: 400px; background-color: #059669;background-image: url(&amp;#39;http://localhost:1313/media/pexels-jibarofoto-14373404.jpg&amp;#39;); background-repeat: no-repeat; background-position: center; background-size: cover;&#34;&gt;
+        
+        
+        &lt;div class=&#34;absolute inset-0 w-full h-full flex items-center justify-center&#34; 
+             style=&#34;&#34;&gt;
+          
+          
+          &lt;div class=&#34;container mx-auto px-6 lg:px-24 xl:px-32 relative z-10 
+            text-left&#34;
+            style=&#34;margin-left: 6rem; margin-right: 6rem;&#34;&gt;
+            
+            &lt;h1 class=&#34;text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white
+                       max-w-4xl&#34;&gt;
+              Powerful Features
+            &lt;/h1&gt;&lt;div class=&#34;text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed text-white opacity-95
+                        max-w-3xl&#34;
+                 style=&#34;&#34;&gt;
+              Experience cutting-edge functionality designed for modern users.
+            &lt;/div&gt;&lt;div class=&#34;mt-8&#34;&gt;
+                &lt;a href=&#34;http://localhost:1313/features/&#34; 
+                   class=&#34;inline-flex items-center px-8 py-4 text-lg font-semibold
+                          bg-white text-gray-900 rounded-lg shadow-lg
+                          hover:bg-gray-100 hover:shadow-xl
+                          transition-all duration-300 transform hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50&#34;&gt;&lt;i class=&#34;fas fa-arrow-right mr-3&#34;&gt;&lt;/i&gt;Learn More
+                &lt;/a&gt;
+              &lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;relative w-full flex items-center justify-center text-white hidden&#34; 
+           data-carousel-item
+           style=&#34; height: 400px;background-image: linear-gradient(135deg, #7c3aed, #a855f7);&#34;&gt;
+        
+        
+        &lt;div class=&#34;absolute inset-0 w-full h-full flex items-center justify-center&#34; 
+             style=&#34;&#34;&gt;
+          
+          
+          &lt;div class=&#34;container mx-auto px-6 lg:px-24 xl:px-32 relative z-10 
+            text-right
+            &#34;
+            style=&#34;margin-left: 6rem; margin-right: 6rem;&#34;&gt;
+            
+            &lt;h1 class=&#34;text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white
+                       ml-auto max-w-4xl
+                       &#34;&gt;
+              Join Our Community
+            &lt;/h1&gt;&lt;div class=&#34;text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed text-white opacity-95
+                        ml-auto max-w-3xl
+                        &#34;
+                 style=&#34;margin-left: auto; margin-right: 0&#34;&gt;
+              Connect with thousands of users worldwide and share your journey.
+            &lt;/div&gt;&lt;div class=&#34;mt-8&#34;&gt;
+                &lt;a href=&#34;http://localhost:1313/community/&#34; 
+                   class=&#34;inline-flex items-center px-8 py-4 text-lg font-semibold
+                          bg-white text-gray-900 rounded-lg shadow-lg
+                          hover:bg-gray-100 hover:shadow-xl
+                          transition-all duration-300 transform hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50&#34;&gt;&lt;i class=&#34;fas fa-users mr-3&#34;&gt;&lt;/i&gt;Join Now
+                &lt;/a&gt;
+              &lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3&#34;&gt;&lt;button type=&#34;button&#34; 
+            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+                   border-2 backdrop-blur-md shadow-xl
+                   
+                     bg-white border-gray-900 shadow-gray-900/70
+                     ring-2 ring-gray-900/40 ring-offset-2 ring-offset-white/20
+                   &#34; 
+            aria-current=&#34;true&#34; 
+            aria-label=&#34;Slide 1&#34; 
+            data-carousel-slide-to=&#34;0&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
+            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+                   border-2 backdrop-blur-md shadow-xl
+                   
+                     bg-gray-900/70 border-white/80 shadow-black/60
+                     hover:bg-gray-900/90 hover:border-white 
+                     hover:shadow-black/80 hover:scale-125
+                     hover:ring-2 hover:ring-white/50
+                   &#34; 
+            aria-current=&#34;false&#34; 
+            aria-label=&#34;Slide 2&#34; 
+            data-carousel-slide-to=&#34;1&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
+            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+                   border-2 backdrop-blur-md shadow-xl
+                   
+                     bg-gray-900/70 border-white/80 shadow-black/60
+                     hover:bg-gray-900/90 hover:border-white 
+                     hover:shadow-black/80 hover:scale-125
+                     hover:ring-2 hover:ring-white/50
+                   &#34; 
+            aria-current=&#34;false&#34; 
+            aria-label=&#34;Slide 3&#34; 
+            data-carousel-slide-to=&#34;2&#34;&gt;&lt;/button&gt;&lt;/div&gt;
+  &lt;button type=&#34;button&#34; 
+          class=&#34;absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
+          data-carousel-prev&gt;
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+                 bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
+                 hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
+                 group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
+                 transition-all duration-300 shadow-lg&#34;&gt;
+      &lt;svg class=&#34;w-6 h-6 text-white drop-shadow-lg&#34; aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 6 10&#34;&gt;
+        &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2.5&#34; d=&#34;M5 1 1 5l4 4&#34;/&gt;
+      &lt;/svg&gt;
+      &lt;span class=&#34;sr-only&#34;&gt;Previous&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+
+  
+  &lt;button type=&#34;button&#34; 
+          class=&#34;absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
+          data-carousel-next&gt;
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+                 bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
+                 hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
+                 group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
+                 transition-all duration-300 shadow-lg&#34;&gt;
+      &lt;svg class=&#34;w-6 h-6 text-white drop-shadow-lg&#34; aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 6 10&#34;&gt;
+        &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2.5&#34; d=&#34;m1 9 4-4-4-4&#34;/&gt;
+      &lt;/svg&gt;
+      &lt;span class=&#34;sr-only&#34;&gt;Next&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;&lt;/div&gt;
+
+
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const carousel = document.getElementById(&#39;slider-1756895513&#39;);
+  if (!carousel) return;
+  
+  const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
+  const indicators = carousel.querySelectorAll(&#39;[data-carousel-slide-to]&#39;);
+  const prevButton = carousel.querySelector(&#39;[data-carousel-prev]&#39;);
+  const nextButton = carousel.querySelector(&#39;[data-carousel-next]&#39;);
+  
+  let currentIndex = 0;
+  let autoplayInterval;
+  
+  function showSlide(index) {
+    if (index &lt; 0) index = items.length - 1;
+    if (index &gt;= items.length) index = 0;
+    
+    items.forEach((item, i) =&gt; {
+      if (i === index) {
+        item.classList.remove(&#39;hidden&#39;);
+        item.setAttribute(&#39;data-carousel-item&#39;, &#39;active&#39;);
+      } else {
+        item.classList.add(&#39;hidden&#39;);
+        item.setAttribute(&#39;data-carousel-item&#39;, &#39;&#39;);
+      }
+    });
+    
+    indicators.forEach((indicator, i) =&gt; {
+      if (i === index) {
+        indicator.classList.remove(&#39;bg-gray-900/70&#39;);
+        indicator.classList.add(&#39;bg-white&#39;);
+        indicator.setAttribute(&#39;aria-current&#39;, &#39;true&#39;);
+      } else {
+        indicator.classList.add(&#39;bg-gray-900/70&#39;);
+        indicator.classList.remove(&#39;bg-white&#39;);
+        indicator.setAttribute(&#39;aria-current&#39;, &#39;false&#39;);
+      }
+    });
+    
+    currentIndex = index;
+  }
+  
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+  
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+  
+  if (nextButton) {
+    nextButton.addEventListener(&#39;click&#39;, (e) =&gt; {
+      e.preventDefault();
+      nextSlide();
+      resetAutoplay();
+    });
+  }
+  
+  if (prevButton) {
+    prevButton.addEventListener(&#39;click&#39;, (e) =&gt; {
+      e.preventDefault();
+      prevSlide();
+      resetAutoplay();
+    });
+  }
+  
+  indicators.forEach((indicator, index) =&gt; {
+    indicator.addEventListener(&#39;click&#39;, (e) =&gt; {
+      e.preventDefault();
+      showSlide(index);
+      resetAutoplay();
+    });
+  });
+  
+  
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, &#34;4000&#34;);
+  }
+  
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+    }
+  }
+  
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+  
+  startAutoplay();
+  
+  carousel.addEventListener(&#39;mouseenter&#39;, stopAutoplay);
+  carousel.addEventListener(&#39;mouseleave&#39;, startAutoplay);
+  
+  
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if (e.target.closest(&#39;#slider-1756895513&#39;) || e.target === document.body) {
+      if (e.key === &#39;ArrowLeft&#39;) {
+        e.preventDefault();
+        prevSlide();
+        resetAutoplay();
+      } else if (e.key === &#39;ArrowRight&#39;) {
+        e.preventDefault();
+        nextSlide();
+        resetAutoplay();
+      }
+    }
+  });
+  
+  
+  let startX = 0;
+  let startY = 0;
+  
+  carousel.addEventListener(&#39;touchstart&#39;, (e) =&gt; {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  });
+  
+  carousel.addEventListener(&#39;touchend&#39;, (e) =&gt; {
+    if (!startX || !startY) return;
+    
+    const endX = e.changedTouches[0].clientX;
+    const endY = e.changedTouches[0].clientY;
+    
+    const diffX = startX - endX;
+    const diffY = startY - endY;
+    
+    if (Math.abs(diffX) &gt; Math.abs(diffY) &amp;&amp; Math.abs(diffX) &gt; 50) {
+      if (diffX &gt; 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      resetAutoplay();
+    }
+    
+    startX = 0;
+    startY = 0;
+  });
+});
+&lt;/script&gt;
+&lt;h2 id=&#34;pricing&#34;&gt;Pricing&lt;/h2&gt;
+
+&lt;section&gt;
+  &lt;div class=&#34;max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16&#34;&gt;
+
+    
+    &lt;div class=&#34;grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 md:gap-8&#34;&gt;&lt;div class=&#34;flex flex-col rounded-2xl shadow-lg border
+                  &#34;&gt;
+        
+        &lt;div class=&#34;p-4 sm:px-6 flex flex-col items-center text-center&#34;&gt;
+
+          &lt;h2 class=&#34;text-base font-semibold text-gray-900 dark:text-white&#34;&gt;Starter&lt;/h2&gt;
+            &lt;div class=&#34;px-4 sm:px-6&#34;&gt;
+          &lt;p class=&#34;text-base text-gray-700 dark:text-gray-300 text-center&#34;&gt;Perfect for individuals and small projects&lt;/p&gt;
+        &lt;/div&gt;&lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
+            &lt;span&gt;$9&lt;/span&gt;&lt;span class=&#34;text-xl font-normal text-gray-900 dark:text-white&#34;&gt;/month&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;px-4 sm:px-6 pb-3 flex-1&#34;&gt;
+          &lt;p class=&#34;text-base font-medium text-gray-900 dark:text-white mb-2 text-left&#34;&gt;What&#39;s included:&lt;/p&gt;
+
+          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Up to 5 projects&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;10GB storage&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Basic support&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
+            &lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;&lt;div class=&#34;p-4 sm:px-6 mt-auto&#34;&gt;
+          &lt;a
+            class=&#34;block w-full rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300&#34;
+            href=&#34;http://localhost:1313/signup/&#34;
+            target=&#34;_self&#34;
+          &gt;
+            Get Started
+          &lt;/a&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;flex flex-col rounded-2xl shadow-lg border
+                  border-2 border-primary-600 dark:border-primary-400 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900&#34;&gt;
+        
+        &lt;div class=&#34;p-4 sm:px-6 flex flex-col items-center text-center&#34;&gt;
+
+          &lt;h2 class=&#34;text-base font-semibold text-gray-900 dark:text-white&#34;&gt;Professional&lt;/h2&gt;
+            &lt;div class=&#34;px-4 sm:px-6&#34;&gt;
+          &lt;p class=&#34;text-base text-gray-700 dark:text-gray-300 text-center&#34;&gt;Ideal for growing businesses and teams&lt;/p&gt;
+        &lt;/div&gt;&lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
+            &lt;span&gt;$29&lt;/span&gt;&lt;span class=&#34;text-xl font-normal text-gray-900 dark:text-white&#34;&gt;/month&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;px-4 sm:px-6 pb-3 flex-1&#34;&gt;
+          &lt;p class=&#34;text-base font-medium text-gray-900 dark:text-white mb-2 text-left&#34;&gt;What&#39;s included:&lt;/p&gt;
+
+          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Unlimited projects&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;100GB storage&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
+            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              &lt;svg class=&#34;w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
+              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Custom integrations&lt;/span&gt;
+            &lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;&lt;div class=&#34;p-4 sm:px-6 mt-auto&#34;&gt;
+          &lt;a
+            class=&#34;block w-full rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300&#34;
+            href=&#34;http://localhost:1313/trial/&#34;
+            target=&#34;_self&#34;
+          &gt;
+            Start Free Trial
+          &lt;/a&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+    &lt;div class=&#34;text-center mt-16&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/contact/&#34; 
+         target=&#34;_blank&#34;
+         class=&#34;inline-flex items-center gap-2 rounded-full border-2 border-primary-600 bg-white dark:bg-gray-900 text-primary-600 dark:text-primary-400 px-8 py-3 text-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-primary-300&#34;&gt;
+       Questions? Contact us
+      &lt;/a&gt;
+    &lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;h2 id=&#34;tag-image-folder-datatag-image&#34;&gt;Tag image folder data/tag-image&lt;/h2&gt;
+
+&lt;section class=&#34;mx-auto max-w-screen-xl py-8 px-8&#34;&gt;
+
+    
+    &lt;div class=&#34;flex flex-wrap justify-center items-start gap-8 md:gap-12 lg:gap-16&#34;&gt;&lt;a href=&#34;http://localhost:1313/tags/css&#34; 
+           
+           class=&#34;group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-shrink-0&#34;&gt;&lt;div class=&#34;h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors&#34;
+                   style=&#34;height: 50px;&#34;&gt;
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;CSS&lt;/span&gt;
+              &lt;/div&gt;&lt;/div&gt;
+          
+          
+          &lt;div class=&#34;text-center&#34;&gt;
+            &lt;h4 class=&#34;text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors&#34;&gt;
+              CSS
+            &lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;&lt;a href=&#34;http://localhost:1313/tags/python&#34; 
+           
+           class=&#34;group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-shrink-0&#34;&gt;&lt;div class=&#34;h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors&#34;
+                   style=&#34;height: 50px;&#34;&gt;
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;Python&lt;/span&gt;
+              &lt;/div&gt;&lt;/div&gt;
+          
+          
+          &lt;div class=&#34;text-center&#34;&gt;
+            &lt;h4 class=&#34;text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors&#34;&gt;
+              Python
+            &lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;&lt;a href=&#34;http://localhost:1313/tags/vue&#34; 
+           
+           class=&#34;group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-shrink-0&#34;&gt;&lt;div class=&#34;h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors&#34;
+                   style=&#34;height: 50px;&#34;&gt;
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;Vue.js&lt;/span&gt;
+              &lt;/div&gt;&lt;/div&gt;
+          
+          
+          &lt;div class=&#34;text-center&#34;&gt;
+            &lt;h4 class=&#34;text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors&#34;&gt;
+              Vue.js
+            &lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;&lt;a href=&#34;http://localhost:1313/tags/nodejs&#34; 
+           
+           class=&#34;group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300&#34;&gt;
+          
+          
+          &lt;div class=&#34;flex-shrink-0&#34;&gt;&lt;div class=&#34;h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors&#34;
+                   style=&#34;height: 50px;&#34;&gt;
+                &lt;span class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;Node.js&lt;/span&gt;
+              &lt;/div&gt;&lt;/div&gt;
+          
+          
+          &lt;div class=&#34;text-center&#34;&gt;
+            &lt;h4 class=&#34;text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors&#34;&gt;
+              Node.js
+            &lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;h2 id=&#34;text-overlay&#34;&gt;Text Overlay&lt;/h2&gt;
+
+&lt;section class=&#34;mx-auto max-w-7xl px-1 lg:px-0 pt-8 pb-8&#34;&gt;
+    
+    
+    &lt;div class=&#34;mx-auto max-w-7xl mt-0 mb-4&#34;&gt;
+    
+    &lt;div class=&#34;flex flex-col&#34;&gt;&lt;div class=&#34;px-1 md:px-6 lg:px-0&#34;&gt;
+      
+      &lt;div class=&#34;w-16 border-2 border-primary-700 mb-4 px-2&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      
+        &lt;div class=&#34;grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-6 px-0 md:px-0&#34;&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;img src=&#34;http://localhost:1313/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp&#34; 
+                 alt=&#34;Top Left Title&#34; 
+                 class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute top-0 left-0 pt-6 pl-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Top Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;img src=&#34;http://localhost:1313/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp&#34; 
+                 alt=&#34;Top Center&#34; 
+                 class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute left-0 right-0 top-0 pt-6 px-6 text-gray-900 dark:text-white text-center&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Top Center &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute top-0 right-0 pt-6 pr-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Top Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears in the top-right corner
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute left-0 top-1/2 transform -translate-y-1/2 pl-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Center Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears on the left side, vertically centered
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute inset-0 flex items-center justify-center p-6&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-lg shadow-2xl text-center text-gray-900 dark:text-white backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Perfect Center Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears in the exact center
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute right-0 top-1/2 transform -translate-y-1/2 pr-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Center Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears on the right side, vertically centered
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute bottom-0 left-0 pb-6 pl-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg font-semibold dark:font-regular p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Bottom Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears in the bottom-left corner
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute left-0 right-0 bottom-0 pb-6 px-6 text-gray-900 dark:text-white text-center&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Bottom Center Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears at the bottom center
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+            
+            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
+            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+            
+            
+            &lt;div class=&#34;absolute bottom-0 right-0 pb-6 pr-6 text-gray-900 dark:text-white&#34;&gt;
+              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
+                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                      Bottom Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
+                    This text appears in the bottom-right corner
+                  &lt;/div&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+          &lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/section&gt;
+&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+
+&lt;section class=&#34;mx-auto max-w-screen-xl py-8 px-8&#34;&gt;
+
+    
+    &lt;div class=&#34;grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center&#34;&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;https://amazon.com/book1&#34; 
+             target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/cover_hu_b1cf13bf6ce37c76.webp&#34; 
+                   alt=&#34;The Great Adventure&#34; 
+                   class=&#34;w-full h-full object-cover transition-all duration-300 group-hover:scale-105&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;
+                   loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;https://amazon.com/book1&#34; 
+               target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                The Great Adventure
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              An epic journey through mystical lands filled with wonder and danger. A tale of courage, friendship, and discovery.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;https://amazon.com/book2&#34; 
+             target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/cover_hu_b1cf13bf6ce37c76.webp&#34; 
+                   alt=&#34;Digital Marketing Mastery&#34; 
+                   class=&#34;w-full h-full object-cover transition-all duration-300 group-hover:scale-105&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;
+                   loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;https://amazon.com/book2&#34; 
+               target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                Digital Marketing Mastery
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              Complete guide to modern digital marketing strategies, social media, and online business growth.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;http://localhost:1313/books/cooking-with-love&#34; 
+             
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;
+              &lt;div class=&#34;w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;&gt;
+                &lt;div&gt;
+                  &lt;div class=&#34;text-gray-500 dark:text-gray-400 text-4xl mb-2&#34;&gt;📖&lt;/div&gt;
+                  &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-300 font-medium&#34;&gt;Cooking with Love&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/books/cooking-with-love&#34; 
+               
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                Cooking with Love
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              Traditional family recipes passed down through generations, with modern twists and healthy alternatives.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;https://bookstore.com/happiness&#34; 
+             target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;
+              &lt;div class=&#34;w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;&gt;
+                &lt;div&gt;
+                  &lt;div class=&#34;text-gray-500 dark:text-gray-400 text-4xl mb-2&#34;&gt;📖&lt;/div&gt;
+                  &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-300 font-medium&#34;&gt;The Science of Happiness&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;https://bookstore.com/happiness&#34; 
+               target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                The Science of Happiness
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              Research-based approaches to building lasting happiness and well-being in your daily life.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;http://localhost:1313/photography-guide&#34; 
+             
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;
+              &lt;div class=&#34;w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;&gt;
+                &lt;div&gt;
+                  &lt;div class=&#34;text-gray-500 dark:text-gray-400 text-4xl mb-2&#34;&gt;📖&lt;/div&gt;
+                  &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-300 font-medium&#34;&gt;Travel Photography Guide&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/photography-guide&#34; 
+               
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                Travel Photography Guide
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              Professional tips and techniques for capturing stunning travel photographs around the world.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;group flex flex-col items-center max-w-[200px] w-full&#34;&gt;
+          
+          
+          &lt;a href=&#34;https://publisher.com/mindful-leadership&#34; 
+             target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+             class=&#34;block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1&#34;&gt;
+              &lt;div class=&#34;w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4&#34;
+                   style=&#34;width: 200px; height: 300px;&#34;&gt;
+                &lt;div&gt;
+                  &lt;div class=&#34;text-gray-500 dark:text-gray-400 text-4xl mb-2&#34;&gt;📖&lt;/div&gt;
+                  &lt;span class=&#34;text-sm text-gray-600 dark:text-gray-300 font-medium&#34;&gt;Mindful Leadership&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;&lt;/a&gt;
+          
+          
+          &lt;div class=&#34;text-center w-full mb-2&#34;&gt;
+            &lt;a href=&#34;https://publisher.com/mindful-leadership&#34; 
+               target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;
+               class=&#34;block&#34;&gt;
+              &lt;h3 class=&#34;text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 line-clamp-2 leading-tight&#34;&gt;
+                Mindful Leadership
+              &lt;/h3&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&#34;text-center w-full&#34;&gt;
+            &lt;p class=&#34;text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3&#34;&gt;
+              How to lead teams with empathy, awareness, and authentic communication in today&amp;rsquo;s workplace.
+            &lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;style&gt;
+ 
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+&lt;/style&gt;
+</description>
+    </item>
+    
+    <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
       <link>http://localhost:1313/post/get-started/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>

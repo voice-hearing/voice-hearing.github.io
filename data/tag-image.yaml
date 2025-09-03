@@ -1,0 +1,16 @@
+- name: "CSS"
+  image: "tags/css.svg"
+  url: "/tags/css"
+  count: 35
+- name: "Python"
+  image: "tags/python.svg"
+  url: "/tags/python"
+  count: 19
+- name: "Vue.js"
+  image: "tags/vue.svg"
+  url: "/tags/vue"
+  count: 15
+- name: "Node.js"
+  image: "tags/nodejs.svg"
+  url: "/tags/nodejs"
+  count: 23

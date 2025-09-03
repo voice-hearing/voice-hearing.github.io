@@ -1,0 +1,129 @@
+{{/* Hugo Blox: Accordion - Fixed Version */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $items := $block.content.items | default slice }}
+{{ $allow_multiple := $block.design.allow_multiple | default false }}
+{{ $expand_first := $block.design.expand_first | default false }}
+
+<div class="max-w-prose mx-auto">
+  {{ with $block.content.title }}
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6">{{ . | markdownify | emojify }}</h2>
+  {{ end }}
+  
+  {{ with $block.content.text }}
+    <div class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+      {{ . | markdownify | emojify }}
+    </div>
+  {{ end }}
+
+  <div class="space-y-4" id="accordion-{{ $block.hash_id | default "default" }}">
+    {{ range $index, $item := $items }}
+    <div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item">
+      <button
+        type="button"
+        class="accordion-toggle w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-all duration-200"
+        data-index="{{ $index }}"
+        data-allow-multiple="{{ $allow_multiple }}"
+        aria-expanded="{{ if and $expand_first (eq $index 0) }}true{{ else }}false{{ end }}"
+      >
+        <div class="flex justify-between items-center">
+          <span class="text-lg font-semibold text-gray-900 dark:text-gray-100 pr-4">
+            {{ $item.title | markdownify | emojify }}
+          </span>
+          <svg 
+            class="accordion-icon w-5 h-5 text-gray-500 transition-transform duration-200 flex-shrink-0{{ if and $expand_first (eq $index 0) }} rotate-180{{ end }}"
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </div>
+      </button>
+      
+      <div class="accordion-content transition-all duration-300 ease-in-out{{ if and $expand_first (eq $index 0) }} accordion-open{{ else }} accordion-closed{{ end }}">
+        <div class="px-6 py-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+          <div class="prose prose-slate lg:prose-lg dark:prose-invert max-w-none">
+            {{ $item.content | markdownify | emojify }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<style>
+.accordion-closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.accordion-closed > div {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.accordion-open {
+  max-height: 500px; /* Adjust as needed for your content */
+  opacity: 1;
+  overflow: visible;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const accordions = document.querySelectorAll('[id^="accordion-"]');
+  
+  accordions.forEach(function(accordion) {
+    const toggles = accordion.querySelectorAll('.accordion-toggle');
+    
+    toggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        const index = parseInt(this.getAttribute('data-index'));
+        const allowMultiple = this.getAttribute('data-allow-multiple') === 'true';
+        const accordionItem = this.closest('.accordion-item');
+        const content = accordionItem.querySelector('.accordion-content');
+        const icon = this.querySelector('.accordion-icon');
+        const isOpen = this.getAttribute('aria-expanded') === 'true';
+        
+        // If not allowing multiple, close all other items first
+        if (!allowMultiple && !isOpen) {
+          toggles.forEach(function(otherToggle, otherIndex) {
+            if (otherIndex !== index) {
+              const otherItem = otherToggle.closest('.accordion-item');
+              const otherContent = otherItem.querySelector('.accordion-content');
+              const otherIcon = otherToggle.querySelector('.accordion-icon');
+              
+              otherToggle.setAttribute('aria-expanded', 'false');
+              otherContent.classList.remove('accordion-open');
+              otherContent.classList.add('accordion-closed');
+              otherIcon.classList.remove('rotate-180');
+            }
+          });
+        }
+        
+        // Toggle current item
+        if (isOpen) {
+          // Close
+          this.setAttribute('aria-expanded', 'false');
+          content.classList.remove('accordion-open');
+          content.classList.add('accordion-closed');
+          icon.classList.remove('rotate-180');
+        } else {
+          // Open
+          this.setAttribute('aria-expanded', 'true');
+          content.classList.remove('accordion-closed');
+          content.classList.add('accordion-open');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  });
+});
+</script>

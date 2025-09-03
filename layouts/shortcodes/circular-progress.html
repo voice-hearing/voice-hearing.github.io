@@ -1,0 +1,47 @@
+{{/* Hugo Circular Progress Shortcode - Fixed */}}
+{{/* Usage: {{< circular-progress title="My Skills" items="JavaScript:85,Python:75,CSS:90" >}} */}}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+  {{ with (.Get "title") }}
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ . | markdownify | emojify }}
+  </div>
+  {{ end }}
+  
+  {{ with (.Get "text") }}
+  <p class="text-center text-gray-600 dark:text-gray-300 mb-4">{{ . | markdownify | emojify }}</p>
+  {{ end }}
+  
+  <div class="flex items-center flex-col lg:flex-row gap-x-8 gap-y-6">
+    {{ $items := split (.Get "items") "," }}
+    {{ range $items }}
+    {{ $parts := split . ":" }}
+    {{ $name := index $parts 0 }}
+    {{ $percentStr := index $parts 1 }}
+    {{ $percent := int $percentStr }}
+    
+    {{/* Calculate circle values */}}
+    {{ $radius := 56 }}
+    {{ $circumference := mul 2 3.14159 $radius }}
+    {{ $progress := div (mul $circumference $percent) 100 }}
+    {{ $offset := sub $circumference $progress }}
+    
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-32 h-32 relative">
+        <svg class="transform -rotate-90 w-32 h-32" viewBox="0 0 144 144">
+          <!-- Background circle -->
+          <circle cx="72" cy="72" r="56" stroke="currentColor" stroke-width="12" 
+                  fill="transparent" class="text-gray-300 dark:text-gray-600" />
+          <!-- Progress circle -->
+          <circle cx="72" cy="72" r="56" stroke="currentColor" stroke-width="12" 
+                  fill="transparent" class="text-primary-500 dark:text-primary-400"
+                  style="stroke-dasharray: {{ $circumference }}; stroke-dashoffset: {{ $offset }};" />
+        </svg>
+        <!-- Percentage text -->
+        <span class="absolute text-2xl font-bold text-gray-900 dark:text-white">{{ $percent }}%</span>
+      </div>
+      <span class="text-lg font-medium text-gray-800 dark:text-gray-200 mt-2 text-center">{{ $name }}</span>
+    </div>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,77 @@
+{{- $folder   := .Get "folder"               -}}
+{{- $columns  := .Get "columns"  | default "4"  -}}
+{{- $lightbox := .Get "lightbox" | default "true" -}}
+{{- $gap      := .Get "gap"      | default "6"  -}}
+{{- $rounded  := .Get "rounded"  | default "lg" -}}
+{{- $quality  := .Get "quality"  | default "70" -}}
+{{- $id       := delimit (slice "gallery" (now.Unix | string)) "-" -}}
+
+{{- $images := resources.Match (printf "%s/*.{jpg,jpeg,webp,png,gif,svg}" $folder) -}}
+{{- if $images }}
+
+{{- if eq $lightbox "true" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+{{- end }}
+
+<!-- Gallery with Hugo Blox Card Styling -->
+<div class="flex flex-wrap justify-center gap-{{ $gap }} mb-12">
+  {{- range $images }}
+    {{- $thumb := .Fit (printf "300x200 q%s webp"  $quality) -}}
+    {{- $large := .Fit (printf "1200x800 q%s webp" $quality) -}}
+
+    <div class="gallery-card flex flex-col items-center p-2 rounded-{{ $rounded }} shadow-sm hover:shadow-md transition-shadow duration-300 max-w-xs">
+      {{- if eq $lightbox "true" }}
+        <a href="{{ $large.RelPermalink }}"
+           class="block"
+           data-gallery="{{ $id }}"
+           data-title="{{ .Name | plainify }}">
+      {{- else }}
+        <div class="block">
+      {{- end }}
+
+        <img src="{{ $thumb.RelPermalink }}"
+             alt="{{ .Name | plainify }}"
+             class="w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-{{ $rounded }} {{ if eq $lightbox "true" }}cursor-pointer{{ end }}"
+             loading="lazy">
+
+      {{- if eq $lightbox "true" }}
+        </a>
+      {{- else }}
+        </div>
+      {{- end }}
+
+      <!-- Optional: Add image title/caption -->
+  <!--   <div class="text-center">
+        <h3 class="text-sm font-medium text-gray-900 dark:text-white">
+          {{ .Name | plainify | title }}
+        </h3>
+      </div> -->
+    </div>
+  {{- end }}
+</div>
+
+{{- if eq $lightbox "true" }}
+<script>
+document.addEventListener('DOMContentLoaded', () =>
+  GLightbox({
+    selector: '[data-gallery="{{ $id }}"]',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    draggable: true,
+    openEffect: 'fade',
+    closeEffect: 'fade'
+  })
+);
+</script>
+{{- end }}
+
+{{- else }}
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+  <p class="text-sm font-medium text-yellow-700">Gallery notice</p>
+  <p class="text-sm text-yellow-600">
+    No images found in folder: <code>{{ $folder }}</code>
+  </p>
+</div>
+{{- end }}

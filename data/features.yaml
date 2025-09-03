@@ -1,0 +1,23 @@
+- name: "Find Friends"
+  image: "conference-headway-F2KRf_QfCqw.jpg"
+  icon: "/custom/anatomical-heart"
+  description: "Meet new people who share your passion for helping others and building community connections."
+  button:
+    text: "Connect Now"
+    url: "/how-you-can-help/friends/"
+
+- name: "Team Work"
+  image: "childrensclub1.jpg"
+  icon: "/custom/core"
+  description: "Collaborate with others on meaningful projects and experience the power of working together."
+  button:
+    text: "Join Team"
+    url: "/how-you-can-help/teamwork/"
+
+- name: "Personal Growth"
+  image: "childrensclub1.jpg"
+  icon: "/custom/anatomical-heart"
+  description: "Develop personally and professionally while making a positive impact in your community."
+  button:
+    text: "Start Growing"
+    url: "/how-you-can-help/growth/"

@@ -1,0 +1,42 @@
+- name: "Starter"
+  description: "Perfect for individuals and small projects"
+  price: "$9"
+  period: "/month"
+  featured: false
+  features:
+    - text: "Up to 5 projects"
+      included: true
+    - text: "10GB storage"
+      included: true
+    - text: "Basic support"
+      included: true
+    - text: "Advanced analytics"
+      included: false
+    - text: "Priority support"
+      included: false
+  button:
+    text: "Get Started"
+    url: "/signup/"
+    target: "_self"
+
+- name: "Professional"
+  description: "Ideal for growing businesses and teams"
+  price: "$29"
+  period: "/month"
+  featured: true
+  features:
+    - text: "Unlimited projects"
+      included: true
+    - text: "100GB storage"
+      included: true
+    - text: "Priority support"
+      included: true
+    - text: "Advanced analytics"
+      included: true
+    - text: "Custom integrations"
+      included: true
+  button:
+    text: "Start Free Trial"
+    url: "/trial/"
+    target: "_self"
+

@@ -1,0 +1,23 @@
+- title: "How do I get started with Hugo?"
+  content: |
+    Getting started with Hugo is simple:
+    
+    1. **Install Hugo** from the official website
+    2. **Create a new site** with `hugo new site mysite`
+    3. **Choose a theme** and configure it
+    4. **Add content** and deploy
+    
+- title: "What is a shortcode?"
+  content: |
+    Shortcodes are simple snippets inside your content files that Hugo renders using predefined templates.
+    
+    They allow you to embed complex HTML without writing it directly in your Markdown.
+    
+- title: "How do I customize this accordion?"
+  content: |
+    You can customize the accordion by:
+    
+    - **Modifying the CSS** in the shortcode template
+    - **Adjusting the max-height** for different content sizes
+    - **Changing colors** to match your theme
+    - **Adding animations** or transitions

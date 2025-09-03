@@ -1,0 +1,47 @@
+- title: "Welcome to Our Site"
+  content: "Discover amazing content and features that will transform your experience."
+  align: "center"
+  background:
+    color: "#1f2937"
+    gradient_start: "#1f2937"
+    gradient_end: "#374151"
+    gradient_angle: 45
+    image:
+      filename: "pexels-cottonbro-4255394.jpg"
+      position: "center"
+      size: "cover"
+      filters:
+        brightness: 0.7
+  link:
+    text: "Get Started"
+    url: "/get-started/"
+    icon: "rocket"
+    icon_pack: "fas"
+
+- title: "Powerful Features"
+  content: "Experience cutting-edge functionality designed for modern users."
+  align: "left"
+  background:
+    color: "#059669"
+    image:
+      filename: "pexels-jibarofoto-14373404.jpg"
+      position: "center"
+      size: "cover"
+  link:
+    text: "Learn More"
+    url: "/features/"
+    icon: "arrow-right"
+    icon_pack: "fas"
+
+- title: "Join Our Community"
+  content: "Connect with thousands of users worldwide and share your journey."
+  align: "right"
+  background:
+    gradient_start: "#7c3aed"
+    gradient_end: "#a855f7"
+    gradient_angle: 135
+  link:
+    text: "Join Now"
+    url: "/community/"
+    icon: "users"
+    icon_pack: "fas"

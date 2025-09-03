@@ -1,0 +1,30 @@
+
+- name: "The Great Adventure"
+  url: "https://amazon.com/book1"
+  image: "cover.png"
+  description: "An epic journey through mystical lands filled with wonder and danger. A tale of courage, friendship, and discovery."
+  
+- name: "Digital Marketing Mastery"
+  url: "https://amazon.com/book2"  
+  image: "cover.png"
+  description: "Complete guide to modern digital marketing strategies, social media, and online business growth."
+  
+- name: "Cooking with Love"
+  url: "/books/cooking-with-love"
+  image: "book3-cover.jpg"
+  description: "Traditional family recipes passed down through generations, with modern twists and healthy alternatives."
+  
+- name: "The Science of Happiness"
+  url: "https://bookstore.com/happiness"
+  image: "book4-cover.jpg"
+  description: "Research-based approaches to building lasting happiness and well-being in your daily life."
+  
+- name: "Travel Photography Guide"
+  url: "/photography-guide"
+  image: "book5-cover.jpg"
+  description: "Professional tips and techniques for capturing stunning travel photographs around the world."
+  
+- name: "Mindful Leadership"
+  url: "https://publisher.com/mindful-leadership"
+  image: "book6-cover.jpg"
+  description: "How to lead teams with empathy, awareness, and authentic communication in today's workplace."
