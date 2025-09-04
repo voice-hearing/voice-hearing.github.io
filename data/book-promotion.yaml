@@ -1,7 +1,13 @@
-- name: "JavaScript Mastery"
-  description: "From beginner to expert - learn JavaScript the right way. This book provides practical examples, real-world projects, and advanced concepts to make you a JavaScript pro."
-  image: "cover.png"
-  icon: ""
-  button:
-    text: "Start Learning"
-    url: "https://example.com/buy-js-book"
+- title: "The Quantum Garden"
+  author: "Alisha Patel"
+  rating: 4.7
+  pages: 384
+  pub_date: "2025-05-14"
+  prize: "Nebula Award 2025"
+  synopsis: 
+    A lyrical exploration of parallel universes and the choices that shape us.
+  image: "cover.png"          # in assets/media/
+  ebook_url: "https://domain.com"
+  audiobook_url: "https://domain.com"
+  sample_ebook_url: "https://domain.com"
+  sample_audiobook_url: "https://domain.com"

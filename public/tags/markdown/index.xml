@@ -17,7 +17,156 @@
       <link>http://localhost:1313/post/components/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/components/</guid>
-      <description>&lt;button type=&#34;submit&#34;&gt;
+      <description>&lt;h2 id=&#34;testimonials-books&#34;&gt;Testimonials books&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;section&gt;
+  
+  
+
+  
+  &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12&#34;&gt;
+
+    
+    &lt;div class=&#34;flex flex-col items-start px-6&#34;&gt;
+      &lt;h3 class=&#34;text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-1&#34;&gt;Jane Doe&lt;/h3&gt;
+      &lt;p  class=&#34;text-primary-600 dark:text-primary-300 text-lg font-semibold mb-2&#34;&gt;CEO, Company X&lt;/p&gt;
+
+      
+      
+      
+      
+      &lt;div class=&#34;flex items-center mb-4&#34;&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;defs&gt;&lt;linearGradient id=&#34;half&#34;&gt;&lt;stop offset=&#34;50%&#34; stop-color=&#34;currentColor&#34;/&gt;&lt;stop offset=&#34;50%&#34; stop-color=&#34;transparent&#34;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34; fill=&#34;url(#half)&#34;/&gt;
+          &lt;/svg&gt;
+        
+        &lt;span class=&#34;ml-2 text-sm font-medium text-gray-700 dark:text-gray-300&#34;&gt;
+          4.5
+        &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;blockquote class=&#34;italic text-gray-700 dark:text-gray-300 prose-lg leading-relaxed&#34;&gt;
+        Hugo Blox transformed our workflow — fast, flexible, and easy to maintain!
+
+      &lt;/blockquote&gt;
+    &lt;/div&gt;
+
+    
+    &lt;div class=&#34;flex justify-center items-center px-6&#34;&gt;
+      
+      
+        
+        &lt;img src=&#34;http://localhost:1313/media/testimonies-circles_hu_2eafdb10a51a21f1.webp&#34; alt=&#34;/media/testimonies-circles.webp&#34;
+             class=&#34;rounded-lg shadow-lg max-w-full h-auto object-contain&#34;
+             style=&#34;max-height:450px;width:auto;&#34;&gt;
+      
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;section&gt;
+  
+  
+
+  
+  &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12&#34;&gt;
+
+    
+    &lt;div class=&#34;flex justify-center items-center px-6 order-last md:order-first&#34;&gt;
+      
+      
+        
+        &lt;img  src=&#34;http://localhost:1313/media/testimonies-circles_hu_2eafdb10a51a21f1.webp&#34;
+              alt=&#34;/media/testimonies-circles.webp&#34;
+              class=&#34;rounded-lg shadow-lg max-w-full h-auto object-contain&#34;
+              style=&#34;max-height:450px;width:auto;&#34;&gt;
+      
+    &lt;/div&gt;
+
+    
+    &lt;div class=&#34;flex flex-col items-start px-6 order-first md:order-last&#34;&gt;
+      &lt;h3 class=&#34;text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-1&#34;&gt;Jane Doe&lt;/h3&gt;
+      &lt;p  class=&#34;text-primary-600 dark:text-primary-300 text-lg font-semibold mb-2&#34;&gt;CEO, Company X&lt;/p&gt;
+
+      
+      
+      
+      &lt;div class=&#34;flex items-center mb-4&#34;&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;defs&gt;&lt;linearGradient id=&#34;half&#34;&gt;&lt;stop offset=&#34;50%&#34; stop-color=&#34;currentColor&#34;/&gt;&lt;stop offset=&#34;50%&#34; stop-color=&#34;transparent&#34;/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34; fill=&#34;url(#half)&#34;/&gt;
+          &lt;/svg&gt;
+        
+        &lt;span class=&#34;ml-2 text-sm font-medium text-gray-700 dark:text-gray-300&#34;&gt;
+          4.5
+        &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;blockquote class=&#34;italic text-gray-700 dark:text-gray-300 prose-lg leading-relaxed&#34;&gt;
+        Hugo Blox transformed our workflow — fast, flexible, and easy to maintain!
+
+      &lt;/blockquote&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  
+&lt;/section&gt;
+
+&lt;button type=&#34;submit&#34;&gt;
   &lt;i class=&#34;fa-solid fa-envelope&#34;&gt;&lt;/i&gt; Email Us!
 &lt;/button&gt;
 [![YouTube - The Metaphorical Body:
@@ -538,56 +687,114 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
 
 
 
-
-
-
-
 &lt;section&gt;
-  &lt;div class=&#34;space-y-12&#34;&gt;
+  
+
+  
+
+  
+  &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12&#34;&gt;
+
     
-      &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 gap-8 items-center&#34;&gt;
-        
-        
-        &lt;div class=&#34;flex flex-col items-center text-center md:items-start md:text-left px-6&#34;&gt;
-          
-          
-          &lt;h3 class=&#34;mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white&#34;&gt;
-            JavaScript Mastery
-          &lt;/h3&gt;
-          
-          &lt;p class=&#34;mb-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed&#34;&gt;
-            From beginner to expert - learn JavaScript the right way. This book provides practical examples, real-world projects, and advanced concepts to make you a JavaScript pro.
-          &lt;/p&gt;
-          
-          
-          &lt;div class=&#34;mt-4&#34;&gt;
-            &lt;a href=&#34;https://example.com/buy-js-book&#34; 
-               class=&#34;relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-lg font-medium text-gray-900 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
-              Start Learning
-            &lt;/a&gt;
-          &lt;/div&gt;
-          
-        &lt;/div&gt;
+    &lt;div class=&#34;flex flex-col items-start px-6&#34;&gt;
+      &lt;h2 class=&#34;text-lg font-extrabold leading-tight text-gray-900 dark:text-white mb-2&#34;&gt;The Quantum Garden&lt;/h2&gt;
+      &lt;h3 class=&#34;text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1&#34;&gt;Alisha Patel&lt;/h3&gt;
 
+      
+      
+      
+      
+      &lt;div class=&#34;flex items-center mb-1&#34;&gt;
         
-        &lt;div class=&#34;flex justify-center items-center px-6&#34;&gt;
-          
-          
-          
-          
-          &lt;div class=&#34;relative&#34;&gt;
-            &lt;img src=&#34;http://localhost:1313/media/cover_hu_9f8b3f95460f8b46.webp&#34; 
-                 alt=&#34;JavaScript Mastery&#34; 
-                 class=&#34;rounded-lg shadow-lg max-w-full h-auto object-contain&#34;
-                 style=&#34;max-height: 450px; width: auto;&#34;&gt;
-          &lt;/div&gt;
-          
-          
-        &lt;/div&gt;
-
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34;/&gt;
+          &lt;/svg&gt;
+        
+        
+          &lt;svg class=&#34;w-5 h-5 text-yellow-400 fill-current&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+            &lt;defs&gt;
+              &lt;linearGradient id=&#34;half&#34;&gt;
+                &lt;stop offset=&#34;50%&#34; stop-color=&#34;currentColor&#34;/&gt;
+                &lt;stop offset=&#34;50%&#34; stop-color=&#34;transparent&#34;/&gt;
+              &lt;/linearGradient&gt;
+            &lt;/defs&gt;
+            &lt;path d=&#34;M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z&#34; fill=&#34;url(#half)&#34;/&gt;
+          &lt;/svg&gt;
+        
+        &lt;span class=&#34;ml-2 text-sm font-medium text-gray-700 dark:text-gray-300&#34;&gt;4.7&lt;/span&gt;
       &lt;/div&gt;
+
+      
+      &lt;p class=&#34;mb-4 text-base text-gray-900 dark:text-white&#34;&gt;Winner of: Nebula Award 2025&lt;/p&gt;
+
+      
+      &lt;blockquote class=&#34;mb-4 text-base text-gray-800 dark:text-gray-300&#34;&gt;A lyrical exploration of parallel universes and the choices that shape us.&lt;/blockquote&gt;
+
+      
+      &lt;p class=&#34;mb-4 text-sm text-gray-600 dark:text-gray-400&#34;&gt;
+        Page Number: 384 pages &amp;#8226; Publication date: 2025-05-14
+      &lt;/p&gt;
+
+      
+      &lt;div class=&#34;inline-flex space-x-3&#34;&gt;
+        &lt;a href=&#34;https://domain.com&#34; 
+           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition&#34;&gt;
+          E-book
+        &lt;/a&gt;
+
+        &lt;a href=&#34;https://domain.com&#34; 
+           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition&#34;&gt;
+          Audiobook
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
     
+    &lt;div class=&#34;relative flex justify-center items-center px-6&#34;&gt;
+      
+      
+      
+      
+      &lt;div class=&#34;relative&#34;&gt;
+        &lt;img src=&#34;http://localhost:1313/media/cover_hu_9f8b3f95460f8b46.webp&#34; 
+             alt=&#34;The Quantum Garden&#34; 
+             class=&#34;rounded-lg shadow-lg max-w-full h-auto object-contain&#34; 
+             style=&#34;max-height:450px; width:auto;&#34;&gt;
+
+        
+        &lt;div class=&#34;absolute bottom-0 inset-x-0 bg-black bg-opacity-60 text-white p-2 flex justify-between items-center rounded-b-lg text-sm&#34;&gt;
+          &lt;a href=&#34;https://domain.com&#34; class=&#34;hover:underline&#34;&gt;Read Sample&lt;/a&gt;
+          &lt;a href=&#34;https://domain.com&#34; class=&#34;flex items-center gap-1 hover:underline&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; class=&#34;w-5 h-5&#34;&gt;
+            &lt;path d=&#34;M6.5 5.5v9l7-4.5-7-4.5z&#34;/&gt;
+          &lt;/svg&gt;
+            Listen Sample
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+
   &lt;/div&gt;
+  
 &lt;/section&gt;
 
 &lt;h2 id=&#34;from-author-technical-skills-1&#34;&gt;From author technical skills&lt;/h2&gt;
@@ -1097,31 +1304,30 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
 
 &lt;div class=&#34;max-w-prose mx-auto&#34;&gt;
   
-    &lt;h2 class=&#34;text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6&#34;&gt;Frequently Asked Questions&lt;/h2&gt;
+    &lt;h2 class=&#34;text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6&#34;&gt;FAQ&lt;/h2&gt;
   
   
-  
-    &lt;div class=&#34;text-lg text-gray-600 dark:text-gray-400 mb-8&#34;&gt;Find answers to common questions below.&lt;/div&gt;
   
 
   
-  &lt;div class=&#34;space-y-4&#34;&gt;
+  &lt;div class=&#34;space-y-4&#34; id=&#34;accordion-container&#34;&gt;
     
-    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item&#34;&gt;
       &lt;button
         type=&#34;button&#34;
-        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
-        onclick=&#34;togglePanel(this)&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors accordion-button&#34;
+        onclick=&#34;toggleAccordion(this)&#34;
+        data-index=&#34;0&#34;
       &gt;
         &lt;div class=&#34;flex justify-between items-center&#34;&gt;
           &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;How do I get started with Hugo?&lt;/span&gt;
-          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200 accordion-icon rotate-180&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
             &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
           &lt;/svg&gt;
         &lt;/div&gt;
       &lt;/button&gt;
       
-      &lt;div class=&#34;accordion-content hidden&#34;&gt;
+      &lt;div class=&#34;accordion-content&#34;&gt;
         &lt;div class=&#34;px-6 py-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700&#34;&gt;
           &lt;div class=&#34;prose prose-slate lg:prose-lg dark:prose-invert max-w-none&#34;&gt;&lt;p&gt;Getting started with Hugo is simple:&lt;/p&gt;
 &lt;ol&gt;
@@ -1134,15 +1340,16 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
       &lt;/div&gt;
     &lt;/div&gt;
     
-    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item&#34;&gt;
       &lt;button
         type=&#34;button&#34;
-        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
-        onclick=&#34;togglePanel(this)&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors accordion-button&#34;
+        onclick=&#34;toggleAccordion(this)&#34;
+        data-index=&#34;1&#34;
       &gt;
         &lt;div class=&#34;flex justify-between items-center&#34;&gt;
           &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;What is a shortcode?&lt;/span&gt;
-          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200 accordion-icon&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
             &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
           &lt;/svg&gt;
         &lt;/div&gt;
@@ -1157,15 +1364,16 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
       &lt;/div&gt;
     &lt;/div&gt;
     
-    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden&#34;&gt;
+    &lt;div class=&#34;border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item&#34;&gt;
       &lt;button
         type=&#34;button&#34;
-        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors&#34;
-        onclick=&#34;togglePanel(this)&#34;
+        class=&#34;w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors accordion-button&#34;
+        onclick=&#34;toggleAccordion(this)&#34;
+        data-index=&#34;2&#34;
       &gt;
         &lt;div class=&#34;flex justify-between items-center&#34;&gt;
           &lt;span class=&#34;text-lg font-semibold text-gray-900 dark:text-gray-100&#34;&gt;How do I customize this accordion?&lt;/span&gt;
-          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+          &lt;svg class=&#34;w-5 h-5 text-gray-500 transition-transform duration-200 accordion-icon&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; viewBox=&#34;0 0 24 24&#34;&gt;
             &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M19 9l-7 7-7-7&#34;&gt;&lt;/path&gt;
           &lt;/svg&gt;
         &lt;/div&gt;
@@ -1189,16 +1397,28 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
 &lt;/div&gt;
 
 &lt;script&gt;
-function togglePanel(button) {
-  const content = button.nextElementSibling;
-  const icon = button.querySelector(&#39;svg&#39;);
+function toggleAccordion(clickedButton) {
+  const clickedContent = clickedButton.nextElementSibling;
+  const clickedIcon = clickedButton.querySelector(&#39;.accordion-icon&#39;);
+  const container = clickedButton.closest(&#39;#accordion-container&#39;);
+  const allItems = container.querySelectorAll(&#39;.accordion-item&#39;);
   
-  if (content.classList.contains(&#39;hidden&#39;)) {
-    content.classList.remove(&#39;hidden&#39;);
-    icon.classList.add(&#39;rotate-180&#39;);
-  } else {
+  
+  const isCurrentlyOpen = !clickedContent.classList.contains(&#39;hidden&#39;);
+  
+  
+  allItems.forEach(item =&gt; {
+    const content = item.querySelector(&#39;.accordion-content&#39;);
+    const icon = item.querySelector(&#39;.accordion-icon&#39;);
+    
     content.classList.add(&#39;hidden&#39;);
     icon.classList.remove(&#39;rotate-180&#39;);
+  });
+  
+  
+  if (!isCurrentlyOpen) {
+    clickedContent.classList.remove(&#39;hidden&#39;);
+    clickedIcon.classList.add(&#39;rotate-180&#39;);
   }
 }
 &lt;/script&gt;
@@ -1554,10 +1774,10 @@ function togglePanel(button) {
   }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1756976751&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757012911&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1756976751&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757012911&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -1569,7 +1789,7 @@ function togglePanel(button) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1756976751&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757012911&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -1739,7 +1959,7 @@ function togglePanel(button) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1756976751&#39;);
+  const carousel = document.getElementById(&#39;slider-1757012911&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -1835,7 +2055,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1756976751&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757012911&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -1881,103 +2101,204 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 });
 &lt;/script&gt;
 &lt;h2 id=&#34;pricing&#34;&gt;Pricing&lt;/h2&gt;
-
 &lt;section&gt;
   &lt;div class=&#34;max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-8&#34;&gt;
 
     
-    &lt;div class=&#34;grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 md:gap-8&#34;&gt;&lt;div class=&#34;flex flex-col rounded-2xl border bg-white dark:bg-gray-900
+
+    
+    &lt;div class=&#34;columns-1 sm:columns-2 lg:columns-2 gap-4 md:gap-8&#34;&gt;
+      &lt;div class=&#34;break-inside-avoid flex flex-col rounded-2xl border bg-white dark:bg-gray-900
                   border-gray-400 dark:border-gray-600&#34;&gt;
+
         
         &lt;div class=&#34;pt-2 pb-4 px-4 sm:px-6 flex flex-col items-center text-center&#34;&gt;
-          &lt;h2 class=&#34;text-base font-semibold text-gray-900 dark:text-white mb-1&#34;&gt;Starter&lt;/h2&gt;
+          &lt;h2 class=&#34;mb-1 text-base font-semibold text-gray-900 dark:text-white&#34;&gt;
+            Starter
+          &lt;/h2&gt;
+
           
-          &lt;div class=&#34;mb-2&#34;&gt;
-            &lt;p class=&#34;text-sm text-gray-700 dark:text-gray-300 text-center&#34;&gt;Perfect for individuals and small projects&lt;/p&gt;
-          &lt;/div&gt;&lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
-            &lt;span&gt;$9&lt;/span&gt;&lt;span class=&#34;text-xl font-normal text-gray-900 dark:text-white&#34;&gt;/month&lt;/span&gt;&lt;/p&gt;
+          &lt;p class=&#34;mb-2 text-sm text-gray-700 dark:text-gray-300&#34;&gt;
+            Perfect for individuals and small projects
+          &lt;/p&gt;
+          
+
+          &lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
+            &lt;span&gt;$9&lt;/span&gt;
+            &lt;span class=&#34;text-xl font-normal&#34;&gt;/month&lt;/span&gt;
+          &lt;/p&gt;
         &lt;/div&gt;
+
+        
         
         &lt;div class=&#34;px-4 sm:px-6 pb-3 flex-1&#34;&gt;
-          &lt;p class=&#34;text-base font-medium text-gray-900 dark:text-white mb-2 text-left&#34;&gt;What&#39;s included:&lt;/p&gt;
-          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Up to 5 projects&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;10GB storage&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Basic support&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
-            &lt;/li&gt;&lt;/ul&gt;
-        &lt;/div&gt;&lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
-          &lt;a
-            class=&#34;block w-full text-center relative inline-flex items-center justify-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium text-gray-900 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;
-            href=&#34;http://localhost:1313/signup/&#34;
-            target=&#34;_self&#34;
-          &gt;
-            Get Started
-          &lt;/a&gt;
-        &lt;/div&gt;&lt;div class=&#34;mb-6&#34;&gt;&lt;/div&gt;
-      &lt;/div&gt;&lt;div class=&#34;flex flex-col rounded-2xl border bg-white dark:bg-gray-900
+          &lt;p class=&#34;mb-2 text-base font-medium text-gray-900 dark:text-white&#34;&gt;What&#39;s included:&lt;/p&gt;
+          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Up to 5 projects&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;10GB storage&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Basic support&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
+            &lt;/li&gt;
+            
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        
+
+        &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
+    &lt;a href=&#34;http://localhost:1313/signup/&#34; target=&#34;_self&#34;
+       class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
+              rounded-full border border-gray-300 bg-white px-6 py-2
+              text-xl font-medium text-gray-900 dark:border-gray-500 dark:bg-gray-800 dark:text-white
+              hover:bg-gray-50 dark:hover:bg-gray-700 focus:z-20 transition-colors&#34;&gt;
+      Get Started
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+        &lt;div class=&#34;mb-6&#34;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;break-inside-avoid flex flex-col rounded-2xl border bg-white dark:bg-gray-900
                   border-2 border-gray-600 dark:border-gray-500&#34;&gt;
+
         
         &lt;div class=&#34;pt-4 pb-4 px-4 sm:px-6 flex flex-col items-center text-center&#34;&gt;
-          &lt;h2 class=&#34;text-base font-semibold text-gray-900 dark:text-white mb-1&#34;&gt;Professional&lt;/h2&gt;
+          &lt;h2 class=&#34;mb-1 text-base font-semibold text-gray-900 dark:text-white&#34;&gt;
+            Professional
+          &lt;/h2&gt;
+
           
-          &lt;div class=&#34;mb-2&#34;&gt;
-            &lt;p class=&#34;text-sm text-gray-700 dark:text-gray-300 text-center&#34;&gt;Ideal for growing businesses and teams&lt;/p&gt;
-          &lt;/div&gt;&lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
-            &lt;span&gt;$29&lt;/span&gt;&lt;span class=&#34;text-xl font-normal text-gray-900 dark:text-white&#34;&gt;/month&lt;/span&gt;&lt;/p&gt;
+          &lt;p class=&#34;mb-2 text-sm text-gray-700 dark:text-gray-300&#34;&gt;
+            Ideal for growing businesses and teams
+          &lt;/p&gt;
+          
+
+          &lt;p class=&#34;flex items-baseline text-4xl font-extrabold text-gray-900 dark:text-white&#34;&gt;
+            &lt;span&gt;$29&lt;/span&gt;
+            &lt;span class=&#34;text-xl font-normal&#34;&gt;/month&lt;/span&gt;
+          &lt;/p&gt;
         &lt;/div&gt;
+
+        
         
         &lt;div class=&#34;px-4 sm:px-6 pb-3 flex-1&#34;&gt;
-          &lt;p class=&#34;text-base font-medium text-gray-900 dark:text-white mb-2 text-left&#34;&gt;What&#39;s included:&lt;/p&gt;
-          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Unlimited projects&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;100GB storage&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
-            &lt;/li&gt;&lt;li class=&#34;flex items-center gap-2&#34;&gt;
-              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-                &lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;&gt;&lt;/path&gt;
-              &lt;/svg&gt;&lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Custom integrations&lt;/span&gt;
-            &lt;/li&gt;&lt;/ul&gt;
-        &lt;/div&gt;&lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
-          &lt;a
-            class=&#34;block w-full text-center relative inline-flex items-center justify-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium text-gray-900 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;
-            href=&#34;http://localhost:1313/trial/&#34;
-            target=&#34;_self&#34;
-          &gt;
-            Start Free Trial
-          &lt;/a&gt;
-        &lt;/div&gt;&lt;div class=&#34;mb-6&#34;&gt;&lt;/div&gt;
-      &lt;/div&gt;&lt;/div&gt;
+          &lt;p class=&#34;mb-2 text-base font-medium text-gray-900 dark:text-white&#34;&gt;What&#39;s included:&lt;/p&gt;
+          &lt;ul class=&#34;space-y-1 text-sm&#34;&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Unlimited projects&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;100GB storage&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Custom integrations&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;100GB storage&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Priority support&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Advanced analytics&lt;/span&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&#34;flex items-center gap-2&#34;&gt;
+              
+              &lt;svg class=&#34;w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 20 20&#34;&gt;&lt;path fill-rule=&#34;evenodd&#34; d=&#34;M16.707 5.293a1 1 0 011.414 0l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&#34; clip-rule=&#34;evenodd&#34;/&gt;&lt;/svg&gt;
+              
+              &lt;span class=&#34;text-gray-700 dark:text-gray-300&#34;&gt;Custom integrations&lt;/span&gt;
+            &lt;/li&gt;
+            
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        
 
+        &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
+    &lt;a href=&#34;http://localhost:1313/trial/&#34; target=&#34;_self&#34;
+       class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
+              rounded-full border border-primary-700 bg-primary-700 px-6 py-2
+              text-xl font-medium text-white hover:bg-primary-800 focus:z-20 transition-colors&#34;&gt;
+      Start Free Trial
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+        &lt;div class=&#34;mb-6&#34;&gt;&lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+
+    
+    
+
+  &lt;/div&gt;
 &lt;/section&gt;
+
 &lt;h2 id=&#34;tag-image-folder-datatag-image&#34;&gt;Tag image folder data/tag-image&lt;/h2&gt;
 
 &lt;section class=&#34;mx-auto max-w-screen-xl py-8 px-8&#34;&gt;
@@ -2808,7 +3129,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-&lt;div id=&#34;chart-312857649&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-493725681&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -2826,7 +3147,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-312857649&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-493725681&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

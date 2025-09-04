@@ -426,6 +426,7 @@ body {
 
 h2 {
   font-weight: bold !important;
+  text-transform: uppercase;
 }
 
 h3 {

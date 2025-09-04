@@ -61,6 +61,12 @@ links:
     url: "https://scholar.google.com/citations?user=XXX"
     icon: "brands/google-scholar"
 ---
+## Testimonials books
+
+{{< testimonials-circles items="testimonial-circles" >}}
+
+{{< testimonials-left items="testimonial-circles" >}}
+
 
 <button type="submit">
   <i class="fa-solid fa-envelope"></i> Email Us!
@@ -111,7 +117,8 @@ Welcome 👋
 
 ## Place faq.yaml into data folder
 
-{{< accordion title="Frequently Asked Questions" text="Find answers to common questions below." data="faq" allow_multiple=false expand_first=true >}}
+{{< accordion title="FAQ" data="faq" expand_first="true" >}}
+
 
 ## Tag cloud Series, Categories, Tags
 

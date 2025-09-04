@@ -35,6 +35,14 @@
       included: true
     - text: "Custom integrations"
       included: true
+    - text: "100GB storage"
+      included: true
+    - text: "Priority support"
+      included: true
+    - text: "Advanced analytics"
+      included: true
+    - text: "Custom integrations"
+      included: true
   button:
     text: "Start Free Trial"
     url: "/trial/"

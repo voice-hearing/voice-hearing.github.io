@@ -1,0 +1,70 @@
+{{/* Testimonials – left (name / position / rating / quote)  ·  right (image) */}}
+
+{{ $page  := .Page }}
+{{ $title := (.Get "title") | emojify | $page.RenderString }}
+{{ $blue  := (.Get "blue")  | emojify | $page.RenderString }}
+
+{{/* load data file passed in items="…" (defaults to testimonial-styled.yaml) */}}
+{{ $items := index site.Data (.Get "items" | default "testimonial-styled") }}
+
+<section>
+  {{ with $blue  }}
+    <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold
+              text-primary-600 dark:text-primary-300 text-center">{{ . }}</p>
+  {{ end }}
+  {{ with $title }}
+    <h2 class="mb-8 text-3xl font-bold text-center text-gray-900 dark:text-white">{{ . }}</h2>
+  {{ end }}
+
+  {{ range $items }}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+
+    <!-- ── Left column ───────────────────────────── -->
+    <div class="flex flex-col items-start px-6">
+      <h3 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-1">{{ .name }}</h3>
+      <p  class="text-primary-600 dark:text-primary-300 text-lg font-semibold mb-2">{{ .position }}</p>
+
+      {{/* star rating (full + optional half) */}}
+      {{ $rating  := float .rating }}
+      {{ $intPart := int   $rating }}
+      {{ $hasHalf := gt (mod (mul $rating 10) 10) 0 }}
+      <div class="flex items-center mb-4">
+        {{ range seq $intPart }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {{ end }}
+        {{ if $hasHalf }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <defs><linearGradient id="half"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)"/>
+          </svg>
+        {{ end }}
+        <span class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+          {{ printf "%.1f" $rating }}
+        </span>
+      </div>
+
+      <blockquote class="italic text-gray-700 dark:text-gray-300 prose-lg leading-relaxed">
+        {{ .testimonial }}
+      </blockquote>
+    </div>
+
+    <!-- ── Right column – image ──────────────────── -->
+    <div class="flex justify-center items-center px-6">
+      {{ $img := resources.GetMatch (path.Join "media" .image) }}
+      {{ with $img }}
+        {{ $portrait := .Fit "300x450 center webp" }}
+        <img src="{{ $portrait.RelPermalink }}" alt="{{ .Name | plainify }}"
+             class="rounded-lg shadow-lg max-w-full h-auto object-contain"
+             style="max-height:450px;width:auto;">
+      {{ else }}
+        <div class="w-72 h-96 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
+          <span class="text-gray-500 dark:text-gray-400 text-lg">[image]</span>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+  {{ end }}
+</section>

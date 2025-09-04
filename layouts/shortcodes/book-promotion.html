@@ -1,67 +1,115 @@
-{{/* Hugo Blox Book Promotion - Left Details + Right Image */}}
-{{/* Usage: {{< book-promotion items="features" >}} */}}
+{{/* 
+Book Promotion Shortcode - Complete corrected version
+- Prize moved under rating stars
+- Print length & publication date moved before buttons  
+- Rounded-full buttons with play icons
+- Dark mode button visibility
+- Single text-link overlay on image
+*/}}
 
 {{ $page := .Page }}
 {{ $title := (.Get "title") | emojify | $page.RenderString }}
-{{ $text := (.Get "text") | emojify | $page.RenderString }}
 {{ $blue := (.Get "blue") | emojify | $page.RenderString }}
-
-{{ $itemsKey := (.Get "items") | default "features" }}
-{{ $items := index site.Data $itemsKey | default (index site.Params $itemsKey) }}
+{{ $items := index site.Data (.Get "items" | default "books") }}
 
 <section>
-  <div class="space-y-12">
-    {{ range $index, $item := $items }}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
-        <!-- Left Column: Icon, Name, Description, Button -->
-        <div class="flex flex-col items-center text-center md:items-start md:text-left px-6">
-          {{ with $item.icon }}
-          <div class="mb-6">
-            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-16 h-16 text-gray-600 dark:text-gray-400"`) }}
-          </div>
-          {{ end }}
-          
-          <h3 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {{ $item.name | $page.RenderString }}
-          </h3>
-          
-          <p class="mb-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            {{ $item.description | $page.RenderString }}
-          </p>
-          
-          {{ with $item.button }}
-          <div class="mt-4">
-            <a href="{{ .url }}" 
-               class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-lg font-medium text-gray-900 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-              {{ .text }}
-            </a>
-          </div>
-          {{ end }}
-        </div>
+  {{ with $blue }}
+  <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300 text-center">{{ . }}</p>
+  {{ end }}
 
-        <!-- Right Column: Book Image Portrait Mode (No Text) -->
-        <div class="flex justify-center items-center px-6">
-          {{ if $item.image }}
-          {{ $image := resources.GetMatch (path.Join "media" $item.image) }}
-          {{ with $image }}
-          {{ $bookImage := $image.Fit "300x450 center webp" }}
-          <div class="relative">
-            <img src="{{ $bookImage.RelPermalink }}" 
-                 alt="{{ $item.name | plainify }}" 
-                 class="rounded-lg shadow-lg max-w-full h-auto object-contain"
-                 style="max-height: 450px; width: auto;">
-          </div>
-          {{ end }}
-          {{ else }}
-          <!-- Fallback if no image -->
-          <div class="w-72 h-96 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
-            <span class="text-gray-500 dark:text-gray-400 text-lg">📚</span>
-          </div>
-          {{ end }}
-        </div>
+  {{ with $title }}
+  <h2 class="mb-8 text-3xl font-bold text-center text-gray-900 dark:text-white">{{ . }}</h2>
+  {{ end }}
 
+  {{ range $items }}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+
+    <!-- LEFT: Book details -->
+    <div class="flex flex-col items-start px-6">
+      <h2 class="text-lg font-extrabold leading-tight text-gray-900 dark:text-white mb-2">{{ .title }}</h2>
+      <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">{{ .author }}</h3>
+
+      <!-- Rating stars -->
+      {{ $rating := float .rating }}
+      {{ $intPart := int $rating }}
+      {{ $hasHalf := gt (mod (mul $rating 10) 10) 0 }}
+      <div class="flex items-center mb-1">
+        {{ range seq $intPart }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {{ end }}
+        {{ if $hasHalf }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="half">
+                <stop offset="50%" stop-color="currentColor"/>
+                <stop offset="50%" stop-color="transparent"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)"/>
+          </svg>
+        {{ end }}
+        <span class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">{{ printf "%.1f" $rating }}</span>
       </div>
-    {{ end }}
+
+      <!-- Prize - moved under rating -->
+      <p class="mb-4 text-base text-gray-900 dark:text-white">Winner of: {{ .prize }}</p>
+
+      <!-- Synopsis -->
+      <blockquote class="mb-4 text-base text-gray-800 dark:text-gray-300">{{ .synopsis }}</blockquote>
+
+      <!-- Print length & publication date - moved before buttons -->
+      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+        Page Number: {{ .pages }} pages &#8226; Publication date: {{ .pub_date }}
+      </p>
+
+      <!-- Buttons - rounded-full with play icons -->
+      <div class="inline-flex space-x-3">
+        <a href="{{ .ebook_url }}" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition">
+          E-book
+        </a>
+
+        <a href="{{ .audiobook_url }}" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition">
+          Audiobook
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Cover with overlay -->
+    <div class="relative flex justify-center items-center px-6">
+      {{ $book := . }}
+      {{ $img := resources.GetMatch (path.Join "media" $book.image) }}
+      {{ with $img }}
+      {{ $resized := .Fit "300x450 center webp" }}
+      <div class="relative">
+        <img src="{{ $resized.RelPermalink }}" 
+             alt="{{ $book.title | plainify }}" 
+             class="rounded-lg shadow-lg max-w-full h-auto object-contain" 
+             style="max-height:450px; width:auto;">
+
+        <!-- Bottom overlay with sample links -->
+        <div class="absolute bottom-0 inset-x-0 bg-black bg-opacity-60 text-white p-2 flex justify-between items-center rounded-b-lg text-sm">
+          <a href="{{ $book.sample_ebook_url }}" class="hover:underline">Read Sample</a>
+          <a href="{{ $book.sample_audiobook_url }}" class="flex items-center gap-1 hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5">
+            <path d="M6.5 5.5v9l7-4.5-7-4.5z"/>
+          </svg>
+            Listen Sample
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
   </div>
+  {{ end }}
 </section>

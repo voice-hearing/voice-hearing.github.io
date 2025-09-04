@@ -1,8 +1,8 @@
-{{/* Simple Accordion - Guaranteed Working */}}
+{{/* Simple Accordion - Auto-close Previous Panel */}}
 {{ $title := .Get "title" }}
 {{ $text := .Get "text" }}
 {{ $data_file := .Get "data" }}
-{{ $expand_first := .Get "expand_first" }}
+{{ $expand_first := .Get "expand_first" | default "true" }}
 
 {{ $items := slice }}
 {{ if $data_file }}
@@ -19,17 +19,18 @@
   {{ end }}
 
   {{ if $items }}
-  <div class="space-y-4">
+  <div class="space-y-4" id="accordion-container">
     {{ range $index, $item := $items }}
-    <div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+    <div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item">
       <button
         type="button"
-        class="w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
-        onclick="togglePanel(this)"
+        class="w-full px-6 py-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors accordion-button"
+        onclick="toggleAccordion(this)"
+        data-index="{{ $index }}"
       >
         <div class="flex justify-between items-center">
           <span class="text-lg font-semibold text-gray-900 dark:text-gray-100">{{ $item.title }}</span>
-          <svg class="w-5 h-5 text-gray-500 transition-transform duration-200{{ if and (eq $expand_first "true") (eq $index 0) }} rotate-180{{ end }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 text-gray-500 transition-transform duration-200 accordion-icon{{ if and (eq $expand_first "true") (eq $index 0) }} rotate-180{{ end }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </div>
@@ -47,16 +48,28 @@
 </div>
 
 <script>
-function togglePanel(button) {
-  const content = button.nextElementSibling;
-  const icon = button.querySelector('svg');
+function toggleAccordion(clickedButton) {
+  const clickedContent = clickedButton.nextElementSibling;
+  const clickedIcon = clickedButton.querySelector('.accordion-icon');
+  const container = clickedButton.closest('#accordion-container');
+  const allItems = container.querySelectorAll('.accordion-item');
   
-  if (content.classList.contains('hidden')) {
-    content.classList.remove('hidden');
-    icon.classList.add('rotate-180');
-  } else {
+  // Check if clicked item is currently open
+  const isCurrentlyOpen = !clickedContent.classList.contains('hidden');
+  
+  // Close all accordion items
+  allItems.forEach(item => {
+    const content = item.querySelector('.accordion-content');
+    const icon = item.querySelector('.accordion-icon');
+    
     content.classList.add('hidden');
     icon.classList.remove('rotate-180');
+  });
+  
+  // If the clicked item wasn't open, open it
+  if (!isCurrentlyOpen) {
+    clickedContent.classList.remove('hidden');
+    clickedIcon.classList.add('rotate-180');
   }
 }
 </script>

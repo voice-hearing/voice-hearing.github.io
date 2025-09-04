@@ -1,0 +1,6 @@
+- name: "Jane Doe"
+  position: "CEO, Company X"
+  testimonial: >
+    Hugo Blox transformed our workflow — fast, flexible, and easy to maintain!
+  rating: 4.5            # supports half-stars
+  image: "testimonies-circles.webp"  # put in assets/media/
