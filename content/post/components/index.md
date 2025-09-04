@@ -66,9 +66,13 @@ links:
   <i class="fa-solid fa-envelope"></i> Email Us!
 </button>
 
+{{< youtube-link "https://www.youtube.com/watch?v=Gcs-vG4e5ps" >}}
+
+[![YouTube - The Metaphorical Body: Why Metaphor May be Everywhere](https://img.youtube.com/vi/Gcs-vG4e5ps/0.jpg)](https://www.youtube.com/watch?v=Gcs-vG4e5ps) [▶️ YouTube - The Metaphorical Body: Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
+
+
 Welcome 👋
 
-{{< toc mobile_only=true is_open=true >}}
 {{< icon name="brands/github" >}} GitHub
 {{< icon name="academicons/doi" >}} DOI  
 {{< icon name="custom/twitter" >}} Demo
@@ -92,6 +96,10 @@ Welcome 👋
 ## items are located in data/features.yaml
 
 {{< features-columns items="features" >}}
+
+## Book promotion
+
+{{< book-promotion items="book-promotion" >}}
 
 ## From author technical skills
 
@@ -124,7 +132,7 @@ Welcome 👋
 
 ## Pricing
 
-{{< pricing data="pricing" title="Choose Your Plan" text="Select the perfect plan for your needs" blue="Pricing Plans" button_text="Questions? Contact us" button_url="/contact/" button_target="_blank" >}}
+{{< pricing data="pricing" >}}
 
 ## Tag image folder data/tag-image
 

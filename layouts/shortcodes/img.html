@@ -1,0 +1,11 @@
+{{/* HugoBlox Image Shortcode */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+
+{{ $image := resources.Get (printf "media/%s" $src) }}
+{{ if $image }}
+  {{ partial "functions/responsive-image.html" (dict "image" $image "alt" $alt "caption" $caption) }}
+{{ else }}
+  <img src="{{ $src }}" alt="{{ $alt }}" class="img-fluid" loading="lazy">
+{{ end }}

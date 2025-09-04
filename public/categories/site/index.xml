@@ -105,9 +105,9 @@
     
     <item>
       <title>📧 Subscribe</title>
-      <link>http://localhost:1313/subscribe/</link>
+      <link>http://localhost:1313/about/subscribe/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/subscribe/</guid>
+      <guid>http://localhost:1313/about/subscribe/</guid>
       <description>&lt;h2 id=&#34;subscribe-or-not&#34;&gt;Subscribe or not&lt;/h2&gt;
 &lt;p&gt;are we good?&lt;/p&gt;
 &lt;p&gt;Feel the connection growing hear the invitation whispering gently—and see how together, we can build a brighter tomorrow&lt;/p&gt;
@@ -127,7 +127,7 @@
           &lt;input type=&#34;hidden&#34; name=&#34;access_key&#34; value=&#34;33cdef84-3ac2-4fe8-b394-3853e990cdac&#34;&gt;
           &lt;input type=&#34;checkbox&#34; name=&#34;botcheck&#34; class=&#34;hidden&#34; style=&#34;display: none;&#34;&gt;
           &lt;div class=&#34;h-captcha&#34; data-captcha=&#34;true&#34;&gt;&lt;/div&gt;
-          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;/about/thank-you&#34;&gt;
+          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;/about/about/thank-you&#34;&gt;
           
           &lt;div class=&#34;grid gap-4&#34;&gt;
             
@@ -181,20 +181,11 @@ hello
     
     <item>
       <title>ABOUT US</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:1313/about/about/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:1313/about/about/</guid>
       <description>&lt;h1 id=&#34;about-us---asumen-charity&#34;&gt;&lt;strong&gt;About Us - Asumen charity&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
-&lt;p&gt;
-&lt;/p&gt;
-[![YouTube - The Metaphorical Body:
-Why Metaphor May be Everywhere](https://img.youtube.com/vi/Gcs-vG4e5ps/0.jpg)](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
-[▶️ YouTube - The Metaphorical Body:
-Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
-&lt;p&gt;
- 
-&lt;/p&gt;
 &lt;p&gt;Asumen charity is a small but deeply rooted Christian charity serving &lt;strong&gt;west london&lt;/strong&gt; — a place where diverse cultures meet, and where the need for freedom, peace, and new life is as real as the air we breathe.&lt;/p&gt;
 &lt;p&gt;The name &lt;strong&gt;Asumen&lt;/strong&gt; comes from the Persian word for &lt;em&gt;“freedom” or “liberty”&lt;/em&gt;, a word sung in multiple languages — Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri. &lt;em&gt;From its sound alone, you might begin to feel the heartbeat of our mission — to bring freedom to those weighed down, peace to those in turmoil, and new life to all, through the love of Jesus Christ.&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -291,9 +282,9 @@ You can join us through:&lt;/p&gt;
     
     <item>
       <title>🫂 Our Team</title>
-      <link>http://localhost:1313/people/</link>
+      <link>http://localhost:1313/about/people/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/people/</guid>
+      <guid>http://localhost:1313/about/people/</guid>
       <description>&lt;h2 id=&#34;our-amazing-people&#34;&gt;Our Amazing People&lt;/h2&gt;
 &lt;h3 id=&#34;the-brilliant-minds-behind-our-success&#34;&gt;The brilliant minds behind our success&lt;/h3&gt;
 &lt;p&gt;We are a diverse team of experts dedicated to making a difference.&lt;/p&gt;

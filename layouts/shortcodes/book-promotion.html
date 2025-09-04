@@ -1,0 +1,67 @@
+{{/* Hugo Blox Book Promotion - Left Details + Right Image */}}
+{{/* Usage: {{< book-promotion items="features" >}} */}}
+
+{{ $page := .Page }}
+{{ $title := (.Get "title") | emojify | $page.RenderString }}
+{{ $text := (.Get "text") | emojify | $page.RenderString }}
+{{ $blue := (.Get "blue") | emojify | $page.RenderString }}
+
+{{ $itemsKey := (.Get "items") | default "features" }}
+{{ $items := index site.Data $itemsKey | default (index site.Params $itemsKey) }}
+
+<section>
+  <div class="space-y-12">
+    {{ range $index, $item := $items }}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        
+        <!-- Left Column: Icon, Name, Description, Button -->
+        <div class="flex flex-col items-center text-center md:items-start md:text-left px-6">
+          {{ with $item.icon }}
+          <div class="mb-6">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-16 h-16 text-gray-600 dark:text-gray-400"`) }}
+          </div>
+          {{ end }}
+          
+          <h3 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {{ $item.name | $page.RenderString }}
+          </h3>
+          
+          <p class="mb-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            {{ $item.description | $page.RenderString }}
+          </p>
+          
+          {{ with $item.button }}
+          <div class="mt-4">
+            <a href="{{ .url }}" 
+               class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-lg font-medium text-gray-900 focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+              {{ .text }}
+            </a>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Right Column: Book Image Portrait Mode (No Text) -->
+        <div class="flex justify-center items-center px-6">
+          {{ if $item.image }}
+          {{ $image := resources.GetMatch (path.Join "media" $item.image) }}
+          {{ with $image }}
+          {{ $bookImage := $image.Fit "300x450 center webp" }}
+          <div class="relative">
+            <img src="{{ $bookImage.RelPermalink }}" 
+                 alt="{{ $item.name | plainify }}" 
+                 class="rounded-lg shadow-lg max-w-full h-auto object-contain"
+                 style="max-height: 450px; width: auto;">
+          </div>
+          {{ end }}
+          {{ else }}
+          <!-- Fallback if no image -->
+          <div class="w-72 h-96 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
+            <span class="text-gray-500 dark:text-gray-400 text-lg">📚</span>
+          </div>
+          {{ end }}
+        </div>
+
+      </div>
+    {{ end }}
+  </div>
+</section>

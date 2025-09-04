@@ -46,7 +46,11 @@
   <url>
     <loc>http://localhost:1313/tags/second-brain/</loc><lastmod>2023-10-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/shop/</loc><lastmod>2023-10-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/post/second-brain/</loc><lastmod>2023-10-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/shop/second-brain/</loc><lastmod>2023-10-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/post/data-visualization/</loc><lastmod>2023-10-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -58,17 +62,21 @@
   <url>
     <loc>http://localhost:1313/post/project-management/</loc><lastmod>2023-10-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/contact/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/shop/project-management/</loc><lastmod>2023-10-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/how-you-can-help/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/about/contact/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/what-we-do/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/how-you-can-help/how-you-can-help/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/donate/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/what-we-do/what-we-do/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/subscribe/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/donate/donate/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/about/subscribe/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/about/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/about/about/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/categories/charity/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -76,11 +84,17 @@
   <url>
     <loc>http://localhost:1313/tags/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/donate/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/how-you-can-help/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/what-we-do/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/privacy/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/people/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/about/people/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/</loc><lastmod>2022-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

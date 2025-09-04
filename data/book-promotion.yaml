@@ -1,0 +1,7 @@
+- name: "JavaScript Mastery"
+  description: "From beginner to expert - learn JavaScript the right way. This book provides practical examples, real-world projects, and advanced concepts to make you a JavaScript pro."
+  image: "cover.png"
+  icon: ""
+  button:
+    text: "Start Learning"
+    url: "https://example.com/buy-js-book"

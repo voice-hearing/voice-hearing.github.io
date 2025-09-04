@@ -11,7 +11,7 @@
   
 - name: "Cooking with Love"
   url: "/books/cooking-with-love"
-  image: "book3-cover.jpg"
+  image: "cover.png"
   description: "Traditional family recipes passed down through generations, with modern twists and healthy alternatives."
   
 - name: "The Science of Happiness"

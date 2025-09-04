@@ -17,7 +17,7 @@ sections:
       secondary: 
       primary_action:
         text: DONATE NOW &nbsp; <span class="text-white">›</span>
-        url: /donate
+        url: /donate/donate
         icon: 
       secondary_action:
         text:
@@ -49,28 +49,28 @@ sections:
         - title: INTERFAITH HOUSE 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8550108.jpg"
         - title: YUMMI GARDEN 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "hopegarden1.png"
         - title: CHILDREN'S CLUB 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "childrensclub1.jpg"
         - title: LADIES' DAY 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "ladiesday1.jpg"
@@ -125,42 +125,42 @@ sections:
         - title: PRAYING 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-jibarofoto-14373404.jpg"
         - title: SHARING INFO 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-cottonbro-4255394.jpg"
         - title: VOLUNTEERING 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-julia-m-cameron-6994939.jpg"
         - title: SERVICING 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-kindelmedia-8486923.jpg"
         - title: OFFERING SPACE 
           content: 
           align: "bottom-left"
-          url: /what-we-do
+          url: /what-we-do/what-we-do
           background:
             image:
               filename: "pexels-life-of-pix-67468.jpg"
         - title: DONATING 
           content: 
           align: "bottom-left"
-          url: /donate
+          url: /donate/donate
           background:
             image:
               filename: "pexels-shvetsa-4482896.jpg"
@@ -198,7 +198,7 @@ sections:
           description: We like to see ourselves as a vehicle — one you can step aboard for as long as you need. We provide the structure, governance, insurance, funding support, and [network](https://christian.com)… you just bring your God-given vision, and together, we travel further.
         - name: WE MAKE DIFFERENCE
           icon:
-          description: This living space continues to evolve, with a renewed focus on building a mutually supportive <a href="/about" style="text-decoration:underline">Christian community</a> while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
+          description: This living space continues to evolve, with a renewed focus on building a mutually supportive <a href="/about/about" style="text-decoration:underline">Christian community</a> while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
     design:
       spacing:
         padding: [0 , 0, 0, 0]
@@ -230,26 +230,26 @@ sections:
       items:
         - name: "Sarah Johnson"           # Used for alt text
           image: "luis.jpg"              # From assets/media/
-          url: "/people" # Optional: profile/social URL
+          url: "/about/people" # Optional: profile/social URL
           external: true                  # Optional: opens in new tab
           
         - name: "Michael Chen"            # Used for alt text  
           image: "sofia.jpg"            # From assets/media/
-          url: "/people"
+          url: "/about/people"
           external: true
           
         - name: "Emily Rodriguez"         # Used for alt text
           image: "mohammed.jpg"              # From assets/media/
-          url: "/people"              # Internal link (no external needed)
+          url: "/about/people"              # Internal link (no external needed)
           
         - name: "David Kim"               # Used for alt text
           image: "sofia.jpg"              # From assets/media/
-          url: "/people"
+          url: "/about/people"
           external: true
           
         - name: "Lisa Thompson"           # Used for alt text
           image: "luis.jpg"               # From assets/media/
-          url: /people             # Image won't be clickable
+          url: /about/people             # Image won't be clickable
   
     design:
       spacing:

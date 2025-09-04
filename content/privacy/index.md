@@ -26,7 +26,7 @@ image:
 
 This page is published with [Hugo theme](https://themes.gohugo.io/) for [CSM Hugo](https://gohugo.io). Being a [static website](https://en.wikipedia.org/wiki/Static_web_page), it does not collect or share any personal data with third parties. However, it uses external services to add various functionalities, which are detailed in the following list.
 
-- [<i class="fa-brands fa-gitlab"></i> Gitlab](https://about.gitlab.com/privacy/) for hosting it's source code.
+- [<i class="fa-brands fa-gitlab"></i> Gitlab](https://about/about.gitlab.com/privacy/) for hosting it's source code.
 - [<i class="fa-solid fa-address-book"></i> Web3forms](https://web3forms.com/privacy) for contact form. I will answer your message through your provided email. Please note that GDPR.eu is run by Proton Mail, the world’s largest encrypted email service and recommends end to end encryption for secure communication.
 - [<i class="fa-brands fa-cloudflare"></i> Cloudfare](https://www.cloudflare.com/en-gb/privacypolicy/) for serving the page and analytics.
 - [<i class="fa-brands fa-creative-commons"></i> Creative Commons](https://creativecommons.org/privacy/) for the license.

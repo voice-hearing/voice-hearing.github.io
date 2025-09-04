@@ -1,42 +1,188 @@
-<footer aria-labelledby="footer-heading" class="bg-gray-900 dark:bg-gray-950" style="margin: 0; padding: 0; margin-top: 0 !important; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+<footer aria-labelledby="footer-heading" class="pt-16 bg-gray-900 dark:bg-gray-900">
   <span id="footer-heading" class="sr-only">Footer</span>
 
-  <!-- Main Footer Content - Centered Container -->
-  <div class="pb-6 pt-12 bg-gray-900 dark:bg-gray-950 w-full">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="text-white xl:col-span-1 text-center">
-          <a class="text-2xl font-bold tracking-tighter text-white hover:text-gray-100 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8" href="{{site.Home.RelPermalink}}">
-            {{site.Params.footer.content.logo.text | default "" }}
-          </a>
-          <p class="mt-2 text-xl text-white text-center">{{site.Params.footer.content.tagline | default "" }}</p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-{{site.Params.footer.design.columns | default 4 }} gap-8 mt-12 xl:mt-0 xl:col-span-2">
-          {{ $menu := .Site.Menus.footer }}
-          {{ range $index, $menuItem := $menu }}
-          <div>
-            <h3 class="text-2xl font-bold tracking-wider text-white uppercase text-center">{{ $menuItem.Name }}</h3>
-            <ul role="list" class="mt-4 space-y-2 text-center">
-              {{ range $childIndex, $childMenuItem := $menuItem.Children }}
-              {{ $url := .URL | relLangURL }}
+  <div class="pb-6 mx-auto max-w-full px-6">
+
+    <!-- Mobile and MD: Params on top, columns 1&2 side by side, social bottom -->
+    <div class="lg:hidden">
+      <!-- Params Section - Top -->
+      <div class="text-white text-center mb-8">
+        <a class="text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed" href="{{site.Home.RelPermalink}}">
+          {{site.Params.footer.content.logo.text | default "" }}
+        </a>
+        <p class="mt-2 text-xl text-white">{{site.Params.footer.content.tagline | default "" }}</p>
+      </div>
+
+      <!-- Menu Columns 1 & 2 - Split 50/50 left and right -->
+      <div class="grid grid-cols-2 gap-8 mb-8">
+        {{ $menu := .Site.Menus.footer }}
+        {{ if $menu }}
+          {{ if ge (len $menu) 1 }}
+          <div class="text-center">
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">{{ (index $menu 0).Name }}</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              {{ range (index $menu 0).Children }}
               <li>
-                <a href="{{ $url }}" class="text-xl font-normal text-white hover:text-gray-100"
+                <a href="{{ .URL | relLangURL }}" class="text-xl font-normal text-white hover:text-gray-300"
                    {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}>
-                  {{ $childMenuItem.Name }}
+                  {{ .Name }}
                 </a>
               </li>
               {{ end }}
             </ul>
           </div>
           {{ end }}
-          
-          <!-- Social Icons + Additional Text Column -->
-          {{ if or site.Params.social site.Params.footer.social_text }}
-          <div>
-            <h3 class="text-2xl font-bold tracking-wider text-white uppercase text-center">Follow Us</h3>
-            
-            <!-- Social Icons -->
-            {{ if site.Params.social }}
+
+          {{ if ge (len $menu) 2 }}
+          <div class="text-center">
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">{{ (index $menu 1).Name }}</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              {{ range (index $menu 1).Children }}
+              <li>
+                <a href="{{ .URL | relLangURL }}" class="text-xl font-normal text-white hover:text-gray-300"
+                   {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <!-- Additional Footer Links Above Social -->
+      {{ if site.Params.links_above_social }}
+      <div class="text-center mb-8">
+        <div class="flex flex-wrap justify-center gap-4">
+          {{ range site.Params.links_above_social }}
+          <a href="{{ .url }}" class="text-lg font-normal text-white hover:text-gray-300"
+             {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+            {{ .name }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Social Section - Single column underneath -->
+      {{ if site.Params.social }}
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold tracking-wider text-white uppercase">Follow Us</h3>
+        <div class="mt-4 flex flex-wrap justify-center space-x-4">
+          {{ range site.Params.social }}
+          <a href="{{ .link }}" target="_blank" rel="noopener" 
+             class="text-white hover:text-gray-300 transition-colors duration-200"
+             aria-label="{{ .name }}">
+            {{ partial "functions/get_icon" (dict "name" .icon "attributes" `class="w-8 h-8"`) }}
+          </a>
+          {{ end }}
+        </div>
+        {{ with site.Params.social_text }}
+        <p class="mt-4 text-center text-white text-lg">
+          {{ . | markdownify | emojify }}
+        </p>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Additional Footer Links Below Social -->
+      {{ if site.Params.links_below_social }}
+      <div class="text-center">
+        <div class="flex flex-wrap justify-center gap-4">
+          {{ range site.Params.links_below_social }}
+          <a href="{{ .url }}" class="text-lg font-normal text-white hover:text-gray-300"
+             {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+            {{ .name }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Large screens (lg, xl): Params + 3 more columns in one row -->
+    <div class="hidden lg:block">
+      <div class="flex flex-row lg:justify-between lg:items-start gap-8 w-full">
+        
+        <!-- Column 1: Params -->
+        <div class="flex-1 text-white text-left">
+          <a class="text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed" href="{{site.Home.RelPermalink}}">
+            {{site.Params.footer.content.logo.text | default "Your Company" }}
+          </a>
+          <p class="mt-2 text-xl text-white">{{site.Params.footer.content.tagline | default "Your tagline here" }}</p>
+        </div>
+
+        <!-- Column 2: First Menu -->
+        <div class="flex-1 text-center">
+          {{ $menu := .Site.Menus.footer }}
+          {{ if and $menu (ge (len $menu) 1) }}
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">{{ (index $menu 0).Name }}</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              {{ range (index $menu 0).Children }}
+              <li>
+                <a href="{{ .URL | relLangURL }}" class="text-xl font-normal text-white hover:text-gray-300"
+                   {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          {{ else }}
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">Services</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">Web Design</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">Development</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">SEO</a></li>
+            </ul>
+          {{ end }}
+        </div>
+
+        <!-- Column 3: Second Menu -->
+        <div class="flex-1 text-center">
+          {{ if and $menu (ge (len $menu) 2) }}
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">{{ (index $menu 1).Name }}</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              {{ range (index $menu 1).Children }}
+              <li>
+                <a href="{{ .URL | relLangURL }}" class="text-xl font-normal text-white hover:text-gray-300"
+                   {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          {{ else }}
+            <h3 class="text-2xl font-bold tracking-wider text-white uppercase">Company</h3>
+            <ul role="list" class="mt-4 space-y-2">
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">About Us</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">Contact</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">Careers</a></li>
+            </ul>
+          {{ end }}
+        </div>
+
+        <!-- Column 4: Social + Additional Links -->
+        <div class="flex-1 text-center">
+          <!-- Additional Footer Links Above Social -->
+          {{ if site.Params.links_above_social }}
+          <div class="mb-6">
+            <div class="space-y-2">
+              {{ range site.Params.links_above_social }}
+              <div>
+                <a href="{{ .url }}" class="text-lg font-normal text-white hover:text-gray-300"
+                   {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .name }}
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- Social Section -->
+          <h3 class="text-2xl font-bold tracking-wider text-white uppercase">Follow Us</h3>
+          {{ if site.Params.social }}
             <div class="mt-4 flex flex-wrap justify-center space-x-4">
               {{ range site.Params.social }}
               <a href="{{ .link }}" target="_blank" rel="noopener" 
@@ -46,63 +192,78 @@
               </a>
               {{ end }}
             </div>
-            {{ end }}
-            
-            <!-- Additional Text Below Icons -->
-            {{ with site.Params.footer.social_text }}
+            {{ with site.Params.social_text }}
             <p class="mt-4 text-center text-white text-lg">
               {{ . | markdownify | emojify }}
             </p>
             {{ end }}
-            
+          {{ else }}
+            <ul role="list" class="mt-4 space-y-2">
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">Twitter</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">LinkedIn</a></li>
+              <li><a href="#" class="text-xl font-normal text-white hover:text-gray-300">GitHub</a></li>
+            </ul>
+          {{ end }}
+
+          <!-- Additional Footer Links Below Social -->
+          {{ if site.Params.links_below_social }}
+          <div class="mt-6">
+            <div class="space-y-2">
+              {{ range site.Params.links_below_social }}
+              <div>
+                <a href="{{ .url }}" class="text-lg font-normal text-white hover:text-gray-300"
+                   {{ if findRE `^http` .url }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .name }}
+                </a>
+              </div>
+              {{ end }}
+            </div>
           </div>
           {{ end }}
-          
         </div>
+
       </div>
     </div>
+
   </div>
   
-  <!-- Bottom Section - Centered Container -->
-  <div class="bg-black dark:bg-black border-t border-gray-700 dark:border-gray-800 w-full">
-    <div class="px-4 py-8 mx-auto max-w-7xl">
-      <div class="flex flex-wrap items-baseline text-white">
-        {{ $show_translations := site.Params.footer.show_translations | default true }}
-        {{ if .IsTranslated | and $show_translations }}
-        <div class="flex gap-3 py-2 px-4">
-          <div class="font-bold">
-            {{- partial "functions/get_icon" (dict "name" "globe-alt" "attributes" `class="inline-block pr-1" style="height: 1em"`) -}}
-            {{ i18n "languages" }}:
-          </div>
-          <div class="font-bold">{{ index site.Data.languages .Lang }}</div>
-          {{ range .Translations }}
-          <div><a href="{{ .Permalink }}">{{ index site.Data.languages .Lang }}</a></div>
-          {{ end }}
-        </div>
-        {{ end }}
-        {{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
-        <p class="text-right text-white">
-          {{ with site.GetPage "/privacy.md" }}
-          {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-          {{ end }}
-          {{ with site.GetPage "/terms.md" }}
-          {{ if site.GetPage "/privacy.md" }} &middot; {{ end }}
-          {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-          {{ end }}
-          {{ with site.GetPage "/disclaimer.md" }}
-          {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
-          {{ end }}
-        </p>
-        {{ end }}
+  <div class="px-4 py-12 mx-auto bg-black dark:bg-black max-w-full px-8 border-t border-gray-700">
+    <div class="flex flex-wrap items-baseline text-white">
+      {{ $show_translations := site.Params.footer.show_translations | default true }}
+{{ if .IsTranslated | and $show_translations }}
+<div class="flex gap-3 py-2 px-4">
+  <div class="font-bold text-white">
+    {{- partial "functions/get_icon" (dict "name" "globe-alt" "attributes" `class="inline-block pr-1" style="height: 1em"`) -}}
+    {{ i18n "languages" }}:
+  </div>
+  <div class="font-bold text-white">{{ index site.Data.languages .Lang }}</div>
+  {{ range .Translations }}
+  <div><a href="{{ .Permalink }}" class="text-white hover:text-gray-300">{{ index site.Data.languages .Lang }}</a></div>
+  {{ end }}
+</div>
+{{ end }}
+{{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
+<p class="text-right text-white">
+  {{ with site.GetPage "/privacy.md" }}
+  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
+  {{ end }}
+  {{ with site.GetPage "/terms.md" }}
+  {{ if site.GetPage "/privacy.md" }}<span class="text-white"> &middot; </span>{{ end }}
+  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
+  {{ end }}
+  {{ with site.GetPage "/disclaimer.md" }}
+  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
+  {{ end }}
+</p>
+{{ end }}
 
-        {{ with site.Params.footer.text }}
-        <p class="text-right text-white">
-          {{ . | markdownify | emojify }}
-        </p>
-        {{ end }}
-        <span class="text-white">&nbsp; &middot; &nbsp;</span>
-        <span class="text-white">{{ partial "site_footer_license" . }}</span>
-      </div>
+{{ with site.Params.footer.text }}
+<p class="text-right text-white">
+  {{ . | markdownify | emojify }}
+</p>
+{{ end }}
+<span class="text-white">&nbsp; &middot; &nbsp;</span>
+<span class="text-white">{{ partial "site_footer_license" . }}</span>
     </div>
   </div>
 </footer>

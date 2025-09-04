@@ -1,5 +1,43 @@
-{{/* Hugo Circular Progress Shortcode - Fixed */}}
+{{/* Hugo Circular Progress Shortcode - Subtle 5% Pulsing Circumference Animation */}}
 {{/* Usage: {{< circular-progress title="My Skills" items="JavaScript:85,Python:75,CSS:90" >}} */}}
+
+<style>
+@keyframes subtleProgressPulse {
+  0%, 100% { stroke-dashoffset: var(--offset); }
+  50% { stroke-dashoffset: calc(var(--offset) + var(--pulse-offset)); }
+}
+
+.circular-progress circle.progress {
+  stroke: #B91C1C; /* gray-700 */
+  animation: subtleProgressPulse 2.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+.dark .circular-progress circle.progress {
+  stroke: #FCA5A5; /* gray-400 */
+}
+
+.circular-progress {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Stagger animations for multiple items */
+.circular-progress:nth-child(1) circle.progress { animation-delay: 0s; }
+.circular-progress:nth-child(2) circle.progress { animation-delay: 0.3s; }
+.circular-progress:nth-child(3) circle.progress { animation-delay: 0.6s; }
+.circular-progress:nth-child(4) circle.progress { animation-delay: 0.9s; }
+.circular-progress:nth-child(5) circle.progress { animation-delay: 1.2s; }
+
+/* Hover effect to pause animation */
+.circular-progress:hover circle.progress {
+  animation-play-state: paused;
+}
+</style>
 
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
   {{ with (.Get "title") }}
@@ -7,11 +45,11 @@
     {{ . | markdownify | emojify }}
   </div>
   {{ end }}
-  
+
   {{ with (.Get "text") }}
   <p class="text-center text-gray-600 dark:text-gray-300 mb-4">{{ . | markdownify | emojify }}</p>
   {{ end }}
-  
+
   <div class="flex items-center flex-col lg:flex-row gap-x-8 gap-y-6">
     {{ $items := split (.Get "items") "," }}
     {{ range $items }}
@@ -19,23 +57,26 @@
     {{ $name := index $parts 0 }}
     {{ $percentStr := index $parts 1 }}
     {{ $percent := int $percentStr }}
-    
+
     {{/* Calculate circle values */}}
     {{ $radius := 56 }}
     {{ $circumference := mul 2 3.14159 $radius }}
     {{ $progress := div (mul $circumference $percent) 100 }}
     {{ $offset := sub $circumference $progress }}
-    
-    <div class="flex flex-col items-center">
+    {{/* Calculate 5% pulse offset = 5% of total circumference */}}
+    {{ $pulseOffset := div (mul $circumference 5) 100 }}
+
+    <div class="circular-progress flex flex-col items-center" 
+         style="--circumference: {{ $circumference }}px; --offset: {{ $offset }}px; --pulse-offset: {{ $pulseOffset }}px;">
       <div class="flex items-center justify-center w-32 h-32 relative">
         <svg class="transform -rotate-90 w-32 h-32" viewBox="0 0 144 144">
           <!-- Background circle -->
           <circle cx="72" cy="72" r="56" stroke="currentColor" stroke-width="12" 
                   fill="transparent" class="text-gray-300 dark:text-gray-600" />
-          <!-- Progress circle -->
+          <!-- Progress circle with subtle 5% pulse -->
           <circle cx="72" cy="72" r="56" stroke="currentColor" stroke-width="12" 
-                  fill="transparent" class="text-primary-500 dark:text-primary-400"
-                  style="stroke-dasharray: {{ $circumference }}; stroke-dashoffset: {{ $offset }};" />
+                  fill="transparent" class="progress"
+                  style="stroke-dasharray: {{ $circumference }}px; stroke-dashoffset: {{ $offset }}px;" />
         </svg>
         <!-- Percentage text -->
         <span class="absolute text-2xl font-bold text-gray-900 dark:text-white">{{ $percent }}%</span>

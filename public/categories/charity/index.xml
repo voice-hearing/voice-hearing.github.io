@@ -14,9 +14,9 @@
     
     <item>
       <title> 🌱 CONTACT US</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:1313/about/contact/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:1313/about/contact/</guid>
       <description>&lt;h2 id=&#34;write-us-something-beautiful&#34;&gt;Write us something beautiful&lt;/h2&gt;
 &lt;p&gt;Asumen charity warmly invites you to connect with a story of hope, freedom, and heartfelt service where your contact becomes the first step toward belonging, transformation, and community impact in west london.&lt;/p&gt;
 &lt;p&gt;Contact Us — Asumen charity
@@ -68,7 +68,7 @@ You might already sense that making contact is more than a formality—it’s th
           &lt;input type=&#34;hidden&#34; name=&#34;access_key&#34; value=&#34;33cdef84-3ac2-4fe8-b394-3853e990cdac&#34;&gt;
           &lt;input type=&#34;checkbox&#34; name=&#34;botcheck&#34; class=&#34;hidden&#34; style=&#34;display: none;&#34;&gt;
           &lt;div class=&#34;h-captcha&#34; data-captcha=&#34;true&#34;&gt;&lt;/div&gt;
-          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;/about/thank-you&#34;&gt;
+          &lt;input type=&#34;hidden&#34; name=&#34;redirect&#34; value=&#34;/about/about/thank-you&#34;&gt;
           
           &lt;div class=&#34;grid gap-4&#34;&gt;
             
@@ -259,9 +259,9 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
     
     <item>
       <title> 🌱 HOW CAN I HELP?</title>
-      <link>http://localhost:1313/how-you-can-help/</link>
+      <link>http://localhost:1313/how-you-can-help/how-you-can-help/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/how-you-can-help/</guid>
+      <guid>http://localhost:1313/how-you-can-help/how-you-can-help/</guid>
       <description>
 &lt;div class=&#34;container mx-auto prose prose-slate lg:prose-xl dark:prose-invert&#34;&gt;
   &lt;details class=&#34;mt-3 overflow-hidden rounded text-base&#34;&gt;
@@ -466,9 +466,9 @@ ${content}`;
     
     <item>
       <title> 🌱 WHAT WE DO</title>
-      <link>http://localhost:1313/what-we-do/</link>
+      <link>http://localhost:1313/what-we-do/what-we-do/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/what-we-do/</guid>
+      <guid>http://localhost:1313/what-we-do/what-we-do/</guid>
       <description>&lt;h1 id=&#34;about-us--asumen-charity&#34;&gt;About Us — Asumen charity&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;“Where the Spirit of the Lord is, there is freedom.”&lt;/em&gt; — 2 Corinthians 3:17&lt;/p&gt;
 &lt;p&gt;Picture yourself stepping into a space where &lt;strong&gt;freedom&lt;/strong&gt;, &lt;strong&gt;hope&lt;/strong&gt;, and &lt;strong&gt;community&lt;/strong&gt; bloom in the heart of west london. Here, at Asumen charity, our name—&lt;em&gt;Asumen&lt;/em&gt;—rings rich with meaning. Rooted in the Persian word for “freedom” or “liberty,” it travels through diverse Middle Eastern and South Asian languages—Luri, Pashto, Kurdish, Hindko, Baluchi, Hindi, Urdu, Punjabi, Bengali, Kashmiri—carrying the promise of liberty to all corners of human experience.&lt;/p&gt;
@@ -636,9 +636,9 @@ ${content}`;
     
     <item>
       <title>🌱 DONATE</title>
-      <link>http://localhost:1313/donate/</link>
+      <link>http://localhost:1313/donate/donate/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/donate/</guid>
+      <guid>http://localhost:1313/donate/donate/</guid>
       <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 1234567 Registered Charity Number: 988843728&lt;/em&gt;&lt;/p&gt;

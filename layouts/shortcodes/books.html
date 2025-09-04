@@ -1,4 +1,4 @@
-{{/* Book/Portfolio Gallery Shortcode */}}
+{{/* Book/Portfolio Gallery Shortcode - Fixed Image Spacing */}}
 {{/* Usage: {{< books data="books" title="My Publications" text="Explore my latest work" blue="Portfolio" >}} */}}
 
 {{- $data_file := .Get "data" -}}
@@ -20,33 +20,34 @@
       {{- range $items -}}
         <div class="group flex flex-col items-center max-w-[200px] w-full">
           
-          <!-- Book Cover/Image with Link -->
-          <a href="{{ .url }}" 
-             {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
-             class="block mb-3 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <!-- Book Cover/Image with Link - Fixed Container -->
+          <div class="mb-1 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" style="width: 200px; height: 300px; line-height: 0;">
+            <a href="{{ .url }}" 
+               {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
+               class="block w-full h-full">
             
-            {{- $img := resources.Get (printf "media/%s" .image) -}}
-            {{- if $img -}}
-              {{- $book_cover := $img.Fill "200x300 Center webp q85" -}}
-              <img src="{{ $book_cover.RelPermalink }}" 
-                   alt="{{ .name | plainify }}" 
-                   class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
-                   style="width: 200px; height: 300px;"
-                   loading="lazy">
-            {{- else -}}
-              <!-- Placeholder if image not found -->
-              <div class="w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4"
-                   style="width: 200px; height: 300px;">
-                <div>
-                  <div class="text-gray-500 dark:text-gray-400 text-4xl mb-2">📖</div>
-                  <span class="text-sm text-gray-600 dark:text-gray-300 font-medium">{{ .name }}</span>
+              {{- $img := resources.Get (printf "media/%s" .image) -}}
+              {{- if $img -}}
+                {{- $book_cover := $img.Fill "200x300 Center webp q85" -}}
+                <img src="{{ $book_cover.RelPermalink }}" 
+                     alt="{{ .name | plainify }}" 
+                     class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                     style="display: block; vertical-align: top; margin: 0; padding: 0; line-height: 0;"
+                     loading="lazy">
+              {{- else -}}
+                <!-- Placeholder if image not found -->
+                <div class="w-full h-full bg-gray-300 dark:bg-gray-600 rounded-lg flex items-center justify-center text-center px-4">
+                  <div>
+                    <div class="text-gray-500 dark:text-gray-400 text-4xl mb-2">📖</div>
+                    <span class="text-sm text-gray-600 dark:text-gray-300 font-medium">{{ .name }}</span>
+                  </div>
                 </div>
-              </div>
-            {{- end -}}
-          </a>
+              {{- end -}}
+            </a>
+          </div>
           
           <!-- Book Title/Name -->
-          <div class="text-center w-full mb-2">
+          <div class="text-center w-full mb-1">
             <a href="{{ .url }}" 
                {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
                class="block">

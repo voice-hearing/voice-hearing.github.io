@@ -57,7 +57,7 @@ header:
     button:
       enable: true
       text: "Donate"
-      url: /donate
+      url: /donate/donate
     fixed_to_top: false
     show_search: true
     show_theme_chooser: true
@@ -74,7 +74,7 @@ footer:
     tagline: We are Extending Christ’s love to those marginalized by age, ethnicity, disability, or destitution. We are registered charity No 1234567 and Uk registered company limited No 238753 based in west london
     subscribe: or not
   design:
-    columns: 4
+    columns: 3
   copyright:
     notice: '© {year} User. This work is licensed under {license}'
     license:
@@ -83,9 +83,9 @@ footer:
       share_alike: true
       allow_commercial: false
   show_translations: true
-  social_text: "Connect with us on social media! Follow us for updates, news, and exclusive content."
 
-# Social media links
+links_above_social:
+
 social:
   - icon: 'brands/twitter'
     icon_pack: 'fab'
@@ -103,6 +103,15 @@ social:
     icon_pack: 'fab'
     name: 'Instagram'
     link: 'https://instagram.com/yourusername'
+links_below_social:
+  - name: "Sitemap"
+    url: "/sitemap.xml"
+  - name: "RSS Feed"
+    url: "/index.xml"
+  - name: "API Docs"
+    url: "/api"
+social_text: "Connect with us on social media! Follow us for updates, news, and exclusive content."
+
 
 # Localization
 locale:

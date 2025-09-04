@@ -8,124 +8,124 @@ main:
     weight: 1
   - parent: courses
     name: HOUSE
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 1
   - parent: courses
     name: KIDS CLUB
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 2
   - parent: courses
     name: HUPIE TREAT
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 3
   - parent: courses
     name: WOMEN'S YOGA
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 4
   - parent: courses
     name: HELP WITH LAW
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 5
   - parent: courses
     name: HELP WITH MEDICAL ATTENDANCE
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 6
   - parent: courses
     name: LISTENING
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 7
   - identifier: practice
     name: HOW I CAN HELP
     weight: 2
   - parent: practice
     name: PRAYING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 1
   - parent: practice
     name: DONATING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 2
   - parent: practice
     name: REGULAR GIVING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 3
   - parent: practice
     name: LEAVE A GIFT IN YOUR WILL
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 4
   - parent: practice
     name: GIVING IN MEMORY
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 5
   - parent: practice
     name: VOLUNTEERING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 6
   - parent: practice
     name: PROVIDING SERVICE
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 7
   - parent: practice
     name: SERVICING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 8
   - parent: practice
     name: SHARING INFO
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 9
   - parent: practice
     name: PRAYING
-    url: /how-you-can-help/
+    url: /how-you-can-help/how-you-can-help/
     weight: 10
   - identifier: about
     name: ABOUT
     weight: 3
   - parent: about
     name: WHO WE ARE
-    url: /about/
+    url: /about/about/
     weight: 1
   - parent: about
     name: WHERE WE WORK
-    url: /people
+    url: /about/people
     weight: 2
   - parent: about
     name: WHO WE WORK WITH
-    url: /about
+    url: /about/about
     weight: 3
   - parent: about
     name: NEWS
-    url: /about
+    url: /about/about
     weight: 4
   - parent: about
     name: FAQ'S
-    url: /about/
+    url: /about/about/
     weight: 5
   - parent: about
     name: OUR HISTORY
-    url: /people
+    url: /about/people
     weight: 6
   - parent: about
     name: OUR TEAM
-    url: /about
+    url: /about/about
     weight: 7
   - parent: about
     name: MINISTRY
-    url: /about
+    url: /about/about
     weight: 8
   - parent: about
     name: OUTREACH
-    url: /about
+    url: /about/about
     weight: 9
   - identifier: site
     name: CONTACT
     weight: 4
   - parent: site
     name: CONTACT US
-    url: /contact
+    url: /about/contact
     weight: 1
   - parent: site
     name: SUBSCRIBE
-    url: /subscribe
+    url: /about/subscribe
     weight: 2
   - parent: site
     name: RSS
@@ -144,11 +144,11 @@ main:
     weight: 5
   - parent: shop
     name: SHOP WITH OUR PARTNERS
-    url: /contact
+    url: /about/contact
     weight: 1
   - parent: shop
     name: ONLINE SHOP
-    url: /subscribe
+    url: /about/subscribe
     weight: 2
 
 footer:
@@ -157,56 +157,37 @@ footer:
     weight: 1
   - parent: about
     name: Opportunities
-    url: /about/
+    url: /about/about/
     weight: 1
   - parent: about
     name: People
-    url: /people
+    url: /about/people
     weight: 2
   - parent: about
     name: News
-    url: /about
+    url: /about/about
     weight: 3
   - parent: about
     name: Outreach
-    url: /about
+    url: /about/about
     weight: 4
-  - identifier: courses
+  - identifier: yumi
     name: Contact
     weight: 2
-  - parent: courses
+  - parent: yumi
     name: Contact
-    url: /contact
+    url: /about/contact
     weight: 1
-  - parent: courses
+  - parent: yumi
     name: 20 XXXXxxxll Rd S, Sheffield, SX0 9XX
-    url: /contact
+    url: /about/contact
     weight: 2
-  - parent: courses
+  - parent: yumi
     name: Mon-Fri 10 to 5
-    url: /what-we-do
+    url: /what-we-do/what-we-do
     weight: 3
-  - parent: courses
+  - parent: yumi
     name: 📞 54391372612
-    url: /what-we-do
-    weight: 4
-  - identifier: practice
-    name: Experience
-    weight: 3
-  - parent: practice
-    name: Hands-on Impact
-    url: /how-you-can-help/
-    weight: 1
-  - parent: practice
-    name: Developing Skills
-    url: /how-you-can-help/
-    weight: 2
-  - parent: practice
-    name: Connecting with Others
-    url: /how-you-can-help/
-    weight: 3
-  - parent: practice
-    name: Finding Purpose
-    url: /how-you-can-help/
+    url: /what-we-do/what-we-do
     weight: 4
   

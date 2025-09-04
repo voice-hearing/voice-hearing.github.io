@@ -1,4 +1,4 @@
-{{/* Client Logos Shortcode */}}
+{{/* Client Logos Shortcode - Original Size with Overlay Text */}}
 {{/* Usage: {{< logos data="clients" title="Our Clients" text="Trusted by leading companies" blue="Partners" >}} */}}
 
 {{- $data_file := .Get "data" -}}
@@ -14,45 +14,66 @@
 
 {{- if $clients -}}
 <section class="mx-auto max-w-screen-xl py-8 px-8">
+    
+    <!-- Header Section -->
+    {{- if or $title $text $blue -}}
+    <div class="mb-12 flex flex-col justify-center mx-auto px-8">
+      {{- if $blue -}}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{ $blue | markdownify | emojify }}</p>
+      {{- end -}}      
+      {{- if $title -}}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{ $title | markdownify | emojify }}</h2>
+      {{- end -}}
+      {{- if $text -}}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{ $text | markdownify | emojify }}</p>
+      {{- end -}}
+    </div>
+    {{- end -}}
 
-    <!-- Logo Gallery with Names & Links - 50px height, evenly spread -->
+    <!-- Logo Gallery with Original Sizing and Overlay Text -->
     <div class="flex flex-wrap justify-center items-start gap-8 md:gap-12 lg:gap-16">
       {{- range $clients -}}
-        <a href="{{ .url }}" 
-           {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
-           class="group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
+        <div class="group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
           
-          <!-- Logo Image -->
-          <div class="flex-shrink-0">
-            {{- $img := resources.Get (printf "media/%s" .image) -}}
-            {{- if $img -}}
-              {{- $logo := $img.Fit "200x50 Center" -}}
-              <img src="{{ $logo.RelPermalink }}" 
-                   alt="{{ .name | plainify }}" 
-                   class="h-12 w-auto transition-all duration-300 filter grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
-                   style="height: 50px; max-width: 200px; object-fit: contain;"
-                   loading="lazy">
-            {{- else -}}
-              <div class="h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors"
-                   style="height: 50px;">
-                <span class="text-sm text-gray-500 dark:text-gray-400">{{ .name }}</span>
-              </div>
-            {{- end -}}
+          <!-- Logo Image - Original Sizing with Overlay -->
+          <div class="flex-shrink-0 relative">
+            <a href="{{ .url }}" 
+               {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
+               class="block relative">
+               
+              {{- $img := resources.Get (printf "media/%s" .image) -}}
+              {{- if $img -}}
+                {{- $logo := $img.Fit "200x50 Center" -}}
+                <img src="{{ $logo.RelPermalink }}" 
+                     alt="{{ .name | plainify }}" 
+                     class="transition-all duration-300 filter grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+                     style="height: 50px !important; max-width: 200px !important; width: auto !important; object-fit: contain !important; display: block !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; line-height: 0 !important;"
+                     loading="lazy">
+                
+                <!-- Overlay Text (appears on hover) -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                  <span class="text-white text-sm font-medium text-center px-2">
+                    {{ .name }}
+                  </span>
+                </div>
+                
+              {{- else -}}
+                <!-- Placeholder if image not found -->
+                <div class="bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors relative"
+                     style="height: 50px !important; max-width: 200px !important;">
+                  <span class="text-sm text-gray-500 dark:text-gray-400">{{ .name }}</span>
+                </div>
+              {{- end -}}
+            </a>
           </div>
           
-          <!-- Company Name -->
-          <div class="text-center">
-            <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              {{ .name }}
-            </h4>
-          </div>
-        </a>
+        </div>
       {{- end -}}
     </div>
 
 </section>
 {{- else -}}
-  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
     <p class="text-sm font-medium text-yellow-700">Logos notice</p>
     <p class="text-sm text-yellow-600">No client logos found. Please create a data file: <strong>data/{{ $data_file }}.yaml</strong></p>
   </div>
