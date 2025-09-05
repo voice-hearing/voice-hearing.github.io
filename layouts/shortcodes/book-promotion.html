@@ -12,6 +12,17 @@ Book Promotion Shortcode - Complete corrected version
 {{ $blue := (.Get "blue") | emojify | $page.RenderString }}
 {{ $items := index site.Data (.Get "items" | default "books") }}
 
+<style>
+.text-sm {
+  font-size: 1.25rem !important;
+}
+.text-base {
+  font-size: 1.5rem !important;
+  text-transform: none !important; 
+}
+</style>
+
+
 <section>
   {{ with $blue }}
   <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300 text-center">{{ . }}</p>
@@ -26,9 +37,10 @@ Book Promotion Shortcode - Complete corrected version
 
     <!-- LEFT: Book details -->
     <div class="flex flex-col items-start px-6">
-      <h2 class="text-lg font-extrabold leading-tight text-gray-900 dark:text-white mb-2">{{ .title }}</h2>
-      <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">{{ .author }}</h3>
-
+      <h2 class="text-base font-semibold leading-tight text-gray-900 dark:text-white">{{ .title }}</h2>
+      <a href="{{ .author_url }}" class="hover:underline">
+      <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">{{ .author }} (Author)</h3>
+      </a>
       <!-- Rating stars -->
       {{ $rating := float .rating }}
       {{ $intPart := int $rating }}
@@ -54,18 +66,18 @@ Book Promotion Shortcode - Complete corrected version
       </div>
 
       <!-- Prize - moved under rating -->
-      <p class="mb-4 text-base text-gray-900 dark:text-white">Winner of: {{ .prize }}</p>
+      <p class="mb-4 text-xs text-gray-900 dark:text-white">Winner of: {{ .prize }}</p>
 
       <!-- Synopsis -->
-      <blockquote class="mb-4 text-base text-gray-800 dark:text-gray-300">{{ .synopsis }}</blockquote>
+      <p class="mb-4 text-sm text-gray-800 dark:text-gray-300">"{{ .synopsis }}"</p>
 
       <!-- Print length & publication date - moved before buttons -->
-      <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        Page Number: {{ .pages }} pages &#8226; Publication date: {{ .pub_date }}
+      <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
+        Page Number: {{ .pages }} pages &#8226; Publication date: {{ .pub_date }} &#8226; File size: {{ .file_size }}
       </p>
 
       <!-- Buttons - rounded-full with play icons -->
-      <div class="inline-flex space-x-3">
+      <div class="mt-6 inline-flex space-x-3">
         <a href="{{ .ebook_url }}" 
            class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
@@ -100,10 +112,10 @@ Book Promotion Shortcode - Complete corrected version
         <div class="absolute bottom-0 inset-x-0 bg-black bg-opacity-60 text-white p-2 flex justify-between items-center rounded-b-lg text-sm">
           <a href="{{ $book.sample_ebook_url }}" class="hover:underline">Read Sample</a>
           <a href="{{ $book.sample_audiobook_url }}" class="flex items-center gap-1 hover:underline">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5">
-            <path d="M6.5 5.5v9l7-4.5-7-4.5z"/>
-          </svg>
-            Listen Sample
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+  <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+</svg>
+            Preview
           </a>
         </div>
       </div>

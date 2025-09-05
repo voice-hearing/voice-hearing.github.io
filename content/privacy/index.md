@@ -1,5 +1,5 @@
 ---
-title: "🕵️ Privacy Policy"
+title: "Privacy Policy"
 description: "THIS SITE DOES NOT COLLECT OR SHARE ANY PERSONAL DATA WITH THIRD PARTIES."
 summary: "it does not collect or share any personal data with third parties."
 date: "2023-07-28"

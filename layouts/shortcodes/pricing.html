@@ -38,10 +38,10 @@
     {{- end }}
 
     <!-- Masonry columns -->
-    <div class="columns-1 sm:columns-2 lg:columns-2 gap-4 md:gap-8">
+    <div class="columns-1 sm:columns-2 lg:columns-2 gap-4 md:gap-8 space-y-4 sm:space-y-0">
       {{- range $plans }}
-      <div class="break-inside-avoid flex flex-col rounded-2xl border bg-white dark:bg-gray-900
-                  {{ if .featured }}border-2 border-gray-600 dark:border-gray-500{{ else }}border-gray-400 dark:border-gray-600{{ end }}">
+      <div class="break-inside-avoid flex flex-col rounded-2xl border bg-white dark:bg-gray-900 mb-4 sm:mb-0
+            {{ if .featured }}border-2 border-gray-600 dark:border-gray-500{{ else }}border-gray-400 dark:border-gray-600{{ end }}">
 
         <!-- Plan header -->
         <div class="{{ if .featured }}pt-4{{ else }}pt-2{{ end }} pb-4 px-4 sm:px-6 flex flex-col items-center text-center">

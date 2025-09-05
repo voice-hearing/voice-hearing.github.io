@@ -1633,6 +1633,9 @@
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
   }

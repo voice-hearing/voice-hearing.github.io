@@ -1,5 +1,5 @@
 ---
-title: "🧴 Disclaimer"
+title: "Disclaimer"
 description: "Never disregard professional medical advice or delay in seeking it because of something that have read on this blog or in any linked materials. If you think you may have a medical emergency, call your doctor or emergency services immediately."
 summary: "If you think you may have a medical emergency, call your doctor or emergency services immediately."
 date: "2023-07-28"

@@ -1,5 +1,5 @@
 ---
-title: ⚖️ Terms of Service
+title: Terms of Service
 description: "RULES FOR USING OUR WEBSITE AND SERVICE."
 summary: "Rules for using our website and service."
 date: "2024-05-11"

@@ -70,8 +70,13 @@ footer:
   content:
     logo:
       text: ASUMET CHARITY
+      image: "" # static/images
     subtitle: 
     tagline: We are Extending Christ’s love to those marginalized by age, ethnicity, disability, or destitution. We are registered charity No 1234567 and Uk registered company limited No 238753 based in west london
+    tagline_images:
+       - "/images/li-yang-5h_dMuX_7RE-unsplash.webp" # static/images multiple images one under other
+    tagline_images_alt:
+       - "Partner 1 Logo"
     subscribe: or not
   design:
     columns: 3

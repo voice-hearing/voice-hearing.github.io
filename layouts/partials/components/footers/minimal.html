@@ -1,16 +1,32 @@
 <footer aria-labelledby="footer-heading" class="pt-16 bg-gray-900 dark:bg-gray-900">
   <span id="footer-heading" class="sr-only">Footer</span>
-
   <div class="pb-6 mx-auto max-w-full px-6">
 
     <!-- Mobile and MD: Params on top, columns 1&2 side by side, social bottom -->
     <div class="lg:hidden">
       <!-- Params Section - Top -->
       <div class="text-white text-center mb-8">
-        <a class="text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed" href="{{site.Home.RelPermalink}}">
-          {{site.Params.footer.content.logo.text | default "" }}
+        <a href="{{ site.Home.RelPermalink }}" class="flex flex-col items-center text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed">
+          {{ if site.Params.footer.content.logo.image }}
+          <img src="{{ site.Params.footer.content.logo.image | relURL }}" 
+               alt="{{ site.Params.footer.content.logo.alt | default "Logo" }}" 
+               class="w-full h-12 object-contain mb-3" />
+          {{ end }}
+          {{ site.Params.footer.content.logo.text | default "Your Company" }}
         </a>
-        <p class="mt-2 text-xl text-white">{{site.Params.footer.content.tagline | default "" }}</p>
+
+        <!-- Multiple Images Before Tagline (Mobile) - Full Width -->
+        {{ if site.Params.footer.content.tagline_images }}
+        <div class="mt-4 w-full space-y-2">
+          {{ range $index, $image := site.Params.footer.content.tagline_images }}
+          <img src="{{ $image | relURL }}" 
+               alt="{{ index (site.Params.footer.content.tagline_images_alt | default (slice "Partner Logo" "Partner Logo" "Partner Logo" "Partner Logo")) $index }}" 
+               class="w-full h-12 object-contain" />
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <p class="mt-4 text-xl text-white">{{ site.Params.footer.content.tagline | default "Your tagline here" }}</p>
       </div>
 
       <!-- Menu Columns 1 & 2 - Split 50/50 left and right -->
@@ -32,7 +48,6 @@
             </ul>
           </div>
           {{ end }}
-
           {{ if ge (len $menu) 2 }}
           <div class="text-center">
             <h3 class="text-2xl font-bold tracking-wider text-white uppercase">{{ (index $menu 1).Name }}</h3>
@@ -105,12 +120,29 @@
     <div class="hidden lg:block">
       <div class="flex flex-row lg:justify-between lg:items-start gap-8 w-full">
         
-        <!-- Column 1: Params -->
+        <!-- Column 1: Params - Full Width Images -->
         <div class="flex-1 text-white text-left">
-          <a class="text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed" href="{{site.Home.RelPermalink}}">
-            {{site.Params.footer.content.logo.text | default "Your Company" }}
+          <a href="{{ site.Home.RelPermalink }}" class="flex items-center text-2xl font-bold tracking-tighter text-white transition duration-500 ease-in-out transform tracking-relaxed">
+            {{ if site.Params.footer.content.logo.image }}
+            <img src="{{ site.Params.footer.content.logo.image | relURL }}" 
+                 alt="{{ site.Params.footer.content.logo.alt | default "Logo" }}" 
+                 class="h-8 w-auto mr-3" />
+            {{ end }}
+            {{ site.Params.footer.content.logo.text | default "Your Company" }}
           </a>
-          <p class="mt-2 text-xl text-white">{{site.Params.footer.content.tagline | default "Your tagline here" }}</p>
+
+          <!-- Multiple Images Before Tagline (Desktop) - Full Width of Column -->
+          {{ if site.Params.footer.content.tagline_images }}
+          <div class="mt-4 w-full space-y-2">
+            {{ range $index, $image := site.Params.footer.content.tagline_images }}
+            <img src="{{ $image | relURL }}" 
+                 alt="{{ index (site.Params.footer.content.tagline_images_alt | default (slice "Partner Logo" "Partner Logo" "Partner Logo" "Partner Logo")) $index }}" 
+                 class="w-full h-12 object-contain" />
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <p class="mt-4 text-xl text-white">{{ site.Params.footer.content.tagline | default "Your tagline here" }}</p>
         </div>
 
         <!-- Column 2: First Menu -->
@@ -221,49 +253,50 @@
           </div>
           {{ end }}
         </div>
-
       </div>
     </div>
-
   </div>
-  
+
+  <!-- Bottom copyright section -->
   <div class="px-4 py-12 mx-auto bg-black dark:bg-black max-w-full px-8 border-t border-gray-700">
     <div class="flex flex-wrap items-baseline text-white">
       {{ $show_translations := site.Params.footer.show_translations | default true }}
-{{ if .IsTranslated | and $show_translations }}
-<div class="flex gap-3 py-2 px-4">
-  <div class="font-bold text-white">
-    {{- partial "functions/get_icon" (dict "name" "globe-alt" "attributes" `class="inline-block pr-1" style="height: 1em"`) -}}
-    {{ i18n "languages" }}:
-  </div>
-  <div class="font-bold text-white">{{ index site.Data.languages .Lang }}</div>
-  {{ range .Translations }}
-  <div><a href="{{ .Permalink }}" class="text-white hover:text-gray-300">{{ index site.Data.languages .Lang }}</a></div>
-  {{ end }}
-</div>
-{{ end }}
-{{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
-<p class="text-right text-white">
-  {{ with site.GetPage "/privacy.md" }}
-  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
-  {{ end }}
-  {{ with site.GetPage "/terms.md" }}
-  {{ if site.GetPage "/privacy.md" }}<span class="text-white"> &middot; </span>{{ end }}
-  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
-  {{ end }}
-  {{ with site.GetPage "/disclaimer.md" }}
-  <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300">{{ .Title }}</a>
-  {{ end }}
-</p>
-{{ end }}
+      {{ if .IsTranslated | and $show_translations }}
+      <div class="flex gap-3 py-2 px-4">
+        <div class="font-bold text-white">
+          {{- partial "functions/get_icon" (dict "name" "globe-alt" "attributes" `class="inline-block pr-1" style="height: 1em"`) -}}
+          {{ i18n "languages" }}:
+        </div>
+        <div class="font-bold text-white">{{ index site.Data.languages .Lang }}</div>
+        {{ range .Translations }}
+        <div><a href="{{ .Permalink }}" class="text-white hover:text-gray-300">{{ index site.Data.languages .Lang }}</a></div>
+        {{ end }}
+      </div>
+      {{ end }}
 
-{{ with site.Params.footer.text }}
-<p class="text-right text-white">
-  {{ . | markdownify | emojify }}
-</p>
-{{ end }}
-<span class="text-white">&nbsp; &middot; &nbsp;</span>
-<span class="text-white">{{ partial "site_footer_license" . }}</span>
+      {{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
+      <p class="text-right text-white text-xs">
+        {{ with site.GetPage "/privacy.md" }}
+        <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300 text-xs">{{ .Title }}</a>
+        {{ end }}
+        {{ with site.GetPage "/terms.md" }}
+        {{ if site.GetPage "/privacy.md" }}<span class="text-white"> &middot; </span>{{ end }}
+        <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300 text-xs">{{ .Title }}</a>
+        {{ end }}
+        {{ with site.GetPage "/disclaimer.md" }}<span class="text-white"> &middot; </span>
+        <a href="{{ .RelPermalink }}" class="text-white hover:text-gray-300 text-xs">{{ .Title }}</a>
+        {{ end }}
+      </p>
+      {{ end }}
+
+      {{ with site.Params.footer.text }}
+      <p class="text-right text-white">
+        {{ . | markdownify | emojify }}
+      </p>
+      {{ end }}
+
+      <span class="text-white">&nbsp; &middot; &nbsp;</span>
+      <span class="text-white">{{ partial "site_footer_license" . }}</span>
     </div>
   </div>
 </footer>

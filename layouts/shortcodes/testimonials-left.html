@@ -24,7 +24,7 @@
         {{ $portrait := .Fit "300x450 center webp" }}
         <img  src="{{ $portrait.RelPermalink }}"
               alt="{{ .Name | plainify }}"
-              class="rounded-lg shadow-lg max-w-full h-auto object-contain"
+              class="rounded-lg max-w-full h-auto object-contain"
               style="max-height:450px;width:auto;">
       {{ else }}
         <div class="w-72 h-96 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
@@ -58,9 +58,9 @@
         </span>
       </div>
 
-      <blockquote class="italic text-gray-700 dark:text-gray-300 prose-lg leading-relaxed">
-        {{ .testimonial }}
-      </blockquote>
+      <p class="italic text-gray-700 dark:text-gray-300 prose-lg leading-relaxed">
+        "{{ .testimonial }}"
+      </p>
     </div>
 
   </div>
