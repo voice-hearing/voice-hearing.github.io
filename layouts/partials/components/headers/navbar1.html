@@ -238,12 +238,10 @@
         {{ site.Params.header.navbar.button.text }}
       </a>
     </li>
-
       {{ end }}
     </ul>
 
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-
       {{/* Show site search? */}}
       {{ $show_search := site.Params.header.navbar.show_search | default false }}
       {{ with $show_search }}
@@ -290,18 +288,15 @@
       </div>
       {{ end }}
 
-      <!-- CTA button -->
+      <!-- CTA Button - Right Side of Header (Like Save the Children) -->
       {{ if site.Params.header.navbar.button.enable }}
-      <a
-        href="{{ site.Params.header.navbar.button.url | relLangURL }}"
-        class="inline-block rounded-full bg-primary-700 px-4 py-1.5 text-xl text-white font-semibold transition md:ml-4 hover:text-grey-300 hidden lg:inline-block">
-        {{ site.Params.header.navbar.button.text }}
-      </a>
+      <div class="bg-primary-700 px-3 py-2 hidden lg:block ml-2">
+        <a href="{{ site.Params.header.navbar.button.url | relLangURL }}" 
+           class="text-white dark:text-white text-xl font-semibold hover:text-gray-300 dark:hover:text-gray-300 no-underline">
+          {{ site.Params.header.navbar.button.text }}
+        </a>
+      </div>
       {{ end }}
     </div>
   </nav>
 </header>
-
-{{ if $show_search }}
-  {{- partial "components/search-modal.html" . -}}
-{{ end }}
