@@ -26,7 +26,7 @@
   }
   </style>
 
-  <div class="gallery-row mb-6">
+  <div class="gallery-row mb-6 mx-auto">
     {{- range $images -}}
       {{- $thumb := .Fit (printf "300x200 q%s webp"  $quality) -}}
       {{- $large := .Fit (printf "1200x800 q%s webp" $quality) -}}

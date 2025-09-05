@@ -61,7 +61,25 @@ links:
     url: "https://scholar.google.com/citations?user=XXX"
     icon: "brands/google-scholar"
 ---
-## Testimonials books
+
+
+## Tabs
+
+{{< tabs id="content" data="content" >}}
+{{< tabs id="conference" data="conference" >}}
+
+
+
+## Donations
+<!-- {{< fundraising-goal goal="75000" period="/quarter" currency="$" api="/api/stewardship-data" >}} -->
+
+<!-- Api/ Data/ Params/ Shotcuts/ -->
+
+{{< fundraising-goal goal="50000" period="/month" >}}
+
+#### People say:
+## About 4000 users
+### Testimonial together
 
 {{< testimonials-circles items="testimonial-circles" >}}
 

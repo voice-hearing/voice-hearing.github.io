@@ -1,0 +1,29 @@
+tabs:
+  - id: "day-1"
+    title: "Day 1"
+    content: "csv:data/conference-day1.csv"
+    
+  - id: "day-2" 
+    title: "Day 2"
+    content: "csv:data/conference-day2.csv"
+    
+  - id: "day-3"
+    title: "Day 3"
+    content: "csv:data/conference-day3.csv"
+    
+  - id: "venue-info"
+    title: "Venue & Info"
+    content: |
+      **Conference Venue:** Charity Excellence Center
+      
+      **Address:** 123 Philanthropy Avenue, Community District
+      
+      **Facilities:**
+      - Free WiFi throughout venue
+      - Accessibility features available
+      - Parking: Complimentary for attendees
+      - Childcare: Available upon request
+      
+      **Contact:**
+      - Phone: (555) 123-CONF
+      - Email: info@charityconference.org

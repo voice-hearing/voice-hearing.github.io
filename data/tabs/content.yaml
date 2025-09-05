@@ -1,0 +1,28 @@
+tabs:
+  - id: "about"
+    title: "About Us"
+    content: |
+      Our **mission** statement is to serve our community through:
+      
+      - Compassionate outreach programs
+      - Educational initiatives
+      - Spiritual guidance and support
+      
+  - id: "services"
+    title: "Our Services"
+    content: |
+      **Weekly Services:**
+      
+      - Sunday Morning Worship: 10:00 AM
+      - Wednesday Prayer Meeting: 7:00 PM
+      - Friday Community Dinner: 6:00 PM
+      
+  - id: "volunteer"
+    title: "Get Involved"
+    content: |
+      **Ways to Help:**
+      
+      - Food pantry volunteer
+      - Youth program mentor  
+      - Community outreach team
+      - Administrative support

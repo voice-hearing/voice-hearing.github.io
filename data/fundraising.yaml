@@ -1,0 +1,13 @@
+campaigns:
+  monthly:
+    goal: 50000
+    currency: "£"
+    period: "/month"
+    stewardship_id: "your-campaign-id"
+    bank_account: "your-account-id"
+    
+  building_fund:
+    goal: 250000
+    currency: "£"
+    period: " total"
+    stewardship_id: "building-campaign-id"

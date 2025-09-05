@@ -17,7 +17,1924 @@
       <link>http://localhost:1313/post/components/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/components/</guid>
-      <description>&lt;h2 id=&#34;testimonials-books&#34;&gt;Testimonials books&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;tabs&#34;&gt;Tabs&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;mb-4 border-b border-gray-200 dark:border-gray-700&#34;&gt;
+    &lt;ul class=&#34;flex flex-wrap -mb-px text-sm font-medium text-center list-none&#34; 
+        id=&#34;content-tab&#34; role=&#34;tablist&#34;&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;about-tab&#34; 
+                    data-tabs-target=&#34;#about&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;about&#34; 
+                    aria-selected=&#34;true&#34;&gt;
+                About Us
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;services-tab&#34; 
+                    data-tabs-target=&#34;#services&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;services&#34; 
+                    aria-selected=&#34;false&#34;&gt;
+                Our Services
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;volunteer-tab&#34; 
+                    data-tabs-target=&#34;#volunteer&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;volunteer&#34; 
+                    aria-selected=&#34;false&#34;&gt;
+                Get Involved
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;content-content&#34;&gt;
+    
+    &lt;div class=&#34;p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;about&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;about-tab&#34;&gt;
+        
+        
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+              &lt;p&gt;Our &lt;strong&gt;mission&lt;/strong&gt; statement is to serve our community through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compassionate outreach programs&lt;/li&gt;
+&lt;li&gt;Educational initiatives&lt;/li&gt;
+&lt;li&gt;Spiritual guidance and support&lt;/li&gt;
+&lt;/ul&gt;
+          &lt;/div&gt;
+        
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;services&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;services-tab&#34;&gt;
+        
+        
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+              &lt;p&gt;&lt;strong&gt;Weekly Services:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sunday Morning Worship: 10:00 AM&lt;/li&gt;
+&lt;li&gt;Wednesday Prayer Meeting: 7:00 PM&lt;/li&gt;
+&lt;li&gt;Friday Community Dinner: 6:00 PM&lt;/li&gt;
+&lt;/ul&gt;
+          &lt;/div&gt;
+        
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;volunteer&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;volunteer-tab&#34;&gt;
+        
+        
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+              &lt;p&gt;&lt;strong&gt;Ways to Help:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Food pantry volunteer&lt;/li&gt;
+&lt;li&gt;Youth program mentor&lt;/li&gt;
+&lt;li&gt;Community outreach team&lt;/li&gt;
+&lt;li&gt;Administrative support&lt;/li&gt;
+&lt;/ul&gt;
+          &lt;/div&gt;
+        
+        
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;style&gt;
+#content-tab {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+#content-tab li {
+    list-style: none !important;
+}
+&lt;/style&gt;
+
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const tabsToggle = document.querySelectorAll(&#39;#content-tab button&#39;);
+    const panels = document.querySelectorAll(&#39;#content-content &gt; div&#39;);
+
+    function activateTab(activeTab) {
+        tabsToggle.forEach(btn =&gt; {
+            btn.classList.remove(&#39;border-purple-600&#39;, &#39;text-purple-600&#39;, &#39;dark:text-purple-500&#39;);
+            btn.classList.add(&#39;text-gray-500&#39;);
+            btn.setAttribute(&#39;aria-selected&#39;, &#39;false&#39;);
+        });
+        panels.forEach(panel =&gt; panel.classList.add(&#39;hidden&#39;));
+
+        activeTab.classList.add(&#39;border-purple-600&#39;, &#39;text-purple-600&#39;, &#39;dark:text-purple-500&#39;);
+        activeTab.classList.remove(&#39;text-gray-500&#39;);
+        activeTab.setAttribute(&#39;aria-selected&#39;, &#39;true&#39;);
+        
+        const target = activeTab.getAttribute(&#39;data-tabs-target&#39;);
+        document.querySelector(target).classList.remove(&#39;hidden&#39;);
+    }
+
+    tabsToggle.forEach(btn =&gt; {
+        btn.addEventListener(&#39;click&#39;, () =&gt; activateTab(btn));
+    });
+
+    if (tabsToggle.length &gt; 0) {
+        activateTab(tabsToggle[0]);
+    }
+});
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;mb-4 border-b border-gray-200 dark:border-gray-700&#34;&gt;
+    &lt;ul class=&#34;flex flex-wrap -mb-px text-sm font-medium text-center list-none&#34; 
+        id=&#34;conference-tab&#34; role=&#34;tablist&#34;&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;day-1-tab&#34; 
+                    data-tabs-target=&#34;#day-1&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;day-1&#34; 
+                    aria-selected=&#34;true&#34;&gt;
+                Day 1
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;day-2-tab&#34; 
+                    data-tabs-target=&#34;#day-2&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;day-2&#34; 
+                    aria-selected=&#34;false&#34;&gt;
+                Day 2
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;day-3-tab&#34; 
+                    data-tabs-target=&#34;#day-3&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;day-3&#34; 
+                    aria-selected=&#34;false&#34;&gt;
+                Day 3
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;me-2 list-none&#34; role=&#34;presentation&#34;&gt;
+            &lt;button class=&#34;inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500&#34; 
+                    id=&#34;venue-info-tab&#34; 
+                    data-tabs-target=&#34;#venue-info&#34; 
+                    type=&#34;button&#34; 
+                    role=&#34;tab&#34; 
+                    aria-controls=&#34;venue-info&#34; 
+                    aria-selected=&#34;false&#34;&gt;
+                Venue &amp;amp; Info
+            &lt;/button&gt;
+        &lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;conference-content&#34;&gt;
+    
+    &lt;div class=&#34;p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;day-1&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;day-1-tab&#34;&gt;
+        
+        
+          
+          
+          
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+              
+              &lt;div class=&#34;overflow-x-auto&#34;&gt;
+                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                    
+                    &lt;tr&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Time
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Event Name
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Speaker/Facilitator
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Location
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Type
+                      &lt;/th&gt;
+                      
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        08:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Registration &amp;amp; Welcome Coffee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Foyer
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        09:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Opening Ceremony &amp;amp; Keynote
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Dr. Sarah Mitchell
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Auditorium
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Keynote
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        10:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Community Impact Strategies
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        James Rodriguez
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        10:45 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Morning Tea Break
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Catering Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Garden Terrace
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        11:15 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Digital Fundraising Revolution
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Emma Thompson
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Tech Lab
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Presentation
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        12:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grant Writing Masterclass
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Prof. Michael Chen
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Room A
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        12:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Networking Lunch
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        All Attendees
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Dining Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Volunteer Engagement Panel
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Lisa Parker &amp;amp; Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Panel
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Social Media for Nonprofits
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Alex Johnson
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Media Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        03:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Afternoon Coffee &amp;amp; Networking
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Outdoor Pavilion
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Partnership Building Strategies
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Rachel Green
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Boardroom
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Seminar
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Day 1 Wrap-up &amp;amp; Tomorrow Preview
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Director
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Auditorium
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Closing
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        05:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Welcome Reception
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        All Attendees
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Rooftop Terrace
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Social
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/div&gt;
+            
+            
+          
+          
+        
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;day-2&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;day-2-tab&#34;&gt;
+        
+        
+          
+          
+          
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+              
+              &lt;div class=&#34;overflow-x-auto&#34;&gt;
+                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                    
+                    &lt;tr&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Time
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Event Name
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Speaker/Facilitator
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Location
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Type
+                      &lt;/th&gt;
+                      
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        08:30 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Morning Coffee &amp;amp; Pastries
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Catering Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Foyer
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        09:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Sustainable Fundraising Models
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Dr. Patricia Williams
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Auditorium
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Keynote
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        09:45 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Corporate Sponsorship Workshop
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        David Kim
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Room B
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        10:30 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Coffee Break &amp;amp; Exhibitor Visit
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        All Attendees
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Exhibition Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        11:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Crisis Management for Charities
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Susan Martinez
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Presentation
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        11:45 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Financial Planning &amp;amp; Budgeting
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Robert Taylor
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Finance Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        12:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Lunch &amp;amp; Charity Showcase
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Featured Organizations
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Dining Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Youth Engagement Strategies
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Maria Santos
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Youth Center
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Legacy Giving Programs
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Thomas Anderson
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Heritage Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Seminar
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        03:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Afternoon Tea &amp;amp; Mentoring
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Mentor Network
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Garden Pavilion
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Technology Solutions for Nonprofits
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Jennifer Lee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Innovation Lab
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Demo
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Regional Collaboration Forum
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Regional Directors
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Round Table Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Panel
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        05:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Cultural Evening &amp;amp; Dinner
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Entertainment Committee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Ballroom
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Social
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/div&gt;
+            
+            
+          
+          
+        
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;day-3&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;day-3-tab&#34;&gt;
+        
+        
+          
+          
+          
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            
+            
+            
+              
+              &lt;div class=&#34;overflow-x-auto&#34;&gt;
+                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                    
+                    &lt;tr&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Time
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Event Name
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Speaker/Facilitator
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Location
+                      &lt;/th&gt;
+                      
+                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                        Type
+                      &lt;/th&gt;
+                      
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        08:30 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Morning Refreshments
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Catering Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Sunrise Lounge
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        09:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Future of Charitable Giving
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Dr. Amanda Foster
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Auditorium
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Keynote
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        09:45 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Measuring Impact &amp;amp; Outcomes
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Helen Wright
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Analytics Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        10:30 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Coffee &amp;amp; Strategic Planning
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Planning Committee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Strategy Deck
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        11:00 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Board Governance Best Practices
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Judge William Clarke
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Governance Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Seminar
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        11:45 AM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Donor Retention Strategies
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Caroline Phillips
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Donor Relations Room
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Presentation
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        12:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Closing Lunch &amp;amp; Awards
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Awards Committee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Dining Hall
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Action Planning Sessions
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Team Facilitators
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Breakout Rooms 1-5
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Workshop
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        02:45 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Resource Sharing Marketplace
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        All Participants
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Community Space
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Interactive
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        03:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Final Coffee &amp;amp; Commitment
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Team
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Collaboration Cafe
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Break
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Closing Ceremony
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Conference Director
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Grand Auditorium
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Closing
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        04:30 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Farewell &amp;amp; Network Exchange
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        All Attendees
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Foyer
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Social
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        05:00 PM
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Departure &amp;amp; Safe Travels
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Organizing Committee
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Main Entrance
+                      &lt;/td&gt;
+                      
+                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                        Farewell
+                      &lt;/td&gt;
+                      
+                    &lt;/tr&gt;
+                    
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/div&gt;
+            
+            
+          
+          
+        
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+         id=&#34;venue-info&#34; 
+         role=&#34;tabpanel&#34; 
+         aria-labelledby=&#34;venue-info-tab&#34;&gt;
+        
+        
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+              &lt;p&gt;&lt;strong&gt;Conference Venue:&lt;/strong&gt; Charity Excellence Center&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Address:&lt;/strong&gt; 123 Philanthropy Avenue, Community District&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Facilities:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Free WiFi throughout venue&lt;/li&gt;
+&lt;li&gt;Accessibility features available&lt;/li&gt;
+&lt;li&gt;Parking: Complimentary for attendees&lt;/li&gt;
+&lt;li&gt;Childcare: Available upon request&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Contact:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phone: (555) 123-CONF&lt;/li&gt;
+&lt;li&gt;Email: 
+&lt;/li&gt;
+&lt;/ul&gt;
+
+          &lt;/div&gt;
+        
+        
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;style&gt;
+#conference-tab {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+#conference-tab li {
+    list-style: none !important;
+}
+&lt;/style&gt;
+
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    const tabsToggle = document.querySelectorAll(&#39;#conference-tab button&#39;);
+    const panels = document.querySelectorAll(&#39;#conference-content &gt; div&#39;);
+
+    function activateTab(activeTab) {
+        tabsToggle.forEach(btn =&gt; {
+            btn.classList.remove(&#39;border-purple-600&#39;, &#39;text-purple-600&#39;, &#39;dark:text-purple-500&#39;);
+            btn.classList.add(&#39;text-gray-500&#39;);
+            btn.setAttribute(&#39;aria-selected&#39;, &#39;false&#39;);
+        });
+        panels.forEach(panel =&gt; panel.classList.add(&#39;hidden&#39;));
+
+        activeTab.classList.add(&#39;border-purple-600&#39;, &#39;text-purple-600&#39;, &#39;dark:text-purple-500&#39;);
+        activeTab.classList.remove(&#39;text-gray-500&#39;);
+        activeTab.setAttribute(&#39;aria-selected&#39;, &#39;true&#39;);
+        
+        const target = activeTab.getAttribute(&#39;data-tabs-target&#39;);
+        document.querySelector(target).classList.remove(&#39;hidden&#39;);
+    }
+
+    tabsToggle.forEach(btn =&gt; {
+        btn.addEventListener(&#39;click&#39;, () =&gt; activateTab(btn));
+    });
+
+    if (tabsToggle.length &gt; 0) {
+        activateTab(tabsToggle[0]);
+    }
+});
+&lt;/script&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;donations&#34;&gt;Donations&lt;/h2&gt;
+&lt;!-- 
+
+
+
+
+
+
+&lt;style&gt;
+.fundraising-display {
+  display: flex;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.goal-column, .raised-column {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.fundraising-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fundraising-amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+ 
+.donation-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: rgba(255,255,255,0.9);
+  color: #4c51bf;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+.donation-button:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+ 
+.svg-animation-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.animated-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: growthPulse 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animated-svg:nth-child(2) {
+  animation-delay: 2s;
+  opacity: 0.7;
+}
+
+@keyframes growthPulse {
+  0%, 100% { 
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+}
+
+.progress-info {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+ 
+@media (max-width: 640px) {
+  .fundraising-display {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .goal-column, .raised-column {
+    padding: 1rem 0;
+  }
+  
+  .fundraising-amount {
+    font-size: 2.2rem;
+  }
+  
+  .donation-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+&lt;/style&gt;
+
+&lt;div class=&#34;fundraising-display&#34;&gt;
+  &lt;div class=&#34;goal-column&#34;&gt;
+    &lt;div class=&#34;fundraising-label&#34;&gt;Goal&lt;/div&gt;
+    &lt;div class=&#34;fundraising-amount&#34;&gt;$75000/quarter&lt;/div&gt;
+    
+    
+    &lt;div class=&#34;donation-buttons&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/donate/one-time&#34; class=&#34;donation-button&#34;&gt;One-time Donation&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/donate/monthly&#34; class=&#34;donation-button&#34;&gt;Monthly Donation&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&#34;raised-column&#34;&gt;
+    &lt;div class=&#34;fundraising-label&#34;&gt;Raised&lt;/div&gt;
+    &lt;div class=&#34;fundraising-amount count-up&#34; id=&#34;raised-display&#34;&gt;$0&lt;/div&gt;
+    
+    
+    &lt;div class=&#34;svg-animation-container&#34;&gt;
+      &lt;svg class=&#34;animated-svg&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; viewBox=&#34;0 0 512 512&#34; xml:space=&#34;preserve&#34; fill=&#34;#3EAC92&#34;&gt;
+        &lt;g&gt;
+          &lt;rect x=&#34;168.445&#34; y=&#34;412.267&#34; style=&#34;fill:#AA8B65;&#34; width=&#34;173.46&#34; height=&#34;99.733&#34;&gt;&lt;/rect&gt;
+          &lt;path style=&#34;fill:#3EAC92;&#34; d=&#34;M312.127,292.149c10.88-28.608,18.982-61.79,18.982-97.175C331.11,87.293,256.073,0,256.073,0 s-75.037,87.293-75.037,194.974c0,35.55,8.179,68.878,19.136,97.576v116.399l55.39,26.313l60.026-30.32L312.127,292.149z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M180.329,269.671c68.004,68.004,75.745,170.521,75.745,170.521s-102.517-7.739-170.521-75.745 S9.807,193.926,9.807,193.926S112.325,201.667,180.329,269.671z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M426.448,364.448c-68.004,68.004-170.521,75.745-170.521,75.745s7.739-102.517,75.745-170.521 s170.521-75.745,170.521-75.745S494.453,296.444,426.448,364.448z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M392.308,236.992c-28.687,41.604-80.933,55.34-80.933,55.34s-5.736-53.717,22.95-95.321 s80.933-55.34,80.933-55.34S420.994,195.388,392.308,236.992z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M120.692,237.621c28.687,41.604,80.933,55.34,80.933,55.34s5.736-53.717-22.95-95.321 S97.742,142.3,97.742,142.3S92.005,196.017,120.692,237.621z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,434.862c-4.162,0-7.536-3.394-7.536-7.583V34.954c0-4.188,3.374-7.583,7.536-7.583 c4.162,0,7.537,3.394,7.537,7.583V427.28C263.609,431.468,260.235,434.862,256.073,434.862z&#34;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+      
+      &lt;svg class=&#34;animated-svg&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; viewBox=&#34;0 0 512 512&#34; xml:space=&#34;preserve&#34; fill=&#34;#266659&#34;&gt;
+        &lt;g&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,229.188c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51 c-2.943-2.944-2.943-7.715,0-10.659c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0 c2.943,2.944,2.943,7.715,0,10.659l-33.509,33.51C259.989,228.394,258.072,229.188,256.073,229.188z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,290.08c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51c-2.943-2.944-2.943-7.715,0-10.659 c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0c2.943,2.944,2.943,7.715,0,10.659 l-33.509,33.51C259.989,289.286,258.072,290.08,256.073,290.08z&#34;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;progress-info&#34;&gt;
+      &lt;span id=&#34;progress-percentage&#34;&gt;0%&lt;/span&gt; of monthly goal
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+  const raisedDisplay = document.getElementById(&#39;raised-display&#39;);
+  const progressPercentage = document.getElementById(&#39;progress-percentage&#39;);
+  const goalAmount = &#34;75000&#34;;
+  const currency = &#39;$&#39;;
+  const apiUrl = &#39;\/api\/stewardship-data&#39;;
+  
+  let currentAmount = 0;
+  
+  function animateCount(target, duration = 2000) {
+    const start = currentAmount;
+    const increment = (target - start) / (duration / 16);
+    
+    function updateCount() {
+      currentAmount += increment;
+      if ((increment &gt; 0 &amp;&amp; currentAmount &gt;= target) || 
+          (increment &lt; 0 &amp;&amp; currentAmount &lt;= target)) {
+        currentAmount = target;
+        
+        raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+        updateProgress();
+        return;
+      }
+      
+      raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+      requestAnimationFrame(updateCount);
+    }
+    updateCount();
+  }
+  
+  function updateProgress() {
+    const percentage = Math.min(100, (currentAmount / goalAmount * 100));
+    progressPercentage.textContent = Math.round(percentage) + &#39;%&#39;;
+  }
+  
+  async function fetchFundraisingData() {
+    try {
+      const response = await fetch(apiUrl);
+      if (response.ok) {
+        const data = await response.json();
+        animateCount(data.raised || 0);
+      } else {
+        simulateProgress();
+      }
+    } catch (error) {
+      console.log(&#39;Using simulated data for demo&#39;);
+      simulateProgress();
+    }
+  }
+  
+  function simulateProgress() {
+    const targetAmount = Math.min(goalAmount, Math.random() * goalAmount * 0.8);
+    animateCount(targetAmount);
+  }
+  
+  fetchFundraisingData();
+  setInterval(fetchFundraisingData, 30000);
+})();
+&lt;/script&gt;
+ --&gt;
+&lt;!-- Api/ Data/ Params/ Shotcuts/ --&gt;
+
+
+
+
+
+
+
+&lt;style&gt;
+.fundraising-display {
+  display: flex;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.goal-column, .raised-column {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.fundraising-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fundraising-amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+ 
+.donation-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: rgba(255,255,255,0.9);
+  color: #4c51bf;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+.donation-button:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+ 
+.svg-animation-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.animated-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: growthPulse 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animated-svg:nth-child(2) {
+  animation-delay: 2s;
+  opacity: 0.7;
+}
+
+@keyframes growthPulse {
+  0%, 100% { 
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+}
+
+.progress-info {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+ 
+@media (max-width: 640px) {
+  .fundraising-display {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .goal-column, .raised-column {
+    padding: 1rem 0;
+  }
+  
+  .fundraising-amount {
+    font-size: 2.2rem;
+  }
+  
+  .donation-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+&lt;/style&gt;
+
+&lt;div class=&#34;fundraising-display&#34;&gt;
+  &lt;div class=&#34;goal-column&#34;&gt;
+    &lt;div class=&#34;fundraising-label&#34;&gt;Goal&lt;/div&gt;
+    &lt;div class=&#34;fundraising-amount&#34;&gt;£50000/month&lt;/div&gt;
+    
+    
+    &lt;div class=&#34;donation-buttons&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/donate/one-time&#34; class=&#34;donation-button&#34;&gt;One-time Donation&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/donate/monthly&#34; class=&#34;donation-button&#34;&gt;Monthly Donation&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&#34;raised-column&#34;&gt;
+    &lt;div class=&#34;fundraising-label&#34;&gt;Raised&lt;/div&gt;
+    &lt;div class=&#34;fundraising-amount count-up&#34; id=&#34;raised-display&#34;&gt;£0&lt;/div&gt;
+    
+    
+    &lt;div class=&#34;svg-animation-container&#34;&gt;
+      &lt;svg class=&#34;animated-svg&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; viewBox=&#34;0 0 512 512&#34; xml:space=&#34;preserve&#34; fill=&#34;#3EAC92&#34;&gt;
+        &lt;g&gt;
+          &lt;rect x=&#34;168.445&#34; y=&#34;412.267&#34; style=&#34;fill:#AA8B65;&#34; width=&#34;173.46&#34; height=&#34;99.733&#34;&gt;&lt;/rect&gt;
+          &lt;path style=&#34;fill:#3EAC92;&#34; d=&#34;M312.127,292.149c10.88-28.608,18.982-61.79,18.982-97.175C331.11,87.293,256.073,0,256.073,0 s-75.037,87.293-75.037,194.974c0,35.55,8.179,68.878,19.136,97.576v116.399l55.39,26.313l60.026-30.32L312.127,292.149z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M180.329,269.671c68.004,68.004,75.745,170.521,75.745,170.521s-102.517-7.739-170.521-75.745 S9.807,193.926,9.807,193.926S112.325,201.667,180.329,269.671z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M426.448,364.448c-68.004,68.004-170.521,75.745-170.521,75.745s7.739-102.517,75.745-170.521 s170.521-75.745,170.521-75.745S494.453,296.444,426.448,364.448z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M392.308,236.992c-28.687,41.604-80.933,55.34-80.933,55.34s-5.736-53.717,22.95-95.321 s80.933-55.34,80.933-55.34S420.994,195.388,392.308,236.992z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#7CD8A4;&#34; d=&#34;M120.692,237.621c28.687,41.604,80.933,55.34,80.933,55.34s5.736-53.717-22.95-95.321 S97.742,142.3,97.742,142.3S92.005,196.017,120.692,237.621z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,434.862c-4.162,0-7.536-3.394-7.536-7.583V34.954c0-4.188,3.374-7.583,7.536-7.583 c4.162,0,7.537,3.394,7.537,7.583V427.28C263.609,431.468,260.235,434.862,256.073,434.862z&#34;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+      
+      &lt;svg class=&#34;animated-svg&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; viewBox=&#34;0 0 512 512&#34; xml:space=&#34;preserve&#34; fill=&#34;#266659&#34;&gt;
+        &lt;g&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,229.188c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51 c-2.943-2.944-2.943-7.715,0-10.659c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0 c2.943,2.944,2.943,7.715,0,10.659l-33.509,33.51C259.989,228.394,258.072,229.188,256.073,229.188z&#34;&gt;&lt;/path&gt;
+          &lt;path style=&#34;fill:#266659;&#34; d=&#34;M256.073,290.08c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51c-2.943-2.944-2.943-7.715,0-10.659 c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0c2.943,2.944,2.943,7.715,0,10.659 l-33.509,33.51C259.989,289.286,258.072,290.08,256.073,290.08z&#34;&gt;&lt;/path&gt;
+        &lt;/g&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;progress-info&#34;&gt;
+      &lt;span id=&#34;progress-percentage&#34;&gt;0%&lt;/span&gt; of monthly goal
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+(function() {
+  const raisedDisplay = document.getElementById(&#39;raised-display&#39;);
+  const progressPercentage = document.getElementById(&#39;progress-percentage&#39;);
+  const goalAmount = &#34;50000&#34;;
+  const currency = &#39;£&#39;;
+  const apiUrl = &#39;\/api\/fundraising&#39;;
+  
+  let currentAmount = 0;
+  
+  function animateCount(target, duration = 2000) {
+    const start = currentAmount;
+    const increment = (target - start) / (duration / 16);
+    
+    function updateCount() {
+      currentAmount += increment;
+      if ((increment &gt; 0 &amp;&amp; currentAmount &gt;= target) || 
+          (increment &lt; 0 &amp;&amp; currentAmount &lt;= target)) {
+        currentAmount = target;
+        
+        raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+        updateProgress();
+        return;
+      }
+      
+      raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+      requestAnimationFrame(updateCount);
+    }
+    updateCount();
+  }
+  
+  function updateProgress() {
+    const percentage = Math.min(100, (currentAmount / goalAmount * 100));
+    progressPercentage.textContent = Math.round(percentage) + &#39;%&#39;;
+  }
+  
+  async function fetchFundraisingData() {
+    try {
+      const response = await fetch(apiUrl);
+      if (response.ok) {
+        const data = await response.json();
+        animateCount(data.raised || 0);
+      } else {
+        simulateProgress();
+      }
+    } catch (error) {
+      console.log(&#39;Using simulated data for demo&#39;);
+      simulateProgress();
+    }
+  }
+  
+  function simulateProgress() {
+    const targetAmount = Math.min(goalAmount, Math.random() * goalAmount * 0.8);
+    animateCount(targetAmount);
+  }
+  
+  fetchFundraisingData();
+  setInterval(fetchFundraisingData, 30000);
+})();
+&lt;/script&gt;
+
+&lt;h4 id=&#34;people-say&#34;&gt;People say:&lt;/h4&gt;
+&lt;h2 id=&#34;about-4000-users&#34;&gt;About 4000 users&lt;/h2&gt;
+&lt;h3 id=&#34;testimonial-together&#34;&gt;Testimonial together&lt;/h3&gt;
 
 
 
@@ -1786,10 +3703,10 @@ function toggleAccordion(clickedButton) {
   }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757064862&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6 mx-auto&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1757064862&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757078745&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -1801,7 +3718,7 @@ function toggleAccordion(clickedButton) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1757064862&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757078745&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -1971,7 +3888,7 @@ function toggleAccordion(clickedButton) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1757064862&#39;);
+  const carousel = document.getElementById(&#39;slider-1757078745&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -2067,7 +3984,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1757064862&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757078745&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -2915,7 +4832,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-&lt;div id=&#34;chart-523168479&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-295634178&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -2933,7 +4850,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-523168479&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-295634178&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

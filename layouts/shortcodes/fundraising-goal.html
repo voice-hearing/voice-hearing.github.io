@@ -1,0 +1,241 @@
+{{/*
+Elegant Fundraising Goal Display with Custom SVG Animation
+Usage: {{< fundraising-goal goal="50000" period="/month" >}}
+*/}}
+
+{{ $goal := .Get "goal" | default "50000" }}
+{{ $period := .Get "period" | default "/month" }}
+{{ $currency := .Get "currency" | default "£" }}
+{{ $api_url := .Get "api" | default "/api/fundraising" }}
+
+<style>
+.fundraising-display {
+  display: flex;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.goal-column, .raised-column {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.fundraising-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fundraising-amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Donation Buttons */
+.donation-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: rgba(255,255,255,0.9);
+  color: #4c51bf;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+.donation-button:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* SVG Animation Container */
+.svg-animation-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.animated-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: growthPulse 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animated-svg:nth-child(2) {
+  animation-delay: 2s;
+  opacity: 0.7;
+}
+
+@keyframes growthPulse {
+  0%, 100% { 
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+}
+
+.progress-info {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .fundraising-display {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .goal-column, .raised-column {
+    padding: 1rem 0;
+  }
+  
+  .fundraising-amount {
+    font-size: 2.2rem;
+  }
+  
+  .donation-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+</style>
+
+<div class="fundraising-display">
+  <div class="goal-column">
+    <div class="fundraising-label">Goal</div>
+    <div class="fundraising-amount">{{ $currency }}{{ printf "%.0f" (float $goal) }}{{ $period }}</div>
+    
+    <!-- Donation Buttons -->
+    <div class="donation-buttons">
+      <a href="/donate/one-time" class="donation-button">One-time Donation</a>
+      <a href="/donate/monthly" class="donation-button">Monthly Donation</a>
+    </div>
+  </div>
+  
+  <div class="raised-column">
+    <div class="fundraising-label">Raised</div>
+    <div class="fundraising-amount count-up" id="raised-display">{{ $currency }}0</div>
+    
+    <!-- Custom SVG Animation -->
+    <div class="svg-animation-container">
+      <svg class="animated-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#3EAC92">
+        <g>
+          <rect x="168.445" y="412.267" style="fill:#AA8B65;" width="173.46" height="99.733"></rect>
+          <path style="fill:#3EAC92;" d="M312.127,292.149c10.88-28.608,18.982-61.79,18.982-97.175C331.11,87.293,256.073,0,256.073,0 s-75.037,87.293-75.037,194.974c0,35.55,8.179,68.878,19.136,97.576v116.399l55.39,26.313l60.026-30.32L312.127,292.149z"></path>
+          <path style="fill:#7CD8A4;" d="M180.329,269.671c68.004,68.004,75.745,170.521,75.745,170.521s-102.517-7.739-170.521-75.745 S9.807,193.926,9.807,193.926S112.325,201.667,180.329,269.671z"></path>
+          <path style="fill:#7CD8A4;" d="M426.448,364.448c-68.004,68.004-170.521,75.745-170.521,75.745s7.739-102.517,75.745-170.521 s170.521-75.745,170.521-75.745S494.453,296.444,426.448,364.448z"></path>
+          <path style="fill:#7CD8A4;" d="M392.308,236.992c-28.687,41.604-80.933,55.34-80.933,55.34s-5.736-53.717,22.95-95.321 s80.933-55.34,80.933-55.34S420.994,195.388,392.308,236.992z"></path>
+          <path style="fill:#7CD8A4;" d="M120.692,237.621c28.687,41.604,80.933,55.34,80.933,55.34s5.736-53.717-22.95-95.321 S97.742,142.3,97.742,142.3S92.005,196.017,120.692,237.621z"></path>
+          <path style="fill:#266659;" d="M256.073,434.862c-4.162,0-7.536-3.394-7.536-7.583V34.954c0-4.188,3.374-7.583,7.536-7.583 c4.162,0,7.537,3.394,7.537,7.583V427.28C263.609,431.468,260.235,434.862,256.073,434.862z"></path>
+        </g>
+      </svg>
+      
+      <svg class="animated-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#266659">
+        <g>
+          <path style="fill:#266659;" d="M256.073,229.188c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51 c-2.943-2.944-2.943-7.715,0-10.659c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0 c2.943,2.944,2.943,7.715,0,10.659l-33.509,33.51C259.989,228.394,258.072,229.188,256.073,229.188z"></path>
+          <path style="fill:#266659;" d="M256.073,290.08c-1.999,0-3.916-0.794-5.329-2.207l-33.509-33.51c-2.943-2.944-2.943-7.715,0-10.659 c2.943-2.942,7.715-2.942,10.658,0l28.18,28.182l28.18-28.182c2.943-2.942,7.715-2.942,10.658,0c2.943,2.944,2.943,7.715,0,10.659 l-33.509,33.51C259.989,289.286,258.072,290.08,256.073,290.08z"></path>
+        </g>
+      </svg>
+    </div>
+    
+    <div class="progress-info">
+      <span id="progress-percentage">0%</span> of monthly goal
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const raisedDisplay = document.getElementById('raised-display');
+  const progressPercentage = document.getElementById('progress-percentage');
+  const goalAmount = {{ $goal }};
+  const currency = '{{ $currency }}';
+  const apiUrl = '{{ $api_url }}';
+  
+  let currentAmount = 0;
+  
+  function animateCount(target, duration = 2000) {
+    const start = currentAmount;
+    const increment = (target - start) / (duration / 16);
+    
+    function updateCount() {
+      currentAmount += increment;
+      if ((increment > 0 && currentAmount >= target) || 
+          (increment < 0 && currentAmount <= target)) {
+        currentAmount = target;
+        // Remove pennies - show whole numbers only
+        raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+        updateProgress();
+        return;
+      }
+      // Remove pennies during animation too
+      raisedDisplay.textContent = currency + Math.round(currentAmount).toLocaleString();
+      requestAnimationFrame(updateCount);
+    }
+    updateCount();
+  }
+  
+  function updateProgress() {
+    const percentage = Math.min(100, (currentAmount / goalAmount * 100));
+    progressPercentage.textContent = Math.round(percentage) + '%';
+  }
+  
+  async function fetchFundraisingData() {
+    try {
+      const response = await fetch(apiUrl);
+      if (response.ok) {
+        const data = await response.json();
+        animateCount(data.raised || 0);
+      } else {
+        simulateProgress();
+      }
+    } catch (error) {
+      console.log('Using simulated data for demo');
+      simulateProgress();
+    }
+  }
+  
+  function simulateProgress() {
+    const targetAmount = Math.min(goalAmount, Math.random() * goalAmount * 0.8);
+    animateCount(targetAmount);
+  }
+  
+  fetchFundraisingData();
+  setInterval(fetchFundraisingData, 30000);
+})();
+</script>
