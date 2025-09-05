@@ -1,0 +1,11 @@
+- name: "TechCorp Solutions"
+  image: "pexels-julia-m-cameron-6994939.jpg"
+  url: "www.techcorp.com"
+
+- name: "Global Industries"
+  image: "pexels-kindelmedia-8486923.jpg"  
+  url: "www.globalindustries.org"
+
+- name: "Innovation Labs"
+  image: "luis.jpg"
+  url: "www.innovationlabs.net"

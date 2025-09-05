@@ -62,6 +62,10 @@ links:
     icon: "brands/google-scholar"
 ---
 
+## Bottom Circular
+
+{{< bottom-circular data="bottom-circular" title="Technology Partners" blue="Collaborating With" >}}
+
 
 ## Tabs
 

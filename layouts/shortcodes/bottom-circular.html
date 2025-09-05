@@ -1,0 +1,104 @@
+{{/* Bottom Circular Logos Shortcode - Fixed Centering for Last Item */}}
+{{/* Usage: {{< bottom-circular data="clients" title="Our Partners" blue="Trust" >}} */}}
+
+{{- $data_file := .Get "data" -}}
+{{- $title := .Get "title" -}}
+{{- $blue := .Get "blue" -}}
+
+{{/* Get clients data */}}
+{{- $clients := slice -}}
+{{- if $data_file -}}
+  {{- $clients = index site.Data $data_file -}}
+{{- end -}}
+
+{{- if $clients -}}
+<section class="mx-auto max-w-screen-xl py-8 px-4 lg:px-8">
+
+    <!-- Header Section -->
+    {{- if or $title $blue -}}
+    <div class="mb-12 flex flex-col justify-center mx-auto px-8">
+      {{- if $blue -}}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{ $blue | markdownify | emojify }}</p>
+      {{- end -}}      
+      {{- if $title -}}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{ $title | markdownify | emojify }}</h2>
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+    <style>
+      /* Custom grid to properly center last item when odd number of items */
+      .bottom-circular-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-items: center;
+        gap: 1rem;
+      }
+      
+      @media (min-width: 768px) {
+        .bottom-circular-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        /* Center the last item if it's odd (spans full width) */
+        .bottom-circular-grid > div:nth-child(odd):last-child {
+          grid-column: 1 / -1;
+          justify-self: center;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .bottom-circular-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        /* Center the last item if it's odd (spans full width) */
+        .bottom-circular-grid > div:nth-child(odd):last-child {
+          grid-column: 1 / -1;
+          justify-self: center;
+        }
+      }
+    </style>
+
+    <!-- Grid: 1 col mobile, 2 cols md and lg with centered last item -->
+    <div class="bottom-circular-grid">
+      {{- range $clients -}}
+        <div class="flex flex-col items-center text-center">
+          
+          <!-- Circular Image with URL Link -->
+          <div class="relative">
+            {{- $img := resources.Get (printf "media/%s" .image) -}}
+            {{- if $img -}}
+              {{- $logo := $img.Fit "296x296 q70 webp" -}}
+              <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .url }}">
+                <img src="{{ $logo.RelPermalink }}" 
+                     alt="{{ .name | plainify }}" 
+                     class="rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+                     loading="lazy">
+              </a>
+            {{- else -}}
+              <!-- Placeholder with URL Link -->
+              <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .url }}">
+                <div class="rounded-full bg-gray-200 dark:bg-gray-700 w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105">
+                  <span class="text-sm text-gray-500 dark:text-gray-400 font-medium">{{ .name }}</span>
+                </div>
+              </a>
+            {{- end -}}
+          </div>
+          
+          <!-- URL Text Below Image (Also Clickable) -->
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .url }}" class="mt-4 block">
+            <h3 class="text-sm md:text-base lg:text-lg uppercase font-bold text-gray-900 dark:text-white max-w-xs break-words text-center hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+              {{ .url }}
+            </h3>
+          </a>
+          
+        </div>
+      {{- end -}}
+    </div>
+
+</section>
+{{- else -}}
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
+    <p class="text-sm font-medium text-yellow-700">Clients notice</p>
+    <p class="text-sm text-yellow-600">No client data found. Please create a data file: <strong>data/{{ $data_file }}.yaml</strong></p>
+  </div>
+{{- end -}}
