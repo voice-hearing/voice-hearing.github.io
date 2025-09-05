@@ -1984,7 +1984,7 @@
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-              7 min read
+              6 min read
         </span>
         
         <span class="mx-1">·</span>
@@ -2255,6 +2255,7 @@
 
 
 
+
   
 
 
@@ -2303,13 +2304,13 @@
 
 <div id="content-content">
     
-    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="about" 
          role="tabpanel" 
          aria-labelledby="about-tab">
         
         
-          <div class="text-sm text-gray-500 dark:text-gray-400">
+          <div class="text-sm text-gray-500 dark:text-gray-400 px-4 pb-4">
               <p>Our <strong>mission</strong> statement is to serve our community through:</p>
 <ul>
 <li>Compassionate outreach programs</li>
@@ -2321,13 +2322,13 @@
         
     </div>
     
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="services" 
          role="tabpanel" 
          aria-labelledby="services-tab">
         
         
-          <div class="text-sm text-gray-500 dark:text-gray-400">
+          <div class="text-sm text-gray-500 dark:text-gray-400 px-4 pb-4">
               <p><strong>Weekly Services:</strong></p>
 <ul>
 <li>Sunday Morning Worship: 10:00 AM</li>
@@ -2339,13 +2340,13 @@
         
     </div>
     
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="volunteer" 
          role="tabpanel" 
          aria-labelledby="volunteer-tab">
         
         
-          <div class="text-sm text-gray-500 dark:text-gray-400">
+          <div class="text-sm text-gray-500 dark:text-gray-400 px-4 pb-4">
               <p><strong>Ways to Help:</strong></p>
 <ul>
 <li>Food pantry volunteer</li>
@@ -2368,6 +2369,19 @@
 }
 #content-tab li {
     list-style: none !important;
+}
+
+ 
+#content-content > div {
+    padding: 0 !important;
+}
+
+#content-content table {
+    margin: 0 !important;
+}
+
+#content-content > div > div:first-child {
+    margin-top: 0 !important;
 }
 </style>
 
@@ -2401,6 +2415,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+
 
 
 
@@ -2471,7 +2486,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div id="conference-content">
     
-    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="day-1" 
          role="tabpanel" 
          aria-labelledby="day-1-tab">
@@ -2486,361 +2501,357 @@ document.addEventListener('DOMContentLoaded', function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                  <thead class="bg-gray-50 dark:bg-gray-700">
-                    
-                    <tr>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Time
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Event Name
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Speaker/Facilitator
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Location
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Type
-                      </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        08:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Registration &amp; Welcome Coffee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Foyer
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        09:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Opening Ceremony &amp; Keynote
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Dr. Sarah Mitchell
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Auditorium
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Keynote
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        10:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Community Impact Strategies
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        James Rodriguez
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        10:45 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Morning Tea Break
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Catering Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Garden Terrace
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        11:15 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Digital Fundraising Revolution
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Emma Thompson
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Tech Lab
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Presentation
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        12:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grant Writing Masterclass
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Prof. Michael Chen
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Room A
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        12:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Networking Lunch
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        All Attendees
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Dining Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Volunteer Engagement Panel
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Lisa Parker &amp; Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Panel
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Social Media for Nonprofits
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Alex Johnson
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Media Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        03:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Afternoon Coffee &amp; Networking
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Outdoor Pavilion
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Partnership Building Strategies
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Rachel Green
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Boardroom
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Seminar
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Day 1 Wrap-up &amp; Tomorrow Preview
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Director
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Auditorium
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Closing
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        05:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Welcome Reception
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        All Attendees
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Rooftop Terrace
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Social
-                      </td>
-                      
-                    </tr>
-                    
-                  </tbody>
-                </table>
+              <div class="px-4 pb-4">
+                <div class="w-full overflow-x-auto">
+                  <table class="w-full table-auto divide-y divide-gray-200 dark:divide-gray-700">
+                    <thead class="bg-gray-50 dark:bg-gray-700">
+                      
+                      <tr>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Time
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Event Name
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Speaker/Facilitator
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Location
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Type
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          08:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Registration &amp; Welcome Coffee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Foyer
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          09:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Opening Ceremony &amp; Keynote
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Dr. Sarah Mitchell
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Auditorium
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Keynote
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          10:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Community Impact Strategies
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          James Rodriguez
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          10:45 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Morning Tea Break
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Catering Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Garden Terrace
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          11:15 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Digital Fundraising Revolution
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Emma Thompson
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Tech Lab
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Presentation
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          12:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grant Writing Masterclass
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Prof. Michael Chen
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Room A
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          12:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Networking Lunch
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          All Attendees
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Dining Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Volunteer Engagement Panel
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Lisa Parker &amp; Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Panel
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Social Media for Nonprofits
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Alex Johnson
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Media Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          03:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Afternoon Coffee &amp; Networking
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Outdoor Pavilion
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Partnership Building Strategies
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Rachel Green
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Boardroom
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Seminar
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Day 1 Wrap-up &amp; Tomorrow Preview
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Director
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Auditorium
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Closing
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          05:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Welcome Reception
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          All Attendees
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Rooftop Terrace
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Social
+                        </td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
               </div>
             
             
@@ -2850,7 +2861,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     </div>
     
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="day-2" 
          role="tabpanel" 
          aria-labelledby="day-2-tab">
@@ -2865,361 +2876,357 @@ document.addEventListener('DOMContentLoaded', function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                  <thead class="bg-gray-50 dark:bg-gray-700">
-                    
-                    <tr>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Time
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Event Name
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Speaker/Facilitator
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Location
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Type
-                      </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        08:30 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Morning Coffee &amp; Pastries
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Catering Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Foyer
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        09:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Sustainable Fundraising Models
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Dr. Patricia Williams
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Auditorium
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Keynote
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        09:45 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Corporate Sponsorship Workshop
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        David Kim
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Room B
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        10:30 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Coffee Break &amp; Exhibitor Visit
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        All Attendees
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Exhibition Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        11:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Crisis Management for Charities
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Susan Martinez
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Presentation
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        11:45 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Financial Planning &amp; Budgeting
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Robert Taylor
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Finance Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        12:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Lunch &amp; Charity Showcase
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Featured Organizations
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Dining Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Youth Engagement Strategies
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Maria Santos
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Youth Center
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Legacy Giving Programs
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Thomas Anderson
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Heritage Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Seminar
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        03:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Afternoon Tea &amp; Mentoring
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Mentor Network
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Garden Pavilion
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Technology Solutions for Nonprofits
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Jennifer Lee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Innovation Lab
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Demo
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Regional Collaboration Forum
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Regional Directors
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Round Table Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Panel
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        05:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Cultural Evening &amp; Dinner
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Entertainment Committee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Ballroom
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Social
-                      </td>
-                      
-                    </tr>
-                    
-                  </tbody>
-                </table>
+              <div class="px-4 pb-4">
+                <div class="w-full overflow-x-auto">
+                  <table class="w-full table-auto divide-y divide-gray-200 dark:divide-gray-700">
+                    <thead class="bg-gray-50 dark:bg-gray-700">
+                      
+                      <tr>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Time
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Event Name
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Speaker/Facilitator
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Location
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Type
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          08:30 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Morning Coffee &amp; Pastries
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Catering Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Foyer
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          09:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Sustainable Fundraising Models
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Dr. Patricia Williams
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Auditorium
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Keynote
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          09:45 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Corporate Sponsorship Workshop
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          David Kim
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Room B
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          10:30 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Coffee Break &amp; Exhibitor Visit
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          All Attendees
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Exhibition Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          11:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Crisis Management for Charities
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Susan Martinez
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Presentation
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          11:45 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Financial Planning &amp; Budgeting
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Robert Taylor
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Finance Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          12:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Lunch &amp; Charity Showcase
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Featured Organizations
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Dining Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Youth Engagement Strategies
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Maria Santos
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Youth Center
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Legacy Giving Programs
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Thomas Anderson
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Heritage Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Seminar
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          03:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Afternoon Tea &amp; Mentoring
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Mentor Network
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Garden Pavilion
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Technology Solutions for Nonprofits
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Jennifer Lee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Innovation Lab
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Demo
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Regional Collaboration Forum
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Regional Directors
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Round Table Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Panel
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          05:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Cultural Evening &amp; Dinner
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Entertainment Committee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Ballroom
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Social
+                        </td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
               </div>
             
             
@@ -3229,7 +3236,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     </div>
     
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="day-3" 
          role="tabpanel" 
          aria-labelledby="day-3-tab">
@@ -3244,361 +3251,357 @@ document.addEventListener('DOMContentLoaded', function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                  <thead class="bg-gray-50 dark:bg-gray-700">
-                    
-                    <tr>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Time
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Event Name
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Speaker/Facilitator
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Location
-                      </th>
-                      
-                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                        Type
-                      </th>
-                      
-                    </tr>
-                  </thead>
-                  <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        08:30 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Morning Refreshments
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Catering Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Sunrise Lounge
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        09:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Future of Charitable Giving
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Dr. Amanda Foster
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Auditorium
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Keynote
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        09:45 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Measuring Impact &amp; Outcomes
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Helen Wright
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Analytics Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        10:30 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Coffee &amp; Strategic Planning
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Planning Committee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Strategy Deck
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        11:00 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Board Governance Best Practices
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Judge William Clarke
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Governance Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Seminar
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        11:45 AM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Donor Retention Strategies
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Caroline Phillips
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Donor Relations Room
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Presentation
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        12:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Closing Lunch &amp; Awards
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Awards Committee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Dining Hall
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Action Planning Sessions
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Team Facilitators
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Breakout Rooms 1-5
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Workshop
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        02:45 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Resource Sharing Marketplace
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        All Participants
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Community Space
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Interactive
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        03:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Final Coffee &amp; Commitment
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Team
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Collaboration Cafe
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Break
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Closing Ceremony
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Conference Director
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Grand Auditorium
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Closing
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        04:30 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Farewell &amp; Network Exchange
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        All Attendees
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Foyer
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Social
-                      </td>
-                      
-                    </tr>
-                    
-                    <tr class="bg-gray-50 dark:bg-gray-700">
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        05:00 PM
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Departure &amp; Safe Travels
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Organizing Committee
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Main Entrance
-                      </td>
-                      
-                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                        Farewell
-                      </td>
-                      
-                    </tr>
-                    
-                  </tbody>
-                </table>
+              <div class="px-4 pb-4">
+                <div class="w-full overflow-x-auto">
+                  <table class="w-full table-auto divide-y divide-gray-200 dark:divide-gray-700">
+                    <thead class="bg-gray-50 dark:bg-gray-700">
+                      
+                      <tr>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Time
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Event Name
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Speaker/Facilitator
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Location
+                        </th>
+                        
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                          Type
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          08:30 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Morning Refreshments
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Catering Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Sunrise Lounge
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          09:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Future of Charitable Giving
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Dr. Amanda Foster
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Auditorium
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Keynote
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          09:45 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Measuring Impact &amp; Outcomes
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Helen Wright
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Analytics Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          10:30 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Coffee &amp; Strategic Planning
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Planning Committee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Strategy Deck
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          11:00 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Board Governance Best Practices
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Judge William Clarke
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Governance Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Seminar
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          11:45 AM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Donor Retention Strategies
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Caroline Phillips
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Donor Relations Room
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Presentation
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          12:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Closing Lunch &amp; Awards
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Awards Committee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Dining Hall
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Action Planning Sessions
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Team Facilitators
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Breakout Rooms 1-5
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Workshop
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          02:45 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Resource Sharing Marketplace
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          All Participants
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Community Space
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Interactive
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          03:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Final Coffee &amp; Commitment
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Team
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Collaboration Cafe
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Break
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Closing Ceremony
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Conference Director
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Grand Auditorium
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Closing
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          04:30 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Farewell &amp; Network Exchange
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          All Attendees
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Foyer
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Social
+                        </td>
+                        
+                      </tr>
+                      
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          05:00 PM
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Departure &amp; Safe Travels
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Organizing Committee
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Main Entrance
+                        </td>
+                        
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                          Farewell
+                        </td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
               </div>
             
             
@@ -3608,13 +3611,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
     </div>
     
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" 
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto" 
          id="venue-info" 
          role="tabpanel" 
          aria-labelledby="venue-info-tab">
         
         
-          <div class="text-sm text-gray-500 dark:text-gray-400">
+          <div class="text-sm text-gray-500 dark:text-gray-400 px-4 pb-4">
               <p><strong>Conference Venue:</strong> Charity Excellence Center</p>
 <p><strong>Address:</strong> 123 Philanthropy Avenue, Community District</p>
 <p><strong>Facilities:</strong></p>
@@ -3645,6 +3648,19 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 #conference-tab li {
     list-style: none !important;
+}
+
+ 
+#conference-content > div {
+    padding: 0 !important;
+}
+
+#conference-content table {
+    margin: 0 !important;
+}
+
+#conference-content > div > div:first-child {
+    margin-top: 0 !important;
 }
 </style>
 
@@ -5937,6 +5953,8 @@ function toggleAccordion(clickedButton) {
   .gallery-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;      
     margin: -1px;
     padding: 0;
   }
@@ -5946,12 +5964,20 @@ function toggleAccordion(clickedButton) {
     padding: 0;
     line-height: 0;
   }
+  
+   
+  @media (max-width: 768px) {
+    .gallery-row {
+      justify-content: center;
+      gap: 0.25rem;  
+    }
+  }
   </style>
 
-  <div class="gallery-row mb-6 mx-auto"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757078744" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
+  <div class="gallery-row mb-6 mx-auto max-w-6xl"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757092486" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-32 h-32 object-cover rounded-lg cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
     document.addEventListener('DOMContentLoaded', () =>
       GLightbox({
-        selector: '[data-gallery="gallery-1757078744"]',
+        selector: '[data-gallery="gallery-1757092486"]',
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -5963,7 +5989,7 @@ function toggleAccordion(clickedButton) {
     </script>
 <h2 id="slider-folder-dataslidesyaml">Slider folder data/slides.yaml</h2>
 
-<div id="slider-1757078744" class="relative w-full" data-carousel="slide">
+<div id="slider-1757092486" class="relative w-full" data-carousel="slide">
   
   
   <div class="relative overflow-hidden rounded-lg">
@@ -6133,7 +6159,7 @@ function toggleAccordion(clickedButton) {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.getElementById('slider-1757078744');
+  const carousel = document.getElementById('slider-1757092486');
   if (!carousel) return;
   
   const items = carousel.querySelectorAll('[data-carousel-item]');
@@ -6229,7 +6255,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   document.addEventListener('keydown', (e) => {
-    if (e.target.closest('#slider-1757078744') || e.target === document.body) {
+    if (e.target.closest('#slider-1757092486') || e.target === document.body) {
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
         prevSlide();
@@ -6535,180 +6561,150 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 <h2 id="text-overlay">Text Overlay</h2>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
 <section class="mx-auto max-w-7xl px-1 lg:px-0 pt-8 pb-8">
     
     
-    <div class="mx-auto max-w-7xl mt-0 mb-4">
+ <div class="mx-auto max-w-7xl mt-0 mb-4">
     
-    <div class="flex flex-col"><div class="px-1 md:px-6 lg:px-0">
+ <div class="flex flex-col">
+  
+  
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
       
-      <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div></div></div>
+  </div>
+  
+</div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-6 px-0 md:px-0">
       
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-6 px-0 md:px-0"><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+      
+      
+      <div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+        
+        
+        
+        
+        
+        
+          
+          
             
-            <img src="/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp" 
-                 alt="Top Left Title" 
-                 class="w-full h-96 object-cover transition-all filter brightness-100 rounded-lg">
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute top-0 left-0 pt-6 pl-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Top Left Title <span class="text-primary-700">›</span>
-                    </h2></a></div>
-              </div>
+          
+        
+        
+        
+        
+        <img src="/media/ladiesday1_hu_5015e91c0cb5e1b7.webp" 
+             alt="Bottom Left" 
+             class="w-full h-96 object-cover transition-all filter brightness-100 rounded-lg">
+        
+        
+        
+        <a href="/example">
+          <div class="absolute inset-0"></div>
+        </a>
+        
+        
+        
+        
+        
+        
+        <div class="absolute bottom-0 left-0 pb-1 pl-6 text-gray-900 dark:text-white">
+          <div class="bg-white dark:bg-black rounded-lg font-semibold dark:font-regular px-4 px-4 py-0 mb-16 max-w-sm shadow-2xl backdrop-blur-sm">
+        
+        
+            <div class="space-y-1">
+              <a href="/example" class="block">
+                
+                <h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
+                  Bottom Left <span class="text-primary-700">›</span>
+                </h2>
+                
+              </a>
+              
+              
             </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <img src="/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp" 
-                 alt="Top Center" 
-                 class="w-full h-96 object-cover transition-all filter brightness-100 rounded-lg">
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute left-0 right-0 top-0 pt-6 px-6 text-gray-900 dark:text-white text-center">
-              <div class="bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Top Center <span class="text-primary-700">›</span>
-                    </h2></a></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute top-0 right-0 pt-6 pr-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Top Right Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears in the top-right corner
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Center Left Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears on the left side, vertically centered
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute inset-0 flex items-center justify-center p-6">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-lg shadow-2xl text-center text-gray-900 dark:text-white backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Perfect Center Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears in the exact center
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Center Right Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears on the right side, vertically centered
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute bottom-0 left-0 pb-6 pl-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg font-semibold dark:font-regular p-4 max-w-sm shadow-2xl backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Bottom Left Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears in the bottom-left corner
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute left-0 right-0 bottom-0 pb-6 px-6 text-gray-900 dark:text-white text-center">
-              <div class="bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Bottom Center Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears at the bottom center
-                  </div></div>
-              </div>
-            </div>
-            
-          </div><div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
-            
-            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
-            <a href="/example">
-              <div class="absolute inset-0"></div>
-            </a>
-            
-            
-            <div class="absolute bottom-0 right-0 pb-6 pr-6 text-gray-900 dark:text-white">
-              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm"><div class="space-y-3">
-                  <a href="/example" class="block"><h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
-                      Bottom Right Title <span class="text-primary-700">›</span>
-                    </h2></a><div class="text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg">
-                    This text appears in the bottom-right corner
-                  </div></div>
-              </div>
-            </div>
-            
-          </div></div>
+          </div>
+        </div>
+        
       </div>
+      
+      
+      
+      <div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+        
+        
+        
+        
+        
+        
+          
+          
+            
+          
+        
+        
+        
+        
+        <img src="/media/ladiesday1_hu_5015e91c0cb5e1b7.webp" 
+             alt="Bottom Right" 
+             class="w-full h-96 object-cover transition-all filter brightness-100 rounded-lg">
+        
+        
+        
+        <a href="/example">
+          <div class="absolute inset-0"></div>
+        </a>
+        
+        
+        
+        
+        
+        
+        <div class="absolute bottom-0 right-0 pb-1 pr-6 text-gray-900 dark:text-white">
+          <div class="bg-white dark:bg-black rounded-lg px-4 py-0 mb-16 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+        
+        
+            <div class="space-y-1">
+              <a href="/example" class="block">
+                
+                <h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
+                  Bottom Right <span class="text-primary-700">›</span>
+                </h2>
+                
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      
+    </div>
+  </div>
 </section>
+
+
 <h2 id="books">Books</h2>
 
 <section class="mx-auto max-w-screen-xl py-8 px-8">
@@ -7486,7 +7482,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       <li><a href="/shop/project-management/">✅ Manage your projects</a></li>
       
-      <li><a href="/shop/second-brain/">🧠 Sharpen your thinking with a second brain</a></li>
+      <li><a href="/post/second-brain/">🧠 Sharpen your thinking with a second brain</a></li>
       
     </ul>
   </div>

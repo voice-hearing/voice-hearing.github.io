@@ -15,6 +15,8 @@
   .gallery-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Added: Center items horizontally */
+    align-items: center;     /* Added: Center items vertically if needed */
     margin: -1px;
     padding: 0;
   }
@@ -24,9 +26,17 @@
     padding: 0;
     line-height: 0;
   }
+  
+  /* Responsive centering for Hugo Blox compatibility */
+  @media (max-width: 768px) {
+    .gallery-row {
+      justify-content: center;
+      gap: 0.25rem; /* Small gap on mobile */
+    }
+  }
   </style>
 
-  <div class="gallery-row mb-6 mx-auto">
+  <div class="gallery-row mb-6 mx-auto max-w-6xl">
     {{- range $images -}}
       {{- $thumb := .Fit (printf "300x200 q%s webp"  $quality) -}}
       {{- $large := .Fit (printf "1200x800 q%s webp" $quality) -}}

@@ -27,6 +27,7 @@
 
 
 
+
   
 
 
@@ -75,13 +76,13 @@
 
 &lt;div id=&#34;content-content&#34;&gt;
     
-    &lt;div class=&#34;p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;about&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;about-tab&#34;&gt;
         
         
-          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400 px-4 pb-4&#34;&gt;
               &lt;p&gt;Our &lt;strong&gt;mission&lt;/strong&gt; statement is to serve our community through:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Compassionate outreach programs&lt;/li&gt;
@@ -93,13 +94,13 @@
         
     &lt;/div&gt;
     
-    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;services&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;services-tab&#34;&gt;
         
         
-          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400 px-4 pb-4&#34;&gt;
               &lt;p&gt;&lt;strong&gt;Weekly Services:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sunday Morning Worship: 10:00 AM&lt;/li&gt;
@@ -111,13 +112,13 @@
         
     &lt;/div&gt;
     
-    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;volunteer&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;volunteer-tab&#34;&gt;
         
         
-          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400 px-4 pb-4&#34;&gt;
               &lt;p&gt;&lt;strong&gt;Ways to Help:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Food pantry volunteer&lt;/li&gt;
@@ -140,6 +141,19 @@
 }
 #content-tab li {
     list-style: none !important;
+}
+
+ 
+#content-content &gt; div {
+    padding: 0 !important;
+}
+
+#content-content table {
+    margin: 0 !important;
+}
+
+#content-content &gt; div &gt; div:first-child {
+    margin-top: 0 !important;
 }
 &lt;/style&gt;
 
@@ -173,6 +187,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
     }
 });
 &lt;/script&gt;
+
 
 
 
@@ -243,7 +258,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 &lt;div id=&#34;conference-content&#34;&gt;
     
-    &lt;div class=&#34;p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;day-1&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;day-1-tab&#34;&gt;
@@ -258,361 +273,357 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              &lt;div class=&#34;overflow-x-auto&#34;&gt;
-                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                    
-                    &lt;tr&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Time
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Event Name
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Speaker/Facilitator
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Location
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Type
-                      &lt;/th&gt;
-                      
-                    &lt;/tr&gt;
-                  &lt;/thead&gt;
-                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        08:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Registration &amp;amp; Welcome Coffee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Foyer
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        09:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Opening Ceremony &amp;amp; Keynote
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Dr. Sarah Mitchell
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Auditorium
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Keynote
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        10:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Community Impact Strategies
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        James Rodriguez
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        10:45 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Morning Tea Break
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Catering Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Garden Terrace
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        11:15 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Digital Fundraising Revolution
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Emma Thompson
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Tech Lab
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Presentation
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        12:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grant Writing Masterclass
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Prof. Michael Chen
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Room A
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        12:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Networking Lunch
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        All Attendees
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Dining Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Volunteer Engagement Panel
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Lisa Parker &amp;amp; Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Panel
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Social Media for Nonprofits
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Alex Johnson
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Media Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        03:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Afternoon Coffee &amp;amp; Networking
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Outdoor Pavilion
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Partnership Building Strategies
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Rachel Green
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Boardroom
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Seminar
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Day 1 Wrap-up &amp;amp; Tomorrow Preview
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Director
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Auditorium
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Closing
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        05:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Welcome Reception
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        All Attendees
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Rooftop Terrace
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Social
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                  &lt;/tbody&gt;
-                &lt;/table&gt;
+              &lt;div class=&#34;px-4 pb-4&#34;&gt;
+                &lt;div class=&#34;w-full overflow-x-auto&#34;&gt;
+                  &lt;table class=&#34;w-full table-auto divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;tr&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Time
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Event Name
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Speaker/Facilitator
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Location
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Type
+                        &lt;/th&gt;
+                        
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          08:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Registration &amp;amp; Welcome Coffee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Foyer
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          09:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Opening Ceremony &amp;amp; Keynote
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Dr. Sarah Mitchell
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Auditorium
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Keynote
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          10:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Community Impact Strategies
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          James Rodriguez
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          10:45 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Morning Tea Break
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Catering Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Garden Terrace
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          11:15 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Digital Fundraising Revolution
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Emma Thompson
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Tech Lab
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Presentation
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          12:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grant Writing Masterclass
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Prof. Michael Chen
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Room A
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          12:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Networking Lunch
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          All Attendees
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Dining Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Volunteer Engagement Panel
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Lisa Parker &amp;amp; Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Panel
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Social Media for Nonprofits
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Alex Johnson
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Media Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          03:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Afternoon Coffee &amp;amp; Networking
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Outdoor Pavilion
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Partnership Building Strategies
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Rachel Green
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Boardroom
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Seminar
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Day 1 Wrap-up &amp;amp; Tomorrow Preview
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Director
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Auditorium
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Closing
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          05:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Welcome Reception
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          All Attendees
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Rooftop Terrace
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Social
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
             
             
@@ -622,7 +633,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         
     &lt;/div&gt;
     
-    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;day-2&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;day-2-tab&#34;&gt;
@@ -637,361 +648,357 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              &lt;div class=&#34;overflow-x-auto&#34;&gt;
-                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                    
-                    &lt;tr&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Time
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Event Name
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Speaker/Facilitator
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Location
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Type
-                      &lt;/th&gt;
-                      
-                    &lt;/tr&gt;
-                  &lt;/thead&gt;
-                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        08:30 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Morning Coffee &amp;amp; Pastries
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Catering Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Foyer
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        09:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Sustainable Fundraising Models
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Dr. Patricia Williams
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Auditorium
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Keynote
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        09:45 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Corporate Sponsorship Workshop
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        David Kim
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Room B
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        10:30 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Coffee Break &amp;amp; Exhibitor Visit
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        All Attendees
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Exhibition Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        11:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Crisis Management for Charities
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Susan Martinez
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Presentation
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        11:45 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Financial Planning &amp;amp; Budgeting
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Robert Taylor
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Finance Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        12:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Lunch &amp;amp; Charity Showcase
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Featured Organizations
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Dining Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Youth Engagement Strategies
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Maria Santos
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Youth Center
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Legacy Giving Programs
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Thomas Anderson
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Heritage Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Seminar
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        03:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Afternoon Tea &amp;amp; Mentoring
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Mentor Network
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Garden Pavilion
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Technology Solutions for Nonprofits
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Jennifer Lee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Innovation Lab
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Demo
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Regional Collaboration Forum
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Regional Directors
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Round Table Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Panel
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        05:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Cultural Evening &amp;amp; Dinner
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Entertainment Committee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Ballroom
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Social
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                  &lt;/tbody&gt;
-                &lt;/table&gt;
+              &lt;div class=&#34;px-4 pb-4&#34;&gt;
+                &lt;div class=&#34;w-full overflow-x-auto&#34;&gt;
+                  &lt;table class=&#34;w-full table-auto divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;tr&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Time
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Event Name
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Speaker/Facilitator
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Location
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Type
+                        &lt;/th&gt;
+                        
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          08:30 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Morning Coffee &amp;amp; Pastries
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Catering Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Foyer
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          09:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Sustainable Fundraising Models
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Dr. Patricia Williams
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Auditorium
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Keynote
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          09:45 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Corporate Sponsorship Workshop
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          David Kim
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Room B
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          10:30 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Coffee Break &amp;amp; Exhibitor Visit
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          All Attendees
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Exhibition Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          11:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Crisis Management for Charities
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Susan Martinez
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Presentation
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          11:45 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Financial Planning &amp;amp; Budgeting
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Robert Taylor
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Finance Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          12:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Lunch &amp;amp; Charity Showcase
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Featured Organizations
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Dining Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Youth Engagement Strategies
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Maria Santos
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Youth Center
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Legacy Giving Programs
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Thomas Anderson
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Heritage Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Seminar
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          03:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Afternoon Tea &amp;amp; Mentoring
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Mentor Network
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Garden Pavilion
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Technology Solutions for Nonprofits
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Jennifer Lee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Innovation Lab
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Demo
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Regional Collaboration Forum
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Regional Directors
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Round Table Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Panel
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          05:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Cultural Evening &amp;amp; Dinner
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Entertainment Committee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Ballroom
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Social
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
             
             
@@ -1001,7 +1008,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         
     &lt;/div&gt;
     
-    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;day-3&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;day-3-tab&#34;&gt;
@@ -1016,361 +1023,357 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
             
             
             
-            
-            
-            
-            
-            
               
             
             
             
-            
               
-              &lt;div class=&#34;overflow-x-auto&#34;&gt;
-                &lt;table class=&#34;min-w-full divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                  &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                    
-                    &lt;tr&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Time
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Event Name
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Speaker/Facilitator
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Location
-                      &lt;/th&gt;
-                      
-                      &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
-                        Type
-                      &lt;/th&gt;
-                      
-                    &lt;/tr&gt;
-                  &lt;/thead&gt;
-                  &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        08:30 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Morning Refreshments
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Catering Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Sunrise Lounge
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        09:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Future of Charitable Giving
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Dr. Amanda Foster
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Auditorium
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Keynote
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        09:45 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Measuring Impact &amp;amp; Outcomes
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Helen Wright
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Analytics Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        10:30 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Coffee &amp;amp; Strategic Planning
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Planning Committee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Strategy Deck
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        11:00 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Board Governance Best Practices
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Judge William Clarke
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Governance Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Seminar
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        11:45 AM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Donor Retention Strategies
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Caroline Phillips
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Donor Relations Room
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Presentation
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        12:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Closing Lunch &amp;amp; Awards
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Awards Committee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Dining Hall
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Action Planning Sessions
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Team Facilitators
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Breakout Rooms 1-5
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Workshop
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        02:45 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Resource Sharing Marketplace
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        All Participants
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Community Space
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Interactive
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        03:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Final Coffee &amp;amp; Commitment
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Team
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Collaboration Cafe
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Break
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Closing Ceremony
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Conference Director
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Grand Auditorium
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Closing
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        04:30 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Farewell &amp;amp; Network Exchange
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        All Attendees
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Foyer
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Social
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                    &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        05:00 PM
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Departure &amp;amp; Safe Travels
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Organizing Committee
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Main Entrance
-                      &lt;/td&gt;
-                      
-                      &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
-                        Farewell
-                      &lt;/td&gt;
-                      
-                    &lt;/tr&gt;
-                    
-                  &lt;/tbody&gt;
-                &lt;/table&gt;
+              &lt;div class=&#34;px-4 pb-4&#34;&gt;
+                &lt;div class=&#34;w-full overflow-x-auto&#34;&gt;
+                  &lt;table class=&#34;w-full table-auto divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                    &lt;thead class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                      
+                      &lt;tr&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Time
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Event Name
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Speaker/Facilitator
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Location
+                        &lt;/th&gt;
+                        
+                        &lt;th scope=&#34;col&#34; class=&#34;px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider&#34;&gt;
+                          Type
+                        &lt;/th&gt;
+                        
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody class=&#34;bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700&#34;&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          08:30 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Morning Refreshments
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Catering Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Sunrise Lounge
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          09:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Future of Charitable Giving
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Dr. Amanda Foster
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Auditorium
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Keynote
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          09:45 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Measuring Impact &amp;amp; Outcomes
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Helen Wright
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Analytics Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          10:30 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Coffee &amp;amp; Strategic Planning
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Planning Committee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Strategy Deck
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          11:00 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Board Governance Best Practices
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Judge William Clarke
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Governance Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Seminar
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          11:45 AM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Donor Retention Strategies
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Caroline Phillips
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Donor Relations Room
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Presentation
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          12:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Closing Lunch &amp;amp; Awards
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Awards Committee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Dining Hall
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Action Planning Sessions
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Team Facilitators
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Breakout Rooms 1-5
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Workshop
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          02:45 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Resource Sharing Marketplace
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          All Participants
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Community Space
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Interactive
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          03:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Final Coffee &amp;amp; Commitment
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Team
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Collaboration Cafe
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Break
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Closing Ceremony
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Conference Director
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Grand Auditorium
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Closing
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          04:30 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Farewell &amp;amp; Network Exchange
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          All Attendees
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Foyer
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Social
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                      &lt;tr class=&#34;bg-gray-50 dark:bg-gray-700&#34;&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          05:00 PM
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Departure &amp;amp; Safe Travels
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Organizing Committee
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Main Entrance
+                        &lt;/td&gt;
+                        
+                        &lt;td class=&#34;px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100&#34;&gt;
+                          Farewell
+                        &lt;/td&gt;
+                        
+                      &lt;/tr&gt;
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
             
             
@@ -1380,13 +1383,13 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         
     &lt;/div&gt;
     
-    &lt;div class=&#34;hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800&#34; 
+    &lt;div class=&#34;hidden rounded-lg bg-gray-50 dark:bg-gray-800 h-96 overflow-y-auto&#34; 
          id=&#34;venue-info&#34; 
          role=&#34;tabpanel&#34; 
          aria-labelledby=&#34;venue-info-tab&#34;&gt;
         
         
-          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400&#34;&gt;
+          &lt;div class=&#34;text-sm text-gray-500 dark:text-gray-400 px-4 pb-4&#34;&gt;
               &lt;p&gt;&lt;strong&gt;Conference Venue:&lt;/strong&gt; Charity Excellence Center&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Address:&lt;/strong&gt; 123 Philanthropy Avenue, Community District&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Facilities:&lt;/strong&gt;&lt;/p&gt;
@@ -1418,6 +1421,19 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 }
 #conference-tab li {
     list-style: none !important;
+}
+
+ 
+#conference-content &gt; div {
+    padding: 0 !important;
+}
+
+#conference-content table {
+    margin: 0 !important;
+}
+
+#conference-content &gt; div &gt; div:first-child {
+    margin-top: 0 !important;
 }
 &lt;/style&gt;
 
@@ -3692,6 +3708,8 @@ function toggleAccordion(clickedButton) {
   .gallery-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;      
     margin: -1px;
     padding: 0;
   }
@@ -3701,12 +3719,20 @@ function toggleAccordion(clickedButton) {
     padding: 0;
     line-height: 0;
   }
+  
+   
+  @media (max-width: 768px) {
+    .gallery-row {
+      justify-content: center;
+      gap: 0.25rem;  
+    }
+  }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6 mx-auto&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757078745&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757092487&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-32 h-32 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1757078745&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757092487&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -3718,7 +3744,7 @@ function toggleAccordion(clickedButton) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1757078745&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757092487&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -3888,7 +3914,7 @@ function toggleAccordion(clickedButton) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1757078745&#39;);
+  const carousel = document.getElementById(&#39;slider-1757092487&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -3984,7 +4010,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1757078745&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757092487&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -4290,180 +4316,150 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 &lt;/section&gt;
 &lt;h2 id=&#34;text-overlay&#34;&gt;Text Overlay&lt;/h2&gt;
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
 &lt;section class=&#34;mx-auto max-w-7xl px-1 lg:px-0 pt-8 pb-8&#34;&gt;
     
     
-    &lt;div class=&#34;mx-auto max-w-7xl mt-0 mb-4&#34;&gt;
+ &lt;div class=&#34;mx-auto max-w-7xl mt-0 mb-4&#34;&gt;
     
-    &lt;div class=&#34;flex flex-col&#34;&gt;&lt;div class=&#34;px-1 md:px-6 lg:px-0&#34;&gt;
+ &lt;div class=&#34;flex flex-col&#34;&gt;
+  
+  
+  &lt;div class=&#34;px-1 md:px-6 lg:px-0&#34;&gt;
+  
+  &lt;div class=&#34;w-16 border-2 border-primary-700 mb-4 px-2&#34;&gt;&lt;/div&gt;
       
-      &lt;div class=&#34;w-16 border-2 border-primary-700 mb-4 px-2&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+  
+    &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-6 px-0 md:px-0&#34;&gt;
       
-        &lt;div class=&#34;grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-6 px-0 md:px-0&#34;&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+      
+      
+      &lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+        
+        
+        
+        
+        
+        
+          
+          
             
-            &lt;img src=&#34;http://localhost:1313/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp&#34; 
-                 alt=&#34;Top Left Title&#34; 
-                 class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute top-0 left-0 pt-6 pl-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Top Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;/div&gt;
-              &lt;/div&gt;
+          
+        
+        
+        
+        
+        &lt;img src=&#34;http://localhost:1313/media/ladiesday1_hu_5015e91c0cb5e1b7.webp&#34; 
+             alt=&#34;Bottom Left&#34; 
+             class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
+        
+        
+        
+        &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+          &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        &lt;div class=&#34;absolute bottom-0 left-0 pb-1 pl-6 text-gray-900 dark:text-white&#34;&gt;
+          &lt;div class=&#34;bg-white dark:bg-black rounded-lg font-semibold dark:font-regular px-4 px-4 py-0 mb-16 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;
+        
+        
+            &lt;div class=&#34;space-y-1&#34;&gt;
+              &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;
+                
+                &lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                  Bottom Left &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                &lt;/h2&gt;
+                
+              &lt;/a&gt;
+              
+              
             &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;img src=&#34;http://localhost:1313/media/city-daniel-abadia_hu_f7b7c385a393ee1c.webp&#34; 
-                 alt=&#34;Top Center&#34; 
-                 class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute left-0 right-0 top-0 pt-6 px-6 text-gray-900 dark:text-white text-center&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Top Center &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute top-0 right-0 pt-6 pr-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Top Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears in the top-right corner
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute left-0 top-1/2 transform -translate-y-1/2 pl-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Center Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears on the left side, vertically centered
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute inset-0 flex items-center justify-center p-6&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-lg shadow-2xl text-center text-gray-900 dark:text-white backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Perfect Center Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears in the exact center
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute right-0 top-1/2 transform -translate-y-1/2 pr-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Center Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears on the right side, vertically centered
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute bottom-0 left-0 pb-6 pl-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg font-semibold dark:font-regular p-4 max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Bottom Left Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears in the bottom-left corner
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute left-0 right-0 bottom-0 pb-6 px-6 text-gray-900 dark:text-white text-center&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Bottom Center Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears at the bottom center
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
-            
-            &lt;div class=&#34;w-full h-96 bg-gray-400 filter brightness-100 rounded-lg&#34;&gt;&lt;/div&gt;
-            &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
-              &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
-            &lt;/a&gt;
-            
-            
-            &lt;div class=&#34;absolute bottom-0 right-0 pb-6 pr-6 text-gray-900 dark:text-white&#34;&gt;
-              &lt;div class=&#34;bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;&lt;div class=&#34;space-y-3&#34;&gt;
-                  &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;&lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
-                      Bottom Right Title &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
-                    &lt;/h2&gt;&lt;/a&gt;&lt;div class=&#34;text-sm md:text-base leading-relaxed text-gray-800 dark:text-gray-100 drop-shadow-lg&#34;&gt;
-                    This text appears in the bottom-right corner
-                  &lt;/div&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            
-          &lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
       &lt;/div&gt;
+      
+      
+      
+      &lt;div class=&#34;relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg&#34;&gt;
+        
+        
+        
+        
+        
+        
+          
+          
+            
+          
+        
+        
+        
+        
+        &lt;img src=&#34;http://localhost:1313/media/ladiesday1_hu_5015e91c0cb5e1b7.webp&#34; 
+             alt=&#34;Bottom Right&#34; 
+             class=&#34;w-full h-96 object-cover transition-all filter brightness-100 rounded-lg&#34;&gt;
+        
+        
+        
+        &lt;a href=&#34;http://localhost:1313/example&#34;&gt;
+          &lt;div class=&#34;absolute inset-0&#34;&gt;&lt;/div&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        &lt;div class=&#34;absolute bottom-0 right-0 pb-1 pr-6 text-gray-900 dark:text-white&#34;&gt;
+          &lt;div class=&#34;bg-white dark:bg-black rounded-lg px-4 py-0 mb-16 max-w-sm shadow-2xl text-right backdrop-blur-sm&#34;&gt;
+        
+        
+            &lt;div class=&#34;space-y-1&#34;&gt;
+              &lt;a href=&#34;http://localhost:1313/example&#34; class=&#34;block&#34;&gt;
+                
+                &lt;h2 class=&#34;text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300&#34;&gt;
+                  Bottom Right &lt;span class=&#34;text-primary-700&#34;&gt;›&lt;/span&gt;
+                &lt;/h2&gt;
+                
+              &lt;/a&gt;
+              
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+      
+      
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/section&gt;
+
+
 &lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
 
 &lt;section class=&#34;mx-auto max-w-screen-xl py-8 px-8&#34;&gt;

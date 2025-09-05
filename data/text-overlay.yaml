@@ -1,59 +1,57 @@
-- title: "Top Left Title"
-  content: 
-  align: "top-left"
-  url: "/example"
-  background:
-    image:
-      filename: "city-daniel-abadia.jpg"
+# 1. TOP LEFT: Text positioned at top-left
+#- title: "Top Left Title"
+#  align: "top-left"
+#  url: "/example"
+#  background:
+#    image:
+#      filename: "ladiesday1.jpg"
 
 # 2. TOP CENTER: Text positioned at top-center
-- title: Top Center
-  content: 
-  align: "top"
+#- title: Top Center 
+#  align: "top"
+#  url: "/example"
+#  background:
+#    image:
+#      filename: "city-daniel-abadia.jpg"
+
+# 3. TOP-RIGHT: Text positioned at top-right corner
+#- title: "Top Right Title"  
+#  align: "top-right"
+#  url: "/example"
+
+# 4. CENTER-LEFT: Text positioned at middle-left
+#- title: "Center Left Title"
+#  align: "center-left"
+#  url: "/example"
+
+# 5. CENTER: Text positioned at perfect center
+#- title: "Perfect Center Title"
+#  align: "center"
+#  url: "/example"
+
+# 6. CENTER-RIGHT: Text positioned at middle-right
+#- title: "Center Right Title"
+#  align: "center-right"
+#  url: "/example"
+
+# 7. BOTTOM-LEFT: Text positioned at bottom-left corner
+- title: "Bottom Left"
+  align: "bottom-left"
   url: "/example"
   background:
     image:
-      filename: "city-daniel-abadia.jpg"
-
-# 3. TOP-RIGHT: Text positioned at top-right corner
-- title: "Top Right Title"  
-  content: "This text appears in the top-right corner"
-  align: "top-right"
-  url: "/example"
-
-# 4. CENTER-LEFT: Text positioned at middle-left
-- title: "Center Left Title"
-  content: "This text appears on the left side, vertically centered"
-  align: "center-left"
-  url: "/example"
-
-# 5. CENTER: Text positioned at perfect center
-- title: "Perfect Center Title"
-  content: "This text appears in the exact center"
-  align: "center"
-  url: "/example"
-
-# 6. CENTER-RIGHT: Text positioned at middle-right
-- title: "Center Right Title"
-  content: "This text appears on the right side, vertically centered"
-  align: "center-right"
-  url: "/example"
-
-# 7. BOTTOM-LEFT: Text positioned at bottom-left corner
-- title: "Bottom Left Title"
-  content: "This text appears in the bottom-left corner"
-  align: "bottom-left"
-  url: "/example"
+      filename: "ladiesday1.jpg"
 
 # 8. BOTTOM CENTER: Text positioned at bottom-center (DEFAULT)
-- title: "Bottom Center Title"
-  content: "This text appears at the bottom center"
-  align: "bottom"
-  # or omit align entirely for default
-  url: "/example"
+#- title: "Bottom Center"
+#  align: "bottom"
+#  # or omit align entirely for default
+#  url: "/example"
 
 # 9. BOTTOM-RIGHT: Text positioned at bottom-right corner
-- title: "Bottom Right Title"
-  content: "This text appears in the bottom-right corner"
+- title: "Bottom Right"
   align: "bottom-right"
   url: "/example"
+  background:
+    image:
+      filename: "ladiesday1.jpg"
