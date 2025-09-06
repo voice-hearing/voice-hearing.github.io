@@ -1,12 +1,12 @@
-{{/* Hugo Blox: Accordion - Fixed Version */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* Hugo Blox: Accordion - Auto-Close Tabs Version */}}
+{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
 
 {{/* Initialise */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 {{ $items := $block.content.items | default slice }}
 {{ $allow_multiple := $block.design.allow_multiple | default false }}
-{{ $expand_first := $block.design.expand_first | default false }}
+{{ $expand_first := $block.design.expand_first | default true }}
 
 <div class="max-w-prose mx-auto">
   {{ with $block.content.title }}
@@ -18,7 +18,7 @@
       {{ . | markdownify | emojify }}
     </div>
   {{ end }}
-
+  
   <div class="space-y-4" id="accordion-{{ $block.hash_id | default "default" }}">
     {{ range $index, $item := $items }}
     <div class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden accordion-item">
@@ -86,41 +86,38 @@ document.addEventListener('DOMContentLoaded', function() {
     toggles.forEach(function(toggle) {
       toggle.addEventListener('click', function() {
         const index = parseInt(this.getAttribute('data-index'));
-        const allowMultiple = this.getAttribute('data-allow-multiple') === 'true';
         const accordionItem = this.closest('.accordion-item');
         const content = accordionItem.querySelector('.accordion-content');
         const icon = this.querySelector('.accordion-icon');
         const isOpen = this.getAttribute('aria-expanded') === 'true';
         
-        // If not allowing multiple, close all other items first
-        if (!allowMultiple && !isOpen) {
+        // Always close all other tabs when opening a new one
+        if (!isOpen) {
           toggles.forEach(function(otherToggle, otherIndex) {
             if (otherIndex !== index) {
               const otherItem = otherToggle.closest('.accordion-item');
               const otherContent = otherItem.querySelector('.accordion-content');
               const otherIcon = otherToggle.querySelector('.accordion-icon');
               
+              // Close other tabs
               otherToggle.setAttribute('aria-expanded', 'false');
               otherContent.classList.remove('accordion-open');
               otherContent.classList.add('accordion-closed');
               otherIcon.classList.remove('rotate-180');
             }
           });
-        }
-        
-        // Toggle current item
-        if (isOpen) {
-          // Close
-          this.setAttribute('aria-expanded', 'false');
-          content.classList.remove('accordion-open');
-          content.classList.add('accordion-closed');
-          icon.classList.remove('rotate-180');
-        } else {
-          // Open
+          
+          // Open current tab
           this.setAttribute('aria-expanded', 'true');
           content.classList.remove('accordion-closed');
           content.classList.add('accordion-open');
           icon.classList.add('rotate-180');
+        } else {
+          // Close current tab if it's already open
+          this.setAttribute('aria-expanded', 'false');
+          content.classList.remove('accordion-open');
+          content.classList.add('accordion-closed');
+          icon.classList.remove('rotate-180');
         }
       });
     });
