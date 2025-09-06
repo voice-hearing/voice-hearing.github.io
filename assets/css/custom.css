@@ -209,6 +209,46 @@ body[data-theme="light"] .text-gray-600,
 }
 
 /* ========================================
+   REMOVE MOBILE MENU CLOSE BUTTON
+   ======================================== */
+
+@media (max-width: 1023px) {
+  /* Hide the close button on mobile - users can tap outside to close */
+  header#site-header label[for="nav-toggle"] #hide-button {
+    display: none !important;
+  }
+  
+  /* Keep only the hamburger (show) button visible */
+  header#site-header label[for="nav-toggle"] #show-button {
+    display: block !important;
+  }
+  
+  /* Override the toggle behavior to keep show button always visible */
+  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #hide-button {
+    display: none !important;
+  }
+  
+  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #show-button {
+    display: block !important;
+  }
+}
+/* ========================================
+   HIDE MOBILE MENU WHEN SEARCH ACTIVE
+   ======================================== */
+
+@media (max-width: 1023px) {
+  /* Hide mobile menu button when body has search-active class */
+  body.search-active header#site-header label[for="nav-toggle"] {
+    display: none !important;
+  }
+  
+  /* Ensure search wrapper stays on top */
+  #search-wrapper {
+    z-index: 9999 !important;
+  }
+}
+
+/* ========================================
    MOBILE UTILITY BUTTONS - INLINE RIGHT POSITIONING
    ======================================== */
 
