@@ -211,22 +211,20 @@
 <ul id="nav-menu" class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start
   {{ if in (slice "l" "left") $align_menu }}mr-auto ml-6{{ else if (in (slice "r" "right") $align_menu) }}ml-auto mr-6{{end}}">
   
-  <!-- Mobile Menu Items: Search & Theme Switcher AT TOP -->
-  {{ $show_search := site.Params.header.navbar.show_search | default false }}
-  {{ $show_theme_chooser := site.Params.header.navbar.show_theme_chooser | default true }}
-  
-  {{ if $show_search }}
-  <li class="mt-4 lg:hidden">
-    <button aria-label="toggle search" class="flex items-center space-x-2 text-gray-700 dark:text-gray-300 w-full py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" data-search-toggle>
+  <!-- Mobile Menu Items: Search & Theme Switcher - INLINE RIGHT -->
+<li class="mt-6 lg:hidden border-t border-gray-200 dark:border-gray-600 pt-4">
+  <div class="flex justify-end items-center space-x-4">
+    
+    <!-- Search Button - Inline Right -->
+    {{ if $show_search }}
+    <button aria-label="toggle search" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" data-search-toggle>
       <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      <span>Search</span>
     </button>
-  </li>
-  {{ end }}
+    {{ end }}
 
-  {{ if $show_theme_chooser }}
-  <li class="mt-4 lg:hidden">
-    <button class="theme-toggle flex items-center space-x-2 text-gray-700 dark:text-gray-300 w-full py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" accesskey="t" title="appearance">
+    <!-- Theme Switcher - Inline Right -->
+    {{ if $show_theme_chooser }}
+    <button class="theme-toggle text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" accesskey="t" title="appearance">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
            stroke-linejoin="round" class="block dark:hidden">
@@ -245,11 +243,11 @@
         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
       </svg>
-      <span class="block dark:hidden">Dark Mode</span>
-      <span class="hidden dark:block">Light Mode</span>
     </button>
-  </li>
-  {{ end }}
+    {{ end }}
+    
+  </div>
+</li>
 
   <!-- Regular Navigation Menu Items -->
   {{ $currentPage := . }}
@@ -311,15 +309,14 @@
   {{ end }}
   {{ end }}
 
-  <!-- DONATION/CTA BUTTON - FULL WIDTH AT BOTTOM -->
-  {{ if site.Params.header.navbar.button.enable }}
-  <li class="mt-4 lg:hidden">
-    <a class="rounded-full text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
-       href="{{ site.Params.header.navbar.button.url | relLangURL }}">
-      {{ site.Params.header.navbar.button.text }}
-    </a>
-  </li>
-  {{ end }}
+{{ if site.Params.header.navbar.button.enable }}
+<li class="mt-4 lg:hidden">
+  <a class="rounded-full text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
+     href="{{ site.Params.header.navbar.button.url | relLangURL }}">
+    {{ site.Params.header.navbar.button.text }}
+  </a>
+</li>
+{{ end }}
 </ul>
 
 

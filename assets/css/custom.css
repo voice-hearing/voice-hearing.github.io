@@ -209,29 +209,103 @@ body[data-theme="light"] .text-gray-600,
 }
 
 /* ========================================
-   BUTTON POSITIONING - MOBILE ONLY
+   MOBILE UTILITY BUTTONS - INLINE RIGHT POSITIONING
    ======================================== */
 
-/* Hide button from main navbar on mobile */
 @media (max-width: 1023px) {
-  /* Hide CTA button from top navbar */
-  header#site-header .navbar .order-1 a,
-  header#site-header .navbar div[class*="ml-auto"] a,
-  header#site-header .navbar .flex.items-center a {
-    display: none !important;
+  /* Container for search and theme buttons - right aligned */
+  header#site-header #nav-menu li > div.flex.justify-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    padding: 0.5rem 0 !important;
   }
   
-  /* Show button only inside opened mobile menu */
+  /* Search and theme buttons - icon only, inline */
+  header#site-header #nav-menu button[data-search-toggle],
+  header#site-header #nav-menu .theme-toggle {
+    width: auto !important;
+    display: inline-flex !important;
+    padding: 0.5rem !important;
+    background: none !important;
+    border: none !important;
+  }
+  
+  /* Override any w-full classes on utility buttons */
+  header#site-header #nav-menu li:not(.mt-4) button {
+    width: auto !important;
+  }
+  
+  /* Ensure CTA button remains full width */
+  header#site-header #nav-menu li.mt-4 a {
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
+/* ========================================
+   MOBILE MENU UTILITIES STYLING
+   ======================================== */
+
+@media (max-width: 1023px) {
+  /* Style the utilities section */
+  header#site-header #nav-menu li.border-t {
+    border-top: 1px solid rgba(229, 231, 235, 0.5) !important;
+    padding-top: 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  
+  /* Dark theme utilities border */
+  [data-theme="dark"] header#site-header #nav-menu li.border-t,
+  .dark header#site-header #nav-menu li.border-t {
+    border-top-color: rgba(75, 85, 99, 0.5) !important;
+  }
+}
+
+/* ========================================
+   BUTTON POSITIONING - TABLET AND MOBILE FULL WIDTH
+   ======================================== */
+
+/* Tablet and Mobile: Make menu buttons full width */
+/*@media (max-width: 1023px) {
+  /* Hide CTA button from top navbar on mobile/tablet */
+/*  header#site-header .navbar .order-1 a,
+/*  header#site-header .navbar div[class*="ml-auto"] a,
+/*  header#site-header .navbar .flex.items-center a {
+/*    display: none !important;
+/*  }
+  
+  /* Show button inside opened mobile menu - FULL WIDTH */
   header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 {
-    display: inline-block !important;
-    margin-left: auto !important;
-    text-align: right !important;
-    width: fit-content !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 8px 16px !important;
   }
   
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a {
-    display: inline-block !important;
-    margin-left: auto !important;
+  /* Make the actual button/link full width */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
+  header#site-header #nav-menu li.mt-4 a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Additional button selectors - adjust these based on your actual button classes */
+  header#site-header #nav-menu .btn,
+  header#site-header #nav-menu button,
+  header#site-header #nav-menu a[class*="btn"],
+  header#site-header #nav-menu a[class*="button"] {
+    display: block !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
   }
 }
 

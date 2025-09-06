@@ -2133,9 +2133,6 @@
     --tw-border-style: dotted;
     border-style: dotted;
   }
-  .border-black {
-    border-color: var(--color-black);
-  }
   .border-current {
     border-color: currentcolor;
   }
@@ -3306,11 +3303,6 @@
   .hover\:border-white {
     &:hover {
       border-color: var(--color-white);
-    }
-  }
-  .hover\:bg-black {
-    &:hover {
-      background-color: var(--color-black);
     }
   }
   .hover\:bg-gray-50 {
@@ -4890,11 +4882,6 @@
       border-color: var(--color-slate-700);
     }
   }
-  .dark\:border-white {
-    &:where(.dark, .dark *) {
-      border-color: var(--color-white);
-    }
-  }
   .dark\:border-yellow-700 {
     &:where(.dark, .dark *) {
       border-color: var(--color-yellow-700);
@@ -5281,20 +5268,6 @@
     &:where(.dark, .dark *) {
       &:hover {
         background-color: var(--color-primary-800);
-      }
-    }
-  }
-  .dark\:hover\:bg-white {
-    &:where(.dark, .dark *) {
-      &:hover {
-        background-color: var(--color-white);
-      }
-    }
-  }
-  .dark\:hover\:text-black {
-    &:where(.dark, .dark *) {
-      &:hover {
-        color: var(--color-black);
       }
     }
   }
