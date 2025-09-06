@@ -10,19 +10,6 @@ design:
 
 sections:
   
-  - block: accordion
-    content:
-      blue: "Frequently Asked"
-      title: "Questions & Answers"
-      text: "Find answers to commonly asked questions about our services."
-      expand_first: true
-      items:
-        - title: "What is Hugo Blox?"
-          content: "Hugo Blox is a powerful toolkit for building fast, SEO-optimized websites with Hugo and Tailwind CSS."
-        - title: "How do I get started?"
-          content: "You can start by picking a template and customizing it with our drag-and-drop block system."
-        - title: "Is it free to use?"
-          content: "Yes! Hugo Blox offers a generous free tier with premium options available."
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>

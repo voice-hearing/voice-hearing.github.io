@@ -1,0 +1,61 @@
+{{/* Hugo Blox: Client Logos with Names & Links */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section class="mx-auto max-w-screen-xl py-8 px-8">
+    
+    <!-- Header Section -->
+    <div class="mb-12 flex flex-col justify-center mx-auto px-8">
+      {{ with $blue }}
+      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}      
+      {{ with $title }}
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">{{.}}</p>
+      {{ end }}
+    </div>
+
+    <!-- Logo Gallery with Names & Links - 50px height, evenly spread -->
+    <div class="flex flex-wrap justify-center items-start gap-8 md:gap-12 lg:gap-16">
+      {{ range $block.content.items }}
+        <a href="{{ .url }}" 
+           {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}
+           class="group flex flex-col items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
+          
+          <!-- Logo Image -->
+          <div class="flex-shrink-0">
+            {{ $img := resources.Get (printf "media/%s" .image) }}
+            {{ if $img }}
+              {{ $logo := $img.Fit "200x50 Center" }}
+              <img src="{{ $logo.RelPermalink }}" 
+                   alt="{{ .name | plainify }}" 
+                   class="h-12 w-auto transition-all duration-300 filter grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+                   style="height: 50px; max-width: 200px; object-fit: contain;"
+                   loading="lazy">
+            {{ else }}
+              <div class="h-12 bg-gray-200 dark:bg-gray-700 rounded flex items-center justify-center px-4 group-hover:bg-gray-300 dark:group-hover:bg-gray-600 transition-colors"
+                   style="height: 50px;">
+                <span class="text-sm text-gray-500 dark:text-gray-400">{{ .name }}</span>
+              </div>
+            {{ end }}
+          </div>
+          
+          <!-- Company Name -->
+          <div class="text-center">
+            <h3 class="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+              {{ .name }}
+            </h3>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+</section>

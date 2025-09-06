@@ -1,0 +1,122 @@
+{{/* Hugo Blox: Pricing - Modified with green check icons, rounded full buttons & price period behind price */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section>
+  <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <!-- Header Section -->
+    {{ if or $title $text $blue }}
+    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto text-center">
+      {{ with $blue }}
+      <p class="mb-4 text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}
+      {{ with $title }}
+      <h2 class="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{.}}</h2>
+      {{ end }}
+      {{ with $text }}
+      <p class="text-gray-500 text-3xl dark:text-gray-400">{{.}}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <!-- Pricing Cards Grid -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
+    {{ range $block.content.items }}
+      <div class="flex flex-col rounded-2xl shadow-xs
+                  divide-y divide-gray-200 dark:divide-gray-700
+                  {{ if .featured }}border-2 dark:border border-primary-600 dark:border-primary-900{{ else }}border border-gray-200 dark:border-gray-700{{ end }}">
+        <!-- Plan Header - Centered Content -->
+        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
+          {{ with .icon }}
+          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-32 h-32"`)  }}
+          </div>
+          {{ end }}
+
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ .name | $page.RenderString }}</h2>
+          {{ with .description }}
+          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">{{ . | $page.RenderString }}</p>
+          {{ end }}
+
+           <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
+            <span>{{ .price }}</span>
+            {{ with .period }}
+            <span class="text-2xl font-normal text-gray-900 dark:text-white">{{ . }}</span>
+            {{ end }}
+          </p>
+        </div>
+
+        <!-- Features Section -->
+        {{ with .features }}
+        <div class="p-6 sm:px-8 flex-1">
+          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
+
+          <ul class="space-y-3 sm:mt-0 text-lg">
+            {{ range . }}
+            <li class="flex items-center gap-3">
+              {{ if .included }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              {{ else }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              {{ end }}
+
+              <span class="text-gray-700 dark:text-gray-300">{{ .text | $page.RenderString }}</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+        <!-- Button at Bottom -->
+        {{ with .button }}
+        <div class="p-6 sm:px-8">
+          <a
+            class="block w-full rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-12 py-3 text-center text-sm font-medium text-white hover:bg-gradient-to-l hover:from-primary-600 hover:to-primary-700 focus:ring-3 focus:outline-hidden"
+            href="{{ .url }}"
+            {{ if .target }}target="{{ .target }}"{{ end }}
+          >
+            {{ .text }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Global CTA Button -->
+    {{ with $block.content.button }}
+    <div class="text-center mt-16">
+      <a href="{{.url}}" 
+         {{ if .target }}target="{{ .target }}"{{ end }}
+         class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700">
+       {{.text}}
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</section>
