@@ -212,6 +212,13 @@ sections:
 #          filename: ""
 #          filters:
 #            brightness: 1.0
+  - block: markdown-charity
+    id: section-2
+    content:
+      Blue:
+      title: HOW CAN YOU HELP NOW
+      subtitle: 
+      text: Add your Section 2 content here... This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of [network](https://christian.com) Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.This living space in continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
   - block: testimonials-many
     id: charity-indicators
     content:
@@ -254,6 +261,21 @@ sections:
     design:
       spacing:
         padding: [0, 0, 0, 0]  
+  - block: bottom-circular
+    content:
+      title: 
+      blue: 
+      images:
+        - title: "WORK WITH US"
+          image: "pexels-julia-m-cameron-6995106.jpg"
+          url: "https://www.microsoft.com"
+        - title: "OUR DIRECT ACTIONS"
+          image: "pexels-mart-production-8078355.jpg"
+          url: "https://www.google.com"
+    design:
+      # Add any custom design options here
+      spacing:
+        padding: ['0', '0', '0', '0']
 
 ---    
     
