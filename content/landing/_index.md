@@ -21,7 +21,7 @@ sections:
           url: /large-image-link
           background:
             image:
-              filename: "mohammed.jpg"
+              filename: "city-daniel-abadia.jpg"
               filters:
                 brightness: 1
               position: center
