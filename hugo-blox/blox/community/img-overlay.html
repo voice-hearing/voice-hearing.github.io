@@ -1,92 +1,124 @@
-{{/* Hugo Blox: Features */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
-{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
-
-{{/* Initialise */}}
+{{/* Hugo Blox: Features with stronger text shadow and black border on text */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 {{ $title := $block.content.title | emojify | $page.RenderString }}
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
-<section>
-  <div class="mx-auto max-w-7xl mt-0 px-8 mb-4">
-    
- <div class="flex flex-col">
-  {{ with $blue }}
-  <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
-  {{ end }}
-  
-  <!-- Red horizontal line above title -->
-  <div class="w-16 border-2 border-primary-500 mb-4"></div>
-      
-  {{ with $title }}
-  <h2 class="mb-4 text-xl md:text-4xl lg:text-2xl text-gray-900 dark:text-white">{{.}}</h2>
-  {{ end }}
-  {{ with $text }}
-  <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{.}}</p>
-  {{ end }}
-</div>
+<section class="mx-auto max-w-7xl px-1 lg:px-0 pt-8 pb-8">
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    
-    {{ range $index, $item := $block.content.slides }}
-    
-    <div class="relative rounded-lg overflow-hidden group shadow-xl">
-      
-      <!-- Background Image Processing -->
-      {{ $bg := $item.background }}
-      {{ $bg_img := "" }}
-      
-      {{ if $bg.image.filename }}
-        {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
-        {{ if $bg_img }}
-          {{ $bg_img = $bg_img.Fit "600x600 q70 webp" }}
-        {{ end }}
+  <style>
+    /* Custom strong drop shadow for text */
+    .custom-drop-shadow-lg {
+      text-shadow:
+        2px 2px 4px rgba(0,0,0,0.9),
+        -2px -2px 4px rgba(0,0,0,0.9),
+        0 0 8px rgba(0,0,0,0.9);
+      /* Optional: a subtle black border effect with text stroke 
+      -webkit-text-stroke: 1px black;
+       text-stroke: 1px black; */
+    }
+  </style>
+
+  <!-- Header -->
+  <div class="mx-auto max-w-7xl mt-0 mb-4">
+    <div class="flex flex-col">
+      {{ with $blue }}
+        <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{ . }}</p>
       {{ end }}
-      
-      <!-- Image Container with 25% Dark Filter -->
-      {{ if $bg_img }}
-      <img src="{{ $bg_img.RelPermalink }}" 
-           alt="{{ $item.title | plainify }}" 
-           class="w-full h-96 object-cover transition-all filter brightness-100">
-      {{ else }}
-      <div class="w-full h-96 bg-gray-400 filter brightness-100"></div>
-      {{ end }}
-      
-      
-      <!-- Gradient Overlay -->
-       <a href="{{.url}}">
-      <div class="absolute inset-0"></div>
-      </a>
-      <!-- Dynamic Text Positioning with All Text Centered -->
-      <div class="absolute left-0 right-0 px-6 text-white text-center
-        {{ if eq $item.align "top" }}top-0 pt-6{{ $item.align | default "" }}
-        {{ else if eq $item.align "bottom" }}bottom-0 pb-6{{ $item.align | default "" }}
-        {{ else if eq $item.align "center" }}top-1/2 transform -translate-y-1/2
-        {{ else }}bottom-0 pb-6{{ end }}"
-        style="{{ if eq $item.align "top" }}top: 5%;{{ else if eq $item.align "bottom" }}bottom: 5%;{{ end }}">
-        
-        <div class="space-y-3">
-            <a href="{{.url}}">
-          {{ with $item.title }}
-          <h2 class="text-3xl" style="text-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);">
-            {{ . | markdownify | emojify }} 
+      <div class="px-1 md:px-6 lg:px-0">
+        <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+        {{ with $title }}
+          <h2 class="mb-4 text-3xl font-bold dark:font-semibold text-gray-900 dark:text-white">
+            {{ . }}
           </h2>
-          {{ end }}
-          </a>
-          
-          {{ with $item.content }}
-          <div class="text-sm md:text-base drop-shadow-lg max-w-sm mx-auto">
-            {{ . | emojify | $page.RenderString }}
-          </div>
-          {{ end }}
-        </div>
+        {{ end }}
       </div>
-      
+      {{ with $text }}
+        <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400">{{ . }}</p>
+      {{ end }}
     </div>
-    
-    {{ end }}
-    
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 px-0 md:px-0">
+      {{ range $index, $item := $block.content.slides }}
+        <div class="relative overflow-hidden group shadow-xl -mx--8 md:-mx-4 lg:-mx-2.5 rounded-none md:rounded-lg">
+          {{ $bg := $item.background }}
+          {{ $bg_img := "" }}
+          {{ if $bg.image.filename }}
+            {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
+            {{ if $bg_img }}
+              {{ $bg_img = $bg_img.Fit "600x600 q70 webp" }}
+            {{ end }}
+          {{ end }}
+
+          {{ if $bg_img }}
+            <img src="{{ $bg_img.RelPermalink }}" 
+                 alt="{{ $item.title | plainify }}" 
+                 class="w-full h-96 object-cover transition-all filter brightness-100 rounded-lg" />
+          {{ else }}
+            <div class="w-full h-96 bg-gray-400 filter brightness-100 rounded-lg"></div>
+          {{ end }}
+
+          <a href="{{ .url }}">
+            <div class="absolute inset-0"></div>
+          </a>
+
+          {{ $align := $item.align | default "bottom" }}
+
+          {{ if eq $align "center" }}
+            <div class="absolute inset-0 flex items-center justify-center p-6">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-lg shadow-2xl text-center text-gray-900 dark:text-white backdrop-blur-sm">
+          {{ else if eq $align "top" }}
+            <div class="absolute left-0 right-0 top-0 pt-6 px-6 text-gray-900 dark:text-white text-center">
+              <div class="bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+          {{ else if eq $align "bottom" }}
+            <div class="absolute left-0 right-0 bottom-0 pb-6 px-6 text-gray-900 dark:text-white text-center">
+              <div class="bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+          {{ else if eq $align "top-left" }}
+            <div class="absolute top-0 left-0 pt-6 pl-6 text-gray-900 dark:text-white">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
+          {{ else if eq $align "top-right" }}
+            <div class="absolute top-0 right-0 pt-6 pr-6 text-gray-900 dark:text-white">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+          {{ else if eq $align "center-left" }}
+            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 pl-6 text-gray-900 dark:text-white">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl backdrop-blur-sm">
+          {{ else if eq $align "center-right" }}
+            <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pr-6 text-gray-900 dark:text-white">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+          {{ else if eq $align "bottom-left" }}
+            <div class="absolute bottom-0 left-0 pb-6 pl-6 text-white">
+              <div class="font-semibold dark:font-regular p-4 max-w-sm backdrop-blur-sm rounded-full">
+          {{ else if eq $align "bottom-right" }}
+            <div class="absolute bottom-0 right-0 pb-6 pr-6 text-gray-900 dark:text-white">
+              <div class="bg-white dark:bg-black rounded-lg p-4 max-w-sm shadow-2xl text-right backdrop-blur-sm">
+          {{ else }}
+            <div class="absolute left-0 right-0 bottom-0 pb-6 px-6 text-gray-900 dark:text-white text-center">
+              <div class="bg-white dark:bg-black rounded-lg p-4 mx-auto inline-block max-w-sm shadow-2xl backdrop-blur-sm">
+          {{ end }}
+
+              <div class="space-y-3">
+                <a href="{{ .url }}" class="block">
+                  {{ with $item.title }}
+                    <h2 class="text-3xl text-white hover:text-gray-200 transition-colors duration-300">
+                      <span class="custom-drop-shadow-lg"> {{ . | markdownify | emojify }} </span><span class="text-primary-700">›</span>
+                    </h2>
+                  {{ end }}
+                </a>
+
+                {{ with $item.content }}
+                  <div class="text-sm md:text-base leading-relaxed
+                    text-gray-800 dark:text-gray-100 custom-drop-shadow-lg">
+                    {{ . | emojify | $page.RenderString }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      {{ end }}
+    </div>
   </div>
-</div>
+</section>

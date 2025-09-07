@@ -219,48 +219,6 @@ sections:
       title: HOW CAN YOU HELP NOW
       subtitle: 
       text: Add your Section 2 content here... This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of [network](https://christian.com) Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.This living space in continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.This living space continues to evolve, with a renewed focus on building a mutually supportive Christian community while serving and welcoming the broader local area. Asumen House remains a tangible expression of Asumen charity’s mission—offering shelter, support, and a faithful presence amid one of the UK’s most diverse and dynamic urban neighborhoods.
-  - block: testimonials-many
-    id: charity-indicators
-    content:
-      # Header Content
-      title: PARTICIPATE
-      blue: 
-      text: "Pray, Volunteer, Share, Donate"
-      
-      # Customizable Rating System
-      stars: 4.5                    # Number of stars (1-5)
-      rating: "4.5"              # Rating score display
-      reviews: "4,000+"         # Review count
-      # user_count: REMOVED       # No more user badge
-      
-      # Profile Images with URLs
-      items:
-        - name: "Sarah Johnson"           # Used for alt text
-          image: "luis.jpg"              # From assets/media/
-          url: "/about/people" # Optional: profile/social URL
-          external: true                  # Optional: opens in new tab
-          
-        - name: "Michael Chen"            # Used for alt text  
-          image: "sofia.jpg"            # From assets/media/
-          url: "/about/people"
-          external: true
-          
-        - name: "Emily Rodriguez"         # Used for alt text
-          image: "mohammed.jpg"              # From assets/media/
-          url: "/about/people"              # Internal link (no external needed)
-          
-        - name: "David Kim"               # Used for alt text
-          image: "sofia.jpg"              # From assets/media/
-          url: "/about/people"
-          external: true
-          
-        - name: "Lisa Thompson"           # Used for alt text
-          image: "luis.jpg"               # From assets/media/
-          url: /about/people             # Image won't be clickable
-  
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]  
   - block: bottom-circular
     content:
       title: 

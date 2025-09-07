@@ -9,7 +9,57 @@ design:
   spacing: "3rem"
 
 sections:
-  
+  - block: img-overlay-grid
+    content:
+      blue: ""
+      title: "Example Title Grid"
+      text: ""
+      slides:
+        - title: Large Image Left
+          content: ""
+          align: "bottom-left"
+          url: /large-image-link
+          background:
+            image:
+              filename: "mohammed.jpg"
+              filters:
+                brightness: 1
+              position: center
+              color: '#000000'
+        - title: Top Right
+          content: ""
+          align: "bottom-left"
+          url: /top-right-link
+          background:
+            image:
+              filename: "icon.png"
+              filters:
+                brightness: 0.7
+              position: center
+              color: '#111111'
+        - title: Bottom Right
+          content: ""
+          align: "bottom-left"
+          url: /bottom-right-link
+          background:
+            image:
+              filename: "icon.png"
+              filters:
+                brightness: 0.6
+              position: center
+              color: '#222222'
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      css_class: ""
+      background:
+        color: ""
+        image:
+          filename: ""
+          filters:
+            brightness: 0.5
+
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -289,56 +339,15 @@ sections:
           content: "You can start by picking a template and customizing it with our drag-and-drop block system."
         - title: "Is it free to use?"
           content: "Yes! Hugo Blox offers a generous free tier with premium options available."
-  - block: 2-columns-image-overlay
-    content:
-      slides:
-      - title: Edit and design your
-        content: 
-        align: "bottom"
-        url: /what-we-do
-        background:
-          image:
-            filename: "azadi.jpg"
-            filters:
-                brightness: 0.1
-            position: center
-            color: '#333'
-      - title: <h2 class="text-center text-5xl font-bold leading-tight drop-shadow-lg text-gray-900 dark:text-white">This House</h2>
-        content: |- 
-                <h3 class="text-left text-3xl text-gray-900 dark:text-white font-bold leading-tight drop-shadow-lg">🪷 Edit and design your</h3>
-                <p class="text-left text-gray-500 dark:text-gray-400 pl-12 my-2">Edit and design your site just using rich text (Markdown) and configurable YAML parameters.</p>
-                <h3 class="text-left text-3xl text-gray-900 dark:text-white font-bold leading-tight drop-shadow-lg">🪷 Edit and design your</h3>
-                <p class="text-left text-gray-500 dark:text-gray-400 pl-12 my-2">Edit and design your site just using rich text (Markdown) and configurable YAML parameters.</p>
-                <h3 class="text-left text-3xl text-gray-900 dark:text-white font-bold leading-tight drop-shadow-lg">🪷 Edit and design your</h3>
-                <p class="text-left text-gray-500 dark:text-gray-400 pl-12 my-2"> Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just using rich text (Markdown) and configurable YAML parameters.</p>
-        align: "bottom"
-        url: /what-we-do
-        background:
-          image:
-            filename: transparent.webp
-            filters:
-                brightness: 1
-            position: center
-            color: '#fff'
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: ""
-      background:
-        color: ""
-        image:
-#          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness: 0.5
   - block: img-overlay
     content:
+      blue:
+      title: Blue
+      text:
       slides:
       - title: Hope Garden
         content: 
-        align: "bottom"
+        align: "bottom-left"
         url: /what-we-do
         background:
           image:
@@ -349,7 +358,7 @@ sections:
             color: '#333'
       - title: Children's Club
         content: 
-        align: "bottom"
+        align: "bottom-left"
         url: /what-we-do
         background:
           image:
@@ -360,7 +369,7 @@ sections:
             color: '#333'
       - title: Ladies' Day
         content: 
-        align: "bottom"
+        align: "bottom-left"
         url: /what-we-do
         background:
           image:
@@ -382,32 +391,11 @@ sections:
           filename: ""
           filters:
             brightness: 0.5
-  - block: markdown-quote
-    content:
-      title: ''
-      subtitle: ''
-      text: |-
-        <p class= "text-gray-800 text-white px-2 text-2xl text-center">
-        “scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.”        
-        </p>
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900"
-      background:
-        color: ""
-        image:
-          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness:
   - block: subscribe
     content:
       blue: 
-      title: Keep in Touch
-      text: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+      title: 
+      text: 
       text_cta: "Sign up to our newsletter 🔥"
       description: I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="https://follow.it/info/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
       button:
@@ -425,50 +413,6 @@ sections:
           filename: ""
           filters:
             brightness: 
-  - block: features-multicolumn
-    id: features
-    content:
-      blue: PRACTICE & EVENTS
-      title: Edit and design your site just using r
-      text: Practices to Edit and design your
-      button:
-        text: Events & Practice
-        url: /en/events
-      items:
-        - name: GEdit and design
-          icon: /custom/butterfly
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Dialog jdjdj
-          icon: /custom/dialog
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML para
-        - name: Journaling
-          icon: /custom/writing-hand
-          description: Processing Edit and design your site just using rich text (Markd
-        - name: Sharing
-          icon: /custom/conversation
-          description: Other Edit and design your site just using rich text (Markdown) 
-  - block: presentation
-    id: features
-    content:
-      blue: NEXT MEET
-      title: Chat and play
-      text: Connect with others in the pub
-      items:
-        - name: 👥 Group on Eventbrite
-          image: iceberg.webp
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters
-          button:
-            text: Get Started
-            url: https://www.eventbrite.com/#
-        - name: ☕ Live Meetings
-          image: iceberg.webp
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters
-          button:
-            text: Get Started
-            url: https://www.eventbrite.com/#
-    design:
-      css_class: "bg-gray-100 dark:bg-gray-900"
-      view: 
   - block: logo-images
     id: features
     content:
@@ -565,33 +509,6 @@ sections:
     design:
       css_class: ""
       view: article-grid
-  - block: features-img-bullets
-    id: features
-    content:
-      blue: jshfuishiu
-      title: Fkjfvifdvgy
-      text: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
-      items:
-        - name: 
-          image: iceberg2.webp
-          description: 
-        - subtitle: 
-          role: 
-          name: Real JHKH
-          icon: map
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-        - name: Bdid uestion
-          icon: fire
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just
-        - name: Sty
-          icon: adjustments-vertical
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-        - name: Makicdjs hfshf
-          icon: film
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-        - name: gain dvsv
-          icon: arrow-path
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just
   - block: features-multicolumn
     id: unique
     content:
@@ -648,7 +565,8 @@ sections:
       text: ""
       user_groups:
         - Admin
-        - Speakers
+        - Trustees
+        - Volunteers
       sort_by: Params.last_name
       sort_ascending: true
     design:
@@ -668,40 +586,6 @@ sections:
         **DAY 1**
         {style="padding-top: 2rem"}
         {{< table path="schedule.csv" header="true" >}}
-  - block: accordion
-    id: faq
-    content:
-      title: "Frequently Asked Questions"
-      text: "Find answers to commonly asked questions below."
-      items:
-        - title: "How do I get started?"
-          content: |
-            Getting started is easy! Simply follow these steps:
-            
-            1. Sign up for an account
-            2. Complete your profile
-            3. Start exploring our features
-            
-        - title: "What payment methods do you accept?"
-          content: |
-            We accept all major credit cards including:
-            
-            - Visa
-            - MasterCard  
-            - American Express
-            - PayPal
-            
-        - title: "How can I contact support?"
-          content: |
-            You can reach our support team through:
-            
-            - **Email**: support@example.com
-            - **Phone**: +1 (555) 123-4567
-            - **Live Chat**: Available 24/7 on our website
-            
-    design:
-      allow_multiple: false  # Allow multiple items open at once
-      expand_first: true     # Expand first item by default
   - block: faq
     id: features
     content:
