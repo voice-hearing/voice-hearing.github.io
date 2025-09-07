@@ -1175,7 +1175,7 @@ sections:
         - name: Since 2025
           icon: /custom/calendar-svgrepo-com
           description: kfdjgdkghdugoreg
-        - name: HYUPIIIII
+        - name: HYUP
           icon: /custom/people-hugging
           description: hjhfsfhksje
         - name: TfsurUYY
