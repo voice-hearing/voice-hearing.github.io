@@ -1,0 +1,238 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $tabs := $block.content.tabs }}
+{{ $height := cond (isset $block "height") $block.height "h-96" }}
+
+<section class="mx-auto max-w-7xl px-4 py-8">
+
+  {{ with $blue }}
+  <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-700 dark:text-primary-400">{{ . }}</p>
+  {{ end }}
+  {{ with $title }}
+  <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">{{ . }}</h2>
+  {{ end }}
+  {{ with $text }}
+  <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">{{ . }}</p>
+  {{ end }}
+
+  <!-- Tabs Navigation -->
+  <div class="border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400" id="custom-tabs" role="tablist">
+      {{ range $index, $tab := $tabs }}
+      <li class="mr-2" role="presentation">
+        <button
+          id="tab-{{ $index }}"
+          type="button"
+          role="tab"
+          aria-controls="panel-{{ $index }}"
+          aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+          class="inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg
+            {{ if eq $index 0 }}
+              text-primary-700 border-primary-700 dark:text-primary-400 dark:border-primary-400
+            {{ else }}
+              border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300
+            {{ end }}"
+        >
+          {{ with $tab.iconFile }}
+            {{ $iconPath := printf "icons/custom/%s.svg" . }}
+            {{ $iconResource := resources.Get $iconPath }}
+            {{ with $iconResource }}
+              <span aria-hidden="true" class="inline-block w-4 h-4 mr-2" style="line-height:0;">
+                {{ .Content | safeHTML }}
+              </span>
+            {{ else }}
+              <svg class="w-4 h-4 mr-2 text-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            {{ end }}
+          {{ else }}
+            <svg class="w-4 h-4 mr-2 text-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {{ end }}
+          {{ $tab.title | $page.RenderString }}
+        </button>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <!-- Tabs Content -->
+  <div id="custom-tabs-content">
+    {{ range $index, $tab := $tabs }}
+    <div
+      class="{{ if ne $index 0 }}hidden {{ end }} rounded-lg bg-gray-50 dark:bg-gray-800 {{ $height }} overflow-y-auto"
+      id="panel-{{ $index }}"
+      role="tabpanel"
+      aria-labelledby="tab-{{ $index }}"
+    >
+      {{ $content := $tab.content }}
+      {{ if hasPrefix $content "csv:" }}
+        {{ $csvPath := strings.TrimPrefix "csv:" $content | strings.TrimSpace }}
+        {{ $csvResource := resources.Get $csvPath }}
+        
+        {{ if $csvResource }}
+          {{ $csvContent := $csvResource.Content }}
+          {{ $csvContentClean := $csvContent | replaceRE "\r\n" "\n" | replaceRE "\n+" "\n" | strings.TrimRight "\n" }}
+          
+          {{ $csvData := slice }}
+          {{ with $csvResource }}
+            {{ $csvData = . | transform.Unmarshal (dict "delimiter" ",") }}
+          {{ end }}
+          
+          {{ if not $csvData }}
+            <!-- Warning message with no top margin -->
+            <div class="bg-yellow-50 dark:bg-yellow-900 border border-yellow-200 dark:border-yellow-700 rounded-lg mx-4 mb-4 p-4">
+              <p class="text-yellow-700 dark:text-yellow-300 m-0">⚠️ Using fallback CSV parser</p>
+            </div>
+            
+            <!-- Table with padding only on sides and bottom -->
+            <div class="px-4 pb-4">
+              <div class="w-full overflow-x-auto">
+                <table class="w-full table-auto divide-y divide-gray-200 dark:divide-gray-700">
+                  {{ $lines := split $csvContentClean "\n" }}
+                  {{ range $lineIndex, $line := $lines }}
+                    {{ if and $line (ne $line "") }}
+                      {{ if eq $lineIndex 0 }}
+                      <thead class="bg-gray-50 dark:bg-gray-700">
+                        <tr>
+                          {{ range split $line "," }}
+                          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                            {{ . }}
+                          </th>
+                          {{ end }}
+                        </tr>
+                      </thead>
+                      <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                      {{ else }}
+                        <tr class="{{ if modBool (sub $lineIndex 1) 2 }}bg-gray-50 dark:bg-gray-700{{ end }}">
+                          {{ range split $line "," }}
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                            {{ . }}
+                          </td>
+                          {{ end }}
+                        </tr>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+          {{ else }}
+            <!-- Normal CSV parsing successful -->
+            <div class="px-4 pb-4">
+              <div class="w-full overflow-x-auto">
+                <table class="w-full table-auto divide-y divide-gray-200 dark:divide-gray-700">
+                  <thead class="bg-gray-50 dark:bg-gray-700">
+                    {{ $header := index $csvData 0 }}
+                    <tr>
+                      {{ range $header }}
+                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                        {{ . }}
+                      </th>
+                      {{ end }}
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                    {{ range $i, $row := after 1 $csvData }}
+                    <tr class="{{ if modBool $i 2 }}bg-gray-50 dark:bg-gray-700{{ end }}">
+                      {{ range $row }}
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                        {{ . }}
+                      </td>
+                      {{ end }}
+                    </tr>
+                    {{ end }}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          {{ end }}
+          
+        {{ else }}
+          <div class="bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-700 rounded-lg mx-4 mb-4 p-4">
+            <p class="text-red-700 dark:text-red-300 m-0">❌ CSV file not found: {{ $csvPath }}</p>
+          </div>
+        {{ end }}
+        
+      {{ else }}
+        <div class="prose prose-red dark:prose-invert max-w-none content-text px-4 pt-4">
+          {{ $content | markdownify }}
+        </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+</section>
+
+<style>
+#custom-tabs {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+#custom-tabs li {
+    list-style: none !important;
+}
+
+/* Remove all top margins and padding */
+#custom-tabs-content > div {
+    padding: 0 !important;
+}
+
+#custom-tabs-content table {
+    margin: 0 !important;
+}
+
+#custom-tabs-content > div > div:first-child {
+    margin-top: 0 !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('#custom-tabs button, #custom-tabs a[aria-disabled="false"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
+
+  function setActiveTab(selectedIndex) {
+    tabs.forEach((tab, i) => {
+      const selected = i === selectedIndex;
+      tab.setAttribute('aria-selected', selected ? "true" : "false");
+      tab.classList.toggle('text-primary-700', selected);
+      tab.classList.toggle('border-primary-700', selected);
+      tab.classList.toggle('dark:text-primary-400', selected);
+      tab.classList.toggle('dark:border-primary-400', selected);
+
+      tab.classList.toggle('text-gray-500', !selected);
+      tab.classList.toggle('border-transparent', !selected);
+      tab.classList.toggle('hover:text-gray-600', !selected);
+      tab.classList.toggle('hover:border-gray-300', !selected);
+      tab.classList.toggle('dark:text-gray-400', !selected);
+      tab.classList.toggle('dark:hover:text-gray-300', !selected);
+    });
+
+    panels.forEach((panel, i) => {
+      panel.classList.toggle('hidden', i !== selectedIndex);
+    });
+  }
+
+  tabs.forEach((tab, index) => {
+    if (tab.getAttribute('aria-disabled') !== 'true') {
+      tab.addEventListener('click', () => {
+        setActiveTab(index);
+      });
+    }
+  });
+
+  // Initialize first tab active (index 0)
+  setActiveTab(0);
+});
+</script>

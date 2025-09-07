@@ -9,6 +9,36 @@ design:
   spacing: "3rem"
 
 sections:
+  - block: tabs
+    content:
+      title: "CONFERENCE"
+      blue: ""
+      text: ""
+      tabs:
+        - title: "Day 1"
+          iconFile: "twitter"    # corresponds to assets/icons/custom/profile.svg
+          content: "csv:data/conference-day1.csv"
+        - title: "Day 2"
+          content: "csv:data/conference-day2.csv"
+          iconFile: "anatomical-heart"
+        - title: "Day 3"
+          content: "csv:data/conference-day3.csv"
+        - title: "Venue & Info"
+          content: |
+           **Conference Venue:** Charity Excellence Center
+        
+           **Address:** 123 Philanthropy Avenue, Community District
+           
+           **Facilities:**
+           - Free WiFi throughout venue
+           - Accessibility features available
+           - Parking: Complimentary for attendees
+           - Childcare: Available upon request
+           
+           **Contact:**
+           - Phone: (555) 123-CONF
+           - Email: info@charityconference.org
+         
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -495,25 +525,78 @@ sections:
       title: Languages
       # Note: `username` refers to the user's folder name in `content/authors/`
       username: admin
-  - block: cta-image-left-double
+  - block: cta-img-2
     id: features
     content:
-      blue: NEXT MEET
-      title: Restaurant or pub
-      text: Connect with others 
+      blue: 
+      title: I CAN DO 2, 3 columns
+      text: 
       items:
-        - name: 
-          image: iceberg.webp
-          description:  
         - name: Live Meetings
+          image: iceberg.webp
           icon: /custom/twitter
           description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters. 
+          url: https://google.com 
           button:
             text: Get Started
             url: https://www.eventbrite.com/#
         - name: Live Meetings
+          image: iceberg.webp
           icon: /custom/twitter
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters 
+          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters. 
+          url: https://google.com 
+          button:
+            text: Get Started
+            url: https://www.eventbrite.com/#
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: ""
+      background:
+        color: ""
+        image:
+#          # Add your image background to `assets/media/`.
+          filename: ""
+          filters:
+            brightness: 0.5
+  - block: cta-img-4
+    id: features
+    content:
+      blue: 
+      title: I CAN DO 2,3,4 columns
+      text: 
+      items:
+        - name: Live Meetings
+          image: iceberg.webp
+          icon: /custom/twitter
+          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
+          url: https://google.com 
+          button:
+            text: Get Started
+            url: https://www.eventbrite.com/# 
+        - name: Live Meetings
+          image: iceberg.webp
+          icon: /custom/twitter
+          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters. 
+          url: https://google.com 
+          button:
+            text: Get Started
+            url: https://www.eventbrite.com/#
+        - name: Live Meetings
+          image: iceberg.webp
+          icon: /custom/twitter
+          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters. 
+          url: https://google.com 
+          button:
+            text: Get Started
+            url: https://www.eventbrite.com/#
+        - name: Live Meetings
+          image: iceberg.webp
+          icon: /custom/twitter
+          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters. 
+          url: https://google.com 
           button:
             text: Get Started
             url: https://www.eventbrite.com/#
@@ -533,9 +616,9 @@ sections:
   - block: features1
     id: features
     content:
-      blue: USTYDK
-      title: MY YSDHSGD
-      text: HDUIDOIUouu
+      blue: 
+      title: BLOCKS 2,3,4 COLUMNS 
+      text: 
       items:
         - name: jfiushf
           icon: /custom/submodalities
@@ -558,25 +641,6 @@ sections:
     design:
       css_class: ""
       view: article-grid
-  - block: features-multicolumn
-    id: unique
-    content:
-      blue: WHATGOING ON?
-      title: jfj
-      text: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-      items:
-        - name: Questions
-          icon: /custom/questions
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-          button:
-            text: we are ok
-            url: https://hello.com
-        - name: Process
-          icon: /custom/process
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just u
-        - name: Relfkf
-          icon: /custom/relation
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.Edit and design your site just udjf
   - block: resume-experience1
     content:
       username: admin
