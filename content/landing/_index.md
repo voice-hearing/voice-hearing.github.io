@@ -9,7 +9,37 @@ design:
   spacing: "3rem"
 
 sections:
-  - block: img-overlay-grid
+  - block: hero1
+    content:
+      title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
+      text: 
+      secondary: 
+      primary_action:
+        text: DONATE NOW &nbsp; <span class="text-white">›</span>
+        url: /donate/donate
+        icon: 
+      secondary_action:
+        text:
+        url:
+      announcement:
+        text: ""
+        link:
+          text: ""
+          url: ""
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+        margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: ""
+      background: 
+        color: ""
+        image:
+          # Add your image background to `assets/media/`.
+          filename: "hero.jpg"
+          filters:
+            brightness: "100%"
+  - block: img-over-grid-right
     content:
       blue: ""
       title: "Example Title Grid"
@@ -59,37 +89,56 @@ sections:
           filename: ""
           filters:
             brightness: 0.5
-
-  - block: hero1
+  - block: img-over-grid-left
     content:
-      title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
-      text: 
-      secondary: 
-      primary_action:
-        text: DONATE NOW &nbsp; <span class="text-white">›</span>
-        url: /donate/donate
-        icon: 
-      secondary_action:
-        text:
-        url:
-      announcement:
-        text: ""
-        link:
-          text: ""
-          url: ""
+      blue: ""
+      title: "Example Title Grid"
+      text: ""
+      slides:
+        - title: Large Image Left
+          content: ""
+          align: "bottom-left"
+          url: /large-image-link
+          background:
+            image:
+              filename: "city-daniel-abadia.jpg"
+              filters:
+                brightness: 1
+              position: center
+              color: '#000000'
+        - title: Top Right
+          content: ""
+          align: "bottom-left"
+          url: /top-right-link
+          background:
+            image:
+              filename: "icon.png"
+              filters:
+                brightness: 0.7
+              position: center
+              color: '#111111'
+        - title: Bottom Right
+          content: ""
+          align: "bottom-left"
+          url: /bottom-right-link
+          background:
+            image:
+              filename: "icon.png"
+              filters:
+                brightness: 0.6
+              position: center
+              color: '#222222'
     design:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
       css_class: ""
-      background: 
+      background:
         color: ""
         image:
-          # Add your image background to `assets/media/`.
-          filename: "hero.jpg"
+          filename: ""
           filters:
-            brightness: "100%"
+            brightness: 0.5
   - block: image-overlay
     content:
       title: HELP US & EXPERIENCE
