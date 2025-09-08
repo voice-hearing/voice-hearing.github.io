@@ -5,7 +5,7 @@
     <link>http://localhost:1313/donate/</link>
       <atom:link href="http://localhost:1313/donate/index.xml" rel="self" type="application/rss+xml" />
     <description>Donate</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-gb</language><lastBuildDate>Fri, 28 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-gb</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/sharing.jpg</url>
       <title>Donate</title>
@@ -14,12 +14,12 @@
     
     <item>
       <title>🌱 DONATE</title>
-      <link>http://localhost:1313/donate/donate/</link>
+      <link>http://localhost:1313/donate/process/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/donate/donate/</guid>
+      <guid>http://localhost:1313/donate/process/</guid>
       <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 1234567 Registered Charity Number: 988843728&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a &lt;strong&gt;big thank you&lt;/strong&gt; to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.&lt;/p&gt;
 &lt;p&gt;Our work is real, and so are the needs—bus fares for volunteers, gardening tools, and charityed spaces for those who feel alone. It&amp;rsquo;s &lt;strong&gt;your honest support&lt;/strong&gt; that helps us reach people like &lt;em&gt;Kevin&lt;/em&gt; and &lt;em&gt;Sarah&lt;/em&gt;, offering new beginnings where they are needed most.&lt;/p&gt;
 &lt;p&gt;You are warmly invited now to become a part of what we do, just as you are. &lt;em&gt;And as you decide to give, you may quietly notice a sense of connection and honest purpose growing within you—knowing that your gift truly matters.&lt;/em&gt;&lt;/p&gt;
@@ -50,10 +50,10 @@
 &lt;li&gt;
 &lt;p&gt;You may choose to set up a standing order or one-off payment:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Sort Code: &lt;strong&gt;11 43 11&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Account Number: &lt;strong&gt;9694698450&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;IBAN: &lt;strong&gt;84384384344434&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;BIC: &lt;strong&gt;LOYH98545843884&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sort Code: &lt;strong&gt;30 96 28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Account Number: &lt;strong&gt;17913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IBAN: &lt;strong&gt;GB18LOYD30962817913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;BIC: &lt;strong&gt;LOYDGB21274&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -64,8 +64,75 @@
 &lt;li&gt;
 &lt;p&gt;Make cheques payable to &lt;strong&gt;‘Asumen charity’&lt;/strong&gt; and post to:&lt;/p&gt;
 &lt;p&gt;Asumen charity&lt;br&gt;
-11 London Road
-LONDON, Postcode England, UK&lt;/p&gt;
+56 Grantham Road&lt;br&gt;
+Birmingham, B11 1LX, England, UK&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;your-gift-in-action&#34;&gt;Your Gift in Action&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Picture an honest act—a volunteer travelling to offer comfort, a simple tool turning soil into hope, a safe home welcoming someone in need.&lt;/em&gt; Each moment is made possible by your sincere generosity.&lt;/p&gt;
+&lt;p&gt;As you choose to give, notice the gentle assurance that comes from being part of a community built honestly on love, charity, and meaningful change.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Knock, and the door will be opened to you.”&lt;/em&gt; — Matthew 7:7&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Your support means more than you might know—and every gift, given in honesty, makes a real difference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>🌱 DONATE</title>
+      <link>http://localhost:1313/donate/thank-you/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/donate/thank-you/</guid>
+      <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a &lt;strong&gt;big thank you&lt;/strong&gt; to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.&lt;/p&gt;
+&lt;p&gt;Our work is real, and so are the needs—bus fares for volunteers, gardening tools, and charityed spaces for those who feel alone. It&amp;rsquo;s &lt;strong&gt;your honest support&lt;/strong&gt; that helps us reach people like &lt;em&gt;Kevin&lt;/em&gt; and &lt;em&gt;Sarah&lt;/em&gt;, offering new beginnings where they are needed most.&lt;/p&gt;
+&lt;p&gt;You are warmly invited now to become a part of what we do, just as you are. &lt;em&gt;And as you decide to give, you may quietly notice a sense of connection and honest purpose growing within you—knowing that your gift truly matters.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ways-you-can-give&#34;&gt;Ways You Can Give&lt;/h2&gt;
+&lt;h3 id=&#34;1-donate-online&#34;&gt;1. Donate Online&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can give, securely and honestly, right here:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;d like to support our mortgage fund directly, visit:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gift Aid:&lt;/strong&gt; If you&amp;rsquo;re a UK taxpayer, please consider selecting Gift Aid when giving online—it allows us to reclaim tax already paid, at &lt;em&gt;no extra cost to you&lt;/em&gt;. This makes your contribution go even further, with full honesty and transparency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Please note:&lt;/em&gt; 3% of each online gift is given to Stewardship, a UK Christian charity, ensuring every penny is used honestly for the good of communities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-bank-transfer&#34;&gt;2. Bank Transfer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You may choose to set up a standing order or one-off payment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sort Code: &lt;strong&gt;30 96 28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Account Number: &lt;strong&gt;17913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IBAN: &lt;strong&gt;GB18LOYD30962817913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;BIC: &lt;strong&gt;LOYDGB21274&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you wish to help a specific project, let us know by note, email, or simply specify it on your donation—so your honest intention is fully reflected.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-cheque&#34;&gt;3. Cheque&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Make cheques payable to &lt;strong&gt;‘Asumen charity’&lt;/strong&gt; and post to:&lt;/p&gt;
+&lt;p&gt;Asumen charity&lt;br&gt;
+56 Grantham Road&lt;br&gt;
+Birmingham, B11 1LX, England, UK&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;

@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Enhanced CTA Image Paragraph - Light Theme with Custom Icons */}}
+{{/* Hugo Blox: Enhanced CTA Image Paragraph - Clickable Images with Large Overlay Text */}}
 {{/* Documentation: https://hugoblox.com/blocks/ */}}
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
 
@@ -10,9 +10,9 @@
 {{ $blue := $block.content.blue | emojify | $page.RenderString }}
 
 <style>
-  /* Link Colors for Light and Dark Theme */
+  /* All existing styles remain the same */
   .markdown-content a {
-    color: rgb(185 28 28); /* text-primary-700 equivalent */
+    color: rgb(185 28 28);
     text-decoration: underline;
     transition: opacity 0.2s ease-in-out;
   }
@@ -22,12 +22,11 @@
   }
   
   .dark .markdown-content a {
-    color: rgb(253 164 175); /* text-primary-300 equivalent */
+    color: rgb(253 164 175);
   }
   
-  /* Style links in the text content specifically */
   .content-text a {
-    color: rgb(185 28 28); /* text-primary-700 */
+    color: rgb(185 28 28);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
@@ -38,10 +37,9 @@
   }
   
   .dark .content-text a {
-    color: rgb(253 164 175); /* text-primary-300 */
+    color: rgb(253 164 175);
   }
   
-  /* FEATURE ICON ALIGNED WITH H3 TITLE */
   .feature-icon {
     display: inline-flex;
     align-items: center;
@@ -52,7 +50,7 @@
     border-radius: 50%;
     color: #ffffff;
     flex-shrink: 0;
-    margin-top: 0.25rem; /* Aligns with h3 text baseline */
+    margin-top: 0.25rem;
   }
 
   .feature-icon svg {
@@ -64,7 +62,6 @@
     stroke-width: 0 !important;
   }
 
-  /* CUSTOM ICON CONTAINER */
   .custom-icon-container {
     width: 1.5em;
     height: 1.5em;
@@ -84,10 +81,9 @@
     stroke-width: 0 !important;
   }
 
-  /* FEATURE ROW ALIGNMENT - ICON WITH H3 */
   .feature-row {
     display: flex;
-    align-items: flex-start; /* Allow icon to align with title */
+    align-items: flex-start;
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -97,20 +93,50 @@
     line-height: 1.4;
   }
 
-  /* FEATURE TITLE ALIGNMENT */
   .feature-title {
     margin: 0;
     padding: 0;
     line-height: 1.3;
   }
 
-  /* IMAGE OVERLAY STYLES - FROM 3-COLUMN GRID */
   .overlay-bg-light {
     background-color: rgba(255, 255, 255, 0.9);
   }
   .overlay-bg-dark {
     background-color: rgba(0, 0, 0, 0.7);
   }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-grid {
+      gap: 4rem;
+    }
+  }
+
+  /* CLICKABLE IMAGE LINK */
+  .image-link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .image-link:hover {
+    transform: scale(1.02);
+  }
+
 </style>
 
 <div class="mx-auto max-w-7xl mt-0 px-1 md:px-4 lg:px-0 markdown-content">
@@ -139,68 +165,18 @@
   {{ $text := $item.text | emojify | $page.RenderString }}
   {{ $image_path := path.Join "media" $item.image }}
   {{ $image := resources.GetMatch $image_path }}
+  {{ $layout := $item.layout | default "image-left" }}
   
   {{ with $image }}
-  <div class="mx-auto max-w-screen-xl">
-    {{/* CONSISTENT LAYOUT: Image always LEFT, Text always RIGHT */}}
-    <div class="gap-12 items-center md:grid md:grid-cols-2 lg:gap-16">
+  <div class="mx-auto max-w-screen-xl mb-0">
+    <div class="content-grid">
       
-      {{/* Image Section - Always on the LEFT with OVERLAY */}}
-      <div class="md:col-start-1 relative">
-        {{ if ne $image.MediaType.SubType "gif" }}
-          {{ $responsive := partial "functions/process_responsive_image.html" (dict 
-              "image" $image 
-              "mode" "fill"
-              "sizes" (slice 400 600 800 1200)
-          ) }}
-          <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative">
-            <img class="w-full h-full object-cover" 
-                 srcset="{{ $responsive.srcset }}"
-                 sizes="(max-width: 768px) 100vw, 50vw"
-                 src="{{ $responsive.fallback.RelPermalink }}" 
-                 width="{{ $responsive.fallback.Width }}"
-                 height="{{ $responsive.fallback.Width }}"
-                 alt="{{ $title | plainify }}"
-                 loading="lazy">
-            
-            {{/* TEXT OVERLAY - Bottom Left */}}
-            {{ with $item.overlay_text }}
-            <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
-                 style="padding: 1rem; margin: 1.5rem;">
-              <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
-                {{ . | $page.RenderString }}
-              </h3>
-            </div>
-            {{ end }}
-          </div>
-        {{ else }}
-          <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative">
-            <img class="w-full h-full object-cover" 
-                 src="{{ $image.RelPermalink }}" 
-                 width="{{ $image.Width }}"
-                 height="{{ $image.Width }}"
-                 alt="{{ $title | plainify }}"
-                 loading="lazy">
-            
-            {{/* TEXT OVERLAY - Bottom Left */}}
-            {{ with $item.overlay_text }}
-            <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
-                 style="padding: 1rem; margin: 1.5rem;">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                {{ . | $page.RenderString }}
-              </h3>
-            </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-
-      {{/* Content Section - Always on the RIGHT */}}
-      <div class="mt-8 md:mt-0 md:col-start-2 px-1 md:px-4 lg:px-0">
+      {{/* Content Section */}}
+      <div class="{{ if eq $layout "text-left" }}order-1 md:order-1{{ else }}order-2 md:order-2{{ end }}">
         <h2 class="mb-6 tracking-tight font-bold text-gray-900 dark:text-white text-2xl">{{ $title }}</h2>
         <p class="mb-8 text-lg font-light text-gray-600 dark:text-gray-300 lg:text-xl">{{ $text }}</p>
 
-        {{/* Features with Custom Icons - Icon Aligned with H3 */}}
+        {{/* Features with Custom Icons */}}
         {{ with $item.features }}
         <div class="space-y-4">
           {{ range . }}
@@ -208,7 +184,6 @@
             {{ $feature_icon := .icon | default "check-circle" }}
             
             <span class="feature-icon">
-              {{/* Try to load custom icon first */}}
               {{ $custom_icon_path := printf "media/icons/custom/%s.svg" $feature_icon }}
               {{ $custom_icon := resources.Get $custom_icon_path }}
               {{ if $custom_icon }}
@@ -216,13 +191,12 @@
                   {{ $custom_icon.Content | safeHTML }}
                 </div>
               {{ else }}
-                {{/* Fallback to Hugo Blox icon */}}
                 {{ partial "functions/get_icon" (dict "name" $feature_icon "attributes" "style=\"width: 1.5em; height: 1.5em; fill: white; color: white; opacity: 1; visibility: visible;\"") }}
               {{ end }}
             </span>
             
             <div class="feature-content">
-              <h3 class="feature-title text-xl font-semibold text-gray-900 dark:text-white">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
                 {{ .name | default . | $page.RenderString }}
               </h3>
               {{ with .description }}
@@ -236,14 +210,13 @@
         </div>
         {{ end }}
 
-        {{/* Skills Section with Custom Icons - Icon Aligned with H3 */}}
+        {{/* Skills Section */}}
         {{ with $item.skills }}
         <div class="space-y-4">
           {{ range . }}
           <div class="feature-row">
             {{ with .icon }}
             <span class="feature-icon">
-              {{/* Try to load custom icon first */}}
               {{ $custom_icon_path := printf "media/icons/custom/%s.svg" . }}
               {{ $custom_icon := resources.Get $custom_icon_path }}
               {{ if $custom_icon }}
@@ -251,7 +224,6 @@
                   {{ $custom_icon.Content | safeHTML }}
                 </div>
               {{ else }}
-                {{/* Fallback to Hugo Blox icon */}}
                 {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"width: 1.5em; height: 1.5em; fill: #ffffff; stroke: none; stroke-width: 0;\"") }}
               {{ end }}
             </span>
@@ -272,7 +244,7 @@
         </div>
         {{ end }}
 
-        {{/* Button - Light Theme */}}
+        {{/* Button */}}
         {{ with $item.button }}
         <div class="mt-10">
           <a href="{{ .url }}" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
@@ -286,6 +258,60 @@
         </div>
         {{ end }}
       </div>
+
+      {{/* Image Section with CLICKABLE IMAGE LINK */}}
+      <div class="{{ if eq $layout "text-left" }}order-2 md:order-2{{ else }}order-1 md:order-1{{ end }} relative">
+        {{ $image_url := $item.image_url | default "#" }}
+        <a href="{{ $image_url }}" class="image-link">
+          {{ if ne $image.MediaType.SubType "gif" }}
+            {{ $responsive := partial "functions/process_responsive_image.html" (dict 
+                "image" $image 
+                "mode" "fill"
+                "sizes" (slice 400 600 800 1200)
+            ) }}
+            <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative group hover:shadow-2xl transition-shadow duration-300">
+              <img class="w-full h-full object-cover" 
+                   srcset="{{ $responsive.srcset }}"
+                   sizes="(max-width: 768px) 100vw, 50vw"
+                   src="{{ $responsive.fallback.RelPermalink }}" 
+                   width="{{ $responsive.fallback.Width }}"
+                   height="{{ $responsive.fallback.Width }}"
+                   alt="{{ $title | plainify }}"
+                   loading="lazy">
+              
+              {{/* NON-CLICKABLE LARGE OVERLAY TEXT */}}
+              {{ with $item.overlay_text }}
+              <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
+                   style="padding: 1rem; margin: 1.5rem; pointer-events: none;">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  {{ . | $page.RenderString }}
+                </h2>
+              </div>
+              {{ end }}
+            </div>
+          {{ else }}
+            <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative group hover:shadow-2xl transition-shadow duration-300">
+              <img class="w-full h-full object-cover" 
+                   src="{{ $image.RelPermalink }}" 
+                   width="{{ $image.Width }}"
+                   height="{{ $image.Width }}"
+                   alt="{{ $title | plainify }}"
+                   loading="lazy">
+              
+              {{/* NON-CLICKABLE LARGE OVERLAY TEXT */}}
+              {{ with $item.overlay_text }}
+              <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
+                   style="padding: 1rem; margin: 1.5rem; pointer-events: none;">
+                <h3 class="overlay-text-large text-gray-900 dark:text-white">
+                  {{ . | $page.RenderString }}
+                </h3>
+              </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </a>
+      </div>
+      
     </div>
   </div>
   {{ else }}

@@ -1,0 +1,382 @@
+{{/* Hugo Blox: UK Christian Charity Donation Block - Fixed Theme Issues */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+<style>
+  /* UK Charity Donation Block Styles - Consistent Light Theme */
+  .donation-block {
+    background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+    position: relative;
+    overflow: hidden;
+    color: white; /* Force white text for all themes */
+  }
+  
+  .donation-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0,50 Q25,30 50,50 T100,50 V100 H0 Z" fill="rgba(255,255,255,0.05)"/></svg>') no-repeat center bottom;
+    background-size: cover;
+  }
+
+  /* Force white text throughout the donation block */
+  .donation-block * {
+    color: white !important;
+  }
+
+  /* Exception for yellow accent elements */
+  .donation-block .accent-yellow {
+    color: #fbbf24 !important;
+  }
+
+  /* Exception for light blue text */
+  .donation-block .text-light-blue {
+    color: #bfdbfe !important;
+  }
+
+  .donation-amounts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .amount-button {
+    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.15);
+    color: white !important;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .amount-button:hover, .amount-button.selected {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .impact-statement {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #fbbf24;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .real-time-stats {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .stat-item {
+    text-align: center;
+    color: white !important;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24 !important;
+  }
+
+  .donation-form input, .donation-form select {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .donation-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .donation-form input:focus {
+    outline: none;
+    border-color: #fbbf24 !important;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.3);
+  }
+
+  .donate-button {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: white !important;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+  }
+
+  .donate-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+    background: linear-gradient(135deg, #d97706, #b45309) !important;
+  }
+
+  .trust-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+  }
+
+  .gift-aid-info {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: white !important;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Recent Activity Box - Enhanced Visibility */
+  .recent-activity {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 12px;
+    padding: 1.5rem !important;
+    margin: 1rem 0;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Testimonial Box - Enhanced Visibility */
+  .testimonial-box {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 12px;
+    padding: 1.5rem !important;
+    margin: 1rem 0;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Radio button styling */
+  .donation-form input[type="radio"] {
+    accent-color: #fbbf24;
+    width: auto !important;
+    margin-right: 0.5rem;
+  }
+
+  /* Checkbox styling */
+  .donation-form input[type="checkbox"] {
+    accent-color: #fbbf24;
+    width: auto !important;
+  }
+
+  @media (max-width: 768px) {
+    .donation-amounts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .real-time-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .donation-block {
+      padding: 2rem 1rem;
+    }
+  }
+</style>
+
+<section class="donation-block px-4 relative">
+  <div class="max-w-4xl mx-auto relative z-10">
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      
+      <!-- Left Column: Donation Form -->
+      <div class="donation-form">
+        <h3 class="text-2xl font-bold text-white mb-6">Make Your Donation</h3>
+        
+        <!-- Suggested Amounts -->
+        <div class="donation-amounts">
+          {{ range $block.content.donation_amounts | default (slice (dict "amount" 25 "impact" "Feed 5 families") (dict "amount" 50 "impact" "Support 1 child") (dict "amount" 100 "impact" "Fund training") (dict "amount" 250 "impact" "Transform lives")) }}
+          <div class="amount-button" data-amount="{{ .amount }}">
+            <div class="text-lg font-bold">£{{ .amount }}</div>
+            <div class="text-sm opacity-90">{{ .impact }}</div>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Custom Amount -->
+        <input type="number" placeholder="Enter custom amount (£)" min="5" id="custom-amount" />
+
+        <!-- Donation Type -->
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <label class="flex items-center space-x-2 text-white cursor-pointer">
+            <input type="radio" name="donation-type" value="monthly" checked />
+            <span>Monthly (Recommended)</span>
+          </label>
+          <label class="flex items-center space-x-2 text-white cursor-pointer">
+            <input type="radio" name="donation-type" value="one-time" />
+            <span>One-time</span>
+          </label>
+        </div>
+
+        <!-- Basic Form Fields -->
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone (optional)" />
+
+        <!-- Gift Aid -->
+        <div class="gift-aid-info">
+          <label class="flex items-start space-x-3 cursor-pointer">
+            <input type="checkbox" class="mt-1" />
+            <div>
+              <strong>Add Gift Aid (25% extra at no cost to you)</strong>
+              <p class="text-sm opacity-90 mt-1">I confirm I am a UK taxpayer and would like to reclaim Gift Aid on my donation and any donations I make in the future or have made in the past 4 years.</p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Donate Button -->
+        <button class="donate-button" onclick="processDonation()">
+          <span class="flex items-center justify-center">
+            Donate Securely Now
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators">
+          <div class="flex items-center text-white text-sm">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            SSL Secured
+          </div>
+          <div class="flex items-center text-white text-sm">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+              <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+            </svg>
+            Charity No. {{ $block.content.charity_number | default "123456" }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Impact & Social Proof -->
+      <div>
+        <!-- Real-time Stats -->
+        <div class="real-time-stats">
+          <div class="stat-item">
+            <div class="stat-number">£{{ $block.content.raised | default "127,450" }}</div>
+            <div class="text-sm">Raised This Month</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">{{ $block.content.donors | default "1,234" }}</div>
+            <div class="text-sm">Recent Supporters</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">{{ $block.content.families | default "890" }}</div>
+            <div class="text-sm">Families Helped</div>
+          </div>
+        </div>
+
+        <!-- Impact Statement -->
+        <div class="impact-statement">
+          <h4 class="text-lg font-bold text-white mb-3">Your Impact</h4>
+          <div class="space-y-3 text-white">
+            {{ range $block.content.impact_items | default (slice "£25 provides emergency food for a family of 4" "£50 sponsors a child's education for one month" "£100 funds community outreach programs" "£250 supports a family through crisis") }}
+            <div class="flex items-start space-x-2">
+              <svg class="accent-yellow w-5 h-5 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              <span>{{ . }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Recent Activity - Enhanced Visibility -->
+        <div class="recent-activity">
+          <h4 class="text-gray-900 dark:text-white font-bold mb-4 text-lg">Recent Support</h4>
+          <div class="space-y-3 text-sm text-white">
+            {{ range $block.content.recent_donations | default (slice (dict "name" "Sarah M." "amount" "50" "time" "2 mins ago") (dict "name" "Anonymous" "amount" "25" "time" "5 mins ago") (dict "name" "John & Mary" "amount" "100" "time" "12 mins ago")) }}
+            <div class="flex justify-between items-center p-2 bg-white bg-opacity-5 rounded-lg">
+              <span class="font-medium">{{ .name }} donated £{{ .amount }}</span>
+              <span class="text-light-blue text-xs">{{ .time }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Testimonial - Enhanced Visibility -->
+        {{ with $block.content.testimonial }}
+        <div class="testimonial-box">
+          <h4 class="text-grey-900 dark:text-white font-bold mb-3 text-lg">What People Say</h4>
+          <blockquote class="text-grey-800 dark:text-white italic mb-4 text-lg leading-relaxed">"{{ .quote }}"</blockquote>
+          <cite class="accent-yellow font-semibold text-base">— {{ .author }}</cite>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Interactive donation amount selection
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.amount-button').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.amount-button').forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      const amount = this.dataset.amount;
+      document.getElementById('custom-amount').value = amount;
+    });
+  });
+});
+
+// Process donation (integrate with your payment processor)
+function processDonation() {
+  // Get form data
+  const amount = document.getElementById('custom-amount').value;
+  const donationType = document.querySelector('input[name="donation-type"]:checked').value;
+  
+  if (!amount || amount < 5) {
+    alert('Please enter a donation amount of £5 or more.');
+    return;
+  }
+  
+  // Here you would integrate with your payment processor (Stripe, PayPal, etc.)
+  // For now, redirect to a thank you page or payment gateway
+  window.location.href = `/donate/process?amount=${amount}&type=${donationType}`;
+}
+</script>

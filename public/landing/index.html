@@ -243,6 +243,11 @@
 
 
   
+  
+  
+  
+  
+  
     
       
       
@@ -282,6 +287,7 @@
         
       
     
+  
   
   
   
@@ -307,6 +313,26 @@
   
   
   
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
   
   
   
@@ -473,6 +499,42 @@
       
     
   
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
     
       
       
@@ -1374,6 +1436,11 @@
         
       
     
+  
+  
+  
+  
+  
   
   
   
@@ -1399,11 +1466,8 @@
   
   
   
-
-  <script>console.log('✓ Alpine.js loading on demand');</script>
   
   
-  <script src="/dist/lib/alpinejs/cdn.min.fb9b146b7fbd1bbf251fb3ef464f2e7c5d33a4a83aeb0fcf21e92ca6a9558c4b.js" integrity="sha256-&#43;5sUa3&#43;9G78lH7PvRk8ufF0zpKg66w/PIekspqlVjEs=" defer></script>
 
 
 
@@ -1695,7 +1759,7 @@
 
       
       
-      <a href="/donate/donate"
+      <a href="/donate"
          class="hidden lg:inline-block rounded-full px-5 py-2 font-semibold transition md:ml-4 px-4 py-1.5 text-xl bg-primary-700 hover:text-gray-200 text-white">
         Donate
       </a>
@@ -1703,7 +1767,7 @@
 
       
       
-      <a href="/donate/donate" 
+      <a href="/donate" 
          class="rounded-full text-sm py-1.5 px-3 bg-primary-700 text-white mr-3 font-semibold hover:bg-primary-800 transition-colors lg:hidden">
         Donate
       </a>
@@ -2353,7 +2417,7 @@
 
 <li class="mt-4 lg:hidden">
   <a class="rounded-full text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
-     href="/donate/donate">
+     href="/donate">
     Donate
   </a>
 </li>
@@ -2481,7 +2545,7 @@
 
 
 
-<section id="section-cta-image-par-left" class="relative hbb-section blox-cta-image-par-left  bg-gray-100 dark:bg-gray-900" style="padding: 3rem 0 3rem 0;" >
+<section id="section-book-promotion" class="relative hbb-section blox-book-promotion  " style="padding: 3rem 0 3rem 0;" >
  <div class="home-section-bg " >
    
  </div>
@@ -2501,110 +2565,19 @@
 
 
 <style>
-   
-  .markdown-content a {
-    color: rgb(185 28 28);  
-    text-decoration: underline;
-    transition: opacity 0.2s ease-in-out;
-  }
-  
-  .markdown-content a:hover {
-    opacity: 0.8;
-  }
-  
-  .dark .markdown-content a {
-    color: rgb(253 164 175);  
-  }
-  
-   
-  .content-text a {
-    color: rgb(185 28 28);  
-    text-decoration: underline;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .content-text a:hover {
-    opacity: 0.8;
-  }
-  
-  .dark .content-text a {
-    color: rgb(253 164 175);  
-  }
-  
-   
-  .feature-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    background-color: #16a34a;
-    border-radius: 50%;
-    color: #ffffff;
-    flex-shrink: 0;
-    margin-top: 0.25rem;  
-  }
-
-  .feature-icon svg {
-    width: 1.5em !important;
-    height: 1.5em !important;
-    fill: #ffffff !important;
-    color: #ffffff !important;
-    stroke: none !important;
-    stroke-width: 0 !important;
-  }
-
-   
-  .custom-icon-container {
-    width: 1.5em;
-    height: 1.5em;
-    fill: #ffffff;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .custom-icon-container svg {
-    width: 100% !important;
-    height: 100% !important;
-    fill: inherit !important;
-    color: inherit !important;
-    stroke: none !important;
-    stroke-width: 0 !important;
-  }
-
-   
-  .feature-row {
-    display: flex;
-    align-items: flex-start;  
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .feature-content {
-    flex: 1;
-    line-height: 1.4;
-  }
-
-   
-  .feature-title {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
-  }
-
-   
-  .overlay-bg-light {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .overlay-bg-dark {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+ 
+.book-grid {
+  gap: 1rem !important;
+}
+ 
+.book-image {
+  max-height: 550px !important;
+  width: auto !important;
+}
 </style>
 
-<div class="mx-auto max-w-7xl mt-0 px-1 md:px-4 lg:px-0 markdown-content">
+<section class="py-8">
+  <div class="mx-auto max-w-4xl mt-0 px-1 lg:px-0 markdown-content">
   
   
   <div class="flex flex-col text-left">
@@ -2614,191 +2587,269 @@
   <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
       
   
-  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Our Services</h2>
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Featured Books</h2>
   </div>
     
     
   </div>
 
-<div class="">
   
   
-  
-  
-  
-  
-  
-  <div class="mx-auto max-w-screen-xl">
+  <div class="grid grid-cols-1 md:grid-cols-2 book-grid items-center mb-12">
+
     
-    <div class="gap-12 items-center md:grid md:grid-cols-2 lg:gap-16">
+    <div class="flex flex-col items-start px-1 md:px-4 lg:px-0">
+      <h2 class="text-2xl font-semibold leading-tight text-gray-900 dark:text-white">Beyond the Senses: Illusions at the Edge of Reality</h2>
+      <a href="/author" class="hover:underline">
+        <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Your Name (Author)</h3>
+      </a>
       
       
-      <div class="md:col-start-1 relative">
+      
+      
+      
+      <div class="flex items-center mb-1">
         
-          
-          <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative">
-            <img class="w-full h-full object-cover" 
-                 srcset="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp 400w, /media/avatar%20copy_hu_d425e3069087553d.webp 600w, /media/avatar%20copy_hu_e50e042217f9af6f.webp 800w, /media/avatar%20copy_hu_cf6f2b531bd6103a.webp 1200w"
-                 sizes="(max-width: 768px) 100vw, 50vw"
-                 src="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp" 
-                 width="400"
-                 height="400"
-                 alt="Building on modern foundations"
-                 loading="lazy">
-            
-            
-            
-            <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
-                 style="padding: 1rem; margin: 1.5rem;">
-              <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
-                Modern Workspace
-              </h3>
-            </div>
-            
-          </div>
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
         
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="half">
+                <stop offset="50%" stop-color="currentColor"/>
+                <stop offset="50%" stop-color="transparent"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)"/>
+          </svg>
+        
+        <span class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">4.5</span>
       </div>
 
       
-      <div class="mt-8 md:mt-0 md:col-start-2 px-1 md:px-4 lg:px-0">
-        <h2 class="mb-6 tracking-tight font-bold text-gray-900 dark:text-white text-2xl">Building on modern foundations</h2>
-        <p class="mb-8 text-lg font-light text-gray-600 dark:text-gray-300 lg:text-xl">Gain a competitive advantage by incorporating industry leading practices</p>
+      
+      <p class="mb-4 text-xs text-gray-900 dark:text-white">Winner of: Best Spiritual Book Award 2024</p>
+      
 
+      
+      
+      <p class="mb-4 text-lg text-gray-800 dark:text-gray-300">"A journey through the mystical experiences that shape our understanding of reality and consciousness. A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness."</p>
+      
+
+      
+      <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
+        Page Number: 320 pages
+         &#8226; 
+        Publication date: March 2024
+         &#8226; 
+        File size: 2.5 MB
+      </p>
+
+      
+      <div class="mt-6 inline-flex space-x-3">
         
-        
-        <div class="space-y-4">
-          
-          <div class="feature-row">
-            
-            
-            <span class="feature-icon">
-              
-              
-              
-              
-                <div class="custom-icon-container">
-                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
-</g>
-</svg>
-                </div>
-              
-            </span>
-            
-            <div class="feature-content">
-              <h3 class="feature-title text-xl font-semibold text-gray-900 dark:text-white">
-                Built on top of Astro 5.0
-              </h3>
-              
-              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
-                Benefiting from the performance and developer-friendly features of this modern static site generator.
-              </div>
-              
-            </div>
-          </div>
-          
-          <div class="feature-row">
-            
-            
-            <span class="feature-icon">
-              
-              
-              
-              
-                <div class="custom-icon-container">
-                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
-</g>
-</svg>
-                </div>
-              
-            </span>
-            
-            <div class="feature-content">
-              <h3 class="feature-title text-xl font-semibold text-gray-900 dark:text-white">
-                Styled using Tailwind CSS
-              </h3>
-              
-              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
-                Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.
-              </div>
-              
-            </div>
-          </div>
-          
-          <div class="feature-row">
-            
-            
-            <span class="feature-icon">
-              
-              
-              
-              
-                <div class="custom-icon-container">
-                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
-</g>
-</svg>
-                </div>
-              
-            </span>
-            
-            <div class="feature-content">
-              <h3 class="feature-title text-xl font-semibold text-gray-900 dark:text-white">
-                Cross-browser compatibility
-              </h3>
-              
-              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
-                Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
+        <a href="https://amazon.com/dp/your-ebook" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          E-book
+        </a>
         
 
         
-        
-
-        
-        
-        <div class="mt-10">
-          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
-            <span class="flex items-center">
-              Get Started
-              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-top: 1px; flex-shrink: 0;">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-          </a>
-        </div>
+        <a href="https://audible.com/pd/your-audiobook" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+          Audiobook
+        </a>
         
       </div>
     </div>
+
+    
+    <div class="relative flex justify-center items-center px-1 md:px-4 lg:px-0">
+      
+      
+      
+      
+      
+      <div class="relative">
+        <img src="/media/cover_hu_4cc4eb58d56a3321.webp" 
+             alt="Beyond the Senses: Illusions at the Edge of Reality" 
+             class="book-image rounded-lg shadow-lg max-w-full h-auto object-contain">
+
+        
+        <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-black dark:bg-opacity-60 p-2 flex justify-between items-center rounded-b-lg text-sm">
+          
+          <a href="https://amazon.com/dp/your-ebook#sample" class="text-gray-900 dark:text-white hover:underline transition-all duration-200">Read Sample</a>
+          
+          
+          <a href="https://audible.com/pd/your-audiobook#sample" class="flex items-center gap-1 text-gray-900 dark:text-white hover:underline transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+            Preview
+          </a>
+          
+        </div>
+      </div>
+      
+    </div>
+
   </div>
   
   
-</div>
-</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 book-grid items-center mb-12">
+
+    
+    <div class="flex flex-col items-start px-1 md:px-4 lg:px-0">
+      <h2 class="text-2xl font-semibold leading-tight text-gray-900 dark:text-white">The Body&#39;s Secret Language: Metaphors of Experience</h2>
+      <a href="/author" class="hover:underline">
+        <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Your Name (Author)</h3>
+      </a>
+      
+      
+      
+      
+      
+      <div class="flex items-center mb-1">
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        
+        
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="half">
+                <stop offset="50%" stop-color="currentColor"/>
+                <stop offset="50%" stop-color="transparent"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)"/>
+          </svg>
+        
+        <span class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">4.8</span>
+      </div>
+
+      
+      
+      <p class="mb-4 text-xs text-gray-900 dark:text-white">Winner of: Consciousness Studies Excellence Award</p>
+      
+
+      
+      
+      <p class="mb-4 text-lg text-gray-800 dark:text-gray-300">"Exploring how our bodies communicate through metaphorical language and sensory experience."</p>
+      
+
+      
+      <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
+        Page Number: 280 pages
+         &#8226; 
+        Publication date: June 2024
+         &#8226; 
+        File size: 2.1 MB
+      </p>
+
+      
+      <div class="mt-6 inline-flex space-x-3">
+        
+        <a href="https://amazon.com/dp/your-ebook-2" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          E-book
+        </a>
+        
+
+        
+        <a href="https://audible.com/pd/your-audiobook-2" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+          Audiobook
+        </a>
+        
+      </div>
+    </div>
+
+    
+    <div class="relative flex justify-center items-center px-1 md:px-4 lg:px-0">
+      
+      
+      
+      
+      
+      <div class="relative">
+        <img src="/media/cover_hu_4cc4eb58d56a3321.webp" 
+             alt="The Body&#39;s Secret Language: Metaphors of Experience" 
+             class="book-image rounded-lg shadow-lg max-w-full h-auto object-contain">
+
+        
+        <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-black dark:bg-opacity-60 p-2 flex justify-between items-center rounded-b-lg text-sm">
+          
+          <a href="https://amazon.com/dp/your-ebook-2#sample" class="text-gray-900 dark:text-white hover:underline transition-all duration-200">Read Sample</a>
+          
+          
+          <a href="https://audible.com/pd/your-audiobook-2#sample" class="flex items-center gap-1 text-gray-900 dark:text-white hover:underline transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+            Preview
+          </a>
+          
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+  
+  </div>
+</section>
 
 
   
@@ -2959,7 +3010,7 @@
         
           
         
-        <a href="/donate/donate"  
+        <a href="/donate"  
            class="inline-flex justify-center items-center rounded-full bg-primary-700 px-8 py-4 md:px-10 md:py-5 text-xl font-bold shadow-lg hover:bg-primary-500 hover:shadow-xl transition-all duration-300"
            style="color: white !important; text-decoration: none !important;">
           DONATE NOW   <span class="text-white">›</span>
@@ -4375,7 +4426,7 @@
         
         
         
-        <a href="/donate/donate">
+        <a href="/donate">
           <div class="absolute inset-0"></div>
         </a>
         
@@ -4389,7 +4440,7 @@
         
         
             <div class="space-y-3">
-              <a href="/donate/donate" class="block">
+              <a href="/donate" class="block">
                 
                 <h2 class="text-2xl md-text-3xl lg:text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
                   DONATING <span class="text-primary-700">›</span>
@@ -9867,10 +9918,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   </style>
 
-  <div class="gallery-row mb-6 mx-auto max-w-6xl"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757342699" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
+  <div class="gallery-row mb-6 mx-auto max-w-6xl"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757357273" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
     document.addEventListener('DOMContentLoaded', () =>
       GLightbox({
-        selector: '[data-gallery="gallery-1757342699"]',
+        selector: '[data-gallery="gallery-1757357273"]',
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -10562,827 +10613,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<section id="section-tag_cloud" class="relative hbb-section blox-tag-cloud  " style="padding: 3rem 0 3rem 0;" >
- <div class="home-section-bg " >
-   
- </div>
-  
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-<div class="w-full text-center">
-  
-    <div class="mb-6">Categories</div>
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    <div class="flex flex-wrap gap-2 justify-center items-center leading-relaxed">
-      
-        
-        
-        
-
-        
-        
-        
-          
-        
-
-        <a href="/categories/charity/"
-           class="text-base text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline">
-          Charity
-        </a>
-      
-        
-        
-        
-
-        
-        
-        
-          
-        
-
-        <a href="/categories/hello/"
-           class="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline">
-          Hello
-        </a>
-      
-        
-        
-        
-
-        
-        
-        
-          
-        
-
-        <a href="/categories/site/"
-           class="text-xl text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200 hover:underline">
-          Site
-        </a>
-      
-    </div>
-  
-
-</div>
-
-
-  
-
-  
-</section>
-
-  
-
-  
-  
-    
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-  
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="section-pricing" class="relative hbb-section blox-pricing  " style="padding: 3rem 0 3rem 0;" >
- <div class="home-section-bg " >
-   
- </div>
-  
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-<section>
-  <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    
-    
-    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto text-center">
-      
-      <p class="mb-4 text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">Pricing</p>
-      
-      
-      <h2 class="mb-8 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Choose Your Plan</h2>
-      
-      
-      <p class="text-gray-500 text-3xl dark:text-gray-400">Select the perfect plan for your needs</p>
-      
-    </div>
-    
-
-    
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
-    
-      <div class="flex flex-col rounded-2xl shadow-xs
-                  divide-y divide-gray-200 dark:divide-gray-700
-                  border border-gray-200 dark:border-gray-700">
-        
-        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
-          
-          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
-            <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="w-32 h-32" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 248 204" style="enable-background:new 0 0 248 204;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#1D9BF0;}
-</style>
-<g id="Logo_1_">
-	<path id="white_background" class="st0" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
-		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
-		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
-		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
-		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
-		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
-</g>
-</svg>
-
-          </div>
-          
-
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Starter</h2>
-          
-          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">Perfect for individuals and small projects</p>
-          
-
-           <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
-            <span>$20</span>
-            
-            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
-            
-          </p>
-        </div>
-
-        
-        
-        <div class="p-6 sm:px-8 flex-1">
-          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
-
-          <ul class="space-y-3 sm:mt-0 text-lg">
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">10 users</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">2GB of storage</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Email support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Community access</span>
-            </li>
-            
-          </ul>
-        </div>
-        
-
-        
-        
-        <div class="p-6 sm:px-8">
-          <a
-            class="block w-full rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-12 py-3 text-center text-sm font-medium text-white hover:bg-gradient-to-l hover:from-primary-600 hover:to-primary-700 focus:ring-3 focus:outline-hidden"
-            href="#"
-            target="_blank"
-          >
-            Get Started
-          </a>
-        </div>
-        
-      </div>
-      
-      <div class="flex flex-col rounded-2xl shadow-xs
-                  divide-y divide-gray-200 dark:divide-gray-700
-                  border-2 dark:border border-primary-600 dark:border-primary-900">
-        
-        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
-          
-          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
-            <svg class="w-32 h-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.563.563 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345z"/></svg>
-          </div>
-          
-
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Pro</h2>
-          
-          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">Great for growing teams and businesses</p>
-          
-
-           <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
-            <span>$30</span>
-            
-            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
-            
-          </p>
-        </div>
-
-        
-        
-        <div class="p-6 sm:px-8 flex-1">
-          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
-
-          <ul class="space-y-3 sm:mt-0 text-lg">
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">20 users</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">5GB of storage</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Email support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-700 dark:text-primary-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Community access</span>
-            </li>
-            
-          </ul>
-        </div>
-        
-
-        
-        
-        <div class="p-6 sm:px-8">
-          <a
-            class="block w-full rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-12 py-3 text-center text-sm font-medium text-white hover:bg-gradient-to-l hover:from-primary-600 hover:to-primary-700 focus:ring-3 focus:outline-hidden"
-            href="#"
-            
-          >
-            Get Started
-          </a>
-        </div>
-        
-      </div>
-      
-      <div class="flex flex-col rounded-2xl shadow-xs
-                  divide-y divide-gray-200 dark:divide-gray-700
-                  border border-gray-200 dark:border-gray-700">
-        
-        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
-          
-          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
-            <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="w-32 h-32" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 248 204" style="enable-background:new 0 0 248 204;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#1D9BF0;}
-</style>
-<g id="Logo_1_">
-	<path id="white_background" class="st0" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
-		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
-		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
-		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
-		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
-		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
-</g>
-</svg>
-
-          </div>
-          
-
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Enterprise</h2>
-          
-          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">For large organizations with advanced needs</p>
-          
-
-           <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
-            <span>$100</span>
-            
-            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
-            
-          </p>
-        </div>
-
-        
-        
-        <div class="p-6 sm:px-8 flex-1">
-          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
-
-          <ul class="space-y-3 sm:mt-0 text-lg">
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">50 users</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">20GB of storage</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Email support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
-            </li>
-            
-            <li class="flex items-center gap-3">
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-              
-
-              <span class="text-gray-700 dark:text-gray-300">Community access</span>
-            </li>
-            
-          </ul>
-        </div>
-        
-
-        
-        
-        <div class="p-6 sm:px-8">
-          <a
-            class="block w-full rounded-full bg-gradient-to-r from-primary-500 to-primary-600 dark:from-primary-800 dark:to-primary-900 px-12 py-3 text-center text-sm font-medium text-white hover:bg-gradient-to-l hover:from-primary-600 hover:to-primary-700 focus:ring-3 focus:outline-hidden"
-            href="#"
-            
-          >
-            Contact Sales
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-
-    
-    
-  </div>
-</section>
-
-
-  
-
-  
-</section>
-
-  
-
-  
-  
-    
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-  
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section id="section-client-logos" class="relative hbb-section blox-client-logos  " style="padding: 3rem 0 3rem 0;" >
  <div class="home-section-bg " >
    
@@ -11435,7 +10665,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <img src="/media/logos/avatar-copy_hu_cdb7da137101cec9.jpg" 
                  alt="Microsoft" 
-                 class="h-12 w-auto transition-all duration-300 filter grayscale hover:grayscale-0"
+                 class="h-12 w-auto transition-all duration-300"
                  style="height: 50px; max-width: 200px; object-fit: contain;"
                  loading="lazy">
           
@@ -11447,7 +10677,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <img src="/media/logos/pexels-yankrukov-8613319_hu_981226653fbc4521.jpg" 
                  alt="Apple" 
-                 class="h-12 w-auto transition-all duration-300 filter grayscale hover:grayscale-0"
+                 class="h-12 w-auto transition-all duration-300"
                  style="height: 50px; max-width: 200px; object-fit: contain;"
                  loading="lazy">
           
@@ -11459,7 +10689,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <img src="/media/logos/pexels-yankrukov-8613319_hu_981226653fbc4521.jpg" 
                  alt="Apple" 
-                 class="h-12 w-auto transition-all duration-300 filter grayscale hover:grayscale-0"
+                 class="h-12 w-auto transition-all duration-300"
                  style="height: 50px; max-width: 200px; object-fit: contain;"
                  loading="lazy">
           
@@ -11471,7 +10701,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <img src="/media/logos/pexels-yankrukov-8613319_hu_981226653fbc4521.jpg" 
                  alt="Apple" 
-                 class="h-12 w-auto transition-all duration-300 filter grayscale hover:grayscale-0"
+                 class="h-12 w-auto transition-all duration-300"
                  style="height: 50px; max-width: 200px; object-fit: contain;"
                  loading="lazy">
           
@@ -11655,7 +10885,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
               <img src="/media/cover_hu_f2830ec1906ea04c.png" 
                    alt="React" 
-                   class="h-12 w-auto transition-all duration-300 filter grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+                   class="h-12 w-auto transition-all duration-300"
                    style="height: 50px; max-width: 200px; object-fit: contain;"
                    loading="lazy">
             
@@ -12476,17 +11706,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="mx-auto max-w-screen-xl py-8 px-8">
     
     
-    <div class="mb-12 flex flex-col justify-center mx-auto px-8">
+    <div class="mx-auto max-w-7xl mt-0 px-1 lg:px-0 markdown-content">
+  
+  
+  <div class="flex flex-col text-left">
+    
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
       
-      <p class="mb-4 text-xl text-center tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">My Library</p>
-            
-      
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Published Books</h2>
-      
-      
-      <p class="text-gray-500 text-2xl dark:text-gray-400 text-center">Discover my collection of published works</p>
-      
-    </div>
+  
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Published Books</h2>
+  </div>
+    
+    
+  </div>
 
     
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 justify-items-center">
@@ -12892,6 +12126,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   <div class="w-16 border-2 border-primary-500 mb-4"></div>
       
+  
+  <h2 class="mb-4 text-xl md:text-4xl lg:text-3xl text-gray-900 dark:text-white">Contact</h2>
   
   
 </div>
@@ -15714,6 +14950,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+  
+
+  
+
 
 
 
@@ -15735,6 +14975,92 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="grid gap-10 md:grid-cols-2 lg:gap-10">
 
   
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  <div class="">
+    <div class="">
+        <div class="flex gap-3">
+          
+        </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/docs/getting-started/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Getting Started
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/docs/getting-started/" >
+        Quick Start from Template Initialize a new site Click to copy the template on GitHub
+Configure your new site Configure your site name, description, and menu.
+Add your content Edit the homepage and add your documentation pages.</a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="2024-02-17">Feb 17, 2024</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  <div class="">
+    <div class="">
+        <div class="flex gap-3">
+          
+        </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/docs/reference/customization/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Customizing Hugo
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/docs/reference/customization/" >
+        View the full docs at https://docs.hugoblox.com/getting-started/customize/</a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="0001-01-01">Jan 1, 0001</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
     </div>
 </div>
 
@@ -15742,6 +15068,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <div class="container mx-auto max-w-screen-lg px-8 xl:px-5 pb-5 lg:pb-8">
+    <div class="mt-10 flex justify-center">
+      <a class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+         href="/docs/">
+        <span>See all</span>
+      </a>
+    </div>
+  </div>
 
 
 
@@ -20954,6 +20301,2127 @@ continues to perform optimally and stays secure over time.
   </div>
   
 </section>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-cta-image-par-left" class="relative hbb-section blox-cta-image-par-left  bg-gray-100 dark:bg-gray-900" style="padding: 3rem 0 3rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  .markdown-content a {
+    color: rgb(185 28 28);
+    text-decoration: underline;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .markdown-content a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .markdown-content a {
+    color: rgb(253 164 175);
+  }
+  
+  .content-text a {
+    color: rgb(185 28 28);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .content-text a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .content-text a {
+    color: rgb(253 164 175);
+  }
+  
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #16a34a;
+    border-radius: 50%;
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .feature-icon svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    fill: #ffffff !important;
+    color: #ffffff !important;
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+
+  .custom-icon-container {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-icon-container svg {
+    width: 100% !important;
+    height: 100% !important;
+    fill: inherit !important;
+    color: inherit !important;
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature-content {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  .feature-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+  }
+
+  .overlay-bg-light {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .overlay-bg-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-grid {
+      gap: 4rem;
+    }
+  }
+
+   
+  .image-link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .image-link:hover {
+    transform: scale(1.02);
+  }
+
+</style>
+
+<div class="mx-auto max-w-7xl mt-0 px-1 md:px-4 lg:px-0 markdown-content">
+  
+  
+  <div class="flex flex-col text-left">
+    
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+      
+  
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Our Services</h2>
+  </div>
+    
+    
+  </div>
+
+<div class="">
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="mx-auto max-w-screen-xl mb-0">
+    <div class="content-grid">
+      
+      
+      <div class="order-2 md:order-2">
+        <h2 class="mb-6 tracking-tight font-bold text-gray-900 dark:text-white text-2xl">Building on modern foundations</h2>
+        <p class="mb-8 text-lg font-light text-gray-600 dark:text-gray-300 lg:text-xl">Gain a competitive advantage by incorporating industry leading practices</p>
+
+        
+        
+        <div class="space-y-4">
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Built on top of Astro 5.0
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Benefiting from the performance and developer-friendly features of this modern static site generator.
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Styled using Tailwind CSS
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Cross-browser compatibility
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+        
+        
+
+        
+        
+        <div class="mt-10">
+          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
+            <span class="flex items-center">
+              Get Started
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-top: 1px; flex-shrink: 0;">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+        
+      </div>
+
+      
+      <div class="order-1 md:order-1 relative">
+        
+        <a href="https://google.com" class="image-link">
+          
+            
+            <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative group hover:shadow-2xl transition-shadow duration-300">
+              <img class="w-full h-full object-cover" 
+                   srcset="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp 400w, /media/avatar%20copy_hu_d425e3069087553d.webp 600w, /media/avatar%20copy_hu_e50e042217f9af6f.webp 800w, /media/avatar%20copy_hu_cf6f2b531bd6103a.webp 1200w"
+                   sizes="(max-width: 768px) 100vw, 50vw"
+                   src="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp" 
+                   width="400"
+                   height="400"
+                   alt="Building on modern foundations"
+                   loading="lazy">
+              
+              
+              
+              <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
+                   style="padding: 1rem; margin: 1.5rem; pointer-events: none;">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  MODERN WORKSPACE
+                </h2>
+              </div>
+              
+            </div>
+          
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-cta-image-par-left" class="relative hbb-section blox-cta-image-par-left  bg-gray-100 dark:bg-gray-900" style="padding: 3rem 0 3rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  .markdown-content a {
+    color: rgb(185 28 28);
+    text-decoration: underline;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .markdown-content a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .markdown-content a {
+    color: rgb(253 164 175);
+  }
+  
+  .content-text a {
+    color: rgb(185 28 28);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .content-text a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .content-text a {
+    color: rgb(253 164 175);
+  }
+  
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #16a34a;
+    border-radius: 50%;
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .feature-icon svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    fill: #ffffff !important;
+    color: #ffffff !important;
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+
+  .custom-icon-container {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-icon-container svg {
+    width: 100% !important;
+    height: 100% !important;
+    fill: inherit !important;
+    color: inherit !important;
+    stroke: none !important;
+    stroke-width: 0 !important;
+  }
+
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature-content {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  .feature-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+  }
+
+  .overlay-bg-light {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .overlay-bg-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-grid {
+      gap: 4rem;
+    }
+  }
+
+   
+  .image-link {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .image-link:hover {
+    transform: scale(1.02);
+  }
+
+</style>
+
+<div class="mx-auto max-w-7xl mt-0 px-1 md:px-4 lg:px-0 markdown-content">
+  
+  
+  <div class="flex flex-col text-left">
+    
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+      
+  
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Our Services</h2>
+  </div>
+    
+    
+  </div>
+
+<div class="">
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="mx-auto max-w-screen-xl mb-0">
+    <div class="content-grid">
+      
+      
+      <div class="order-1 md:order-1">
+        <h2 class="mb-6 tracking-tight font-bold text-gray-900 dark:text-white text-2xl">Building on modern foundations</h2>
+        <p class="mb-8 text-lg font-light text-gray-600 dark:text-gray-300 lg:text-xl">Gain a competitive advantage by incorporating industry leading practices</p>
+
+        
+        
+        <div class="space-y-4">
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Built on top of Astro 5.0
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Benefiting from the performance and developer-friendly features of this modern static site generator.
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Styled using Tailwind CSS
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="feature-row">
+            
+            
+            <span class="feature-icon">
+              
+              
+              
+                <div class="custom-icon-container">
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
+<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+</g>
+</svg>
+                </div>
+              
+            </span>
+            
+            <div class="feature-content">
+              <h3 class="feature-title text-2xl font-semibold text-gray-900 dark:text-white">
+                Cross-browser compatibility
+              </h3>
+              
+              <div class="text-gray-600 dark:text-gray-300 leading-relaxed mt-1">
+                Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+        
+        
+
+        
+        
+        <div class="mt-10">
+          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
+            <span class="flex items-center">
+              Get Started
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-top: 1px; flex-shrink: 0;">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+        
+      </div>
+
+      
+      <div class="order-2 md:order-2 relative">
+        
+        <a href="https://google.com" class="image-link">
+          
+            
+            <div class="aspect-square overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 relative group hover:shadow-2xl transition-shadow duration-300">
+              <img class="w-full h-full object-cover" 
+                   srcset="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp 400w, /media/avatar%20copy_hu_d425e3069087553d.webp 600w, /media/avatar%20copy_hu_e50e042217f9af6f.webp 800w, /media/avatar%20copy_hu_cf6f2b531bd6103a.webp 1200w"
+                   sizes="(max-width: 768px) 100vw, 50vw"
+                   src="/media/avatar%20copy_hu_2c36b66d8aa0edf9.webp" 
+                   width="400"
+                   height="400"
+                   alt="Building on modern foundations"
+                   loading="lazy">
+              
+              
+              
+              <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
+                   style="padding: 1rem; margin: 1.5rem; pointer-events: none;">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+                  MODERN WORKSPACE
+                </h2>
+              </div>
+              
+            </div>
+          
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</div>
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-pricing" class="relative hbb-section blox-pricing  " style="padding: 3rem 0 3rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  .markdown-content a {
+    color: rgb(185 28 28);  
+    text-decoration: underline;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .markdown-content a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .markdown-content a {
+    color: rgb(253 164 175);  
+  }
+  
+   
+  .content-text a {
+    color: rgb(185 28 28);  
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .content-text a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .content-text a {
+    color: rgb(253 164 175);  
+  }
+   
+  .masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;  
+  }
+
+  @media (min-width: 640px) {
+    .masonry-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .masonry-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+
+   
+  .pricing-card {
+    height: fit-content;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .pricing-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<section>
+  
+<div class="mx-auto max-w-7xl mt-0 px-1 lg:px-0 markdown-content">
+  
+  
+  <div class="flex flex-col text-left">
+    
+  <div class="px-1 md:px-6 lg:px-0">
+  
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+      
+  
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Choose Your Plan</h2>
+  </div>
+    
+    
+  </div>
+
+    
+    <div class="masonry-grid">
+    
+      <div class="pricing-card flex flex-col rounded-2xl shadow-lg
+                  divide-y divide-gray-200 dark:divide-gray-700
+                  border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+        
+        
+        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
+          
+          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
+            <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="w-32 h-32" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 248 204" style="enable-background:new 0 0 248 204;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D9BF0;}
+</style>
+<g id="Logo_1_">
+	<path id="white_background" class="st0" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
+</g>
+</svg>
+
+          </div>
+          
+
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Starter</h2>
+          
+          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">Perfect for individuals and small projects</p>
+          
+
+          <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
+            <span>$20</span>
+            
+            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
+            
+          </p>
+        </div>
+
+        
+        
+        <div class="p-6 sm:px-8 flex-1">
+          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
+
+          <ul class="space-y-3 sm:mt-0 text-lg">
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">10 users</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">2GB of storage</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Email support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 dark:text-red-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 dark:text-red-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 dark:text-red-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Community access</span>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        
+        <div class="p-6 sm:px-8 mt-auto">
+          <a
+            class="block w-full rounded-full px-12 py-3 text-center text-xl border border-primary-700 font-medium text-primary-700 hover:bg-gradient-to-l focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            href="#"
+            target="_blank"
+          >
+            Get Started
+          </a>
+        </div>
+        
+      </div>
+      
+      <div class="pricing-card flex flex-col rounded-2xl shadow-lg
+                  divide-y divide-gray-200 dark:divide-gray-700
+                  border-2 border-primary-600 dark:border-primary-400 bg-gradient-to-br from-primary-50 to-white dark:from-primary-900/20 dark:to-gray-800">
+        
+        
+        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
+          
+          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
+            <svg class="w-32 h-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.563.563 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345z"/></svg>
+          </div>
+          
+
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Pro</h2>
+          
+          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">Great for growing teams and businesses</p>
+          
+
+          <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
+            <span>$30</span>
+            
+            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
+            
+          </p>
+        </div>
+
+        
+        
+        <div class="p-6 sm:px-8 flex-1">
+          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
+
+          <ul class="space-y-3 sm:mt-0 text-lg">
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">20 users</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">5GB of storage</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Email support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">20 users</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">5GB of storage</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Email support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 dark:text-red-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 dark:text-red-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Community access</span>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        
+        <div class="p-6 sm:px-8 mt-auto">
+          <a
+            class="block w-full rounded-full px-12 py-3 text-center text-xl border border-primary-700 font-medium text-primary-700 hover:bg-gradient-to-l focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            href="#"
+            
+          >
+            Get Started
+          </a>
+        </div>
+        
+      </div>
+      
+      <div class="pricing-card flex flex-col rounded-2xl shadow-lg
+                  divide-y divide-gray-200 dark:divide-gray-700
+                  border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+        
+        
+        <div class="p-6 sm:px-8 flex flex-col items-center text-center">
+          
+          <div class="mb-4 text-primary-600 dark:text-primary-300" style="width:128px; height:128px;">
+            <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="w-32 h-32" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 248 204" style="enable-background:new 0 0 248 204;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D9BF0;}
+</style>
+<g id="Logo_1_">
+	<path id="white_background" class="st0" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+		c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+		c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+		c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
+</g>
+</svg>
+
+          </div>
+          
+
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Enterprise</h2>
+          
+          <p class="text-xl text-gray-700 dark:text-gray-300 mb-4 max-w-xs">For large organizations with advanced needs</p>
+          
+
+          <p class="flex items-baseline gap-1 text-5xl font-extrabold text-gray-900 dark:text-white">
+            <span>$100</span>
+            
+            <span class="text-2xl font-normal text-gray-900 dark:text-white">/month</span>
+            
+          </p>
+        </div>
+
+        
+        
+        <div class="p-6 sm:px-8 flex-1">
+          <p class="text-lg font-medium text-gray-900 dark:text-white sm:text-xl mb-4">What's included:</p>
+
+          <ul class="space-y-3 sm:mt-0 text-lg">
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">50 users</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">20GB of storage</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Email support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Community access</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">20GB of storage</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Email support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Help center access</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Phone support</span>
+            </li>
+            
+            <li class="flex items-center gap-3">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-600 dark:text-green-400 shadow-sm flex-shrink-0"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              
+
+              <span class="text-gray-700 dark:text-gray-300">Community access</span>
+            </li>
+            
+          </ul>
+        </div>
+        
+
+        
+        
+        <div class="p-6 sm:px-8 mt-auto">
+          <a
+            class="block w-full rounded-full px-12 py-3 text-center text-xl border border-primary-700 font-medium text-primary-700 hover:bg-gradient-to-l focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            href="#"
+            
+          >
+            Contact Sales
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    
+  </div>
+</section>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-community/donation" class="relative hbb-section blox-community/donation  " style="padding: 3rem 0 3rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<style>
+ 
+input, select, textarea {
+  color: #111827 !important;  
+  background-color: #ffffff !important;  
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: #6b7280 !important;  
+}
+
+.donation-form input:focus {
+  color: #111827 !important;  
+}
+
+.donate-button-fixed {
+  background-color: #2563eb !important;  
+  color: #ffffff !important;  
+  border: 2px solid #2563eb !important;
+}
+
+.donate-button-fixed:hover {
+  background-color: #1d4ed8 !important;  
+  border-color: #1d4ed8 !important;
+}
+
+ 
+h1, h2, h3, h4, h5, h6, label, span, p {
+  color: #111827 !important;
+}
+
+ 
+.dark input, .dark select, .dark textarea {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark input::placeholder, .dark select::placeholder, .dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark .donate-button-fixed {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark label, .dark span, .dark p {
+  color: #ffffff !important;
+}
+</style>
+
+<div class="max-w-4xl mx-auto relative z-10 px-4 py-8">
+  
+  
+  <div class="text-center mb-8">
+    
+    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #111827 !important;">Make a Difference Today</h2>
+    
+    
+    <p class="text-xl max-w-2xl mx-auto leading-relaxed" style="color: #4b5563 !important;">Join hundreds of supporters transforming lives across our community. Your donation creates lasting impact.</p>
+    
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8 items-start">
+    
+    
+    <div class="donation-form">
+      <h3 class="text-2xl font-bold mb-6" style="color: #111827 !important;">Make Your Donation</h3>
+      
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        
+        <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="25">
+          <div class="text-lg font-bold" style="color: #111827 !important;">£25</div>
+          <div class="text-sm" style="color: #6b7280 !important;">Feed 5 families</div>
+        </div>
+        
+        <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="50">
+          <div class="text-lg font-bold" style="color: #111827 !important;">£50</div>
+          <div class="text-sm" style="color: #6b7280 !important;">Support 1 child</div>
+        </div>
+        
+        <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="100">
+          <div class="text-lg font-bold" style="color: #111827 !important;">£100</div>
+          <div class="text-sm" style="color: #6b7280 !important;">Fund training</div>
+        </div>
+        
+        <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="250">
+          <div class="text-lg font-bold" style="color: #111827 !important;">£250</div>
+          <div class="text-sm" style="color: #6b7280 !important;">Transform lives</div>
+        </div>
+        
+      </div>
+
+      
+      <input type="number" placeholder="Enter custom amount (£)" min="5" id="custom-amount" 
+             class="w-full border-2 border-gray-400 rounded-lg p-3 mb-4 shadow-sm focus:outline-none focus:border-blue-600 focus:ring-3 focus:ring-blue-600/30" 
+             style="background-color: #ffffff !important; color: #111827 !important;" />
+
+      
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <label class="flex items-center space-x-2 cursor-pointer font-medium">
+          <input type="radio" name="donation-type" value="monthly" checked class="accent-blue-600 w-4 h-4" />
+          <span style="color: #111827 !important;">Monthly (Recommended)</span>
+        </label>
+        <label class="flex items-center space-x-2 cursor-pointer font-medium">
+          <input type="radio" name="donation-type" value="one-time" class="accent-blue-600 w-4 h-4" />
+          <span style="color: #111827 !important;">One-time</span>
+        </label>
+      </div>
+
+      
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" placeholder="First Name" required 
+               class="border-2 border-gray-400 rounded-lg p-3 shadow-sm focus:outline-none focus:border-blue-600"
+               style="background-color: #ffffff !important; color: #111827 !important;" />
+        <input type="text" placeholder="Last Name" required 
+               class="border-2 border-gray-400 rounded-lg p-3 shadow-sm focus:outline-none focus:border-blue-600"
+               style="background-color: #ffffff !important; color: #111827 !important;" />
+      </div>
+      <input type="email" placeholder="Email Address" required 
+             class="w-full border-2 border-gray-400 rounded-lg p-3 mb-4 shadow-sm focus:outline-none focus:border-blue-600"
+             style="background-color: #ffffff !important; color: #111827 !important;" />
+      <input type="tel" placeholder="Phone (optional)" 
+             class="w-full border-2 border-gray-400 rounded-lg p-3 mb-4 shadow-sm focus:outline-none focus:border-blue-600"
+             style="background-color: #ffffff !important; color: #111827 !important;" />
+
+      
+      <div class="bg-gray-100 border-2 border-gray-300 rounded-xl p-4 mb-4 shadow-sm">
+        <label class="flex items-start space-x-3 cursor-pointer">
+          <input type="checkbox" class="mt-1 accent-blue-600 w-4 h-4" />
+          <div>
+            <strong style="color: #111827 !important;">Add Gift Aid (25% extra at no cost to you)</strong>
+            <p class="text-sm mt-1" style="color: #4b5563 !important;">I confirm I am a UK taxpayer and would like to reclaim Gift Aid on my donation and any donations I make in the future or have made in the past 4 years.</p>
+          </div>
+        </label>
+      </div>
+
+      
+      <button onclick="processDonation()" 
+              class="donate-button-fixed w-full font-bold py-4 px-8 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex items-center justify-center space-x-2 shadow-lg">
+        <span>Donate Securely Now</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+      </button>
+
+      
+      <div class="flex justify-center items-center gap-4 mt-4">
+        <div class="flex items-center text-sm font-medium">
+          <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" style="color: #4b5563 !important;">
+            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+          </svg>
+          <span style="color: #4b5563 !important;">SSL Secured</span>
+        </div>
+        <div class="flex items-center text-sm font-medium">
+          <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" style="color: #4b5563 !important;">
+            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+            <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+          </svg>
+          <span style="color: #4b5563 !important;">Charity No. 123456789</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div>
+      
+      <div class="flex justify-between bg-white border-2 border-gray-300 rounded-xl p-6 mb-4 shadow-md">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">£127,450</div>
+          <div class="text-sm font-medium" style="color: #4b5563 !important;">Raised This Month</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">1,234</div>
+          <div class="text-sm font-medium" style="color: #4b5563 !important;">Recent Supporters</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-blue-600">890</div>
+          <div class="text-sm font-medium" style="color: #4b5563 !important;">Families Helped</div>
+        </div>
+      </div>
+
+      
+      <div class="bg-white border-2 border-gray-300 border-l-4 border-l-blue-600 rounded-xl p-6 mb-4 shadow-md">
+        <h4 class="text-lg font-bold mb-3" style="color: #111827 !important;">Your Impact</h4>
+        <div class="space-y-3">
+          
+          <div class="flex items-start space-x-2">
+            <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="font-medium" style="color: #374151 !important;">£25 provides emergency food parcels for a family of 4</span>
+          </div>
+          
+          <div class="flex items-start space-x-2">
+            <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="font-medium" style="color: #374151 !important;">£50 sponsors a child&#39;s education for one month</span>
+          </div>
+          
+          <div class="flex items-start space-x-2">
+            <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="font-medium" style="color: #374151 !important;">£100 funds community outreach programs</span>
+          </div>
+          
+          <div class="flex items-start space-x-2">
+            <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+            </svg>
+            <span class="font-medium" style="color: #374151 !important;">£250 supports a family through crisis</span>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      <div class="bg-white border-2 border-gray-400 rounded-xl p-6 mb-4 shadow-md">
+        <h4 class="font-bold mb-4 text-lg" style="color: #111827 !important;">Recent Support</h4>
+        <div class="space-y-3 text-sm">
+          
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded-lg">
+            <span class="font-medium" style="color: #111827 !important;">Sarah M. donated £50</span>
+            <span class="text-xs" style="color: #6b7280 !important;">2 mins ago</span>
+          </div>
+          
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded-lg">
+            <span class="font-medium" style="color: #111827 !important;">Anonymous donated £25</span>
+            <span class="text-xs" style="color: #6b7280 !important;">5 mins ago</span>
+          </div>
+          
+          <div class="flex justify-between items-center p-2 bg-gray-100 rounded-lg">
+            <span class="font-medium" style="color: #111827 !important;">John &amp; Mary donated £100</span>
+            <span class="text-xs" style="color: #6b7280 !important;">12 mins ago</span>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      
+      <div class="bg-gray-50 border-2 border-gray-300 rounded-xl p-6 shadow-md">
+        <h4 class="font-bold mb-3 text-lg" style="color: #111827 !important;">What People Say</h4>
+        <blockquote class="italic mb-4 text-lg leading-relaxed" style="color: #374151 !important;">"This charity changed our family&#39;s life completely. The support we received during our darkest hour was incredible."</blockquote>
+        <cite class="text-blue-600 font-semibold text-base">— Emma Thompson, Beneficiary</cite>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.amount-button').forEach(button => {
+    button.addEventListener('click', function() {
+      
+      document.querySelectorAll('.amount-button').forEach(b => {
+        b.classList.remove('bg-blue-100', 'border-blue-600', 'shadow-lg');
+        b.classList.add('bg-white', 'border-gray-400', 'shadow-md');
+      });
+      
+      
+      this.classList.remove('bg-white', 'border-gray-400', 'shadow-md');
+      this.classList.add('bg-blue-100', 'border-blue-600', 'shadow-lg');
+      
+      const amount = this.dataset.amount;
+      document.getElementById('custom-amount').value = amount;
+    });
+  });
+});
+
+
+function processDonation() {
+  const amount = document.getElementById('custom-amount').value;
+  const donationType = document.querySelector('input[name="donation-type"]:checked').value;
+  
+  if (!amount || amount < 5) {
+    alert('Please enter a donation amount of £5 or more.');
+    return;
+  }
+  
+  window.location.href = `/donate/process?amount=${amount}&type=${donationType}`;
+}
+</script>
 
 
   

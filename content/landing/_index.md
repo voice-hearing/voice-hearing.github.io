@@ -9,32 +9,41 @@ design:
   spacing: "3rem"
 
 sections:
-
-  - block: cta-image-par-left
+  - block: book-promotion
     content:
-      title: "Our Services"
+      title: "Featured Books"
+      blue: ""
       text: ""
-      items:
-        - title: "Building on modern foundations"
-          text: "Gain a competitive advantage by incorporating industry leading practices"
-          image: "avatar copy.jpg"
-          overlay_text: "Modern Workspace"  # NEW: Text overlay for image
-          features:
-            - name: "Built on top of Astro 5.0"
-              description: "Benefiting from the performance and developer-friendly features of this modern static site generator."
-              icon: "check"
-            - name: "Styled using Tailwind CSS"
-              description: "Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework."
-              icon: "check"
-            - name: "Cross-browser compatibility"
-              description: "Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users."
-              icon: "check"
-          button:
-            text: "Get Started"
-            url: "/contact"
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      books:
+        - title: "Beyond the Senses: Illusions at the Edge of Reality"
+          author: "Your Name"
+          author_url: "/author"
+          rating: 4.5
+          prize: "Best Spiritual Book Award 2024"
+          synopsis: "A journey through the mystical experiences that shape our understanding of reality and consciousness. A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness."
+          pages: 320
+          pub_date: "March 2024"
+          file_size: "2.5 MB"
+          image: "cover.png"
+          ebook_url: "https://amazon.com/dp/your-ebook"
+          audiobook_url: "https://audible.com/pd/your-audiobook"
+          sample_ebook_url: "https://amazon.com/dp/your-ebook#sample"
+          sample_audiobook_url: "https://audible.com/pd/your-audiobook#sample"
+          
+        - title: "The Body's Secret Language: Metaphors of Experience"
+          author: "Your Name"
+          author_url: "/author"
+          rating: 4.8
+          prize: "Consciousness Studies Excellence Award"
+          synopsis: "Exploring how our bodies communicate through metaphorical language and sensory experience."
+          pages: 280
+          pub_date: "June 2024"
+          file_size: "2.1 MB"
+          image: "cover.png"
+          ebook_url: "https://amazon.com/dp/your-ebook-2"
+          audiobook_url: "https://audible.com/pd/your-audiobook-2"
+          sample_ebook_url: "https://amazon.com/dp/your-ebook-2#sample"
+          sample_audiobook_url: "https://audible.com/pd/your-audiobook-2#sample"
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -42,7 +51,7 @@ sections:
       secondary: 
       primary_action:
         text: DONATE NOW &nbsp; <span class="text-white">›</span>
-        url: /donate/donate
+        url: /donate
         icon: 
       secondary_action:
         text:
@@ -285,7 +294,7 @@ sections:
         - title: DONATING 
           content: 
           align: "bottom-left"
-          url: /donate/donate
+          url: /donate
           background:
             image:
               filename: "pexels-shvetsa-4482896.jpg"
@@ -757,93 +766,6 @@ sections:
       loop: false
       # Duration of transition between slides (in ms)
       interval: 2000
-  - block: tag_cloud
-    content:
-      title: My title
-      subtitle: My subtitle
-      text: Categories
-      # Choose a taxonomy from the `taxonomies` list in `config.yaml` to display (e.g. tags, categories, authors)
-      taxonomy: categories
-      # Choose how many tags you would like to display (0 = all tags)
-      count: 20
-    design:
-      # Minimum and maximum font sizes (1.0 = 100%).
-      font_size_min: 0.7
-      font_size_max: 2.0 
-  - block: pricing 
-    content:
-      title: "Choose Your Plan"
-      text: "Select the perfect plan for your needs"
-      blue: "Pricing"
-      items:
-      - name: "Starter"
-        icon: "custom/twitter"
-        description: "Perfect for individuals and small projects"
-        price: "$20"
-        period: "/month"
-        button:
-          text: "Get Started"
-          url: "#"
-          target: "_blank"
-        features:
-          - text: "10 users"
-            included: true
-          - text: "2GB of storage"
-            included: true
-          - text: "Email support"
-            included: true
-          - text: "Help center access"
-            included: false
-          - text: "Phone support"
-            included: false
-          - text: "Community access"
-            included: false
-      - name: "Pro"
-        icon: "star"
-        description: "Great for growing teams and businesses"
-        price: "$30"
-        period: "/month"
-        featured: true  # This adds the ring highlight
-        button:
-          text: "Get Started"
-          url: "#"
-        features:
-          - text: "20 users"
-            included: true
-          - text: "5GB of storage"
-            included: true
-          - text: "Email support"
-            included: true
-          - text: "Help center access"
-            included: true
-          - text: "Phone support"
-            included: false
-          - text: "Community access"
-            included: false 
-      - name: "Enterprise"
-        icon: "custom/twitter"
-        description: "For large organizations with advanced needs"
-        price: "$100"
-        period: "/month"
-        button:
-          text: "Contact Sales"
-          url: "#"
-        features:
-          - text: "50 users"
-            included: true
-          - text: "20GB of storage"
-            included: true
-          - text: "Email support"
-            included: true
-          - text: "Help center access"
-            included: true
-          - text: "Phone support"
-            included: true
-          - text: "Community access"
-            included: true
-    button:
-      text: "Need a custom plan?"
-      url: "/contact"
   - block: client-logos
     content:
       title: "Trusted by Leading Companies"
@@ -960,8 +882,8 @@ sections:
   - block: books-gallery
     content:
       title: "Published Books"
-      blue: "My Library"
-      text: "Discover my collection of published works"
+      blue: ""
+      text: ""
       items:
         - name: "The Great Adventure"
           url: "https://amazon.com/book1"
@@ -996,7 +918,7 @@ sections:
     id: contact
     content:
       blue: 
-      title: 
+      title: Contact
       text: 
       text_cta: 
       text_privacy:  I consent to having this website store my submitted information so they can respond to my inquiry. Check <a href="/en/privacy" class="unerline">privacy policy.</a> You must agree before submitting.
@@ -1516,6 +1438,191 @@ sections:
               description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
     design:
       css_class: ""
+  - block: cta-image-par-left
+    content:
+      title: "Our Services"
+      text: ""
+      items:
+        - title: "Building on modern foundations"
+          text: "Gain a competitive advantage by incorporating industry leading practices"
+          image: "avatar copy.jpg"
+          image_url: https://google.com
+          layout: "text-right"  # NEW: Text left, image right
+          overlay_text: "MODERN WORKSPACE"  # NEW: Text overlay for image
+          features:
+            - name: "Built on top of Astro 5.0"
+              description: "Benefiting from the performance and developer-friendly features of this modern static site generator."
+              icon: "check"
+            - name: "Styled using Tailwind CSS"
+              description: "Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework."
+              icon: "check"
+            - name: "Cross-browser compatibility"
+              description: "Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users."
+              icon: "check"
+          button:
+            text: "Get Started"
+            url: "/contact"
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-gray-100 dark:bg-gray-900"
+  - block: cta-image-par-left
+    content:
+      title: "Our Services"
+      text: ""
+      items:
+        - title: "Building on modern foundations"
+          text: "Gain a competitive advantage by incorporating industry leading practices"
+          image: "avatar copy.jpg"
+          image_url: https://google.com
+          layout: "text-left"  # NEW: Text left, image right
+          overlay_text: "MODERN WORKSPACE"  # NEW: Text overlay for image
+          features:
+            - name: "Built on top of Astro 5.0"
+              description: "Benefiting from the performance and developer-friendly features of this modern static site generator."
+              icon: "check"
+            - name: "Styled using Tailwind CSS"
+              description: "Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework."
+              icon: "check"
+            - name: "Cross-browser compatibility"
+              description: "Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users."
+              icon: "check"
+          button:
+            text: "Get Started"
+            url: "/contact"
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-gray-100 dark:bg-gray-900"
+  - block: pricing 
+    content:
+      title: "Choose Your Plan"
+      text: ""
+      blue: ""
+      items:
+      - name: "Starter"
+        icon: "custom/twitter"
+        description: "Perfect for individuals and small projects"
+        price: "$20"
+        period: "/month"
+        button:
+          text: "Get Started"
+          url: "#"
+          target: "_blank"
+        features:
+          - text: "10 users"
+            included: true
+          - text: "2GB of storage"
+            included: true
+          - text: "Email support"
+            included: true
+          - text: "Help center access"
+            included: false
+          - text: "Phone support"
+            included: false
+          - text: "Community access"
+            included: false
+      - name: "Pro"
+        icon: "star"
+        description: "Great for growing teams and businesses"
+        price: "$30"
+        period: "/month"
+        featured: true  # This adds the ring highlight
+        button:
+          text: "Get Started"
+          url: "#"
+        features:
+          - text: "20 users"
+            included: true
+          - text: "5GB of storage"
+            included: true
+          - text: "Email support"
+            included: true
+          - text: "20 users"
+            included: true
+          - text: "5GB of storage"
+            included: true
+          - text: "Email support"
+            included: true
+          - text: "Help center access"
+            included: true
+          - text: "Phone support"
+            included: false
+          - text: "Community access"
+            included: false 
+      - name: "Enterprise"
+        icon: "custom/twitter"
+        description: "For large organizations with advanced needs"
+        price: "$100"
+        period: "/month"
+        button:
+          text: "Contact Sales"
+          url: "#"
+        features:
+          - text: "50 users"
+            included: true
+          - text: "20GB of storage"
+            included: true
+          - text: "Email support"
+            included: true
+          - text: "Help center access"
+            included: true
+          - text: "Phone support"
+            included: true
+          - text: "Community access"
+            included: true
+          - text: "20GB of storage"
+            included: true
+          - text: "Email support"
+            included: true
+          - text: "Help center access"
+            included: true
+          - text: "Phone support"
+            included: true
+          - text: "Community access"
+            included: true
+    button:
+      text: "Need a custom plan?"
+      url: "/contact"
+  - block: community/donation
+    content:
+      title: "Make a Difference Today"
+      text: "Join hundreds of supporters transforming lives across our community. Your donation creates lasting impact."
+      donation_amounts:
+        - amount: 25
+          impact: "Feed 5 families"
+        - amount: 50
+          impact: "Support 1 child"
+        - amount: 100
+          impact: "Fund training"
+        - amount: 250
+          impact: "Transform lives"
+      
+      raised: "127,450"
+      donors: "1,234"
+      families: "890"
+      charity_number: "123456789"
+      
+      impact_items:
+        - "£25 provides emergency food parcels for a family of 4"
+        - "£50 sponsors a child's education for one month" 
+        - "£100 funds community outreach programs"
+        - "£250 supports a family through crisis"
+      
+      recent_donations:
+        - name: "Sarah M."
+          amount: "50"
+          time: "2 mins ago"
+        - name: "Anonymous"
+          amount: "25"
+          time: "5 mins ago"
+        - name: "John & Mary"
+          amount: "100"
+          time: "12 mins ago"
+      
+      testimonial:
+        quote: "This charity changed our family's life completely. The support we received during our darkest hour was incredible."
+        author: "Emma Thompson, Beneficiary"
+  
+  
   
 ---    
     

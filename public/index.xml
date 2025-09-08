@@ -13,6 +13,157 @@
     </image>
     
     <item>
+      <title>Getting Started</title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description>&lt;h2 id=&#34;quick-start-from-template&#34;&gt;Quick Start from Template&lt;/h2&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;initialize-a-new-site&#34;&gt;Initialize a new site&lt;/h3&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;configure-your-new-site&#34;&gt;Configure your new site&lt;/h3&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;add-your-content&#34;&gt;Add your content&lt;/h3&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;publish-your-site&#34;&gt;Publish your site&lt;/h3&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;next&#34;&gt;Next&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s customize your new site:&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;hb-cards mt-4 grid gap-4 not-prose&#34; style=&#34;--hb-cols: 1;&#34;&gt;
+  
+  &lt;a
+    class=&#34;hb-card group&#34;href=&#34;../guide/project-structure&#34; &gt;
+  
+    &lt;span class=&#34;hb-card-title p-4&#34;&gt;
+        &lt;svg style=&#34;height: 1em; width: 1em;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75&#34;/&gt;&lt;/svg&gt;Project Structure&lt;/span&gt;&lt;/a&gt;
+
+  &lt;a
+    class=&#34;hb-card group&#34;href=&#34;../guide/configuration&#34; &gt;
+  
+    &lt;span class=&#34;hb-card-title p-4&#34;&gt;
+        &lt;svg style=&#34;height: 1em; width: 1em;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5&#34;/&gt;&lt;/svg&gt;Configuration&lt;/span&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Customizing Hugo</title>
+      <link>http://localhost:1313/docs/reference/customization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/customization/</guid>
+      <description>&lt;p&gt;View the full docs at 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Project Structure</title>
+      <link>http://localhost:1313/docs/guide/project-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/project-structure/</guid>
+      <description>&lt;h2 id=&#34;folder-structure&#34;&gt;Folder Structure&lt;/h2&gt;
+&lt;p&gt;There are &lt;strong&gt;4 main folders for Hugo-based sites&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;content/&lt;/code&gt; for your Markdown-formatted content files (homepage, etc.)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_index.md&lt;/code&gt; the homepage (&lt;strong&gt;Hugo requires that the homepage and archive pages have an underscore prefix&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;assets/&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;media/&lt;/code&gt; for your media files (images, videos)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;icons/custom/&lt;/code&gt; upload any custom SVG icons you want to use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config/_default/&lt;/code&gt; for your site configuration files
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo.yaml&lt;/code&gt; to configure Hugo (site title, URL, Hugo options, setup per-folder page features)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;module.yaml&lt;/code&gt; to install or uninstall Hugo themes and plugins&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;params.yaml&lt;/code&gt; to configure Hugo Blox options (SEO, analytics, site features)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menus.yaml&lt;/code&gt; to configure your menu links (if the menu is enabled in &lt;code&gt;params.yaml&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;languages.yaml&lt;/code&gt; to configure your site&amp;rsquo;s language or to set language-specific options in a multilingual site&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static/uploads/&lt;/code&gt; for any files you want visitors to download, such as a PDF&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.mod&lt;/code&gt; sets the version of Hugo themes/plugins which your site uses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hugo-file-naming-convention&#34;&gt;Hugo File Naming Convention&lt;/h2&gt;
+&lt;p&gt;Hugo gives us two options to name standard page files: as &lt;code&gt;TITLE/index.md&lt;/code&gt; or &lt;code&gt;TITLE.md&lt;/code&gt; where &lt;code&gt;TITLE&lt;/code&gt; is your page name.&lt;/p&gt;
+&lt;p&gt;The page name should be lowercase and using hyphens (&lt;code&gt;-&lt;/code&gt;) instead of spaces.&lt;/p&gt;
+&lt;p&gt;Both approaches result in the same output, so you can choose your preferred approach to naming and organizing files. A benefit to the folder-based approach is that all your page&amp;rsquo;s files (such as images) are self-contained within the page&amp;rsquo;s folder, so it&amp;rsquo;s more portable if you wish to share the original Markdown page with someone.&lt;/p&gt;
+&lt;p&gt;The homepage is a special case as &lt;strong&gt;Hugo requires the homepage and listing pages to be named&lt;/strong&gt; &lt;code&gt;_index.md&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;docs-navigation&#34;&gt;Docs Navigation&lt;/h2&gt;
+&lt;p&gt;The docs navigation is automatically generated based on the content in the &lt;code&gt;docs/&lt;/code&gt; folder and is sorted alphabetically.&lt;/p&gt;
+&lt;p&gt;The order of pages can be changed by adding the &lt;code&gt;weight&lt;/code&gt; parameter in the front matter of your Markdown files.&lt;/p&gt;
+&lt;p&gt;In the example below, the &lt;code&gt;example.md&lt;/code&gt; page will appear before the &lt;code&gt;test.md&lt;/code&gt; page as it has a lower &lt;code&gt;weight&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Page &lt;code&gt;example.md&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;My Example&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Page &lt;code&gt;test.md&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;My Test&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/docs/guide/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/configuration/</guid>
+      <description>&lt;p&gt;The configuration of your site can be found in &lt;code&gt;config/_default/&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;full-documentation&#34;&gt;Full Documentation&lt;/h2&gt;
+&lt;p&gt;See 
+&lt;/p&gt;
+&lt;h2 id=&#34;navigation&#34;&gt;Navigation&lt;/h2&gt;
+&lt;h3 id=&#34;menu&#34;&gt;Menu&lt;/h3&gt;
+&lt;p&gt;See 
+&lt;/p&gt;
+&lt;h2 id=&#34;left-sidebar&#34;&gt;Left Sidebar&lt;/h2&gt;
+&lt;p&gt;Links are automatically generated from the structure of your content directory. Simply add a folder to nest a page.&lt;/p&gt;
+&lt;h3 id=&#34;extra-links&#34;&gt;Extra Links&lt;/h3&gt;
+&lt;p&gt;Additional links can be added under the &lt;code&gt;sidebar&lt;/code&gt; section of your &lt;code&gt;config/_default/menus.yaml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;menu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sidebar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Need help?&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;separator&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;A page&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pageRef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/page-filename-here&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;An external link ↗&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://hugoblox.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;right-sidebar&#34;&gt;Right Sidebar&lt;/h2&gt;
+&lt;p&gt;A table of contents is automatically generated from the headings your Markdown file.&lt;/p&gt;
+&lt;p&gt;It can optionally be disabled by setting &lt;code&gt;toc: false&lt;/code&gt; in the front matter of a page:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;My Page&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;toc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
@@ -3597,8 +3748,8 @@ function toggleAccordion(clickedButton) {
         
 
         &lt;a href=&#34;http://localhost:1313/series/charity/&#34;
-           class=&#34;text-sm text-primary-700 hover:text-primary-800 dark:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 hover:underline&#34;
-           title=&#34;4 posts&#34;&gt;
+           class=&#34;text-lg text-primary-700 hover:text-primary-800 dark:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;5 posts&#34;&gt;
           Charity
         &lt;/a&gt;
       
@@ -3673,8 +3824,8 @@ function toggleAccordion(clickedButton) {
         
 
         &lt;a href=&#34;http://localhost:1313/categories/charity/&#34;
-           class=&#34;text-lg text-primary-700 hover:text-primary-800 dark:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 hover:underline&#34;
-           title=&#34;4 posts&#34;&gt;
+           class=&#34;text-xl text-primary-700 hover:text-primary-800 dark:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 hover:underline&#34;
+           title=&#34;5 posts&#34;&gt;
           Charity
         &lt;/a&gt;
       
@@ -3855,7 +4006,7 @@ function toggleAccordion(clickedButton) {
 
         &lt;a href=&#34;http://localhost:1313/tags/privacy/&#34;
            class=&#34;text-3xl text-primary-700 hover:text-primary-800 dark:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200 hover:underline&#34;
-           title=&#34;9 posts&#34;&gt;
+           title=&#34;10 posts&#34;&gt;
           Privacy
         &lt;/a&gt;
       
@@ -3918,10 +4069,10 @@ function toggleAccordion(clickedButton) {
   }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757338380&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1757338380&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757355954&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -3933,7 +4084,7 @@ function toggleAccordion(clickedButton) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1757338380&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757355954&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -4103,7 +4254,7 @@ function toggleAccordion(clickedButton) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1757338380&#39;);
+  const carousel = document.getElementById(&#39;slider-1757355954&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -4199,7 +4350,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1757338380&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757355954&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -5243,7 +5394,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-&lt;div id=&#34;chart-421893756&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-879615234&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -5261,7 +5412,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-421893756&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-879615234&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7169,12 +7320,12 @@ ${content}`;
     
     <item>
       <title>🌱 DONATE</title>
-      <link>http://localhost:1313/donate/donate/</link>
+      <link>http://localhost:1313/donate/process/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/donate/donate/</guid>
+      <guid>http://localhost:1313/donate/process/</guid>
       <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 1234567 Registered Charity Number: 988843728&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a &lt;strong&gt;big thank you&lt;/strong&gt; to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.&lt;/p&gt;
 &lt;p&gt;Our work is real, and so are the needs—bus fares for volunteers, gardening tools, and charityed spaces for those who feel alone. It&amp;rsquo;s &lt;strong&gt;your honest support&lt;/strong&gt; that helps us reach people like &lt;em&gt;Kevin&lt;/em&gt; and &lt;em&gt;Sarah&lt;/em&gt;, offering new beginnings where they are needed most.&lt;/p&gt;
 &lt;p&gt;You are warmly invited now to become a part of what we do, just as you are. &lt;em&gt;And as you decide to give, you may quietly notice a sense of connection and honest purpose growing within you—knowing that your gift truly matters.&lt;/em&gt;&lt;/p&gt;
@@ -7205,10 +7356,10 @@ ${content}`;
 &lt;li&gt;
 &lt;p&gt;You may choose to set up a standing order or one-off payment:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Sort Code: &lt;strong&gt;11 43 11&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Account Number: &lt;strong&gt;9694698450&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;IBAN: &lt;strong&gt;84384384344434&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;BIC: &lt;strong&gt;LOYH98545843884&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Sort Code: &lt;strong&gt;30 96 28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Account Number: &lt;strong&gt;17913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IBAN: &lt;strong&gt;GB18LOYD30962817913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;BIC: &lt;strong&gt;LOYDGB21274&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -7219,8 +7370,75 @@ ${content}`;
 &lt;li&gt;
 &lt;p&gt;Make cheques payable to &lt;strong&gt;‘Asumen charity’&lt;/strong&gt; and post to:&lt;/p&gt;
 &lt;p&gt;Asumen charity&lt;br&gt;
-11 London Road
-LONDON, Postcode England, UK&lt;/p&gt;
+56 Grantham Road&lt;br&gt;
+Birmingham, B11 1LX, England, UK&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;your-gift-in-action&#34;&gt;Your Gift in Action&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Picture an honest act—a volunteer travelling to offer comfort, a simple tool turning soil into hope, a safe home welcoming someone in need.&lt;/em&gt; Each moment is made possible by your sincere generosity.&lt;/p&gt;
+&lt;p&gt;As you choose to give, notice the gentle assurance that comes from being part of a community built honestly on love, charity, and meaningful change.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Knock, and the door will be opened to you.”&lt;/em&gt; — Matthew 7:7&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Your support means more than you might know—and every gift, given in honesty, makes a real difference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>🌱 DONATE</title>
+      <link>http://localhost:1313/donate/thank-you/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/donate/thank-you/</guid>
+      <description>&lt;h2 id=&#34;donate--supporting-the-vision&#34;&gt;Donate — Supporting the Vision&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;“Honest hearts produce honest actions.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Asumen charity is a Company Limited by Guarantee. Registered in England and Wales. Company Number: 07247132 Registered Charity Number: 1138663&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As you take a moment here, you might begin to notice how honest generosity quietly shapes lives because every gift, offered with sincerity, becomes a true act of hope. We honestly say a &lt;strong&gt;big thank you&lt;/strong&gt; to every individual, church, and organisation who has already given—without your dedicated support, we simply would not be able to impact lives the way we do.&lt;/p&gt;
+&lt;p&gt;Our work is real, and so are the needs—bus fares for volunteers, gardening tools, and charityed spaces for those who feel alone. It&amp;rsquo;s &lt;strong&gt;your honest support&lt;/strong&gt; that helps us reach people like &lt;em&gt;Kevin&lt;/em&gt; and &lt;em&gt;Sarah&lt;/em&gt;, offering new beginnings where they are needed most.&lt;/p&gt;
+&lt;p&gt;You are warmly invited now to become a part of what we do, just as you are. &lt;em&gt;And as you decide to give, you may quietly notice a sense of connection and honest purpose growing within you—knowing that your gift truly matters.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ways-you-can-give&#34;&gt;Ways You Can Give&lt;/h2&gt;
+&lt;h3 id=&#34;1-donate-online&#34;&gt;1. Donate Online&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can give, securely and honestly, right here:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you&amp;rsquo;d like to support our mortgage fund directly, visit:&lt;br&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gift Aid:&lt;/strong&gt; If you&amp;rsquo;re a UK taxpayer, please consider selecting Gift Aid when giving online—it allows us to reclaim tax already paid, at &lt;em&gt;no extra cost to you&lt;/em&gt;. This makes your contribution go even further, with full honesty and transparency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Please note:&lt;/em&gt; 3% of each online gift is given to Stewardship, a UK Christian charity, ensuring every penny is used honestly for the good of communities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-bank-transfer&#34;&gt;2. Bank Transfer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You may choose to set up a standing order or one-off payment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sort Code: &lt;strong&gt;30 96 28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Account Number: &lt;strong&gt;17913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IBAN: &lt;strong&gt;GB18LOYD30962817913960&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;BIC: &lt;strong&gt;LOYDGB21274&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you wish to help a specific project, let us know by note, email, or simply specify it on your donation—so your honest intention is fully reflected.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-cheque&#34;&gt;3. Cheque&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Make cheques payable to &lt;strong&gt;‘Asumen charity’&lt;/strong&gt; and post to:&lt;/p&gt;
+&lt;p&gt;Asumen charity&lt;br&gt;
+56 Grantham Road&lt;br&gt;
+Birmingham, B11 1LX, England, UK&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -8961,6 +9179,172 @@ You can join us through:&lt;/p&gt;
 &lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
 .&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Callout Shortcode</title>
+      <link>http://localhost:1313/docs/guide/shortcodes/callout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/shortcodes/callout/</guid>
+      <description>&lt;p&gt;Hugo Blox supports a Markdown extension for callouts, also referred to as alerts or asides.&lt;/p&gt;
+&lt;p&gt;Callouts are a useful feature to draw attention to important or related content such as notes, hints, or warnings in your articles.&lt;/p&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;h3 id=&#34;notes&#34;&gt;Notes&lt;/h3&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A Markdown callout is useful for displaying notices, hints, or definitions to your readers.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% callout note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A Markdown callout is useful for displaying notices, hints, or definitions to your readers.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /callout %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Here&amp;rsquo;s some important information&amp;hellip;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% callout warning %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Here&amp;#39;s some important information...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /callout %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cards Shortcode</title>
+      <link>http://localhost:1313/docs/guide/shortcodes/cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/shortcodes/cards/</guid>
+      <description>&lt;p&gt;A Hugo extension to create cards. Cards can be shown as links or as plain text.&lt;/p&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+
+
+
+&lt;div class=&#34;hb-cards mt-4 grid gap-4 not-prose&#34; style=&#34;--hb-cols: 1;&#34;&gt;
+  
+  &lt;a
+    class=&#34;hb-card group&#34;href=&#34;../&#34; &gt;
+  
+    &lt;span class=&#34;hb-card-title p-4&#34;&gt;
+        &lt;svg style=&#34;height: 1em; width: 1em;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5&#34;/&gt;&lt;/svg&gt;Learn Shortcodes&lt;/span&gt;&lt;/a&gt;
+
+  &lt;a
+    class=&#34;hb-card group&#34;&gt;
+  
+    &lt;span class=&#34;hb-card-title p-4&#34;&gt;A card without an icon or link&lt;/span&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;is rendered by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; cards &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{&amp;lt; card url=&amp;#34;../callout&amp;#34; title=&amp;#34;Callout&amp;#34; icon=&amp;#34;academic-cap&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{&amp;lt; card url=&amp;#34;&amp;#34; title=&amp;#34;A card without an icon&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; /cards &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;options&#34;&gt;Options&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Parameter&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;icon&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Name of the icon. Defaults to 
+&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Title heading for the card.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;subtitle&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Subtitle heading (supports Markdown).&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;url&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;URL&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internationalization (i18n)</title>
+      <link>http://localhost:1313/docs/reference/i18n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/i18n/</guid>
+      <description>&lt;p&gt;Hugo Blox enables you to easily edit the interface text as well as translating your site into multiple languages using Hugo&amp;rsquo;s 
+ feature.&lt;/p&gt;
+&lt;p&gt;View the full docs at 
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spoiler</title>
+      <link>http://localhost:1313/docs/guide/shortcodes/toggle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/shortcodes/toggle/</guid>
+      <description>&lt;p&gt;A Hugo shortcode to toggle collapsible content.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;Click to view the spoiler&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;You found me!&lt;/p&gt;
+&lt;p&gt;Markdown is &lt;strong&gt;supported&lt;/strong&gt;.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; spoiler text=&amp;#34;Click to view the spoiler&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is the content of the details.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Markdown is **supported**.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; /spoiler &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Steps Shortcode</title>
+      <link>http://localhost:1313/docs/guide/shortcodes/steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/guide/shortcodes/steps/</guid>
+      <description>&lt;p&gt;Display a series of steps, such as for a tutorial.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;The first step here&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;The second step here&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;The third step here&amp;hellip;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Use the Markdown level-3 headings to represent step titles within the &lt;code&gt;steps&lt;/code&gt; shortcode:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% steps %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Step 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;The first step here...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Step 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;The second step here...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Step 3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;The third step here...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /steps %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,162 @@
+{{/* Hugo Blox: Book Promotion Block - Large Image + Reduced Gap */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<style>
+/* Reduced gap between columns */
+.book-grid {
+  gap: 1rem !important;
+}
+/* Larger image styling */
+.book-image {
+  max-height: 550px !important;
+  width: auto !important;
+}
+</style>
+
+<section class="py-8">
+  <div class="mx-auto max-w-4xl mt-0 px-1 lg:px-0 markdown-content">
+  
+  <!-- Header Section -->
+  <div class="flex flex-col text-left">
+    {{ with $blue }}
+    <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+    {{ end }}
+  <div class="px-1 md:px-6 lg:px-0">
+  <!-- Red horizontal line above title -->
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+      
+  {{ with $title }}
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">{{.}}</h2>
+  {{ end }}</div>
+    
+    {{ with $text }}
+    <div class="text-xl text-gray-600 dark:text-gray-300 content-text">{{.}}</div>
+    {{ end }}
+  </div>
+
+  {{ range $block.content.books }}
+  <!-- REDUCED GAP: gap-8 changed to book-grid class with gap-1rem -->
+  <div class="grid grid-cols-1 md:grid-cols-2 book-grid items-center mb-12">
+
+    <!-- LEFT: Book details -->
+    <div class="flex flex-col items-start px-1 md:px-4 lg:px-0">
+      <h2 class="text-2xl font-semibold leading-tight text-gray-900 dark:text-white">{{ .title }}</h2>
+      <a href="{{ .author_url }}" class="hover:underline">
+        <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">{{ .author }} (Author)</h3>
+      </a>
+      
+      <!-- Rating stars -->
+      {{ $rating := float .rating }}
+      {{ $intPart := int $rating }}
+      {{ $hasHalf := gt (mod (mul $rating 10) 10) 0 }}
+      <div class="flex items-center mb-1">
+        {{ range seq $intPart }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {{ end }}
+        {{ if $hasHalf }}
+          <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="half">
+                <stop offset="50%" stop-color="currentColor"/>
+                <stop offset="50%" stop-color="transparent"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)"/>
+          </svg>
+        {{ end }}
+        <span class="ml-2 text-sm font-medium text-gray-700 dark:text-gray-300">{{ printf "%.1f" $rating }}</span>
+      </div>
+
+      <!-- Prize - moved under rating -->
+      {{ with .prize }}
+      <p class="mb-4 text-xs text-gray-900 dark:text-white">Winner of: {{ . }}</p>
+      {{ end }}
+
+      <!-- Synopsis -->
+      {{ with .synopsis }}
+      <p class="mb-4 text-lg text-gray-800 dark:text-gray-300">"{{ . }}"</p>
+      {{ end }}
+
+      <!-- Print length & publication date - moved before buttons -->
+      <p class="mb-4 text-xs text-gray-600 dark:text-gray-400">
+        {{ with .pages }}Page Number: {{ . }} pages{{ end }}
+        {{ if and .pages .pub_date }} &#8226; {{ end }}
+        {{ with .pub_date }}Publication date: {{ . }}{{ end }}
+        {{ if and (or .pages .pub_date) .file_size }} &#8226; {{ end }}
+        {{ with .file_size }}File size: {{ . }}{{ end }}
+      </p>
+
+      <!-- Buttons - rounded-full with improved dark mode -->
+      <div class="mt-6 inline-flex space-x-3">
+        {{ with .ebook_url }}
+        <a href="{{ . }}" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          E-book
+        </a>
+        {{ end }}
+
+        {{ with .audiobook_url }}
+        <a href="{{ . }}" 
+           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+                  bg-white text-gray-900 hover:bg-gray-50 
+                  dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
+                  transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+          Audiobook
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- RIGHT: Cover with overlay - LARGER IMAGE -->
+    <div class="relative flex justify-center items-center px-1 md:px-4 lg:px-0">
+      {{ $book := . }}
+      {{ $img := resources.GetMatch (path.Join "media" $book.image) }}
+      {{ with $img }}
+      <!-- LARGER IMAGE: Increased from 300x450 to 420x630 -->
+      {{ $resized := .Fit "420x630 center webp" }}
+      <div class="relative">
+        <img src="{{ $resized.RelPermalink }}" 
+             alt="{{ $book.title | plainify }}" 
+             class="book-image rounded-lg shadow-lg max-w-full h-auto object-contain">
+
+        <!-- Bottom overlay with sample links -->
+        <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-black dark:bg-opacity-60 p-2 flex justify-between items-center rounded-b-lg text-sm">
+          {{ with $book.sample_ebook_url }}
+          <a href="{{ . }}" class="text-gray-900 dark:text-white hover:underline transition-all duration-200">Read Sample</a>
+          {{ end }}
+          {{ with $book.sample_audiobook_url }}
+          <a href="{{ . }}" class="flex items-center gap-1 text-gray-900 dark:text-white hover:underline transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+              <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+            </svg>
+            Preview
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+  {{ end }}
+  </div>
+</section>

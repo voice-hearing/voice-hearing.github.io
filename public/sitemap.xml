@@ -4,6 +4,16 @@
   
   
   <url>
+    <loc>http://localhost:1313/docs/getting-started/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/reference/customization/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/project-structure/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/configuration/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/</loc><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/taxonomies/</loc><lastmod>2024-06-16T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/projects/</loc><lastmod>2024-05-19T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -25,6 +35,8 @@
     <loc>http://localhost:1313/terms/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/</loc><lastmod>2024-05-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/post/components/</loc><lastmod>2023-10-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -58,6 +70,8 @@
   <url>
     <loc>http://localhost:1313/post/teach-courses/</loc><lastmod>2023-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>http://localhost:1313/donate/</loc><lastmod>2023-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>http://localhost:1313/tags/hugo-blox-builder/</loc><lastmod>2023-10-24T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/post/project-management/</loc><lastmod>2023-10-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -70,7 +84,9 @@
   <url>
     <loc>http://localhost:1313/what-we-do/what-we-do/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/donate/donate/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/donate/process/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/donate/thank-you/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/about/subscribe/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -85,8 +101,6 @@
     <loc>http://localhost:1313/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/tags/disclaimer/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>http://localhost:1313/donate/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/how-you-can-help/</loc><lastmod>2023-07-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -122,7 +136,11 @@
   <url>
     <loc>http://localhost:1313/publication_types/paper-conference/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/docs/guide/shortcodes/callout/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/shortcodes/cards/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/reference/i18n/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
   <url>
@@ -132,7 +150,7 @@
   <url>
     <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+    <loc>http://localhost:1313/author/john-smith/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
   <url>
@@ -145,5 +163,15 @@
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/author/nelson-bighetti/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/reference/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/shortcodes/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/shortcodes/toggle/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>http://localhost:1313/docs/guide/shortcodes/steps/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/</loc><changefreq>weekly</changefreq></url></urlset>

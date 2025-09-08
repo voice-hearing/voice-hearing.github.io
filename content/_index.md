@@ -17,7 +17,7 @@ sections:
       secondary: 
       primary_action:
         text: DONATE NOW &nbsp; <span class="text-white">›</span>
-        url: /donate/donate
+        url: /donate
         icon: 
       secondary_action:
         text:
@@ -160,7 +160,7 @@ sections:
         - title: DONATING 
           content: 
           align: "bottom-left"
-          url: /donate/donate
+          url: /donate
           background:
             image:
               filename: "pexels-shvetsa-4482896.jpg"

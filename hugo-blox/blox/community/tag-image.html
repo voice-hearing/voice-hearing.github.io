@@ -37,7 +37,7 @@
               {{ $logo := $img.Fit "200x50 Center" }}
               <img src="{{ $logo.RelPermalink }}" 
                    alt="{{ .name | plainify }}" 
-                   class="h-12 w-auto transition-all duration-300 filter grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+                   class="h-12 w-auto transition-all duration-300"
                    style="height: 50px; max-width: 200px; object-fit: contain;"
                    loading="lazy">
             {{ else }}
