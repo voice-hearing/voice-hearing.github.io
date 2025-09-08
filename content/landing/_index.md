@@ -9,6 +9,32 @@ design:
   spacing: "3rem"
 
 sections:
+
+  - block: cta-image-par-left
+    content:
+      title: "Our Services"
+      text: ""
+      items:
+        - title: "Building on modern foundations"
+          text: "Gain a competitive advantage by incorporating industry leading practices"
+          image: "avatar copy.jpg"
+          overlay_text: "Modern Workspace"  # NEW: Text overlay for image
+          features:
+            - name: "Built on top of Astro 5.0"
+              description: "Benefiting from the performance and developer-friendly features of this modern static site generator."
+              icon: "check"
+            - name: "Styled using Tailwind CSS"
+              description: "Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework."
+              icon: "check"
+            - name: "Cross-browser compatibility"
+              description: "Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users."
+              icon: "check"
+          button:
+            text: "Get Started"
+            url: "/contact"
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-gray-100 dark:bg-gray-900"
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -652,28 +678,6 @@ sections:
       show_role: false
       # Show user's organizations/affiliations?
       show_organizations: false
-  - block: cta-image-paragraph
-    id: about
-    content:
-      items:
-        - title: THE YEAR’S CAN’T-MISS EVENT FOR AI COLLABORATION
-          text: AI Summit is coming home to San Francisco. Join us at AI Summit 2024 to explore all the cutting-edge innovation the data cloud has to offer.
-          # Upload image to `assets/media/` and reference the filename here
-          image: city-daniel-abadia.jpg
-        - title: DISCOVER
-          text: Discover the latest in AI, GenAI, application development and much more.
-          # Upload image to `assets/media/` and reference the filename here
-          image: conference-headway-F2KRf_QfCqw.jpg
-        - title: HEAR FROM LEADERS REDEFINING THE AI LANDSCAPE
-          text: Hear valuable insights from data and AI experts and business leaders, while discovering the limitless possibilities of data, AI and application collaboration for your organization.
-          # Upload image to `assets/media/` and reference the filename here
-          image: contact.jpg
-          button:
-            text: Get Tickets
-            url: https://www.eventbrite.com/
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
   - block: tag_cloud
     content:
       title: My title
