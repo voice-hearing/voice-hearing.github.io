@@ -9,41 +9,6 @@ design:
   spacing: "3rem"
 
 sections:
-  - block: faq
-    id: features
-    content:
-      blue: 
-      title: FREQUENT ASKED QUESTIONS
-      text: 
-      items:
-        - name: 
-          description: 
-          skills:
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-        - name: 
-          description: 
-          skills:  
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-              icon: "custom/chevron-right"
-              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-    design:
-      css_class: ""
-            
-
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -1514,6 +1479,39 @@ sections:
               description: "SQL and NoSQL database optimization"
               icon: "/devicon/git"
               percent: 80
+  - block: faq
+    id: features
+    content:
+      blue: 
+      title: FREQUENT ASKED QUESTIONS
+      text: 
+      items:
+        - name: 
+          description: 
+          skills:
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+        - name: 
+          description: 
+          skills:  
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+    design:
+      css_class: ""
   
 ---    
     

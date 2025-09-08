@@ -15,8 +15,8 @@
   .gallery-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Added: Center items horizontally */
-    align-items: center;     /* Added: Center items vertically if needed */
+    justify-content: center;
+    align-items: center;
     margin: -1px;
     padding: 0;
   }
@@ -27,11 +27,10 @@
     line-height: 0;
   }
   
-  /* Responsive centering for Hugo Blox compatibility */
   @media (max-width: 768px) {
     .gallery-row {
       justify-content: center;
-      gap: 0.25rem; /* Small gap on mobile */
+      gap: 0.25rem;
     }
   }
   </style>
@@ -46,7 +45,7 @@
           <a href="{{ $large.RelPermalink }}" data-gallery="{{ $id }}" data-title="{{ .Name | plainify }}">
         {{- end -}}
         
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Name | plainify }}" class="w-32 h-32 object-cover rounded-{{ $rounded }}{{ if eq $lightbox "true" }} cursor-pointer{{ end }}" loading="lazy" style="display: block; margin: 0; padding: 0;">
+        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Name | plainify }}" class="w-24 h-24 object-cover rounded-{{ $rounded }}{{ if eq $lightbox "true" }} cursor-pointer{{ end }}" loading="lazy" style="display: block; margin: 0; padding: 0;">
         
         {{- if eq $lightbox "true" -}}
           </a>
