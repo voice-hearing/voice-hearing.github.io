@@ -1,0 +1,85 @@
+{{/* Hugo Blox: Features - 3 Column Grid */}}
+{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
+{{/* License: [https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md](https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md) */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+
+<section class="mx-auto max-w-7xl px-1 lg:px-0 pt-8 pb-8">
+
+  <style>
+    .overlay-bg-light {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .overlay-bg-dark {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .custom-drop-shadow-lg {
+      text-shadow:
+        2px 2px 4px rgba(0,0,0,0.9),
+        -2px -2px 4px rgba(0,0,0,0.9),
+        0 0 8px rgba(0,0,0,0.9);
+    }
+    a > img {
+      display: block;
+      line-height: 0;
+      font-size: 0;
+    }
+  </style>
+
+  {{ $padding := cond (isset $block "design") (index $block.design.spacing.padding 0 | default "1rem") "1rem" }}
+  {{ $margin := "1.5rem" }}
+
+  <div class="mx-auto max-w-7xl mt-0 mb-4">
+    <div class="flex flex-col">
+      {{ with $blue }}
+      <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+      {{ end }}
+
+      <div class="px-1 md:px-6 lg:px-0">
+        <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+
+        {{ with $title }}
+        <h2 class="mb-4 text-3xl font-bold dark:font-semibold text-gray-900 dark:text-white">{{.}}</h2>
+        {{ end }}
+      </div>
+      {{ with $text }}
+      <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400 mb-8">{{.}}</p>
+      {{ end }}
+    </div>
+
+    <!-- 3-Column Grid Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-0">
+      
+      {{ range $block.content.slides }}
+        {{ $bg := .background }}
+        {{ $bg_img := "" }}
+        {{ if $bg.image.filename }}
+          {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
+          {{ if $bg_img }}
+            {{ $bg_img = $bg_img.Fit "600x400 q70 webp" }}
+          {{ end }}
+        {{ end }}
+        
+        <a href="{{ .url }}" class="relative rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300">
+          {{ if $bg_img }}
+            <img src="{{ $bg_img.RelPermalink }}" alt="{{ .title | plainify }}" class="block w-full h-64 object-cover object-center" />
+          {{ else }}
+            <div class="w-full h-64 bg-gray-400"></div>
+          {{ end }}
+          <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
+               style="padding: {{ $padding }}; margin: {{ $margin }};">
+            <h2 class="text-3xl font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300">
+              {{ .title }} <span class="text-primary-700">›</span>
+            </h2>
+          </div>
+        </a>
+      {{ end }}
+      
+    </div>
+  </div>
+</section>

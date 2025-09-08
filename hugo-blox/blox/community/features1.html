@@ -64,16 +64,17 @@
   </div>
   <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:space-y-0">
       {{ range $block.content.items }}
-        <div class="border border-gray-300 dark:border-gray-500 rounded-lg p-6 shadow-lg">
+      <div class="border border-gray-300 dark:border-gray-500 rounded-lg p-6 shadow-lg">
+          <a href="{{.url}}"> 
           {{ with .icon }}
           <div class="mb-4 text-primary-600 dark:text-primary-300">
             {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-24 h-24 lg:w-16 lg:h-16"`)  }}
-          </div>
+          </div></a> 
           {{ end }}
           <h3 class="mb-2 text-3xl tracking-tight font-bold dark:text-white">{{ .name | $page.RenderString }}</h3>
           <p class="text-xl text-gray-800 dark:text-gray-300">{{ .description | $page.RenderString }}</p>
         </div>
-      {{ end }}
+      {{ end }} 
     </div>
   </div>
 </section>

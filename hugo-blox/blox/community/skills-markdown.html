@@ -1,0 +1,207 @@
+{{/* Hugo Blox: Skills - No Author */}}
+{{/* Documentation: [https://hugoblox.com/blocks/](https://hugoblox.com/blocks/) */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+{{ $blue := $block.content.blue | emojify | $page.RenderString }}
+{{ $items := $block.content.items }}
+{{ $show_skill_percentage := $block.design.show_skill_percentage | default true }}
+
+<style>
+  .skills-content {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .dark .skills-content {
+    background-color: #374151;
+    border-color: #4b5563;
+  }
+  
+  .skills-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-icon {
+  margin-right: 0.75rem;
+  color: #dc2626;
+  font-size: 1.125rem;
+  min-width: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 1px;
+  }
+  
+  .skills-name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #111827;
+  }
+  
+  .dark .skills-name {
+    color: #f9fafb;
+  }
+  
+  .skills-description {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  
+  .dark .skills-description {
+    color: #9ca3af;
+  }
+  
+  .skills-progress-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .skills-wrapper {
+    flex: 1;
+    height: 16px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .dark .skills-wrapper {
+    background-color: #4b5563;
+  }
+  
+  .skills-percent {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.8s ease-in-out;
+  }
+  
+  .skills-percentage-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+    min-width: 2.5rem;
+    text-align: right;
+  }
+  
+  .dark .skills-percentage-text {
+    color: #d1d5db;
+  }
+
+  /* Link Colors for Light and Dark Theme */
+  .markdown-content a {
+    color: rgb(185 28 28); /* text-primary-700 equivalent */
+    text-decoration: underline;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .markdown-content a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .markdown-content a {
+    color: rgb(253 164 175); /* text-primary-300 equivalent */
+  }
+  
+  /* Style links in the text content specifically */
+  .content-text a {
+    color: rgb(185 28 28); /* text-primary-700 */
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .content-text a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark .content-text a {
+    color: rgb(253 164 175); /* text-primary-300 */
+  }
+</style>
+
+<div class="mx-auto max-w-7xl mt-0 px-1 lg:px-0 markdown-content">
+  
+  <!-- Header Section -->
+  <div class="flex flex-col text-left">
+    {{ with $blue }}
+    <p class="mb-2 text-lg md:text-xl tracking-tight uppercase font-semibold text-primary-600 dark:text-primary-300">{{.}}</p>
+    {{ end }}
+  <div class="px-1 md:px-6 lg:px-0">
+  <!-- Red horizontal line above title -->
+  <div class="w-16 border-2 border-primary-700 mb-4 px-2"></div>
+      
+  {{ with $title }}
+  <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">{{.}}</h2>
+  {{ end }}</div>
+    
+    {{ with $text }}
+    <div class="text-xl text-gray-600 dark:text-gray-300 content-text">{{.}}</div>
+    {{ end }}
+  </div>
+
+  <!-- Skills Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-1 md:px-6 lg:px-0">
+    {{ range $items }}
+    <div class="w-full">
+      <div class="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+        {{ .name | $page.RenderString }}
+        {{ with .description }}
+        <p class="text-base font-normal text-gray-600 dark:text-gray-400 mt-2">{{ . | $page.RenderString }}</p>
+        {{ end }}
+      </div>
+      
+      {{ with .skills }}
+      {{ range . }}
+      <div class="skills-content">
+        <div class="skills-header">
+          {{ with .icon }}
+          <span class="skills-icon">
+            {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.125em; width: 1.125em;\"") }}
+          </span>
+          {{ end }}
+          
+          <div class="skills-name">
+            {{ .name | $page.RenderString }}
+          </div>
+        </div>
+        
+        {{ with .description }}
+        <div class="skills-description">
+          {{ . | $page.RenderString }}
+        </div>
+        {{ end }}
+        
+        {{ if $show_skill_percentage }}
+          {{ $percentage := .percent | default 0 }}
+          {{ $color := .color | default "#dc2626" }}
+          {{ if gt $percentage 0 }}
+          <div class="skills-progress-row">
+            <div class="skills-wrapper">
+              <div class="skills-percent" style="width: {{ $percentage }}%; background-color: {{ $color }};"></div>
+            </div>
+            <div class="skills-percentage-text">{{ $percentage }}%</div>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  
+</section>

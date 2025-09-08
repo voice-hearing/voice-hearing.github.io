@@ -72,13 +72,13 @@
           {{ $image = $image.Process "Fill 800x600 center webp" }}
           <img class="rounded-md" src="{{$image.RelPermalink}}" alt="{{$title | plainify}}">
           {{ end }}
-          </a>
           <div>
             {{ with .icon }}
             <div class="flex basis-1/4 justify-center items-center mb-4">
               {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-24 h-24 lg:w-24 lg:h-24"`)  }}
             </div>
             {{ end }}
+            </a>
             <h3 class="mb-2 text-3xl font-bold tracking-tight dark:text-white text-center px-6">{{ .name | $page.RenderString }}</h3>
             <p class="text-xl text-gray-800 dark:text-gray-300 px-6">{{ .description | $page.RenderString }}</p>
           </div>

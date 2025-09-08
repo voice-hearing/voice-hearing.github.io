@@ -1612,6 +1612,9 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
   .h-84 {
     height: calc(var(--spacing) * 84);
   }
@@ -2668,6 +2671,9 @@
   .text-right {
     text-align: right;
   }
+  .align-super {
+    vertical-align: super;
+  }
   .\!text-xl {
     font-size: var(--text-xl) !important;
     line-height: var(--tw-leading, var(--text-xl--line-height)) !important;
@@ -3181,6 +3187,10 @@
     --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
     --tw-prose-invert-th-borders: oklch(44.6% 0.043 257.281);
     --tw-prose-invert-td-borders: oklch(37.2% 0.044 257.287);
+  }
+  .prose-red {
+    --tw-prose-links: oklch(57.7% 0.245 27.325);
+    --tw-prose-invert-links: oklch(63.7% 0.237 25.331);
   }
   .select-none {
     -webkit-user-select: none;
@@ -5262,6 +5272,11 @@
       @supports (color: color-mix(in lab, red, red)) {
         background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
       }
+    }
+  }
+  .dark\:bg-gray-200 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-200);
     }
   }
   .dark\:bg-gray-600 {

@@ -9,36 +9,41 @@ design:
   spacing: "3rem"
 
 sections:
-  - block: tabs
+  - block: faq
+    id: features
     content:
-      title: "CONFERENCE"
-      blue: ""
-      text: ""
-      tabs:
-        - title: "Day 1"
-          iconFile: "twitter"    # corresponds to assets/icons/custom/profile.svg
-          content: "csv:data/conference-day1.csv"
-        - title: "Day 2"
-          content: "csv:data/conference-day2.csv"
-          iconFile: "anatomical-heart"
-        - title: "Day 3"
-          content: "csv:data/conference-day3.csv"
-        - title: "Venue & Info"
-          content: |
-           **Conference Venue:** Charity Excellence Center
-        
-           **Address:** 123 Philanthropy Avenue, Community District
-           
-           **Facilities:**
-           - Free WiFi throughout venue
-           - Accessibility features available
-           - Parking: Complimentary for attendees
-           - Childcare: Available upon request
-           
-           **Contact:**
-           - Phone: (555) 123-CONF
-           - Email: info@charityconference.org
-         
+      blue: 
+      title: FREQUENT ASKED QUESTIONS
+      text: 
+      items:
+        - name: 
+          description: 
+          skills:
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+        - name: 
+          description: 
+          skills:  
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+            - name: Lorem ipsum dolor sit amet, consectetur adipiscing
+              icon: "custom/chevron-right"
+              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit..... Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
+    design:
+      css_class: ""
+            
+
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -623,38 +628,29 @@ sections:
         - name: jfiushf
           icon: /custom/submodalities
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          url: https://google.com
         - name: OIJSJD
           icon: /custom/calendar
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          url: https://google.com
         - name: LOOIJHD
           icon: /custom/atention
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          url: https://google.com
         - name: CDJDJD
           icon: custom/core
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          url: https://google.com
         - name: KJDHDIDHIUDk
           icon: /custom/wholeness
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          url: https://google.com
         - name: PDJDIDJDJD
           icon: /custom/group
           description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
     design:
       css_class: ""
       view: article-grid
-  - block: resume-experience1
-    content:
-      username: admin
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: false
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: admin
-    design:
-      show_skill_percentage: true
   - block: resume-awards
     content:
       title: Awards
@@ -691,44 +687,6 @@ sections:
       show_role: false
       # Show user's organizations/affiliations?
       show_organizations: false
-  - block: markdown
-    id: agenda
-    content:
-      title: Agenda
-      text: |
-        **DAY 1**
-        {style="padding-top: 2rem"}
-        {{< table path="schedule.csv" header="true" >}}
-  - block: faq
-    id: features
-    content:
-      blue: 
-      title: 
-      text: 
-      button:
-        text: 
-        url: 
-      items:
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.decisions, and live a more fulfilling life.
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-        - name: Lorem ipsum dolor sit amet, consectetur adipiscing
-          icon: chevron-right
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-    design:
-      css_class: ""
   - block: cta-image-paragraph
     id: about
     content:
@@ -1413,8 +1371,149 @@ sections:
           quote: >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam…
           rating: 4
-  
+  - block: tabs
+    content:
+      title: "CONFERENCE"
+      blue: ""
+      text: ""
+      tabs:
+        - title: "Day 1"
+          icon: "/devicon/git"    # corresponds to assets/icons/custom/profile.svg
+          content: "csv:data/conference-day1.csv"
+        - title: "Day 2"
+          content: "csv:data/conference-day2.csv"
+          iconFile: "anatomical-heart"
+        - title: "Day 3"
+          content: "csv:data/conference-day3.csv"
+        - title: "Venue & Info"
+          content: |
+           **Conference Venue:** Charity Excellence Center
+        
+           **Address:** 123 Philanthropy Avenue, Community District
+           
+           **Facilities:**
+           - Free WiFi throughout venue
+           - Accessibility features available
+           - Parking: Complimentary for attendees
+           - Childcare: Available upon request
+           
+           **Contact:**
+           - Phone: (555) 123-CONF
+           - Email: info@charityconference.org
+           
+           **Download Conference Program:**
+           - <span><a href="/data/conference-day1.csv" download="conference-day1.csv">Day 1.csv</a></span>
+  - block: stepper
+    content:
+      title: "Development Workflow"
+      text: ""
+      items:
+        - name: "Planning & Analysis"
+          description: |
+            *Massachusetts Institute of Technology*</br>
+            GPA: 3.4/4.0
 
+            **Courses included:**
+            - We start by understanding your requirements, analyzing your needs, 
+            and creating a detailed project roadmap with clear milestones.
+            - hello
+          latest: latest
+          button:
+            text: "Start Tour"
+            url: "/tour"
+        - name: "Design & Prototyping"
+          description: |
+            Our design team creates mockups and interactive prototypes 
+            to visualize the final product before development begins.
+        - name: "Development & Testing"
+          description: |
+            Clean, scalable code is written following best practices, 
+            with comprehensive testing at every stage of development.
+        - name: "Deployment & Launch"
+          description: |
+            Your project goes live with proper monitoring, backup systems, 
+            and performance optimization for the best user experience.
+        - name: "Maintenance & Support"
+          description: |
+            Ongoing support, updates, and maintenance ensure your project 
+            continues to perform optimally and stays secure over time.
+  - block: skills-markdown
+    content:
+      title: "Technical Skills"
+      blue: ""
+      text: ""
+      design:
+        show_skill_percentage: true
+      items:
+        - name: "Frontend Development"
+          description: "Modern web technologies and frameworks for creating responsive"
+          skills:
+            - name: "React.js"
+              description: "Component-based UI development"
+              icon: "/devicon/git"
+              percent: 90
+              color: "#61dafb"  # React blue
+            - name: "Vue.js"
+              description: "Progressive JavaScript framework"
+              icon: "/devicon/git"
+              percent: 85
+              color: "#fdad00"  # Sketch yellow
+            - name: "HTML/CSS"
+              description: "Semantic markup and responsive styling"
+              icon: "/devicon/git"
+              percent: 95
+              color: "#f24e1e"  # Figma orange
+        - name: "Frontend Development"
+          description: "Modern web technologies and frameworks for creating responsive"
+          skills:
+            - name: "React.js"
+              description: "Component-based UI development"
+              icon: "/devicon/git"
+              percent: 90
+              color: "#61dafb"  # React blue
+            - name: "Vue.js"
+              description: "Progressive JavaScript framework"
+              icon: "/devicon/git"
+              percent: 85
+              color: "#fdad00"  # Sketch yellow
+            - name: "HTML/CSS"
+              description: "Semantic markup and responsive styling"
+              icon: "/devicon/git"
+              percent: 95
+              color: "#f24e1e"  # Figma orange
+        - name: "Frontend Development"
+          description: "Modern web technologies and frameworks for creating responsive"
+          skills:
+            - name: "React.js"
+              description: "Component-based UI development"
+              icon: "/devicon/git"
+              percent: 90
+              color: "#61dafb"  # React blue
+            - name: "Vue.js"
+              description: "Progressive JavaScript framework"
+              icon: "/devicon/git"
+              percent: 85
+              color: "#fdad00"  # Sketch yellow
+            - name: "HTML/CSS"
+              description: "Semantic markup and responsive styling"
+              icon: "/devicon/git"
+              percent: 95
+              color: "#f24e1e"  # Figma orange  
+        - name: "Backend Development"
+          description: "Server-side technologies and database management"
+          skills:
+            - name: "Node.js"
+              description: "JavaScript runtime for server applications"
+              icon: "/devicon/git"
+              percent: 88
+            - name: "Python"
+              description: "Versatile programming language"
+              icon: "python"
+              percent: 92
+            - name: "Database Design"
+              description: "SQL and NoSQL database optimization"
+              icon: "/devicon/git"
+              percent: 80
   
 ---    
     
