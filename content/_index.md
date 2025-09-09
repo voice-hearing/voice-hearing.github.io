@@ -40,7 +40,7 @@ sections:
           filename: "hero.jpg"
           filters:
             brightness: "100%"
-  - block: image-overlay
+  - block: img-over-grid-2
     content:
       title: HELP US & EXPERIENCE
       blue: 
@@ -116,7 +116,7 @@ sections:
 #          filename: ""
 #          filters:
 #            brightness: 1.0
-  - block: image-overlay-3
+  - block: img-over-grid-3
     content:
       title: HOW YOU CAN HELP
       blue: 
@@ -227,7 +227,7 @@ sections:
         - title: "WORK WITH US"
           image: "pexels-julia-m-cameron-6995106.jpg"
           url: "https://www.microsoft.com"
-        - title: "OUR DIRECT ACTIONS"
+        - title: "OUR ACTIONS"
           image: "pexels-mart-production-8078355.jpg"
           url: "https://www.google.com"
     design:

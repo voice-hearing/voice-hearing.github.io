@@ -1,0 +1,43 @@
+/* Hugo Blox color theme: CUSTOM RED */
+:root {
+  /* Light Theme Primary Palette - Base: rgb(218 41 28) */
+  --hb-primary-50-rgb: 254 242 241;
+  --hb-primary-100-rgb: 254 226 223;
+  --hb-primary-200-rgb: 252 202 196;
+  --hb-primary-300-rgb: 248 165 156;
+  --hb-primary-400-rgb: 240 101 86;
+  --hb-primary-500-rgb: 218 41 28;   /* Light theme base */
+  --hb-primary-600-rgb: 197 37 25;
+  --hb-primary-700-rgb: 166 31 21;
+  --hb-primary-800-rgb: 137 26 18;
+  --hb-primary-900-rgb: 113 23 17;
+  --hb-primary-950-rgb: 61 12 9;
+
+  /* Orange Secondary Palette (unchanged) */
+  --hb-secondary-50-rgb: 255 247 237;
+  --hb-secondary-100-rgb: 255 237 213;
+  --hb-secondary-200-rgb: 254 215 170;
+  --hb-secondary-300-rgb: 253 186 116;
+  --hb-secondary-400-rgb: 251 146 60;
+  --hb-secondary-500-rgb: 249 115 22;
+  --hb-secondary-600-rgb: 234 88 12;
+  --hb-secondary-700-rgb: 194 65 12;
+  --hb-secondary-800-rgb: 154 52 18;
+  --hb-secondary-900-rgb: 124 45 18;
+  --hb-secondary-950-rgb: 67 20 7;
+}
+
+/* Dark Theme Override - Base: rgb(255 74 37) */
+.dark {
+  --hb-primary-50-rgb: 255 245 241;
+  --hb-primary-100-rgb: 255 231 224;
+  --hb-primary-200-rgb: 255 207 193;
+  --hb-primary-300-rgb: 255 170 150;
+  --hb-primary-400-rgb: 255 122 94;
+  --hb-primary-500-rgb: 255 74 37;    /* Dark theme base */
+  --hb-primary-600-rgb: 230 67 33;
+  --hb-primary-700-rgb: 194 56 28;
+  --hb-primary-800-rgb: 160 46 23;
+  --hb-primary-900-rgb: 132 38 19;
+  --hb-primary-950-rgb: 71 20 10;
+}

@@ -34,11 +34,6 @@ input::placeholder, select::placeholder, textarea::placeholder {
   border-color: #1d4ed8 !important;
 }
 
-/* Ensure all text is visible */
-h1, h2, h3, h4, h5, h6, label, span, p {
-  color: #111827 !important;
-}
-
 /* Dark theme overrides */
 .dark input, .dark select, .dark textarea {
   color: #ffffff !important;
@@ -81,7 +76,7 @@ h1, h2, h3, h4, h5, h6, label, span, p {
         {{ range $block.content.donation_amounts | default (slice (dict "amount" 25 "impact" "Feed 5 families") (dict "amount" 50 "impact" "Support 1 child") (dict "amount" 100 "impact" "Fund training") (dict "amount" 250 "impact" "Transform lives")) }}
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="{{ .amount }}">
           <div class="text-lg font-bold" style="color: #111827 !important;">£{{ .amount }}</div>
-          <div class="text-sm" style="color: #6b7280 !important;">{{ .impact }}</div>
+          <div class="text-xs" style="color: #6b7280 !important;">{{ .impact }}</div>
         </div>
         {{ end }}
       </div>
@@ -104,7 +99,7 @@ h1, h2, h3, h4, h5, h6, label, span, p {
       </div>
 
       <!-- Basic Form Fields -->
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-4 pb-4">
         <input type="text" placeholder="First Name" required 
                class="border-2 border-gray-400 rounded-lg p-3 shadow-sm focus:outline-none focus:border-blue-600"
                style="background-color: #ffffff !important; color: #111827 !important;" />

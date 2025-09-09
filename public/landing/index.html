@@ -1469,6 +1469,11 @@
   
   
 
+  <script>console.log('✓ Alpine.js loading on demand');</script>
+  
+  
+  <script src="/dist/lib/alpinejs/cdn.min.fb9b146b7fbd1bbf251fb3ef464f2e7c5d33a4a83aeb0fcf21e92ca6a9558c4b.js" integrity="sha256-&#43;5sUa3&#43;9G78lH7PvRk8ufF0zpKg66w/PIekspqlVjEs=" defer></script>
+
 
 
 
@@ -3222,7 +3227,7 @@
       background-color: rgba(255, 255, 255, 0.9);
     }
     .overlay-bg-dark {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.3);
     }
     .custom-drop-shadow-lg {
       text-shadow:
@@ -3255,7 +3260,7 @@
     </div>
 
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4 lg:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-1 md:px-4 lg:px-0">
       
       
         
@@ -3658,7 +3663,7 @@
     </div>
 
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-1 md:px-4 lg:px-0">
       
       
         
@@ -3959,7 +3964,7 @@
     
     
     <div id="calendar-loading" class="loader" style="display: none;">
-      <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-lg animate-spin mx-auto mb-4"></div>
+      <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
       <p class="text-xl font-semibold text-white">Loading calendar...</p>
     </div>
     
@@ -4626,7 +4631,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 <a href="/about/people" target="_blank" rel="noopener">
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Sarah Johnson"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -4641,7 +4646,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 <a href="/about/people" target="_blank" rel="noopener">
                   <img src="/media/sofia_hu_49c64d722f7546a8.jpg" alt="Michael Chen"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -4656,7 +4661,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 <a href="/about/people" >
                   <img src="/media/mohammed_hu_9d9583614ca68e70.jpg" alt="Emily Rodriguez"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -4671,7 +4676,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 <a href="/about/people" target="_blank" rel="noopener">
                   <img src="/media/sofia_hu_49c64d722f7546a8.jpg" alt="David Kim"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -4686,7 +4691,7 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 <a href="/about/people" >
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Lisa Thompson"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -4811,14 +4816,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 <section class="mx-auto max-w-screen-xl px-4">
   
-
   
-  <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 space-x-4">
+  
+  <div class="flex flex-col md:flex-row justify-center md:items-start items-center gap-6 md:gap-8">
     
-    <div class="flex flex-col items-center text-center">
+    <div class="flex flex-col items-center text-center flex-shrink-0">
       
       <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity duration-300">
         
@@ -4826,7 +4830,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
           <img src="/media/pexels-julia-m-cameron-6995106_hu_feb82eaa701c88a9.webp" 
                alt="WORK WITH US" 
-               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-lg object-cover shadow-lg" 
+               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg" 
                loading="lazy">
         
       </a>
@@ -4839,7 +4843,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
     </div>
     
-    <div class="flex flex-col items-center text-center">
+    <div class="flex flex-col items-center text-center flex-shrink-0">
       
       <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block hover:opacity-80 transition-opacity duration-300">
         
@@ -4847,7 +4851,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
           <img src="/media/pexels-mart-production-8078355_hu_9246dc6c2c892810.webp" 
                alt="OUR DIRECT ACTIONS" 
-               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-lg object-cover shadow-lg" 
+               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg" 
                loading="lazy">
         
       </a>
@@ -4861,10 +4865,10 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     
   </div>
+  
   <div class="pb-8"></div>
-    <div class="pb-8"></div>
-    <div class="pb-8"></div>
-
+  <div class="pb-8"></div>
+  <div class="pb-8"></div>
 </section>
 
 
@@ -7543,13 +7547,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/%E5%90%B3%E5%81%A5%E9%9B%84/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/%E5%90%B3%E5%81%A5%E9%9B%84/avatar_hu_a157214375127229.jpg" alt="吳健雄 Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/%E5%90%B3%E5%81%A5%E9%9B%84/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   吳健雄
@@ -7709,13 +7713,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/john-smith/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg" alt="John Smith Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/john-smith/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   John Smith
@@ -7787,13 +7791,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/john-smith/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg" alt="John Smith Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/john-smith/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   John Smith
@@ -7865,13 +7869,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/john-smith/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg" alt="John Smith Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/john-smith/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   John Smith
@@ -7943,13 +7947,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8021,13 +8025,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8099,13 +8103,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8177,13 +8181,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8275,13 +8279,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/john-smith/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg" alt="John Smith Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/john-smith/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   John Smith
@@ -8353,13 +8357,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/john-smith/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg" alt="John Smith Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/john-smith/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   John Smith
@@ -8431,13 +8435,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8509,13 +8513,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8587,13 +8591,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/nelson-bighetti/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg" alt="Nelson Bighetti Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/nelson-bighetti/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   Nelson Bighetti
@@ -8665,13 +8669,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <a href="/author/%E5%90%B3%E5%81%A5%E9%9B%84/" class="block mb-4">
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full" 
                      src="/author/%E5%90%B3%E5%81%A5%E9%9B%84/avatar_hu_a157214375127229.jpg" alt="吳健雄 Avatar">
                 </a>
               
 
               <div class="portrait-title text-center">
-                <h3 class="!text-xl font-semibold text-gray-900 dark:text-white mb-2" 
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" 
                     style="font-size: 1.25rem !important; line-height: 1.75rem !important;">
                   <a href="/author/%E5%90%B3%E5%81%A5%E9%9B%84/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">
                   吳健雄
@@ -8926,7 +8930,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<div class="w-full text-center">
+<div class="max-w-4xl mx-auto text-center">
   
     <div class="mb-6">TAG CLOUD</div>
   
@@ -9249,10 +9253,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   </style>
 
-  <div class="gallery-row mb-6 mx-auto max-w-6xl"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757404767" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
+  <div class="gallery-row mb-6 mx-auto max-w-6xl"><div class="gallery-item"><a href="/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/avatar copy.jpg"><img src="/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp" alt="/media/gallery/avatar copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/coders copy copy.jpg"><img src="/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/coders copy.jpg"><img src="/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/coders_hu_f24719255d0f60d0.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/coders.jpg"><img src="/media/gallery/coders_hu_4ea4a6298e561cdb.webp" alt="/media/gallery/coders.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/contact copy (1).jpg"><img src="/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy (1).jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/contact copy.jpg"><img src="/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/contact_hu_26366b1795f91b5b.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/contact.jpg"><img src="/media/gallery/contact_hu_785b3dd40700ee84.webp" alt="/media/gallery/contact.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/welcome copy.jpg"><img src="/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome copy.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div><div class="gallery-item"><a href="/media/gallery/welcome_hu_881cf6d238b253bb.webp" data-gallery="gallery-1757414169" data-title="/media/gallery/welcome.jpg"><img src="/media/gallery/welcome_hu_99e93c9347f79fe.webp" alt="/media/gallery/welcome.jpg" class="w-24 h-24 object-cover rounded-xl cursor-pointer" loading="lazy" style="display: block; margin: 0; padding: 0;"></a></div></div><script>
     document.addEventListener('DOMContentLoaded', () =>
       GLightbox({
-        selector: '[data-gallery="gallery-1757404767"]',
+        selector: '[data-gallery="gallery-1757414169"]',
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -15816,7 +15820,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
                 
                 <div class="flex-shrink-0 mr-4">
                   <div class="relative">
-                    <img class="w-15 h-15 rounded-lg shadow-md" 
+                    <img class="w-15 h-15 rounded-full shadow-md" 
                          src="/media/luis_hu_9b486b5e526e8156.webp" 
                          alt="">
                   </div>
@@ -15853,7 +15857,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
                 
                 <div class="flex-shrink-0 mr-4">
                   <div class="relative">
-                    <img class="w-15 h-15 rounded-lg shadow-md" 
+                    <img class="w-15 h-15 rounded-full shadow-md" 
                          src="/media/sofia_hu_c147b374e6e736bb.webp" 
                          alt="">
                   </div>
@@ -15890,7 +15894,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
                 
                 <div class="flex-shrink-0 mr-4">
                   <div class="relative">
-                    <img class="w-15 h-15 rounded-lg shadow-md" 
+                    <img class="w-15 h-15 rounded-full shadow-md" 
                          src="/media/mohammed_hu_3630b03bfbf893ba.webp" 
                          alt="">
                   </div>
@@ -16092,7 +16096,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
               
                 <a href="https://twitter.com/sarah" target="_blank" rel="noopener">
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Sarah Johnson"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -16107,7 +16111,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
               
                 <a href="https://linkedin.com/in/michael" target="_blank" rel="noopener">
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Michael Chen"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -16122,7 +16126,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
               
                 <a href="/team/emily" >
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Emily Rodriguez"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -16137,7 +16141,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
               
                 <a href="https://github.com/david" target="_blank" rel="noopener">
                   <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="David Kim"
-                       class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                       class="w-16 h-16 rounded-full border-4 border-white
                               shadow-md hover:scale-110 transition-transform duration-200"
                        loading="lazy">
                 </a>
@@ -16151,7 +16155,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
             <div class="-ml-3">
               
                 <img src="/media/luis_hu_6f883ef5f8eb1c61.jpg" alt="Lisa Thompson"
-                     class="w-16 h-16 rounded-lg border-4 border-white dark:border-gray-900
+                     class="w-16 h-16 rounded-full border-4 border-white
                             shadow-md hover:scale-110 transition-transform duration-200"
                      loading="lazy">
               
@@ -16299,7 +16303,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
           
           
             
-            <img class="h-12 w-12 rounded-lg" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
+            <img class="h-12 w-12 rounded-full" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
                  alt="Daniella Doe" width="96" height="96" loading="lazy">
           
 
@@ -16373,7 +16377,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
           
           
             
-            <img class="h-12 w-12 rounded-lg" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
+            <img class="h-12 w-12 rounded-full" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
                  alt="Daniella Doe" width="96" height="96" loading="lazy">
           
 
@@ -16447,7 +16451,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
           
           
             
-            <img class="h-12 w-12 rounded-lg" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
+            <img class="h-12 w-12 rounded-full" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
                  alt="Daniella Doe" width="96" height="96" loading="lazy">
           
 
@@ -16521,7 +16525,7 @@ Add your content Edit the homepage and add your documentation pages.</a></p>
           
           
             
-            <img class="h-12 w-12 rounded-lg" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
+            <img class="h-12 w-12 rounded-full" src="/media/avatar-copy_hu_4347fdbfc52fc014.webp"
                  alt="Jane Doe" width="96" height="96" loading="lazy">
           
 
@@ -18362,7 +18366,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
       
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -18370,7 +18374,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
   Planning &amp; Analysis
   
-    <sup class="align-super text-xs font-normal text-gray-500 dark:text-gray-300 ml-1 me-2 px-2.5 py-0.5 border rounded-lg border-gray-300 dark:border-gray-500 ms-3">
+    <sup class="align-super text-xs font-normal text-gray-500 dark:text-gray-300 ml-1 me-2 px-2.5 py-0.5 border rounded-full border-gray-300 dark:border-gray-500 ms-3">
       latest
     </sup>
   
@@ -18402,7 +18406,7 @@ and creating a detailed project roadmap with clear milestones.</li>
       </li>
       
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -18423,7 +18427,7 @@ to visualize the final product before development begins.
       </li>
       
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -18444,7 +18448,7 @@ with comprehensive testing at every stage of development.
       </li>
       
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -18465,7 +18469,7 @@ and performance optimization for the best user experience.
       </li>
       
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -19786,7 +19790,7 @@ continues to perform optimally and stays secure over time.
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    background-color: #16a34a;
+    background-color: #007c28;
     border-radius: 50%;
     color: #ffffff;
     flex-shrink: 0;
@@ -19926,12 +19930,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -19960,12 +19964,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -19994,12 +19998,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -20027,7 +20031,7 @@ continues to perform optimally and stays secure over time.
         
         
         <div class="mt-10">
-          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
+          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
             <span class="flex items-center">
               Get Started
               <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-top: 1px; flex-shrink: 0;">
@@ -20229,7 +20233,7 @@ continues to perform optimally and stays secure over time.
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    background-color: #16a34a;
+    background-color: #007c28;
     border-radius: 50%;
     color: #ffffff;
     flex-shrink: 0;
@@ -20369,12 +20373,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -20403,12 +20407,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -20437,12 +20441,12 @@ continues to perform optimally and stays secure over time.
                 <div class="custom-icon-container">
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000">
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="SVGRepo_iconCarrier">
-<path fill="#189334" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/>
-<path fill="#FFF" d="M29.28 6.362a2.502 2.502 0 0 0-3.458.736L14.936 23.877l-5.029-4.65a2.5 2.5 0 1 0-3.394 3.671l7.209 6.666c.48.445 1.09.665 1.696.665c.673 0 1.534-.282 2.099-1.139c.332-.506 12.5-19.27 12.5-19.27a2.5 2.5 0 0 0-.737-3.458z"/>
+<circle cx="32" cy="32" r="30" fill="#017c29"/>
+<path fill="#ffffff" d="M46 14L25 35.6l-7-7.2l-7 7.2L25 50l28-28.8z"/>
 </g>
 </svg>
                 </div>
@@ -20470,7 +20474,7 @@ continues to perform optimally and stays secure over time.
         
         
         <div class="mt-10">
-          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
+          <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white border border-primary-700 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 transition-all duration-200" style="line-height: 1.2;">
             <span class="flex items-center">
               Get Started
               <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="margin-top: 1px; flex-shrink: 0;">
@@ -21493,11 +21497,6 @@ input::placeholder, select::placeholder, textarea::placeholder {
 }
 
  
-h1, h2, h3, h4, h5, h6, label, span, p {
-  color: #111827 !important;
-}
-
- 
 .dark input, .dark select, .dark textarea {
   color: #ffffff !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -21539,22 +21538,22 @@ h1, h2, h3, h4, h5, h6, label, span, p {
         
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="25">
           <div class="text-lg font-bold" style="color: #111827 !important;">£25</div>
-          <div class="text-sm" style="color: #6b7280 !important;">Feed 5 families</div>
+          <div class="text-xs" style="color: #6b7280 !important;">Feed 5 families</div>
         </div>
         
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="50">
           <div class="text-lg font-bold" style="color: #111827 !important;">£50</div>
-          <div class="text-sm" style="color: #6b7280 !important;">Support 1 child</div>
+          <div class="text-xs" style="color: #6b7280 !important;">Support 1 child</div>
         </div>
         
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="100">
           <div class="text-lg font-bold" style="color: #111827 !important;">£100</div>
-          <div class="text-sm" style="color: #6b7280 !important;">Fund training</div>
+          <div class="text-xs" style="color: #6b7280 !important;">Fund training</div>
         </div>
         
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="250">
           <div class="text-lg font-bold" style="color: #111827 !important;">£250</div>
-          <div class="text-sm" style="color: #6b7280 !important;">Transform lives</div>
+          <div class="text-xs" style="color: #6b7280 !important;">Transform lives</div>
         </div>
         
       </div>
@@ -21577,7 +21576,7 @@ h1, h2, h3, h4, h5, h6, label, span, p {
       </div>
 
       
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-4 pb-4">
         <input type="text" placeholder="First Name" required 
                class="border-2 border-gray-400 rounded-lg p-3 shadow-sm focus:outline-none focus:border-blue-600"
                style="background-color: #ffffff !important; color: #111827 !important;" />

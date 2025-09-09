@@ -67,7 +67,7 @@
     <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
       {{ range $idx, $item := $items }}
       <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-lg -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
+        <span class="absolute flex items-center justify-center w-6 h-6 border border-gray-300 dark:border-gray-500 bg-gray-100 dark:bg-gray-200 rounded-full -start-3 shadow-lg ring-8 ring-white dark:ring-gray-900">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-3.5 h-3.5 text-white">
             <path fill="#B91C1C" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/>
           </svg>
@@ -75,7 +75,7 @@
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
   {{ $item.name | $page.RenderString }}
   {{ with $item.latest }}
-    <sup class="align-super text-xs font-normal text-gray-500 dark:text-gray-300 ml-1 me-2 px-2.5 py-0.5 border rounded-lg border-gray-300 dark:border-gray-500 ms-3">
+    <sup class="align-super text-xs font-normal text-gray-500 dark:text-gray-300 ml-1 me-2 px-2.5 py-0.5 border rounded-full border-gray-300 dark:border-gray-500 ms-3">
       {{ . | $page.RenderString }}
     </sup>
   {{ end }}

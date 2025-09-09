@@ -22,7 +22,7 @@
 
 {{ $columns := $block.design.columns | default "1" }}
 
-<div class="w-full {{ if eq $columns "2" }}lg:w-2/3{{ else }}text-center{{ end }}">
+<div class="max-w-4xl mx-auto {{ if eq $columns "2" }}lg:w-2/3{{ else }}text-center{{ end }}">
   {{ with $block.content.text }}
     <div class="mb-6">{{ . | $page.RenderString | emojify }}</div>
   {{ end }}
