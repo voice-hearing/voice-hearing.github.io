@@ -310,7 +310,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.techcorp.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.techcorp.com&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/pexels-julia-m-cameron-6994939_hu_fe1b1b5966616458.webp&#34; 
                      alt=&#34;TechCorp Solutions&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -327,7 +327,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.globalindustries.org&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.globalindustries.org&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/pexels-kindelmedia-8486923_hu_d2a64126efb615ae.webp&#34; 
                      alt=&#34;Global Industries&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -344,7 +344,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.innovationlabs.net&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.innovationlabs.net&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/luis_hu_c2b557126c4380e4.webp&#34; 
                      alt=&#34;Innovation Labs&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -2864,7 +2864,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/friends/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/friends/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Connect Now
             &lt;/a&gt;
             
@@ -2905,7 +2905,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/teamwork/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/teamwork/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Join Team
             &lt;/a&gt;
             
@@ -2941,7 +2941,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/growth/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/growth/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Start Growing
             &lt;/a&gt;
             
@@ -3036,7 +3036,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
       
       &lt;div class=&#34;mt-6 inline-flex space-x-3&#34;&gt;
         &lt;a href=&#34;https://domain.com&#34; 
-           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class=&#34;flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition&#34;&gt;
@@ -3044,7 +3044,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         &lt;/a&gt;
 
         &lt;a href=&#34;https://domain.com&#34; 
-           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class=&#34;flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition&#34;&gt;
@@ -3145,8 +3145,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 76%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3173,8 +3173,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 52%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3201,8 +3201,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 68%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3245,8 +3245,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 81%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3273,8 +3273,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 72%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3301,8 +3301,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 79%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3345,8 +3345,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 73%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3373,8 +3373,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 80%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3401,8 +3401,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 78%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3445,8 +3445,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 91%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3473,8 +3473,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 86%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3501,8 +3501,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 87%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -4069,10 +4069,10 @@ function toggleAccordion(clickedButton) {
   }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1757355954&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757403239&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -4084,7 +4084,7 @@ function toggleAccordion(clickedButton) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1757355954&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757403239&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -4189,7 +4189,7 @@ function toggleAccordion(clickedButton) {
       &lt;/div&gt;&lt;/div&gt;
 
   &lt;div class=&#34;absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3&#34;&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-white border-gray-900 shadow-gray-900/70
@@ -4198,7 +4198,7 @@ function toggleAccordion(clickedButton) {
             aria-current=&#34;true&#34; 
             aria-label=&#34;Slide 1&#34; 
             data-carousel-slide-to=&#34;0&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-gray-900/70 border-white/80 shadow-black/60
@@ -4209,7 +4209,7 @@ function toggleAccordion(clickedButton) {
             aria-current=&#34;false&#34; 
             aria-label=&#34;Slide 2&#34; 
             data-carousel-slide-to=&#34;1&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-gray-900/70 border-white/80 shadow-black/60
@@ -4223,7 +4223,7 @@ function toggleAccordion(clickedButton) {
   &lt;button type=&#34;button&#34; 
           class=&#34;absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
           data-carousel-prev&gt;
-    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-lg 
                  bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
                  hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
                  group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
@@ -4239,7 +4239,7 @@ function toggleAccordion(clickedButton) {
   &lt;button type=&#34;button&#34; 
           class=&#34;absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
           data-carousel-next&gt;
-    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-lg 
                  bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
                  hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
                  group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
@@ -4254,7 +4254,7 @@ function toggleAccordion(clickedButton) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1757355954&#39;);
+  const carousel = document.getElementById(&#39;slider-1757403239&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -4350,7 +4350,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1757355954&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757403239&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -4472,7 +4472,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
     &lt;a href=&#34;http://localhost:1313/signup/&#34; target=&#34;_self&#34;
        class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-gray-300 bg-white px-6 py-2
+              rounded-lg border border-gray-300 bg-white px-6 py-2
               text-xl font-medium text-gray-900 dark:border-gray-500 dark:bg-gray-800 dark:text-white
               hover:bg-gray-50 dark:hover:bg-gray-700 focus:z-20 transition-colors&#34;&gt;
       Get Started
@@ -4578,7 +4578,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
     &lt;a href=&#34;http://localhost:1313/trial/&#34; target=&#34;_self&#34;
        class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-primary-700 bg-primary-700 px-6 py-2
+              rounded-lg border border-primary-700 bg-primary-700 px-6 py-2
               text-xl font-medium text-white hover:bg-primary-800 focus:z-20 transition-colors&#34;&gt;
       Start Free Trial
     &lt;/a&gt;
@@ -5394,7 +5394,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-&lt;div id=&#34;chart-879615234&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-914328765&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     async function fetchChartJSON() {
@@ -5412,7 +5412,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-879615234&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-914328765&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -6802,7 +6802,7 @@ You might already sense that making contact is more than a formality—it’s th
           
           &lt;div class=&#34;grid flex items-center justify-center&#34;&gt;
             &lt;button id=&#34;contact&#34; aria-label=&#34;Submit contact request&#34; type=&#34;submit&#34; 
-                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-base font-semibold focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 transition-colors duration-200&#34;&gt;
+                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-base font-semibold focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 transition-colors duration-200&#34;&gt;
               Send Message
             &lt;/button&gt;
           &lt;/div&gt;
@@ -6994,9 +6994,9 @@ Birmingham, B11 1SZ, UK&lt;/p&gt;
           &lt;input type=&#34;text&#34; 
                  id=&#34;series-custom-input-0&#34; 
                  placeholder=&#34;What would you like to explore about this content?&#34;
-                 class=&#34;flex-1 rounded-full border border-gray-300 px-3 py-1 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white&#34;&gt;
+                 class=&#34;flex-1 rounded-lg border border-gray-300 px-3 py-1 text-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white&#34;&gt;
           &lt;button onclick=&#34;launchSeriesAnalysis(&#39;custom&#39;, &amp;#34;\&amp;#34;\\n{{\\u0026lt; ai-chat \\u0026gt;}}\\n\\nAsumen charity warmly invites you into a journey of hope and transformation where *your help, your contribution, and your donation* become the seeds of change that bloom in the lives of individuals and families in need across west london.\\n\\n\\n## How You Can Help and Contribute\\n\\n*“As you read these words, you might begin to feel the quiet power of your generosity—how with each act of giving, you both uplift others and softly transform yourself.”*\\n\\nYour support for Asumen charity can take many heartfelt forms—each one a doorway to healing and belonging:\\n\\n- **Praying:** Feel the strength of community prayer wrapping around those we serve, quietly offering peace and hope in ways words alone cannot express. As you pray, you are joining a spiritual network that supports transformation from the inside out.\\n\\n- **Sharing Information:** Simply sharing news about Asumen charity, our projects, or events invites new hearts and hands into this caring circle. Imagine how your small act of telling someone can spark a chain of giving and kindness.\\n\\n- **Volunteering:** Picture yourself stepping gently into the lives of those we serve—offering time, listening ears, and caring hands. Each moment you give is an opportunity to sow seeds of hope that grow in unexpected and beautiful ways.\\n\\n- **Donating Food:** Visualize the relief and gratitude as a family receives nourishing meals through your giving. Every item you donate feeds not just bodies but strengthens spirits.\\n\\n- **Donating Preloved Household Items:** See the smile of someone settling into a new home, comforted by the thoughtful gifts you provide—each item a tangible sign that they are not forgotten.\\n\\n- **Donating Services:** Whether it’s skilled counseling, tutoring, or practical help, your donated services build bridges to a better tomorrow, restoring dignity and independence.\\n\\n- **Donating Space or Facilities:** Envision community projects flourishing in the rooms or grounds you offer—places where healing, …\&amp;#34;&amp;#34;,  0 )&#34; 
-                  class=&#34;rounded-full bg-primary-700 px-3 py-1 text-sm font-medium text-white transition-colors hover:bg-primary-900&#34; style=&#34;cursor: pointer;&#34;&gt;
+                  class=&#34;rounded-lg bg-primary-700 px-3 py-1 text-sm font-medium text-white transition-colors hover:bg-primary-900&#34; style=&#34;cursor: pointer;&#34;&gt;
             Ask AI
           &lt;/button&gt;
         &lt;/div&gt;
@@ -7510,7 +7510,7 @@ Birmingham, B11 1LX, England, UK&lt;/p&gt;
           
           &lt;div class=&#34;text-left&#34;&gt;
             &lt;button id=&#34;contact&#34; aria-label=&#34;Submit contact request&#34; type=&#34;submit&#34; 
-                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-base font-semibold focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 transition-colors duration-200&#34;&gt;
+                    class=&#34;mt-8 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-base font-semibold focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:hover:bg-gray-700 hover:bg-gray-50 transition-colors duration-200&#34;&gt;
               Send Message
             &lt;/button&gt;
           &lt;/div&gt;
@@ -7710,7 +7710,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/avatar_hu_a157214375127229.jpg&#34; alt=&#34;吳健雄 Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -7892,7 +7892,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/john-smith/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg&#34; alt=&#34;John Smith Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -7980,7 +7980,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/john-smith/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg&#34; alt=&#34;John Smith Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8068,7 +8068,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/john-smith/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg&#34; alt=&#34;John Smith Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8156,7 +8156,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8244,7 +8244,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8332,7 +8332,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8420,7 +8420,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8534,7 +8534,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/john-smith/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg&#34; alt=&#34;John Smith Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8622,7 +8622,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/john-smith/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/john-smith/avatar_hu_796a60c0fdf8478f.jpg&#34; alt=&#34;John Smith Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8710,7 +8710,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8798,7 +8798,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8886,7 +8886,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/nelson-bighetti/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/nelson-bighetti/avatar_hu_16db8dd6de94949.jpg&#34; alt=&#34;Nelson Bighetti Avatar&#34;&gt;
               &lt;/a&gt;
             
@@ -8974,7 +8974,7 @@ You can join us through:&lt;/p&gt;
               
               &lt;a href=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/&#34; class=&#34;block mb-1&#34;&gt;
               &lt;img width=&#34;200&#34; height=&#34;200&#34; loading=&#34;lazy&#34; 
-                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-full&#34; 
+                   class=&#34;avatar w-24 h-24 object-cover mx-auto transition-transform duration-300 hover:scale-105 rounded-lg&#34; 
                    src=&#34;http://localhost:1313/author/%E5%90%B3%E5%81%A5%E9%9B%84/avatar_hu_a157214375127229.jpg&#34; alt=&#34;吳健雄 Avatar&#34;&gt;
               &lt;/a&gt;
             

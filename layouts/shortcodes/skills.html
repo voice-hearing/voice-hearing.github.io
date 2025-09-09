@@ -69,8 +69,8 @@
         
         {{ if and .percent $show_percentage }}
         <div class="skills-wrapper {{ if .icon }}ml-8{{ end }}">
-          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2" style="border-color: {{ $color_border }}">
-            <div class="skills-percent h-2 rounded-full transition-all duration-300" 
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2" style="border-color: {{ $color_border }}">
+            <div class="skills-percent h-2 rounded-lg transition-all duration-300" 
                  style="width: {{ .percent | default 0 }}%; background-color: {{ $color }}"></div>
           </div>
         </div>

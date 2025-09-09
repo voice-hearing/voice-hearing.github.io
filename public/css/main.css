@@ -3358,10 +3358,10 @@
       width: calc(var(--spacing) * 5);
     }
   }
-  .after\:rounded-full {
+  .after\:rounded-lg {
     &::after {
       content: var(--tw-content);
-      border-radius: calc(infinity * 1px);
+      border-radius: var(--radius-lg);
     }
   }
   .after\:border {

@@ -88,7 +88,7 @@
               {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
               {{with $link}}<a href="{{.}}" class="block mb-1">{{end}}
               <img width="200" height="200" loading="lazy" 
-                   class="avatar {{ if le $count 2 }}w-32 h-32{{ else }}w-24 h-24{{ end }} object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-full{{end}}" 
+                   class="avatar {{ if le $count 2 }}w-32 h-32{{ else }}w-24 h-24{{ end }} object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-lg{{end}}" 
                    src="{{ $src }}" alt="{{ .Title }} Avatar">
               {{if $link}}</a>{{end}}
             {{ end }}

@@ -61,15 +61,15 @@
         {{ if $bg.image.filename }}
           {{ $bg_img = resources.Get (printf "media/%s" $bg.image.filename) }}
           {{ if $bg_img }}
-            {{ $bg_img = $bg_img.Fit "600x400 q70 webp" }}
+            {{ $bg_img = $bg_img.Fit "600x600 q70 webp" }}
           {{ end }}
         {{ end }}
         
         <a href="{{ .url }}" class="relative rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300">
           {{ if $bg_img }}
-            <img src="{{ $bg_img.RelPermalink }}" alt="{{ .title | plainify }}" class="block w-full h-64 object-cover object-center" />
+            <img src="{{ $bg_img.RelPermalink }}" alt="{{ .title | plainify }}" class="block w-full h-96 object-cover object-center" />
           {{ else }}
-            <div class="w-full h-64 bg-gray-400"></div>
+            <div class="w-full h-96 bg-gray-400"></div>
           {{ end }}
           <div class="absolute bottom-0 left-0 overlay-bg-light dark:overlay-bg-dark rounded-lg"
                style="padding: {{ $padding }}; margin: {{ $margin }};">

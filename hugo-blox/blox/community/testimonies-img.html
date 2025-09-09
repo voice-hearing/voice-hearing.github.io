@@ -61,14 +61,14 @@
                 {{ $processedImage := $image.Process "Fill 60x60 center webp" }}
                 <div class="flex-shrink-0 mr-4">
                   <div class="relative">
-                    <img class="w-15 h-15 rounded-full shadow-md" 
+                    <img class="w-15 h-15 rounded-lg shadow-md" 
                          src="{{ $processedImage.RelPermalink }}" 
                          alt="{{ $.name | plainify }}">
                   </div>
                 </div>
                 {{ else }}
                 <!-- Placeholder for missing image -->
-                <div class="w-15 h-15 rounded-full shadow-md bg-gray-300 dark:bg-gray-600 flex items-center justify-center mr-4 flex-shrink-0">
+                <div class="w-15 h-15 rounded-lg shadow-md bg-gray-300 dark:bg-gray-600 flex items-center justify-center mr-4 flex-shrink-0">
                   <span class="text-xl text-gray-600 dark:text-gray-300">{{ substr (.name | default "User") 0 1 | upper }}</span>
                 </div>
                 {{ end }}

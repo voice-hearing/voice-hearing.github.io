@@ -63,7 +63,7 @@
                   </div>
                   <!-- End Grid -->
                   <div class="grid flex items-center justify-center">
-                    <button id="contact" aria-label="Submit contact request" type="submit" class="mt-8 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800">{{ $button_text }}</button>
+                    <button id="contact" aria-label="Submit contact request" type="submit" class="mt-8 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800">{{ $button_text }}</button>
                   </div>
                 </form>
         </div>
@@ -204,7 +204,7 @@
             {{ end }}
             
             <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} 
-               class="inline-flex items-center px-4 py-2.5 rounded-full border border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800">
+               class="inline-flex items-center px-4 py-2.5 rounded-lg border border-gray-300 bg-white dark:border-gray-500 dark:bg-gray-800">
               <div class="flex-shrink-0 w-4 h-4 mr-3">
                 {{/* SVG icons with optimized colors for both themes */}}
                 {{ if eq .icon "twitter" }}

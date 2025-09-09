@@ -38,7 +38,7 @@
           <div class="text-center mt-auto">
             <a href="{{ .url }}" 
                {{ if .external }}target="_blank" rel="noopener"{{ end }}
-               class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-lg font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
+               class="relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-lg font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200">
               {{ .text }}
             </a>
           </div>
@@ -50,7 +50,7 @@
     <!-- Global Call-to-Action Button (Optional) -->
     <div class="text-center mt-16">
       {{ with $block.content.button }}
-      <a href="{{.url}}" target="_blank" class="relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
+      <a href="{{.url}}" target="_blank" class="relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
        {{.text}}</a>
       {{ end }}
     </div>

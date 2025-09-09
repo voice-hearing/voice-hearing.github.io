@@ -9,41 +9,6 @@ design:
   spacing: "3rem"
 
 sections:
-  - block: book-promotion
-    content:
-      title: "Featured Books"
-      blue: ""
-      text: ""
-      books:
-        - title: "Beyond the Senses: Illusions at the Edge of Reality"
-          author: "Your Name"
-          author_url: "/author"
-          rating: 4.5
-          prize: "Best Spiritual Book Award 2024"
-          synopsis: "A journey through the mystical experiences that shape our understanding of reality and consciousness. A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness."
-          pages: 320
-          pub_date: "March 2024"
-          file_size: "2.5 MB"
-          image: "cover.png"
-          ebook_url: "https://amazon.com/dp/your-ebook"
-          audiobook_url: "https://audible.com/pd/your-audiobook"
-          sample_ebook_url: "https://amazon.com/dp/your-ebook#sample"
-          sample_audiobook_url: "https://audible.com/pd/your-audiobook#sample"
-          
-        - title: "The Body's Secret Language: Metaphors of Experience"
-          author: "Your Name"
-          author_url: "/author"
-          rating: 4.8
-          prize: "Consciousness Studies Excellence Award"
-          synopsis: "Exploring how our bodies communicate through metaphorical language and sensory experience."
-          pages: 280
-          pub_date: "June 2024"
-          file_size: "2.1 MB"
-          image: "cover.png"
-          ebook_url: "https://amazon.com/dp/your-ebook-2"
-          audiobook_url: "https://audible.com/pd/your-audiobook-2"
-          sample_ebook_url: "https://amazon.com/dp/your-ebook-2#sample"
-          sample_audiobook_url: "https://audible.com/pd/your-audiobook-2#sample"
   - block: hero1
     content:
       title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
@@ -77,38 +42,38 @@ sections:
   - block: img-over-grid-right
     content:
       blue: ""
-      title: "Example Title Grid"
+      title: "HELP US & EXPERIENCE"
       text: ""
       slides:
-        - title: Large Image Left
+        - title: INTERFAITH HOUSE
           content: ""
           align: "bottom-left"
           url: /large-image-link
           background:
             image:
-              filename: "city-daniel-abadia.jpg"
+              filename: "pexels-kindelmedia-8550108rect.jpg"
               filters:
                 brightness: 1
               position: center
               color: '#000000'
-        - title: Top Right
+        - title: HUYIV GARDEN
           content: ""
           align: "bottom-left"
           url: /top-right-link
           background:
             image:
-              filename: "icon.png"
+              filename: "hopegarden1.png"
               filters:
                 brightness: 0.7
               position: center
               color: '#111111'
-        - title: Bottom Right
+        - title: CHILDREN'S CLUB
           content: ""
           align: "bottom-left"
           url: /bottom-right-link
           background:
             image:
-              filename: "icon.png"
+              filename: "childrensclub1.jpg"
               filters:
                 brightness: 0.6
               position: center
@@ -127,38 +92,38 @@ sections:
   - block: img-over-grid-left
     content:
       blue: ""
-      title: "Example Title Grid"
+      title: "HELP US & EXPERIENCE"
       text: ""
       slides:
-        - title: Large Image Left
+        - title: INTERFAITH HOUSE
           content: ""
           align: "bottom-left"
           url: /large-image-link
           background:
             image:
-              filename: "city-daniel-abadia.jpg"
+              filename: "pexels-kindelmedia-8550108rect.jpg"
               filters:
                 brightness: 1
               position: center
               color: '#000000'
-        - title: Top Right
+        - title: HUYIV GARDEN
           content: ""
           align: "bottom-left"
           url: /top-right-link
           background:
             image:
-              filename: "icon.png"
+              filename: "hopegarden1.png"
               filters:
                 brightness: 0.7
               position: center
               color: '#111111'
-        - title: Bottom Right
+        - title: CHILDREN'S CLUB
           content: ""
           align: "bottom-left"
           url: /bottom-right-link
           background:
             image:
-              filename: "icon.png"
+              filename: "childrensclub1.jpg"
               filters:
                 brightness: 0.6
               position: center
@@ -174,7 +139,7 @@ sections:
           filename: ""
           filters:
             brightness: 0.5
-  - block: image-overlay
+  - block: img-over-grid-2
     content:
       title: HELP US & EXPERIENCE
       blue: 
@@ -250,7 +215,7 @@ sections:
 #          filename: ""
 #          filters:
 #            brightness: 1.0
-  - block: image-overlay-3
+  - block: img-over-grid-3
     content:
       title: HOW YOU CAN HELP
       blue: 
@@ -1621,6 +1586,29 @@ sections:
       testimonial:
         quote: "This charity changed our family's life completely. The support we received during our darkest hour was incredible."
         author: "Emma Thompson, Beneficiary"
+  - block: book-promotion
+    content:
+      title: "Featured Books"
+      blue: ""
+      text: ""
+      books:
+        - title: "Beyond the Senses: Illusions at the Edge of Reality"
+          author: "Your Name"
+          author_url: "/author"
+          rating: 4.5
+          prize: "Best Spiritual Book Award 2024"
+          synopsis: "A journey through the mystical experiences that shape our understanding of reality and consciousness. A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness.A journey through the mystical experiences that shape our understanding of reality and consciousness."
+          pages: 320
+          listening_length: 3 hours 14 minutes
+          narrator: John Bach
+          pub_date: "March 2024"
+          file_size: "2.5 MB/460 MB"
+          image: "cover.png"
+          ebook_url: "https://amazon.com/dp/your-ebook"
+          audiobook_url: "https://audible.com/pd/your-audiobook"
+          sample_ebook_url: "https://amazon.com/dp/your-ebook#sample"
+          sample_audiobook_url: "https://audible.com/pd/your-audiobook#sample"
+          
   
   
   

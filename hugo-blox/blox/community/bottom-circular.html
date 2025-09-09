@@ -21,10 +21,10 @@
           {{ $resized := $img.Fit "288x288 q70 webp" }}
           <img src="{{ $resized.RelPermalink }}" 
                alt="{{ .title | plainify }}" 
-               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg" 
+               class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-lg object-cover shadow-lg" 
                loading="lazy">
         {{ else }}
-          <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center shadow-lg">
+          <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center shadow-lg">
             <span class="text-xs text-gray-500 dark:text-gray-400">No Image</span>
           </div>
         {{ end }}

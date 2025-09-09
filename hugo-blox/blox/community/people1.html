@@ -67,7 +67,7 @@
                 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
                 {{with $link}}<a href="{{.}}" class="block mb-4">{{end}}
                 <img width="200" height="200" loading="lazy" 
-                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-full{{end}}" 
+                     class="avatar w-32 h-32 object-cover mx-auto transition-transform duration-300 hover:scale-105 {{if eq $avatar_shape "square"}}rounded-lg{{else}}rounded-lg{{end}}" 
                      src="{{ $src }}" alt="{{ .Title }} Avatar">
                 {{if $link}}</a>{{end}}
               {{ end }}

@@ -2,7 +2,7 @@
 Book Promotion Shortcode - Complete corrected version
 - Prize moved under rating stars
 - Print length & publication date moved before buttons  
-- Rounded-full buttons with play icons
+- rounded-lg buttons with play icons
 - Dark mode button visibility
 - Single text-link overlay on image
 */}}
@@ -76,10 +76,10 @@ Book Promotion Shortcode - Complete corrected version
         Page Number: {{ .pages }} pages &#8226; Publication date: {{ .pub_date }} &#8226; File size: {{ .file_size }}
       </p>
 
-      <!-- Buttons - rounded-full with play icons -->
+      <!-- Buttons - rounded-lg with play icons -->
       <div class="mt-6 inline-flex space-x-3">
         <a href="{{ .ebook_url }}" 
-           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class="flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition">
@@ -87,7 +87,7 @@ Book Promotion Shortcode - Complete corrected version
         </a>
 
         <a href="{{ .audiobook_url }}" 
-           class="flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class="flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition">

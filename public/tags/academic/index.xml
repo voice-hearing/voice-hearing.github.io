@@ -60,7 +60,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.techcorp.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.techcorp.com&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/pexels-julia-m-cameron-6994939_hu_fe1b1b5966616458.webp&#34; 
                      alt=&#34;TechCorp Solutions&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -77,7 +77,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.globalindustries.org&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.globalindustries.org&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/pexels-kindelmedia-8486923_hu_d2a64126efb615ae.webp&#34; 
                      alt=&#34;Global Industries&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -94,7 +94,7 @@
           &lt;div class=&#34;relative&#34;&gt;&lt;a href=&#34;www.innovationlabs.net&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; title=&#34;www.innovationlabs.net&#34;&gt;
                 &lt;img src=&#34;http://localhost:1313/media/luis_hu_c2b557126c4380e4.webp&#34; 
                      alt=&#34;Innovation Labs&#34; 
-                     class=&#34;rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
+                     class=&#34;rounded-lg w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover shadow-lg transition-transform duration-300 hover:scale-105&#34;
                      loading=&#34;lazy&#34;&gt;
               &lt;/a&gt;&lt;/div&gt;
           
@@ -2614,7 +2614,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/friends/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/friends/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Connect Now
             &lt;/a&gt;
             
@@ -2655,7 +2655,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/teamwork/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/teamwork/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Join Team
             &lt;/a&gt;
             
@@ -2691,7 +2691,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
           
           &lt;div class=&#34;text-center mt-6&#34;&gt;
             
-            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/growth/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
+            &lt;a href=&#34;http://localhost:1313/how-you-can-help/how-you-can-help/growth/&#34; class=&#34;mt-3 relative inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2 text-xl font-medium focus:z-20 dark:border-gray-500 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors&#34;&gt;
               Start Growing
             &lt;/a&gt;
             
@@ -2786,7 +2786,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
       
       &lt;div class=&#34;mt-6 inline-flex space-x-3&#34;&gt;
         &lt;a href=&#34;https://domain.com&#34; 
-           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class=&#34;flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition&#34;&gt;
@@ -2794,7 +2794,7 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         &lt;/a&gt;
 
         &lt;a href=&#34;https://domain.com&#34; 
-           class=&#34;flex items-center gap-2 rounded-full px-4 py-2 border border-gray-300 
+           class=&#34;flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 
                   bg-white text-gray-900 hover:bg-gray-50 
                   dark:border-gray-600 dark:bg-primary-700 dark:text-white dark:hover:bg-primary-800 
                   transition&#34;&gt;
@@ -2895,8 +2895,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 76%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -2923,8 +2923,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 52%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -2951,8 +2951,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 68%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -2995,8 +2995,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 81%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3023,8 +3023,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 72%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3051,8 +3051,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #f0bf23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 79%; background-color: #eeac02&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3095,8 +3095,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 73%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3123,8 +3123,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 80%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3151,8 +3151,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #82ff23&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 78%; background-color: #82ff23&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3195,8 +3195,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 91%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3223,8 +3223,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 86%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3251,8 +3251,8 @@ Why Metaphor May be Everywhere](https://www.youtube.com/watch?v=Gcs-vG4e5ps)
         
         
         &lt;div class=&#34;skills-wrapper &#34;&gt;
-          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
-            &lt;div class=&#34;skills-percent h-2 rounded-full transition-all duration-300&#34; 
+          &lt;div class=&#34;w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-2&#34; style=&#34;border-color: #e5e7eb&#34;&gt;
+            &lt;div class=&#34;skills-percent h-2 rounded-lg transition-all duration-300&#34; 
                  style=&#34;width: 87%; background-color: #3b82f6&#34;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -3819,10 +3819,10 @@ function toggleAccordion(clickedButton) {
   }
   &lt;/style&gt;
 
-  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757355954&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
+  &lt;div class=&#34;gallery-row mb-6 mx-auto max-w-6xl&#34;&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_66ef94fbb2b31c5f.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/avatar copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/avatar%20copy_hu_1f99a43080a7a9fe.webp&#34; alt=&#34;/media/gallery/avatar copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders copy copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders%20copy_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/coders_hu_f24719255d0f60d0.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/coders.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/coders_hu_4ea4a6298e561cdb.webp&#34; alt=&#34;/media/gallery/coders.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact copy (1).jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy%20%281%29_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy (1).jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact%20copy_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/contact_hu_26366b1795f91b5b.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/contact.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/contact_hu_785b3dd40700ee84.webp&#34; alt=&#34;/media/gallery/contact.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/welcome copy.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome%20copy_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome copy.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;gallery-item&#34;&gt;&lt;a href=&#34;http://localhost:1313/media/gallery/welcome_hu_881cf6d238b253bb.webp&#34; data-gallery=&#34;gallery-1757403239&#34; data-title=&#34;/media/gallery/welcome.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/media/gallery/welcome_hu_99e93c9347f79fe.webp&#34; alt=&#34;/media/gallery/welcome.jpg&#34; class=&#34;w-24 h-24 object-cover rounded-lg cursor-pointer&#34; loading=&#34;lazy&#34; style=&#34;display: block; margin: 0; padding: 0;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;
     document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt;
       GLightbox({
-        selector: &#39;[data-gallery=&#34;gallery-1757355954&#34;]&#39;,
+        selector: &#39;[data-gallery=&#34;gallery-1757403239&#34;]&#39;,
         touchNavigation: true,
         loop: true,
         zoomable: true,
@@ -3834,7 +3834,7 @@ function toggleAccordion(clickedButton) {
     &lt;/script&gt;
 &lt;h2 id=&#34;slider-folder-dataslidesyaml&#34;&gt;Slider folder data/slides.yaml&lt;/h2&gt;
 
-&lt;div id=&#34;slider-1757355954&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
+&lt;div id=&#34;slider-1757403239&#34; class=&#34;relative w-full&#34; data-carousel=&#34;slide&#34;&gt;
   
   
   &lt;div class=&#34;relative overflow-hidden rounded-lg&#34;&gt;
@@ -3939,7 +3939,7 @@ function toggleAccordion(clickedButton) {
       &lt;/div&gt;&lt;/div&gt;
 
   &lt;div class=&#34;absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3&#34;&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-white border-gray-900 shadow-gray-900/70
@@ -3948,7 +3948,7 @@ function toggleAccordion(clickedButton) {
             aria-current=&#34;true&#34; 
             aria-label=&#34;Slide 1&#34; 
             data-carousel-slide-to=&#34;0&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-gray-900/70 border-white/80 shadow-black/60
@@ -3959,7 +3959,7 @@ function toggleAccordion(clickedButton) {
             aria-current=&#34;false&#34; 
             aria-label=&#34;Slide 2&#34; 
             data-carousel-slide-to=&#34;1&#34;&gt;&lt;/button&gt;&lt;button type=&#34;button&#34; 
-            class=&#34;w-5 h-5 rounded-full transition-all duration-300 
+            class=&#34;w-5 h-5 rounded-lg transition-all duration-300 
                    border-2 backdrop-blur-md shadow-xl
                    
                      bg-gray-900/70 border-white/80 shadow-black/60
@@ -3973,7 +3973,7 @@ function toggleAccordion(clickedButton) {
   &lt;button type=&#34;button&#34; 
           class=&#34;absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
           data-carousel-prev&gt;
-    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-lg 
                  bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
                  hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
                  group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
@@ -3989,7 +3989,7 @@ function toggleAccordion(clickedButton) {
   &lt;button type=&#34;button&#34; 
           class=&#34;absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none&#34; 
           data-carousel-next&gt;
-    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-full 
+    &lt;span class=&#34;inline-flex items-center justify-center w-12 h-12 rounded-lg 
                  bg-black bg-opacity-20 backdrop-blur-sm border-2 border-white border-opacity-30
                  hover:bg-opacity-30 hover:border-opacity-50 hover:scale-110
                  group-focus:ring-4 group-focus:ring-white group-focus:ring-opacity-50 
@@ -4004,7 +4004,7 @@ function toggleAccordion(clickedButton) {
 
 &lt;script&gt;
 document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const carousel = document.getElementById(&#39;slider-1757355954&#39;);
+  const carousel = document.getElementById(&#39;slider-1757403239&#39;);
   if (!carousel) return;
   
   const items = carousel.querySelectorAll(&#39;[data-carousel-item]&#39;);
@@ -4100,7 +4100,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   
   
   document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
-    if (e.target.closest(&#39;#slider-1757355954&#39;) || e.target === document.body) {
+    if (e.target.closest(&#39;#slider-1757403239&#39;) || e.target === document.body) {
       if (e.key === &#39;ArrowLeft&#39;) {
         e.preventDefault();
         prevSlide();
@@ -4222,7 +4222,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
     &lt;a href=&#34;http://localhost:1313/signup/&#34; target=&#34;_self&#34;
        class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-gray-300 bg-white px-6 py-2
+              rounded-lg border border-gray-300 bg-white px-6 py-2
               text-xl font-medium text-gray-900 dark:border-gray-500 dark:bg-gray-800 dark:text-white
               hover:bg-gray-50 dark:hover:bg-gray-700 focus:z-20 transition-colors&#34;&gt;
       Get Started
@@ -4328,7 +4328,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
         &lt;div class=&#34;p-4 sm:px-6 mt-auto pb-4&#34;&gt;
     &lt;a href=&#34;http://localhost:1313/trial/&#34; target=&#34;_self&#34;
        class=&#34;block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-primary-700 bg-primary-700 px-6 py-2
+              rounded-lg border border-primary-700 bg-primary-700 px-6 py-2
               text-xl font-medium text-white hover:bg-primary-800 focus:z-20 transition-colors&#34;&gt;
       Start Free Trial
     &lt;/a&gt;

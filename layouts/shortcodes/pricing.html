@@ -86,7 +86,7 @@
   <div class="p-4 sm:px-6 mt-auto pb-4">
     <a href="{{ .url }}" {{ with .target }}target="{{ . }}"{{ end }}
        class="block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-primary-700 bg-primary-700 px-6 py-2
+              rounded-lg border border-primary-700 bg-primary-700 px-6 py-2
               text-xl font-medium text-white hover:bg-primary-800 focus:z-20 transition-colors">
       {{ .text }}
     </a>
@@ -97,7 +97,7 @@
   <div class="p-4 sm:px-6 mt-auto pb-4">
     <a href="{{ .url }}" {{ with .target }}target="{{ . }}"{{ end }}
        class="block w-full text-center inline-flex items-center justify-center gap-1
-              rounded-full border border-gray-300 bg-white px-6 py-2
+              rounded-lg border border-gray-300 bg-white px-6 py-2
               text-xl font-medium text-gray-900 dark:border-gray-500 dark:bg-gray-800 dark:text-white
               hover:bg-gray-50 dark:hover:bg-gray-700 focus:z-20 transition-colors">
       {{ .text }}
@@ -115,7 +115,7 @@
     {{ if and $button_text $button_url }}
     <div class="mt-6 text-center">
       <a href="{{ $button_url }}" {{ with $button_target }}target="{{ . }}"{{ end }}
-         class="inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-6 py-2
+         class="inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-6 py-2
                 text-xl font-medium text-gray-900 dark:border-gray-500 dark:bg-gray-800 dark:text-white
                 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
         {{ $button_text }}

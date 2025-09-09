@@ -179,7 +179,7 @@
       <!-- CTA Button - Desktop Only -->
       {{ if site.Params.header.navbar.button.enable }}
       <a href="{{ site.Params.header.navbar.button.url | relLangURL }}"
-         class="hidden lg:inline-block rounded-full px-5 py-2 font-semibold transition md:ml-4 px-4 py-1.5 text-xl bg-primary-700 hover:text-gray-200 text-white">
+         class="hidden lg:inline-block rounded-lg px-5 py-2 font-semibold transition md:ml-4 px-4 py-1.5 text-xl bg-primary-700 hover:text-gray-200 text-white">
         {{ site.Params.header.navbar.button.text }}
       </a>
       {{ end }}
@@ -187,7 +187,7 @@
       <!-- CTA Button - Mobile/Medium (Left of Burger) -->
       {{ if site.Params.header.navbar.button.enable }}
       <a href="{{ site.Params.header.navbar.button.url | relLangURL }}" 
-         class="rounded-full text-sm py-1.5 px-3 bg-primary-700 text-white mr-3 font-semibold hover:bg-primary-800 transition-colors lg:hidden">
+         class="rounded-lg text-sm py-1.5 px-3 bg-primary-700 text-white mr-3 font-semibold hover:bg-primary-800 transition-colors lg:hidden">
         {{ site.Params.header.navbar.button.text }}
       </a>
       {{ end }}
@@ -311,7 +311,7 @@
 
 {{ if site.Params.header.navbar.button.enable }}
 <li class="mt-4 lg:hidden">
-  <a class="rounded-full text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
+  <a class="rounded-lg text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
      href="{{ site.Params.header.navbar.button.url | relLangURL }}">
     {{ site.Params.header.navbar.button.text }}
   </a>
