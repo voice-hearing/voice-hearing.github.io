@@ -6,6 +6,15 @@
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
 
+<style>
+    .overlay-bg-light {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .overlay-bg-dark {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+
 <div class="relative isolate max-w-screen-xl mx-auto" style="min-height: 80vh;">
 
   <!-- Background Image Constrained to Container -->
@@ -49,7 +58,7 @@
     <!-- Hero Title - Left Aligned with Tight Black Background -->
     {{ with $block.content.title }}
     <div class="mb-12 max-w-xl xl:max-w-7xl flex justify-start">
-      <div class="bg-white dark:bg-black rounded-2xl shadow-2xl inline-block px-6 py-3">
+      <div class="overlay-bg-light dark:overlay-bg-dark rounded-2xl shadow-2xl inline-block px-6 py-3">
         <h1 class="text-4xl md:text-5xl lg:text-5xl text-gray-900 dark:font-medium font-bold leading-tight dark:text-white">
           {{ . | markdownify }}
         </h1>
