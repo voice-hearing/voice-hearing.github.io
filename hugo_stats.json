@@ -362,6 +362,8 @@
       "dark:text-zinc-100",
       "dark:text-zinc-400",
       "dark:text-zinc-500",
+      "dark:text:grey-100",
+      "dark:text:grey-200",
       "dark:text:grey-300",
       "dark:to-gray-800",
       "dark:to-primary-900",
