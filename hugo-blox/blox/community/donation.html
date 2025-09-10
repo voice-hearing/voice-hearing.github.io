@@ -9,19 +9,6 @@
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 
 <style>
-/* CRITICAL FIXES FOR LIGHT THEME VISIBILITY */
-input, select, textarea {
-  color: #111827 !important; /* Dark gray text */
-  background-color: #ffffff !important; /* White background */
-}
-
-input::placeholder, select::placeholder, textarea::placeholder {
-  color: #6b7280 !important; /* Medium gray placeholders */
-}
-
-.donation-form input:focus {
-  color: #111827 !important; /* Dark text when typing */
-}
 
 .donate-button-fixed {
   background-color: #2563eb !important; /* Blue background */
