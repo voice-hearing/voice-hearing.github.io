@@ -308,6 +308,7 @@
       "dark:from-gray-900",
       "dark:from-primary-800",
       "dark:from-primary-900/20",
+      "dark:grey-300",
       "dark:group-hover:bg-gray-600",
       "dark:group-hover:text-primary-400",
       "dark:hidden",
