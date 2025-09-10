@@ -27,10 +27,10 @@
   <!-- Header Section -->
   <div class="text-center mb-8">
     {{ with $title }}
-    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: #111827 !important;">{{ . }}</h2>
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-white">{{ . }}</h2>
     {{ end }}
     {{ with $text }}
-    <p class="text-xl max-w-2xl mx-auto leading-relaxed" style="color: #4b5563 !important;">{{ . }}</p>
+    <p class="text-xl max-w-2xl mx-auto leading-relaxed text-gray-800 dark:text-white">{{ . }}</p>
     {{ end }}
   </div>
 
@@ -38,13 +38,13 @@
     
     <!-- Left Column: Donation Form -->
     <div class="donation-form">
-      <h3 class="text-2xl font-bold mb-6" style="color: #111827 !important;">Make Your Donation</h3>
+      <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Make Your Donation</h3>
       
       <!-- Suggested Amounts -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {{ range $block.content.donation_amounts | default (slice (dict "amount" 25 "impact" "Feed 5 families") (dict "amount" 50 "impact" "Support 1 child") (dict "amount" 100 "impact" "Fund training") (dict "amount" 250 "impact" "Transform lives")) }}
         <div class="amount-button p-4 border-2 border-gray-400 bg-white rounded-xl text-center cursor-pointer transition-all duration-300 shadow-md hover:bg-blue-50 hover:border-blue-600 hover:-translate-y-1 hover:shadow-lg" data-amount="{{ .amount }}">
-          <div class="text-lg font-bold" style="color: #111827 !important;">£{{ .amount }}</div>
+          <div class="text-lg font-bold text-gray-800 dark:text-white">£{{ .amount }}</div>
           <div class="text-xs" style="color: #6b7280 !important;">{{ .impact }}</div>
         </div>
         {{ end }}
