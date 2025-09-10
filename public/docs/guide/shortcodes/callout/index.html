@@ -77,7 +77,7 @@ Callouts are a useful feature to draw attention to important or related content 
 
   
     
-    <link href="/css/custom.min.45883be1e4ec515fbb12dab174a654fc818c6e3f0b28791bf8797bb7f51ed87b.css" rel="stylesheet" />
+    <link href="/css/custom.min.25947e81faa1dc0dafe7a4fa5fc4bf5d1fea5f37ee3fc3b6d2f906e7e6206c96.css" rel="stylesheet" />
   
 
   <script>
@@ -1633,14 +1633,14 @@ Callouts are a useful feature to draw attention to important or related content 
           <span class="hidden sm:inline">contact@example.com</span>
         </a>
       </div>
-      
+
       
       <div class="hidden md:block text-center">
         <a href="/publication/pre-print/" class="hover:underline">
           ☕ A Cuppa And a Chat
         </a>
       </div>
-      
+
       
       <div class="flex items-center space-x-4">
         
@@ -1713,13 +1713,12 @@ Callouts are a useful feature to draw attention to important or related content 
     <div class="order-0 h-full">
       
       <a class="navbar-brand" href="/" title="Hugo Academic CV Theme">
-        
-        
         Your Name
       </a>
     </div>
-    
+
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      
       
       
       
@@ -1727,15 +1726,13 @@ Callouts are a useful feature to draw attention to important or related content 
         aria-label="toggle search"
         class="hidden lg:inline-block text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300 px-3 text-xl"
         data-search-toggle>
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor">
-          <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
       </button>
       
+
       
       
-      
-      <div class="hidden lg:block px-3 text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
+      <div class="hidden lg:block px-3 text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300 [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
         <button class="theme-toggle mt-1" accesskey="t" title="appearance">
           <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1758,10 +1755,10 @@ Callouts are a useful feature to draw attention to important or related content 
         </button>
       </div>
       
+
       
       
-      
-      
+
       
       
       <a href="/donate"
@@ -1769,665 +1766,671 @@ Callouts are a useful feature to draw attention to important or related content 
         Donate
       </a>
       
+
+      
+      
+      <a href="/donate" 
+         class="rounded-lg text-sm py-1.5 px-3 bg-primary-700 text-white mr-3 font-semibold hover:bg-primary-800 transition-colors lg:hidden">
+        Donate
+      </a>
+      
     </div>
     
     
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label for="nav-toggle" class="order-3 cursor-pointer flex items-center lg:hidden text-gray-900 dark:text-white lg:order-1">
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
-        <title>Open Menu</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V15z"></path>
+<input id="nav-toggle" type="checkbox" class="hidden" />
+<label for="nav-toggle" class="order-3 cursor-pointer flex items-center lg:hidden text-gray-900 dark:text-white lg:order-1">
+  <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+    <title>Open Menu</title>
+    <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V15z"></path>
+  </svg>
+  <svg id="hide-button" class="h-6 fill-current hidden mobile-menu-close" viewBox="0 0 20 20">
+    <title>Close Menu</title>
+    <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+  </svg>
+</label>
+
+    
+
+<ul id="nav-menu" class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start
+  ">
+  
+  
+<li class="mt-6 lg:hidden border-t border-gray-200 dark:border-gray-600 pt-4">
+  <div class="flex justify-end items-center space-x-4">
+    
+    
+    
+    <button aria-label="toggle search" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" data-search-toggle>
+      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </button>
+    
+
+    
+    
+    <button class="theme-toggle text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" accesskey="t" title="appearance">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+           stroke-linejoin="round" class="block dark:hidden">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden mobile-menu-close" viewBox="0 0 20 20">
-        <title>Close Menu</title>
-        <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+           stroke-linejoin="round" class="hidden dark:block">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
       </svg>
-    </label>
+    </button>
     
     
-    
-    <ul id="nav-menu" class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start">
+  </div>
+</li>
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="nav-item nav-dropdown group relative">
+    <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+      class="nav-link cursor-pointer select-none 
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+       inline-flex items-center">
+      WHAT WE DO
+      <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
+        <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </span>
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
       
       
-      <li class="mt-6 lg:hidden border-t border-gray-200 dark:border-gray-600 pt-4">
-        <div class="flex justify-end items-center space-x-4">
-          
-          
-          
-          <button aria-label="toggle search" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" data-search-toggle>
-            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor">
-              <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
-            </svg>
-          </button>
-          
-          
-          
-          
-          <button class="theme-toggle text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" accesskey="t" title="appearance">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" class="block dark:hidden">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" class="hidden dark:block">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-          </button>
-          
-          
-        </div>
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/what-we-do/what-we-do">
+          HOUSE
+        </a>
       </li>
       
       
       
-      
-      
-      
-      
-      
-      <li class="nav-item nav-dropdown group relative">
-        <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
-          class="nav-link cursor-pointer select-none  inline-flex items-center">
-          WHAT WE DO
-          <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
-            <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          
-          
-          
-          
-          
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
             
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              HOUSE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              KIDS CLUB
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              HUPIE TREAT
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              WOMEN&#39;S YOGA
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              HELP WITH LAW
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              HELP WITH MEDICAL ATTENDANCE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/what-we-do/what-we-do">
-              LISTENING
-            </a>
-          </li>
-          
-        </ul>
+           href="/what-we-do/what-we-do">
+          KIDS CLUB
+        </a>
       </li>
       
       
       
-      
-      
-      
-      <li class="nav-item nav-dropdown group relative">
-        <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
-          class="nav-link cursor-pointer select-none  inline-flex items-center">
-          HOW I CAN HELP
-          <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
-            <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          
-          
-          
-          
-          
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
             
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              DONATING
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              REGULAR GIVING
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              LEAVE A GIFT IN YOUR WILL
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              GIVING IN MEMORY
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              VOLUNTEERING
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              PROVIDING SERVICE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              SERVICING
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              SHARING INFO
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/how-you-can-help/how-you-can-help/">
-              PRAYING
-            </a>
-          </li>
-          
-        </ul>
+           href="/what-we-do/what-we-do">
+          HUPIE TREAT
+        </a>
       </li>
       
       
       
-      
-      
-      
-      <li class="nav-item nav-dropdown group relative">
-        <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
-          class="nav-link cursor-pointer select-none  inline-flex items-center">
-          ABOUT
-          <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
-            <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          
-          
-          
-          
-          
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
             
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about/">
-              WHO WE ARE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/people">
-              WHERE WE WORK
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about">
-              WHO WE WORK WITH
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about">
-              NEWS
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about/">
-              FAQ&#39;S
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/people">
-              OUR HISTORY
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about">
-              OUR TEAM
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about">
-              MINISTRY
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/post">
-              BLOG
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/landing">
-              LANDING
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/about">
-              OUTREACH
-            </a>
-          </li>
-          
-        </ul>
+           href="/what-we-do/what-we-do">
+          WOMEN&#39;S YOGA
+        </a>
       </li>
       
       
       
-      
-      
-      
-      <li class="nav-item nav-dropdown group relative">
-        <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
-          class="nav-link cursor-pointer select-none  inline-flex items-center">
-          CONTACT
-          <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
-            <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          
-          
-          
-          
-          
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
             
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/contact">
-              CONTACT US
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/subscribe">
-              SUBSCRIBE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/index.xml">
-              RSS
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/links">
-              LINKS
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/free">
-              FREE RESOURCE
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/free">
-              SAMARITANS
-            </a>
-          </li>
-          
-        </ul>
+           href="/what-we-do/what-we-do">
+          HELP WITH LAW
+        </a>
       </li>
       
       
       
-      
-      
-      
-      <li class="nav-item nav-dropdown group relative">
-        <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
-          class="nav-link cursor-pointer select-none  inline-flex items-center">
-          SHOP
-          <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
-            <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-        <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          
-          
-          
-          
-          
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
             
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/contact">
-              SHOP WITH OUR PARTNERS
-            </a>
-          </li>
-          
-          
-          
-          
-          
-            
-          
-          <li class="nav-dropdown-item">
-            <a class="nav-dropdown-link " 
-                
-               href="/about/subscribe">
-              ONLINE SHOP
-            </a>
-          </li>
-          
-        </ul>
+           href="/what-we-do/what-we-do">
+          HELP WITH MEDICAL ATTENDANCE
+        </a>
       </li>
       
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/what-we-do/what-we-do">
+          LISTENING
+        </a>
+      </li>
       
     </ul>
+  </li>
+  
+  
+  
+  
+  
+  
+  <li class="nav-item nav-dropdown group relative">
+    <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+      class="nav-link cursor-pointer select-none 
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+       inline-flex items-center">
+      HOW I CAN HELP
+      <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
+        <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </span>
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          DONATING
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          REGULAR GIVING
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          LEAVE A GIFT IN YOUR WILL
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          GIVING IN MEMORY
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          VOLUNTEERING
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          PROVIDING SERVICE
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          SERVICING
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          SHARING INFO
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/how-you-can-help/how-you-can-help/">
+          PRAYING
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  
+  <li class="nav-item nav-dropdown group relative">
+    <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+      class="nav-link cursor-pointer select-none 
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+       inline-flex items-center">
+      ABOUT
+      <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
+        <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </span>
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about/">
+          WHO WE ARE
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/people">
+          WHERE WE WORK
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about">
+          WHO WE WORK WITH
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about">
+          NEWS
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about/">
+          FAQ&#39;S
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/people">
+          OUR HISTORY
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about">
+          OUR TEAM
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about">
+          MINISTRY
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/post">
+          BLOG
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/landing">
+          LANDING
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/about">
+          OUTREACH
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  
+  <li class="nav-item nav-dropdown group relative">
+    <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+      class="nav-link cursor-pointer select-none 
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+       inline-flex items-center">
+      CONTACT
+      <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
+        <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </span>
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/contact">
+          CONTACT US
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/subscribe">
+          SUBSCRIBE
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/index.xml">
+          RSS
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/links">
+          LINKS
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/free">
+          FREE RESOURCE
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/free">
+          SAMARITANS
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+  
+  
+  
+  
+  
+  
+  <li class="nav-item nav-dropdown group relative">
+    <span role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+      class="nav-link cursor-pointer select-none 
+        
+        
+        
+      
+        
+        
+        
+       inline-flex items-center">
+      SHOP
+      <svg class="h-4 w-4 inline-block" viewBox="0 0 20 20">
+        <path fill="#B91C1C" d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+      </svg>
+    </span>
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/contact">
+          SHOP WITH OUR PARTNERS
+        </a>
+      </li>
+      
+      
+      
+      <li class="nav-dropdown-item">
+        <a class="nav-dropdown-link " 
+            
+           href="/about/subscribe">
+          ONLINE SHOP
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+  
+  
+
+
+<li class="mt-4 lg:hidden">
+  <a class="rounded-lg text-xl py-2 px-4 bg-primary-700 text-white block text-center w-full hover:bg-primary-800 transition-colors"
+     href="/donate">
+    Donate
+  </a>
+</li>
+
+</ul>
+
+
   </nav>
-  
-  
-  
-  <div id="mobile-cta-bottom" class="fixed-mobile-cta lg:hidden">
-    <a class="mobile-cta-button"
-       href="/donate">
-      Donate
-    </a>
-  </div>
-  
-  
 </header>
 
-
-  <div
+<div
   id="search-wrapper"
   class="hidden fixed inset-0 z-50 bg-white dark:bg-gray-900 flex flex-col overflow-hidden"
 >
@@ -2447,7 +2450,6 @@ Callouts are a useful feature to draw attention to important or related content 
     
   </div>
 </div>
-
 
 
         

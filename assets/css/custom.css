@@ -8,6 +8,7 @@
 /* ========================================
    LIGHT THEME OVERRIDE - WHITE NAVBAR WITH DARK TEXT
    ======================================== */
+
 /* LIGHT THEME - Main navbar background and border */
 html[data-theme="light"] #site-header.header,
 html[data-theme="light"] .navbar,
@@ -18,17 +19,20 @@ body[data-theme="light"] .navbar,
   background-color: #ffffff !important;
   border-bottom: 1px solid #e5e7eb !important;
 }
+
 /* LIGHT THEME - Brand/Logo text color */
 html[data-theme="light"] .navbar-brand,
 body[data-theme="light"] .navbar-brand,
 .light .navbar-brand {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] .navbar-brand:hover,
 body[data-theme="light"] .navbar-brand:hover,
 .light .navbar-brand:hover {
   color: #374151 !important; /* darker gray on hover */
 }
+
 /* LIGHT THEME - Navigation links */
 html[data-theme="light"] .nav-link,
 html[data-theme="light"] .navbar-nav .nav-link,
@@ -38,6 +42,7 @@ body[data-theme="light"] .navbar-nav .nav-link,
 .light .navbar-nav .nav-link {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] .nav-link:hover,
 html[data-theme="light"] .navbar-nav .nav-link:hover,
 body[data-theme="light"] .nav-link:hover,
@@ -47,6 +52,7 @@ body[data-theme="light"] .navbar-nav .nav-link:hover,
   color: #000000 !important; /* black on hover */
   background-color: #f3f4f6 !important; /* light gray background */
 }
+
 html[data-theme="light"] .nav-link.active,
 html[data-theme="light"] .navbar-nav .nav-link.active,
 body[data-theme="light"] .nav-link.active,
@@ -56,6 +62,7 @@ body[data-theme="light"] .navbar-nav .nav-link.active,
   color: #000000 !important; /* black when active */
   background-color: #e5e7eb !important; /* darker gray background */
 }
+
 /* LIGHT THEME - Dropdown/submenu backgrounds */
 html[data-theme="light"] .nav-dropdown-list,
 html[data-theme="light"] .navbar-nav .nav-dropdown-list,
@@ -67,6 +74,7 @@ body[data-theme="light"] .navbar-nav .nav-dropdown-list,
   border: 1px solid #e5e7eb !important; /* light gray border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
+
 /* LIGHT THEME - Dropdown/submenu links */
 html[data-theme="light"] .nav-dropdown-link,
 html[data-theme="light"] .navbar-nav .nav-dropdown-link,
@@ -76,6 +84,7 @@ body[data-theme="light"] .navbar-nav .nav-dropdown-link,
 .light .navbar-nav .nav-dropdown-link {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] .nav-dropdown-link:hover,
 html[data-theme="light"] .navbar-nav .nav-dropdown-link:hover,
 body[data-theme="light"] .nav-dropdown-link:hover,
@@ -85,6 +94,7 @@ body[data-theme="light"] .navbar-nav .nav-dropdown-link:hover,
   color: #000000 !important; /* black on hover */
   background-color: #f3f4f6 !important; /* light gray background */
 }
+
 html[data-theme="light"] .nav-dropdown-link.active,
 html[data-theme="light"] .navbar-nav .nav-dropdown-link.active,
 body[data-theme="light"] .nav-dropdown-link.active,
@@ -94,17 +104,20 @@ body[data-theme="light"] .navbar-nav .nav-dropdown-link.active,
   color: #000000 !important; /* black when active */
   background-color: #e5e7eb !important; /* darker gray background */
 }
+
 /* LIGHT THEME - Mobile menu toggle */
 html[data-theme="light"] label[for="nav-toggle"],
 body[data-theme="light"] label[for="nav-toggle"],
 .light label[for="nav-toggle"] {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] label[for="nav-toggle"] svg,
 body[data-theme="light"] label[for="nav-toggle"] svg,
 .light label[for="nav-toggle"] svg {
   fill: #1f2937 !important; /* dark gray */
 }
+
 /* LIGHT THEME - Mobile menu when expanded */
 html[data-theme="light"] #nav-toggle:checked ~ #nav-menu,
 body[data-theme="light"] #nav-toggle:checked ~ #nav-menu,
@@ -112,37 +125,66 @@ body[data-theme="light"] #nav-toggle:checked ~ #nav-menu,
   background-color: #ffffff !important; /* white background */
   border-top: 1px solid #e5e7eb !important; /* light gray border */
 }
+
 /* LIGHT THEME - Search and theme toggle buttons */
 html[data-theme="light"] button[data-search-toggle],
 body[data-theme="light"] button[data-search-toggle],
 .light button[data-search-toggle] {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] .theme-toggle,
 body[data-theme="light"] .theme-toggle,
 .light .theme-toggle {
   color: #1f2937 !important; /* dark gray */
 }
+
 html[data-theme="light"] .theme-toggle svg,
 body[data-theme="light"] .theme-toggle svg,
 .light .theme-toggle svg {
   stroke: #1f2937 !important; /* dark gray */
 }
+
 /* LIGHT THEME - Language chooser */
 html[data-theme="light"] .text-gray-600,
 body[data-theme="light"] .text-gray-600,
 .light .text-gray-600 {
   color: #1f2937 !important; /* dark gray */
 }
+
+/* LIGHT THEME - Mobile menu items */
+@media (max-width: 1023px) {
+  html[data-theme="light"] #nav-menu,
+  body[data-theme="light"] #nav-menu,
+  .light #nav-menu {
+    background-color: #ffffff !important;
+  }
+  
+  html[data-theme="light"] #nav-menu .nav-link,
+  body[data-theme="light"] #nav-menu .nav-link,
+  .light #nav-menu .nav-link {
+    color: #1f2937 !important; /* dark gray */
+    border-bottom: 1px solid rgba(31, 41, 55, 0.1) !important;
+  }
+  
+  html[data-theme="light"] #nav-menu .nav-link:hover,
+  body[data-theme="light"] #nav-menu .nav-link:hover,
+  .light #nav-menu .nav-link:hover {
+    background-color: #f3f4f6 !important; /* light gray background */
+  }
+}
+
 /* ========================================
    NAVBAR ALIGNMENT AND MENU FIXES
    ======================================== */
+
 /* Desktop: Center menu */
 @media (min-width: 1024px) {
   header#site-header .navbar {
     display: flex !important;
     justify-content: center !important;
   }
+  
   header#site-header .navbar-nav {
     display: flex !important;
     justify-content: center !important;
@@ -151,180 +193,48 @@ body[data-theme="light"] .text-gray-600,
     margin-right: auto !important;
   }
 }
+
 /* Mobile: Menu items on right side */
 @media (max-width: 1023px) {
   header#site-header .navbar {
     display: flex !important;
     justify-content: space-between !important;
   }
+  
   header#site-header .navbar-nav {
     width: 100% !important;
     display: block !important;
     text-align: right !important;
-    /* Add bottom padding to prevent overlap with fixed CTA when menu is open */
-    padding-bottom: 80px !important;
-    /* Add right padding for mobile menu */
-    padding-right: 5px !important;
   }
+  
   header#site-header .navbar-nav .nav-item {
     display: block !important;
     text-align: right !important;
     margin-left: auto !important;
     width: fit-content !important;
-    /* Add right padding to individual menu items */
-    padding-right: 16px !important;
   }
 }
-/* ========================================
-   FILL SPACE BETWEEN MENU AND BUTTON WITH BACKGROUND
-   ======================================== */
-@media (max-width: 1023px) {
-  /* Extend mobile menu background to fill entire screen */
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    height: 100vh !important;
-    width: 100vw !important;
-    z-index: 40 !important;
-    background-color: #ffffff !important; /* Light theme background */
-    padding-top: 80px !important; /* Space for header */
-    /* Add right padding to expanded mobile menu */
-    padding-right: 5px !important;
-    overflow-y: auto !important;
-  }
-  /* Dark theme background fill */
-  [data-theme="dark"] header#site-header input#nav-toggle:checked ~ ul#nav-menu,
-  .dark header#site-header input#nav-toggle:checked ~ ul#nav-menu {
-    background-color: #111827 !important; /* Dark theme background */
-  }
-  /* Light theme background fill */
-  html[data-theme="light"] header#site-header input#nav-toggle:checked ~ ul#nav-menu,
-  body[data-theme="light"] header#site-header input#nav-toggle:checked ~ ul#nav-menu,
-  .light header#site-header input#nav-toggle:checked ~ ul#nav-menu {
-    background-color: #ffffff !important; /* White background fills entire space */
-  }
-}
-/* ========================================
-   FIXED MOBILE CTA BUTTON - ONLY VISIBLE WHEN MENU IS OPEN
-   ======================================== */
-@media (max-width: 1023px) {
-  /* Container for fixed bottom CTA - HIDDEN BY DEFAULT */
-  .fixed-mobile-cta {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 50 !important;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 100%) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-    padding: 12px 16px 20px 16px !important;
-    border-top: 1px solid rgba(229, 231, 235, 0.3) !important;
-    /* HIDDEN BY DEFAULT */
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    transform: translateY(100%) !important;
-    transition: all 0.3s ease-in-out !important;
-  }
-  /* CORRECTED SELECTORS - Show button when menu is open */
-  #nav-toggle:checked ~ nav ~ .fixed-mobile-cta,
-  #nav-toggle:checked ~ .fixed-mobile-cta,
-  input#nav-toggle:checked ~ nav ~ .fixed-mobile-cta,
-  input#nav-toggle:checked ~ .fixed-mobile-cta,
-  #nav-toggle:checked + * + * + .fixed-mobile-cta,
-  #nav-toggle:checked ~ * .fixed-mobile-cta {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-  /* Modern browsers with :has() support */
-  body:has(#nav-toggle:checked) .fixed-mobile-cta {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-  /* CTA Button Styling */
-  .mobile-cta-button {
-    display: block !important;
-    width: 100% !important;
-    padding: 16px 24px !important;
-    background-color: #b91c1c !important; /* primary-700 */
-    color: #ffffff !important;
-    font-weight: 600 !important;
-    font-size: 1.125rem !important; /* text-lg */
-    line-height: 1.5 !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    border-radius: 12px !important;
-    box-shadow: 0 4px 14px rgba(185, 28, 28, 0.25) !important;
-    transition: all 0.2s ease-in-out !important;
-    border: none !important;
-    cursor: pointer !important;
-  }
-  /* CTA Button Hover State */
-  .mobile-cta-button:hover {
-    background-color: #991b1b !important; /* primary-800 */
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.35) !important;
-  }
-  /* CTA Button Active State */
-  .mobile-cta-button:active {
-    transform: translateY(0px) !important;
-    box-shadow: 0 2px 8px rgba(185, 28, 28, 0.3) !important;
-  }
-  /* Dark theme adjustments for fixed CTA */
-  [data-theme="dark"] .fixed-mobile-cta,
-  .dark .fixed-mobile-cta {
-    background: linear-gradient(to top, rgba(17, 24, 39, 0.95) 0%, rgba(17, 24, 39, 0.9) 50%, transparent 100%) !important;
-    border-top-color: rgba(75, 85, 99, 0.3) !important;
-  }
-  /* Only add bottom padding to body when menu is open */
-  body:has(#nav-toggle:checked) {
-    padding-bottom: 80px !important;
-  }
-  /* Light theme mobile menu items */
-  html[data-theme="light"] #nav-menu,
-  body[data-theme="light"] #nav-menu,
-  .light #nav-menu {
-    background-color: #ffffff !important;
-    padding-bottom: 80px !important;
-    /* Add right padding to light theme mobile menu */
-    padding-right: 20px !important;
-  }
-  html[data-theme="light"] #nav-menu .nav-link,
-  body[data-theme="light"] #nav-menu .nav-link,
-  .light #nav-menu .nav-link {
-    color: #1f2937 !important; /* dark gray */
-    border-bottom: 1px solid rgba(31, 41, 55, 0.1) !important;
-  }
-  html[data-theme="light"] #nav-menu .nav-link:hover,
-  body[data-theme="light"] #nav-menu .nav-link:hover,
-  .light #nav-menu .nav-link:hover {
-    background-color: #f3f4f6 !important; /* light gray background */
-  }
-}
+
 /* ========================================
    REMOVE MOBILE MENU CLOSE BUTTON
    ======================================== */
+
 @media (max-width: 1023px) {
   /* Hide the close button on mobile - users can tap outside to close */
   header#site-header label[for="nav-toggle"] #hide-button {
     display: none !important;
   }
+  
   /* Keep only the hamburger (show) button visible */
   header#site-header label[for="nav-toggle"] #show-button {
     display: block !important;
   }
+  
   /* Override the toggle behavior to keep show button always visible */
   header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #hide-button {
     display: none !important;
   }
+  
   header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #show-button {
     display: block !important;
   }
@@ -332,23 +242,23 @@ body[data-theme="light"] .text-gray-600,
 /* ========================================
    HIDE MOBILE MENU WHEN SEARCH ACTIVE
    ======================================== */
+
 @media (max-width: 1023px) {
   /* Hide mobile menu button when body has search-active class */
   body.search-active header#site-header label[for="nav-toggle"] {
     display: none !important;
   }
-  /* Hide fixed CTA when search is active */
-  body.search-active .fixed-mobile-cta {
-    display: none !important;
-  }
+  
   /* Ensure search wrapper stays on top */
   #search-wrapper {
     z-index: 9999 !important;
   }
 }
+
 /* ========================================
    MOBILE UTILITY BUTTONS - INLINE RIGHT POSITIONING
    ======================================== */
+
 @media (max-width: 1023px) {
   /* Container for search and theme buttons - right aligned */
   header#site-header #nav-menu li > div.flex.justify-end {
@@ -357,9 +267,8 @@ body[data-theme="light"] .text-gray-600,
     align-items: center !important;
     gap: 1rem !important;
     padding: 0.5rem 0 !important;
-    /* Add right padding to utility buttons container */
-    padding-right: 16px !important;
   }
+  
   /* Search and theme buttons - icon only, inline */
   header#site-header #nav-menu button[data-search-toggle],
   header#site-header #nav-menu .theme-toggle {
@@ -369,32 +278,88 @@ body[data-theme="light"] .text-gray-600,
     background: none !important;
     border: none !important;
   }
+  
   /* Override any w-full classes on utility buttons */
   header#site-header #nav-menu li:not(.mt-4) button {
     width: auto !important;
   }
+  
+  /* Ensure CTA button remains full width */
+  header#site-header #nav-menu li.mt-4 a {
+    width: 100% !important;
+    display: block !important;
+  }
 }
+
 /* ========================================
    MOBILE MENU UTILITIES STYLING
    ======================================== */
+
 @media (max-width: 1023px) {
   /* Style the utilities section */
   header#site-header #nav-menu li.border-t {
     border-top: 1px solid rgba(229, 231, 235, 0.5) !important;
     padding-top: 1rem !important;
     margin-top: 1.5rem !important;
-    /* Add right padding to utilities section */
-    padding-right: 16px !important;
   }
+  
   /* Dark theme utilities border */
   [data-theme="dark"] header#site-header #nav-menu li.border-t,
   .dark header#site-header #nav-menu li.border-t {
     border-top-color: rgba(75, 85, 99, 0.5) !important;
   }
 }
+
+/* ========================================
+   BUTTON POSITIONING - TABLET AND MOBILE FULL WIDTH
+   ======================================== */
+
+/* Tablet and Mobile: Make menu buttons full width */
+/*@media (max-width: 1023px) {
+  /* Hide CTA button from top navbar on mobile/tablet */
+/*  header#site-header .navbar .order-1 a,
+/*  header#site-header .navbar div[class*="ml-auto"] a,
+/*  header#site-header .navbar .flex.items-center a {
+/*    display: none !important;
+/*  }
+  
+  /* Show button inside opened mobile menu - FULL WIDTH */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 8px 16px !important;
+  }
+  
+  /* Make the actual button/link full width */
+  header#site-header input#nav-toggle:checked ~ ul#nav-menu li.mt-4 a,
+  header#site-header #nav-menu li.mt-4 a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Additional button selectors - adjust these based on your actual button classes */
+  header#site-header #nav-menu .btn,
+  header#site-header #nav-menu button,
+  header#site-header #nav-menu a[class*="btn"],
+  header#site-header #nav-menu a[class*="button"] {
+    display: block !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+    text-align: center !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
+  }
+}
+
 /* ========================================
    DARK THEME DROPDOWN HOVER FIX
    ======================================== */
+
 /* Fix primary color conflict in dark theme dropdown hover */
 .nav-dropdown-list .nav-dropdown-link:hover,
 .nav-dropdown-link:hover,
@@ -403,11 +368,13 @@ body[data-theme="light"] .text-gray-600,
   background-color: #1f2937 !important; /* gray-600 background */
   color: #ffffff !important; /* white text */
 }
+
 /* Alternative fix - ensure proper contrast */
 .dark .nav-dropdown-list .nav-dropdown-link:hover {
   background-color: #ef3b32 !important; /* gray-700 background */
   color: #ffffff !important; /* white text */
 }
+
 .nav-dropdown-list .nav-dropdown-link:hover,
 .nav-dropdown-link:hover,
 [data-theme="dark"] .nav-dropdown-link:hover,
@@ -415,108 +382,59 @@ body[data-theme="light"] .text-gray-600,
   background-color: #ffffff !important; /* gray-600 background */
   color: #b91815 !important; /* white text */
 }
+
 /* Alternative fix - ensure proper contrast */
 .nav-dropdown-list .nav-dropdown-link:hover {
   background-color: #ffffff !important; /* gray-700 background */
   color: #b91815 !important; /* white text */
 }
+
 /* ========================================
    MOBILE MENU TOGGLE FIX
    ======================================== */
+
 /* Ensure checkbox toggle works properly */
 @media (max-width: 1023px) {
   /* Initially hide mobile menu */
   header#site-header #nav-menu {
     display: none !important;
   }
+  
   /* Show menu when checkbox is checked */
   header#site-header input#nav-toggle:checked ~ ul#nav-menu {
     display: block !important;
   }
+  
   /* Ensure checkbox is properly hidden but functional */
   header#site-header input#nav-toggle {
     position: absolute !important;
     opacity: 0 !important;
     pointer-events: none !important;
   }
+  
   /* Make sure toggle button is clickable */
   header#site-header label[for="nav-toggle"] {
     cursor: pointer !important;
     pointer-events: auto !important;
     z-index: 999 !important;
   }
+  
   /* Toggle button visual feedback */
   header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #hide-button {
     display: block !important;
   }
+  
   header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #show-button {
     display: none !important;
   }
+  
   header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #hide-button {
     display: none !important;
   }
+  
   header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #show-button {
     display: block !important;
   }
-}
-/* ========================================
-   ADDITIONAL MOBILE OPTIMIZATIONS
-   ======================================== */
-@media (max-width: 1023px) {
-  /* Add smooth transitions for better UX */
-  .fixed-mobile-cta,
-  .mobile-cta-button {
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-  }
-  /* Prevent double-tap zoom on CTA button */
-  .mobile-cta-button {
-    touch-action: manipulation !important;
-  }
-  /* Enhanced safe area support for bottom button */
-  .fixed-mobile-cta {
-    padding-bottom: calc(20px + env(safe-area-inset-bottom)) !important;
-  }
-}
-/* ========================================
-   MOBILE MENU TOGGLE FIX
-   ======================================== */
-/* Ensure checkbox toggle works properly */
-@media (max-width: 1023px) {
-  /* Initially hide mobile menu */
-  header#site-header #nav-menu {
-    display: none !important;
-  }
-  /* Show menu when checkbox is checked */
-  header#site-header input#nav-toggle:checked ~ ul#nav-menu {
-    display: block !important;
-  }
-  /* Ensure checkbox is properly hidden but functional */
-  header#site-header input#nav-toggle {
-    position: absolute !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
-  /* Make sure toggle button is clickable */
-  header#site-header label[for="nav-toggle"] {
-    cursor: pointer !important;
-    pointer-events: auto !important;
-    z-index: 999 !important;
-  }
-  /* Toggle button visual feedback */
-  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #hide-button {
-    display: block !important;
-  }
-  header#site-header input#nav-toggle:checked ~ label[for="nav-toggle"] #show-button {
-    display: none !important;
-  }
-  header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #hide-button {
-    display: none !important;
-  }
-  header#site-header input#nav-toggle:not(:checked) ~ label[for="nav-toggle"] #show-button {
-    display: block !important;
-  }
-}
 
 /* ========================================
    HUGO BLOX FOOTER - GRAY-950 THEME
