@@ -12,7 +12,7 @@ sections:
   
   - block: hero1
     content:
-      title: TRANSFORM LIVES <div class="mt-4"> TRANSFORM YOURSELF</div>
+      title: TRANSFORM WITHIN<div clas="mt=2">CHANGE LIVES BEYOND</div>
       text: 
       secondary: 
       primary_action:
